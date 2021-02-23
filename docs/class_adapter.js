@@ -1,0 +1,26 @@
+var class_adapter =
+[
+    [ "Adapter", "class_adapter.html#adc6e70d7b3bfe0b71e8c29fb998d0101", null ],
+    [ "addDevice", "class_adapter.html#a1910db5ac3feccea3d403c7cb198fd0a", null ],
+    [ "deviceAdded", "class_adapter.html#aa88cee3631bfb1f747a940f23bf41671", null ],
+    [ "deviceById", "class_adapter.html#ad96900dba2feee92d7b035c46a88cbe2", null ],
+    [ "deviceRemoved", "class_adapter.html#a297ef67f1631fbd76a5a46f1b182cf6c", null ],
+    [ "devices", "class_adapter.html#ad1c6c3b73ad98b517e692f8e8f6a919f", null ],
+    [ "discover", "class_adapter.html#a17ac44f46d44ba5510f773ebcf1aca13", null ],
+    [ "discoveringChanged", "class_adapter.html#af8b1ca695ada0ecaf8eff8a8d913d0a1", null ],
+    [ "id", "class_adapter.html#afbee3b68f3682dade9a68531b8ff74fd", null ],
+    [ "initDevicesList", "class_adapter.html#a26aaa33575df8161adb3beb9e0f3a1e5", null ],
+    [ "isCurrent", "class_adapter.html#a009a6d2df0bfe6236f615b81316ad01c", null ],
+    [ "name", "class_adapter.html#aefbf065d05e507d417e088204174a2c9", null ],
+    [ "nameChanged", "class_adapter.html#a2f9cdfbc463c07c8fbbacc001820b3db", null ],
+    [ "paredDevices", "class_adapter.html#a6e5fe0986b16e563f41ddf914d664ac2", null ],
+    [ "powered", "class_adapter.html#a2c7864782f89fb8de5c7ccba567f9e10", null ],
+    [ "poweredChanged", "class_adapter.html#ae0b81dc1fea9831f965cd63dc7cc0cfd", null ],
+    [ "removeDevice", "class_adapter.html#a980c9ee1eba542bd9ef6a3f2018a8642", null ],
+    [ "setCurrent", "class_adapter.html#a3a664da7b290c510c14c1c08068fd62e", null ],
+    [ "setDiscover", "class_adapter.html#ae4c79bb6722c0e0a9fa073cb660557e0", null ],
+    [ "setId", "class_adapter.html#a0c9b0e6d37dbfbca8353fcf2f14bc923", null ],
+    [ "setName", "class_adapter.html#a9703ba6b64e48538138626439572cb55", null ],
+    [ "setPowered", "class_adapter.html#af1c3162a28d4a0acdcdd109e76b20daf", null ],
+    [ "updateDevice", "class_adapter.html#a344e76a216f18401083096e080704fb1", null ]
+];

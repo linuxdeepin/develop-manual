@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: DFileSystemModel类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_d_file_system_model.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_d_file_system_model-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DFileSystemModel类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DFileSystemModel 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_file_system_model__inherit__graph.png" border="0" usemap="#_d_file_system_model_inherit__map" alt="Inheritance graph"/></div>
+<map name="_d_file_system_model_inherit__map" id="_d_file_system_model_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+DFileSystemModel 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_file_system_model__coll__graph.png" border="0" usemap="#_d_file_system_model_coll__map" alt="Collaboration graph"/></div>
+<map name="_d_file_system_model_coll__map" id="_d_file_system_model_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad703c2cc60493c34531fbd85e60b2e93"><td class="memItemLeft" align="right" valign="top"><a id="ad703c2cc60493c34531fbd85e60b2e93"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Roles</b> { <br />
+&#160;&#160;<b>FileIconRole</b> = Qt::DecorationRole, 
+<b>FilePathRole</b> = Qt::UserRole + 1, 
+<b>FileNameRole</b> = Qt::UserRole + 2, 
+<b>FileSizeRole</b> = Qt::UserRole + 3, 
+<br />
+&#160;&#160;<b>FileMimeTypeRole</b> = Qt::UserRole + 4, 
+<b>FileOwnerRole</b> = Qt::UserRole + 5, 
+<b>FileLastModifiedRole</b> = Qt::UserRole + 6, 
+<b>FileLastReadRole</b> = Qt::UserRole + 7, 
+<br />
+&#160;&#160;<b>FileCreatedRole</b> = Qt::UserRole + 8, 
+<b>FileDisplayNameRole</b> = Qt::UserRole + 9, 
+<b>FilePinyinName</b> = Qt::UserRole + 10, 
+<b>ExtraProperties</b> = Qt::UserRole + 11, 
+<br />
+&#160;&#160;<b>FileBaseNameRole</b> = Qt::UserRole + 12, 
+<b>FileSuffixRole</b> = Qt::UserRole + 13, 
+<b>FileNameOfRenameRole</b> = Qt::UserRole + 14, 
+<b>FileBaseNameOfRenameRole</b> = Qt::UserRole + 15, 
+<br />
+&#160;&#160;<b>FileSuffixOfRenameRole</b> = Qt::UserRole + 16, 
+<b>FileSizeInKiloByteRole</b> = Qt::UserRole + 17, 
+<b>FileLastModifiedDateTimeRole</b> = Qt::UserRole + 18, 
+<b>FileIconModelToolTipRole</b> = Qt::UserRole + 19, 
+<br />
+&#160;&#160;<b>FileLastReadDateTimeRole</b> = Qt::UserRole + 20, 
+<b>FileCreatedDateTimeRole</b> = Qt::UserRole + 21, 
+<b>FileUserRole</b> = Qt::UserRole + 99, 
+<b>UnknowRole</b> = Qt::UserRole + 999
+<br />
+ }</td></tr>
+<tr class="separator:ad703c2cc60493c34531fbd85e60b2e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6bdef03036ee8565ab6382d8e9a271"><td class="memItemLeft" align="right" valign="top"><a id="a3f6bdef03036ee8565ab6382d8e9a271"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>State</b> { <b>Idle</b>, 
+<b>Busy</b>, 
+<b>Unknow</b>
+ }</td></tr>
+<tr class="separator:a3f6bdef03036ee8565ab6382d8e9a271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a7590a5a1c07f7811b1139b6011fa54d3"><td class="memItemLeft" align="right" valign="top"><a id="a7590a5a1c07f7811b1139b6011fa54d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateChildren</b> (<a class="el" href="class_q_list.html">QList</a>&lt; DAbstractFileInfoPointer &gt; list)</td></tr>
+<tr class="separator:a7590a5a1c07f7811b1139b6011fa54d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7bf5dd78948b2028aff315a3cdea0cf"><td class="memItemLeft" align="right" valign="top"><a id="ae7bf5dd78948b2028aff315a3cdea0cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateChildrenOnNewThread</b> (<a class="el" href="class_q_list.html">QList</a>&lt; DAbstractFileInfoPointer &gt; list)</td></tr>
+<tr class="separator:ae7bf5dd78948b2028aff315a3cdea0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fb32a6483d563b7a3d4aefcbdc1a94"><td class="memItemLeft" align="right" valign="top"><a id="ad8fb32a6483d563b7a3d4aefcbdc1a94"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_model.html#ad8fb32a6483d563b7a3d4aefcbdc1a94">refresh</a> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;fileUrl=<a class="el" href="class_d_url.html">DUrl</a>())</td></tr>
+<tr class="memdesc:ad8fb32a6483d563b7a3d4aefcbdc1a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">warning: only refresh current url <br /></td></tr>
+<tr class="separator:ad8fb32a6483d563b7a3d4aefcbdc1a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914f87ac987a46231ac02a96700c15ae"><td class="memItemLeft" align="right" valign="top"><a id="a914f87ac987a46231ac02a96700c15ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="separator:a914f87ac987a46231ac02a96700c15ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabff7cd31ba379c8d22e41cc7a3565bb"><td class="memItemLeft" align="right" valign="top"><a id="aabff7cd31ba379c8d22e41cc7a3565bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggleHiddenFiles</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;fileUrl)</td></tr>
+<tr class="separator:aabff7cd31ba379c8d22e41cc7a3565bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1101bdce41fe45e6860f2e4241f098e"><td class="memItemLeft" align="right" valign="top"><a id="af1101bdce41fe45e6860f2e4241f098e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnabledSort</b> (bool enabledSort)</td></tr>
+<tr class="separator:af1101bdce41fe45e6860f2e4241f098e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a6d64270d98e827420c9b8fa548943244"><td class="memItemLeft" align="right" valign="top"><a id="a6d64270d98e827420c9b8fa548943244"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rootUrlDeleted</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;rootUrl)</td></tr>
+<tr class="separator:a6d64270d98e827420c9b8fa548943244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d21658f964e5f645bbe784aff19fc3"><td class="memItemLeft" align="right" valign="top"><a id="a93d21658f964e5f645bbe784aff19fc3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stateChanged</b> (State state)</td></tr>
+<tr class="separator:a93d21658f964e5f645bbe784aff19fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8c0c687004150eafd50284f49a0f0e"><td class="memItemLeft" align="right" valign="top"><a id="a9f8c0c687004150eafd50284f49a0f0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enabledSortChanged</b> (bool enabledSort)</td></tr>
+<tr class="separator:a9f8c0c687004150eafd50284f49a0f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1014ffa4523ff02a9b05e0dfd62755bd"><td class="memItemLeft" align="right" valign="top"><a id="a1014ffa4523ff02a9b05e0dfd62755bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>newFileByInternal</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:a1014ffa4523ff02a9b05e0dfd62755bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab413fc641cda81267da576a343742aaf"><td class="memItemLeft" align="right" valign="top"><a id="ab413fc641cda81267da576a343742aaf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestSelectFiles</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;urls)</td></tr>
+<tr class="separator:ab413fc641cda81267da576a343742aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879e07adce2b72b68c525b0b4caec3a9"><td class="memItemLeft" align="right" valign="top"><a id="a879e07adce2b72b68c525b0b4caec3a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sigJobFinished</b> ()</td></tr>
+<tr class="separator:a879e07adce2b72b68c525b0b4caec3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d878029b4eb319f96af9c61af190d2"><td class="memItemLeft" align="right" valign="top"><a id="aa9d878029b4eb319f96af9c61af190d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestRedirect</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;rootUrl, const <a class="el" href="class_d_url.html">DUrl</a> &amp;newUrl)</td></tr>
+<tr class="separator:aa9d878029b4eb319f96af9c61af190d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84b639934d6886e65a5e68e6afd28da"><td class="memItemLeft" align="right" valign="top"><a id="ae84b639934d6886e65a5e68e6afd28da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showFilterButton</b> ()</td></tr>
+<tr class="separator:ae84b639934d6886e65a5e68e6afd28da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ade74eb5cec0e7c90bc0b09adbed9a248"><td class="memItemLeft" align="right" valign="top"><a id="ade74eb5cec0e7c90bc0b09adbed9a248"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFileSystemModel</b> (<a class="el" href="class_d_file_view_helper.html">DFileViewHelper</a> *parent)</td></tr>
+<tr class="separator:ade74eb5cec0e7c90bc0b09adbed9a248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7267b825e85e296802e40c134084ba9d"><td class="memItemLeft" align="right" valign="top"><a id="a7267b825e85e296802e40c134084ba9d"></a>
+<a class="el" href="class_d_file_view_helper.html">DFileViewHelper</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const</td></tr>
+<tr class="separator:a7267b825e85e296802e40c134084ba9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2ac67c974c5d9987280742dfe7105e"><td class="memItemLeft" align="right" valign="top"><a id="a1a2ac67c974c5d9987280742dfe7105e"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>index</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;fileUrl, int column=0)</td></tr>
+<tr class="separator:a1a2ac67c974c5d9987280742dfe7105e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc77a870325164dc92dfd6846a6cf8b"><td class="memItemLeft" align="right" valign="top"><a id="a0dc77a870325164dc92dfd6846a6cf8b"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>index</b> (int row, int column, const QModelIndex &amp;parent=QModelIndex()) const override</td></tr>
+<tr class="separator:a0dc77a870325164dc92dfd6846a6cf8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98690d9a7c4b77c7b02c4a1d304070a6"><td class="memItemLeft" align="right" valign="top"><a id="a98690d9a7c4b77c7b02c4a1d304070a6"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> (const QModelIndex &amp;child) const override</td></tr>
+<tr class="separator:a98690d9a7c4b77c7b02c4a1d304070a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909219ab46c95203e74bac54fd6dfbe6"><td class="memItemLeft" align="right" valign="top"><a id="a909219ab46c95203e74bac54fd6dfbe6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rowCount</b> (const QModelIndex &amp;parent=QModelIndex()) const override</td></tr>
+<tr class="separator:a909219ab46c95203e74bac54fd6dfbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cce04c2c539f01e63d8290f3e1c1709"><td class="memItemLeft" align="right" valign="top"><a id="a2cce04c2c539f01e63d8290f3e1c1709"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const QModelIndex &amp;parent=QModelIndex()) const override</td></tr>
+<tr class="separator:a2cce04c2c539f01e63d8290f3e1c1709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5d4c16db2e24dec4c6f48f13eb6404"><td class="memItemLeft" align="right" valign="top"><a id="a6e5d4c16db2e24dec4c6f48f13eb6404"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>columnWidth</b> (int column) const</td></tr>
+<tr class="separator:a6e5d4c16db2e24dec4c6f48f13eb6404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da15971c621fd309217d16d6b4738db"><td class="memItemLeft" align="right" valign="top"><a id="a3da15971c621fd309217d16d6b4738db"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>columnNameByRole</b> (int role, const QModelIndex &amp;index=QModelIndex()) const</td></tr>
+<tr class="separator:a3da15971c621fd309217d16d6b4738db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cd37505e0b574c98a6a9b0c0f6ac39"><td class="memItemLeft" align="right" valign="top"><a id="a74cd37505e0b574c98a6a9b0c0f6ac39"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>columnWidthByRole</b> (int role) const</td></tr>
+<tr class="separator:a74cd37505e0b574c98a6a9b0c0f6ac39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d28da2e88adb2c9d95f77cefe74a941"><td class="memItemLeft" align="right" valign="top"><a id="a1d28da2e88adb2c9d95f77cefe74a941"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>columnDefaultVisibleForRole</b> (int role, const QModelIndex &amp;index=QModelIndex()) const</td></tr>
+<tr class="separator:a1d28da2e88adb2c9d95f77cefe74a941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23ab9026a9e58df9e531ed4b4592c88"><td class="memItemLeft" align="right" valign="top"><a id="ab23ab9026a9e58df9e531ed4b4592c88"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasChildren</b> (const QModelIndex &amp;parent=QModelIndex()) const override</td></tr>
+<tr class="separator:ab23ab9026a9e58df9e531ed4b4592c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b15e4f74012eb4dc5b61154915a7a29"><td class="memItemLeft" align="right" valign="top"><a id="a0b15e4f74012eb4dc5b61154915a7a29"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</td></tr>
+<tr class="separator:a0b15e4f74012eb4dc5b61154915a7a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f14970eb02c002d4cbabf1fbefe323"><td class="memItemLeft" align="right" valign="top"><a id="a17f14970eb02c002d4cbabf1fbefe323"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>headerData</b> (int column, Qt::Orientation orientation, int role) const override</td></tr>
+<tr class="separator:a17f14970eb02c002d4cbabf1fbefe323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac933e4d9ea775ccaa9c29d5cc2dbab4c"><td class="memItemLeft" align="right" valign="top"><a id="ac933e4d9ea775ccaa9c29d5cc2dbab4c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>columnToRole</b> (int column) const</td></tr>
+<tr class="separator:ac933e4d9ea775ccaa9c29d5cc2dbab4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9028801483a9d9677ba4c7728e5330"><td class="memItemLeft" align="right" valign="top"><a id="a6c9028801483a9d9677ba4c7728e5330"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>roleToColumn</b> (int role) const</td></tr>
+<tr class="separator:a6c9028801483a9d9677ba4c7728e5330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace1d8c7fe36c728668ebdcb59ae9431"><td class="memItemLeft" align="right" valign="top"><a id="aace1d8c7fe36c728668ebdcb59ae9431"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canFetchMore</b> (const QModelIndex &amp;parent) const override</td></tr>
+<tr class="separator:aace1d8c7fe36c728668ebdcb59ae9431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad653f2fbc7936f850a54d93aa4711fcb"><td class="memItemLeft" align="right" valign="top"><a id="ad653f2fbc7936f850a54d93aa4711fcb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fetchMore</b> (const QModelIndex &amp;parent) override</td></tr>
+<tr class="separator:ad653f2fbc7936f850a54d93aa4711fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3452b1646f1305febad7d63c9f657b43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_model.html#a3452b1646f1305febad7d63c9f657b43">doFetchMore</a> (const QModelIndex &amp;parent)</td></tr>
+<tr class="separator:a3452b1646f1305febad7d63c9f657b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a8662a97c6e6c00d5161edf01004d7"><td class="memItemLeft" align="right" valign="top"><a id="a26a8662a97c6e6c00d5161edf01004d7"></a>
+Qt::ItemFlags&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> (const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:a26a8662a97c6e6c00d5161edf01004d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f71eeb5fd516111213986e3af6ed89"><td class="memItemLeft" align="right" valign="top"><a id="a74f71eeb5fd516111213986e3af6ed89"></a>
+Qt::DropActions&#160;</td><td class="memItemRight" valign="bottom"><b>supportedDragActions</b> () const override</td></tr>
+<tr class="separator:a74f71eeb5fd516111213986e3af6ed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbaef8a88c9ab98417e3a424409d9f5"><td class="memItemLeft" align="right" valign="top"><a id="a6dbaef8a88c9ab98417e3a424409d9f5"></a>
+Qt::DropActions&#160;</td><td class="memItemRight" valign="bottom"><b>supportedDropActions</b> () const override</td></tr>
+<tr class="separator:a6dbaef8a88c9ab98417e3a424409d9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fccf3293d335d5cb4a5cbc2f765a6e2"><td class="memItemLeft" align="right" valign="top"><a id="a4fccf3293d335d5cb4a5cbc2f765a6e2"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>mimeTypes</b> () const override</td></tr>
+<tr class="separator:a4fccf3293d335d5cb4a5cbc2f765a6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8829f227c80da680e60d6ea1b6d5fd0e"><td class="memItemLeft" align="right" valign="top"><a id="a8829f227c80da680e60d6ea1b6d5fd0e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dropMimeData</b> (const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &amp;parent) override</td></tr>
+<tr class="separator:a8829f227c80da680e60d6ea1b6d5fd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64b523cd04c320dc488a01c4f105b20"><td class="memItemLeft" align="right" valign="top"><a id="aa64b523cd04c320dc488a01c4f105b20"></a>
+QMimeData *&#160;</td><td class="memItemRight" valign="bottom"><b>mimeData</b> (const QModelIndexList &amp;indexes) const override</td></tr>
+<tr class="separator:aa64b523cd04c320dc488a01c4f105b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e6663c5bf9aa3ccbacfd2f9c57388b"><td class="memItemLeft" align="right" valign="top"><a id="a11e6663c5bf9aa3ccbacfd2f9c57388b"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>setRootUrl</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;fileUrl)</td></tr>
+<tr class="separator:a11e6663c5bf9aa3ccbacfd2f9c57388b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a90623dfa305b24ad1d72d79a1d95f"><td class="memItemLeft" align="right" valign="top"><a id="ab9a90623dfa305b24ad1d72d79a1d95f"></a>
+<a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rootUrl</b> () const</td></tr>
+<tr class="separator:ab9a90623dfa305b24ad1d72d79a1d95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca3a0b752a5139a100d7123b45364b5"><td class="memItemLeft" align="right" valign="top"><a id="aaca3a0b752a5139a100d7123b45364b5"></a>
+<a class="el" href="class_q_list.html">DUrlList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sortedUrls</b> ()</td></tr>
+<tr class="separator:aaca3a0b752a5139a100d7123b45364b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22098261595eed6c8799e0a12472cafb"><td class="memItemLeft" align="right" valign="top"><a id="a22098261595eed6c8799e0a12472cafb"></a>
+<a class="el" href="class_q_list.html">DUrlList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getNoTransparentUrls</b> ()</td></tr>
+<tr class="separator:a22098261595eed6c8799e0a12472cafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc9113aa5a9e897be442ae560fdee4a"><td class="memItemLeft" align="right" valign="top"><a id="a9cc9113aa5a9e897be442ae560fdee4a"></a>
+<a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getUrlByIndex</b> (const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:a9cc9113aa5a9e897be442ae560fdee4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f5dfd3fb1b3969eead314c305b2377"><td class="memItemLeft" align="right" valign="top"><a id="ab1f5dfd3fb1b3969eead314c305b2377"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSortColumn</b> (int column, Qt::SortOrder order=Qt::AscendingOrder)</td></tr>
+<tr class="separator:ab1f5dfd3fb1b3969eead314c305b2377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474b524de1596e64b87bf365ef4cb6db"><td class="memItemLeft" align="right" valign="top"><a id="a474b524de1596e64b87bf365ef4cb6db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSortRole</b> (int role, Qt::SortOrder order=Qt::AscendingOrder)</td></tr>
+<tr class="separator:a474b524de1596e64b87bf365ef4cb6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f80712c20eccec17fdc4d40527c94b8"><td class="memItemLeft" align="right" valign="top"><a id="a3f80712c20eccec17fdc4d40527c94b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNameFilters</b> (const QStringList &amp;nameFilters)</td></tr>
+<tr class="separator:a3f80712c20eccec17fdc4d40527c94b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052abddccc6d769dfc8ca01d916de114"><td class="memItemLeft" align="right" valign="top"><a id="a052abddccc6d769dfc8ca01d916de114"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFilters</b> (QDir::Filters filters)</td></tr>
+<tr class="separator:a052abddccc6d769dfc8ca01d916de114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299d6173673b813b11eeb9c11e27ac63"><td class="memItemLeft" align="right" valign="top"><a id="a299d6173673b813b11eeb9c11e27ac63"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAdvanceSearchFilter</b> (const <a class="el" href="class_q_map.html">QMap</a>&lt; int, QVariant &gt; &amp;formData, bool turnOn, bool updateView)</td></tr>
+<tr class="separator:a299d6173673b813b11eeb9c11e27ac63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34c48fdcb626962c6e58c9ee6c808d1"><td class="memItemLeft" align="right" valign="top"><a id="af34c48fdcb626962c6e58c9ee6c808d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>applyAdvanceSearchFilter</b> ()</td></tr>
+<tr class="separator:af34c48fdcb626962c6e58c9ee6c808d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b68007352bdfd3244d0c6d3cf5b264b"><td class="memItemLeft" align="right" valign="top"><a id="a4b68007352bdfd3244d0c6d3cf5b264b"></a>
+std::shared_ptr&lt; <a class="el" href="structfile_filter.html">FileFilter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>advanceSearchFilter</b> ()</td></tr>
+<tr class="separator:a4b68007352bdfd3244d0c6d3cf5b264b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae281e0155bd5430fba313b0adbb8015c"><td class="memItemLeft" align="right" valign="top"><a id="ae281e0155bd5430fba313b0adbb8015c"></a>
+Qt::SortOrder&#160;</td><td class="memItemRight" valign="bottom"><b>sortOrder</b> () const</td></tr>
+<tr class="separator:ae281e0155bd5430fba313b0adbb8015c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89733726af29f62e7bb1a443441506b2"><td class="memItemLeft" align="right" valign="top"><a id="a89733726af29f62e7bb1a443441506b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSortOrder</b> (const Qt::SortOrder &amp;order)</td></tr>
+<tr class="separator:a89733726af29f62e7bb1a443441506b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789e5df8bdb3d79edfef90eaf9346d57"><td class="memItemLeft" align="right" valign="top"><a id="a789e5df8bdb3d79edfef90eaf9346d57"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sortColumn</b> () const</td></tr>
+<tr class="separator:a789e5df8bdb3d79edfef90eaf9346d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde072230ac45886e626f442b4623617"><td class="memItemLeft" align="right" valign="top"><a id="adde072230ac45886e626f442b4623617"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sortRole</b> () const</td></tr>
+<tr class="separator:adde072230ac45886e626f442b4623617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f463f78a33f0a8506a4aa34a9f453e"><td class="memItemLeft" align="right" valign="top"><a id="a58f463f78a33f0a8506a4aa34a9f453e"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>nameFilters</b> () const</td></tr>
+<tr class="separator:a58f463f78a33f0a8506a4aa34a9f453e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689e44be40bc836cb3e1bf2747d480a4"><td class="memItemLeft" align="right" valign="top"><a id="a689e44be40bc836cb3e1bf2747d480a4"></a>
+QDir::Filters&#160;</td><td class="memItemRight" valign="bottom"><b>filters</b> () const</td></tr>
+<tr class="separator:a689e44be40bc836cb3e1bf2747d480a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10446310f27dfb1ff2b5067727bf9f2"><td class="memItemLeft" align="right" valign="top"><a id="ac10446310f27dfb1ff2b5067727bf9f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sort</b> (int column, Qt::SortOrder order=Qt::AscendingOrder) override</td></tr>
+<tr class="separator:ac10446310f27dfb1ff2b5067727bf9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fa67dc9fff56393d4828fe58dc0b71"><td class="memItemLeft" align="right" valign="top"><a id="a78fa67dc9fff56393d4828fe58dc0b71"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sort</b> ()</td></tr>
+<tr class="separator:a78fa67dc9fff56393d4828fe58dc0b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d990656d4aeb81c5fbc7c3ba9caf258"><td class="memItemLeft" align="right" valign="top"><a id="a1d990656d4aeb81c5fbc7c3ba9caf258"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sort</b> (bool emitDataChange)</td></tr>
+<tr class="separator:a1d990656d4aeb81c5fbc7c3ba9caf258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04822b3b02ad2e6689535c8db248a892"><td class="memItemLeft" align="right" valign="top"><a id="a04822b3b02ad2e6689535c8db248a892"></a>
+const DAbstractFileInfoPointer&#160;</td><td class="memItemRight" valign="bottom"><b>fileInfo</b> (const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:a04822b3b02ad2e6689535c8db248a892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96a97eb2fb570ce54fd4e1153c7b4de"><td class="memItemLeft" align="right" valign="top"><a id="ad96a97eb2fb570ce54fd4e1153c7b4de"></a>
+const DAbstractFileInfoPointer&#160;</td><td class="memItemRight" valign="bottom"><b>fileInfo</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;fileUrl) const</td></tr>
+<tr class="separator:ad96a97eb2fb570ce54fd4e1153c7b4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48ec392bb8589ced2a01be391d35e9f"><td class="memItemLeft" align="right" valign="top"><a id="aa48ec392bb8589ced2a01be391d35e9f"></a>
+const DAbstractFileInfoPointer&#160;</td><td class="memItemRight" valign="bottom"><b>parentFileInfo</b> (const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:aa48ec392bb8589ced2a01be391d35e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1acc48972e09e61a790ce7efe2d690"><td class="memItemLeft" align="right" valign="top"><a id="aad1acc48972e09e61a790ce7efe2d690"></a>
+const DAbstractFileInfoPointer&#160;</td><td class="memItemRight" valign="bottom"><b>parentFileInfo</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;fileUrl) const</td></tr>
+<tr class="separator:aad1acc48972e09e61a790ce7efe2d690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761d70eaf17f834a7024cc64c419223e"><td class="memItemLeft" align="right" valign="top"><a id="a761d70eaf17f834a7024cc64c419223e"></a>
+State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const</td></tr>
+<tr class="separator:a761d70eaf17f834a7024cc64c419223e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad5e4660d0d938ea726e393cbdf1676"><td class="memItemLeft" align="right" valign="top"><a id="a3ad5e4660d0d938ea726e393cbdf1676"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setReadOnly</b> (bool readOnly)</td></tr>
+<tr class="separator:a3ad5e4660d0d938ea726e393cbdf1676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99fde305c8aa0eeedc5a6b089c119631"><td class="memItemLeft" align="right" valign="top"><a id="a99fde305c8aa0eeedc5a6b089c119631"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isReadOnly</b> () const</td></tr>
+<tr class="separator:a99fde305c8aa0eeedc5a6b089c119631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18903cef236c6988cea82288fd5a7362"><td class="memItemLeft" align="right" valign="top"><a id="a18903cef236c6988cea82288fd5a7362"></a>
+<a class="el" href="class_d_abstract_file_watcher.html">DAbstractFileWatcher</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>fileWatcher</b> () const</td></tr>
+<tr class="separator:a18903cef236c6988cea82288fd5a7362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50c5d42a66d4749bca972bb9a3f4880"><td class="memItemLeft" align="right" valign="top"><a id="ad50c5d42a66d4749bca972bb9a3f4880"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enabledSort</b> () const</td></tr>
+<tr class="separator:ad50c5d42a66d4749bca972bb9a3f4880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b95d080a5b565a764d5946fc927c86"><td class="memItemLeft" align="right" valign="top"><a id="a92b95d080a5b565a764d5946fc927c86"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setColumnCompact</b> (bool compact)</td></tr>
+<tr class="separator:a92b95d080a5b565a764d5946fc927c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa1d3555a8238a600dae0dbd1790896"><td class="memItemLeft" align="right" valign="top"><a id="a1fa1d3555a8238a600dae0dbd1790896"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>columnIsCompact</b> () const</td></tr>
+<tr class="separator:a1fa1d3555a8238a600dae0dbd1790896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8dde2c64a0be22718ee2054362fee83"><td class="memItemLeft" align="right" valign="top"><a id="ad8dde2c64a0be22718ee2054362fee83"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setColumnActiveRole</b> (int column, int role)</td></tr>
+<tr class="separator:ad8dde2c64a0be22718ee2054362fee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0be47bf85e5aceb0af6956c50b4ff8"><td class="memItemLeft" align="right" valign="top"><a id="afb0be47bf85e5aceb0af6956c50b4ff8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>columnActiveRole</b> (int column) const</td></tr>
+<tr class="separator:afb0be47bf85e5aceb0af6956c50b4ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a3b40999570c0679509099d8f81698dad"><td class="memItemLeft" align="right" valign="top"><a id="a3b40999570c0679509099d8f81698dad"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>roleName</b> (int role)</td></tr>
+<tr class="separator:a3b40999570c0679509099d8f81698dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a8b13f3d942423e5b27f2ecb1d6eadcd6"><td class="memItemLeft" align="right" valign="top"><a id="a8b13f3d942423e5b27f2ecb1d6eadcd6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:a8b13f3d942423e5b27f2ecb1d6eadcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794d3300e61b03563673939608d454b4"><td class="memItemLeft" align="right" valign="top"><a id="a794d3300e61b03563673939608d454b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeRows</b> (int row, int count, const QModelIndex &amp;parent=QModelIndex()) override</td></tr>
+<tr class="separator:a794d3300e61b03563673939608d454b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a2b46cc2f8bb9b331c06567a66e229d9f"><td class="memItemLeft" align="right" valign="top"><a id="a2b46cc2f8bb9b331c06567a66e229d9f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enabledSort</b></td></tr>
+<tr class="separator:a2b46cc2f8bb9b331c06567a66e229d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a8cae1cb5de5772f0b0f61ea975c7b854"><td class="memItemLeft" align="right" valign="top"><a id="a8cae1cb5de5772f0b0f61ea975c7b854"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>FileSystemNode</b></td></tr>
+<tr class="separator:a8cae1cb5de5772f0b0f61ea975c7b854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bee3a5b20bd0a6b461c6be6d2979d36"><td class="memItemLeft" align="right" valign="top"><a id="a9bee3a5b20bd0a6b461c6be6d2979d36"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DFileView</b></td></tr>
+<tr class="separator:a9bee3a5b20bd0a6b461c6be6d2979d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0824c934663a1116b699f32376192bb3"><td class="memItemLeft" align="right" valign="top"><a id="a0824c934663a1116b699f32376192bb3"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>FileNodeManagerThread</b></td></tr>
+<tr class="separator:a0824c934663a1116b699f32376192bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf80bf74e203c7be89e90a2be07d5888"><td class="memItemLeft" align="right" valign="top"><a id="adf80bf74e203c7be89e90a2be07d5888"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DListItemDelegate</b></td></tr>
+<tr class="separator:adf80bf74e203c7be89e90a2be07d5888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dfilesystemmodel_8h_source.html">dfilesystemmodel.h</a> 第 <a class="el" href="dfilesystemmodel_8h_source.html#l00084">84</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a3452b1646f1305febad7d63c9f657b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3452b1646f1305febad7d63c9f657b43">&#9670;&nbsp;</a></span>doFetchMore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFileSystemModel::doFetchMore </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>make root file to active</p>
+<p>start file watcher </p>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemmodel_8cpp_source.html">dfilesystemmodel.cpp</a> 第 <a class="el" href="dfilesystemmodel_8cpp_source.html#l01722">1722</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfilesystemmodel_8h_source.html">dfilesystemmodel.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfilesystemmodel_8cpp_source.html">dfilesystemmodel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_d_file_system_model.html">DFileSystemModel</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

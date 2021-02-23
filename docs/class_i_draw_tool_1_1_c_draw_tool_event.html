@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: IDrawTool::CDrawToolEvent类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_i_draw_tool_1_1_c_draw_tool_event.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_i_draw_tool_1_1_c_draw_tool_event-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IDrawTool::CDrawToolEvent类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aaca053bb38d62a97f75b5bd81030c2e8"><td class="memItemLeft" align="right" valign="top"><a id="aaca053bb38d62a97f75b5bd81030c2e8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EPosType</b> { <b>EScenePos</b>, 
+<b>EViewportPos</b>, 
+<b>EGlobelPos</b>, 
+<b>PosTypeCount</b>
+ }</td></tr>
+<tr class="separator:aaca053bb38d62a97f75b5bd81030c2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86681e2e36c057e66a820e49f9aa05f1"><td class="memItemLeft" align="right" valign="top"><a id="a86681e2e36c057e66a820e49f9aa05f1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EEventTp</b> { <b>EMouseEvent</b>, 
+<b>ETouchEvent</b>, 
+<b>EEventSimulated</b>, 
+<b>EEventCount</b>
+ }</td></tr>
+<tr class="separator:a86681e2e36c057e66a820e49f9aa05f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b95fa44bfdb8f856cf35d9a935a30a7"><td class="memItemLeft" align="right" valign="top"><a id="a0b95fa44bfdb8f856cf35d9a935a30a7"></a>
+typedef <a class="el" href="class_q_map.html">QMap</a>&lt; int, <a class="el" href="class_i_draw_tool_1_1_c_draw_tool_event.html">CDrawToolEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CDrawToolEvents</b></td></tr>
+<tr class="separator:a0b95fa44bfdb8f856cf35d9a935a30a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4dc677817b58fb1f77fa73f2c24ed2ec"><td class="memItemLeft" align="right" valign="top"><a id="a4dc677817b58fb1f77fa73f2c24ed2ec"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CDrawToolEvent</b> (const QPointF &amp;vPos=QPointF(), const QPointF &amp;scenePos=QPointF(), const QPointF &amp;globelPos=QPointF(), <a class="el" href="class_c_draw_scene.html">CDrawScene</a> *pScene=nullptr)</td></tr>
+<tr class="separator:a4dc677817b58fb1f77fa73f2c24ed2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084f1051590d838c4b16d63851c79803"><td class="memItemLeft" align="right" valign="top"><a id="a084f1051590d838c4b16d63851c79803"></a>
+QPointF&#160;</td><td class="memItemRight" valign="bottom"><b>pos</b> (EPosType tp=EScenePos) const</td></tr>
+<tr class="separator:a084f1051590d838c4b16d63851c79803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0c3f578f183956d30c6cea47d652e8"><td class="memItemLeft" align="right" valign="top"><a id="a3a0c3f578f183956d30c6cea47d652e8"></a>
+Qt::MouseButtons&#160;</td><td class="memItemRight" valign="bottom"><b>mouseButtons</b> () const</td></tr>
+<tr class="separator:a3a0c3f578f183956d30c6cea47d652e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ae5c99c2e27490303586a004bc4ddf"><td class="memItemLeft" align="right" valign="top"><a id="ae9ae5c99c2e27490303586a004bc4ddf"></a>
+Qt::KeyboardModifiers&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardModifiers</b> () const</td></tr>
+<tr class="separator:ae9ae5c99c2e27490303586a004bc4ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e768e5b52dcfef7180ff65421bcd44"><td class="memItemLeft" align="right" valign="top"><a id="a03e768e5b52dcfef7180ff65421bcd44"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>uuid</b> () const</td></tr>
+<tr class="separator:a03e768e5b52dcfef7180ff65421bcd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba7c721db24d00dd664bb69148e6a26"><td class="memItemLeft" align="right" valign="top"><a id="a1ba7c721db24d00dd664bb69148e6a26"></a>
+EEventTp&#160;</td><td class="memItemRight" valign="bottom"><b>eventType</b> ()</td></tr>
+<tr class="separator:a1ba7c721db24d00dd664bb69148e6a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20b3323a4257396666dcc583e59ece1"><td class="memItemLeft" align="right" valign="top"><a id="ac20b3323a4257396666dcc583e59ece1"></a>
+QEvent *&#160;</td><td class="memItemRight" valign="bottom"><b>orgQtEvent</b> ()</td></tr>
+<tr class="separator:ac20b3323a4257396666dcc583e59ece1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98671136b7e67d6dffedbc77450e9331"><td class="memItemLeft" align="right" valign="top"><a id="a98671136b7e67d6dffedbc77450e9331"></a>
+<a class="el" href="class_c_draw_scene.html">CDrawScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b> ()</td></tr>
+<tr class="separator:a98671136b7e67d6dffedbc77450e9331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87800cfe0fc935613e6eadfe703f0ee7"><td class="memItemLeft" align="right" valign="top"><a id="a87800cfe0fc935613e6eadfe703f0ee7"></a>
+<a class="el" href="class_c_graphics_view.html">CGraphicsView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>view</b> () const</td></tr>
+<tr class="separator:a87800cfe0fc935613e6eadfe703f0ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470d4b129e5a33b6a9ddd44ea59d7a14"><td class="memItemLeft" align="right" valign="top"><a id="a470d4b129e5a33b6a9ddd44ea59d7a14"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isAccepted</b> () const</td></tr>
+<tr class="separator:a470d4b129e5a33b6a9ddd44ea59d7a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f73ac1169e1b00780f11e18b4b618e"><td class="memItemLeft" align="right" valign="top"><a id="a96f73ac1169e1b00780f11e18b4b618e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAccepted</b> (bool b)</td></tr>
+<tr class="separator:a96f73ac1169e1b00780f11e18b4b618e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade38bdcda6ea1ff3559245a41d01ae03"><td class="memItemLeft" align="right" valign="top"><a id="ade38bdcda6ea1ff3559245a41d01ae03"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPosXAccepted</b> () const</td></tr>
+<tr class="separator:ade38bdcda6ea1ff3559245a41d01ae03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9dc8007470d97e954ea0d1c32ff21f"><td class="memItemLeft" align="right" valign="top"><a id="a1f9dc8007470d97e954ea0d1c32ff21f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosXAccepted</b> (bool b)</td></tr>
+<tr class="separator:a1f9dc8007470d97e954ea0d1c32ff21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214d16a3dac86152df0bd9c31e722673"><td class="memItemLeft" align="right" valign="top"><a id="a214d16a3dac86152df0bd9c31e722673"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPosYAccepted</b> () const</td></tr>
+<tr class="separator:a214d16a3dac86152df0bd9c31e722673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbe0dcaa5730880985f655d4eb793f4"><td class="memItemLeft" align="right" valign="top"><a id="a9dbe0dcaa5730880985f655d4eb793f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosYAccepted</b> (bool b)</td></tr>
+<tr class="separator:a9dbe0dcaa5730880985f655d4eb793f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:acc5d57b34a118b20f53a312ca77ff43a"><td class="memItemLeft" align="right" valign="top"><a id="acc5d57b34a118b20f53a312ca77ff43a"></a>
+static <a class="el" href="class_q_map.html">CDrawToolEvents</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fromQEvent</b> (QEvent *event, <a class="el" href="class_c_draw_scene.html">CDrawScene</a> *scene)</td></tr>
+<tr class="separator:acc5d57b34a118b20f53a312ca77ff43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97365923da7eaa20f6540f567a509c8"><td class="memItemLeft" align="right" valign="top"><a id="ae97365923da7eaa20f6540f567a509c8"></a>
+static <a class="el" href="class_i_draw_tool_1_1_c_draw_tool_event.html">CDrawToolEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fromTouchPoint</b> (const QTouchEvent::TouchPoint &amp;tPos, <a class="el" href="class_c_draw_scene.html">CDrawScene</a> *scene, QEvent *eOrg=nullptr)</td></tr>
+<tr class="separator:ae97365923da7eaa20f6540f567a509c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aa0f2ea107c8317e4fa1fa310c693d06b"><td class="memItemLeft" align="right" valign="top"><a id="aa0f2ea107c8317e4fa1fa310c693d06b"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>IDrawTool</b></td></tr>
+<tr class="separator:aa0f2ea107c8317e4fa1fa310c693d06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="idrawtool_8h_source.html">idrawtool.h</a> 第 <a class="el" href="idrawtool_8h_source.html#l00085">85</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>deepin-draw/src/drawshape/drawTools/<a class="el" href="idrawtool_8h_source.html">idrawtool.h</a></li>
+<li>deepin-draw/src/drawshape/drawTools/<a class="el" href="idrawtool_8cpp_source.html">idrawtool.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_i_draw_tool.html">IDrawTool</a></li><li class="navelem"><a class="el" href="class_i_draw_tool_1_1_c_draw_tool_event.html">CDrawToolEvent</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

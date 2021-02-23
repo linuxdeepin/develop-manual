@@ -1,0 +1,23 @@
+digraph "DFM_USE_NAMESPACE::TestBookMarkManager"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="DFM_USE_NAMESPACE::\lTestBookMarkManager",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="testing::Test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtesting_1_1_test.html"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_pHandler" ,fontname="Helvetica"];
+  Node4 [label="DFMSideBarBookmarkItemHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_f_m_side_bar_bookmark_item_handler.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="DFMSideBarItemInterface",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_pTester" ,fontname="Helvetica"];
+  Node6 [label="BookMarkManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_book_mark_manager.html"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="DAbstractFileController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_abstract_file_controller.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="QObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_pItem" ,fontname="Helvetica"];
+  Node9 [label="dde_file_manager::DFMSide\lBarItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdde__file__manager_1_1_d_f_m_side_bar_item.html"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="DStandardItem",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

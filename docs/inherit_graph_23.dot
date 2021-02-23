@@ -1,0 +1,25 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node957 [label="QStandardItemModel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node957 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="AlbumDataModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_album_data_model.html"];
+  Node957 -> Node959 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node959 [label="dcc::keyboard::IndexModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdcc_1_1keyboard_1_1_index_model.html"];
+  Node957 -> Node960 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node960 [label="DCC_NAMESPACE::search\l::SearchModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1search_1_1_search_model.html"];
+  Node957 -> Node961 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node961 [label="dde_file_manager::DFMCrumb\lListviewModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdde__file__manager_1_1_d_f_m_crumb_listview_model.html"];
+  Node957 -> Node962 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node962 [label="DFMSideBarModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_f_m_side_bar_model.html"];
+  Node957 -> Node963 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node963 [label="MusicBaseAndSonglistModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_music_base_and_songlist_model.html"];
+  Node957 -> Node964 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node964 [label="MusicSearchListModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_music_search_list_model.html"];
+  Node957 -> Node965 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node965 [label="PlaylistModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_playlist_model.html"];
+  Node957 -> Node966 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node966 [label="SingerDataModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_singer_data_model.html"];
+}

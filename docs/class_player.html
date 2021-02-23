@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: Player类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_player.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_player-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Player类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Player 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player__inherit__graph.png" border="0" usemap="#_player_inherit__map" alt="Inheritance graph"/></div>
+<map name="_player_inherit__map" id="_player_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Player 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player__coll__graph.png" border="0" usemap="#_player_coll__map" alt="Collaboration graph"/></div>
+<map name="_player_coll__map" id="_player_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a14a1dd4a21f3ce57092b0be264cfb33f"><td class="memItemLeft" align="right" valign="top"><a id="a14a1dd4a21f3ce57092b0be264cfb33f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlaybackStatus</b> { <b>InvalidPlaybackStatus</b> = -1, 
+<b>Stopped</b> = 0, 
+<b>Playing</b>, 
+<b>Paused</b>
+ }</td></tr>
+<tr class="separator:a14a1dd4a21f3ce57092b0be264cfb33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1dc9b340e15073248e54345987543b1"><td class="memItemLeft" align="right" valign="top"><a id="af1dc9b340e15073248e54345987543b1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlaybackMode</b> { <b>RepeatNull</b> = -1, 
+<b>RepeatAll</b>, 
+<b>RepeatSingle</b>, 
+<b>Shuffle</b>
+ }</td></tr>
+<tr class="separator:af1dc9b340e15073248e54345987543b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00751afcc2b7ffd15de38491383904a5"><td class="memItemLeft" align="right" valign="top"><a id="a00751afcc2b7ffd15de38491383904a5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Error</b> { <br />
+&#160;&#160;<b>NoError</b>, 
+<b>ResourceError</b>, 
+<b>FormatError</b>, 
+<b>NetworkError</b>, 
+<br />
+&#160;&#160;<b>AccessDeniedError</b>, 
+<b>ServiceMissingError</b>, 
+<b>MediaIsPlaylist</b>
+<br />
+ }</td></tr>
+<tr class="separator:a00751afcc2b7ffd15de38491383904a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a93f516c5ea7195ad8d27fe3bc16e23b3"><td class="memItemLeft" align="right" valign="top"><a id="a93f516c5ea7195ad8d27fe3bc16e23b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changePicture</b> ()</td></tr>
+<tr class="separator:a93f516c5ea7195ad8d27fe3bc16e23b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c89b3f2bbadef81dafd782bb554eb24"><td class="memItemLeft" align="right" valign="top"><a id="a4c89b3f2bbadef81dafd782bb554eb24"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVolume</b> (int volume)</td></tr>
+<tr class="separator:a4c89b3f2bbadef81dafd782bb554eb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3398f302fc8ad2df6fa2d830dbb3b1d0"><td class="memItemLeft" align="right" valign="top"><a id="a3398f302fc8ad2df6fa2d830dbb3b1d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMuted</b> (bool muted)</td></tr>
+<tr class="separator:a3398f302fc8ad2df6fa2d830dbb3b1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a168267e938b105f7ff18ab6a0516072e"><td class="memItemLeft" align="right" valign="top"><a id="a168267e938b105f7ff18ab6a0516072e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCanControl</b> (bool canControl)</td></tr>
+<tr class="separator:a168267e938b105f7ff18ab6a0516072e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82f554db5a233be39d8352bdbd5a8a2"><td class="memItemLeft" align="right" valign="top"><a id="ae82f554db5a233be39d8352bdbd5a8a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (qlonglong <a class="el" href="class_player.html#a25a47d1ec3e13ff95a87091dcd3c732e">position</a>)</td></tr>
+<tr class="separator:ae82f554db5a233be39d8352bdbd5a8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89995fd8a829aab1cec0eff7f26367d2"><td class="memItemLeft" align="right" valign="top"><a id="a89995fd8a829aab1cec0eff7f26367d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMode</b> (PlaybackMode mode)</td></tr>
+<tr class="separator:a89995fd8a829aab1cec0eff7f26367d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83d39bba657ac2c0d9036c91983a3664"><td class="memItemLeft" align="right" valign="top"><a id="a83d39bba657ac2c0d9036c91983a3664"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDbusMuted</b> (bool muted=false)</td></tr>
+<tr class="separator:a83d39bba657ac2c0d9036c91983a3664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541f2b724bb4f696286c40a60fc6f556"><td class="memItemLeft" align="right" valign="top"><a id="a541f2b724bb4f696286c40a60fc6f556"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFadeInOutFactor</b> (double fadeInOutFactor)</td></tr>
+<tr class="separator:a541f2b724bb4f696286c40a60fc6f556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6b2153bfbafe3fd1bcf5bbc75d258c"><td class="memItemLeft" align="right" valign="top"><a id="aee6b2153bfbafe3fd1bcf5bbc75d258c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFadeInOut</b> (bool fadeInOut)</td></tr>
+<tr class="separator:aee6b2153bfbafe3fd1bcf5bbc75d258c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8fe4dd405cfad1de3959fa72ebe267"><td class="memItemLeft" align="right" valign="top"><a id="a4f8fe4dd405cfad1de3959fa72ebe267"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEqualizer</b> (bool enabled, int curIndex, <a class="el" href="class_q_list.html">QList</a>&lt; int &gt; indexbaud)</td></tr>
+<tr class="separator:a4f8fe4dd405cfad1de3959fa72ebe267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a237ac58b6b207df007bcb4b180ac4567"><td class="memItemLeft" align="right" valign="top"><a id="a237ac58b6b207df007bcb4b180ac4567"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEqualizerEnable</b> (bool enable)</td></tr>
+<tr class="separator:a237ac58b6b207df007bcb4b180ac4567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d03de6198b6b40cef3c7313f1680d5f"><td class="memItemLeft" align="right" valign="top"><a id="a3d03de6198b6b40cef3c7313f1680d5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEqualizerpre</b> (int val)</td></tr>
+<tr class="separator:a3d03de6198b6b40cef3c7313f1680d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df8435d74d2adced882e64e672d21d3"><td class="memItemLeft" align="right" valign="top"><a id="a2df8435d74d2adced882e64e672d21d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEqualizerbauds</b> (int index, int val)</td></tr>
+<tr class="separator:a2df8435d74d2adced882e64e672d21d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c4d5fbf9e86449e64b12596b356455"><td class="memItemLeft" align="right" valign="top"><a id="ae0c4d5fbf9e86449e64b12596b356455"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEqualizerCurMode</b> (int curIndex)</td></tr>
+<tr class="separator:ae0c4d5fbf9e86449e64b12596b356455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35c2d57fc794151d8b12a5ffe118ed7"><td class="memItemLeft" align="right" valign="top"><a id="ae35c2d57fc794151d8b12a5ffe118ed7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValidDbusMute</b> ()</td></tr>
+<tr class="separator:ae35c2d57fc794151d8b12a5ffe118ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:aa357ca48420873f41b7be70381feed7a"><td class="memItemLeft" align="right" valign="top"><a id="aa357ca48420873f41b7be70381feed7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>signalPlaybackStatusChanged</b> (Player::PlaybackStatus playbackStatus)</td></tr>
+<tr class="separator:aa357ca48420873f41b7be70381feed7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a961e640a6c778d3f06cb17db3ec4cc"><td class="memItemLeft" align="right" valign="top"><a id="a1a961e640a6c778d3f06cb17db3ec4cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>signalMediaMetaChanged</b> (<a class="el" href="struct_media_meta.html">MediaMeta</a> meta)</td></tr>
+<tr class="separator:a1a961e640a6c778d3f06cb17db3ec4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad662898c6df42e6657f86061721ded3e"><td class="memItemLeft" align="right" valign="top"><a id="ad662898c6df42e6657f86061721ded3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>signalUpdatePlayingIcon</b> ()</td></tr>
+<tr class="separator:ad662898c6df42e6657f86061721ded3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0d7cd175d746e07c0e6daf10f356f1"><td class="memItemLeft" align="right" valign="top"><a id="a0b0d7cd175d746e07c0e6daf10f356f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>signalPlayListChanged</b> ()</td></tr>
+<tr class="separator:a0b0d7cd175d746e07c0e6daf10f356f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f08d0f7c6bf689d31dbc08af9906741"><td class="memItemLeft" align="right" valign="top"><a id="a6f08d0f7c6bf689d31dbc08af9906741"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>signalMediaStop</b> (const QString &amp;activeHah)</td></tr>
+<tr class="separator:a6f08d0f7c6bf689d31dbc08af9906741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789d46a4bc95a82ea499aafcdb515340"><td class="memItemLeft" align="right" valign="top"><a id="a789d46a4bc95a82ea499aafcdb515340"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>signalPlayQueueMetaRemove</b> (const QString &amp;metaHash)</td></tr>
+<tr class="separator:a789d46a4bc95a82ea499aafcdb515340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609843b5bed94b8d50c84212df7adc99"><td class="memItemLeft" align="right" valign="top"><a id="a609843b5bed94b8d50c84212df7adc99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>signalMutedChanged</b> ()</td></tr>
+<tr class="separator:a609843b5bed94b8d50c84212df7adc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1980ee8d4d26b6089c9b7c9d982a8c44"><td class="memItemLeft" align="right" valign="top"><a id="a1980ee8d4d26b6089c9b7c9d982a8c44"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>signalVolumeChanged</b> ()</td></tr>
+<tr class="separator:a1980ee8d4d26b6089c9b7c9d982a8c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b187ab9406c4d7cdc24846f24a7d2ad"><td class="memItemLeft" align="right" valign="top"><a id="a8b187ab9406c4d7cdc24846f24a7d2ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readyToResume</b> ()</td></tr>
+<tr class="separator:a8b187ab9406c4d7cdc24846f24a7d2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c539394d77ff5a430997ade799a4af1"><td class="memItemLeft" align="right" valign="top"><a id="a5c539394d77ff5a430997ade799a4af1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>canControlChanged</b> (bool canControl)</td></tr>
+<tr class="separator:a5c539394d77ff5a430997ade799a4af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05501667ead2200621dfeb6e401de077"><td class="memItemLeft" align="right" valign="top"><a id="a05501667ead2200621dfeb6e401de077"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>positionChanged</b> (qlonglong <a class="el" href="class_player.html#a25a47d1ec3e13ff95a87091dcd3c732e">position</a>, qlonglong length, qint64 coefficient)</td></tr>
+<tr class="separator:a05501667ead2200621dfeb6e401de077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5dca71599886c03340eaa82cae140ea"><td class="memItemLeft" align="right" valign="top"><a id="ac5dca71599886c03340eaa82cae140ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sliderReleased</b> (qint64 value)</td></tr>
+<tr class="separator:ac5dca71599886c03340eaa82cae140ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b1f35daef74c8724f392a13f714465"><td class="memItemLeft" align="right" valign="top"><a id="af7b1f35daef74c8724f392a13f714465"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>modeChanged</b> (PlaybackMode mode)</td></tr>
+<tr class="separator:af7b1f35daef74c8724f392a13f714465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4b0908df8ab4c6f1e6dee7b6f1f219"><td class="memItemLeft" align="right" valign="top"><a id="a7d4b0908df8ab4c6f1e6dee7b6f1f219"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>localMutedChanged</b> ()</td></tr>
+<tr class="separator:a7d4b0908df8ab4c6f1e6dee7b6f1f219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a4ab6beb7cd9bc6b70488cff102923"><td class="memItemLeft" align="right" valign="top"><a id="a14a4ab6beb7cd9bc6b70488cff102923"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>durationChanged</b> (qint64 duration)</td></tr>
+<tr class="separator:a14a4ab6beb7cd9bc6b70488cff102923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048acb93b0a65dfdb0442a03d2f82e00"><td class="memItemLeft" align="right" valign="top"><a id="a048acb93b0a65dfdb0442a03d2f82e00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fadeInOutFactorChanged</b> (double fadeInOutFactor)</td></tr>
+<tr class="separator:a048acb93b0a65dfdb0442a03d2f82e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a981c06dd63b44c2837b3e7ac05efa1"><td class="memItemLeft" align="right" valign="top"><a id="a4a981c06dd63b44c2837b3e7ac05efa1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fadeInOutChanged</b> (bool fadeInOut)</td></tr>
+<tr class="separator:a4a981c06dd63b44c2837b3e7ac05efa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4991a5376eaf31f4ea8075766c144351"><td class="memItemLeft" align="right" valign="top"><a id="a4991a5376eaf31f4ea8075766c144351"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>playOnLoadedChanged</b> (bool playOnLoaded)</td></tr>
+<tr class="separator:a4991a5376eaf31f4ea8075766c144351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45db85bc0df7510072730c96f05b298"><td class="memItemLeft" align="right" valign="top"><a id="ad45db85bc0df7510072730c96f05b298"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>audioBufferProbed</b> (const QAudioBuffer &amp;buffer)</td></tr>
+<tr class="separator:ad45db85bc0df7510072730c96f05b298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a501dd4e9f9afb1651891e7ece20014f4"><td class="memItemLeft" align="right" valign="top"><a id="a501dd4e9f9afb1651891e7ece20014f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>playMeta</b> (<a class="el" href="struct_media_meta.html">MediaMeta</a> meta)</td></tr>
+<tr class="separator:a501dd4e9f9afb1651891e7ece20014f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7749254cf909d029127d4622670c522"><td class="memItemLeft" align="right" valign="top"><a id="aa7749254cf909d029127d4622670c522"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pause</b> ()</td></tr>
+<tr class="separator:aa7749254cf909d029127d4622670c522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa286cb87328b067ffd2e722d0d389755"><td class="memItemLeft" align="right" valign="top"><a id="aa286cb87328b067ffd2e722d0d389755"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resume</b> ()</td></tr>
+<tr class="separator:aa286cb87328b067ffd2e722d0d389755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023e92b4a7c6fe514ad25d52a574374c"><td class="memItemLeft" align="right" valign="top"><a id="a023e92b4a7c6fe514ad25d52a574374c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pauseNow</b> ()</td></tr>
+<tr class="separator:a023e92b4a7c6fe514ad25d52a574374c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90193149cc5ae4e2521190f315deb084"><td class="memItemLeft" align="right" valign="top"><a id="a90193149cc5ae4e2521190f315deb084"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>playPreMeta</b> ()</td></tr>
+<tr class="separator:a90193149cc5ae4e2521190f315deb084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae848758c74ee6ae2db910a15c14340cc"><td class="memItemLeft" align="right" valign="top"><a id="ae848758c74ee6ae2db910a15c14340cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>playNextMeta</b> (bool isAuto)</td></tr>
+<tr class="separator:ae848758c74ee6ae2db910a15c14340cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa900e01076c198cb6b3c67cff14d841"><td class="memItemLeft" align="right" valign="top"><a id="afa900e01076c198cb6b3c67cff14d841"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearPlayList</b> ()</td></tr>
+<tr class="separator:afa900e01076c198cb6b3c67cff14d841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9981da42882689ab1a7d0279eaa6b2"><td class="memItemLeft" align="right" valign="top"><a id="a5d9981da42882689ab1a7d0279eaa6b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>playRmvMeta</b> (const QStringList &amp;metalistToDel)</td></tr>
+<tr class="separator:a5d9981da42882689ab1a7d0279eaa6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53da889bd0351e6feac0d9b4ba19b1f"><td class="memItemLeft" align="right" valign="top"><a id="ad53da889bd0351e6feac0d9b4ba19b1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeMeta</b> (const QStringList &amp;metalistToDel)</td></tr>
+<tr class="separator:ad53da889bd0351e6feac0d9b4ba19b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce413913e6aa2985e412e6687c4ad3c"><td class="memItemLeft" align="right" valign="top"><a id="abce413913e6aa2985e412e6687c4ad3c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>playListAppendMeta</b> (const <a class="el" href="struct_media_meta.html">MediaMeta</a> &amp;meta)</td></tr>
+<tr class="separator:abce413913e6aa2985e412e6687c4ad3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fa10b5d887d18d42fa6ba21caa8b01"><td class="memItemLeft" align="right" valign="top"><a id="a04fa10b5d887d18d42fa6ba21caa8b01"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPlayList</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_media_meta.html">MediaMeta</a> &gt; &amp;list)</td></tr>
+<tr class="separator:a04fa10b5d887d18d42fa6ba21caa8b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebdd1eb54b343c45216f8ea41b27c4e0"><td class="memItemLeft" align="right" valign="top"><a id="aebdd1eb54b343c45216f8ea41b27c4e0"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_media_meta.html">MediaMeta</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>getPlayList</b> ()</td></tr>
+<tr class="separator:aebdd1eb54b343c45216f8ea41b27c4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e57e374e25463ff5572ecf20a3f6ebc"><td class="memItemLeft" align="right" valign="top"><a id="a8e57e374e25463ff5572ecf20a3f6ebc"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_media_meta.html">MediaMeta</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getCdaPlayList</b> ()</td></tr>
+<tr class="separator:a8e57e374e25463ff5572ecf20a3f6ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1475e9ba403eab744688c953ba71cbcf"><td class="memItemLeft" align="right" valign="top"><a id="a1475e9ba403eab744688c953ba71cbcf"></a>
+MprisPlayer *&#160;</td><td class="memItemRight" valign="bottom"><b>getMpris</b> () const</td></tr>
+<tr class="separator:a1475e9ba403eab744688c953ba71cbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282fae561fd78104af2e4f08f8961c01"><td class="memItemLeft" align="right" valign="top"><a id="a282fae561fd78104af2e4f08f8961c01"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentPlayListHash</b> (QString hash, bool reloadMetaList)</td></tr>
+<tr class="separator:a282fae561fd78104af2e4f08f8961c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0ea07dc94d040f498430a9686c7c30"><td class="memItemLeft" align="right" valign="top"><a id="abe0ea07dc94d040f498430a9686c7c30"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentPlayListHash</b> ()</td></tr>
+<tr class="separator:abe0ea07dc94d040f498430a9686c7c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e01708e85e2b50bcb5c6a2edae7e41c"><td class="memItemLeft" align="right" valign="top"><a id="a3e01708e85e2b50bcb5c6a2edae7e41c"></a>
+PlaybackStatus&#160;</td><td class="memItemRight" valign="bottom"><b>status</b> ()</td></tr>
+<tr class="separator:a3e01708e85e2b50bcb5c6a2edae7e41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bae156858fc5927a7e576fb21aaa3c6"><td class="memItemLeft" align="right" valign="top"><a id="a0bae156858fc5927a7e576fb21aaa3c6"></a>
+<a class="el" href="struct_media_meta.html">MediaMeta</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getActiveMeta</b> ()</td></tr>
+<tr class="separator:a0bae156858fc5927a7e576fb21aaa3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d06f31061f4d6776099039d9058e37b"><td class="memItemLeft" align="right" valign="top"><a id="a1d06f31061f4d6776099039d9058e37b"></a>
+QIcon&#160;</td><td class="memItemRight" valign="bottom"><b>playingIcon</b> ()</td></tr>
+<tr class="separator:a1d06f31061f4d6776099039d9058e37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13dd335b4b1246d9ea43274b64e29ec3"><td class="memItemLeft" align="right" valign="top"><a id="a13dd335b4b1246d9ea43274b64e29ec3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setActiveMeta</b> (const <a class="el" href="struct_media_meta.html">MediaMeta</a> &amp;meta)</td></tr>
+<tr class="separator:a13dd335b4b1246d9ea43274b64e29ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae718b131af4d4ff4f221cea3f2580b45"><td class="memItemLeft" align="right" valign="top"><a id="ae718b131af4d4ff4f221cea3f2580b45"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>forcePlayMeta</b> ()</td></tr>
+<tr class="separator:ae718b131af4d4ff4f221cea3f2580b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0895233954249fac7b4f7be19f9eb83c"><td class="memItemLeft" align="right" valign="top"><a id="a0895233954249fac7b4f7be19f9eb83c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initEqualizerCfg</b> ()</td></tr>
+<tr class="separator:a0895233954249fac7b4f7be19f9eb83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984980a90b0b13fbd06067ee7fa87e9f"><td class="memItemLeft" align="right" valign="top"><a id="a984980a90b0b13fbd06067ee7fa87e9f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getMuted</b> ()</td></tr>
+<tr class="separator:a984980a90b0b13fbd06067ee7fa87e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf999814c9dbd10951f5fa7ea88cf4c"><td class="memItemLeft" align="right" valign="top"><a id="aedf999814c9dbd10951f5fa7ea88cf4c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getVolume</b> () const</td></tr>
+<tr class="separator:aedf999814c9dbd10951f5fa7ea88cf4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015ea21fa1e7273e47d48cb20d9b12e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a015ea21fa1e7273e47d48cb20d9b12e3">init</a> ()</td></tr>
+<tr class="separator:a015ea21fa1e7273e47d48cb20d9b12e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb4fd9dbd39b70169255b9a8342503b"><td class="memItemLeft" align="right" valign="top"><a id="a6cb4fd9dbd39b70169255b9a8342503b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="separator:a6cb4fd9dbd39b70169255b9a8342503b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11455f704a730d07f2a0bd8dea911ec6"><td class="memItemLeft" align="right" valign="top"><a id="a11455f704a730d07f2a0bd8dea911ec6"></a>
+<a class="el" href="class_vlc_media_player.html">VlcMediaPlayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>core</b> ()</td></tr>
+<tr class="separator:a11455f704a730d07f2a0bd8dea911ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d50199db9ffad221734f73836855b14"><td class="memItemLeft" align="right" valign="top"><a id="a2d50199db9ffad221734f73836855b14"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>supportedSuffixList</b> () const</td></tr>
+<tr class="separator:a2d50199db9ffad221734f73836855b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a47d1ec3e13ff95a87091dcd3c732e"><td class="memItemLeft" align="right" valign="top"><a id="a25a47d1ec3e13ff95a87091dcd3c732e"></a>
+qlonglong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a25a47d1ec3e13ff95a87091dcd3c732e">position</a> ()</td></tr>
+<tr class="memdesc:a25a47d1ec3e13ff95a87091dcd3c732e"><td class="mdescLeft">&#160;</td><td class="mdescRight">canControl Always be true <br /></td></tr>
+<tr class="separator:a25a47d1ec3e13ff95a87091dcd3c732e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4fd728833c7421542745dfe381ebac9"><td class="memItemLeft" align="right" valign="top"><a id="aa4fd728833c7421542745dfe381ebac9"></a>
+PlaybackMode&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b> () const</td></tr>
+<tr class="separator:aa4fd728833c7421542745dfe381ebac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0c27c47878c2e498ad7e4c722af1d7"><td class="memItemLeft" align="right" valign="top"><a id="a7d0c27c47878c2e498ad7e4c722af1d7"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b> ()</td></tr>
+<tr class="separator:a7d0c27c47878c2e498ad7e4c722af1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17cbab1cbb6909d0ec03c6674c252c6"><td class="memItemLeft" align="right" valign="top"><a id="aa17cbab1cbb6909d0ec03c6674c252c6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>fadeInOutFactor</b> () const</td></tr>
+<tr class="separator:aa17cbab1cbb6909d0ec03c6674c252c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647b747698f52be7464e8e0ac29ff964"><td class="memItemLeft" align="right" valign="top"><a id="a647b747698f52be7464e8e0ac29ff964"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fadeInOut</b> () const</td></tr>
+<tr class="separator:a647b747698f52be7464e8e0ac29ff964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4b342b9993a2cb417f89e32db03139"><td class="memItemLeft" align="right" valign="top"><a id="a8e4b342b9993a2cb417f89e32db03139"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a8e4b342b9993a2cb417f89e32db03139">initCddTrack</a> ()</td></tr>
+<tr class="memdesc:a8e4b342b9993a2cb417f89e32db03139"><td class="mdescLeft">&#160;</td><td class="mdescRight">initCddTrack 初始化cddatrack值，以免引起因为配置问题无法加载cd的问题 <br /></td></tr>
+<tr class="separator:a8e4b342b9993a2cb417f89e32db03139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767e207df057dc0c463a8376086ba34c"><td class="memItemLeft" align="right" valign="top"><a id="a767e207df057dc0c463a8376086ba34c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startCdaThread</b> ()</td></tr>
+<tr class="separator:a767e207df057dc0c463a8376086ba34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:aa1e01dfed46fef7249fcfef8325a13f7"><td class="memItemLeft" align="right" valign="top"><a id="aa1e01dfed46fef7249fcfef8325a13f7"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>VolumeStep</b> = 10</td></tr>
+<tr class="separator:aa1e01dfed46fef7249fcfef8325a13f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:afbd3473237bbac14e5ee40896c574d7f"><td class="memItemLeft" align="right" valign="top"><a id="afbd3473237bbac14e5ee40896c574d7f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>fadeInOutFactor</b></td></tr>
+<tr class="separator:afbd3473237bbac14e5ee40896c574d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a52147b1bd7525763a635b170499ee217"><td class="memItemLeft" align="right" valign="top"><a id="a52147b1bd7525763a635b170499ee217"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DMusic::DSingleton&lt; Player &gt;</b></td></tr>
+<tr class="separator:a52147b1bd7525763a635b170499ee217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_d_music_1_1_d_singleton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_d_music_1_1_d_singleton')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="class_d_music_1_1_d_singleton.html">DMusic::DSingleton&lt; Player &gt;</a></td></tr>
+<tr class="memitem:a6ff0245b63d1bd976a7b264835e2c659 inherit pub_static_methods_class_d_music_1_1_d_singleton"><td class="memItemLeft" align="right" valign="top"><a id="a6ff0245b63d1bd976a7b264835e2c659"></a>
+static <a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="separator:a6ff0245b63d1bd976a7b264835e2c659 inherit pub_static_methods_class_d_music_1_1_d_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_d_music_1_1_d_singleton"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_d_music_1_1_d_singleton')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_d_music_1_1_d_singleton.html">DMusic::DSingleton&lt; Player &gt;</a></td></tr>
+<tr class="memitem:aec495eafd8bf0bac511760e18edfb820 inherit pro_methods_class_d_music_1_1_d_singleton"><td class="memItemLeft" align="right" valign="top"><a id="aec495eafd8bf0bac511760e18edfb820"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DSingleton</b> (const <a class="el" href="class_d_music_1_1_d_singleton.html">DSingleton</a> &amp;)=delete</td></tr>
+<tr class="separator:aec495eafd8bf0bac511760e18edfb820 inherit pro_methods_class_d_music_1_1_d_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7abf6296cf994e39ab34ca43588ec0 inherit pro_methods_class_d_music_1_1_d_singleton"><td class="memItemLeft" align="right" valign="top"><a id="aef7abf6296cf994e39ab34ca43588ec0"></a>
+<a class="el" href="class_d_music_1_1_d_singleton.html">DSingleton</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_d_music_1_1_d_singleton.html">DSingleton</a> &amp;)=delete</td></tr>
+<tr class="separator:aef7abf6296cf994e39ab34ca43588ec0 inherit pro_methods_class_d_music_1_1_d_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="player_8h_source.html">player.h</a> 第 <a class="el" href="player_8h_source.html#l00041">41</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a015ea21fa1e7273e47d48cb20d9b12e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015ea21fa1e7273e47d48cb20d9b12e3">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>初始获取音量，避免从dbus获取音量时，获取的值为初始值0</p>
+
+<p class="definition">在文件 <a class="el" href="player_8cpp_source.html">player.cpp</a> 第 <a class="el" href="player_8cpp_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>deepin-music/src/music-player/core/<a class="el" href="player_8h_source.html">player.h</a></li>
+<li>deepin-music/src/music-player/core/<a class="el" href="player_8cpp_source.html">player.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_player.html">Player</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-lib/views/fileviewhelper.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('fileviewhelper_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">fileviewhelper.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef FILEVIEWHELPER_H</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define FILEVIEWHELPER_H</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;dfmevent.h&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;interfaces/dfileviewhelper.h&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QPointer&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="class_d_file_view.html">DFileView</a>;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_file_view_helper.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_view_helper.html">FileViewHelper</a> : <span class="keyword">public</span> <a class="code" href="class_d_file_view_helper.html">DFileViewHelper</a></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_file_view_helper.html#aa9c6263738647b08f8793c2774714b50">FileViewHelper</a>(<a class="code" href="class_d_file_view.html">DFileView</a> *parent);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_d_file_view.html">DFileView</a> *parent() <span class="keyword">const</span>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    quint64 <a class="code" href="class_file_view_helper.html#ab1c4df4dcda4c94bd196bb461d9135e3">windowId</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_file_view_helper.html#a6cad842b5023134d60130955b9a0453d">isSelected</a>(<span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_file_view_helper.html#a7ec091b1a59910bafb5ec9e62233ffb7">isDropTarget</a>(<span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_file_view_helper.html#ab62b5a92b8b3c6f1f0a390364375d9c3">selectedIndexsCount</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_file_view_helper.html#a3141eb05c1dd099f7de860fe85e6a6f3">rowCount</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_file_view_helper.html#aab36c56f249d002474b73365df485679">indexOfRow</a>(<span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> DAbstractFileInfoPointer fileInfo(<span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_d_f_m_styled_item_delegate.html">DFMStyledItemDelegate</a> *itemDelegate() <span class="keyword">const override</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_d_file_system_model.html">DFileSystemModel</a> *model() <span class="keyword">const override</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_q_list.html">DUrlList</a> selectedUrls() <span class="keyword">const override</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_d_url.html">DUrl</a> currentUrl() <span class="keyword">const override</span>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> <a class="code" href="class_file_view_helper.html#a7fc04d5de8c887152f87f08efbf54326">columnRoleList</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_file_view_helper.html#ac691749b6e14abb1b87d329bd44a3060">columnWidth</a>(<span class="keywordtype">int</span> columnIndex) <span class="keyword">const override</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> select(<span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;DUrl&gt;</a> &amp;list) <span class="keyword">override</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// helper fm event</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> preHandleCd(<span class="keyword">const</span> <a class="code" href="class_d_f_m_url_base_event.html">DFMUrlBaseEvent</a> &amp;event);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> cd(<span class="keyword">const</span> <a class="code" href="class_d_f_m_url_base_event.html">DFMUrlBaseEvent</a> &amp;event);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> cdUp(<span class="keyword">const</span> <a class="code" href="class_d_f_m_url_base_event.html">DFMUrlBaseEvent</a> &amp;event);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> handleSelectEvent(<span class="keyword">const</span> <a class="code" href="class_d_f_m_url_list_base_event.html">DFMUrlListBaseEvent</a> &amp;event);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> selectAll(quint64 windowId);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setFoucsOnFileView(quint64 winId);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> refreshFileView(quint64 winId);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_d_f_m_url_base_event.html">DFMUrlBaseEvent</a> lastEvent;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // FILEVIEWHELPER_H</span></div><div class="ttc" id="class_d_f_m_styled_item_delegate_html"><div class="ttname"><a href="class_d_f_m_styled_item_delegate.html">DFMStyledItemDelegate</a></div><div class="ttdef"><b>Definition:</b> <a href="dfmstyleditemdelegate_8h_source.html#l00023">dfmstyleditemdelegate.h:23</a></div></div>
+<div class="ttc" id="class_file_view_helper_html_ab1c4df4dcda4c94bd196bb461d9135e3"><div class="ttname"><a href="class_file_view_helper.html#ab1c4df4dcda4c94bd196bb461d9135e3">FileViewHelper::windowId</a></div><div class="ttdeci">quint64 windowId() const override</div><div class="ttdoc">Returns the window id of the top-level window in the parent widget. </div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8cpp_source.html#l00040">fileviewhelper.cpp:40</a></div></div>
+<div class="ttc" id="class_d_file_view_helper_html"><div class="ttname"><a href="class_d_file_view_helper.html">DFileViewHelper</a></div><div class="ttdef"><b>Definition:</b> <a href="dfileviewhelper_8h_source.html#l00028">dfileviewhelper.h:28</a></div></div>
+<div class="ttc" id="class_d_f_m_url_list_base_event_html"><div class="ttname"><a href="class_d_f_m_url_list_base_event.html">DFMUrlListBaseEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="dfmevent_8h_source.html#l00299">dfmevent.h:299</a></div></div>
+<div class="ttc" id="class_d_file_system_model_html"><div class="ttname"><a href="class_d_file_system_model.html">DFileSystemModel</a></div><div class="ttdef"><b>Definition:</b> <a href="dfilesystemmodel_8h_source.html#l00084">dfilesystemmodel.h:84</a></div></div>
+<div class="ttc" id="class_file_view_helper_html_aa9c6263738647b08f8793c2774714b50"><div class="ttname"><a href="class_file_view_helper.html#aa9c6263738647b08f8793c2774714b50">FileViewHelper::FileViewHelper</a></div><div class="ttdeci">FileViewHelper(DFileView *parent)</div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8cpp_source.html#l00019">fileviewhelper.cpp:19</a></div></div>
+<div class="ttc" id="class_file_view_helper_html_a3141eb05c1dd099f7de860fe85e6a6f3"><div class="ttname"><a href="class_file_view_helper.html#a3141eb05c1dd099f7de860fe85e6a6f3">FileViewHelper::rowCount</a></div><div class="ttdeci">int rowCount() const override</div><div class="ttdoc">Return the view row count. </div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8cpp_source.html#l00060">fileviewhelper.cpp:60</a></div></div>
+<div class="ttc" id="class_d_file_view_html"><div class="ttname"><a href="class_d_file_view.html">DFileView</a></div><div class="ttdef"><b>Definition:</b> <a href="dfileview_8h_source.html#l00081">dfileview.h:81</a></div></div>
+<div class="ttc" id="class_d_f_m_url_base_event_html"><div class="ttname"><a href="class_d_f_m_url_base_event.html">DFMUrlBaseEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="dfmevent_8h_source.html#l00285">dfmevent.h:285</a></div></div>
+<div class="ttc" id="class_file_view_helper_html"><div class="ttname"><a href="class_file_view_helper.html">FileViewHelper</a></div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8h_source.html#l00019">fileviewhelper.h:19</a></div></div>
+<div class="ttc" id="class_file_view_helper_html_a6cad842b5023134d60130955b9a0453d"><div class="ttname"><a href="class_file_view_helper.html#a6cad842b5023134d60130955b9a0453d">FileViewHelper::isSelected</a></div><div class="ttdeci">bool isSelected(const QModelIndex &amp;index) const override</div><div class="ttdoc">Return true if index is selected; otherwise return false. </div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8cpp_source.html#l00045">fileviewhelper.cpp:45</a></div></div>
+<div class="ttc" id="class_file_view_helper_html_ac691749b6e14abb1b87d329bd44a3060"><div class="ttname"><a href="class_file_view_helper.html#ac691749b6e14abb1b87d329bd44a3060">FileViewHelper::columnWidth</a></div><div class="ttdeci">int columnWidth(int columnIndex) const override</div><div class="ttdoc">Return column width by column index </div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8cpp_source.html#l00100">fileviewhelper.cpp:100</a></div></div>
+<div class="ttc" id="class_file_view_helper_html_aab36c56f249d002474b73365df485679"><div class="ttname"><a href="class_file_view_helper.html#aab36c56f249d002474b73365df485679">FileViewHelper::indexOfRow</a></div><div class="ttdeci">int indexOfRow(const QModelIndex &amp;index) const override</div><div class="ttdoc">Return the index row index. </div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8cpp_source.html#l00065">fileviewhelper.cpp:65</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; DUrl &gt;</a></div></div>
+<div class="ttc" id="class_file_view_helper_html_a7fc04d5de8c887152f87f08efbf54326"><div class="ttname"><a href="class_file_view_helper.html#a7fc04d5de8c887152f87f08efbf54326">FileViewHelper::columnRoleList</a></div><div class="ttdeci">QList&lt; int &gt; columnRoleList() const override</div><div class="ttdoc">Return the view role list by column </div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8cpp_source.html#l00095">fileviewhelper.cpp:95</a></div></div>
+<div class="ttc" id="class_file_view_helper_html_a7ec091b1a59910bafb5ec9e62233ffb7"><div class="ttname"><a href="class_file_view_helper.html#a7ec091b1a59910bafb5ec9e62233ffb7">FileViewHelper::isDropTarget</a></div><div class="ttdeci">bool isDropTarget(const QModelIndex &amp;index) const override</div><div class="ttdoc">Return true if file view drag moveing and mouse hover on index; otherwise return false. </div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8cpp_source.html#l00050">fileviewhelper.cpp:50</a></div></div>
+<div class="ttc" id="class_file_view_helper_html_ab62b5a92b8b3c6f1f0a390364375d9c3"><div class="ttname"><a href="class_file_view_helper.html#ab62b5a92b8b3c6f1f0a390364375d9c3">FileViewHelper::selectedIndexsCount</a></div><div class="ttdeci">int selectedIndexsCount() const override</div><div class="ttdoc">Return the view of selected index count. </div><div class="ttdef"><b>Definition:</b> <a href="fileviewhelper_8cpp_source.html#l00055">fileviewhelper.cpp:55</a></div></div>
+<div class="ttc" id="class_d_url_html"><div class="ttname"><a href="class_d_url.html">DUrl</a></div><div class="ttdef"><b>Definition:</b> <a href="durl_8h_source.html#l00087">durl.h:87</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_f9029d0d717014796f47cbb96a029b81.html">dde-file-manager-lib</a></li><li class="navelem"><a class="el" href="dir_972560ee1036296a65278e17d209aee2.html">views</a></li><li class="navelem"><b>fileviewhelper.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:21 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+var class_background_manager =
+[
+    [ "BackgroundManager", "class_background_manager.html#a8c57c557ce879cdf5bf27ee95300d8fd", null ],
+    [ "~BackgroundManager", "class_background_manager.html#abd7b4d5d7ed7868075ac05a02e69593d", null ],
+    [ "BackgroundManager", "class_background_manager.html#acb610377c45734604a997383eba0d59b", null ],
+    [ "allbackgroundWidgets", "class_background_manager.html#a0a7e44c6e417f86dd86a2b8e6c204e14", null ],
+    [ "backgroundImages", "class_background_manager.html#abdc20045aafe1be3103dd6ba94725f70", null ],
+    [ "backgroundWidget", "class_background_manager.html#a7ed4066044f80a11d3f71c1a8c053783", null ],
+    [ "currentWorkspaceBackgroundChanged", "class_background_manager.html#a6f0c899146d746d04fd5f7cfd4cfb3aa", null ],
+    [ "currentWorkspaceBlurBackgroundChanged", "class_background_manager.html#af76d27b489f07d91655830a5ef8805cf", null ],
+    [ "dispalyMode", "class_background_manager.html#a676e4c0a392bac045c41331276e6af3b", null ],
+    [ "isEnabled", "class_background_manager.html#ae11a0fd0e91d7a282ad14e0ac281f358", null ],
+    [ "isVisible", "class_background_manager.html#ac6c02aa8191053a6f653d66d9c00fd78", null ],
+    [ "onBackgroundBuild", "class_background_manager.html#a06d1481c64c191909f66e638f67e6589", null ],
+    [ "onResetBackgroundImage", "class_background_manager.html#a9511d8cd5be80bbbf23d17ad1cddca41", null ],
+    [ "onRestBackgroundManager", "class_background_manager.html#a0985985ee615b9b5e3cc90b22d64db5c", null ],
+    [ "onScreenGeometryChanged", "class_background_manager.html#a481a7bdab4f5d6976b7a67ac9d8ae23a", null ],
+    [ "onSkipBackgroundBuild", "class_background_manager.html#a149a99b0212cb293fe54e4987f398794", null ],
+    [ "onWmDbusStarted", "class_background_manager.html#a5e4ea815d64d30f74c206c7b53188607", null ],
+    [ "setBackgroundImage", "class_background_manager.html#a988fcaa5b23ea24749b791d83a43794e", null ],
+    [ "setVisible", "class_background_manager.html#a2ba818a3b98c4bdd3cce8f077a6b29b3", null ],
+    [ "sigBackgroundBuilded", "class_background_manager.html#a0b268fa97bb2def1d3429ccb670f0c35", null ],
+    [ "updateBlurBackgrounds", "class_background_manager.html#ae1f621961af2e6456c94b0d84d2c82e8", null ],
+    [ "gsettings", "class_background_manager.html#a89d5c7c4904792ac6883835bcf4a7261", null ],
+    [ "windowManagerHelper", "class_background_manager.html#abf4db1b827bb7bebe593126c506b0d20", null ],
+    [ "wmInter", "class_background_manager.html#a6d1354f492953fe59306a4e3f1ce3953", null ]
+];

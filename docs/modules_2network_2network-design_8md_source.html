@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-control-center/src/frame/modules/network/network-design.md 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('modules_2network_2network-design_8md.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dde-control-center/src/frame/modules/network/network-design.md</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;# 连接编辑页面</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;经过重构之后，网络编辑相关功能将不再依赖dde-session-daemon，而是通过libkf5networkmanagerqt库和NetworkManager直接通信。</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;## 基本结构</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;提供编辑功能相关的主要文件有类似connectioneditpage，settings目录和sections目录中的文件。</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;类似connectioneditpage的文件是编辑界面的入口，其上层就是一些设备界面，如WiredPage，WirelessPage等，</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;设备界面负责将编辑页面实例化并显示出来，剩下的事情就全部都是编辑界面的工作了。</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;之所以说类似connectioneditpage的文件是因为某些编辑页面需要一切更多的设备相关的数据才能初始化，</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;比如connectionwirelesseditpage， 在编辑一个从没有连接过的Ap时，就需要知道这个Ap的信息。</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;编辑页面在实现上主要被分为了两个部分：</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;- 顶部和底部的按钮们</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;- 中部是一个编辑widget</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;中部widget是由settings目录下的文件提供的，按照不同的网络连接实现了不同的settings类。 </div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;从编辑页面的角度来看中部的编辑widget是一个整体，但实际的实现是由一个个section组合起来的，</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;所有的section都在sections目录下，按照功能抽象和实现了诸如通用，8021x，ipv4，以太，无线等等不同的section，</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;可以按需使用，也可以继承进行扩展。</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;## 主要类</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;### 控制中心中的类</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;| 类名 | 简介 |</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;| :- | :- |</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;| ConnectionEditPage | 编辑界面入口类 |</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;| AbstractSettings | Settings抽象类，供ConnectionEditPage统一管理 |</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;| AbstractSections | Sections抽象类，供Settings统一管理 |</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;其他的类基本都是继承上述三个类，然后实现检查错误和保存设置的方法，并做一些自己的界面处理工作。</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;在集成一些非抽象类时，需要留意类中的init方法，可以参考已有的继承例子: `SecretWiredSection继承Secret8021xSection`</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;### 库中的类</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;命名空间：NetworkManage</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;在控制中心的代码中使用了库中的代码的地方都指明使用了其命名空间</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;| 类名 | 简介 |</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;| :- | :- |</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;| Connection | 代表了一个NetworkManager的连接(可对应到具体配置文件) |</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;| ConnectionSettings | 一个连接的设置，包含一些通用设置也可以获取到具体的Setting，其定义了各种Connection类型的enum |</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;| Setting | 所有具体Setting的父类，其定义了各种Setting类型的enum |</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;| Ipv4Setting | 继承自Setting，抽象了ipv4的设置，可以将其对应到控制中心的ipv4设置小节 |</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;| ... | 还有大量其他类似的子类Setting |</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;### 库相关的其他知识</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;libkf5networkmanagerqt这个库的文档并不是十分详细，有时还没有源码的头文件的注释详细，不过文档也是一份参考，</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;而且对于迅速浏览这个库的结构，内容有很大帮助，文档包含在`libkf5networkmanagerqt-doc`这个包里，</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;安装这个包之后可以在qt-creator里的帮助里找到这份文档。</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;除了上述类相关的，库中还有几个需要了解的**很重要**的函数库(直接在NetworkManager命名空间下的函数)：</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;| 文件名 | 简介 |</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;| :- | :- |</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;| manager.h | 这个头文件包含了很多管理性质的函数，如激活断开一个连接 |</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;| settings.h | 新增查找一个连接 |</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;| utils.h | 一些有用的工具函数 |</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;## 主要流程</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;以有线网络的编辑举例：</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;WiredPage将Connection的uuid作为参数去实例化一个ConnectionEditPage，ConnectionEditPage通过uuid从获取到一个Connection对象</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;和ConnectionSettings对象，进而用ConnectionSettings对象实例化控制中心的Settings类，Connection对象用来在最后保存设置。</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;控制中心的Settings类通过ConnectionSettings对象可以拿到Connection中包含的各种Setting，</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;根据自己的类型，使用对应类型的Setting对象去实例化不同的Section， 将各个Section组合在一起，并统一管理。</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;总之，就是将一个Connection分级，按照界面的分级情况将对应的数据下发给界面所对应的类，</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;并且最终都会分配到一个Section类上， Section类进行详细工作。</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div></div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>network-design.md</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

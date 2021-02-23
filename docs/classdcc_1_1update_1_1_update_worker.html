@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dcc::update::UpdateWorker类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdcc_1_1update_1_1_update_worker.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classdcc_1_1update_1_1_update_worker-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dcc::update::UpdateWorker类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 dcc::update::UpdateWorker 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1update_1_1_update_worker__inherit__graph.png" border="0" usemap="#dcc_1_1update_1_1_update_worker_inherit__map" alt="Inheritance graph"/></div>
+<map name="dcc_1_1update_1_1_update_worker_inherit__map" id="dcc_1_1update_1_1_update_worker_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+dcc::update::UpdateWorker 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1update_1_1_update_worker__coll__graph.png" border="0" usemap="#dcc_1_1update_1_1_update_worker_coll__map" alt="Collaboration graph"/></div>
+<map name="dcc_1_1update_1_1_update_worker_coll__map" id="dcc_1_1update_1_1_update_worker_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a67261ac2309a8b2aee1d51a2153cc2a4"><td class="memItemLeft" align="right" valign="top"><a id="a67261ac2309a8b2aee1d51a2153cc2a4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="separator:a67261ac2309a8b2aee1d51a2153cc2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b9ebd6ce30f13fefdc666f801f3c50"><td class="memItemLeft" align="right" valign="top"><a id="a62b9ebd6ce30f13fefdc666f801f3c50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>checkForUpdates</b> ()</td></tr>
+<tr class="separator:a62b9ebd6ce30f13fefdc666f801f3c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4c07b1d374ef7051b887332ceb08c0"><td class="memItemLeft" align="right" valign="top"><a id="a9e4c07b1d374ef7051b887332ceb08c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pauseDownload</b> ()</td></tr>
+<tr class="separator:a9e4c07b1d374ef7051b887332ceb08c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d86006e56564ce61100c50a890eb3d"><td class="memItemLeft" align="right" valign="top"><a id="a16d86006e56564ce61100c50a890eb3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resumeDownload</b> ()</td></tr>
+<tr class="separator:a16d86006e56564ce61100c50a890eb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e8541778458827574f2b318a1ea8b2"><td class="memItemLeft" align="right" valign="top"><a id="a37e8541778458827574f2b318a1ea8b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>distUpgrade</b> ()</td></tr>
+<tr class="separator:a37e8541778458827574f2b318a1ea8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34917ea59c655617c0119bc09806d419"><td class="memItemLeft" align="right" valign="top"><a id="a34917ea59c655617c0119bc09806d419"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>downloadAndDistUpgrade</b> ()</td></tr>
+<tr class="separator:a34917ea59c655617c0119bc09806d419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046afddd5bfaa5f212c1c17f5f43ebdd"><td class="memItemLeft" align="right" valign="top"><a id="a046afddd5bfaa5f212c1c17f5f43ebdd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoCheckUpdates</b> (const bool autoCheckUpdates)</td></tr>
+<tr class="separator:a046afddd5bfaa5f212c1c17f5f43ebdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04dfd3942fc8a25a8f98a5171033d0c5"><td class="memItemLeft" align="right" valign="top"><a id="a04dfd3942fc8a25a8f98a5171033d0c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUpdateMode</b> (const quint64 updateMode)</td></tr>
+<tr class="separator:a04dfd3942fc8a25a8f98a5171033d0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c6f49492e366ba0e0cd1f287c25de0"><td class="memItemLeft" align="right" valign="top"><a id="a42c6f49492e366ba0e0cd1f287c25de0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoCleanCache</b> (const bool autoCleanCache)</td></tr>
+<tr class="separator:a42c6f49492e366ba0e0cd1f287c25de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4a248df524059b4717239d2f3c67b8"><td class="memItemLeft" align="right" valign="top"><a id="a0d4a248df524059b4717239d2f3c67b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoDownloadUpdates</b> (const bool &amp;autoDownload)</td></tr>
+<tr class="separator:a0d4a248df524059b4717239d2f3c67b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64951b1c4cf92dd5bb2726f1f7ac25fe"><td class="memItemLeft" align="right" valign="top"><a id="a64951b1c4cf92dd5bb2726f1f7ac25fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMirrorSource</b> (const MirrorInfo &amp;mirror)</td></tr>
+<tr class="separator:a64951b1c4cf92dd5bb2726f1f7ac25fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34eeb5d4493a0a45997ad654bae02a2"><td class="memItemLeft" align="right" valign="top"><a id="aa34eeb5d4493a0a45997ad654bae02a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSourceCheck</b> (bool enable)</td></tr>
+<tr class="separator:aa34eeb5d4493a0a45997ad654bae02a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32bff16dc429588c04d3744bddf7f30a"><td class="memItemLeft" align="right" valign="top"><a id="a32bff16dc429588c04d3744bddf7f30a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>testMirrorSpeed</b> ()</td></tr>
+<tr class="separator:a32bff16dc429588c04d3744bddf7f30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d6f76219b62567f40048c58127ca2e"><td class="memItemLeft" align="right" valign="top"><a id="a43d6f76219b62567f40048c58127ca2e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>checkNetselect</b> ()</td></tr>
+<tr class="separator:a43d6f76219b62567f40048c58127ca2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1842ab154559e3bcdac3dca47abf9aa"><td class="memItemLeft" align="right" valign="top"><a id="ad1842ab154559e3bcdac3dca47abf9aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSmartMirror</b> (bool enable)</td></tr>
+<tr class="separator:ad1842ab154559e3bcdac3dca47abf9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e0f185c1b4f88e678d742991f740bb"><td class="memItemLeft" align="right" valign="top"><a id="a71e0f185c1b4f88e678d742991f740bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshMirrors</b> ()</td></tr>
+<tr class="separator:a71e0f185c1b4f88e678d742991f740bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6f91a33665ed7c3ffa25baf61112a8"><td class="memItemLeft" align="right" valign="top"><a id="aba6f91a33665ed7c3ffa25baf61112a8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>recoveryCanBackup</b> ()</td></tr>
+<tr class="separator:aba6f91a33665ed7c3ffa25baf61112a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eaa782844ba3c1e442c3fa72aad6c29"><td class="memItemLeft" align="right" valign="top"><a id="a2eaa782844ba3c1e442c3fa72aad6c29"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>recoveryStartRestore</b> ()</td></tr>
+<tr class="separator:a2eaa782844ba3c1e442c3fa72aad6c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d99e8293472f48720168697514204ac"><td class="memItemLeft" align="right" valign="top"><a id="a3d99e8293472f48720168697514204ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onNotifyDownloadInfoChanged</b> ()</td></tr>
+<tr class="separator:a3d99e8293472f48720168697514204ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ffd288646dbd9673cec60402e5a4dcd"><td class="memItemLeft" align="right" valign="top"><a id="a9ffd288646dbd9673cec60402e5a4dcd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>licenseStateChangeSlot</b> ()</td></tr>
+<tr class="separator:a9ffd288646dbd9673cec60402e5a4dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77247894388238b49e0ab84ab1b8175"><td class="memItemLeft" align="right" valign="top"><a id="ae77247894388238b49e0ab84ab1b8175"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshHistoryAppsInfo</b> ()</td></tr>
+<tr class="separator:ae77247894388238b49e0ab84ab1b8175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0362bb81731a17f9964e215e170d6d2c"><td class="memItemLeft" align="right" valign="top"><a id="a0362bb81731a17f9964e215e170d6d2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshLastTimeAndCheckCircle</b> ()</td></tr>
+<tr class="separator:a0362bb81731a17f9964e215e170d6d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506c1a580390b53b6812c75e669ee6af"><td class="memItemLeft" align="right" valign="top"><a id="a506c1a580390b53b6812c75e669ee6af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUpdateNotify</b> (const bool notify)</td></tr>
+<tr class="separator:a506c1a580390b53b6812c75e669ee6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ad4b82bfbc5e1b72280d1fb91fd37106f"><td class="memItemLeft" align="right" valign="top"><a id="ad4b82bfbc5e1b72280d1fb91fd37106f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestInit</b> ()</td></tr>
+<tr class="separator:ad4b82bfbc5e1b72280d1fb91fd37106f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79469e994dbe0029c27a977f27ab0643"><td class="memItemLeft" align="right" valign="top"><a id="a79469e994dbe0029c27a977f27ab0643"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestActive</b> ()</td></tr>
+<tr class="separator:a79469e994dbe0029c27a977f27ab0643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a61881c040ee2152c55ecddd6a8c80"><td class="memItemLeft" align="right" valign="top"><a id="af1a61881c040ee2152c55ecddd6a8c80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestRefreshLicenseState</b> ()</td></tr>
+<tr class="separator:af1a61881c040ee2152c55ecddd6a8c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5fcbd6656fdd9583541a74cc3dd870"><td class="memItemLeft" align="right" valign="top"><a id="aaa5fcbd6656fdd9583541a74cc3dd870"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestRefreshMirrors</b> ()</td></tr>
+<tr class="separator:aaa5fcbd6656fdd9583541a74cc3dd870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:acb1d289b060b4ce259a4af79a0e6d423"><td class="memItemLeft" align="right" valign="top"><a id="acb1d289b060b4ce259a4af79a0e6d423"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateWorker</b> (<a class="el" href="classdcc_1_1update_1_1_update_model.html">UpdateModel</a> *model, QObject *parent=nullptr)</td></tr>
+<tr class="separator:acb1d289b060b4ce259a4af79a0e6d423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01252a20e9e7939589cb613341ef017"><td class="memItemLeft" align="right" valign="top"><a id="ab01252a20e9e7939589cb613341ef017"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>activate</b> ()</td></tr>
+<tr class="separator:ab01252a20e9e7939589cb613341ef017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265b0f515e7e998e7dc545f6f8dab565"><td class="memItemLeft" align="right" valign="top"><a id="a265b0f515e7e998e7dc545f6f8dab565"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deactivate</b> ()</td></tr>
+<tr class="separator:a265b0f515e7e998e7dc545f6f8dab565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ded20538be1ef0b9f3b8ccf73371b0a"><td class="memItemLeft" align="right" valign="top"><a id="a5ded20538be1ef0b9f3b8ccf73371b0a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setOnBattery</b> (bool onBattery)</td></tr>
+<tr class="separator:a5ded20538be1ef0b9f3b8ccf73371b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae133eeea9dbc80b52204c4f63495e0ba"><td class="memItemLeft" align="right" valign="top"><a id="ae133eeea9dbc80b52204c4f63495e0ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBatteryPercentage</b> (const BatteryPercentageInfo &amp;info)</td></tr>
+<tr class="separator:ae133eeea9dbc80b52204c4f63495e0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2757ae1318859c79fb035ba23480bd86"><td class="memItemLeft" align="right" valign="top"><a id="a2757ae1318859c79fb035ba23480bd86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSystemBatteryPercentage</b> (const double &amp;value)</td></tr>
+<tr class="separator:a2757ae1318859c79fb035ba23480bd86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5031f881a6b9cb16b5ddeaa3a9648618"><td class="memItemLeft" align="right" valign="top"><a id="a5031f881a6b9cb16b5ddeaa3a9648618"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>getLicenseState</b> ()</td></tr>
+<tr class="separator:a5031f881a6b9cb16b5ddeaa3a9648618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="updatework_8h_source.html">updatework.h</a> 第 <a class="el" href="updatework_8h_source.html#l00064">64</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-control-center/src/frame/modules/update/<a class="el" href="updatework_8h_source.html">updatework.h</a></li>
+<li>dde-control-center/src/frame/modules/update/<a class="el" href="updatework_8cpp_source.html">updatework.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>dcc</b></li><li class="navelem"><b>update</b></li><li class="navelem"><a class="el" href="classdcc_1_1update_1_1_update_worker.html">UpdateWorker</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

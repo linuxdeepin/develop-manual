@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: XLSBParser::Implementation::XLSBReader类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_x_l_s_b_parser_1_1_implementation_1_1_x_l_s_b_reader.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_x_l_s_b_parser_1_1_implementation_1_1_x_l_s_b_reader-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">XLSBParser::Implementation::XLSBReader类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_l_s_b_parser_1_1_implementation_1_1_x_l_s_b_reader_1_1_record.html">Record</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a9ebccc624ec9ab7d4e20e3a58b8fc7d6"><td class="memItemLeft" align="right" valign="top"><a id="a9ebccc624ec9ab7d4e20e3a58b8fc7d6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>RecordType</b> { <br />
+&#160;&#160;<b>BRT_ROW_HDR</b> = 0x0, 
+<b>BRT_CELL_BLANK</b> = 0x1, 
+<b>BRT_CELL_RK</b> = 0x2, 
+<b>BRT_CELL_ERROR</b> = 0x3, 
+<br />
+&#160;&#160;<b>BRT_CELL_BOOL</b> = 0x4, 
+<b>BRT_CELL_REAL</b> = 0x5, 
+<b>BRT_CELL_ST</b> = 0x6, 
+<b>BRT_CELL_ISST</b> = 0x7, 
+<br />
+&#160;&#160;<b>BRT_FMLA_STRING</b> = 0x8, 
+<b>BRT_FMLA_NUM</b> = 0x9, 
+<b>BRT_FMLA_BOOL</b> = 0xA, 
+<b>BRT_FMLA_ERROR</b> = 0xB, 
+<br />
+&#160;&#160;<b>BRT_SS_ITEM</b> = 0x13, 
+<b>BRT_WS_DIM</b> = 0x94, 
+<b>BRT_BEGIN_SST</b> = 0x9F
+<br />
+ }</td></tr>
+<tr class="separator:a9ebccc624ec9ab7d4e20e3a58b8fc7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad18bd927bee3b8b9895503e18082dcdc"><td class="memItemLeft" align="right" valign="top"><a id="ad18bd927bee3b8b9895503e18082dcdc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XLSBReader</b> (<a class="el" href="class_doc_to_text_unzip.html">DocToTextUnzip</a> &amp;zipfile, const std::string &amp;file_name, std::ostream *log_stream)</td></tr>
+<tr class="separator:ad18bd927bee3b8b9895503e18082dcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9921b9bc982332769202af5fa8a93d44"><td class="memItemLeft" align="right" valign="top"><a id="a9921b9bc982332769202af5fa8a93d44"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>done</b> ()</td></tr>
+<tr class="separator:a9921b9bc982332769202af5fa8a93d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9edf1ba89d92dfc7bb852f1e0485567"><td class="memItemLeft" align="right" valign="top"><a id="aa9edf1ba89d92dfc7bb852f1e0485567"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readNum</b> (uint32_t &amp;value, int bytes)</td></tr>
+<tr class="separator:aa9edf1ba89d92dfc7bb852f1e0485567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef4fdf353cb45e1890349bc28f9789b"><td class="memItemLeft" align="right" valign="top"><a id="a3ef4fdf353cb45e1890349bc28f9789b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readUint8</b> (uint32_t &amp;value)</td></tr>
+<tr class="separator:a3ef4fdf353cb45e1890349bc28f9789b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f141bd0a06e52d78b76dba59a75381"><td class="memItemLeft" align="right" valign="top"><a id="a26f141bd0a06e52d78b76dba59a75381"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readUint16</b> (uint32_t &amp;value)</td></tr>
+<tr class="separator:a26f141bd0a06e52d78b76dba59a75381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6655555113c843313e17b33ccda35553"><td class="memItemLeft" align="right" valign="top"><a id="a6655555113c843313e17b33ccda35553"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readUint32</b> (uint32_t &amp;value)</td></tr>
+<tr class="separator:a6655555113c843313e17b33ccda35553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30199c0ddab8d2fa58a766975c257dbf"><td class="memItemLeft" align="right" valign="top"><a id="a30199c0ddab8d2fa58a766975c257dbf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readXnum</b> (double &amp;value)</td></tr>
+<tr class="separator:a30199c0ddab8d2fa58a766975c257dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c21203d5bb39a792d3850db1604985"><td class="memItemLeft" align="right" valign="top"><a id="a97c21203d5bb39a792d3850db1604985"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readRkNumber</b> (double &amp;value, bool &amp;is_int)</td></tr>
+<tr class="separator:a97c21203d5bb39a792d3850db1604985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808f8adaf745742d053b71d339fc96a6"><td class="memItemLeft" align="right" valign="top"><a id="a808f8adaf745742d053b71d339fc96a6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readXlWideString</b> (std::string &amp;str)</td></tr>
+<tr class="separator:a808f8adaf745742d053b71d339fc96a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b891513d34a631f7ca56e3469db6454"><td class="memItemLeft" align="right" valign="top"><a id="a2b891513d34a631f7ca56e3469db6454"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readRichStr</b> (std::string &amp;str)</td></tr>
+<tr class="separator:a2b891513d34a631f7ca56e3469db6454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9189483fe34ccb0a6a8d2d930304bdf"><td class="memItemLeft" align="right" valign="top"><a id="af9189483fe34ccb0a6a8d2d930304bdf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readRecord</b> (<a class="el" href="struct_x_l_s_b_parser_1_1_implementation_1_1_x_l_s_b_reader_1_1_record.html">Record</a> &amp;record)</td></tr>
+<tr class="separator:af9189483fe34ccb0a6a8d2d930304bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96188d3b39412e0e6398c1eca8c24f7f"><td class="memItemLeft" align="right" valign="top"><a id="a96188d3b39412e0e6398c1eca8c24f7f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>skipBytes</b> (uint32_t bytes_to_skip)</td></tr>
+<tr class="separator:a96188d3b39412e0e6398c1eca8c24f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809fc83169d411689da5623bb70def3e"><td class="memItemLeft" align="right" valign="top"><a id="a809fc83169d411689da5623bb70def3e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readChunk</b> (uint32_t len)</td></tr>
+<tr class="separator:a809fc83169d411689da5623bb70def3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="xlsb__parser_8cpp_source.html">xlsb_parser.cpp</a> 第 <a class="el" href="xlsb__parser_8cpp_source.html#l00091">91</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/3rdParty/doctotext/<a class="el" href="xlsb__parser_8cpp_source.html">xlsb_parser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_x_l_s_b_parser.html">XLSBParser</a></li><li class="navelem"><a class="el" href="struct_x_l_s_b_parser_1_1_implementation.html">Implementation</a></li><li class="navelem"><a class="el" href="class_x_l_s_b_parser_1_1_implementation_1_1_x_l_s_b_reader.html">XLSBReader</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: CComAttrWidget类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_c_com_attr_widget.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-slots">Protected 槽</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="class_c_com_attr_widget-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CComAttrWidget类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 CComAttrWidget 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_com_attr_widget__inherit__graph.png" border="0" usemap="#_c_com_attr_widget_inherit__map" alt="Inheritance graph"/></div>
+<map name="_c_com_attr_widget_inherit__map" id="_c_com_attr_widget_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+CComAttrWidget 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_com_attr_widget__coll__graph.png" border="0" usemap="#_c_com_attr_widget_coll__map" alt="Collaboration graph"/></div>
+<map name="_c_com_attr_widget_coll__map" id="_c_com_attr_widget_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4f7f248056450b8387d9800f07be6f1c"><td class="memItemLeft" align="right" valign="top"><a id="a4f7f248056450b8387d9800f07be6f1c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EAttriSourceItemType</b> { <br />
+&#160;&#160;<b>Rect</b> = 0x00000001, 
+<b>Ellipse</b> = Rect &lt;&lt; 1, 
+<b>Triangle</b> = Rect &lt;&lt; 2, 
+<b>Star</b> = Rect &lt;&lt; 3, 
+<br />
+&#160;&#160;<b>Polygon</b> = Rect &lt;&lt; 4, 
+<b>Pen</b> = Rect &lt;&lt; 5, 
+<b>Line</b> = Rect &lt;&lt; 6, 
+<b>MasicPen</b> = Rect &lt;&lt; 7, 
+<br />
+&#160;&#160;<b>Text</b> = Rect &lt;&lt; 8, 
+<b>Image</b> = Rect &lt;&lt; 9, 
+<b>Cut</b> = Rect &lt;&lt; 10, 
+<b>ShowTitle</b> = Rect &lt;&lt; 11
+<br />
+ }</td></tr>
+<tr class="separator:a4f7f248056450b8387d9800f07be6f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a7b78fa29d085f6e491e6ed16675fe95b"><td class="memItemLeft" align="right" valign="top"><a id="a7b78fa29d085f6e491e6ed16675fe95b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setWindowTittle</b> (QString tittle)</td></tr>
+<tr class="separator:a7b78fa29d085f6e491e6ed16675fe95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:acb198b8b738e3bb320dc1195411e1c34"><td class="memItemLeft" align="right" valign="top"><a id="acb198b8b738e3bb320dc1195411e1c34"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CComAttrWidget</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="separator:acb198b8b738e3bb320dc1195411e1c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6507c03c731880459cc5dbabc2e4c270"><td class="memItemLeft" align="right" valign="top"><a id="a6507c03c731880459cc5dbabc2e4c270"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showByType</b> (EAttriSourceItemType tp, <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *pItem=nullptr)</td></tr>
+<tr class="separator:a6507c03c731880459cc5dbabc2e4c270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56227553ca6e2ca19c168ce284cb8d7"><td class="memItemLeft" align="right" valign="top"><a id="ab56227553ca6e2ca19c168ce284cb8d7"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>graphicItems</b> ()</td></tr>
+<tr class="separator:ab56227553ca6e2ca19c168ce284cb8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2edf139defdb0ffffd8f79a373301560"><td class="memItemLeft" align="right" valign="top"><a id="a2edf139defdb0ffffd8f79a373301560"></a>
+<a class="el" href="struct_s_com_defual_data.html">SComDefualData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>defualtSceneData</b> (<a class="el" href="class_c_draw_scene.html">CDrawScene</a> *pScene=nullptr)</td></tr>
+<tr class="separator:a2edf139defdb0ffffd8f79a373301560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc9cf25fe779a8c698796a1f3e82166"><td class="memItemLeft" align="right" valign="top"><a id="abcc9cf25fe779a8c698796a1f3e82166"></a>
+<a class="el" href="class_text_widget.html">TextWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getTextWidgetForText</b> ()</td></tr>
+<tr class="separator:abcc9cf25fe779a8c698796a1f3e82166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2587fafdc827e6c9b10937cdb693f0e"><td class="memItemLeft" align="right" valign="top"><a id="af2587fafdc827e6c9b10937cdb693f0e"></a>
+<a class="el" href="class_blur_widget.html">BlurWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getBlurWidget</b> ()</td></tr>
+<tr class="separator:af2587fafdc827e6c9b10937cdb693f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270bc02a379f7e70d64246ccde1be270"><td class="memItemLeft" align="right" valign="top"><a id="a270bc02a379f7e70d64246ccde1be270"></a>
+<a class="el" href="class_c_cut_widget.html">CCutWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCutWidget</b> ()</td></tr>
+<tr class="separator:a270bc02a379f7e70d64246ccde1be270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e863a7e50ce195266c87d193d3d3cb"><td class="memItemLeft" align="right" valign="top"><a id="a58e863a7e50ce195266c87d193d3d3cb"></a>
+<a class="el" href="class_c_picture_widget.html">CPictureWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPictureWidget</b> ()</td></tr>
+<tr class="separator:a58e863a7e50ce195266c87d193d3d3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215f6dc008eafaf7ab9eb4dd8f0dc3d4"><td class="memItemLeft" align="right" valign="top"><a id="a215f6dc008eafaf7ab9eb4dd8f0dc3d4"></a>
+<a class="el" href="class_group_operation.html">GroupOperation</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getGroupWidget</b> ()</td></tr>
+<tr class="separator:a215f6dc008eafaf7ab9eb4dd8f0dc3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_c_item_attri_widget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_item_attri_widget')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_c_item_attri_widget.html">CItemAttriWidget</a></td></tr>
+<tr class="memitem:ad20050b9110f95a7cef2dc4ef6f6eb24 inherit pub_methods_class_c_item_attri_widget"><td class="memItemLeft" align="right" valign="top"><a id="ad20050b9110f95a7cef2dc4ef6f6eb24"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CItemAttriWidget</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="separator:ad20050b9110f95a7cef2dc4ef6f6eb24 inherit pub_methods_class_c_item_attri_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff91593c4a37a0d1930cca64ec34369 inherit pub_methods_class_c_item_attri_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_item_attri_widget.html#aaff91593c4a37a0d1930cca64ec34369">setGraphicItem</a> (<a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *pItem)</td></tr>
+<tr class="memdesc:aaff91593c4a37a0d1930cca64ec34369 inherit pub_methods_class_c_item_attri_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">setGraphicItem　设置当前图元  <a href="class_c_item_attri_widget.html#aaff91593c4a37a0d1930cca64ec34369">更多...</a><br /></td></tr>
+<tr class="separator:aaff91593c4a37a0d1930cca64ec34369 inherit pub_methods_class_c_item_attri_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a13a94faffb2b7719fc9dc7a43a920 inherit pub_methods_class_c_item_attri_widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_item_attri_widget.html#a44a13a94faffb2b7719fc9dc7a43a920">graphicItem</a> ()</td></tr>
+<tr class="memdesc:a44a13a94faffb2b7719fc9dc7a43a920 inherit pub_methods_class_c_item_attri_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">graphicItem　获取当前图元  <a href="class_c_item_attri_widget.html#a44a13a94faffb2b7719fc9dc7a43a920">更多...</a><br /></td></tr>
+<tr class="separator:a44a13a94faffb2b7719fc9dc7a43a920 inherit pub_methods_class_c_item_attri_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected 槽</h2></td></tr>
+<tr class="memitem:a0b7b534dd03b8c31bd8f7714804c1686"><td class="memItemLeft" align="right" valign="top"><a id="a0b7b534dd03b8c31bd8f7714804c1686"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ensureTextFocus</b> ()</td></tr>
+<tr class="separator:a0b7b534dd03b8c31bd8f7714804c1686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7960809cd297f5ddf13483e3c1ac90"><td class="memItemLeft" align="right" valign="top"><a id="ace7960809cd297f5ddf13483e3c1ac90"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTextEnableUndoThisTime</b> ()</td></tr>
+<tr class="separator:ace7960809cd297f5ddf13483e3c1ac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a2f172f9294ac30112a27a9da66facef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_com_attr_widget.html#a2f172f9294ac30112a27a9da66facef4">refresh</a> () override</td></tr>
+<tr class="memdesc:a2f172f9294ac30112a27a9da66facef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">refresh　刷新  <a href="#a2f172f9294ac30112a27a9da66facef4">更多...</a><br /></td></tr>
+<tr class="separator:a2f172f9294ac30112a27a9da66facef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6897b6de2158b5503b1bcde58b058ba7"><td class="memItemLeft" align="right" valign="top"><a id="a6897b6de2158b5503b1bcde58b058ba7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initUiWhenShow</b> () override</td></tr>
+<tr class="separator:a6897b6de2158b5503b1bcde58b058ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4458c8985e0c1982b1f5e7e9529bc63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_com_attr_widget.html#ad4458c8985e0c1982b1f5e7e9529bc63">resizeEvent</a> (QResizeEvent *event) override</td></tr>
+<tr class="memdesc:ad4458c8985e0c1982b1f5e7e9529bc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">resizeEvent 窗口大小更改响应事件函数  <a href="#ad4458c8985e0c1982b1f5e7e9529bc63">更多...</a><br /></td></tr>
+<tr class="separator:ad4458c8985e0c1982b1f5e7e9529bc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ac058d309f6f690eb9c3333be10e89299"><td class="memItemLeft" align="right" valign="top"><a id="ac058d309f6f690eb9c3333be10e89299"></a>
+QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_contrlLay</b> = nullptr</td></tr>
+<tr class="separator:ac058d309f6f690eb9c3333be10e89299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6658e9383523a204a4d0a6c9cb90275c"><td class="memItemLeft" align="right" valign="top"><a id="a6658e9383523a204a4d0a6c9cb90275c"></a>
+DLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_title</b> = nullptr</td></tr>
+<tr class="separator:a6658e9383523a204a4d0a6c9cb90275c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68eaf8f0215e4801e02e3fcd48c4c6d"><td class="memItemLeft" align="right" valign="top"><a id="ae68eaf8f0215e4801e02e3fcd48c4c6d"></a>
+<a class="el" href="class_big_color_button.html">CBrushColorBtn</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_fillBtn</b> = nullptr</td></tr>
+<tr class="separator:ae68eaf8f0215e4801e02e3fcd48c4c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c78e8331b2a95b9b331960e7878fb44"><td class="memItemLeft" align="right" valign="top"><a id="a3c78e8331b2a95b9b331960e7878fb44"></a>
+<a class="el" href="class_border_color_button.html">CPenColorBtn</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_strokeBtn</b> = nullptr</td></tr>
+<tr class="separator:a3c78e8331b2a95b9b331960e7878fb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4efc8f9383162e76343e9572524771d"><td class="memItemLeft" align="right" valign="top"><a id="ae4efc8f9383162e76343e9572524771d"></a>
+<a class="el" href="class_c_side_width_widget.html">CSideWidthWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_sideWidthWidget</b> = nullptr</td></tr>
+<tr class="separator:ae4efc8f9383162e76343e9572524771d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af764ba47df9000b0523da9fc87f7a699"><td class="memItemLeft" align="right" valign="top"><a id="af764ba47df9000b0523da9fc87f7a699"></a>
+<a class="el" href="class_seperator_line.html">SeperatorLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_sepLine</b> = nullptr</td></tr>
+<tr class="separator:af764ba47df9000b0523da9fc87f7a699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b004289223f85b848e289e38fd6f28"><td class="memItemLeft" align="right" valign="top"><a id="a91b004289223f85b848e289e38fd6f28"></a>
+<a class="el" href="class_c_spin_box.html">CSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rediusSpinbox</b> = nullptr</td></tr>
+<tr class="separator:a91b004289223f85b848e289e38fd6f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0aee9f213f373f6ea78dae81cf9b64"><td class="memItemLeft" align="right" valign="top"><a id="a9e0aee9f213f373f6ea78dae81cf9b64"></a>
+DLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rediusLable</b> = nullptr</td></tr>
+<tr class="separator:a9e0aee9f213f373f6ea78dae81cf9b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68956180fd68667ca9f60ccc98a4639"><td class="memItemLeft" align="right" valign="top"><a id="ae68956180fd68667ca9f60ccc98a4639"></a>
+DComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_lineStartComboBox</b> = nullptr</td></tr>
+<tr class="separator:ae68956180fd68667ca9f60ccc98a4639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7dddb1f86a9e07a924b7f9a2d54f79a"><td class="memItemLeft" align="right" valign="top"><a id="ab7dddb1f86a9e07a924b7f9a2d54f79a"></a>
+DComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_lineEndComboBox</b> = nullptr</td></tr>
+<tr class="separator:ab7dddb1f86a9e07a924b7f9a2d54f79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82464694b2d936ed54ae9c518f9cb701"><td class="memItemLeft" align="right" valign="top"><a id="a82464694b2d936ed54ae9c518f9cb701"></a>
+DLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_startLabel</b> = nullptr</td></tr>
+<tr class="separator:a82464694b2d936ed54ae9c518f9cb701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1d6c3a55ac3522b45af944f82a8921"><td class="memItemLeft" align="right" valign="top"><a id="aab1d6c3a55ac3522b45af944f82a8921"></a>
+DLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_endLabel</b> = nullptr</td></tr>
+<tr class="separator:aab1d6c3a55ac3522b45af944f82a8921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51fdf7599b5f71b06c7a4a5fef104b0"><td class="memItemLeft" align="right" valign="top"><a id="af51fdf7599b5f71b06c7a4a5fef104b0"></a>
+DLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_maskLableStart</b> = nullptr</td></tr>
+<tr class="separator:af51fdf7599b5f71b06c7a4a5fef104b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70955f7c4cd955b07bd543ebe72472d6"><td class="memItemLeft" align="right" valign="top"><a id="a70955f7c4cd955b07bd543ebe72472d6"></a>
+DLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_maskLableEnd</b> = nullptr</td></tr>
+<tr class="separator:a70955f7c4cd955b07bd543ebe72472d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22226e5dd48dc2a2144c37994e564dfd"><td class="memItemLeft" align="right" valign="top"><a id="a22226e5dd48dc2a2144c37994e564dfd"></a>
+<a class="el" href="class_c_spin_box.html">CSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_anchorNumber</b> = nullptr</td></tr>
+<tr class="separator:a22226e5dd48dc2a2144c37994e564dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5957cc945b87e96803c29d8ded834d17"><td class="memItemLeft" align="right" valign="top"><a id="a5957cc945b87e96803c29d8ded834d17"></a>
+<a class="el" href="class_c_spin_box.html">CSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_radiusNumber</b> = nullptr</td></tr>
+<tr class="separator:a5957cc945b87e96803c29d8ded834d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedcb4790928e4cc9aa17365ada6c00f0"><td class="memItemLeft" align="right" valign="top"><a id="aedcb4790928e4cc9aa17365ada6c00f0"></a>
+DLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_anchorNumLabel</b> = nullptr</td></tr>
+<tr class="separator:aedcb4790928e4cc9aa17365ada6c00f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca36c808b0604c2e0781bd1418e377f"><td class="memItemLeft" align="right" valign="top"><a id="a8ca36c808b0604c2e0781bd1418e377f"></a>
+DLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_radiusLabel</b> = nullptr</td></tr>
+<tr class="separator:a8ca36c808b0604c2e0781bd1418e377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5757605bbf755160328dc12c65d49257"><td class="memItemLeft" align="right" valign="top"><a id="a5757605bbf755160328dc12c65d49257"></a>
+<a class="el" href="class_c_spin_box.html">CSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_sideNumSpinBox</b> = nullptr</td></tr>
+<tr class="separator:a5757605bbf755160328dc12c65d49257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872f9dbabf6b9c9abd09bc3bc35f4aae"><td class="memItemLeft" align="right" valign="top"><a id="a872f9dbabf6b9c9abd09bc3bc35f4aae"></a>
+DLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_sideNumLabel</b> = nullptr</td></tr>
+<tr class="separator:a872f9dbabf6b9c9abd09bc3bc35f4aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ac1ccb268113cd7c475f371b610bc2"><td class="memItemLeft" align="right" valign="top"><a id="a44ac1ccb268113cd7c475f371b610bc2"></a>
+<a class="el" href="class_text_widget.html">TextWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_TextWidget</b> = nullptr</td></tr>
+<tr class="separator:a44ac1ccb268113cd7c475f371b610bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64a18778e8a3320cccd111d55dfa586"><td class="memItemLeft" align="right" valign="top"><a id="ad64a18778e8a3320cccd111d55dfa586"></a>
+<a class="el" href="class_c_cut_widget.html">CCutWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_cutWidget</b> = nullptr</td></tr>
+<tr class="separator:ad64a18778e8a3320cccd111d55dfa586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad227db9e175a5044442cd8f1c1999da9"><td class="memItemLeft" align="right" valign="top"><a id="ad227db9e175a5044442cd8f1c1999da9"></a>
+<a class="el" href="class_blur_widget.html">BlurWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_blurWidget</b> = nullptr</td></tr>
+<tr class="separator:ad227db9e175a5044442cd8f1c1999da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebd198db6a037d607b2fd5f1ac2e359"><td class="memItemLeft" align="right" valign="top"><a id="a4ebd198db6a037d607b2fd5f1ac2e359"></a>
+<a class="el" href="class_c_picture_widget.html">CPictureWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pictureWidget</b> = nullptr</td></tr>
+<tr class="separator:a4ebd198db6a037d607b2fd5f1ac2e359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9d338c9e253db484bce315aac8f9be"><td class="memItemLeft" align="right" valign="top"><a id="a7b9d338c9e253db484bce315aac8f9be"></a>
+<a class="el" href="class_group_operation.html">GroupOperation</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>groupWidget</b> = nullptr</td></tr>
+<tr class="separator:a7b9d338c9e253db484bce315aac8f9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_c_item_attri_widget"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_item_attri_widget')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_c_item_attri_widget.html">CItemAttriWidget</a></td></tr>
+<tr class="memitem:a053ebcd699548f592b0cc7f9b4809ebe inherit pro_attribs_class_c_item_attri_widget"><td class="memItemLeft" align="right" valign="top"><a id="a053ebcd699548f592b0cc7f9b4809ebe"></a>
+<a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_pItem</b> = nullptr</td></tr>
+<tr class="separator:a053ebcd699548f592b0cc7f9b4809ebe inherit pro_attribs_class_c_item_attri_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="citemattriwidget_8h_source.html">citemattriwidget.h</a> 第 <a class="el" href="citemattriwidget_8h_source.html#l00141">141</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a2f172f9294ac30112a27a9da66facef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f172f9294ac30112a27a9da66facef4">&#9670;&nbsp;</a></span>refresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CComAttrWidget::refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>refresh　刷新 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>重载 <a class="el" href="class_c_item_attri_widget.html#a36391414c5518c0421cc1b14dcee1871">CItemAttriWidget</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="citemattriwidget_8cpp_source.html">citemattriwidget.cpp</a> 第 <a class="el" href="citemattriwidget_8cpp_source.html#l00142">142</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad4458c8985e0c1982b1f5e7e9529bc63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4458c8985e0c1982b1f5e7e9529bc63">&#9670;&nbsp;</a></span>resizeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CComAttrWidget::resizeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QResizeEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>resizeEvent 窗口大小更改响应事件函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="citemattriwidget_8cpp_source.html">citemattriwidget.cpp</a> 第 <a class="el" href="citemattriwidget_8cpp_source.html#l00166">166</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>deepin-draw/src/frame/AttributesWidgets/<a class="el" href="citemattriwidget_8h_source.html">citemattriwidget.h</a></li>
+<li>deepin-draw/src/frame/AttributesWidgets/<a class="el" href="citemattriwidget_8cpp_source.html">citemattriwidget.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_c_com_attr_widget.html">CComAttrWidget</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

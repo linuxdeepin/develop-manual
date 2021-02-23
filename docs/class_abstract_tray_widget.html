@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: AbstractTrayWidget类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_abstract_tray_widget.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_abstract_tray_widget-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">AbstractTrayWidget类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 AbstractTrayWidget 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_abstract_tray_widget__inherit__graph.png" border="0" usemap="#_abstract_tray_widget_inherit__map" alt="Inheritance graph"/></div>
+<map name="_abstract_tray_widget_inherit__map" id="_abstract_tray_widget_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+AbstractTrayWidget 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_abstract_tray_widget__coll__graph.png" border="0" usemap="#_abstract_tray_widget_coll__map" alt="Collaboration graph"/></div>
+<map name="_abstract_tray_widget_coll__map" id="_abstract_tray_widget_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:acef713e9e53c0b45537b0fa6f79c110e"><td class="memItemLeft" align="right" valign="top"><a id="acef713e9e53c0b45537b0fa6f79c110e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TrayType</b> { <b>ApplicationTray</b>, 
+<b>SystemTray</b>
+ }</td></tr>
+<tr class="separator:acef713e9e53c0b45537b0fa6f79c110e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a442b7afbc3c98e233df9e04ab283de73"><td class="memItemLeft" align="right" valign="top"><a id="a442b7afbc3c98e233df9e04ab283de73"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>iconChanged</b> ()</td></tr>
+<tr class="separator:a442b7afbc3c98e233df9e04ab283de73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ecc7b8e9111c9e24f2a77603b769c26"><td class="memItemLeft" align="right" valign="top"><a id="a5ecc7b8e9111c9e24f2a77603b769c26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clicked</b> ()</td></tr>
+<tr class="separator:a5ecc7b8e9111c9e24f2a77603b769c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58f1a590c21b478aa3b9597609a52c5"><td class="memItemLeft" align="right" valign="top"><a id="ae58f1a590c21b478aa3b9597609a52c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>needAttention</b> ()</td></tr>
+<tr class="separator:ae58f1a590c21b478aa3b9597609a52c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6e5b87b7382bd8784ef20f7d71ac7a"><td class="memItemLeft" align="right" valign="top"><a id="aed6e5b87b7382bd8784ef20f7d71ac7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestWindowAutoHide</b> (const bool autoHide)</td></tr>
+<tr class="separator:aed6e5b87b7382bd8784ef20f7d71ac7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c3912138de8549d9322a25b95f5353"><td class="memItemLeft" align="right" valign="top"><a id="ab9c3912138de8549d9322a25b95f5353"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestRefershWindowVisible</b> ()</td></tr>
+<tr class="separator:ab9c3912138de8549d9322a25b95f5353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a426a8d0316f90d7c7712e27f40c08c0b"><td class="memItemLeft" align="right" valign="top"><a id="a426a8d0316f90d7c7712e27f40c08c0b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractTrayWidget</b> (QWidget *parent=Q_NULLPTR, Qt::WindowFlags f=Qt::WindowFlags())</td></tr>
+<tr class="separator:a426a8d0316f90d7c7712e27f40c08c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f0634fd3352e0acbe67c0265a4aef9"><td class="memItemLeft" align="right" valign="top"><a id="af4f0634fd3352e0acbe67c0265a4aef9"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>itemKeyForConfig</b> ()=0</td></tr>
+<tr class="separator:af4f0634fd3352e0acbe67c0265a4aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5572bb7e4bf0e2e199ab2c9e2b11b30d"><td class="memItemLeft" align="right" valign="top"><a id="a5572bb7e4bf0e2e199ab2c9e2b11b30d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setActive</b> (const bool active)=0</td></tr>
+<tr class="separator:a5572bb7e4bf0e2e199ab2c9e2b11b30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbabb40a17265180699f51fbf24ea0b0"><td class="memItemLeft" align="right" valign="top"><a id="acbabb40a17265180699f51fbf24ea0b0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateIcon</b> ()=0</td></tr>
+<tr class="separator:acbabb40a17265180699f51fbf24ea0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96e61974e1639969717586c7fb6dea3"><td class="memItemLeft" align="right" valign="top"><a id="ab96e61974e1639969717586c7fb6dea3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>sendClick</b> (uint8_t mouseButton, int x, int y)=0</td></tr>
+<tr class="separator:ab96e61974e1639969717586c7fb6dea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94c487ef8f732d8742a37889e0b07c1"><td class="memItemLeft" align="right" valign="top"><a id="ab94c487ef8f732d8742a37889e0b07c1"></a>
+virtual const QImage&#160;</td><td class="memItemRight" valign="bottom"><b>trayImage</b> ()=0</td></tr>
+<tr class="separator:ab94c487ef8f732d8742a37889e0b07c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d61ea96d71bacca600002bfd1f0c45b"><td class="memItemLeft" align="right" valign="top"><a id="a1d61ea96d71bacca600002bfd1f0c45b"></a>
+virtual TrayType&#160;</td><td class="memItemRight" valign="bottom"><b>trayTyep</b> () const</td></tr>
+<tr class="separator:a1d61ea96d71bacca600002bfd1f0c45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9b56b6984bb8dac7d0dff17c611ea6"><td class="memItemLeft" align="right" valign="top"><a id="a8f9b56b6984bb8dac7d0dff17c611ea6"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValid</b> ()</td></tr>
+<tr class="separator:a8f9b56b6984bb8dac7d0dff17c611ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a6599dc3c5cb6626cbda3b86d0f28aed4"><td class="memItemLeft" align="right" valign="top"><a id="a6599dc3c5cb6626cbda3b86d0f28aed4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a6599dc3c5cb6626cbda3b86d0f28aed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7789956ff2189114de427b4bad2f8b"><td class="memItemLeft" align="right" valign="top"><a id="aba7789956ff2189114de427b4bad2f8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *e) override</td></tr>
+<tr class="separator:aba7789956ff2189114de427b4bad2f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d083adc9ad93fd7d7146da58f04cf63"><td class="memItemLeft" align="right" valign="top"><a id="a9d083adc9ad93fd7d7146da58f04cf63"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleMouseRelease</b> ()</td></tr>
+<tr class="separator:a9d083adc9ad93fd7d7146da58f04cf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd905de68325c11f6c4ecd3522ba6241"><td class="memItemLeft" align="right" valign="top"><a id="abd905de68325c11f6c4ecd3522ba6241"></a>
+const QRect&#160;</td><td class="memItemRight" valign="bottom"><b>perfectIconRect</b> () const</td></tr>
+<tr class="separator:abd905de68325c11f6c4ecd3522ba6241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cde538594c5610256eea21490572ae8"><td class="memItemLeft" align="right" valign="top"><a id="a9cde538594c5610256eea21490572ae8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
+<tr class="separator:a9cde538594c5610256eea21490572ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="abstracttraywidget_8h_source.html">abstracttraywidget.h</a> 第 <a class="el" href="abstracttraywidget_8h_source.html#l00029">29</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-dock/plugins/tray/<a class="el" href="abstracttraywidget_8h_source.html">abstracttraywidget.h</a></li>
+<li>dde-dock/plugins/tray/<a class="el" href="abstracttraywidget_8cpp_source.html">abstracttraywidget.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_abstract_tray_widget.html">AbstractTrayWidget</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

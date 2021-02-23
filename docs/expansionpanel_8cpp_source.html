@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: deepin-draw/src/widgets/expansionpanel.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('expansionpanel_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">expansionpanel.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;expansionpanel.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;frame/cviewmanagement.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QGraphicsDropShadowEffect&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QVBoxLayout&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_expansion_panel.html#a7ed8366b0a7fccccbf8d733097f9b829">    7</a></span>&#160;<a class="code" href="class_expansion_panel.html#a7ed8366b0a7fccccbf8d733097f9b829">ExpansionPanel::ExpansionPanel</a>(QWidget *parent) : DBlurEffectWidget(parent)</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    QVBoxLayout *layout = <span class="keyword">new</span> QVBoxLayout;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">//设置圆角</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    setBlurRectXRadius(18);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    setBlurRectYRadius(18);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    setBlurEnabled(<span class="keyword">true</span>);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    setMode(DBlurEffectWidget::GaussianBlur);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//绘制背景阴影</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    setAttribute(Qt::WA_TranslucentBackground);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> nMargin = 10;     <span class="comment">// 设置阴影宽度</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    shadow_effect = <span class="keyword">new</span> QGraphicsDropShadowEffect(<span class="keyword">this</span>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    shadow_effect-&gt;setOffset(0, 0);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    shadow_effect-&gt;setBlurRadius(nMargin);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    this-&gt;setGraphicsEffect(shadow_effect); <span class="comment">//最外层的Frame</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//组合按钮</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    m_groupButton = <span class="keyword">new</span> <a class="code" href="class_tool_button.html">ToolButton</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    m_groupButton-&gt;setFixedSize(190, 34);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    m_groupButton-&gt;<a class="code" href="class_tool_button.html#a81eb39bd3cb41fe6c89b2276158a8111">setText</a>(tr(<span class="stringliteral">&quot;Group&quot;</span>));</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    m_groupButton-&gt;<a class="code" href="class_tool_button.html#ad128449359d252baf62284ebddba26d4">setIcon</a>(QIcon::fromTheme(<span class="stringliteral">&quot;icon_group_normal&quot;</span>));</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//释放组合按钮</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    m_unGroupButton = <span class="keyword">new</span> <a class="code" href="class_tool_button.html">ToolButton</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    m_unGroupButton-&gt;setFixedSize(190, 34);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    m_unGroupButton-&gt;<a class="code" href="class_tool_button.html#a81eb39bd3cb41fe6c89b2276158a8111">setText</a>(tr(<span class="stringliteral">&quot;Ungroup&quot;</span>));</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    m_unGroupButton-&gt;<a class="code" href="class_tool_button.html#ad128449359d252baf62284ebddba26d4">setIcon</a>(QIcon::fromTheme(<span class="stringliteral">&quot;icon_ungroup_normal&quot;</span>));</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    layout-&gt;addWidget(m_groupButton);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    layout-&gt;addWidget(m_unGroupButton);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//设置边距</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    layout-&gt;setContentsMargins(0, 12, 0, 12);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    setLayout(layout);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    connect(m_groupButton, &amp;DToolButton::clicked, <span class="keyword">this</span>, [ = ] {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// 组合按钮的点击信号</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        Q_EMIT <a class="code" href="class_expansion_panel.html#ab46db7fb071a13c4ee05663beeef211c">signalItemGroup</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    });</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    connect(m_unGroupButton, &amp;DToolButton::clicked, <span class="keyword">this</span>, [ = ] {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// 释放组合按钮的点击信号</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        Q_EMIT <a class="code" href="class_expansion_panel.html#a4af7f341ee544d4ab06fd1a770cdffcc">signalItemgUngroup</a>();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    });</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_expansion_panel.html#afe32aa2c2ab6584ab5badd9b976be665">   58</a></span>&#160;<a class="code" href="class_tool_button.html">ToolButton</a> *<a class="code" href="class_expansion_panel.html#afe32aa2c2ab6584ab5badd9b976be665">ExpansionPanel::getGroupButton</a>()</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// 组合按钮</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> m_groupButton;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_expansion_panel.html#ad010a91da07b8b8c66c4e966cc1818ab">   64</a></span>&#160;<a class="code" href="class_tool_button.html">ToolButton</a> *<a class="code" href="class_expansion_panel.html#ad010a91da07b8b8c66c4e966cc1818ab">ExpansionPanel::getUngroupButton</a>()</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 释放组合按钮</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span>  m_unGroupButton;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_expansion_panel.html#a80018b2fda32bc614663a174ab3f8485">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_expansion_panel.html#a80018b2fda32bc614663a174ab3f8485">ExpansionPanel::changeTheme</a>()</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (CManageViewSigleton::GetInstance()-&gt;getThemeType() == 1) {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">//背景颜色及透明度</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">auto</span> effect = QColor(<span class="stringliteral">&quot;#EBEBEB&quot;</span>);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        effect.setAlpha(80);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        setMaskColor(effect);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        shadow_effect-&gt;setColor(QColor(150, 150, 150));</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">//背景颜色及透明度</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">auto</span> effect = QColor(<span class="stringliteral">&quot;#404040&quot;</span>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        setMaskColor(effect);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        shadow_effect-&gt;setColor(QColor(<span class="stringliteral">&quot;#404040&quot;</span>));</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="ttc" id="class_expansion_panel_html_a80018b2fda32bc614663a174ab3f8485"><div class="ttname"><a href="class_expansion_panel.html#a80018b2fda32bc614663a174ab3f8485">ExpansionPanel::changeTheme</a></div><div class="ttdeci">void changeTheme()</div><div class="ttdoc">getUngroupButton 主题颜色改变 </div><div class="ttdef"><b>Definition:</b> <a href="expansionpanel_8cpp_source.html#l00070">expansionpanel.cpp:70</a></div></div>
+<div class="ttc" id="class_expansion_panel_html_afe32aa2c2ab6584ab5badd9b976be665"><div class="ttname"><a href="class_expansion_panel.html#afe32aa2c2ab6584ab5badd9b976be665">ExpansionPanel::getGroupButton</a></div><div class="ttdeci">ToolButton * getGroupButton()</div><div class="ttdoc">getGroupButton 获取组合按钮 </div><div class="ttdef"><b>Definition:</b> <a href="expansionpanel_8cpp_source.html#l00058">expansionpanel.cpp:58</a></div></div>
+<div class="ttc" id="class_tool_button_html_ad128449359d252baf62284ebddba26d4"><div class="ttname"><a href="class_tool_button.html#ad128449359d252baf62284ebddba26d4">ToolButton::setIcon</a></div><div class="ttdeci">void setIcon(const QIcon &amp;icon)</div><div class="ttdef"><b>Definition:</b> <a href="toolbutton_8cpp_source.html#l00040">toolbutton.cpp:40</a></div></div>
+<div class="ttc" id="class_expansion_panel_html_a4af7f341ee544d4ab06fd1a770cdffcc"><div class="ttname"><a href="class_expansion_panel.html#a4af7f341ee544d4ab06fd1a770cdffcc">ExpansionPanel::signalItemgUngroup</a></div><div class="ttdeci">void signalItemgUngroup()</div></div>
+<div class="ttc" id="class_expansion_panel_html_a7ed8366b0a7fccccbf8d733097f9b829"><div class="ttname"><a href="class_expansion_panel.html#a7ed8366b0a7fccccbf8d733097f9b829">ExpansionPanel::ExpansionPanel</a></div><div class="ttdeci">ExpansionPanel(QWidget *parent=nullptr)</div><div class="ttdoc">ExpansionPanel 构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="expansionpanel_8cpp_source.html#l00007">expansionpanel.cpp:7</a></div></div>
+<div class="ttc" id="class_tool_button_html"><div class="ttname"><a href="class_tool_button.html">ToolButton</a></div><div class="ttdef"><b>Definition:</b> <a href="toolbutton_8h_source.html#l00030">toolbutton.h:30</a></div></div>
+<div class="ttc" id="class_tool_button_html_a81eb39bd3cb41fe6c89b2276158a8111"><div class="ttname"><a href="class_tool_button.html#a81eb39bd3cb41fe6c89b2276158a8111">ToolButton::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="toolbutton_8cpp_source.html#l00034">toolbutton.cpp:34</a></div></div>
+<div class="ttc" id="class_expansion_panel_html_ab46db7fb071a13c4ee05663beeef211c"><div class="ttname"><a href="class_expansion_panel.html#ab46db7fb071a13c4ee05663beeef211c">ExpansionPanel::signalItemGroup</a></div><div class="ttdeci">void signalItemGroup()</div></div>
+<div class="ttc" id="class_expansion_panel_html_ad010a91da07b8b8c66c4e966cc1818ab"><div class="ttname"><a href="class_expansion_panel.html#ad010a91da07b8b8c66c4e966cc1818ab">ExpansionPanel::getUngroupButton</a></div><div class="ttdeci">ToolButton * getUngroupButton()</div><div class="ttdoc">getUngroupButton 获取释放组合按钮 </div><div class="ttdef"><b>Definition:</b> <a href="expansionpanel_8cpp_source.html#l00064">expansionpanel.cpp:64</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_caff2b1fd7545ce757c8a3b9a7f3898b.html">deepin-draw</a></li><li class="navelem"><a class="el" href="dir_965b9c804c0c8766184e23b894154521.html">src</a></li><li class="navelem"><a class="el" href="dir_5a3593c0fc67987c0264030708a7df56.html">widgets</a></li><li class="navelem"><b>expansionpanel.cpp</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:13 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

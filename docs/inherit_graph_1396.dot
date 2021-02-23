@@ -1,0 +1,7 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="wvWare::PLCF\< wvWare\l::Word97::BTE \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_p_l_c_f.html"];
+}

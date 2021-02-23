@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde_file_manager::DFMBaseView类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdde__file__manager_1_1_d_f_m_base_view.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classdde__file__manager_1_1_d_f_m_base_view-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dde_file_manager::DFMBaseView类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa4451f9e5f01b7208724a087dd2bbf4b"><td class="memItemLeft" align="right" valign="top"><a id="aa4451f9e5f01b7208724a087dd2bbf4b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ViewState</b> { <b>ViewBusy</b>, 
+<b>ViewIdle</b>
+ }</td></tr>
+<tr class="separator:aa4451f9e5f01b7208724a087dd2bbf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae9c358749bc22c681d766c63da0dcc86"><td class="memItemLeft" align="right" valign="top"><a id="ae9c358749bc22c681d766c63da0dcc86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteLater</b> ()</td></tr>
+<tr class="separator:ae9c358749bc22c681d766c63da0dcc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04012b34f3c1d848480caa69d590d0ff"><td class="memItemLeft" align="right" valign="top"><a id="a04012b34f3c1d848480caa69d590d0ff"></a>
+virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>widget</b> () const =0</td></tr>
+<tr class="separator:a04012b34f3c1d848480caa69d590d0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4902f8a91fafd1ae445ba8ae9a80fe00"><td class="memItemLeft" align="right" valign="top"><a id="a4902f8a91fafd1ae445ba8ae9a80fe00"></a>
+virtual <a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rootUrl</b> () const =0</td></tr>
+<tr class="separator:a4902f8a91fafd1ae445ba8ae9a80fe00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48fd581fc6f39a50e8adb8e7a0ca3451"><td class="memItemLeft" align="right" valign="top"><a id="a48fd581fc6f39a50e8adb8e7a0ca3451"></a>
+virtual ViewState&#160;</td><td class="memItemRight" valign="bottom"><b>viewState</b> () const</td></tr>
+<tr class="separator:a48fd581fc6f39a50e8adb8e7a0ca3451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9212a8f524af6da3979378bcf5f3bd0b"><td class="memItemLeft" align="right" valign="top"><a id="a9212a8f524af6da3979378bcf5f3bd0b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>setRootUrl</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)=0</td></tr>
+<tr class="separator:a9212a8f524af6da3979378bcf5f3bd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a0f8e895026770b9be3a6522cccd0a"><td class="memItemLeft" align="right" valign="top"><a id="af5a0f8e895026770b9be3a6522cccd0a"></a>
+virtual <a class="el" href="class_q_list.html">QList</a>&lt; QAction * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>toolBarActionList</b> () const</td></tr>
+<tr class="separator:af5a0f8e895026770b9be3a6522cccd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d3c3004cbc106159f8d70813335e33"><td class="memItemLeft" align="right" valign="top"><a id="af3d3c3004cbc106159f8d70813335e33"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>refresh</b> ()</td></tr>
+<tr class="separator:af3d3c3004cbc106159f8d70813335e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ae6cec750aa329970e468933938b0e54c"><td class="memItemLeft" align="right" valign="top"><a id="ae6cec750aa329970e468933938b0e54c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyUrlChanged</b> ()</td></tr>
+<tr class="separator:ae6cec750aa329970e468933938b0e54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912d65a35d721441670d0ad10e8bd006"><td class="memItemLeft" align="right" valign="top"><a id="a912d65a35d721441670d0ad10e8bd006"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyStateChanged</b> ()</td></tr>
+<tr class="separator:a912d65a35d721441670d0ad10e8bd006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa670353f74a5f201e324693e794a027"><td class="memItemLeft" align="right" valign="top"><a id="afa670353f74a5f201e324693e794a027"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestCdTo</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:afa670353f74a5f201e324693e794a027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7cc00f6329d814e2345ba44e86cf900"><td class="memItemLeft" align="right" valign="top"><a id="aa7cc00f6329d814e2345ba44e86cf900"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>notifySelectUrlChanged</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;urlList)</td></tr>
+<tr class="separator:aa7cc00f6329d814e2345ba44e86cf900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dfmbaseview_8h_source.html">dfmbaseview.h</a> 第 <a class="el" href="dfmbaseview_8h_source.html#l00021">21</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfmbaseview_8h_source.html">dfmbaseview.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfmbaseview_8cpp_source.html">dfmbaseview.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedde__file__manager.html">dde_file_manager</a></li><li class="navelem"><a class="el" href="classdde__file__manager_1_1_d_f_m_base_view.html">DFMBaseView</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

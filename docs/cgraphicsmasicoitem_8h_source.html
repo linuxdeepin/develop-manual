@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: deepin-draw/src/drawshape/drawItems/bzItems/cgraphicsmasicoitem.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('cgraphicsmasicoitem_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cgraphicsmasicoitem.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifdef SINGLEMASIC</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef CGRAPHICSMASICOITEM_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define CGRAPHICSMASICOITEM_H</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;cgraphicsrectitem.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;cgraphicspenitem.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;cpictureitem.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QPainterPath&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_size_handle_rect.html">CSizeHandleRect</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>CGraphicsMasicoItem : <span class="keyword">public</span> <a class="code" href="class_c_graphics_pen_item.html">CGraphicsPenItem</a></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> CGraphicsMasicoItem(QGraphicsItem *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">explicit</span> CGraphicsMasicoItem(<span class="keyword">const</span> QPointF &amp;startPoint, QGraphicsItem *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="class_c_graphics_pen_item.html#a7379dc1f694482e691572a4a6cc1b616">type</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> updateMasicPixmap();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> updateMasicPixmap(<span class="keyword">const</span> QPixmap &amp;pixmap);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QPainterPath <a class="code" href="class_c_graphics_pen_item.html#a387b426897729f6dc2606c8e8bf46e55">getSelfOrgShape</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> updateBlurPath();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QPainterPath blurPath();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    EBlurEffect getBlurEffect() <span class="keyword">const</span>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> setBlurEffect(EBlurEffect effect);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> getBlurWidth() <span class="keyword">const</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> setBlurWidth(<span class="keywordtype">int</span> width);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="struct_c_graphics_unit.html">CGraphicsUnit</a> <a class="code" href="class_c_graphics_pen_item.html#a53b3111e1f67466e89ee2fe914495eb9">getGraphicsUnit</a>(EDataReason reson) <span class="keyword">const override</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_graphics_pen_item.html#a843d8a39e83728b9fb77795fb7393588">loadGraphicsUnit</a>(<span class="keyword">const</span> <a class="code" href="struct_c_graphics_unit.html">CGraphicsUnit</a> &amp;data) <span class="keyword">override</span>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//    QPixmap blurPix();</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;QGraphicsItem *&gt;</a> filterItems(<a class="code" href="class_q_list.html">QList&lt;QGraphicsItem *&gt;</a> items);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">enum</span> EBlurAlp {EFreeBlur, EOnlyImag, Q3Alp = EFreeBlur, Q4Alp = EOnlyImag, EBlurCount};</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_graphics_item.html#ac6bdbc6b4eae1bda01304f54909616ba">updateBlurPixmap</a>(EBlurAlp tp = Q4Alp);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> freeBlurUpdate();</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> onlyImageBlurUpdate();</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_graphics_pen_item.html#aa744e90577472b2400b6cbc86ae9c992">paint</a>(QPainter *painter, <span class="keyword">const</span> QStyleOptionGraphicsItem *option, QWidget *widget = <span class="keyword">nullptr</span>) <span class="keyword">override</span>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_graphics_pen_item.html#a6b5e0c9b402fe8be5c39bc6f3b91237e">isPosPenetrable</a>(<span class="keyword">const</span> QPointF &amp;posLocal) <span class="keyword">override</span>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    QPixmap      m_pixmap;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    QPainterPath m_blurPath;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    EBlurEffect  m_nBlurEffect;   <span class="comment">//0是模糊  1是马赛克</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // CGRAPHICSMASICOITEM_H</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_c_size_handle_rect_html"><div class="ttname"><a href="class_c_size_handle_rect.html">CSizeHandleRect</a></div><div class="ttdoc">The CSizeHandleRect class 外接矩形类 </div><div class="ttdef"><b>Definition:</b> <a href="csizehandlerect_8h_source.html#l00043">csizehandlerect.h:43</a></div></div>
+<div class="ttc" id="class_c_graphics_item_html_ac6bdbc6b4eae1bda01304f54909616ba"><div class="ttname"><a href="class_c_graphics_item.html#ac6bdbc6b4eae1bda01304f54909616ba">CGraphicsItem::updateBlurPixmap</a></div><div class="ttdeci">void updateBlurPixmap(bool baseOrg=false, EBlurEffect effetTp=UnknowEffect)</div><div class="ttdoc">updateBlurPixmap 获取到新的模糊图像 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicsitem_8cpp_source.html#l01256">cgraphicsitem.cpp:1256</a></div></div>
+<div class="ttc" id="class_c_graphics_pen_item_html_a53b3111e1f67466e89ee2fe914495eb9"><div class="ttname"><a href="class_c_graphics_pen_item.html#a53b3111e1f67466e89ee2fe914495eb9">CGraphicsPenItem::getGraphicsUnit</a></div><div class="ttdeci">CGraphicsUnit getGraphicsUnit(EDataReason reson) const override</div><div class="ttdoc">getGraphicsUnit 获取图元的信息 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicspenitem_8cpp_source.html#l00116">cgraphicspenitem.cpp:116</a></div></div>
+<div class="ttc" id="class_c_graphics_pen_item_html_a843d8a39e83728b9fb77795fb7393588"><div class="ttname"><a href="class_c_graphics_pen_item.html#a843d8a39e83728b9fb77795fb7393588">CGraphicsPenItem::loadGraphicsUnit</a></div><div class="ttdeci">void loadGraphicsUnit(const CGraphicsUnit &amp;data) override</div><div class="ttdoc">straightLine 得到绘制过程中的可能存在的直线线条 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicspenitem_8cpp_source.html#l00673">cgraphicspenitem.cpp:673</a></div></div>
+<div class="ttc" id="class_c_graphics_pen_item_html_a7379dc1f694482e691572a4a6cc1b616"><div class="ttname"><a href="class_c_graphics_pen_item.html#a7379dc1f694482e691572a4a6cc1b616">CGraphicsPenItem::type</a></div><div class="ttdeci">int type() const override</div><div class="ttdoc">rect 重写实现画笔的类型 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicspenitem_8cpp_source.html#l00079">cgraphicspenitem.cpp:79</a></div></div>
+<div class="ttc" id="class_c_graphics_pen_item_html"><div class="ttname"><a href="class_c_graphics_pen_item.html">CGraphicsPenItem</a></div><div class="ttdef"><b>Definition:</b> <a href="cgraphicspenitem_8h_source.html#l00028">cgraphicspenitem.h:28</a></div></div>
+<div class="ttc" id="class_c_graphics_pen_item_html_aa744e90577472b2400b6cbc86ae9c992"><div class="ttname"><a href="class_c_graphics_pen_item.html#aa744e90577472b2400b6cbc86ae9c992">CGraphicsPenItem::paint</a></div><div class="ttdeci">void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</div><div class="ttdoc">paint 绘制图元 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicspenitem_8cpp_source.html#l00508">cgraphicspenitem.cpp:508</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="dbuscontrolcenterservice_8h_source.html#l00049">dbuscontrolcenterservice.h:49</a></div></div>
+<div class="ttc" id="struct_c_graphics_unit_html"><div class="ttname"><a href="struct_c_graphics_unit.html">CGraphicsUnit</a></div><div class="ttdef"><b>Definition:</b> <a href="sitemdata_8h_source.html#l00647">sitemdata.h:647</a></div></div>
+<div class="ttc" id="class_c_graphics_pen_item_html_a387b426897729f6dc2606c8e8bf46e55"><div class="ttname"><a href="class_c_graphics_pen_item.html#a387b426897729f6dc2606c8e8bf46e55">CGraphicsPenItem::getSelfOrgShape</a></div><div class="ttdeci">QPainterPath getSelfOrgShape() const override</div><div class="ttdoc">inSideShape 重写实现画笔的图元原始形状（图元不包括边线） </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicspenitem_8cpp_source.html#l00687">cgraphicspenitem.cpp:687</a></div></div>
+<div class="ttc" id="class_c_graphics_pen_item_html_a6b5e0c9b402fe8be5c39bc6f3b91237e"><div class="ttname"><a href="class_c_graphics_pen_item.html#a6b5e0c9b402fe8be5c39bc6f3b91237e">CGraphicsPenItem::isPosPenetrable</a></div><div class="ttdeci">virtual bool isPosPenetrable(const QPointF &amp;posLocal) override</div><div class="ttdoc">isPosPenetrable 是否可以进行穿透 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicspenitem_8cpp_source.html#l00549">cgraphicspenitem.cpp:549</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_caff2b1fd7545ce757c8a3b9a7f3898b.html">deepin-draw</a></li><li class="navelem"><a class="el" href="dir_965b9c804c0c8766184e23b894154521.html">src</a></li><li class="navelem"><a class="el" href="dir_4918845f4b587318be6f85693383e83a.html">drawshape</a></li><li class="navelem"><a class="el" href="dir_4c8b3ba55c68338e3d634e1cc8836cbf.html">drawItems</a></li><li class="navelem"><a class="el" href="dir_ee21388da19f85567db7fc742978e142.html">bzItems</a></li><li class="navelem"><b>cgraphicsmasicoitem.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:13 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

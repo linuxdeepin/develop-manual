@@ -1,0 +1,955 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: wvWare::UString类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classwv_ware_1_1_u_string.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classwv_ware_1_1_u_string-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">wvWare::UString类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Unicode string class  
+ <a href="classwv_ware_1_1_u_string.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ustring_8h_source.html">ustring.h</a>&gt;</code></p>
+<div class="dynheader">
+类 wvWare::UString 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classwv_ware_1_1_u_string__inherit__graph.png" border="0" usemap="#wv_ware_1_1_u_string_inherit__map" alt="Inheritance graph"/></div>
+<map name="wv_ware_1_1_u_string_inherit__map" id="wv_ware_1_1_u_string_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+wvWare::UString 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classwv_ware_1_1_u_string__coll__graph.png" border="0" usemap="#wv_ware_1_1_u_string_coll__map" alt="Collaboration graph"/></div>
+<map name="wv_ware_1_1_u_string_coll__map" id="wv_ware_1_1_u_string_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a6bff2ea822acdda7aa6203a31e2de5e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a6bff2ea822acdda7aa6203a31e2de5e9">UString</a> ()</td></tr>
+<tr class="separator:a6bff2ea822acdda7aa6203a31e2de5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f119ee9f4b878721ca3c75fb15fbdd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a3f119ee9f4b878721ca3c75fb15fbdd5">UString</a> (char c)</td></tr>
+<tr class="separator:a3f119ee9f4b878721ca3c75fb15fbdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9dc6b28118d50435c0117bfdf90d4d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#ae9dc6b28118d50435c0117bfdf90d4d8">UString</a> (<a class="el" href="structwv_ware_1_1_u_char.html">UChar</a> c)</td></tr>
+<tr class="separator:ae9dc6b28118d50435c0117bfdf90d4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7c6a727fa9eb36aabc639644e3c026"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a2a7c6a727fa9eb36aabc639644e3c026">UString</a> (const char *c)</td></tr>
+<tr class="separator:a2a7c6a727fa9eb36aabc639644e3c026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02853f089c16880f35e4da47bd431ad6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a02853f089c16880f35e4da47bd431ad6">UString</a> (const <a class="el" href="structwv_ware_1_1_u_char.html">UChar</a> *c, int <a class="el" href="classwv_ware_1_1_u_string.html#a25a12950600206b7a80c734919154126">length</a>)</td></tr>
+<tr class="separator:a02853f089c16880f35e4da47bd431ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8a7a91e2c18cf6e2d37517ee1de9d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a0e8a7a91e2c18cf6e2d37517ee1de9d6">UString</a> (const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;)</td></tr>
+<tr class="separator:a0e8a7a91e2c18cf6e2d37517ee1de9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8fefbb3aebbb8288739ab1dea0a197"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a8c8fefbb3aebbb8288739ab1dea0a197">~UString</a> ()</td></tr>
+<tr class="separator:a8c8fefbb3aebbb8288739ab1dea0a197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20edaa32eba4f5c3a148098e843742d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#af20edaa32eba4f5c3a148098e843742d">append</a> (const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;)</td></tr>
+<tr class="separator:af20edaa32eba4f5c3a148098e843742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad776d5ad8fc5afe3340594b0806a78c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwv_ware_1_1_c_string.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#ad776d5ad8fc5afe3340594b0806a78c7">cstring</a> () const</td></tr>
+<tr class="separator:ad776d5ad8fc5afe3340594b0806a78c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bdefec4e676d5ea24ce22dc779a0269"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a7bdefec4e676d5ea24ce22dc779a0269">ascii</a> () const</td></tr>
+<tr class="separator:a7bdefec4e676d5ea24ce22dc779a0269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c59536babf6a3f14f6cd762b6e3cce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a6c59536babf6a3f14f6cd762b6e3cce1">operator=</a> (const char *c)</td></tr>
+<tr class="separator:a6c59536babf6a3f14f6cd762b6e3cce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b53b7e2a89ab36259b44379d4075fdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a5b53b7e2a89ab36259b44379d4075fdf">operator=</a> (const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;)</td></tr>
+<tr class="separator:a5b53b7e2a89ab36259b44379d4075fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8996bf10de353a518798fd8841ebe3e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a8996bf10de353a518798fd8841ebe3e8">operator+=</a> (const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;s)</td></tr>
+<tr class="separator:a8996bf10de353a518798fd8841ebe3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590cb6e7561e8fb9719744f29e41dd46"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structwv_ware_1_1_u_char.html">UChar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a590cb6e7561e8fb9719744f29e41dd46">data</a> () const</td></tr>
+<tr class="separator:a590cb6e7561e8fb9719744f29e41dd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e6ab1a1b80014647e9032ebdeb632e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a92e6ab1a1b80014647e9032ebdeb632e">isNull</a> () const</td></tr>
+<tr class="separator:a92e6ab1a1b80014647e9032ebdeb632e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b38e4f10b7c57be81157ebc0389096c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a7b38e4f10b7c57be81157ebc0389096c">isEmpty</a> () const</td></tr>
+<tr class="separator:a7b38e4f10b7c57be81157ebc0389096c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d96667357fbe60fd5bb54f09d7bb3c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a1d96667357fbe60fd5bb54f09d7bb3c1">is8Bit</a> () const</td></tr>
+<tr class="separator:a1d96667357fbe60fd5bb54f09d7bb3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a12950600206b7a80c734919154126"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a25a12950600206b7a80c734919154126">length</a> () const</td></tr>
+<tr class="separator:a25a12950600206b7a80c734919154126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0aefe55e382305b250ce5b02f8551a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwv_ware_1_1_u_char.html">UChar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#af0aefe55e382305b250ce5b02f8551a2">operator[]</a> (int pos) const</td></tr>
+<tr class="separator:af0aefe55e382305b250ce5b02f8551a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab183a5bc8eff73f8f374536b54e44c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwv_ware_1_1_u_char_reference.html">UCharReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a3ab183a5bc8eff73f8f374536b54e44c">operator[]</a> (int pos)</td></tr>
+<tr class="separator:a3ab183a5bc8eff73f8f374536b54e44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea23fc787ef1bc877f98e2817803ac8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a8ea23fc787ef1bc877f98e2817803ac8">toDouble</a> (bool tolerant=false) const</td></tr>
+<tr class="separator:a8ea23fc787ef1bc877f98e2817803ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b1a9dc469438308ddff432c45e689f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#ae3b1a9dc469438308ddff432c45e689f">toULong</a> (bool *ok=0L) const</td></tr>
+<tr class="separator:ae3b1a9dc469438308ddff432c45e689f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533bbbd660d594c94f3679012873f488"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a533bbbd660d594c94f3679012873f488">find</a> (const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;f, int pos=0) const</td></tr>
+<tr class="separator:a533bbbd660d594c94f3679012873f488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5857fe44e2e3c86d71956d90067207ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a5857fe44e2e3c86d71956d90067207ba">rfind</a> (const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;f, int pos) const</td></tr>
+<tr class="separator:a5857fe44e2e3c86d71956d90067207ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2c842eb55459ef26bd94ebc6b53743"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#abf2c842eb55459ef26bd94ebc6b53743">substr</a> (int pos=0, int len=-1) const</td></tr>
+<tr class="separator:abf2c842eb55459ef26bd94ebc6b53743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:afa4fb189e0a0a6094b54516833eb0257"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwv_ware_1_1_u_string.html">UString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#afa4fb189e0a0a6094b54516833eb0257">from</a> (int i)</td></tr>
+<tr class="separator:afa4fb189e0a0a6094b54516833eb0257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a7ad711ecba8d5877543a3fbd569fe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwv_ware_1_1_u_string.html">UString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#a37a7ad711ecba8d5877543a3fbd569fe">from</a> (unsigned int u)</td></tr>
+<tr class="separator:a37a7ad711ecba8d5877543a3fbd569fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2c0f8da1e7b0b9958e5742150347a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwv_ware_1_1_u_string.html">UString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#acd2c0f8da1e7b0b9958e5742150347a6">from</a> (double d)</td></tr>
+<tr class="separator:acd2c0f8da1e7b0b9958e5742150347a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:ab593c40f5576c145960dc5e9bbdb80ea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwv_ware_1_1_u_string.html">UString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_u_string.html#ab593c40f5576c145960dc5e9bbdb80ea">null</a></td></tr>
+<tr class="separator:ab593c40f5576c145960dc5e9bbdb80ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:abd8cd4807275b7bad329a361e4f525b2"><td class="memItemLeft" align="right" valign="top"><a id="abd8cd4807275b7bad329a361e4f525b2"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>UCharReference</b></td></tr>
+<tr class="separator:abd8cd4807275b7bad329a361e4f525b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31b2e31eb45126a183077725e2a206a"><td class="memItemLeft" align="right" valign="top"><a id="ad31b2e31eb45126a183077725e2a206a"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>UConstString</b></td></tr>
+<tr class="separator:ad31b2e31eb45126a183077725e2a206a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ba09d689497e0a2a506a9bb693ebf2"><td class="memItemLeft" align="right" valign="top"><a id="ae8ba09d689497e0a2a506a9bb693ebf2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;, const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;)</td></tr>
+<tr class="separator:ae8ba09d689497e0a2a506a9bb693ebf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Unicode string class </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8h_source.html">ustring.h</a> 第 <a class="el" href="ustring_8h_source.html#l00184">184</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a6bff2ea822acdda7aa6203a31e2de5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bff2ea822acdda7aa6203a31e2de5e9">&#9670;&nbsp;</a></span>UString() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UString::UString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a null string. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00236">236</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3f119ee9f4b878721ca3c75fb15fbdd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f119ee9f4b878721ca3c75fb15fbdd5">&#9670;&nbsp;</a></span>UString() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UString::UString </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a string from the single character c. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00243">243</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae9dc6b28118d50435c0117bfdf90d4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9dc6b28118d50435c0117bfdf90d4d8">&#9670;&nbsp;</a></span>UString() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UString::UString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_u_char.html">UChar</a>&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a string from the single character c. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00252">252</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2a7c6a727fa9eb36aabc639644e3c026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7c6a727fa9eb36aabc639644e3c026">&#9670;&nbsp;</a></span>UString() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UString::UString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a string from a classical zero determined char string. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00261">261</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a02853f089c16880f35e4da47bd431ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02853f089c16880f35e4da47bd431ad6">&#9670;&nbsp;</a></span>UString() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UString::UString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structwv_ware_1_1_u_char.html">UChar</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a string from an array of Unicode characters of the specified length. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00269">269</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0e8a7a91e2c18cf6e2d37517ee1de9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8a7a91e2c18cf6e2d37517ee1de9d6">&#9670;&nbsp;</a></span>UString() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UString::UString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy constructor. Makes a shallow copy only. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00278">278</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8c8fefbb3aebbb8288739ab1dea0a197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c8fefbb3aebbb8288739ab1dea0a197">&#9670;&nbsp;</a></span>~UString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UString::~UString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor. If this handle was the only one holding a reference to the string the data will be freed. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00292">292</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="af20edaa32eba4f5c3a148098e843742d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20edaa32eba4f5c3a148098e843742d">&#9670;&nbsp;</a></span>append()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp; UString::append </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Append another string. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00341">341</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7bdefec4e676d5ea24ce22dc779a0269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bdefec4e676d5ea24ce22dc779a0269">&#9670;&nbsp;</a></span>ascii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * UString::ascii </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert the Unicode string to plain ASCII chars chopping of any higher bytes. This method should only be used for <em>debugging</em> purposes as it is neither Unicode safe nor free from side effects. In order not to waste any memory the char buffer is static and <em>shared</em> by all <a class="el" href="classwv_ware_1_1_u_string.html" title="Unicode string class ">UString</a> instances. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00364">364</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad776d5ad8fc5afe3340594b0806a78c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad776d5ad8fc5afe3340594b0806a78c7">&#9670;&nbsp;</a></span>cstring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_c_string.html">CString</a> UString::cstring </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The string converted to the 8-bit string type CString(). </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00359">359</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a590cb6e7561e8fb9719744f29e41dd46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590cb6e7561e8fb9719744f29e41dd46">&#9670;&nbsp;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structwv_ware_1_1_u_char.html">UChar</a>* wvWare::UString::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>A pointer to the internal Unicode data. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8h_source.html">ustring.h</a> 第 <a class="el" href="ustring_8h_source.html#l00282">282</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a533bbbd660d594c94f3679012873f488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a533bbbd660d594c94f3679012873f488">&#9670;&nbsp;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UString::find </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>Position of first occurence of f starting at position pos. -1 if the search was not successful. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00509">509</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afa4fb189e0a0a6094b54516833eb0257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4fb189e0a0a6094b54516833eb0257">&#9670;&nbsp;</a></span>from() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> UString::from </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a string from an int. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00300">300</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a37a7ad711ecba8d5877543a3fbd569fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a7ad711ecba8d5877543a3fbd569fe">&#9670;&nbsp;</a></span>from() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> UString::from </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a string from an unsigned int. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00308">308</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acd2c0f8da1e7b0b9958e5742150347a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2c0f8da1e7b0b9958e5742150347a6">&#9670;&nbsp;</a></span>from() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> UString::from </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a string from a double. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00316">316</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1d96667357fbe60fd5bb54f09d7bb3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d96667357fbe60fd5bb54f09d7bb3c1">&#9670;&nbsp;</a></span>is8Bit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UString::is8Bit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use this if you want to make sure that this string is a plain ASCII string. For example, if you don't want to lose any information when using <a class="el" href="classwv_ware_1_1_u_string.html#ad776d5ad8fc5afe3340594b0806a78c7">cstring()</a> or <a class="el" href="classwv_ware_1_1_u_string.html#a7bdefec4e676d5ea24ce22dc779a0269">ascii()</a>.</p>
+<dl class="section return"><dt>返回</dt><dd>True if the string doesn't contain any non-ASCII characters. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00407">407</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7b38e4f10b7c57be81157ebc0389096c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b38e4f10b7c57be81157ebc0389096c">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wvWare::UString::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>True if null or zero length. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8h_source.html">ustring.h</a> 第 <a class="el" href="ustring_8h_source.html#l00295">295</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a92e6ab1a1b80014647e9032ebdeb632e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e6ab1a1b80014647e9032ebdeb632e">&#9670;&nbsp;</a></span>isNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wvWare::UString::isNull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>True if null. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8h_source.html">ustring.h</a> 第 <a class="el" href="ustring_8h_source.html#l00286">286</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a25a12950600206b7a80c734919154126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a12950600206b7a80c734919154126">&#9670;&nbsp;</a></span>length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wvWare::UString::length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The length of the string. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8h_source.html">ustring.h</a> 第 <a class="el" href="ustring_8h_source.html#l00307">307</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8996bf10de353a518798fd8841ebe3e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8996bf10de353a518798fd8841ebe3e8">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp; UString::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Appends the specified string. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00402">402</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c59536babf6a3f14f6cd762b6e3cce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c59536babf6a3f14f6cd762b6e3cce1">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp; UString::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assignment operator. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00376">376</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5b53b7e2a89ab36259b44379d4075fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b53b7e2a89ab36259b44379d4075fdf">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp; UString::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assignment operator. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00388">388</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af0aefe55e382305b250ce5b02f8551a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0aefe55e382305b250ce5b02f8551a2">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structwv_ware_1_1_u_char.html">UChar</a> UString::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Const character at specified position. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00417">417</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3ab183a5bc8eff73f8f374536b54e44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ab183a5bc8eff73f8f374536b54e44c">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_char_reference.html">UCharReference</a> UString::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writable reference to character at specified position. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00425">425</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5857fe44e2e3c86d71956d90067207ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5857fe44e2e3c86d71956d90067207ba">&#9670;&nbsp;</a></span>rfind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UString::rfind </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>Position of first occurence of f searching backwards from position pos. -1 if the search was not successful. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00524">524</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abf2c842eb55459ef26bd94ebc6b53743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2c842eb55459ef26bd94ebc6b53743">&#9670;&nbsp;</a></span>substr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> UString::substr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The sub string starting at position pos and length len. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00539">539</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8ea23fc787ef1bc877f98e2817803ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea23fc787ef1bc877f98e2817803ac8">&#9670;&nbsp;</a></span>toDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UString::toDouble </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>tolerant</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attempts an conversion to a number. Apart from floating point numbers, the algorithm will recognize hexadecimal representations (as indicated by a 0x or 0X prefix) and +/- Infinity. Returns NaN if the conversion failed. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tolerant</td><td>if true, toDouble can tolerate garbage after the number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae3b1a9dc469438308ddff432c45e689f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b1a9dc469438308ddff432c45e689f">&#9670;&nbsp;</a></span>toULong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long UString::toULong </td>
+          <td>(</td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>ok</em> = <code>0L</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attempts an conversion to an unsigned long integer. ok will be set according to the success. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8cpp_source.html">ustring.cpp</a> 第 <a class="el" href="ustring_8cpp_source.html#l00493">493</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ab593c40f5576c145960dc5e9bbdb80ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab593c40f5576c145960dc5e9bbdb80ea">&#9670;&nbsp;</a></span>null</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a> UString::null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static instance of a null string. </p>
+
+<p class="definition">在文件 <a class="el" href="ustring_8h_source.html">ustring.h</a> 第 <a class="el" href="ustring_8h_source.html#l00348">348</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/3rdParty/wv2/<a class="el" href="ustring_8h_source.html">ustring.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/3rdParty/wv2/<a class="el" href="ustring_8cpp_source.html">ustring.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>wvWare</b></li><li class="navelem"><a class="el" href="classwv_ware_1_1_u_string.html">UString</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

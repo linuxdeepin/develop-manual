@@ -1,0 +1,26 @@
+var structwv_ware_1_1_word97_1_1_s_t_d =
+[
+    [ "STD", "structwv_ware_1_1_word97_1_1_s_t_d.html#a520e60b5ac719824e5260f8c8660382c", null ],
+    [ "STD", "structwv_ware_1_1_word97_1_1_s_t_d.html#a985da69e167ab8b48530f8077266cfaa", null ],
+    [ "STD", "structwv_ware_1_1_word97_1_1_s_t_d.html#ad082e9715f151adabb1bab59e5d4992a", null ],
+    [ "~STD", "structwv_ware_1_1_word97_1_1_s_t_d.html#ab7b6b52645aa6f2a0c6a12a940d98785", null ],
+    [ "clear", "structwv_ware_1_1_word97_1_1_s_t_d.html#ae6a94965bbd9bb1ba8cbbe9dfe0fcdee", null ],
+    [ "operator=", "structwv_ware_1_1_word97_1_1_s_t_d.html#aa282b218a56c8e848be86414848676df", null ],
+    [ "read", "structwv_ware_1_1_word97_1_1_s_t_d.html#a2a19b9c46f1ab9b32bd03b01fe5de4ca", null ],
+    [ "bchUpe", "structwv_ware_1_1_word97_1_1_s_t_d.html#a5ae89932925003ca7a8b1885d1e423e6", null ],
+    [ "cupx", "structwv_ware_1_1_word97_1_1_s_t_d.html#a15de1b6cce00de2dd1a97eabbf7942f4", null ],
+    [ "fAutoRedef", "structwv_ware_1_1_word97_1_1_s_t_d.html#a3133d68feaf4d0998fc6dc6276890058", null ],
+    [ "fHasUpe", "structwv_ware_1_1_word97_1_1_s_t_d.html#a59f27f168f5770be4fbf79dd2506ea3d", null ],
+    [ "fHidden", "structwv_ware_1_1_word97_1_1_s_t_d.html#a92fb8d04c50e5f45a1edf99d51c74064", null ],
+    [ "fInvalHeight", "structwv_ware_1_1_word97_1_1_s_t_d.html#a5fcfe780358d59930303fcd7f946c225", null ],
+    [ "fMassCopy", "structwv_ware_1_1_word97_1_1_s_t_d.html#a24f4c7b7ad2ed273b94ef50a187288f1", null ],
+    [ "fScratch", "structwv_ware_1_1_word97_1_1_s_t_d.html#a28659ab613334591ac7d48a7fae4981f", null ],
+    [ "grupx", "structwv_ware_1_1_word97_1_1_s_t_d.html#a0567ee55399e6ba77aa4cc69b6b48bf3", null ],
+    [ "grupxLen", "structwv_ware_1_1_word97_1_1_s_t_d.html#a32ad3cbce07d83dea9d5437967136c39", null ],
+    [ "istdBase", "structwv_ware_1_1_word97_1_1_s_t_d.html#a98fc3b949a9f6d835f28535d6311cb7e", null ],
+    [ "istdNext", "structwv_ware_1_1_word97_1_1_s_t_d.html#a6ca098bc65d8976c004d65fc385f6211", null ],
+    [ "sgc", "structwv_ware_1_1_word97_1_1_s_t_d.html#ad6ea875ffcca2f4321d237a17028545a", null ],
+    [ "sti", "structwv_ware_1_1_word97_1_1_s_t_d.html#a5fd342ba060cfa893f3af009c82b7b62", null ],
+    [ "unused8_3", "structwv_ware_1_1_word97_1_1_s_t_d.html#a9db6377fa3ad01625bab5336c7e09215", null ],
+    [ "xstzName", "structwv_ware_1_1_word97_1_1_s_t_d.html#a70ddf0e9177dd6ad1521ec385ec6446a", null ]
+];

@@ -1,0 +1,25 @@
+var class_multi_pages_view =
+[
+    [ "MultiPagesView", "class_multi_pages_view.html#af722f4cc992761d307f723cb74a20945", null ],
+    [ "connectViewEvent", "class_multi_pages_view.html#a09147ad231e2fccb79450a20e10b1cb3", null ],
+    [ "currentPage", "class_multi_pages_view.html#a3b0d003771e431108361c61183e0c304", null ],
+    [ "getAppItem", "class_multi_pages_view.html#a2c8c7a5c3517c4cff728ec9b40cdba8c", null ],
+    [ "InitUI", "class_multi_pages_view.html#a4e56b60ad25c8a273c8a60a17fc874c2", null ],
+    [ "mouseMove", "class_multi_pages_view.html#afe85f325949677633abadbcc43ffb4ad", null ],
+    [ "mousePress", "class_multi_pages_view.html#a89c013f588cb7662ca075edfbfe515b7", null ],
+    [ "mouseRelease", "class_multi_pages_view.html#a41d2dd4851bcb112fdb0d19d2585aca0", null ],
+    [ "pageCount", "class_multi_pages_view.html#a5d04dc500a9e26a70168c7c8951efff6", null ],
+    [ "pageModel", "class_multi_pages_view.html#afa738f5ed35c448e5e1533d43d59a000", null ],
+    [ "pageView", "class_multi_pages_view.html#aa1dbc3a741a8278c1d39ce1142c82725", null ],
+    [ "selectApp", "class_multi_pages_view.html#ad485a4266f5345798e16fb8d9c83398c", null ],
+    [ "setDataDelegate", "class_multi_pages_view.html#ab3b199113ab1396d1295b7acc47f8dc4", null ],
+    [ "setGradientVisible", "class_multi_pages_view.html#a50b0281e2a93e97d5ca1d1c3d280e733", null ],
+    [ "setModel", "class_multi_pages_view.html#a19ecc002c477ef5086a15b092c680c2b", null ],
+    [ "showCurrentPage", "class_multi_pages_view.html#af8c1413019098f4e8b95ed4f3b53a61f", null ],
+    [ "ShowPageView", "class_multi_pages_view.html#aae011042689c6085b22f6976376b95c9", null ],
+    [ "updateGradient", "class_multi_pages_view.html#ada5f066bb4e712bcb4526acb35252bb6", null ],
+    [ "updateGradient", "class_multi_pages_view.html#abf7864b65f45ec96b4e96600354a6a1f", null ],
+    [ "updatePageCount", "class_multi_pages_view.html#a6e93cfc838a128887eed84528c8e004a", null ],
+    [ "updatePosition", "class_multi_pages_view.html#ae730386d2edd05ab750c9337fda0ef62", null ],
+    [ "wheelEvent", "class_multi_pages_view.html#a0120d81faeae02f7c1c8242195620189", null ]
+];

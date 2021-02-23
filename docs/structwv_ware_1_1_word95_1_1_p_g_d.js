@@ -1,0 +1,25 @@
+var structwv_ware_1_1_word95_1_1_p_g_d =
+[
+    [ "PGD", "structwv_ware_1_1_word95_1_1_p_g_d.html#a6601abbc5f0594397acbda06097dba6b", null ],
+    [ "PGD", "structwv_ware_1_1_word95_1_1_p_g_d.html#a963c994c98a781f90973a8ddb50d9f99", null ],
+    [ "clear", "structwv_ware_1_1_word95_1_1_p_g_d.html#a8f069e65e958188e492ba5343c464cb6", null ],
+    [ "read", "structwv_ware_1_1_word95_1_1_p_g_d.html#ab774f8c341577717ac04ebc3519c74f5", null ],
+    [ "bkc", "structwv_ware_1_1_word95_1_1_p_g_d.html#a7409cb71d4038c4b5fa7b76e19ed76d3", null ],
+    [ "fAllFtn", "structwv_ware_1_1_word95_1_1_p_g_d.html#ad643524eea20b1875a876a5328d53b93", null ],
+    [ "fColOnly", "structwv_ware_1_1_word95_1_1_p_g_d.html#aadd70bc54c1cbf6371d4dbd3c9aed3d4", null ],
+    [ "fColumnBreaks", "structwv_ware_1_1_word95_1_1_p_g_d.html#aef8ec971d0b3037030b7a633730550f2", null ],
+    [ "fContinue", "structwv_ware_1_1_word95_1_1_p_g_d.html#a83aefa0907e8d3f8da3c2ee841d45b7c", null ],
+    [ "fEmptyPage", "structwv_ware_1_1_word95_1_1_p_g_d.html#a6db134e8587374fb5d12a85a4171cc9c", null ],
+    [ "fGhost", "structwv_ware_1_1_word95_1_1_p_g_d.html#a8c312e33f0d8dd6f7fc2b99b42023261", null ],
+    [ "fMarked", "structwv_ware_1_1_word95_1_1_p_g_d.html#a26471f5ce53575206d7adc8927c885e6", null ],
+    [ "fNewPage", "structwv_ware_1_1_word95_1_1_p_g_d.html#adfe5c6eaeafb2ecca2fbf4d9e0bc74af", null ],
+    [ "fPgnRestart", "structwv_ware_1_1_word95_1_1_p_g_d.html#a9546d0164ef1da858ba49f04fd9d8994", null ],
+    [ "fRight", "structwv_ware_1_1_word95_1_1_p_g_d.html#a63a7614c207c5199b59cc06015786fe6", null ],
+    [ "fTableBreaks", "structwv_ware_1_1_word95_1_1_p_g_d.html#aebbb46d49b89aaa0d096192111929d5f", null ],
+    [ "fTableHeader", "structwv_ware_1_1_word95_1_1_p_g_d.html#a105e7a47418edb34808156d4c44d931c", null ],
+    [ "fUnk", "structwv_ware_1_1_word95_1_1_p_g_d.html#a6c43893c78a68c0366fd2e8057c385c3", null ],
+    [ "lnn", "structwv_ware_1_1_word95_1_1_p_g_d.html#a5007977f88f78a392378198294c4638e", null ],
+    [ "pgn", "structwv_ware_1_1_word95_1_1_p_g_d.html#aa8e35cf87496ddf5f3a99b2806927ba9", null ],
+    [ "unused0_0", "structwv_ware_1_1_word95_1_1_p_g_d.html#a51a06d8842fec777a6147000467497c0", null ],
+    [ "unused0_7", "structwv_ware_1_1_word95_1_1_p_g_d.html#ad275dd0427f57e91fe5e07e4ca67efd1", null ]
+];

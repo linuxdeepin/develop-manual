@@ -1,0 +1,36 @@
+var class_d_f_m_device_info =
+[
+    [ "MediaType", "class_d_f_m_device_info.html#ae21c9dfac3e9e31221a462ef41bca8db", [
+      [ "unknown", "class_d_f_m_device_info.html#ae21c9dfac3e9e31221a462ef41bca8dba37b4a6fe3845df2a23f109be539d3f94", null ],
+      [ "native", "class_d_f_m_device_info.html#ae21c9dfac3e9e31221a462ef41bca8dbaa2b67b1bc2f356e76293b1c6d2d93c66", null ],
+      [ "phone", "class_d_f_m_device_info.html#ae21c9dfac3e9e31221a462ef41bca8dbad4948f1582290d38e015895723735490", null ],
+      [ "iphone", "class_d_f_m_device_info.html#ae21c9dfac3e9e31221a462ef41bca8dba1e2c735bcc985ac1fd7c4366457af5f1", null ],
+      [ "removable", "class_d_f_m_device_info.html#ae21c9dfac3e9e31221a462ef41bca8dbae11e6c9f56ccd5c49005e0c04a4bc684", null ],
+      [ "camera", "class_d_f_m_device_info.html#ae21c9dfac3e9e31221a462ef41bca8dbabfbf7a2429e5c5a7897d4a08e24004d9", null ],
+      [ "network", "class_d_f_m_device_info.html#ae21c9dfac3e9e31221a462ef41bca8dbad9e44f28ee4610d22dda78e490387224", null ],
+      [ "dvd", "class_d_f_m_device_info.html#ae21c9dfac3e9e31221a462ef41bca8dba0e0f90c8813625f88189b422646db9d8", null ]
+    ] ],
+    [ "DFMDeviceInfo", "class_d_f_m_device_info.html#a05de45eade986f8155d13b9110821771", null ],
+    [ "DFMDeviceInfo", "class_d_f_m_device_info.html#a34d72c9e97a53ef1105dbc3d1b15a7aa", null ],
+    [ "attachedDevice", "class_d_f_m_device_info.html#a6b3b9e06869745cef5260fec05f0a453", null ],
+    [ "attachedDeviceConst", "class_d_f_m_device_info.html#a565c8f193117e5d0cdda1b0a44c4208d", null ],
+    [ "canRedirectionFileUrl", "class_d_f_m_device_info.html#a654a58d4b76a46a6a5029662252c0c55", null ],
+    [ "canRename", "class_d_f_m_device_info.html#af36d1d56efe2586df09af94805afaf91", null ],
+    [ "exists", "class_d_f_m_device_info.html#a37c6fa133a4f1de51aaff355a52b5a26", null ],
+    [ "fileDisplayName", "class_d_f_m_device_info.html#ab648a5d8200a96a9d874d2c4c488ace6", null ],
+    [ "fileIcon", "class_d_f_m_device_info.html#aa394a79d6805e8ef54964ef91ddcaa47", null ],
+    [ "fileName", "class_d_f_m_device_info.html#a2d00df4ea5c7a9b7f4f81d1c1c9ec639", null ],
+    [ "filesCount", "class_d_f_m_device_info.html#a2ed0f1c3a2a2be0faa05ca8151370da9", null ],
+    [ "freeBytes", "class_d_f_m_device_info.html#ac9ea89cec37aaa046e955c31b1a3a075", null ],
+    [ "isDir", "class_d_f_m_device_info.html#ac1bd42a189e48c1a0c1a1c898ce5d27c", null ],
+    [ "isReadable", "class_d_f_m_device_info.html#ac041ba1f4df009a75cc9c76d7b2b26ab", null ],
+    [ "isValidDevice", "class_d_f_m_device_info.html#a132c50db6f96fc7f62f2f5ff945737a6", null ],
+    [ "isWritable", "class_d_f_m_device_info.html#a81b4f38820113d2617fdffb67f6a96b2", null ],
+    [ "mediaType", "class_d_f_m_device_info.html#afe28090c186e40a93418eb6f974bfe68", null ],
+    [ "parentUrl", "class_d_f_m_device_info.html#a73d1d30484795437eac74417d74a3735", null ],
+    [ "redirectedFileUrl", "class_d_f_m_device_info.html#a9536575afced3ae22e5678ce80a6a493", null ],
+    [ "setUdisks2DeviceInfo", "class_d_f_m_device_info.html#af7c4077efab241ee4242394c3b83ba40", null ],
+    [ "setVfsDeviceInfo", "class_d_f_m_device_info.html#a8f29f5296e31e9af1114e8b408a862e6", null ],
+    [ "size", "class_d_f_m_device_info.html#abf2edc7e9d2323aec88e79de046a0993", null ],
+    [ "totalBytes", "class_d_f_m_device_info.html#a8bf69eabd72ebabb5e67c97f09748a0f", null ]
+];

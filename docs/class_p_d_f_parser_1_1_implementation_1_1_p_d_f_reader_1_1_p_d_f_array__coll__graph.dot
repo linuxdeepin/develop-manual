@@ -1,0 +1,8 @@
+digraph "PDFParser::Implementation::PDFReader::PDFArray"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="PDFParser::Implementation\l::PDFReader::PDFArray",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PDFParser::Implementation\l::PDFReader::PDFObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_object.html"];
+}

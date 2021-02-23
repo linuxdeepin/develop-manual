@@ -1,0 +1,12 @@
+digraph "MimesAppsManager"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="MimesAppsManager",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="QObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AudioMimeApps\nDesktopObjs\nImageMimeApps\nTextMimeApps\nVideoMimeApps" ,fontname="Helvetica"];
+  Node4 [label="QMap\< QString, DesktopFile \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MimeApps\nDDE_MimeTypes" ,fontname="Helvetica"];
+  Node5 [label="QMap\< QString, QStringList \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+}

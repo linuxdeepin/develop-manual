@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dcc::sound::SoundModel类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdcc_1_1sound_1_1_sound_model.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classdcc_1_1sound_1_1_sound_model-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dcc::sound::SoundModel类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 dcc::sound::SoundModel 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1sound_1_1_sound_model__inherit__graph.png" border="0" usemap="#dcc_1_1sound_1_1_sound_model_inherit__map" alt="Inheritance graph"/></div>
+<map name="dcc_1_1sound_1_1_sound_model_inherit__map" id="dcc_1_1sound_1_1_sound_model_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+dcc::sound::SoundModel 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1sound_1_1_sound_model__coll__graph.png" border="0" usemap="#dcc_1_1sound_1_1_sound_model_coll__map" alt="Collaboration graph"/></div>
+<map name="dcc_1_1sound_1_1_sound_model_coll__map" id="dcc_1_1sound_1_1_sound_model_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a352b7698dc5c13c6bbdbbf9c49e16b98"><td class="memItemLeft" align="right" valign="top"><a id="a352b7698dc5c13c6bbdbbf9c49e16b98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>speakerOnChanged</b> (bool speakerOn) const</td></tr>
+<tr class="separator:a352b7698dc5c13c6bbdbbf9c49e16b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0779126a22b36cb07cb345b6821faf0"><td class="memItemLeft" align="right" valign="top"><a id="ad0779126a22b36cb07cb345b6821faf0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>microphoneOnChanged</b> (bool microphoneOn) const</td></tr>
+<tr class="separator:ad0779126a22b36cb07cb345b6821faf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc416e8d360355ce451a16ac3681ad8"><td class="memItemLeft" align="right" valign="top"><a id="a9dc416e8d360355ce451a16ac3681ad8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>soundEffectOnChanged</b> (bool soundEffectOn) const</td></tr>
+<tr class="separator:a9dc416e8d360355ce451a16ac3681ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4223502fc59e6be09f35c51dcfa4e3b9"><td class="memItemLeft" align="right" valign="top"><a id="a4223502fc59e6be09f35c51dcfa4e3b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>speakerVolumeChanged</b> (double speakerVolume) const</td></tr>
+<tr class="separator:a4223502fc59e6be09f35c51dcfa4e3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac028678d5d0a102d33e3068f6563cc80"><td class="memItemLeft" align="right" valign="top"><a id="ac028678d5d0a102d33e3068f6563cc80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>speakerBalanceChanged</b> (double speakerBalance) const</td></tr>
+<tr class="separator:ac028678d5d0a102d33e3068f6563cc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f7d063fb8b76ab172c3eb338692ee1"><td class="memItemLeft" align="right" valign="top"><a id="a85f7d063fb8b76ab172c3eb338692ee1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>microphoneVolumeChanged</b> (double microphoneVolume) const</td></tr>
+<tr class="separator:a85f7d063fb8b76ab172c3eb338692ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6c12f062ddf14a7259b0066d3929d1"><td class="memItemLeft" align="right" valign="top"><a id="afb6c12f062ddf14a7259b0066d3929d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultSourceChanged</b> (const QDBusObjectPath &amp;defaultSource) const</td></tr>
+<tr class="separator:afb6c12f062ddf14a7259b0066d3929d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026f749bdcb0b9388ed009d3fc43e4de"><td class="memItemLeft" align="right" valign="top"><a id="a026f749bdcb0b9388ed009d3fc43e4de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultSinkChanged</b> (const QDBusObjectPath &amp;defaultSink) const</td></tr>
+<tr class="separator:a026f749bdcb0b9388ed009d3fc43e4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c31737d7139b89613e0e9e55330668"><td class="memItemLeft" align="right" valign="top"><a id="a75c31737d7139b89613e0e9e55330668"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>audioCardsChanged</b> (const QString &amp;audioCards) const</td></tr>
+<tr class="separator:a75c31737d7139b89613e0e9e55330668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906c8fb4530fc50272e4a997e6b38d8d"><td class="memItemLeft" align="right" valign="top"><a id="a906c8fb4530fc50272e4a997e6b38d8d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>maxUIVolumeChanged</b> (double value) const</td></tr>
+<tr class="separator:a906c8fb4530fc50272e4a997e6b38d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97082673bdb1c4833fd8a6fae507ef9d"><td class="memItemLeft" align="right" valign="top"><a id="a97082673bdb1c4833fd8a6fae507ef9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>increaseVolumeChanged</b> (bool value) const</td></tr>
+<tr class="separator:a97082673bdb1c4833fd8a6fae507ef9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3136b724cfb2df90a86f3a996b19c5"><td class="memItemLeft" align="right" valign="top"><a id="a2d3136b724cfb2df90a86f3a996b19c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reduceNoiseChanged</b> (bool reduceNoise) const</td></tr>
+<tr class="separator:a2d3136b724cfb2df90a86f3a996b19c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cf4c1c674f8060be522d931ad02878"><td class="memItemLeft" align="right" valign="top"><a id="af1cf4c1c674f8060be522d931ad02878"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>isPortEnableChanged</b> (bool enable) const</td></tr>
+<tr class="separator:af1cf4c1c674f8060be522d931ad02878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8896835dd029e8fc0c015bab4c4ea093"><td class="memItemLeft" align="right" valign="top"><a id="a8896835dd029e8fc0c015bab4c4ea093"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPortChanged</b> (const <a class="el" href="classdcc_1_1sound_1_1_port.html">Port</a> *port) const</td></tr>
+<tr class="separator:a8896835dd029e8fc0c015bab4c4ea093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690dc3552cd505256e3c35048a9d7e5d"><td class="memItemLeft" align="right" valign="top"><a id="a690dc3552cd505256e3c35048a9d7e5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestSwitchSetEnable</b> (unsigned int cardId, QString cardName, bool enable)</td></tr>
+<tr class="separator:a690dc3552cd505256e3c35048a9d7e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c5a3392b782ffad4184eb71da802eb"><td class="memItemLeft" align="right" valign="top"><a id="ac6c5a3392b782ffad4184eb71da802eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestSwitchEnable</b> (unsigned int cardId, QString cardName)</td></tr>
+<tr class="separator:ac6c5a3392b782ffad4184eb71da802eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147ce8ce7b415c0f4ee15a2bcd999bd4"><td class="memItemLeft" align="right" valign="top"><a id="a147ce8ce7b415c0f4ee15a2bcd999bd4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBlanceVisible</b> (bool flag)</td></tr>
+<tr class="separator:a147ce8ce7b415c0f4ee15a2bcd999bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493eef150bf0f74f1bc5ca3582da2b8f"><td class="memItemLeft" align="right" valign="top"><a id="a493eef150bf0f74f1bc5ca3582da2b8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNoiseReduceVisible</b> (bool flag)</td></tr>
+<tr class="separator:a493eef150bf0f74f1bc5ca3582da2b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833043bf91863775639790ef64874ba3"><td class="memItemLeft" align="right" valign="top"><a id="a833043bf91863775639790ef64874ba3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>microphoneFeedbackChanged</b> (double microphoneFeedback) const</td></tr>
+<tr class="separator:a833043bf91863775639790ef64874ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6d443aee5b524114d1b1648ccc29a7"><td class="memItemLeft" align="right" valign="top"><a id="aaa6d443aee5b524114d1b1648ccc29a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>portAdded</b> (const <a class="el" href="classdcc_1_1sound_1_1_port.html">Port</a> *port)</td></tr>
+<tr class="separator:aaa6d443aee5b524114d1b1648ccc29a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97a8d8a982a019782a6f3cea864472a"><td class="memItemLeft" align="right" valign="top"><a id="ae97a8d8a982a019782a6f3cea864472a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>portRemoved</b> (const QString &amp;portId, const uint &amp;cardId)</td></tr>
+<tr class="separator:ae97a8d8a982a019782a6f3cea864472a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d880309a22ccbe9bf9f7add1d55628"><td class="memItemLeft" align="right" valign="top"><a id="a21d880309a22ccbe9bf9f7add1d55628"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>soundEffectDataChanged</b> (DDesktopServices::SystemSoundEffect effect, const bool enable)</td></tr>
+<tr class="separator:a21d880309a22ccbe9bf9f7add1d55628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1256a8719ab8d5ab8ca024031380f4a"><td class="memItemLeft" align="right" valign="top"><a id="ae1256a8719ab8d5ab8ca024031380f4a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableSoundEffectChanged</b> (bool enableSoundEffect)</td></tr>
+<tr class="separator:ae1256a8719ab8d5ab8ca024031380f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a20037b6e6c5d945fd5d8e6711ef416"><td class="memItemLeft" align="right" valign="top"><a id="a1a20037b6e6c5d945fd5d8e6711ef416"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>isLaptopChanged</b> (bool isLaptop)</td></tr>
+<tr class="separator:a1a20037b6e6c5d945fd5d8e6711ef416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa685518ece57bce275246e5a94081b76"><td class="memItemLeft" align="right" valign="top"><a id="aa685518ece57bce275246e5a94081b76"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SoundModel</b> (QObject *parent=0)</td></tr>
+<tr class="separator:aa685518ece57bce275246e5a94081b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3366659742d3c0d9db81b5f662385b"><td class="memItemLeft" align="right" valign="top"><a id="a4d3366659742d3c0d9db81b5f662385b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>speakerOn</b> () const</td></tr>
+<tr class="separator:a4d3366659742d3c0d9db81b5f662385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9083c112e70b3753db11d93626a71444"><td class="memItemLeft" align="right" valign="top"><a id="a9083c112e70b3753db11d93626a71444"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpeakerOn</b> (bool speakerOn)</td></tr>
+<tr class="separator:a9083c112e70b3753db11d93626a71444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32b614e15bad3ed9c95efac3cc1b656"><td class="memItemLeft" align="right" valign="top"><a id="ad32b614e15bad3ed9c95efac3cc1b656"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPortEnable</b> () const</td></tr>
+<tr class="separator:ad32b614e15bad3ed9c95efac3cc1b656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a736c8cedf2f633d08c0a44d0a403d"><td class="memItemLeft" align="right" valign="top"><a id="a43a736c8cedf2f633d08c0a44d0a403d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPortEnable</b> (bool enable)</td></tr>
+<tr class="separator:a43a736c8cedf2f633d08c0a44d0a403d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fd22c301f447d02936f393fe3dfb22"><td class="memItemLeft" align="right" valign="top"><a id="a56fd22c301f447d02936f393fe3dfb22"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>reduceNoise</b> () const</td></tr>
+<tr class="separator:a56fd22c301f447d02936f393fe3dfb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50346be6f397d130c9d5bdd2972b2c2"><td class="memItemLeft" align="right" valign="top"><a id="aa50346be6f397d130c9d5bdd2972b2c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setReduceNoise</b> (bool reduceNoise)</td></tr>
+<tr class="separator:aa50346be6f397d130c9d5bdd2972b2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69dcbc434f3a76a2203525ec2bdbc1a2"><td class="memItemLeft" align="right" valign="top"><a id="a69dcbc434f3a76a2203525ec2bdbc1a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>microphoneOn</b> () const</td></tr>
+<tr class="separator:a69dcbc434f3a76a2203525ec2bdbc1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998d0e62d133ccbba39d6b621de6ee46"><td class="memItemLeft" align="right" valign="top"><a id="a998d0e62d133ccbba39d6b621de6ee46"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMicrophoneOn</b> (bool microphoneOn)</td></tr>
+<tr class="separator:a998d0e62d133ccbba39d6b621de6ee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6db548176b1cf6ddf65bbab6ec8553"><td class="memItemLeft" align="right" valign="top"><a id="aff6db548176b1cf6ddf65bbab6ec8553"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>speakerBalance</b> () const</td></tr>
+<tr class="separator:aff6db548176b1cf6ddf65bbab6ec8553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231687ec2acbd2e8156e215614a9d94b"><td class="memItemLeft" align="right" valign="top"><a id="a231687ec2acbd2e8156e215614a9d94b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpeakerBalance</b> (double speakerBalance)</td></tr>
+<tr class="separator:a231687ec2acbd2e8156e215614a9d94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1037795f5e8890418af70434d737d42b"><td class="memItemLeft" align="right" valign="top"><a id="a1037795f5e8890418af70434d737d42b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>microphoneVolume</b> () const</td></tr>
+<tr class="separator:a1037795f5e8890418af70434d737d42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d03d0f633c25f706d498ea01371943"><td class="memItemLeft" align="right" valign="top"><a id="aa1d03d0f633c25f706d498ea01371943"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMicrophoneVolume</b> (double microphoneVolume)</td></tr>
+<tr class="separator:aa1d03d0f633c25f706d498ea01371943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa2c66d49a66436a00d08970a7b08e9"><td class="memItemLeft" align="right" valign="top"><a id="acaa2c66d49a66436a00d08970a7b08e9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>microphoneFeedback</b> () const</td></tr>
+<tr class="separator:acaa2c66d49a66436a00d08970a7b08e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03bd8193e13c26b7a1a95421469a3cce"><td class="memItemLeft" align="right" valign="top"><a id="a03bd8193e13c26b7a1a95421469a3cce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMicrophoneFeedback</b> (double microphoneFeedback)</td></tr>
+<tr class="separator:a03bd8193e13c26b7a1a95421469a3cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa819ed7a6413adf8d787614785b3c214"><td class="memItemLeft" align="right" valign="top"><a id="aa819ed7a6413adf8d787614785b3c214"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPort</b> (const <a class="el" href="classdcc_1_1sound_1_1_port.html">Port</a> *port)</td></tr>
+<tr class="separator:aa819ed7a6413adf8d787614785b3c214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27efa1af6dfa06a674d1878d76ba0374"><td class="memItemLeft" align="right" valign="top"><a id="a27efa1af6dfa06a674d1878d76ba0374"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addPort</b> (<a class="el" href="classdcc_1_1sound_1_1_port.html">Port</a> *port)</td></tr>
+<tr class="separator:a27efa1af6dfa06a674d1878d76ba0374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579bc21a87ba2bda78591ea8ec8bfc0f"><td class="memItemLeft" align="right" valign="top"><a id="a579bc21a87ba2bda78591ea8ec8bfc0f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removePort</b> (const QString &amp;portId, const uint &amp;cardId)</td></tr>
+<tr class="separator:a579bc21a87ba2bda78591ea8ec8bfc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cd2b988cc0950943cedc2c6be4cd0c"><td class="memItemLeft" align="right" valign="top"><a id="af9cd2b988cc0950943cedc2c6be4cd0c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>containsPort</b> (const <a class="el" href="classdcc_1_1sound_1_1_port.html">Port</a> *port)</td></tr>
+<tr class="separator:af9cd2b988cc0950943cedc2c6be4cd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09ba06d8675c60707c17c4583be58f0"><td class="memItemLeft" align="right" valign="top"><a id="ae09ba06d8675c60707c17c4583be58f0"></a>
+<a class="el" href="classdcc_1_1sound_1_1_port.html">Port</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findPort</b> (const QString &amp;portId, const uint &amp;cardId) const</td></tr>
+<tr class="separator:ae09ba06d8675c60707c17c4583be58f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ec4908ab2441b9eb2c84acc65a1cb0"><td class="memItemLeft" align="right" valign="top"><a id="a15ec4908ab2441b9eb2c84acc65a1cb0"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="classdcc_1_1sound_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ports</b> () const</td></tr>
+<tr class="separator:a15ec4908ab2441b9eb2c84acc65a1cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4474cd6a3a96342c9a54c2aa77557eb1"><td class="memItemLeft" align="right" valign="top"><a id="a4474cd6a3a96342c9a54c2aa77557eb1"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>speakerVolume</b> () const</td></tr>
+<tr class="separator:a4474cd6a3a96342c9a54c2aa77557eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f4fee34dcf18ba7c1899f7864ce431"><td class="memItemLeft" align="right" valign="top"><a id="a74f4fee34dcf18ba7c1899f7864ce431"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpeakerVolume</b> (double speakerVolume)</td></tr>
+<tr class="separator:a74f4fee34dcf18ba7c1899f7864ce431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d3fd14e566818db43f1c1fca948c62"><td class="memItemLeft" align="right" valign="top"><a id="a99d3fd14e566818db43f1c1fca948c62"></a>
+QDBusObjectPath&#160;</td><td class="memItemRight" valign="bottom"><b>defaultSource</b> () const</td></tr>
+<tr class="separator:a99d3fd14e566818db43f1c1fca948c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209381ff969525e8c802a49958630913"><td class="memItemLeft" align="right" valign="top"><a id="a209381ff969525e8c802a49958630913"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultSource</b> (const QDBusObjectPath &amp;defaultSource)</td></tr>
+<tr class="separator:a209381ff969525e8c802a49958630913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fd5b5c481cd22e9e5db6a946a819eb"><td class="memItemLeft" align="right" valign="top"><a id="a55fd5b5c481cd22e9e5db6a946a819eb"></a>
+QDBusObjectPath&#160;</td><td class="memItemRight" valign="bottom"><b>defaultSink</b> () const</td></tr>
+<tr class="separator:a55fd5b5c481cd22e9e5db6a946a819eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bcfc91c75e116b6908e3a39716514d7"><td class="memItemLeft" align="right" valign="top"><a id="a0bcfc91c75e116b6908e3a39716514d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultSink</b> (const QDBusObjectPath &amp;defaultSink)</td></tr>
+<tr class="separator:a0bcfc91c75e116b6908e3a39716514d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7cea395f0aab847bf51f51ddb5311a3"><td class="memItemLeft" align="right" valign="top"><a id="aa7cea395f0aab847bf51f51ddb5311a3"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>audioCards</b> () const</td></tr>
+<tr class="separator:aa7cea395f0aab847bf51f51ddb5311a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb2f95fe03a367b97a026c1fbadb250"><td class="memItemLeft" align="right" valign="top"><a id="accb2f95fe03a367b97a026c1fbadb250"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAudioCards</b> (const QString &amp;audioCards)</td></tr>
+<tr class="separator:accb2f95fe03a367b97a026c1fbadb250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4abc9d7d3a3ab8bc8abb0995e39e430"><td class="memItemLeft" align="right" valign="top"><a id="ab4abc9d7d3a3ab8bc8abb0995e39e430"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>MaxUIVolume</b> () const</td></tr>
+<tr class="separator:ab4abc9d7d3a3ab8bc8abb0995e39e430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed91a10e19f1c17fb0c37059ce2f9909"><td class="memItemLeft" align="right" valign="top"><a id="aed91a10e19f1c17fb0c37059ce2f9909"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaxUIVolume</b> (double value)</td></tr>
+<tr class="separator:aed91a10e19f1c17fb0c37059ce2f9909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76546a9de599a36b755012a7d758ae30"><td class="memItemLeft" align="right" valign="top"><a id="a76546a9de599a36b755012a7d758ae30"></a>
+<a class="el" href="class_q_list.html">SoundEffectList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>soundEffectMap</b> () const</td></tr>
+<tr class="separator:a76546a9de599a36b755012a7d758ae30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd077937f4ccf1ecbe7900dcb30732ed"><td class="memItemLeft" align="right" valign="top"><a id="acd077937f4ccf1ecbe7900dcb30732ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEffectData</b> (DDesktopServices::SystemSoundEffect effect, const bool enable)</td></tr>
+<tr class="separator:acd077937f4ccf1ecbe7900dcb30732ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d373f20fd23476d1b766f525d4f08d3"><td class="memItemLeft" align="right" valign="top"><a id="a1d373f20fd23476d1b766f525d4f08d3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>queryEffectData</b> (DDesktopServices::SystemSoundEffect effect)</td></tr>
+<tr class="separator:a1d373f20fd23476d1b766f525d4f08d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c842c4386e6e2b0248d72d6126a3d69"><td class="memItemLeft" align="right" valign="top"><a id="a4c842c4386e6e2b0248d72d6126a3d69"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enableSoundEffect</b> () const</td></tr>
+<tr class="separator:a4c842c4386e6e2b0248d72d6126a3d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4560a7cb2b6e02552b33cdc1e1d55cf"><td class="memItemLeft" align="right" valign="top"><a id="ac4560a7cb2b6e02552b33cdc1e1d55cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnableSoundEffect</b> (bool enableSoundEffect)</td></tr>
+<tr class="separator:ac4560a7cb2b6e02552b33cdc1e1d55cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f965d39e68949fa70c7d36ecae7302b"><td class="memItemLeft" align="right" valign="top"><a id="a5f965d39e68949fa70c7d36ecae7302b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSoundEffectPath</b> (DDesktopServices::SystemSoundEffect effect, const QString &amp;path)</td></tr>
+<tr class="separator:a5f965d39e68949fa70c7d36ecae7302b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0157b3c7bd8f3c48ab459dcf7ebbc76f"><td class="memItemLeft" align="right" valign="top"><a id="a0157b3c7bd8f3c48ab459dcf7ebbc76f"></a>
+<a class="el" href="class_q_map.html">QMap</a>&lt; DDesktopServices::SystemSoundEffect, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>soundEffectPaths</b> ()</td></tr>
+<tr class="separator:a0157b3c7bd8f3c48ab459dcf7ebbc76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1b2b47fbf6f9490f58854fce832ba3"><td class="memItemLeft" align="right" valign="top"><a id="a2a1b2b47fbf6f9490f58854fce832ba3"></a>
+const QString&#160;</td><td class="memItemRight" valign="bottom"><b>soundEffectPathByType</b> (DDesktopServices::SystemSoundEffect effect)</td></tr>
+<tr class="separator:a2a1b2b47fbf6f9490f58854fce832ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd2b540c402434980d062f9ff60b21a"><td class="memItemLeft" align="right" valign="top"><a id="adbd2b540c402434980d062f9ff60b21a"></a>
+const QString&#160;</td><td class="memItemRight" valign="bottom"><b>getNameByEffectType</b> (DDesktopServices::SystemSoundEffect effect) const</td></tr>
+<tr class="separator:adbd2b540c402434980d062f9ff60b21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a8216f527fb678e77735307881a2e0"><td class="memItemLeft" align="right" valign="top"><a id="a14a8216f527fb678e77735307881a2e0"></a>
+DDesktopServices::SystemSoundEffect&#160;</td><td class="memItemRight" valign="bottom"><b>getEffectTypeByGsettingName</b> (const QString &amp;name)</td></tr>
+<tr class="separator:a14a8216f527fb678e77735307881a2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac789318d7beaa81bb16073398dc6da84"><td class="memItemLeft" align="right" valign="top"><a id="ac789318d7beaa81bb16073398dc6da84"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkSEExist</b> (const QString &amp;name)</td></tr>
+<tr class="separator:ac789318d7beaa81bb16073398dc6da84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a494d4d79bfdfa83ae7a58780e6e737"><td class="memItemLeft" align="right" valign="top"><a id="a3a494d4d79bfdfa83ae7a58780e6e737"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isLaptop</b> () const</td></tr>
+<tr class="separator:a3a494d4d79bfdfa83ae7a58780e6e737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0a1b68a287bafc06ab3e132148f196"><td class="memItemLeft" align="right" valign="top"><a id="adc0a1b68a287bafc06ab3e132148f196"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setIsLaptop</b> (bool isLaptop)</td></tr>
+<tr class="separator:adc0a1b68a287bafc06ab3e132148f196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a57a71c2fe67ace6793058158c9270"><td class="memItemLeft" align="right" valign="top"><a id="ac7a57a71c2fe67ace6793058158c9270"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isIncreaseVolume</b> () const</td></tr>
+<tr class="separator:ac7a57a71c2fe67ace6793058158c9270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f28aabadcdddeea93838613da75438f"><td class="memItemLeft" align="right" valign="top"><a id="a2f28aabadcdddeea93838613da75438f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setIncreaseVolume</b> (bool value)</td></tr>
+<tr class="separator:a2f28aabadcdddeea93838613da75438f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959c28726be0d2fb623ed1ec7aad911c"><td class="memItemLeft" align="right" valign="top"><a id="a959c28726be0d2fb623ed1ec7aad911c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initMicroPhone</b> ()</td></tr>
+<tr class="separator:a959c28726be0d2fb623ed1ec7aad911c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab986ab0f37ffb9e0af76dcf2fb4cd463"><td class="memItemLeft" align="right" valign="top"><a id="ab986ab0f37ffb9e0af76dcf2fb4cd463"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initSpeaker</b> ()</td></tr>
+<tr class="separator:ab986ab0f37ffb9e0af76dcf2fb4cd463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe942118d5c0344ac43698a2fb3edea6"><td class="memItemLeft" align="right" valign="top"><a id="afe942118d5c0344ac43698a2fb3edea6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isShow</b> (QStandardItemModel *model, const <a class="el" href="classdcc_1_1sound_1_1_port.html">Port</a> *port)</td></tr>
+<tr class="separator:afe942118d5c0344ac43698a2fb3edea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="soundmodel_8h_source.html">soundmodel.h</a> 第 <a class="el" href="soundmodel_8h_source.html#l00116">116</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-control-center/src/frame/modules/sound/<a class="el" href="soundmodel_8h_source.html">soundmodel.h</a></li>
+<li>dde-control-center/src/frame/modules/sound/<a class="el" href="soundmodel_8cpp_source.html">soundmodel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>dcc</b></li><li class="navelem"><b>sound</b></li><li class="navelem"><a class="el" href="classdcc_1_1sound_1_1_sound_model.html">SoundModel</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

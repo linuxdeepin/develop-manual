@@ -1,0 +1,22 @@
+digraph "_FsearchApplication"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="_FsearchApplication",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pool" ,fontname="Helvetica"];
+  Node2 [label="_FsearchThreadPool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct___fsearch_thread_pool.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" db" ,fontname="Helvetica"];
+  Node3 [label="_Database",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct___database.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" entries" ,fontname="Helvetica"];
+  Node4 [label="_DynamicArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct___dynamic_array.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" result" ,fontname="Helvetica"];
+  Node5 [label="DatabaseSearchResult",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_database_search_result.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" search" ,fontname="Helvetica"];
+  Node6 [label="_DatabaseSearch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct___database_search.html"];
+  Node2 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pool" ,fontname="Helvetica"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" query_ctx" ,fontname="Helvetica"];
+  Node7 [label="FsearchQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_fsearch_query.html"];
+  Node4 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" entries" ,fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" config" ,fontname="Helvetica"];
+  Node8 [label="_FsearchConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct___fsearch_config.html"];
+}

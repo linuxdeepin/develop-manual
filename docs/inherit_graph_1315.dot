@@ -1,0 +1,7 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="testing::MockFunction\l\< R(A0, A1, A2)\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_08_4.html"];
+}

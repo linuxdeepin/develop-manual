@@ -1,0 +1,935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: PluginsItemInterface类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_plugins_item_interface.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="class_plugins_item_interface-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">PluginsItemInterface类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_plugins_item_interface.html" title="The PluginsItemInterface class the dock plugins item interface, all dock plugins should inheirt this ...">PluginsItemInterface</a> class the dock plugins item interface, all dock plugins should inheirt this class and override all pure virtual function.  
+ <a href="class_plugins_item_interface.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a>&gt;</code></p>
+<div class="dynheader">
+类 PluginsItemInterface 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_plugins_item_interface__inherit__graph.png" border="0" usemap="#_plugins_item_interface_inherit__map" alt="Inheritance graph"/></div>
+<map name="_plugins_item_interface_inherit__map" id="_plugins_item_interface_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+PluginsItemInterface 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_plugins_item_interface__coll__graph.png" border="0" usemap="#_plugins_item_interface_coll__map" alt="Collaboration graph"/></div>
+<map name="_plugins_item_interface_coll__map" id="_plugins_item_interface_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a9157b4bf450829d8f6967371298e7726"><td class="memItemLeft" align="right" valign="top"><a id="a9157b4bf450829d8f6967371298e7726"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PluginType</b> { <b>Normal</b>, 
+<b>Fixed</b>
+ }</td></tr>
+<tr class="separator:a9157b4bf450829d8f6967371298e7726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d183de942a824c06d017693c223388"><td class="memItemLeft" align="right" valign="top"><a id="ae1d183de942a824c06d017693c223388"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#ae1d183de942a824c06d017693c223388">PluginSizePolicy</a> { <b>System</b> = 1 &lt;&lt; 0, 
+<b>Custom</b> = 1 &lt;&lt; 1
+ }<tr class="memdesc:ae1d183de942a824c06d017693c223388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin size policy <br /></td></tr>
+</td></tr>
+<tr class="separator:ae1d183de942a824c06d017693c223388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abe7b3d2eb351c6c4c2b2df4ac0992ed6"><td class="memItemLeft" align="right" valign="top"><a id="abe7b3d2eb351c6c4c2b2df4ac0992ed6"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#abe7b3d2eb351c6c4c2b2df4ac0992ed6">~PluginsItemInterface</a> ()</td></tr>
+<tr class="memdesc:abe7b3d2eb351c6c4c2b2df4ac0992ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">~PluginsItemInterface DON'T try to delete m_proxyInter. <br /></td></tr>
+<tr class="separator:abe7b3d2eb351c6c4c2b2df4ac0992ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715bec6b9b2c4a6c94a32ca3f934af96"><td class="memItemLeft" align="right" valign="top">virtual const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a715bec6b9b2c4a6c94a32ca3f934af96">pluginName</a> () const =0</td></tr>
+<tr class="memdesc:a715bec6b9b2c4a6c94a32ca3f934af96"><td class="mdescLeft">&#160;</td><td class="mdescRight">pluginName tell dock the unique plugin id  <a href="#a715bec6b9b2c4a6c94a32ca3f934af96">更多...</a><br /></td></tr>
+<tr class="separator:a715bec6b9b2c4a6c94a32ca3f934af96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af055a1abfcc3e6db29bab4fedb139baa"><td class="memItemLeft" align="right" valign="top"><a id="af055a1abfcc3e6db29bab4fedb139baa"></a>
+virtual const QString&#160;</td><td class="memItemRight" valign="bottom"><b>pluginDisplayName</b> () const</td></tr>
+<tr class="separator:af055a1abfcc3e6db29bab4fedb139baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44399136a159b3b3ecd6d1b0ba198582"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a44399136a159b3b3ecd6d1b0ba198582">init</a> (<a class="el" href="class_plugin_proxy_interface.html">PluginProxyInterface</a> *proxyInter)=0</td></tr>
+<tr class="memdesc:a44399136a159b3b3ecd6d1b0ba198582"><td class="mdescLeft">&#160;</td><td class="mdescRight">init init your plugins, you need to save proxyInter to m_proxyInter member variable. but you shouldn't free this pointer.  <a href="#a44399136a159b3b3ecd6d1b0ba198582">更多...</a><br /></td></tr>
+<tr class="separator:a44399136a159b3b3ecd6d1b0ba198582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816f3c3eae67b0191e86e57d64a2a6ef"><td class="memItemLeft" align="right" valign="top">virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a816f3c3eae67b0191e86e57d64a2a6ef">itemWidget</a> (const QString &amp;itemKey)=0</td></tr>
+<tr class="memdesc:a816f3c3eae67b0191e86e57d64a2a6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemWidget your plugin item widget, each item should have a unique key.  <a href="#a816f3c3eae67b0191e86e57d64a2a6ef">更多...</a><br /></td></tr>
+<tr class="separator:a816f3c3eae67b0191e86e57d64a2a6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63efc69faf1487ae7f790e51a45110d"><td class="memItemLeft" align="right" valign="top">virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#ac63efc69faf1487ae7f790e51a45110d">itemTipsWidget</a> (const QString &amp;itemKey)</td></tr>
+<tr class="memdesc:ac63efc69faf1487ae7f790e51a45110d"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemTipsWidget override this function if your item want to have a tips. the tips will shown when user hover your item. nullptr will be ignored.  <a href="#ac63efc69faf1487ae7f790e51a45110d">更多...</a><br /></td></tr>
+<tr class="separator:ac63efc69faf1487ae7f790e51a45110d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651cb056aa852cb2d8ca8c8259cbbeb6"><td class="memItemLeft" align="right" valign="top">virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a651cb056aa852cb2d8ca8c8259cbbeb6">itemPopupApplet</a> (const QString &amp;itemKey)</td></tr>
+<tr class="memdesc:a651cb056aa852cb2d8ca8c8259cbbeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemPopupApplet override this function if your item wants to have an popup applet. the popup applet will shown when user click your item.  <a href="#a651cb056aa852cb2d8ca8c8259cbbeb6">更多...</a><br /></td></tr>
+<tr class="separator:a651cb056aa852cb2d8ca8c8259cbbeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ab597cb6516136ac493bd178357c46"><td class="memItemLeft" align="right" valign="top">virtual const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#aa1ab597cb6516136ac493bd178357c46">itemCommand</a> (const QString &amp;itemKey)</td></tr>
+<tr class="memdesc:aa1ab597cb6516136ac493bd178357c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemCommand execute spec command when user clicked your item. ensure your command do not get user input.  <a href="#aa1ab597cb6516136ac493bd178357c46">更多...</a><br /></td></tr>
+<tr class="separator:aa1ab597cb6516136ac493bd178357c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c4fb2855a9e00afcaaa192ff01a031"><td class="memItemLeft" align="right" valign="top">virtual const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a89c4fb2855a9e00afcaaa192ff01a031">itemContextMenu</a> (const QString &amp;itemKey)</td></tr>
+<tr class="memdesc:a89c4fb2855a9e00afcaaa192ff01a031"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemContextMenu context menu is shown when RequestPopupMenu called.  <a href="#a89c4fb2855a9e00afcaaa192ff01a031">更多...</a><br /></td></tr>
+<tr class="separator:a89c4fb2855a9e00afcaaa192ff01a031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec6119717d1c5a1b71eda016a1cb8fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a1ec6119717d1c5a1b71eda016a1cb8fd">invokedMenuItem</a> (const QString &amp;itemKey, const QString &amp;menuId, const bool checked)</td></tr>
+<tr class="memdesc:a1ec6119717d1c5a1b71eda016a1cb8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">invokedMenuItem call if context menu item is clicked  <a href="#a1ec6119717d1c5a1b71eda016a1cb8fd">更多...</a><br /></td></tr>
+<tr class="separator:a1ec6119717d1c5a1b71eda016a1cb8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60056cf358ccc02f552c6a2eba9e7678"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a60056cf358ccc02f552c6a2eba9e7678">itemSortKey</a> (const QString &amp;itemKey)</td></tr>
+<tr class="memdesc:a60056cf358ccc02f552c6a2eba9e7678"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemSortKey tell dock where your item wants to put on.  <a href="#a60056cf358ccc02f552c6a2eba9e7678">更多...</a><br /></td></tr>
+<tr class="separator:a60056cf358ccc02f552c6a2eba9e7678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c56480ce200d0eeb28d23a554fbf45c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a5c56480ce200d0eeb28d23a554fbf45c">setSortKey</a> (const QString &amp;itemKey, const int order)</td></tr>
+<tr class="memdesc:a5c56480ce200d0eeb28d23a554fbf45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">setSortKey save your item new position sort key will be changed when plugins order changed(by user drag-drop)  <a href="#a5c56480ce200d0eeb28d23a554fbf45c">更多...</a><br /></td></tr>
+<tr class="separator:a5c56480ce200d0eeb28d23a554fbf45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10db69178a76355b779a3b0401dea23c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a10db69178a76355b779a3b0401dea23c">itemAllowContainer</a> (const QString &amp;itemKey)</td></tr>
+<tr class="memdesc:a10db69178a76355b779a3b0401dea23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemAllowContainer tell dock is your item allow to move into container  <a href="#a10db69178a76355b779a3b0401dea23c">更多...</a><br /></td></tr>
+<tr class="separator:a10db69178a76355b779a3b0401dea23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ff85d0a00657752803ec4c29cb64bd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a69ff85d0a00657752803ec4c29cb64bd">itemIsInContainer</a> (const QString &amp;itemKey)</td></tr>
+<tr class="memdesc:a69ff85d0a00657752803ec4c29cb64bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemIsInContainer tell dock your item is in container, this function called at item init and if your item enable container.  <a href="#a69ff85d0a00657752803ec4c29cb64bd">更多...</a><br /></td></tr>
+<tr class="separator:a69ff85d0a00657752803ec4c29cb64bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6d006360faeb8a52797631a41419ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#aae6d006360faeb8a52797631a41419ab">setItemIsInContainer</a> (const QString &amp;itemKey, const bool container)</td></tr>
+<tr class="memdesc:aae6d006360faeb8a52797631a41419ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">setItemIsInContainer save your item new state. this function called when user drag out your item from container or user drop item into container(if your item allow drop into container).  <a href="#aae6d006360faeb8a52797631a41419ab">更多...</a><br /></td></tr>
+<tr class="separator:aae6d006360faeb8a52797631a41419ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057750b6ff4c93c8d49b186a91830e34"><td class="memItemLeft" align="right" valign="top"><a id="a057750b6ff4c93c8d49b186a91830e34"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>pluginIsAllowDisable</b> ()</td></tr>
+<tr class="separator:a057750b6ff4c93c8d49b186a91830e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2053711755d5385a64c3952cb339ab"><td class="memItemLeft" align="right" valign="top"><a id="a0d2053711755d5385a64c3952cb339ab"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>pluginIsDisable</b> ()</td></tr>
+<tr class="separator:a0d2053711755d5385a64c3952cb339ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b4d6e5199dfa8d4422c5c5bf74c872"><td class="memItemLeft" align="right" valign="top"><a id="a43b4d6e5199dfa8d4422c5c5bf74c872"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>pluginStateSwitched</b> ()</td></tr>
+<tr class="separator:a43b4d6e5199dfa8d4422c5c5bf74c872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4d2cc5866d7b5daadae6289c59ebb1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#aee4d2cc5866d7b5daadae6289c59ebb1">displayModeChanged</a> (const Dock::DisplayMode <a class="el" href="class_plugins_item_interface.html#a4493206e109e0ea75d78f7b9a907096c">displayMode</a>)</td></tr>
+<tr class="memdesc:aee4d2cc5866d7b5daadae6289c59ebb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">displayModeChanged override this function to receive display mode changed signal  <a href="#aee4d2cc5866d7b5daadae6289c59ebb1">更多...</a><br /></td></tr>
+<tr class="separator:aee4d2cc5866d7b5daadae6289c59ebb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1311fdec76a64085cba418377521f0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#aa1311fdec76a64085cba418377521f0c">positionChanged</a> (const Dock::Position <a class="el" href="class_plugins_item_interface.html#a9362b1ab9d6af9dd775fec61a4c7fca8">position</a>)</td></tr>
+<tr class="memdesc:aa1311fdec76a64085cba418377521f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">positionChanged override this function to receive dock position changed signal  <a href="#aa1311fdec76a64085cba418377521f0c">更多...</a><br /></td></tr>
+<tr class="separator:aa1311fdec76a64085cba418377521f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62858a1226941e5c83011edc3bca507d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a62858a1226941e5c83011edc3bca507d">refreshIcon</a> (const QString &amp;itemKey)</td></tr>
+<tr class="memdesc:a62858a1226941e5c83011edc3bca507d"><td class="mdescLeft">&#160;</td><td class="mdescRight">refreshIcon refresh item icon, its triggered when system icon theme changed.  <a href="#a62858a1226941e5c83011edc3bca507d">更多...</a><br /></td></tr>
+<tr class="separator:a62858a1226941e5c83011edc3bca507d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4493206e109e0ea75d78f7b9a907096c"><td class="memItemLeft" align="right" valign="top">Dock::DisplayMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a4493206e109e0ea75d78f7b9a907096c">displayMode</a> () const</td></tr>
+<tr class="memdesc:a4493206e109e0ea75d78f7b9a907096c"><td class="mdescLeft">&#160;</td><td class="mdescRight">displayMode get current dock display mode  <a href="#a4493206e109e0ea75d78f7b9a907096c">更多...</a><br /></td></tr>
+<tr class="separator:a4493206e109e0ea75d78f7b9a907096c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9362b1ab9d6af9dd775fec61a4c7fca8"><td class="memItemLeft" align="right" valign="top">Dock::Position&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a9362b1ab9d6af9dd775fec61a4c7fca8">position</a> () const</td></tr>
+<tr class="memdesc:a9362b1ab9d6af9dd775fec61a4c7fca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">position get current dock position  <a href="#a9362b1ab9d6af9dd775fec61a4c7fca8">更多...</a><br /></td></tr>
+<tr class="separator:a9362b1ab9d6af9dd775fec61a4c7fca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5001a4d04a523b4022ceacfb80ea736"><td class="memItemLeft" align="right" valign="top"><a id="ad5001a4d04a523b4022ceacfb80ea736"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#ad5001a4d04a523b4022ceacfb80ea736">pluginSettingsChanged</a> ()</td></tr>
+<tr class="memdesc:ad5001a4d04a523b4022ceacfb80ea736"><td class="mdescLeft">&#160;</td><td class="mdescRight">settingsChanged override this function to receive plugin settings changed signal(DeepinSync) <br /></td></tr>
+<tr class="separator:ad5001a4d04a523b4022ceacfb80ea736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8b4d32bbe4e66d72f42fed5ecd85d7"><td class="memItemLeft" align="right" valign="top"><a id="a5d8b4d32bbe4e66d72f42fed5ecd85d7"></a>
+virtual PluginType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a5d8b4d32bbe4e66d72f42fed5ecd85d7">type</a> ()</td></tr>
+<tr class="memdesc:a5d8b4d32bbe4e66d72f42fed5ecd85d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">type default plugin add dock right,fixed plugin add to dock fixed area <br /></td></tr>
+<tr class="separator:a5d8b4d32bbe4e66d72f42fed5ecd85d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0fa761e1fc866b7f7d4c9bccb33839"><td class="memItemLeft" align="right" valign="top"><a id="adc0fa761e1fc866b7f7d4c9bccb33839"></a>
+virtual <a class="el" href="class_plugins_item_interface.html#ae1d183de942a824c06d017693c223388">PluginSizePolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#adc0fa761e1fc866b7f7d4c9bccb33839">pluginSizePolicy</a> () const</td></tr>
+<tr class="memdesc:adc0fa761e1fc866b7f7d4c9bccb33839"><td class="mdescLeft">&#160;</td><td class="mdescRight">plugin size policy default plugin size policy <br /></td></tr>
+<tr class="separator:adc0fa761e1fc866b7f7d4c9bccb33839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a0a92bb47961abba635c66c5b9ed630c8"><td class="memItemLeft" align="right" valign="top"><a id="a0a92bb47961abba635c66c5b9ed630c8"></a>
+<a class="el" href="class_plugin_proxy_interface.html">PluginProxyInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plugins_item_interface.html#a0a92bb47961abba635c66c5b9ed630c8">m_proxyInter</a> = nullptr</td></tr>
+<tr class="memdesc:a0a92bb47961abba635c66c5b9ed630c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">m_proxyInter NEVER delete this object. <br /></td></tr>
+<tr class="separator:a0a92bb47961abba635c66c5b9ed630c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <a class="el" href="class_plugins_item_interface.html" title="The PluginsItemInterface class the dock plugins item interface, all dock plugins should inheirt this ...">PluginsItemInterface</a> class the dock plugins item interface, all dock plugins should inheirt this class and override all pure virtual function. </p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00035">35</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a4493206e109e0ea75d78f7b9a907096c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4493206e109e0ea75d78f7b9a907096c">&#9670;&nbsp;</a></span>displayMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dock::DisplayMode PluginsItemInterface::displayMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>displayMode get current dock display mode </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00213">213</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aee4d2cc5866d7b5daadae6289c59ebb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee4d2cc5866d7b5daadae6289c59ebb1">&#9670;&nbsp;</a></span>displayModeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PluginsItemInterface::displayModeChanged </td>
+          <td>(</td>
+          <td class="paramtype">const Dock::DisplayMode&#160;</td>
+          <td class="paramname"><em>displayMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>displayModeChanged override this function to receive display mode changed signal </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">displayMode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>被 <a class="el" href="class_trash_plugin.html#aaab8738d508c7d0022750516b599e493">TrashPlugin</a>, <a class="el" href="class_onboard_plugin.html#a513695c3b02072cc4d8ebbb68771c338">OnboardPlugin</a>, <a class="el" href="class_overlay_warning_plugin.html#a4fc3231b24dce41a08803592bc6abd33">OverlayWarningPlugin</a>, <a class="el" href="class_shutdown_plugin.html#aba2a22b64c22b671d506fb2e29534904">ShutdownPlugin</a> , 以及 <a class="el" href="class_tray_plugin.html#a71a482f2cf4a39516339b16b2f0dc086">TrayPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00192">192</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a44399136a159b3b3ecd6d1b0ba198582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44399136a159b3b3ecd6d1b0ba198582">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PluginsItemInterface::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_plugin_proxy_interface.html">PluginProxyInterface</a> *&#160;</td>
+          <td class="paramname"><em>proxyInter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>init init your plugins, you need to save proxyInter to m_proxyInter member variable. but you shouldn't free this pointer. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proxyInter</td><td>DON'T try to delete this pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_disk_mount_plugin.html#a38b7a515dd567be279928b02cc3269f9">DiskMountPlugin</a>, <a class="el" href="class_tray_plugin.html#ae2158ccc8ba85b35fe17743b42439489">TrayPlugin</a>, <a class="el" href="class_datetime_plugin.html#a56d3f0448c8d1529dc2d40dd9a9f963e">DatetimePlugin</a>, <a class="el" href="class_overlay_warning_plugin.html#aa68171e295b4d7b5935606a5aff98da8">OverlayWarningPlugin</a>, <a class="el" href="class_trash_plugin.html#adc8d0de6a59114f1fcd2f04284dc28f5">TrashPlugin</a>, <a class="el" href="class_onboard_plugin.html#a1bd92a04c67bdfa89dc8161c51dbdafa">OnboardPlugin</a>, <a class="el" href="class_power_plugin.html#ade662b1ac9133a02a6355baddb0b00ee">PowerPlugin</a>, <a class="el" href="class_network_plugin.html#a1e8bd39baad85af9d3769b2855f4b957">NetworkPlugin</a>, <a class="el" href="class_shutdown_plugin.html#a3fc82b479aa8ba75dc8d5f5689723ef8">ShutdownPlugin</a>, <a class="el" href="class_multitasking_plugin.html#affaf9e71c97fbbe2531118ec83795f95">MultitaskingPlugin</a>, <a class="el" href="class_show_desktop_plugin.html#aa3d81635ca7abf8926bb9caa94e7fcc7">ShowDesktopPlugin</a>, <a class="el" href="class_disk_mount_plugin.html#a96072950a4a8741786f91f37f17ee931">DiskMountPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#adeb4c0a3a7a7f2a97fdd4b98fd710f67">BluetoothPlugin</a>, <a class="el" href="class_sound_plugin.html#a764bb5d5500576d764c0852657bb526a">SoundPlugin</a>, <a class="el" href="class_keyboard_plugin.html#a6e0cb0977b70d1850e2d3d6e6866d1fa">KeyboardPlugin</a> , 以及 <a class="el" href="class_home_monitor_plugin.html#a6030018abdc2aa833fdf850da10644b0">HomeMonitorPlugin</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a1ec6119717d1c5a1b71eda016a1cb8fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec6119717d1c5a1b71eda016a1cb8fd">&#9670;&nbsp;</a></span>invokedMenuItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PluginsItemInterface::invokedMenuItem </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>menuId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>checked</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>invokedMenuItem call if context menu item is clicked </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+    <tr><td class="paramname">itemId</td><td>menu item id </td></tr>
+    <tr><td class="paramname">checked</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>被 <a class="el" href="class_disk_mount_plugin.html#a538e6c7631ee809f5eafbb8f84eefb56">DiskMountPlugin</a>, <a class="el" href="class_datetime_plugin.html#afd994d28a01900a0584bbf63560db6d6">DatetimePlugin</a>, <a class="el" href="class_onboard_plugin.html#a53425bb13465268edf6620e544f7670f">OnboardPlugin</a>, <a class="el" href="class_trash_plugin.html#acfef9977166dfec07b476b6a555fd04f">TrashPlugin</a>, <a class="el" href="class_power_plugin.html#a07518aab90656977d0a4676fb06725ca">PowerPlugin</a>, <a class="el" href="class_shutdown_plugin.html#aa64d40e03bd06c6672b17a9818113126">ShutdownPlugin</a>, <a class="el" href="class_multitasking_plugin.html#a135812cb816c6854a31c6241fc07f3e0">MultitaskingPlugin</a>, <a class="el" href="class_show_desktop_plugin.html#a9d1d22296bd334514128dee80e296af2">ShowDesktopPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#a189169934e17b37fd050a13860c26861">BluetoothPlugin</a>, <a class="el" href="class_disk_mount_plugin.html#a20a1e69bc5326ae0a18791e9c62fa96c">DiskMountPlugin</a>, <a class="el" href="class_sound_plugin.html#a011a2a5fd55a0cfb222af24709625bc5">SoundPlugin</a>, <a class="el" href="class_network_plugin.html#aedf7965b165797c9d046e88c4ef4eb24">NetworkPlugin</a> , 以及 <a class="el" href="class_home_monitor_plugin.html#a5641cf212e03f92cf3429c5d92f1da20">HomeMonitorPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00131">131</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a10db69178a76355b779a3b0401dea23c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10db69178a76355b779a3b0401dea23c">&#9670;&nbsp;</a></span>itemAllowContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool PluginsItemInterface::itemAllowContainer </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemAllowContainer tell dock is your item allow to move into container </p>
+<p>if your item placed into container, popup tips and popup applet will be disabled. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00163">163</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa1ab597cb6516136ac493bd178357c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ab597cb6516136ac493bd178357c46">&#9670;&nbsp;</a></span>itemCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const QString PluginsItemInterface::itemCommand </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemCommand execute spec command when user clicked your item. ensure your command do not get user input. </p>
+<p>empty string will be ignored. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_datetime_plugin.html#a9096c75295a41a8cdf545db382eeec2e">DatetimePlugin</a>, <a class="el" href="class_overlay_warning_plugin.html#a3156c6399ad2833a7bdec8c4a4c9e75e">OverlayWarningPlugin</a>, <a class="el" href="class_onboard_plugin.html#a503e4434d44945c52b2fda84b2fd827c">OnboardPlugin</a>, <a class="el" href="class_power_plugin.html#a922757c9d4283a5276cd2eada1cdd6d5">PowerPlugin</a>, <a class="el" href="class_trash_plugin.html#ab452def4d126c72eefc33a9438527592">TrashPlugin</a>, <a class="el" href="class_shutdown_plugin.html#ae23c1ce6c1ab158f814640a8dab33f30">ShutdownPlugin</a>, <a class="el" href="class_network_plugin.html#ac345860bd711e02802a273e45b88129f">NetworkPlugin</a>, <a class="el" href="class_multitasking_plugin.html#a3284ee28bb2578c6cadb55cc84422987">MultitaskingPlugin</a> , 以及 <a class="el" href="class_show_desktop_plugin.html#a7b7675c98f95098599d80bd3ef6bcb84">ShowDesktopPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00114">114</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a89c4fb2855a9e00afcaaa192ff01a031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c4fb2855a9e00afcaaa192ff01a031">&#9670;&nbsp;</a></span>itemContextMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const QString PluginsItemInterface::itemContextMenu </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemContextMenu context menu is shown when RequestPopupMenu called. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_disk_mount_plugin.html#ab8b928bff7991055f87a799cf853276b">DiskMountPlugin</a>, <a class="el" href="class_datetime_plugin.html#aef729f5c12ea85901a77f0351380b1b0">DatetimePlugin</a>, <a class="el" href="class_onboard_plugin.html#a47b080720c2aa479eefeb8a93298b47b">OnboardPlugin</a>, <a class="el" href="class_power_plugin.html#af0a1cde37df324ea4a383694632522ad">PowerPlugin</a>, <a class="el" href="class_trash_plugin.html#a1cf0d1188d6f631d510d3654df3b8fa5">TrashPlugin</a>, <a class="el" href="class_shutdown_plugin.html#ac456d90faf7933f958e6fbbd38dc09e3">ShutdownPlugin</a>, <a class="el" href="class_network_plugin.html#ad903714a3019f92930af959f0db0d57d">NetworkPlugin</a>, <a class="el" href="class_multitasking_plugin.html#a713c85432176a6a5bd7d6e6820cb611c">MultitaskingPlugin</a>, <a class="el" href="class_show_desktop_plugin.html#a65ddc922e97cf54c6178169a09e0341b">ShowDesktopPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#a7459846a9389d7e09e2b43c4bc99b4ee">BluetoothPlugin</a>, <a class="el" href="class_disk_mount_plugin.html#a3c7bc9c924aca4124454d50b6687f8d6">DiskMountPlugin</a>, <a class="el" href="class_sound_plugin.html#adf880406b98c588921f78cac0f8f6e8a">SoundPlugin</a> , 以及 <a class="el" href="class_home_monitor_plugin.html#a269d58cadfd3dc1293c747a6fd817924">HomeMonitorPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00122">122</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a69ff85d0a00657752803ec4c29cb64bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ff85d0a00657752803ec4c29cb64bd">&#9670;&nbsp;</a></span>itemIsInContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool PluginsItemInterface::itemIsInContainer </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemIsInContainer tell dock your item is in container, this function called at item init and if your item enable container. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00171">171</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a651cb056aa852cb2d8ca8c8259cbbeb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a651cb056aa852cb2d8ca8c8259cbbeb6">&#9670;&nbsp;</a></span>itemPopupApplet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QWidget* PluginsItemInterface::itemPopupApplet </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemPopupApplet override this function if your item wants to have an popup applet. the popup applet will shown when user click your item. </p>
+<p>Tips: dock should receive mouse press/release event to check user mouse operate, if your item filter mouse event, this function will not be called. so if you override mouse event and want to use popup applet, you should pass event to your parent use QWidget::someEvent(e); </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_disk_mount_plugin.html#a68b47b2cb280ff920c390be9b492fc44">DiskMountPlugin</a>, <a class="el" href="class_tray_plugin.html#ae68b233d4657db63c2b84d7e7a8d3b6b">TrayPlugin</a>, <a class="el" href="class_network_plugin.html#a7c5829da25fcea32a8cb21c212dc6238">NetworkPlugin</a>, <a class="el" href="class_trash_plugin.html#af55a3b2e5dd8ba4ef46492bd46b01cfa">TrashPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#a039a4b18ac663106c318a5531a1de504">BluetoothPlugin</a>, <a class="el" href="class_disk_mount_plugin.html#a6d632221b342d2f962e3f9310e837d00">DiskMountPlugin</a>, <a class="el" href="class_sound_plugin.html#ad454cdd3ff5428075128cdf9876c701d">SoundPlugin</a> , 以及 <a class="el" href="class_home_monitor_plugin.html#a132bae5ad815eba59267b546ef6c0c94">HomeMonitorPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a60056cf358ccc02f552c6a2eba9e7678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60056cf358ccc02f552c6a2eba9e7678">&#9670;&nbsp;</a></span>itemSortKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int PluginsItemInterface::itemSortKey </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemSortKey tell dock where your item wants to put on. </p>
+<p>this index is start from 1 and 0 for left side -1 for right side </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_disk_mount_plugin.html#a22000da05118397168ce516558fa2a01">DiskMountPlugin</a>, <a class="el" href="class_onboard_plugin.html#a117ba4c5eddcd2aac67edf144342fd94">OnboardPlugin</a>, <a class="el" href="class_trash_plugin.html#a5de22648d914ba17587f344eb64dffce">TrashPlugin</a>, <a class="el" href="class_overlay_warning_plugin.html#a765ecbf2e3460df7f05c7290693772c3">OverlayWarningPlugin</a>, <a class="el" href="class_tray_plugin.html#aff5cd49bc707b9fcf8411669c59ec909">TrayPlugin</a>, <a class="el" href="class_power_plugin.html#a4f2a892902c408c56977acf60f3d3731">PowerPlugin</a>, <a class="el" href="class_shutdown_plugin.html#ae4ecb7b84c4daad36ea6fb28a76595be">ShutdownPlugin</a>, <a class="el" href="class_network_plugin.html#ada74668ab9c0ca18b20373c17802b98a">NetworkPlugin</a>, <a class="el" href="class_datetime_plugin.html#aaaa5c1329e425ef07a38d44ae1e0e89d">DatetimePlugin</a>, <a class="el" href="class_multitasking_plugin.html#a6e7bd2fa047fe93c009e5f344b88d169">MultitaskingPlugin</a>, <a class="el" href="class_show_desktop_plugin.html#a7531de9e680f194cff91fd6c5982b10f">ShowDesktopPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#a6a42c3a1034db5748c7c1b33fe837e95">BluetoothPlugin</a>, <a class="el" href="class_sound_plugin.html#a5362242747f2543c41acf1bf1b18d509">SoundPlugin</a> , 以及 <a class="el" href="class_keyboard_plugin.html#a7bd20c03bfda2c73e89d00520cd6e1bf">KeyboardPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00143">143</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac63efc69faf1487ae7f790e51a45110d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63efc69faf1487ae7f790e51a45110d">&#9670;&nbsp;</a></span>itemTipsWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QWidget* PluginsItemInterface::itemTipsWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemTipsWidget override this function if your item want to have a tips. the tips will shown when user hover your item. nullptr will be ignored. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_disk_mount_plugin.html#aa2c6c5208fc8f7ea250510fc20d78328">DiskMountPlugin</a>, <a class="el" href="class_datetime_plugin.html#a70674f35c1650e96e9fdf8efd007edf8">DatetimePlugin</a>, <a class="el" href="class_tray_plugin.html#ae3f3886d80c14f943f8ac81b06cbcfa7">TrayPlugin</a>, <a class="el" href="class_overlay_warning_plugin.html#a96ec825449b50ecfd645b7afc734ea57">OverlayWarningPlugin</a>, <a class="el" href="class_onboard_plugin.html#a93a1fe77f32323e58fd0dc4496f0e5ba">OnboardPlugin</a>, <a class="el" href="class_network_plugin.html#ae119448a0b52ca05374de959e4142435">NetworkPlugin</a>, <a class="el" href="class_power_plugin.html#a6090cc6de21c747b83491cb8cda4015d">PowerPlugin</a>, <a class="el" href="class_shutdown_plugin.html#a3a0631079a2c6bfc86791cc95c122d6a">ShutdownPlugin</a>, <a class="el" href="class_trash_plugin.html#aa5e16bb5cf7256b65ee41935519386d4">TrashPlugin</a>, <a class="el" href="class_multitasking_plugin.html#ade5408c9d2e132516c578835c86f071b">MultitaskingPlugin</a>, <a class="el" href="class_show_desktop_plugin.html#a8a238ff00dc9ab4224e8106c4a9bc18a">ShowDesktopPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#a507bf76ab3d60086e3ef7065a2f2f263">BluetoothPlugin</a>, <a class="el" href="class_disk_mount_plugin.html#ab5cfbc3fd4ba5972d9c5a3ac2c911670">DiskMountPlugin</a>, <a class="el" href="class_sound_plugin.html#ab8eae963c62caa1c7a70864ee36fb008">SoundPlugin</a>, <a class="el" href="class_keyboard_plugin.html#a872b495317ce0c8e0e4213f98dfef9a8">KeyboardPlugin</a> , 以及 <a class="el" href="class_home_monitor_plugin.html#ac7cf6bceb8ef7fa232137caee48756fd">HomeMonitorPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a816f3c3eae67b0191e86e57d64a2a6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816f3c3eae67b0191e86e57d64a2a6ef">&#9670;&nbsp;</a></span>itemWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QWidget* PluginsItemInterface::itemWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemWidget your plugin item widget, each item should have a unique key. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td>your widget' unqiue key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>在 <a class="el" href="class_disk_mount_plugin.html#adc01c11a5ba212e1a7724cb478d390c8">DiskMountPlugin</a>, <a class="el" href="class_datetime_plugin.html#ad90cc87c8a62cb84f402ff14035d14e9">DatetimePlugin</a>, <a class="el" href="class_tray_plugin.html#a74888562e34117b593aa0f6b1bec8157">TrayPlugin</a>, <a class="el" href="class_overlay_warning_plugin.html#a76fb264ca1780faa9ed8cda8ac5bedaa">OverlayWarningPlugin</a>, <a class="el" href="class_onboard_plugin.html#a01b081e52ad0bfe2cd1b8d0b503d7b30">OnboardPlugin</a>, <a class="el" href="class_network_plugin.html#a5065d8903623d3c87f7122372662398e">NetworkPlugin</a>, <a class="el" href="class_power_plugin.html#a5c8e175829c97c8a201b2927d6f9c0ed">PowerPlugin</a>, <a class="el" href="class_shutdown_plugin.html#abdf20de4e9e009b3b366a73a177aed14">ShutdownPlugin</a>, <a class="el" href="class_trash_plugin.html#a271420c508ee2990291e524a2b004c5e">TrashPlugin</a>, <a class="el" href="class_multitasking_plugin.html#a4e4129a00b5397cf61eeba0577ce17d4">MultitaskingPlugin</a>, <a class="el" href="class_show_desktop_plugin.html#a68941d5b9432e8d3a380fcd478b22ff3">ShowDesktopPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#a55bb5af0083a3ad341482afd354648bc">BluetoothPlugin</a>, <a class="el" href="class_disk_mount_plugin.html#a2b267b28d14b90c7c63c874d5fd6b21f">DiskMountPlugin</a>, <a class="el" href="class_sound_plugin.html#abb00c7f44e21c471634203849f6020e4">SoundPlugin</a>, <a class="el" href="class_keyboard_plugin.html#a3b2b82bb27794203153e80a48428497a">KeyboardPlugin</a> , 以及 <a class="el" href="class_home_monitor_plugin.html#a164de8ea76ce6d33450854cff8b279a0">HomeMonitorPlugin</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a715bec6b9b2c4a6c94a32ca3f934af96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715bec6b9b2c4a6c94a32ca3f934af96">&#9670;&nbsp;</a></span>pluginName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const QString PluginsItemInterface::pluginName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>pluginName tell dock the unique plugin id </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>在 <a class="el" href="class_disk_mount_plugin.html#a44157d9d09ccf299727f11ea9b8815da">DiskMountPlugin</a>, <a class="el" href="class_tray_plugin.html#afaa995933a2ab58f0b78d197d5de1a33">TrayPlugin</a>, <a class="el" href="class_datetime_plugin.html#ac137e46dbd669daeb80c0f45cf5c6733">DatetimePlugin</a>, <a class="el" href="class_overlay_warning_plugin.html#ad4ee12556a4ca65aaeae7293a79285ac">OverlayWarningPlugin</a>, <a class="el" href="class_trash_plugin.html#a2099d225f888f647e5ebda8076ffcfb5">TrashPlugin</a>, <a class="el" href="class_onboard_plugin.html#a2bba4a6c5af1cd89a8ba5b621f256553">OnboardPlugin</a>, <a class="el" href="class_power_plugin.html#ac6dd7a74dadd26082aaeab05c7b78cb7">PowerPlugin</a>, <a class="el" href="class_network_plugin.html#a22268d273fde7d6935bd1882ebff00e7">NetworkPlugin</a>, <a class="el" href="class_shutdown_plugin.html#ae5e981f6755a77f12ab53d74c2fd8fa5">ShutdownPlugin</a>, <a class="el" href="class_multitasking_plugin.html#a29897cf2342fac83550a0799cc3e44de">MultitaskingPlugin</a>, <a class="el" href="class_show_desktop_plugin.html#abf4f2634b6529b1b5280a49af6aa02e0">ShowDesktopPlugin</a>, <a class="el" href="class_disk_mount_plugin.html#a195a35950af249357ef9ed9747da8d4e">DiskMountPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#ae149431d56e129ee8908e0b77d81dd59">BluetoothPlugin</a>, <a class="el" href="class_sound_plugin.html#ac8971e20ad037d74da1f3fd5083c78ab">SoundPlugin</a>, <a class="el" href="class_keyboard_plugin.html#a591e6d180426428f1b329298e3625a5b">KeyboardPlugin</a> , 以及 <a class="el" href="class_home_monitor_plugin.html#a635e0748a7d3cc537d645f77ed981841">HomeMonitorPlugin</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a9362b1ab9d6af9dd775fec61a4c7fca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9362b1ab9d6af9dd775fec61a4c7fca8">&#9670;&nbsp;</a></span>position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dock::Position PluginsItemInterface::position </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>position get current dock position </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00223">223</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa1311fdec76a64085cba418377521f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1311fdec76a64085cba418377521f0c">&#9670;&nbsp;</a></span>positionChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PluginsItemInterface::positionChanged </td>
+          <td>(</td>
+          <td class="paramtype">const Dock::Position&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>positionChanged override this function to receive dock position changed signal </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>被 <a class="el" href="class_tray_plugin.html#a87969d53332eaf0ce26b60db6fafb972">TrayPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00198">198</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a62858a1226941e5c83011edc3bca507d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62858a1226941e5c83011edc3bca507d">&#9670;&nbsp;</a></span>refreshIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PluginsItemInterface::refreshIcon </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>refreshIcon refresh item icon, its triggered when system icon theme changed. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td>item key </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>被 <a class="el" href="class_disk_mount_plugin.html#a84292aaac389f8cc9386637954880a7d">DiskMountPlugin</a>, <a class="el" href="class_tray_plugin.html#ab4e7e54932bac7de15e5bde4746c407f">TrayPlugin</a>, <a class="el" href="class_power_plugin.html#a058a8669a2b26e8cb6976e855dca942e">PowerPlugin</a>, <a class="el" href="class_trash_plugin.html#aaeab2c29cca72a31d8c493cae6475fd1">TrashPlugin</a>, <a class="el" href="class_multitasking_plugin.html#adc78a83af730ab3906fa677bab3abba6">MultitaskingPlugin</a>, <a class="el" href="class_show_desktop_plugin.html#a96ccd40ede877fe57b998827c668f7ca">ShowDesktopPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#af86775febf57a968d4cc3e528869e562">BluetoothPlugin</a>, <a class="el" href="class_sound_plugin.html#a65d5d4f730454d5b9971df697cb0cb84">SoundPlugin</a> , 以及 <a class="el" href="class_network_plugin.html#a39effc8ba4c7356c5b727c87e4c36428">NetworkPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00206">206</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aae6d006360faeb8a52797631a41419ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6d006360faeb8a52797631a41419ab">&#9670;&nbsp;</a></span>setItemIsInContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PluginsItemInterface::setItemIsInContainer </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>container</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setItemIsInContainer save your item new state. this function called when user drag out your item from container or user drop item into container(if your item allow drop into container). </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+    <tr><td class="paramname">container</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00181">181</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5c56480ce200d0eeb28d23a554fbf45c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c56480ce200d0eeb28d23a554fbf45c">&#9670;&nbsp;</a></span>setSortKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PluginsItemInterface::setSortKey </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setSortKey save your item new position sort key will be changed when plugins order changed(by user drag-drop) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+    <tr><td class="paramname">order</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>被 <a class="el" href="class_disk_mount_plugin.html#a7c11a66e77ddcfd0d122b1b579e36788">DiskMountPlugin</a>, <a class="el" href="class_onboard_plugin.html#afd9d880dd1fc47d387cb730cfb96f366">OnboardPlugin</a>, <a class="el" href="class_trash_plugin.html#a61aba3c301768194ca094e5d34d1a2bc">TrashPlugin</a>, <a class="el" href="class_overlay_warning_plugin.html#a1325bc9bf387542c45062c68555e77ef">OverlayWarningPlugin</a>, <a class="el" href="class_tray_plugin.html#ac690ae801fc40f6536ca842d5e6c5a84">TrayPlugin</a>, <a class="el" href="class_power_plugin.html#a5a032c9f7c590c8731d412e6fb6d0e54">PowerPlugin</a>, <a class="el" href="class_shutdown_plugin.html#a8235a6bc1719f4a128cd3370e78583c2">ShutdownPlugin</a>, <a class="el" href="class_network_plugin.html#a300412d5bb15ee4be1e07d2e1fcb89f5">NetworkPlugin</a>, <a class="el" href="class_datetime_plugin.html#ab269b10028e84fa81156e08261f1f325">DatetimePlugin</a>, <a class="el" href="class_multitasking_plugin.html#a54333f5f52339f88d5a8cc800daff0b1">MultitaskingPlugin</a>, <a class="el" href="class_show_desktop_plugin.html#af6e280d794d11dfd719caebbc90f1271">ShowDesktopPlugin</a>, <a class="el" href="class_bluetooth_plugin.html#a6caaf872cbc01ec57eeb509a717f151d">BluetoothPlugin</a>, <a class="el" href="class_sound_plugin.html#ad0f5cc7b4b8312bccb177d34c8e25841">SoundPlugin</a> , 以及 <a class="el" href="class_keyboard_plugin.html#a2ce8b5e225b4cce0c8b456b128104277">KeyboardPlugin</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a> 第 <a class="el" href="pluginsiteminterface_8h_source.html#l00152">152</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-dock/interfaces/<a class="el" href="pluginsiteminterface_8h_source.html">pluginsiteminterface.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_plugins_item_interface.html">PluginsItemInterface</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

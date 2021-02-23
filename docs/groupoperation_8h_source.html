@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: deepin-draw/src/widgets/groupoperation.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('groupoperation_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">groupoperation.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GROUPOPERATION_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GROUPOPERATION_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;expansionpanel.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;seperatorline.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;DIconButton&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QHBoxLayout&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;DWidget&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_group_operation.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_group_operation.html">GroupOperation</a> : <span class="keyword">public</span> QWidget</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_group_operation.html#a5f8e482a3dbf35c0d40ead9a7942c5b1">GroupOperation</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_group_operation.html#a6e86a8e442fb2a489d96deac3f25e202">setMode</a>(<span class="keywordtype">bool</span> mode, <span class="keywordtype">bool</span> line = <span class="keyword">true</span>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_group_operation.html#a18313d85bb983a0bfd8313ba8fb306cb">creatGroupButton</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_group_operation.html#a7a3c8fbc5b760db7d3ad7436601501c6">cancelGroupButton</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_group_operation.html#abbdf4dbe6f22ff81e93026345662fde7">showExpansionPanel</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_group_operation.html#aa487fc95c750d3ea9b55a7bd56a69021">clearUi</a>();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QHBoxLayout *<a class="code" href="class_group_operation.html#a24e456fc9cddeb22281084622fac7c5c">getLayout</a>();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_expansion_panel.html">ExpansionPanel</a> *<a class="code" href="class_group_operation.html#a77750c34264bc7318b32c90951267d6d">getExpansionPanel</a>();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_group_operation.html#a975c4fc93ae1b9c269de444898c4274b">eventFilter</a>(QObject *o, QEvent *e) <span class="keyword">override</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//下拉按钮</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    DIconButton *openGroup = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//组合</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    DIconButton *groupButton = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//释放组合</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    DIconButton *unGroupButton = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//扩展面板</span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_expansion_panel.html">ExpansionPanel</a> *panel = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//布局管理</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QHBoxLayout *layout   = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//分割线</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_seperator_line.html">SeperatorLine</a> *sepLine = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // GROUPOPERATION_H</span></div><div class="ttc" id="class_group_operation_html_a24e456fc9cddeb22281084622fac7c5c"><div class="ttname"><a href="class_group_operation.html#a24e456fc9cddeb22281084622fac7c5c">GroupOperation::getLayout</a></div><div class="ttdeci">QHBoxLayout * getLayout()</div><div class="ttdoc">getLayout 布局管理 </div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8cpp_source.html#l00138">groupoperation.cpp:138</a></div></div>
+<div class="ttc" id="class_seperator_line_html"><div class="ttname"><a href="class_seperator_line.html">SeperatorLine</a></div><div class="ttdef"><b>Definition:</b> <a href="seperatorline_8h_source.html#l00030">seperatorline.h:30</a></div></div>
+<div class="ttc" id="class_group_operation_html_aa487fc95c750d3ea9b55a7bd56a69021"><div class="ttname"><a href="class_group_operation.html#aa487fc95c750d3ea9b55a7bd56a69021">GroupOperation::clearUi</a></div><div class="ttdeci">void clearUi()</div><div class="ttdoc">clearUi 进行UI清除，重新布局 </div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8cpp_source.html#l00123">groupoperation.cpp:123</a></div></div>
+<div class="ttc" id="class_group_operation_html_a18313d85bb983a0bfd8313ba8fb306cb"><div class="ttname"><a href="class_group_operation.html#a18313d85bb983a0bfd8313ba8fb306cb">GroupOperation::creatGroupButton</a></div><div class="ttdeci">void creatGroupButton()</div><div class="ttdoc">creatGroupButton 图元组合函数 </div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8cpp_source.html#l00081">groupoperation.cpp:81</a></div></div>
+<div class="ttc" id="class_group_operation_html_a5f8e482a3dbf35c0d40ead9a7942c5b1"><div class="ttname"><a href="class_group_operation.html#a5f8e482a3dbf35c0d40ead9a7942c5b1">GroupOperation::GroupOperation</a></div><div class="ttdeci">GroupOperation(QWidget *parent=nullptr)</div><div class="ttdoc">GroupOperation 构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8cpp_source.html#l00013">groupoperation.cpp:13</a></div></div>
+<div class="ttc" id="class_group_operation_html_abbdf4dbe6f22ff81e93026345662fde7"><div class="ttname"><a href="class_group_operation.html#abbdf4dbe6f22ff81e93026345662fde7">GroupOperation::showExpansionPanel</a></div><div class="ttdeci">void showExpansionPanel()</div><div class="ttdoc">showExpansionPanel 文字属性栏下拉框显示 </div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8cpp_source.html#l00101">groupoperation.cpp:101</a></div></div>
+<div class="ttc" id="class_expansion_panel_html"><div class="ttname"><a href="class_expansion_panel.html">ExpansionPanel</a></div><div class="ttdef"><b>Definition:</b> <a href="expansionpanel_8h_source.html#l00013">expansionpanel.h:13</a></div></div>
+<div class="ttc" id="class_group_operation_html_a6e86a8e442fb2a489d96deac3f25e202"><div class="ttname"><a href="class_group_operation.html#a6e86a8e442fb2a489d96deac3f25e202">GroupOperation::setMode</a></div><div class="ttdeci">void setMode(bool mode, bool line=true)</div><div class="ttdoc">setMode 设置组合操作的显示模式 </div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8cpp_source.html#l00051">groupoperation.cpp:51</a></div></div>
+<div class="ttc" id="class_group_operation_html_a975c4fc93ae1b9c269de444898c4274b"><div class="ttname"><a href="class_group_operation.html#a975c4fc93ae1b9c269de444898c4274b">GroupOperation::eventFilter</a></div><div class="ttdeci">bool eventFilter(QObject *o, QEvent *e) override</div><div class="ttdoc">eventFilter 事件过滤 </div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8cpp_source.html#l00165">groupoperation.cpp:165</a></div></div>
+<div class="ttc" id="class_group_operation_html_a77750c34264bc7318b32c90951267d6d"><div class="ttname"><a href="class_group_operation.html#a77750c34264bc7318b32c90951267d6d">GroupOperation::getExpansionPanel</a></div><div class="ttdeci">ExpansionPanel * getExpansionPanel()</div><div class="ttdoc">getExpansionPanel 扩展面板 </div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8cpp_source.html#l00147">groupoperation.cpp:147</a></div></div>
+<div class="ttc" id="class_group_operation_html_a7a3c8fbc5b760db7d3ad7436601501c6"><div class="ttname"><a href="class_group_operation.html#a7a3c8fbc5b760db7d3ad7436601501c6">GroupOperation::cancelGroupButton</a></div><div class="ttdeci">void cancelGroupButton()</div><div class="ttdoc">cancelGroupButton 图元释放组合函数 </div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8cpp_source.html#l00092">groupoperation.cpp:92</a></div></div>
+<div class="ttc" id="class_group_operation_html"><div class="ttname"><a href="class_group_operation.html">GroupOperation</a></div><div class="ttdef"><b>Definition:</b> <a href="groupoperation_8h_source.html#l00011">groupoperation.h:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_caff2b1fd7545ce757c8a3b9a7f3898b.html">deepin-draw</a></li><li class="navelem"><a class="el" href="dir_965b9c804c0c8766184e23b894154521.html">src</a></li><li class="navelem"><a class="el" href="dir_5a3593c0fc67987c0264030708a7df56.html">widgets</a></li><li class="navelem"><b>groupoperation.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:13 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

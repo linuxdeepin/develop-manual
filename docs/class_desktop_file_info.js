@@ -1,0 +1,26 @@
+var class_desktop_file_info =
+[
+    [ "DesktopFileInfo", "class_desktop_file_info.html#afc911188022d53b9d1f0eba7d9080696", null ],
+    [ "DesktopFileInfo", "class_desktop_file_info.html#a67896aa412c012654815c03a00e31f46", null ],
+    [ "~DesktopFileInfo", "class_desktop_file_info.html#afc6d5408d08539d71ceb85c8b2566231", null ],
+    [ "additionalIcon", "class_desktop_file_info.html#a3be5b5f1aa569d9bc786b268bfd89fa6", null ],
+    [ "baseNameOfRename", "class_desktop_file_info.html#a474312b962bab8a2ae6e53a248952371", null ],
+    [ "canDrop", "class_desktop_file_info.html#ac5ea4c3cd477d208ae9a859d8c989a6d", null ],
+    [ "canMoveOrCopy", "class_desktop_file_info.html#a3112ef8fc726a117d1ed5601fd81cc8c", null ],
+    [ "canTag", "class_desktop_file_info.html#a8d9229bbfe69426164acd0ccbcd6f9ca", null ],
+    [ "disableMenuActionList", "class_desktop_file_info.html#ad1741d2a04422561213713d47637da92", null ],
+    [ "fileDisplayName", "class_desktop_file_info.html#a976759d88ab2393f7e7872f5f0889294", null ],
+    [ "fileIcon", "class_desktop_file_info.html#afa1d9f63a22c7adf0ad9494949dfcdc2", null ],
+    [ "fileNameOfRename", "class_desktop_file_info.html#a692bedb2a13731d9c21644c2498176c8", null ],
+    [ "genericIconName", "class_desktop_file_info.html#a50445c06d1acf6868067e881ec8d9db4", null ],
+    [ "getCategories", "class_desktop_file_info.html#afff1b67d89824e748cb8c330cc58bb16", null ],
+    [ "getExec", "class_desktop_file_info.html#a0f6de7ff893afc7460f52fb22520a6ba", null ],
+    [ "getIconName", "class_desktop_file_info.html#abed5ee2f4e33b26bf1fa64b2d94ffb77", null ],
+    [ "getName", "class_desktop_file_info.html#ab4e59b7f68ed00b4e81ae29aaab285f6", null ],
+    [ "getType", "class_desktop_file_info.html#a42427aaad0ef8037782c820b68fca7d8", null ],
+    [ "iconName", "class_desktop_file_info.html#ac91592a42c5a689b5ee867c1d5ae094f", null ],
+    [ "menuActionList", "class_desktop_file_info.html#a546b741f48d009081654685cd8810be9", null ],
+    [ "refresh", "class_desktop_file_info.html#a7c143c59ac4485f80fb8999b49940193", null ],
+    [ "suffixOfRename", "class_desktop_file_info.html#a6e835831a200d05e7c2c426249b1aee7", null ],
+    [ "supportedDragActions", "class_desktop_file_info.html#a9f7973f245de13f8e1401a96ed4dc341", null ]
+];

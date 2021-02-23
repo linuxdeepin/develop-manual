@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: AppsListModel类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_apps_list_model.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_apps_list_model-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">AppsListModel类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 AppsListModel 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_apps_list_model__inherit__graph.png" border="0" usemap="#_apps_list_model_inherit__map" alt="Inheritance graph"/></div>
+<map name="_apps_list_model_inherit__map" id="_apps_list_model_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+AppsListModel 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_apps_list_model__coll__graph.png" border="0" usemap="#_apps_list_model_coll__map" alt="Collaboration graph"/></div>
+<map name="_apps_list_model_coll__map" id="_apps_list_model_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aab088b977d6d4ce123debe14a1dc9610"><td class="memItemLeft" align="right" valign="top"><a id="aab088b977d6d4ce123debe14a1dc9610"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AppItemRole</b> { <br />
+&#160;&#160;<b>ItemSizeHintRole</b> = Qt::SizeHintRole, 
+<b>AppNameRole</b> = Qt::DisplayRole, 
+<b>AppIconRole</b> = Qt::DecorationRole, 
+<b>AppReserveRole</b> = Qt::UserRole, 
+<br />
+&#160;&#160;<b>AppRawItemInfoRole</b>, 
+<b>AppDialogIconRole</b>, 
+<b>AppListIconRole</b>, 
+<b>AppKeyRole</b>, 
+<br />
+&#160;&#160;<b>AppIconKeyRole</b>, 
+<b>AppDesktopRole</b>, 
+<b>AppCategoryRole</b>, 
+<b>AppGroupRole</b>, 
+<br />
+&#160;&#160;<b>AppAutoStartRole</b>, 
+<b>AppNewInstallRole</b>, 
+<b>AppIsOnDesktopRole</b>, 
+<b>AppIsOnDockRole</b>, 
+<br />
+&#160;&#160;<b>AppIsRemovableRole</b>, 
+<b>AppIsProxyRole</b>, 
+<b>AppEnableScalingRole</b>, 
+<b>AppIconSizeRole</b>, 
+<br />
+&#160;&#160;<b>AppFontSizeRole</b>, 
+<b>AppItemIsDraggingRole</b>, 
+<b>AppDragIconRole</b>, 
+<b>CategoryEnterIconRole</b>, 
+<br />
+&#160;&#160;<b>DrawBackgroundRole</b>
+<br />
+ }</td></tr>
+<tr class="separator:aab088b977d6d4ce123debe14a1dc9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d7005863885ded6dff07eeaabd0c318"><td class="memItemLeft" align="right" valign="top"><a id="a2d7005863885ded6dff07eeaabd0c318"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AppCategory</b> { <br />
+&#160;&#160;<b>All</b>, 
+<b>Custom</b>, 
+<b>Search</b>, 
+<b>Category</b>, 
+<br />
+&#160;&#160;<b>Internet</b>, 
+<b>Chat</b>, 
+<b>Music</b>, 
+<b>Video</b>, 
+<br />
+&#160;&#160;<b>Graphics</b>, 
+<b>Game</b>, 
+<b>Office</b>, 
+<b>Reading</b>, 
+<br />
+&#160;&#160;<b>Development</b>, 
+<b>System</b>, 
+<b>Others</b>
+<br />
+ }</td></tr>
+<tr class="separator:a2d7005863885ded6dff07eeaabd0c318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:acc7d5784e1be012599163d887a8f38b8"><td class="memItemLeft" align="right" valign="top"><a id="acc7d5784e1be012599163d887a8f38b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apps_list_model.html#acc7d5784e1be012599163d887a8f38b8">clearDraggingIndex</a> ()</td></tr>
+<tr class="memdesc:acc7d5784e1be012599163d887a8f38b8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_apps_list_model.html#acc7d5784e1be012599163d887a8f38b8" title="AppsListModel::clearDraggingIndex reset dragging item record ">AppsListModel::clearDraggingIndex</a> reset dragging item record <br /></td></tr>
+<tr class="separator:acc7d5784e1be012599163d887a8f38b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1e4cc31cf6f8d01827158e6035a8ce"><td class="memItemLeft" align="right" valign="top"><a id="abd1e4cc31cf6f8d01827158e6035a8ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCategory</b> (const AppCategory category)</td></tr>
+<tr class="separator:abd1e4cc31cf6f8d01827158e6035a8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8d867057dbd4961c5274ed80d6675d20"><td class="memItemLeft" align="right" valign="top"><a id="a8d867057dbd4961c5274ed80d6675d20"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AppsListModel</b> (const AppCategory &amp;category, QObject *parent=nullptr)</td></tr>
+<tr class="separator:a8d867057dbd4961c5274ed80d6675d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eda3c580cb7955ae22c8bbae3c52b54"><td class="memItemLeft" align="right" valign="top"><a id="a1eda3c580cb7955ae22c8bbae3c52b54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPageIndex</b> (int pageIndex)</td></tr>
+<tr class="separator:a1eda3c580cb7955ae22c8bbae3c52b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf936665d3181af975451af57231da0"><td class="memItemLeft" align="right" valign="top"><a id="a7bf936665d3181af975451af57231da0"></a>
+AppCategory&#160;</td><td class="memItemRight" valign="bottom"><b>category</b> () const</td></tr>
+<tr class="separator:a7bf936665d3181af975451af57231da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99cf6edb330fdc4fde0aa1af7d34e09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apps_list_model.html#aa99cf6edb330fdc4fde0aa1af7d34e09">setDraggingIndex</a> (const QModelIndex &amp;index)</td></tr>
+<tr class="memdesc:aa99cf6edb330fdc4fde0aa1af7d34e09"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_apps_list_model.html#aa99cf6edb330fdc4fde0aa1af7d34e09" title="AppsListModel::setDraggingIndex mark current item as dragging item ">AppsListModel::setDraggingIndex</a> mark current item as dragging item  <a href="#aa99cf6edb330fdc4fde0aa1af7d34e09">更多...</a><br /></td></tr>
+<tr class="separator:aa99cf6edb330fdc4fde0aa1af7d34e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8fb5f918a26e23b695ccc73be9f6df"><td class="memItemLeft" align="right" valign="top"><a id="a3d8fb5f918a26e23b695ccc73be9f6df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDragDropIndex</b> (const QModelIndex &amp;index)</td></tr>
+<tr class="separator:a3d8fb5f918a26e23b695ccc73be9f6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d1afbfc6a597cb8263480edc5b67b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apps_list_model.html#ad3d1afbfc6a597cb8263480edc5b67b8">dropInsert</a> (const QString &amp;appKey, const int pos)</td></tr>
+<tr class="memdesc:ad3d1afbfc6a597cb8263480edc5b67b8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_apps_list_model.html#ad3d1afbfc6a597cb8263480edc5b67b8" title="AppsListModel::dropInsert restore item from appsManager stash list ">AppsListModel::dropInsert</a> restore item from appsManager stash list  <a href="#ad3d1afbfc6a597cb8263480edc5b67b8">更多...</a><br /></td></tr>
+<tr class="separator:ad3d1afbfc6a597cb8263480edc5b67b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9d6defefb696cafb40c591bfb30558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apps_list_model.html#aab9d6defefb696cafb40c591bfb30558">dropSwap</a> (const int nextPos)</td></tr>
+<tr class="memdesc:aab9d6defefb696cafb40c591bfb30558"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_apps_list_model.html#aab9d6defefb696cafb40c591bfb30558" title="AppsListModel::dropSwap drop m_draingIndex to nextPos ">AppsListModel::dropSwap</a> drop m_draingIndex to nextPos  <a href="#aab9d6defefb696cafb40c591bfb30558">更多...</a><br /></td></tr>
+<tr class="separator:aab9d6defefb696cafb40c591bfb30558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1b47d5516fc69405676eddf70b48b8"><td class="memItemLeft" align="right" valign="top"><a id="a3b1b47d5516fc69405676eddf70b48b8"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>dragDropIndex</b> () const</td></tr>
+<tr class="separator:a3b1b47d5516fc69405676eddf70b48b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee336a7cc939ccc51bac0972b77c2d56"><td class="memItemLeft" align="right" valign="top"><a id="aee336a7cc939ccc51bac0972b77c2d56"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rowCount</b> (const QModelIndex &amp;parent) const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:aee336a7cc939ccc51bac0972b77c2d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620dc792a2dd73f71b28bb17d4fa9f6d"><td class="memItemLeft" align="right" valign="top"><a id="a620dc792a2dd73f71b28bb17d4fa9f6d"></a>
+const QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>indexAt</b> (const QString &amp;appKey) const</td></tr>
+<tr class="separator:a620dc792a2dd73f71b28bb17d4fa9f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f0c9117f0173055930211cd994e9e1"><td class="memItemLeft" align="right" valign="top"><a id="ab2f0c9117f0173055930211cd994e9e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDrawBackground</b> (bool draw)</td></tr>
+<tr class="separator:ab2f0c9117f0173055930211cd994e9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:aea11e05c88113ee2f0b2184e8e7ba8a9"><td class="memItemLeft" align="right" valign="top"><a id="aea11e05c88113ee2f0b2184e8e7ba8a9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeRows</b> (int row, int count, const QModelIndex &amp;parent) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:aea11e05c88113ee2f0b2184e8e7ba8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde6f2a1b684068c0d6da58ac7b62dbf"><td class="memItemLeft" align="right" valign="top"><a id="abde6f2a1b684068c0d6da58ac7b62dbf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canDropMimeData</b> (const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &amp;parent) const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:abde6f2a1b684068c0d6da58ac7b62dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10c172d86e42261423fc25313dfa519"><td class="memItemLeft" align="right" valign="top"><a id="ad10c172d86e42261423fc25313dfa519"></a>
+QMimeData *&#160;</td><td class="memItemRight" valign="bottom"><b>mimeData</b> (const QModelIndexList &amp;indexes) const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:ad10c172d86e42261423fc25313dfa519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c328bd2575c910dd9502e41723b484"><td class="memItemLeft" align="right" valign="top"><a id="a40c328bd2575c910dd9502e41723b484"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (const QModelIndex &amp;index, int role) const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a40c328bd2575c910dd9502e41723b484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbd6fcc466102ae2d101099d64e92a5"><td class="memItemLeft" align="right" valign="top"><a id="abcbd6fcc466102ae2d101099d64e92a5"></a>
+Qt::ItemFlags&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> (const QModelIndex &amp;index) const Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:abcbd6fcc466102ae2d101099d64e92a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="appslistmodel_8h_source.html">appslistmodel.h</a> 第 <a class="el" href="appslistmodel_8h_source.html#l00034">34</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ad3d1afbfc6a597cb8263480edc5b67b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3d1afbfc6a597cb8263480edc5b67b8">&#9670;&nbsp;</a></span>dropInsert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppsListModel::dropInsert </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>appKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_apps_list_model.html#ad3d1afbfc6a597cb8263480edc5b67b8" title="AppsListModel::dropInsert restore item from appsManager stash list ">AppsListModel::dropInsert</a> restore item from appsManager stash list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appKey</td><td>item token in stash list </td></tr>
+    <tr><td class="paramname">pos</td><td>insert position, if pos is negetive, insert into front </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="appslistmodel_8cpp_source.html">appslistmodel.cpp</a> 第 <a class="el" href="appslistmodel_8cpp_source.html#l00120">120</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aab9d6defefb696cafb40c591bfb30558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9d6defefb696cafb40c591bfb30558">&#9670;&nbsp;</a></span>dropSwap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppsListModel::dropSwap </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nextPos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_apps_list_model.html#aab9d6defefb696cafb40c591bfb30558" title="AppsListModel::dropSwap drop m_draingIndex to nextPos ">AppsListModel::dropSwap</a> drop m_draingIndex to nextPos </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nextPos</td><td>m_draggingIndex insert position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="appslistmodel_8cpp_source.html">appslistmodel.cpp</a> 第 <a class="el" href="appslistmodel_8cpp_source.html#l00132">132</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa99cf6edb330fdc4fde0aa1af7d34e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99cf6edb330fdc4fde0aa1af7d34e09">&#9670;&nbsp;</a></span>setDraggingIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppsListModel::setDraggingIndex </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_apps_list_model.html#aa99cf6edb330fdc4fde0aa1af7d34e09" title="AppsListModel::setDraggingIndex mark current item as dragging item ">AppsListModel::setDraggingIndex</a> mark current item as dragging item </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>item index </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="appslistmodel_8cpp_source.html">appslistmodel.cpp</a> 第 <a class="el" href="appslistmodel_8cpp_source.html#l00095">95</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-launcher/src/model/<a class="el" href="appslistmodel_8h_source.html">appslistmodel.h</a></li>
+<li>dde-launcher/src/model/<a class="el" href="appslistmodel_8cpp_source.html">appslistmodel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_apps_list_model.html">AppsListModel</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

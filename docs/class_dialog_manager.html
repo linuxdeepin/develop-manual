@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: DialogManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dialog_manager.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_dialog_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DialogManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DialogManager 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dialog_manager__inherit__graph.png" border="0" usemap="#_dialog_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dialog_manager_inherit__map" id="_dialog_manager_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+DialogManager 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dialog_manager__coll__graph.png" border="0" usemap="#_dialog_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_dialog_manager_coll__map" id="_dialog_manager_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a29b13fe34ab9ac3d680845703626577d"><td class="memItemLeft" align="right" valign="top"><a id="a29b13fe34ab9ac3d680845703626577d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>messageType</b> { <b>msgInfo</b> = 1, 
+<b>msgWarn</b> = 2, 
+<b>msgErr</b> = 3
+ }</td></tr>
+<tr class="separator:a29b13fe34ab9ac3d680845703626577d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a15e55fa5abb986619072ababfa699eec"><td class="memItemLeft" align="right" valign="top"><a id="a15e55fa5abb986619072ababfa699eec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleConflictRepsonseConfirmed</b> (const <a class="el" href="class_q_map.html">QMap</a>&lt; QString, QString &gt; &amp;jobDetail, const <a class="el" href="class_q_map.html">QMap</a>&lt; QString, QVariant &gt; &amp;response)</td></tr>
+<tr class="separator:a15e55fa5abb986619072ababfa699eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bcd733132fcaecff706912729de3989"><td class="memItemLeft" align="right" valign="top"><a id="a3bcd733132fcaecff706912729de3989"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addJob</b> (<a class="el" href="class_file_job.html">FileJob</a> *job)</td></tr>
+<tr class="separator:a3bcd733132fcaecff706912729de3989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e35462b6a11339bcb68cebe2167b87"><td class="memItemLeft" align="right" valign="top"><a id="a72e35462b6a11339bcb68cebe2167b87"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeJob</b> (const QString &amp;jobId, bool clearAllbuffer=false)</td></tr>
+<tr class="separator:a72e35462b6a11339bcb68cebe2167b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b2d3aee9b3185cdb66748e8e69fd05"><td class="memItemLeft" align="right" valign="top"><a id="a20b2d3aee9b3185cdb66748e8e69fd05"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getJobIdByUrl</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:a20b2d3aee9b3185cdb66748e8e69fd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048842f0043fee3e15296a1c21175e58"><td class="memItemLeft" align="right" valign="top"><a id="a048842f0043fee3e15296a1c21175e58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAllJobs</b> ()</td></tr>
+<tr class="separator:a048842f0043fee3e15296a1c21175e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2937cf968f6b0cfcc3faf2642d51bf39"><td class="memItemLeft" align="right" valign="top"><a id="a2937cf968f6b0cfcc3faf2642d51bf39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateJob</b> ()</td></tr>
+<tr class="separator:a2937cf968f6b0cfcc3faf2642d51bf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f6186d643878fcd6dd15259ce59e84"><td class="memItemLeft" align="right" valign="top"><a id="a90f6186d643878fcd6dd15259ce59e84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startUpdateJobTimer</b> ()</td></tr>
+<tr class="separator:a90f6186d643878fcd6dd15259ce59e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fafbd08c87f73a0ed28bf2889c0fea"><td class="memItemLeft" align="right" valign="top"><a id="a01fafbd08c87f73a0ed28bf2889c0fea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stopUpdateJobTimer</b> ()</td></tr>
+<tr class="separator:a01fafbd08c87f73a0ed28bf2889c0fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bed236af9ab1f4c97190cff56d17ba3"><td class="memItemLeft" align="right" valign="top"><a id="a1bed236af9ab1f4c97190cff56d17ba3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>abortJob</b> (const <a class="el" href="class_q_map.html">QMap</a>&lt; QString, QString &gt; &amp;jobDetail)</td></tr>
+<tr class="separator:a1bed236af9ab1f4c97190cff56d17ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2846047d6aa9d4b79ea4d7e2b109483"><td class="memItemLeft" align="right" valign="top"><a id="ab2846047d6aa9d4b79ea4d7e2b109483"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>abortJobByDestinationUrl</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:ab2846047d6aa9d4b79ea4d7e2b109483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4769f8def56ce3d9c75425b0010a92"><td class="memItemLeft" align="right" valign="top"><a id="afa4769f8def56ce3d9c75425b0010a92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showCopyMoveToSelfDialog</b> (const <a class="el" href="class_q_map.html">QMap</a>&lt; QString, QString &gt; &amp;jobDetail)</td></tr>
+<tr class="separator:afa4769f8def56ce3d9c75425b0010a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75ad89dda419a20bd93a538cae4fa70"><td class="memItemLeft" align="right" valign="top"><a id="ab75ad89dda419a20bd93a538cae4fa70"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showUrlWrongDialog</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:ab75ad89dda419a20bd93a538cae4fa70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce0bc5165ee2480d4cc304274319cd2"><td class="memItemLeft" align="right" valign="top"><a id="a1ce0bc5165ee2480d4cc304274319cd2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showRunExcutableScriptDialog</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url, quint64 winId)</td></tr>
+<tr class="separator:a1ce0bc5165ee2480d4cc304274319cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0a55053d7d9bfe5545555c321fdc0a"><td class="memItemLeft" align="right" valign="top"><a id="a6a0a55053d7d9bfe5545555c321fdc0a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showRunExcutableFileDialog</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url, quint64 winId)</td></tr>
+<tr class="separator:a6a0a55053d7d9bfe5545555c321fdc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc41b9e755b0941101a1db6db74d6dd"><td class="memItemLeft" align="right" valign="top"><a id="afdc41b9e755b0941101a1db6db74d6dd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showAskIfAddExcutableFlagAndRunDialog</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url, quint64 winId)</td></tr>
+<tr class="separator:afdc41b9e755b0941101a1db6db74d6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61b65e7494c04138ea512e603e4ab26"><td class="memItemLeft" align="right" valign="top"><a id="ad61b65e7494c04138ea512e603e4ab26"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showRenameNameSameErrorDialog</b> (const QString &amp;name, const <a class="el" href="class_d_f_m_event.html">DFMEvent</a> &amp;event)</td></tr>
+<tr class="separator:ad61b65e7494c04138ea512e603e4ab26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bda98bf6b8bda399d89fd4b59d0592"><td class="memItemLeft" align="right" valign="top"><a id="a08bda98bf6b8bda399d89fd4b59d0592"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showRenameNameDotDotErrorDialog</b> (const <a class="el" href="class_d_f_m_event.html">DFMEvent</a> &amp;event)</td></tr>
+<tr class="separator:a08bda98bf6b8bda399d89fd4b59d0592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb7e9ea5c979056d432f8d9d5173f9a"><td class="memItemLeft" align="right" valign="top"><a id="a7cb7e9ea5c979056d432f8d9d5173f9a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showOpticalBlankConfirmationDialog</b> (const <a class="el" href="class_d_f_m_url_base_event.html">DFMUrlBaseEvent</a> &amp;event)</td></tr>
+<tr class="separator:a7cb7e9ea5c979056d432f8d9d5173f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a8b3b55fabb444c3290aba0a7c5ee7"><td class="memItemLeft" align="right" valign="top"><a id="a92a8b3b55fabb444c3290aba0a7c5ee7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showOpticalImageOpSelectionDialog</b> (const <a class="el" href="class_d_f_m_url_base_event.html">DFMUrlBaseEvent</a> &amp;event)</td></tr>
+<tr class="separator:a92a8b3b55fabb444c3290aba0a7c5ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca6490204451763202e9354eef92987"><td class="memItemLeft" align="right" valign="top"><a id="a7ca6490204451763202e9354eef92987"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showOpticalJobFailureDialog</b> (int type, const QString &amp;err, const QStringList &amp;details)</td></tr>
+<tr class="separator:a7ca6490204451763202e9354eef92987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0ef6de76d852afc110a9fef2f6be72"><td class="memItemLeft" align="right" valign="top"><a id="a8a0ef6de76d852afc110a9fef2f6be72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showOpticalJobCompletionDialog</b> (const QString &amp;msg, const QString &amp;icon)</td></tr>
+<tr class="separator:a8a0ef6de76d852afc110a9fef2f6be72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc520552aa12e02bebc6dc3c3cda6f6"><td class="memItemLeft" align="right" valign="top"><a id="a1dc520552aa12e02bebc6dc3c3cda6f6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showDeleteFilesClearTrashDialog</b> (const <a class="el" href="class_d_f_m_url_list_base_event.html">DFMUrlListBaseEvent</a> &amp;event)</td></tr>
+<tr class="separator:a1dc520552aa12e02bebc6dc3c3cda6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5435fe235e1876440765b6fe4bee6cef"><td class="memItemLeft" align="right" valign="top"><a id="a5435fe235e1876440765b6fe4bee6cef"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showRemoveBookMarkDialog</b> (const <a class="el" href="class_d_f_m_event.html">DFMEvent</a> &amp;event)</td></tr>
+<tr class="separator:a5435fe235e1876440765b6fe4bee6cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19905a720f145caba50a2178f2dbf1f"><td class="memItemLeft" align="right" valign="top"><a id="aa19905a720f145caba50a2178f2dbf1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showOpenWithDialog</b> (const <a class="el" href="class_d_f_m_event.html">DFMEvent</a> &amp;event)</td></tr>
+<tr class="separator:aa19905a720f145caba50a2178f2dbf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2914838663e88bc595ab15df4998a3"><td class="memItemLeft" align="right" valign="top"><a id="a5e2914838663e88bc595ab15df4998a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showOpenFilesWithDialog</b> (const <a class="el" href="class_d_f_m_event.html">DFMEvent</a> &amp;event)</td></tr>
+<tr class="separator:a5e2914838663e88bc595ab15df4998a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6691ac6dcacd38d013c158927b769ae"><td class="memItemLeft" align="right" valign="top"><a id="ac6691ac6dcacd38d013c158927b769ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showPropertyDialog</b> (const <a class="el" href="class_d_f_m_url_list_base_event.html">DFMUrlListBaseEvent</a> &amp;event)</td></tr>
+<tr class="separator:ac6691ac6dcacd38d013c158927b769ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a23c2df1ee12d367a845caeb047554"><td class="memItemLeft" align="right" valign="top"><a id="ab4a23c2df1ee12d367a845caeb047554"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showShareOptionsInPropertyDialog</b> (const <a class="el" href="class_d_f_m_url_list_base_event.html">DFMUrlListBaseEvent</a> &amp;event)</td></tr>
+<tr class="separator:ab4a23c2df1ee12d367a845caeb047554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727efb3c6adac58269030675d7ce489a"><td class="memItemLeft" align="right" valign="top"><a id="a727efb3c6adac58269030675d7ce489a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showTrashPropertyDialog</b> (const <a class="el" href="class_d_f_m_event.html">DFMEvent</a> &amp;event)</td></tr>
+<tr class="separator:a727efb3c6adac58269030675d7ce489a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54bb756018d94fc02698ef13207bf0d"><td class="memItemLeft" align="right" valign="top"><a id="ac54bb756018d94fc02698ef13207bf0d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showComputerPropertyDialog</b> ()</td></tr>
+<tr class="separator:ac54bb756018d94fc02698ef13207bf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1712e01835a0fc02669af2751d6fa97"><td class="memItemLeft" align="right" valign="top"><a id="ad1712e01835a0fc02669af2751d6fa97"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showDevicePropertyDialog</b> (const <a class="el" href="class_d_f_m_event.html">DFMEvent</a> &amp;event)</td></tr>
+<tr class="separator:ad1712e01835a0fc02669af2751d6fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4985db64bbc04a44dbe9595ae58e4c58"><td class="memItemLeft" align="right" valign="top"><a id="a4985db64bbc04a44dbe9595ae58e4c58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showDiskErrorDialog</b> (const QString &amp;id, const QString &amp;errorText)</td></tr>
+<tr class="separator:a4985db64bbc04a44dbe9595ae58e4c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e09632323d8196126142a2d2255609"><td class="memItemLeft" align="right" valign="top"><a id="ab0e09632323d8196126142a2d2255609"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showBreakSymlinkDialog</b> (const QString &amp;targetName, const <a class="el" href="class_d_url.html">DUrl</a> &amp;linkfile)</td></tr>
+<tr class="separator:ab0e09632323d8196126142a2d2255609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace8d0b59647e8e15f819c994c9c602c6"><td class="memItemLeft" align="right" valign="top"><a id="ace8d0b59647e8e15f819c994c9c602c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showConnectToServerDialog</b> (quint64 winId)</td></tr>
+<tr class="separator:ace8d0b59647e8e15f819c994c9c602c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96da2cf23f8176e94fc192dd573fed1"><td class="memItemLeft" align="right" valign="top"><a id="ad96da2cf23f8176e94fc192dd573fed1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showUserSharePasswordSettingDialog</b> (quint64 winId)</td></tr>
+<tr class="separator:ad96da2cf23f8176e94fc192dd573fed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ce371ed75420064d80fd53ac5c6f66"><td class="memItemLeft" align="right" valign="top"><a id="a71ce371ed75420064d80fd53ac5c6f66"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showGlobalSettingsDialog</b> (quint64 winId)</td></tr>
+<tr class="separator:a71ce371ed75420064d80fd53ac5c6f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca821c86b5b05005a5b51f478021240"><td class="memItemLeft" align="right" valign="top"><a id="a6ca821c86b5b05005a5b51f478021240"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showDiskSpaceOutOfUsedDialogLater</b> ()</td></tr>
+<tr class="separator:a6ca821c86b5b05005a5b51f478021240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa6bfe6ea0b77b7406b3c29aa286fac"><td class="memItemLeft" align="right" valign="top"><a id="abaa6bfe6ea0b77b7406b3c29aa286fac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showDiskSpaceOutOfUsedDialog</b> ()</td></tr>
+<tr class="separator:abaa6bfe6ea0b77b7406b3c29aa286fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a8cb5c9599fc652f7acc13e9ada833e"><td class="memItemLeft" align="right" valign="top"><a id="a8a8cb5c9599fc652f7acc13e9ada833e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>show4gFat32Dialog</b> ()</td></tr>
+<tr class="separator:a8a8cb5c9599fc652f7acc13e9ada833e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb025fcee5cca43f3e2f570ac69d59a"><td class="memItemLeft" align="right" valign="top"><a id="aceb025fcee5cca43f3e2f570ac69d59a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showFailToCreateSymlinkDialog</b> (const QString &amp;errorString)</td></tr>
+<tr class="separator:aceb025fcee5cca43f3e2f570ac69d59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ca282eb136e38113e96cc734b1b56f"><td class="memItemLeft" align="right" valign="top"><a id="a86ca282eb136e38113e96cc734b1b56f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showMoveToTrashConflictDialog</b> (const <a class="el" href="class_q_list.html">DUrlList</a> &amp;urls)</td></tr>
+<tr class="separator:a86ca282eb136e38113e96cc734b1b56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb47074d8e266dbd2a4b15281de80a9a"><td class="memItemLeft" align="right" valign="top"><a id="adb47074d8e266dbd2a4b15281de80a9a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showDeleteSystemPathWarnDialog</b> (quint64 winId)</td></tr>
+<tr class="separator:adb47074d8e266dbd2a4b15281de80a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e4059966c041f7be69b7cb7b975d62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_manager.html#ac5e4059966c041f7be69b7cb7b975d62">showFilePreviewDialog</a> (const <a class="el" href="class_q_list.html">DUrlList</a> &amp;selectUrls, const <a class="el" href="class_q_list.html">DUrlList</a> &amp;entryUrls)</td></tr>
+<tr class="separator:ac5e4059966c041f7be69b7cb7b975d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5962e847fb5bbd8d861e52c014eb73"><td class="memItemLeft" align="right" valign="top"><a id="a8e5962e847fb5bbd8d861e52c014eb73"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showRestoreFailedDialog</b> (const <a class="el" href="class_q_list.html">DUrlList</a> &amp;urlList)</td></tr>
+<tr class="separator:a8e5962e847fb5bbd8d861e52c014eb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa250196ffd900a0e94cab7ac344e117b"><td class="memItemLeft" align="right" valign="top"><a id="aa250196ffd900a0e94cab7ac344e117b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showRestoreFailedPerssionDialog</b> (const QString &amp;srcPath, const QString &amp;targetPath)</td></tr>
+<tr class="separator:aa250196ffd900a0e94cab7ac344e117b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92cd0c28c3927cba82b45f5927af1858"><td class="memItemLeft" align="right" valign="top"><a id="a92cd0c28c3927cba82b45f5927af1858"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showRestoreFailedSourceNotExists</b> (const <a class="el" href="class_q_list.html">DUrlList</a> &amp;urlList)</td></tr>
+<tr class="separator:a92cd0c28c3927cba82b45f5927af1858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b8a9d3fd1dfff7e773ff5a0af0e7a6"><td class="memItemLeft" align="right" valign="top"><a id="a70b8a9d3fd1dfff7e773ff5a0af0e7a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showMultiFilesRenameDialog</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;selectedUrls)</td></tr>
+<tr class="separator:a70b8a9d3fd1dfff7e773ff5a0af0e7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d5fdad27b3fd5c3c4cae1c01801293"><td class="memItemLeft" align="right" valign="top"><a id="a68d5fdad27b3fd5c3c4cae1c01801293"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showAddUserShareFailedDialog</b> (const QString &amp;sharePath)</td></tr>
+<tr class="separator:a68d5fdad27b3fd5c3c4cae1c01801293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432108094f606d43f5227bb5534aee43"><td class="memItemLeft" align="right" valign="top"><a id="a432108094f606d43f5227bb5534aee43"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showNoPermissionDialog</b> (const <a class="el" href="class_d_f_m_url_list_base_event.html">DFMUrlListBaseEvent</a> &amp;event)</td></tr>
+<tr class="separator:a432108094f606d43f5227bb5534aee43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7269ec9e19cec6de8b7deaaed1dd925"><td class="memItemLeft" align="right" valign="top"><a id="ab7269ec9e19cec6de8b7deaaed1dd925"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showNtfsWarningDialog</b> (const <a class="el" href="class_q_disk_info.html">QDiskInfo</a> &amp;diskInfo)</td></tr>
+<tr class="separator:ab7269ec9e19cec6de8b7deaaed1dd925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0ea7e04ad28778306aeed734d984be"><td class="memItemLeft" align="right" valign="top"><a id="a5c0ea7e04ad28778306aeed734d984be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showErrorDialog</b> (const QString &amp;title, const QString &amp;message)</td></tr>
+<tr class="separator:a5c0ea7e04ad28778306aeed734d984be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa8dfedec1d73053eacba1378afc9ee"><td class="memItemLeft" align="right" valign="top"><a id="a9aa8dfedec1d73053eacba1378afc9ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removePropertyDialog</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:a9aa8dfedec1d73053eacba1378afc9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc586ea4eec78ba0f245622d8aebecf4"><td class="memItemLeft" align="right" valign="top"><a id="adc586ea4eec78ba0f245622d8aebecf4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>closeAllPropertyDialog</b> ()</td></tr>
+<tr class="separator:adc586ea4eec78ba0f245622d8aebecf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf66a89cbed946e6db40aa7548b77ea"><td class="memItemLeft" align="right" valign="top"><a id="a9bf66a89cbed946e6db40aa7548b77ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCloseIndicator</b> ()</td></tr>
+<tr class="separator:a9bf66a89cbed946e6db40aa7548b77ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4792946037b2f560c8b6ffc689076587"><td class="memItemLeft" align="right" valign="top"><a id="a4792946037b2f560c8b6ffc689076587"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>raiseAllPropertyDialog</b> ()</td></tr>
+<tr class="separator:a4792946037b2f560c8b6ffc689076587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac82bf757839e6de1e29c47ba26f5c6b4"><td class="memItemLeft" align="right" valign="top"><a id="ac82bf757839e6de1e29c47ba26f5c6b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleFocusChanged</b> (QWidget *old, QWidget *now)</td></tr>
+<tr class="separator:ac82bf757839e6de1e29c47ba26f5c6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4313d63864d99031c935a65c68885373"><td class="memItemLeft" align="right" valign="top"><a id="a4313d63864d99031c935a65c68885373"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showTaskProgressDlgOnActive</b> ()</td></tr>
+<tr class="separator:a4313d63864d99031c935a65c68885373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1888fc6fe1457ef67cdbeb9e8173bb5"><td class="memItemLeft" align="right" valign="top"><a id="ae1888fc6fe1457ef67cdbeb9e8173bb5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showUnableToLocateDir</b> (const QString &amp;dir)</td></tr>
+<tr class="separator:ae1888fc6fe1457ef67cdbeb9e8173bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cff001e17f9ce169ccbab2ae285f88d"><td class="memItemLeft" align="right" valign="top"><a id="a5cff001e17f9ce169ccbab2ae285f88d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshPropertyDialogs</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;oldUrl, const <a class="el" href="class_d_url.html">DUrl</a> &amp;newUrl)</td></tr>
+<tr class="separator:a5cff001e17f9ce169ccbab2ae285f88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ba4d28ed6d2b9faa45366e2d934943"><td class="memItemLeft" align="right" valign="top"><a id="a17ba4d28ed6d2b9faa45366e2d934943"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>showMessageDialog</b> (messageType messageLevel, const QString &amp;title, const QString &amp;message=&quot;&quot;, QString btnTxt=tr(&quot;Confirm&quot;))</td></tr>
+<tr class="separator:a17ba4d28ed6d2b9faa45366e2d934943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7af0f9c0cd5be80e58c51c34feacb11"><td class="memItemLeft" align="right" valign="top"><a id="ab7af0f9c0cd5be80e58c51c34feacb11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showBluetoothTransferDlg</b> (const <a class="el" href="class_q_list.html">DUrlList</a> &amp;files)</td></tr>
+<tr class="separator:ab7af0f9c0cd5be80e58c51c34feacb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0654e3cae1ee84f874e0902e43fab52"><td class="memItemLeft" align="right" valign="top"><a id="aa0654e3cae1ee84f874e0902e43fab52"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showFormatDialog</b> (const QString &amp;devId)</td></tr>
+<tr class="separator:aa0654e3cae1ee84f874e0902e43fab52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8243163b816325f21a28212c3da933a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_manager.html#a8243163b816325f21a28212c3da933a9">DUrlListCompare</a> (<a class="el" href="class_q_list.html">DUrlList</a> urls)</td></tr>
+<tr class="separator:a8243163b816325f21a28212c3da933a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a46a36fdd83a9d5c32ba1ae72ac06717b"><td class="memItemLeft" align="right" valign="top"><a id="a46a36fdd83a9d5c32ba1ae72ac06717b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DialogManager</b> (QObject *parent=0)</td></tr>
+<tr class="separator:a46a36fdd83a9d5c32ba1ae72ac06717b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f935d695065e935b677ad71d0dd0fa"><td class="memItemLeft" align="right" valign="top"><a id="a17f935d695065e935b677ad71d0dd0fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initData</b> ()</td></tr>
+<tr class="separator:a17f935d695065e935b677ad71d0dd0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab29a6ada48772694e861759557e604"><td class="memItemLeft" align="right" valign="top"><a id="a5ab29a6ada48772694e861759557e604"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initTaskDialog</b> ()</td></tr>
+<tr class="separator:a5ab29a6ada48772694e861759557e604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d9f6872494fe9a75395b9686d75c2f"><td class="memItemLeft" align="right" valign="top"><a id="aa1d9f6872494fe9a75395b9686d75c2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initCloseIndicatorDialog</b> ()</td></tr>
+<tr class="separator:aa1d9f6872494fe9a75395b9686d75c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81450ee8e33ee2ce9090e55a1d9eb27f"><td class="memItemLeft" align="right" valign="top"><a id="a81450ee8e33ee2ce9090e55a1d9eb27f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initConnect</b> ()</td></tr>
+<tr class="separator:a81450ee8e33ee2ce9090e55a1d9eb27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a2a214ab5a16bb7f78f18dd2ba3b95"><td class="memItemLeft" align="right" valign="top"><a id="ae8a2a214ab5a16bb7f78f18dd2ba3b95"></a>
+QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>getPropertyPos</b> (int dialogWidth, int dialogHeight)</td></tr>
+<tr class="separator:ae8a2a214ab5a16bb7f78f18dd2ba3b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3129606323baeb2c4f10659646743724"><td class="memItemLeft" align="right" valign="top"><a id="a3129606323baeb2c4f10659646743724"></a>
+QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>getPerportyPos</b> (int dialogWidth, int dialogHeight, int count, int index)</td></tr>
+<tr class="separator:a3129606323baeb2c4f10659646743724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb8ea63fef304e0d803099703fc26ac"><td class="memItemLeft" align="right" valign="top"><a id="abeb8ea63fef304e0d803099703fc26ac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTaskDialogEmpty</b> ()</td></tr>
+<tr class="separator:abeb8ea63fef304e0d803099703fc26ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb9f7f1914aabc5c8187223c8faed84"><td class="memItemLeft" align="right" valign="top"><a id="acdb9f7f1914aabc5c8187223c8faed84"></a>
+<a class="el" href="class_d_task_dialog.html">DTaskDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>taskDialog</b> () const</td></tr>
+<tr class="separator:acdb9f7f1914aabc5c8187223c8faed84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dialogmanager_8h_source.html">dialogmanager.h</a> 第 <a class="el" href="dialogmanager_8h_source.html#l00061">61</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a8243163b816325f21a28212c3da933a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8243163b816325f21a28212c3da933a9">&#9670;&nbsp;</a></span>DUrlListCompare</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DialogManager::DUrlListCompare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_list.html">DUrlList</a>&#160;</td>
+          <td class="paramname"><em>urls</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>DUrlListCompare 用于判断传入url列表是否与m_urlList一样 </p>
+
+<p class="definition">在文件 <a class="el" href="dialogmanager_8cpp_source.html">dialogmanager.cpp</a> 第 <a class="el" href="dialogmanager_8cpp_source.html#l01511">1511</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac5e4059966c041f7be69b7cb7b975d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e4059966c041f7be69b7cb7b975d62">&#9670;&nbsp;</a></span>showFilePreviewDialog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogManager::showFilePreviewDialog </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">DUrlList</a> &amp;&#160;</td>
+          <td class="paramname"><em>selectUrls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">DUrlList</a> &amp;&#160;</td>
+          <td class="paramname"><em>entryUrls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>判断当前预览是否于新的预览列表相同</p>
+<p>记录预览列表</p>
+<p>对话框关闭时回收FilePreviewDialog对象</p>
+<p>对话框关闭时m_filePreviewDialog对象置空 </p>
+
+<p class="definition">在文件 <a class="el" href="dialogmanager_8cpp_source.html">dialogmanager.cpp</a> 第 <a class="el" href="dialogmanager_8cpp_source.html#l01020">1020</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/dialogs/<a class="el" href="dialogmanager_8h_source.html">dialogmanager.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/dialogs/<a class="el" href="dialogmanager_8cpp_source.html">dialogmanager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_dialog_manager.html">DialogManager</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

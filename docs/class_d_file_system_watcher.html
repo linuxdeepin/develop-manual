@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: DFileSystemWatcher类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_d_file_system_watcher.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_d_file_system_watcher-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DFileSystemWatcher类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_d_file_system_watcher.html" title="The DFileSystemWatcher class provides an interface for monitoring files and directories for modificat...">DFileSystemWatcher</a> class provides an interface for monitoring files and directories for modifications.  
+ <a href="class_d_file_system_watcher.html#details">更多...</a></p>
+<div class="dynheader">
+类 DFileSystemWatcher 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_file_system_watcher__inherit__graph.png" border="0" usemap="#_d_file_system_watcher_inherit__map" alt="Inheritance graph"/></div>
+<map name="_d_file_system_watcher_inherit__map" id="_d_file_system_watcher_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+DFileSystemWatcher 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_file_system_watcher__coll__graph.png" border="0" usemap="#_d_file_system_watcher_coll__map" alt="Collaboration graph"/></div>
+<map name="_d_file_system_watcher_coll__map" id="_d_file_system_watcher_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a5af790c530928c990c2e8f14c62daabd"><td class="memItemLeft" align="right" valign="top"><a id="a5af790c530928c990c2e8f14c62daabd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileDeleted</b> (const QString &amp;path, const QString &amp;name, QPrivateSignal)</td></tr>
+<tr class="separator:a5af790c530928c990c2e8f14c62daabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd99a430d0b5732372a312e0f1dc34c"><td class="memItemLeft" align="right" valign="top"><a id="a4dd99a430d0b5732372a312e0f1dc34c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileAttributeChanged</b> (const QString &amp;path, const QString &amp;name, QPrivateSignal)</td></tr>
+<tr class="separator:a4dd99a430d0b5732372a312e0f1dc34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a9789e96c9e2204584f02374e86f93"><td class="memItemLeft" align="right" valign="top"><a id="ac3a9789e96c9e2204584f02374e86f93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileClosed</b> (const QString &amp;path, const QString &amp;name, QPrivateSignal)</td></tr>
+<tr class="separator:ac3a9789e96c9e2204584f02374e86f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c6e17473ec7f841a655e77592d092b"><td class="memItemLeft" align="right" valign="top"><a id="a07c6e17473ec7f841a655e77592d092b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileMoved</b> (const QString &amp;fromPath, const QString &amp;fromName, const QString &amp;toPath, const QString &amp;toName, QPrivateSignal)</td></tr>
+<tr class="separator:a07c6e17473ec7f841a655e77592d092b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6944e244a33e3ce03f22da3391afe33"><td class="memItemLeft" align="right" valign="top"><a id="af6944e244a33e3ce03f22da3391afe33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileCreated</b> (const QString &amp;path, const QString &amp;name, QPrivateSignal)</td></tr>
+<tr class="separator:af6944e244a33e3ce03f22da3391afe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dcf0214d6524c9ab2582caa5f6bbeb"><td class="memItemLeft" align="right" valign="top"><a id="af6dcf0214d6524c9ab2582caa5f6bbeb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileModified</b> (const QString &amp;path, const QString &amp;name, QPrivateSignal)</td></tr>
+<tr class="separator:af6dcf0214d6524c9ab2582caa5f6bbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9d3f1d73426d3f817f724efd2a11ce"><td class="memItemLeft" align="right" valign="top"><a id="acc9d3f1d73426d3f817f724efd2a11ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#acc9d3f1d73426d3f817f724efd2a11ce">fileSystemUMount</a> (const QString &amp;path, const QString &amp;name, QPrivateSignal)</td></tr>
+<tr class="memdesc:acc9d3f1d73426d3f817f724efd2a11ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">当挂载的文件系统被卸载时发送卸载卸载信号 <br /></td></tr>
+<tr class="separator:acc9d3f1d73426d3f817f724efd2a11ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abe6ed8a2165b1de3c9779dc2cbed9461"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#abe6ed8a2165b1de3c9779dc2cbed9461">DFileSystemWatcher</a> (QObject *parent=Q_NULLPTR)</td></tr>
+<tr class="separator:abe6ed8a2165b1de3c9779dc2cbed9461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb275ee54af7e184a3c54332f31e305b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#adb275ee54af7e184a3c54332f31e305b">DFileSystemWatcher</a> (const QStringList &amp;paths, QObject *parent=Q_NULLPTR)</td></tr>
+<tr class="separator:adb275ee54af7e184a3c54332f31e305b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa32f0e89958c041064097076fbc3dd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#afa32f0e89958c041064097076fbc3dd3">~DFileSystemWatcher</a> ()</td></tr>
+<tr class="separator:afa32f0e89958c041064097076fbc3dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66141dd897b207f15cf5b9174b69546b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#a66141dd897b207f15cf5b9174b69546b">addPath</a> (const QString &amp;file)</td></tr>
+<tr class="separator:a66141dd897b207f15cf5b9174b69546b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af639f6de0c31b75c790a049bc36342df"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#af639f6de0c31b75c790a049bc36342df">addPaths</a> (const QStringList &amp;paths)</td></tr>
+<tr class="separator:af639f6de0c31b75c790a049bc36342df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ee6c1ebabd832c1b6d87ec014c8153"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#a49ee6c1ebabd832c1b6d87ec014c8153">removePath</a> (const QString &amp;path)</td></tr>
+<tr class="separator:a49ee6c1ebabd832c1b6d87ec014c8153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f034e2f1548908818687d89155a97d0"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#a2f034e2f1548908818687d89155a97d0">removePaths</a> (const QStringList &amp;paths)</td></tr>
+<tr class="separator:a2f034e2f1548908818687d89155a97d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fdda1dc902c894086e4b3b8ad16bc1d"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#a9fdda1dc902c894086e4b3b8ad16bc1d">files</a> () const</td></tr>
+<tr class="separator:a9fdda1dc902c894086e4b3b8ad16bc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754cf405ca2ab202d139efd1931f0ad9"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_system_watcher.html#a754cf405ca2ab202d139efd1931f0ad9">directories</a> () const</td></tr>
+<tr class="separator:a754cf405ca2ab202d139efd1931f0ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <a class="el" href="class_d_file_system_watcher.html" title="The DFileSystemWatcher class provides an interface for monitoring files and directories for modificat...">DFileSystemWatcher</a> class provides an interface for monitoring files and directories for modifications. </p>
+<p>QtCore </p><dl class="section since"><dt>自从</dt><dd>4.2 </dd></dl>
+<p><a class="el" href="class_d_file_system_watcher.html" title="The DFileSystemWatcher class provides an interface for monitoring files and directories for modificat...">DFileSystemWatcher</a> monitors the file system for changes to files and directories by watching a list of specified paths.</p>
+<p>Call <a class="el" href="class_d_file_system_watcher.html#a66141dd897b207f15cf5b9174b69546b">addPath()</a> to watch a particular file or directory. Multiple paths can be added using the <a class="el" href="class_d_file_system_watcher.html#af639f6de0c31b75c790a049bc36342df">addPaths()</a> function. Existing paths can be removed by using the <a class="el" href="class_d_file_system_watcher.html#a49ee6c1ebabd832c1b6d87ec014c8153">removePath()</a> and <a class="el" href="class_d_file_system_watcher.html#a2f034e2f1548908818687d89155a97d0">removePaths()</a> functions.</p>
+<p><a class="el" href="class_d_file_system_watcher.html" title="The DFileSystemWatcher class provides an interface for monitoring files and directories for modificat...">DFileSystemWatcher</a> examines each path added to it. Files that have been added to the <a class="el" href="class_d_file_system_watcher.html" title="The DFileSystemWatcher class provides an interface for monitoring files and directories for modificat...">DFileSystemWatcher</a> can be accessed using the <a class="el" href="class_d_file_system_watcher.html#a9fdda1dc902c894086e4b3b8ad16bc1d">files()</a> function, and directories using the <a class="el" href="class_d_file_system_watcher.html#a754cf405ca2ab202d139efd1931f0ad9">directories()</a> function.</p>
+<p>The fileChanged() signal is emitted when a file has been modified, renamed or removed from disk. Similarly, the directoryChanged() signal is emitted when a directory or its contents is modified or removed. Note that <a class="el" href="class_d_file_system_watcher.html" title="The DFileSystemWatcher class provides an interface for monitoring files and directories for modificat...">DFileSystemWatcher</a> stops monitoring files once they have been renamed or removed from disk, and directories once they have been removed from disk.</p>
+<dl class="section note"><dt>注解</dt><dd>On systems running a Linux kernel without inotify support, file systems that contain watched paths cannot be unmounted.</dd>
+<dd>
+Windows CE does not support directory monitoring by default as this depends on the file system driver installed.</dd>
+<dd>
+The act of monitoring files and directories for modifications consumes system resources. This implies there is a limit to the number of files and directories your process can monitor simultaneously. On all BSD variants, for example, an open file descriptor is required for each monitored file. Some system limits the number of open file descriptors to 256 by default. This means that <a class="el" href="class_d_file_system_watcher.html#a66141dd897b207f15cf5b9174b69546b">addPath()</a> and <a class="el" href="class_d_file_system_watcher.html#af639f6de0c31b75c790a049bc36342df">addPaths()</a> will fail if your process tries to add more than 256 files or directories to the file system monitor. Also note that your process may have other file descriptors open in addition to the ones for files being monitored, and these other open descriptors also count in the total. OS X uses a different backend and does not suffer from this issue.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>QFile, QDir </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8h_source.html">dfilesystemwatcher.h</a> 第 <a class="el" href="dfilesystemwatcher_8h_source.html#l00016">16</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abe6ed8a2165b1de3c9779dc2cbed9461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6ed8a2165b1de3c9779dc2cbed9461">&#9670;&nbsp;</a></span>DFileSystemWatcher() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DFileSystemWatcher::DFileSystemWatcher </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>Q_NULLPTR</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a new file system watcher object with the given <em>parent</em>. </p>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a> 第 <a class="el" href="dfilesystemwatcher_8cpp_source.html#l00442">442</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adb275ee54af7e184a3c54332f31e305b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb275ee54af7e184a3c54332f31e305b">&#9670;&nbsp;</a></span>DFileSystemWatcher() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DFileSystemWatcher::DFileSystemWatcher </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>paths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>Q_NULLPTR</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a new file system watcher object with the given <em>parent</em> which monitors the specified <em>paths</em> list. </p>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a> 第 <a class="el" href="dfilesystemwatcher_8cpp_source.html#l00461">461</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afa32f0e89958c041064097076fbc3dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa32f0e89958c041064097076fbc3dd3">&#9670;&nbsp;</a></span>~DFileSystemWatcher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DFileSystemWatcher::~DFileSystemWatcher </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destroys the file system watcher. </p>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a> 第 <a class="el" href="dfilesystemwatcher_8cpp_source.html#l00470">470</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a66141dd897b207f15cf5b9174b69546b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66141dd897b207f15cf5b9174b69546b">&#9670;&nbsp;</a></span>addPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DFileSystemWatcher::addPath </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds <em>path</em> to the file system watcher if <em>path</em> exists. The path is not added if it does not exist, or if it is already being monitored by the file system watcher.</p>
+<p>If <em>path</em> specifies a directory, the directoryChanged() signal will be emitted when <em>path</em> is modified or removed from disk; otherwise the fileChanged() signal is emitted when <em>path</em> is modified, renamed or removed.</p>
+<p>If the watch was successful, true is returned.</p>
+<p>Reasons for a watch failure are generally system-dependent, but may include the resource not existing, access failures, or the total watch count limit, if the platform has one.</p>
+<dl class="section note"><dt>注解</dt><dd>There may be a system dependent limit to the number of files and directories that can be monitored simultaneously. If this limit is been reached, <em>path</em> will not be monitored, and false is returned.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_file_system_watcher.html#af639f6de0c31b75c790a049bc36342df">addPaths()</a>, <a class="el" href="class_d_file_system_watcher.html#a49ee6c1ebabd832c1b6d87ec014c8153">removePath()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a> 第 <a class="el" href="dfilesystemwatcher_8cpp_source.html#l00496">496</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af639f6de0c31b75c790a049bc36342df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af639f6de0c31b75c790a049bc36342df">&#9670;&nbsp;</a></span>addPaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList DFileSystemWatcher::addPaths </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>paths</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds each path in <em>paths</em> to the file system watcher. Paths are not added if they not exist, or if they are already being monitored by the file system watcher.</p>
+<p>If a path specifies a directory, the directoryChanged() signal will be emitted when the path is modified or removed from disk; otherwise the fileChanged() signal is emitted when the path is modified, renamed, or removed.</p>
+<p>The return value is a list of paths that could not be watched.</p>
+<p>Reasons for a watch failure are generally system-dependent, but may include the resource not existing, access failures, or the total watch count limit, if the platform has one.</p>
+<dl class="section note"><dt>注解</dt><dd>There may be a system dependent limit to the number of files and directories that can be monitored simultaneously. If this limit has been reached, the excess <em>paths</em> will not be monitored, and they will be added to the returned QStringList.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_file_system_watcher.html#a66141dd897b207f15cf5b9174b69546b">addPath()</a>, <a class="el" href="class_d_file_system_watcher.html#a2f034e2f1548908818687d89155a97d0">removePaths()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a> 第 <a class="el" href="dfilesystemwatcher_8cpp_source.html#l00530">530</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a754cf405ca2ab202d139efd1931f0ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754cf405ca2ab202d139efd1931f0ad9">&#9670;&nbsp;</a></span>directories()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList DFileSystemWatcher::directories </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a list of paths to directories that are being watched.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_file_system_watcher.html#a9fdda1dc902c894086e4b3b8ad16bc1d">files()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a> 第 <a class="el" href="dfilesystemwatcher_8cpp_source.html#l00648">648</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9fdda1dc902c894086e4b3b8ad16bc1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fdda1dc902c894086e4b3b8ad16bc1d">&#9670;&nbsp;</a></span>files()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList DFileSystemWatcher::files </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a list of paths to files that are being watched.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_file_system_watcher.html#a754cf405ca2ab202d139efd1931f0ad9">directories()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a> 第 <a class="el" href="dfilesystemwatcher_8cpp_source.html#l00658">658</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a49ee6c1ebabd832c1b6d87ec014c8153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ee6c1ebabd832c1b6d87ec014c8153">&#9670;&nbsp;</a></span>removePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DFileSystemWatcher::removePath </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes the specified <em>path</em> from the file system watcher.</p>
+<p>If the watch is successfully removed, true is returned.</p>
+<p>Reasons for watch removal failing are generally system-dependent, but may be due to the path having already been deleted, for example.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_file_system_watcher.html#a2f034e2f1548908818687d89155a97d0">removePaths()</a>, <a class="el" href="class_d_file_system_watcher.html#a66141dd897b207f15cf5b9174b69546b">addPath()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a> 第 <a class="el" href="dfilesystemwatcher_8cpp_source.html#l00564">564</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2f034e2f1548908818687d89155a97d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f034e2f1548908818687d89155a97d0">&#9670;&nbsp;</a></span>removePaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList DFileSystemWatcher::removePaths </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>paths</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes the specified <em>paths</em> from the file system watcher.</p>
+<p>The return value is a list of paths which were not able to be unwatched successfully.</p>
+<p>Reasons for watch removal failing are generally system-dependent, but may be due to the path having already been deleted, for example.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_file_system_watcher.html#a49ee6c1ebabd832c1b6d87ec014c8153">removePath()</a>, <a class="el" href="class_d_file_system_watcher.html#af639f6de0c31b75c790a049bc36342df">addPaths()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a> 第 <a class="el" href="dfilesystemwatcher_8cpp_source.html#l00586">586</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfilesystemwatcher_8h_source.html">dfilesystemwatcher.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfilesystemwatcher_8cpp_source.html">dfilesystemwatcher.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_d_file_system_watcher.html">DFileSystemWatcher</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

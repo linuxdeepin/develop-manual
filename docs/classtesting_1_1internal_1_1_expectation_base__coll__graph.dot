@@ -1,0 +1,12 @@
+digraph "testing::internal::ExpectationBase"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="testing::internal::\lExpectationBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mutex_" ,fontname="Helvetica"];
+  Node3 [label="testing::internal::\lMutex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtesting_1_1internal_1_1_mutex.html"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" immediate_prerequisites_" ,fontname="Helvetica"];
+  Node4 [label="testing::ExpectationSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtesting_1_1_expectation_set.html"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cardinality_" ,fontname="Helvetica"];
+  Node5 [label="testing::Cardinality",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtesting_1_1_cardinality.html"];
+}

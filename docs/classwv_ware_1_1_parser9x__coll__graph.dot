@@ -1,0 +1,32 @@
+digraph "wvWare::Parser9x"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="wvWare::Parser9x",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="wvWare::Parser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_parser.html"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="wvWare::Shared",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_shared.html"];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_tableHandler" ,fontname="Helvetica"];
+  Node8 [label="wvWare::TableHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_table_handler.html"];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_textHandler" ,fontname="Helvetica"];
+  Node9 [label="wvWare::TextHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_text_handler.html"];
+  Node10 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_wordDocument" ,fontname="Helvetica"];
+  Node10 [label="wvWare::AbstractOLEStream\lReader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_abstract_o_l_e_stream_reader.html"];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="wvWare::OLEStream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_o_l_e_stream.html"];
+  Node12 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_storage" ,fontname="Helvetica"];
+  Node12 [label="wvWare::AbstractOLEStorage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_abstract_o_l_e_storage.html"];
+  Node13 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_inlineHandler" ,fontname="Helvetica"];
+  Node13 [label="wvWare::InlineReplacement\lHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_inline_replacement_handler.html"];
+  Node14 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_subDocumentHandler" ,fontname="Helvetica"];
+  Node14 [label="wvWare::SubDocumentHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_sub_document_handler.html"];
+  Node15 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_fib" ,fontname="Helvetica"];
+  Node15 [label="wvWare::Word97::FIB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structwv_ware_1_1_word97_1_1_f_i_b.html"];
+  Node16 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_properties" ,fontname="Helvetica"];
+  Node16 [label="wvWare::Properties97",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_properties97.html"];
+  Node10 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_table\nm_data" ,fontname="Helvetica"];
+  Node17 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_headers" ,fontname="Helvetica"];
+  Node17 [label="wvWare::Headers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwv_ware_1_1_headers.html"];
+}

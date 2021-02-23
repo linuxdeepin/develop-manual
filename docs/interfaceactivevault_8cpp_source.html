@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-lib/vault/interfaceactivevault.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('interfaceactivevault_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">interfaceactivevault.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;interfaceactivevault.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;operatorcenter.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;InterfaceActiveVault::InterfaceActiveVault(QObject *parent)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    : QObject(parent)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;InterfaceActiveVault::~InterfaceActiveVault()</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#a71b31b0cf485b2fff1c7e3be39647db2">   15</a></span>&#160;QString <a class="code" href="class_interface_active_vault.html#a71b31b0cf485b2fff1c7e3be39647db2">InterfaceActiveVault::getPassword</a>()</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#a826b41c7f7bf3f28a0c553a02ab70619">getSaltAndPasswordClipher</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#a759b1b20aa45385da7b141b5a70af731">   20</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_interface_active_vault.html#a759b1b20aa45385da7b141b5a70af731">InterfaceActiveVault::getPasswordHint</a>(QString &amp;passwordHint)</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#a5a2759cafc54c368287d759272b9b9c7">getPasswordHint</a>(passwordHint);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#a38442cc0b34c145dc8e7dc78192f2733">   25</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_interface_active_vault.html#a38442cc0b34c145dc8e7dc78192f2733">InterfaceActiveVault::checkPassword</a>(<span class="keyword">const</span> QString &amp;password, QString &amp;cliper)</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#afa231be6d72e680ddb741d77b825e61a">checkPassword</a>(password, cliper);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#aca2c422c5a021227cab699a329c955be">   30</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_interface_active_vault.html#aca2c422c5a021227cab699a329c955be">InterfaceActiveVault::checkUserKey</a>(<span class="keyword">const</span> QString &amp;userKey, QString &amp;cliper)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#a00bb4681cfc25253314de6ff4b0f3d76">checkUserKey</a>(userKey, cliper);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#a596be10d0890bf481dc3af6d78e829d0">   35</a></span>&#160;QString <a class="code" href="class_interface_active_vault.html#a596be10d0890bf481dc3af6d78e829d0">InterfaceActiveVault::getEncryptDir</a>()</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#af7028860fdb9ba35c5bbed1fc3637db2">getEncryptDirPath</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#ad075cf323b97f168b875a4ed55ed0dd5">   40</a></span>&#160;QString <a class="code" href="class_interface_active_vault.html#ad075cf323b97f168b875a4ed55ed0dd5">InterfaceActiveVault::getDecryptDir</a>()</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#a430c65adf27d2a99bad5e44eeb03e785">getdecryptDirPath</a>();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#af9fb0efa0cf2c8d51db379c0184448cf">   45</a></span>&#160;QStringList <a class="code" href="class_interface_active_vault.html#af9fb0efa0cf2c8d51db379c0184448cf">InterfaceActiveVault::getConfigFilePath</a>()</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#a57e0b6ac938608c55e3213ff6a2a2c9a">getConfigFilePath</a>();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#a320d3e615cad1368512259b9b6b0c4be">   50</a></span>&#160;EN_VaultState <a class="code" href="class_interface_active_vault.html#a320d3e615cad1368512259b9b6b0c4be">InterfaceActiveVault::vaultState</a>()</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#a9d4b51b7618170b4cd456abf951b1bd7">vaultState</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#ac55570210f520943141bfd69eccc0446">   55</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_interface_active_vault.html#ac55570210f520943141bfd69eccc0446">InterfaceActiveVault::getRootPassword</a>()</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#a416a1cc6a9fe87504ce40c04b378f634">getRootPassword</a>();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_interface_active_vault.html#a8aff01d13858f2379935a6b25454f1a0">   60</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_interface_active_vault.html#a8aff01d13858f2379935a6b25454f1a0">InterfaceActiveVault::executionShellCommand</a>(<span class="keyword">const</span> QString &amp;strCmd, QStringList &amp;lstShellOutput)</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> OperatorCenter::getInstance().<a class="code" href="class_operator_center.html#a8d03642acb3bc04e77e321791315b352">executionShellCommand</a>(strCmd, lstShellOutput);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div><div class="ttc" id="class_interface_active_vault_html_a8aff01d13858f2379935a6b25454f1a0"><div class="ttname"><a href="class_interface_active_vault.html#a8aff01d13858f2379935a6b25454f1a0">InterfaceActiveVault::executionShellCommand</a></div><div class="ttdeci">static int executionShellCommand(const QString &amp;strCmd, QStringList &amp;lstShellOutput)</div><div class="ttdoc">executionShellCommand 执行shell命令并获得shell命令的返回值 </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00060">interfaceactivevault.cpp:60</a></div></div>
+<div class="ttc" id="class_interface_active_vault_html_a38442cc0b34c145dc8e7dc78192f2733"><div class="ttname"><a href="class_interface_active_vault.html#a38442cc0b34c145dc8e7dc78192f2733">InterfaceActiveVault::checkPassword</a></div><div class="ttdeci">static bool checkPassword(const QString &amp;password, QString &amp;cliper)</div><div class="ttdoc">checkPassword 验证密码是否正确 </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00025">interfaceactivevault.cpp:25</a></div></div>
+<div class="ttc" id="class_interface_active_vault_html_ad075cf323b97f168b875a4ed55ed0dd5"><div class="ttname"><a href="class_interface_active_vault.html#ad075cf323b97f168b875a4ed55ed0dd5">InterfaceActiveVault::getDecryptDir</a></div><div class="ttdeci">static QString getDecryptDir()</div><div class="ttdoc">getDecryptDir 获得解密文件夹路径 </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00040">interfaceactivevault.cpp:40</a></div></div>
+<div class="ttc" id="class_operator_center_html_a00bb4681cfc25253314de6ff4b0f3d76"><div class="ttname"><a href="class_operator_center.html#a00bb4681cfc25253314de6ff4b0f3d76">OperatorCenter::checkUserKey</a></div><div class="ttdeci">bool checkUserKey(const QString &amp;userKey, QString &amp;clipher)</div><div class="ttdoc">checkUserKey 验证用户密钥是否正确 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00240">operatorcenter.cpp:240</a></div></div>
+<div class="ttc" id="class_interface_active_vault_html_af9fb0efa0cf2c8d51db379c0184448cf"><div class="ttname"><a href="class_interface_active_vault.html#af9fb0efa0cf2c8d51db379c0184448cf">InterfaceActiveVault::getConfigFilePath</a></div><div class="ttdeci">static QStringList getConfigFilePath()</div><div class="ttdoc">getConfigFilePath </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00045">interfaceactivevault.cpp:45</a></div></div>
+<div class="ttc" id="class_operator_center_html_a5a2759cafc54c368287d759272b9b9c7"><div class="ttname"><a href="class_operator_center.html#a5a2759cafc54c368287d759272b9b9c7">OperatorCenter::getPasswordHint</a></div><div class="ttdeci">bool getPasswordHint(QString &amp;passwordHint)</div><div class="ttdoc">getPasswordHint 获取密码提示信息 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00285">operatorcenter.cpp:285</a></div></div>
+<div class="ttc" id="class_operator_center_html_a57e0b6ac938608c55e3213ff6a2a2c9a"><div class="ttname"><a href="class_operator_center.html#a57e0b6ac938608c55e3213ff6a2a2c9a">OperatorCenter::getConfigFilePath</a></div><div class="ttdeci">QStringList getConfigFilePath()</div><div class="ttdoc">获得配置文件路径 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00385">operatorcenter.cpp:385</a></div></div>
+<div class="ttc" id="class_operator_center_html_a9d4b51b7618170b4cd456abf951b1bd7"><div class="ttname"><a href="class_operator_center.html#a9d4b51b7618170b4cd456abf951b1bd7">OperatorCenter::vaultState</a></div><div class="ttdeci">EN_VaultState vaultState()</div><div class="ttdoc">获取保险箱状态 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00344">operatorcenter.cpp:344</a></div></div>
+<div class="ttc" id="class_operator_center_html_a826b41c7f7bf3f28a0c553a02ab70619"><div class="ttname"><a href="class_operator_center.html#a826b41c7f7bf3f28a0c553a02ab70619">OperatorCenter::getSaltAndPasswordClipher</a></div><div class="ttdeci">QString getSaltAndPasswordClipher()</div><div class="ttdoc">获取盐值及密码密文 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00362">operatorcenter.cpp:362</a></div></div>
+<div class="ttc" id="class_operator_center_html_afa231be6d72e680ddb741d77b825e61a"><div class="ttname"><a href="class_operator_center.html#afa231be6d72e680ddb741d77b825e61a">OperatorCenter::checkPassword</a></div><div class="ttdeci">bool checkPassword(const QString &amp;password, QString &amp;clipher)</div><div class="ttdoc">checkPassword 验证密码是否正确 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00213">operatorcenter.cpp:213</a></div></div>
+<div class="ttc" id="class_interface_active_vault_html_a320d3e615cad1368512259b9b6b0c4be"><div class="ttname"><a href="class_interface_active_vault.html#a320d3e615cad1368512259b9b6b0c4be">InterfaceActiveVault::vaultState</a></div><div class="ttdeci">static EN_VaultState vaultState()</div><div class="ttdoc">vaultState // 获得保险箱状态 </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00050">interfaceactivevault.cpp:50</a></div></div>
+<div class="ttc" id="class_operator_center_html_a430c65adf27d2a99bad5e44eeb03e785"><div class="ttname"><a href="class_operator_center.html#a430c65adf27d2a99bad5e44eeb03e785">OperatorCenter::getdecryptDirPath</a></div><div class="ttdeci">QString getdecryptDirPath()</div><div class="ttdoc">获得解密文件夹路径 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00380">operatorcenter.cpp:380</a></div></div>
+<div class="ttc" id="class_operator_center_html_a416a1cc6a9fe87504ce40c04b378f634"><div class="ttname"><a href="class_operator_center.html#a416a1cc6a9fe87504ce40c04b378f634">OperatorCenter::getRootPassword</a></div><div class="ttdeci">bool getRootPassword()</div><div class="ttdoc">管理员权限认证 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00421">operatorcenter.cpp:421</a></div></div>
+<div class="ttc" id="class_interface_active_vault_html_a71b31b0cf485b2fff1c7e3be39647db2"><div class="ttname"><a href="class_interface_active_vault.html#a71b31b0cf485b2fff1c7e3be39647db2">InterfaceActiveVault::getPassword</a></div><div class="ttdeci">static QString getPassword()</div><div class="ttdoc">getPassword 获取密码 </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00015">interfaceactivevault.cpp:15</a></div></div>
+<div class="ttc" id="class_operator_center_html_a8d03642acb3bc04e77e321791315b352"><div class="ttname"><a href="class_operator_center.html#a8d03642acb3bc04e77e321791315b352">OperatorCenter::executionShellCommand</a></div><div class="ttdeci">int executionShellCommand(const QString &amp;strCmd, QStringList &amp;lstShellOutput)</div><div class="ttdoc">执行shell命令并获得shell命令的返回值 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00436">operatorcenter.cpp:436</a></div></div>
+<div class="ttc" id="class_interface_active_vault_html_a759b1b20aa45385da7b141b5a70af731"><div class="ttname"><a href="class_interface_active_vault.html#a759b1b20aa45385da7b141b5a70af731">InterfaceActiveVault::getPasswordHint</a></div><div class="ttdeci">static bool getPasswordHint(QString &amp;passwordHint)</div><div class="ttdoc">getPasswordHint 获得密码提示信息 </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00020">interfaceactivevault.cpp:20</a></div></div>
+<div class="ttc" id="class_interface_active_vault_html_ac55570210f520943141bfd69eccc0446"><div class="ttname"><a href="class_interface_active_vault.html#ac55570210f520943141bfd69eccc0446">InterfaceActiveVault::getRootPassword</a></div><div class="ttdeci">static bool getRootPassword()</div><div class="ttdoc">getRootPassword 管理员权限认证 </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00055">interfaceactivevault.cpp:55</a></div></div>
+<div class="ttc" id="class_operator_center_html_af7028860fdb9ba35c5bbed1fc3637db2"><div class="ttname"><a href="class_operator_center.html#af7028860fdb9ba35c5bbed1fc3637db2">OperatorCenter::getEncryptDirPath</a></div><div class="ttdeci">QString getEncryptDirPath()</div><div class="ttdoc">获得加密文件夹路径 </div><div class="ttdef"><b>Definition:</b> <a href="operatorcenter_8cpp_source.html#l00375">operatorcenter.cpp:375</a></div></div>
+<div class="ttc" id="class_interface_active_vault_html_a596be10d0890bf481dc3af6d78e829d0"><div class="ttname"><a href="class_interface_active_vault.html#a596be10d0890bf481dc3af6d78e829d0">InterfaceActiveVault::getEncryptDir</a></div><div class="ttdeci">static QString getEncryptDir()</div><div class="ttdoc">getEncryptedDir 获得加密文件夹路径 </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00035">interfaceactivevault.cpp:35</a></div></div>
+<div class="ttc" id="class_interface_active_vault_html_aca2c422c5a021227cab699a329c955be"><div class="ttname"><a href="class_interface_active_vault.html#aca2c422c5a021227cab699a329c955be">InterfaceActiveVault::checkUserKey</a></div><div class="ttdeci">static bool checkUserKey(const QString &amp;userKey, QString &amp;cliper)</div><div class="ttdoc">checkUserKey 验证密钥是否正确 </div><div class="ttdef"><b>Definition:</b> <a href="interfaceactivevault_8cpp_source.html#l00030">interfaceactivevault.cpp:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_f9029d0d717014796f47cbb96a029b81.html">dde-file-manager-lib</a></li><li class="navelem"><a class="el" href="dir_8945fe81f6cffdce26fbcb845efe8250.html">vault</a></li><li class="navelem"><b>interfaceactivevault.cpp</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:21 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

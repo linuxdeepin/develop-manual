@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: OnboardPlugin类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_onboard_plugin.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_onboard_plugin-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">OnboardPlugin类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 OnboardPlugin 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_onboard_plugin__inherit__graph.png" border="0" usemap="#_onboard_plugin_inherit__map" alt="Inheritance graph"/></div>
+<map name="_onboard_plugin_inherit__map" id="_onboard_plugin_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+OnboardPlugin 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_onboard_plugin__coll__graph.png" border="0" usemap="#_onboard_plugin_coll__map" alt="Collaboration graph"/></div>
+<map name="_onboard_plugin_coll__map" id="_onboard_plugin_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a383c951bbd4b9d2f0a8ccd09b6b54652"><td class="memItemLeft" align="right" valign="top"><a id="a383c951bbd4b9d2f0a8ccd09b6b54652"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>OnboardPlugin</b> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:a383c951bbd4b9d2f0a8ccd09b6b54652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bba4a6c5af1cd89a8ba5b621f256553"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#a2bba4a6c5af1cd89a8ba5b621f256553">pluginName</a> () const override</td></tr>
+<tr class="memdesc:a2bba4a6c5af1cd89a8ba5b621f256553"><td class="mdescLeft">&#160;</td><td class="mdescRight">pluginName tell dock the unique plugin id  <a href="#a2bba4a6c5af1cd89a8ba5b621f256553">更多...</a><br /></td></tr>
+<tr class="separator:a2bba4a6c5af1cd89a8ba5b621f256553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70564396cbcf83a490406a533e345744"><td class="memItemLeft" align="right" valign="top"><a id="a70564396cbcf83a490406a533e345744"></a>
+const QString&#160;</td><td class="memItemRight" valign="bottom"><b>pluginDisplayName</b> () const override</td></tr>
+<tr class="separator:a70564396cbcf83a490406a533e345744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd92a04c67bdfa89dc8161c51dbdafa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#a1bd92a04c67bdfa89dc8161c51dbdafa">init</a> (<a class="el" href="class_plugin_proxy_interface.html">PluginProxyInterface</a> *proxyInter) override</td></tr>
+<tr class="memdesc:a1bd92a04c67bdfa89dc8161c51dbdafa"><td class="mdescLeft">&#160;</td><td class="mdescRight">init init your plugins, you need to save proxyInter to m_proxyInter member variable. but you shouldn't free this pointer.  <a href="#a1bd92a04c67bdfa89dc8161c51dbdafa">更多...</a><br /></td></tr>
+<tr class="separator:a1bd92a04c67bdfa89dc8161c51dbdafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca42f0426b7a3645d1fa74b0a02c37b"><td class="memItemLeft" align="right" valign="top"><a id="a3ca42f0426b7a3645d1fa74b0a02c37b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pluginStateSwitched</b> () override</td></tr>
+<tr class="separator:a3ca42f0426b7a3645d1fa74b0a02c37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d72a49f1a7c49a7b357aae281d289f"><td class="memItemLeft" align="right" valign="top"><a id="a26d72a49f1a7c49a7b357aae281d289f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>pluginIsAllowDisable</b> () override</td></tr>
+<tr class="separator:a26d72a49f1a7c49a7b357aae281d289f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ada1074e0ebed15bdafe5a5b53187e6"><td class="memItemLeft" align="right" valign="top"><a id="a3ada1074e0ebed15bdafe5a5b53187e6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>pluginIsDisable</b> () override</td></tr>
+<tr class="separator:a3ada1074e0ebed15bdafe5a5b53187e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b081e52ad0bfe2cd1b8d0b503d7b30"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#a01b081e52ad0bfe2cd1b8d0b503d7b30">itemWidget</a> (const QString &amp;itemKey) override</td></tr>
+<tr class="memdesc:a01b081e52ad0bfe2cd1b8d0b503d7b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemWidget your plugin item widget, each item should have a unique key.  <a href="#a01b081e52ad0bfe2cd1b8d0b503d7b30">更多...</a><br /></td></tr>
+<tr class="separator:a01b081e52ad0bfe2cd1b8d0b503d7b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a1fe77f32323e58fd0dc4496f0e5ba"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#a93a1fe77f32323e58fd0dc4496f0e5ba">itemTipsWidget</a> (const QString &amp;itemKey) override</td></tr>
+<tr class="memdesc:a93a1fe77f32323e58fd0dc4496f0e5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemTipsWidget override this function if your item want to have a tips. the tips will shown when user hover your item. nullptr will be ignored.  <a href="#a93a1fe77f32323e58fd0dc4496f0e5ba">更多...</a><br /></td></tr>
+<tr class="separator:a93a1fe77f32323e58fd0dc4496f0e5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503e4434d44945c52b2fda84b2fd827c"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#a503e4434d44945c52b2fda84b2fd827c">itemCommand</a> (const QString &amp;itemKey) override</td></tr>
+<tr class="memdesc:a503e4434d44945c52b2fda84b2fd827c"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemCommand execute spec command when user clicked your item. ensure your command do not get user input.  <a href="#a503e4434d44945c52b2fda84b2fd827c">更多...</a><br /></td></tr>
+<tr class="separator:a503e4434d44945c52b2fda84b2fd827c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b080720c2aa479eefeb8a93298b47b"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#a47b080720c2aa479eefeb8a93298b47b">itemContextMenu</a> (const QString &amp;itemKey) override</td></tr>
+<tr class="memdesc:a47b080720c2aa479eefeb8a93298b47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemContextMenu context menu is shown when RequestPopupMenu called.  <a href="#a47b080720c2aa479eefeb8a93298b47b">更多...</a><br /></td></tr>
+<tr class="separator:a47b080720c2aa479eefeb8a93298b47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53425bb13465268edf6620e544f7670f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#a53425bb13465268edf6620e544f7670f">invokedMenuItem</a> (const QString &amp;itemKey, const QString &amp;menuId, const bool checked) override</td></tr>
+<tr class="memdesc:a53425bb13465268edf6620e544f7670f"><td class="mdescLeft">&#160;</td><td class="mdescRight">invokedMenuItem call if context menu item is clicked  <a href="#a53425bb13465268edf6620e544f7670f">更多...</a><br /></td></tr>
+<tr class="separator:a53425bb13465268edf6620e544f7670f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513695c3b02072cc4d8ebbb68771c338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#a513695c3b02072cc4d8ebbb68771c338">displayModeChanged</a> (const Dock::DisplayMode <a class="el" href="class_plugins_item_interface.html#a4493206e109e0ea75d78f7b9a907096c">displayMode</a>) override</td></tr>
+<tr class="memdesc:a513695c3b02072cc4d8ebbb68771c338"><td class="mdescLeft">&#160;</td><td class="mdescRight">displayModeChanged override this function to receive display mode changed signal  <a href="#a513695c3b02072cc4d8ebbb68771c338">更多...</a><br /></td></tr>
+<tr class="separator:a513695c3b02072cc4d8ebbb68771c338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117ba4c5eddcd2aac67edf144342fd94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#a117ba4c5eddcd2aac67edf144342fd94">itemSortKey</a> (const QString &amp;itemKey) override</td></tr>
+<tr class="memdesc:a117ba4c5eddcd2aac67edf144342fd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemSortKey tell dock where your item wants to put on.  <a href="#a117ba4c5eddcd2aac67edf144342fd94">更多...</a><br /></td></tr>
+<tr class="separator:a117ba4c5eddcd2aac67edf144342fd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9d880dd1fc47d387cb730cfb96f366"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#afd9d880dd1fc47d387cb730cfb96f366">setSortKey</a> (const QString &amp;itemKey, const int order) override</td></tr>
+<tr class="memdesc:afd9d880dd1fc47d387cb730cfb96f366"><td class="mdescLeft">&#160;</td><td class="mdescRight">setSortKey save your item new position sort key will be changed when plugins order changed(by user drag-drop)  <a href="#afd9d880dd1fc47d387cb730cfb96f366">更多...</a><br /></td></tr>
+<tr class="separator:afd9d880dd1fc47d387cb730cfb96f366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb50276668f4da76316dddb24635d95d"><td class="memItemLeft" align="right" valign="top"><a id="aeb50276668f4da76316dddb24635d95d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_onboard_plugin.html#aeb50276668f4da76316dddb24635d95d">pluginSettingsChanged</a> () override</td></tr>
+<tr class="memdesc:aeb50276668f4da76316dddb24635d95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">settingsChanged override this function to receive plugin settings changed signal(DeepinSync) <br /></td></tr>
+<tr class="separator:aeb50276668f4da76316dddb24635d95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="onboardplugin_8h_source.html">onboardplugin.h</a> 第 <a class="el" href="onboardplugin_8h_source.html#l00037">37</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a513695c3b02072cc4d8ebbb68771c338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513695c3b02072cc4d8ebbb68771c338">&#9670;&nbsp;</a></span>displayModeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OnboardPlugin::displayModeChanged </td>
+          <td>(</td>
+          <td class="paramtype">const Dock::DisplayMode&#160;</td>
+          <td class="paramname"><em>displayMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>displayModeChanged override this function to receive display mode changed signal </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">displayMode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="class_plugins_item_interface.html#aee4d2cc5866d7b5daadae6289c59ebb1">PluginsItemInterface</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00152">152</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1bd92a04c67bdfa89dc8161c51dbdafa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd92a04c67bdfa89dc8161c51dbdafa">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OnboardPlugin::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_plugin_proxy_interface.html">PluginProxyInterface</a> *&#160;</td>
+          <td class="paramname"><em>proxyInter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>init init your plugins, you need to save proxyInter to m_proxyInter member variable. but you shouldn't free this pointer. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proxyInter</td><td>DON'T try to delete this pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="class_plugins_item_interface.html#a44399136a159b3b3ecd6d1b0ba198582">PluginsItemInterface</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a53425bb13465268edf6620e544f7670f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53425bb13465268edf6620e544f7670f">&#9670;&nbsp;</a></span>invokedMenuItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OnboardPlugin::invokedMenuItem </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>menuId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>checked</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>invokedMenuItem call if context menu item is clicked </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+    <tr><td class="paramname">itemId</td><td>menu item id </td></tr>
+    <tr><td class="paramname">checked</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="class_plugins_item_interface.html#a1ec6119717d1c5a1b71eda016a1cb8fd">PluginsItemInterface</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00113">113</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a503e4434d44945c52b2fda84b2fd827c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503e4434d44945c52b2fda84b2fd827c">&#9670;&nbsp;</a></span>itemCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString OnboardPlugin::itemCommand </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemCommand execute spec command when user clicked your item. ensure your command do not get user input. </p>
+<p>empty string will be ignored. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>重载 <a class="el" href="class_plugins_item_interface.html#aa1ab597cb6516136ac493bd178357c46">PluginsItemInterface</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a47b080720c2aa479eefeb8a93298b47b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b080720c2aa479eefeb8a93298b47b">&#9670;&nbsp;</a></span>itemContextMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString OnboardPlugin::itemContextMenu </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemContextMenu context menu is shown when RequestPopupMenu called. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>重载 <a class="el" href="class_plugins_item_interface.html#a89c4fb2855a9e00afcaaa192ff01a031">PluginsItemInterface</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00095">95</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a117ba4c5eddcd2aac67edf144342fd94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117ba4c5eddcd2aac67edf144342fd94">&#9670;&nbsp;</a></span>itemSortKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int OnboardPlugin::itemSortKey </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemSortKey tell dock where your item wants to put on. </p>
+<p>this index is start from 1 and 0 for left side -1 for right side </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>重载 <a class="el" href="class_plugins_item_interface.html#a60056cf358ccc02f552c6a2eba9e7678">PluginsItemInterface</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a93a1fe77f32323e58fd0dc4496f0e5ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a1fe77f32323e58fd0dc4496f0e5ba">&#9670;&nbsp;</a></span>itemTipsWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * OnboardPlugin::itemTipsWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemTipsWidget override this function if your item want to have a tips. the tips will shown when user hover your item. nullptr will be ignored. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>重载 <a class="el" href="class_plugins_item_interface.html#ac63efc69faf1487ae7f790e51a45110d">PluginsItemInterface</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a01b081e52ad0bfe2cd1b8d0b503d7b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b081e52ad0bfe2cd1b8d0b503d7b30">&#9670;&nbsp;</a></span>itemWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * OnboardPlugin::itemWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemWidget your plugin item widget, each item should have a unique key. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td>your widget' unqiue key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_plugins_item_interface.html#a816f3c3eae67b0191e86e57d64a2a6ef">PluginsItemInterface</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2bba4a6c5af1cd89a8ba5b621f256553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bba4a6c5af1cd89a8ba5b621f256553">&#9670;&nbsp;</a></span>pluginName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString OnboardPlugin::pluginName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>pluginName tell dock the unique plugin id </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_plugins_item_interface.html#a715bec6b9b2c4a6c94a32ca3f934af96">PluginsItemInterface</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afd9d880dd1fc47d387cb730cfb96f366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9d880dd1fc47d387cb730cfb96f366">&#9670;&nbsp;</a></span>setSortKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OnboardPlugin::setSortKey </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setSortKey save your item new position sort key will be changed when plugins order changed(by user drag-drop) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemKey</td><td></td></tr>
+    <tr><td class="paramname">order</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="class_plugins_item_interface.html#a5c56480ce200d0eeb28d23a554fbf45c">PluginsItemInterface</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a> 第 <a class="el" href="onboardplugin_8cpp_source.html#l00167">167</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-dock/plugins/onboard/<a class="el" href="onboardplugin_8h_source.html">onboardplugin.h</a></li>
+<li>dde-dock/plugins/onboard/<a class="el" href="onboardplugin_8cpp_source.html">onboardplugin.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_onboard_plugin.html">OnboardPlugin</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

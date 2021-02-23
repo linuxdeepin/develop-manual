@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: DFileStatisticsJob类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_d_file_statistics_job.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="class_d_file_statistics_job-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DFileStatisticsJob类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DFileStatisticsJob 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_file_statistics_job__inherit__graph.png" border="0" usemap="#_d_file_statistics_job_inherit__map" alt="Inheritance graph"/></div>
+<map name="_d_file_statistics_job_inherit__map" id="_d_file_statistics_job_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+DFileStatisticsJob 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_file_statistics_job__coll__graph.png" border="0" usemap="#_d_file_statistics_job_coll__map" alt="Collaboration graph"/></div>
+<map name="_d_file_statistics_job_coll__map" id="_d_file_statistics_job_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad86c12f3460d0d1596d462c56ddd6f8d"><td class="memItemLeft" align="right" valign="top"><a id="ad86c12f3460d0d1596d462c56ddd6f8d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>State</b> { <b>StoppedState</b>, 
+<b>RunningState</b>, 
+<b>PausedState</b>
+ }</td></tr>
+<tr class="separator:ad86c12f3460d0d1596d462c56ddd6f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af921509e9466bb76b96e6c068c91b9"><td class="memItemLeft" align="right" valign="top"><a id="a4af921509e9466bb76b96e6c068c91b9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FileHint</b> { <br />
+&#160;&#160;<b>FollowSymlink</b> = 0x01, 
+<b>DontSkipAVFSDStorage</b> = 0x02, 
+<b>DontSkipPROCStorage</b> = 0x04, 
+<b>DontSkipCharDeviceFile</b> = 0x08, 
+<br />
+&#160;&#160;<b>DontSkipBlockDeviceFile</b> = 0x10, 
+<b>DontSkipFIFOFile</b> = 0x20, 
+<b>DontSkipSocketFile</b> = 0x40, 
+<b>ExcludeSourceFile</b> = 0x80, 
+<br />
+&#160;&#160;<b>SingleDepth</b> = 0x100
+<br />
+ }</td></tr>
+<tr class="separator:a4af921509e9466bb76b96e6c068c91b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a5af45cd0afd6d0c1f46ab43b2ae86819"><td class="memItemLeft" align="right" valign="top"><a id="a5af45cd0afd6d0c1f46ab43b2ae86819"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> (const <a class="el" href="class_q_list.html">DUrlList</a> &amp;sourceUrls)</td></tr>
+<tr class="separator:a5af45cd0afd6d0c1f46ab43b2ae86819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425b768b6fb63bdd84eea3138552d3f1"><td class="memItemLeft" align="right" valign="top"><a id="a425b768b6fb63bdd84eea3138552d3f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="separator:a425b768b6fb63bdd84eea3138552d3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6584c2c65495c05b0cee7b9fc5a3875a"><td class="memItemLeft" align="right" valign="top"><a id="a6584c2c65495c05b0cee7b9fc5a3875a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>togglePause</b> ()</td></tr>
+<tr class="separator:a6584c2c65495c05b0cee7b9fc5a3875a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0689b3cc2b356c39204a45f8cc31ecde"><td class="memItemLeft" align="right" valign="top"><a id="a0689b3cc2b356c39204a45f8cc31ecde"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFileHints</b> (FileHints fileHints)</td></tr>
+<tr class="separator:a0689b3cc2b356c39204a45f8cc31ecde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a348ccd3ea7506df287d5f215f13500a1"><td class="memItemLeft" align="right" valign="top"><a id="a348ccd3ea7506df287d5f215f13500a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stateChanged</b> (State state)</td></tr>
+<tr class="separator:a348ccd3ea7506df287d5f215f13500a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532cb3ba2d0ad084d620eb167b99db13"><td class="memItemLeft" align="right" valign="top"><a id="a532cb3ba2d0ad084d620eb167b99db13"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sizeChanged</b> (qint64 size)</td></tr>
+<tr class="separator:a532cb3ba2d0ad084d620eb167b99db13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec848b4224516fac27ac4d5cd560f78"><td class="memItemLeft" align="right" valign="top"><a id="a9ec848b4224516fac27ac4d5cd560f78"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileFound</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:a9ec848b4224516fac27ac4d5cd560f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f705064ee5341ecc4d00e090d5a8cc"><td class="memItemLeft" align="right" valign="top"><a id="af9f705064ee5341ecc4d00e090d5a8cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>directoryFound</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:af9f705064ee5341ecc4d00e090d5a8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07175cc9af34df86972e0c7a4beb3f51"><td class="memItemLeft" align="right" valign="top"><a id="a07175cc9af34df86972e0c7a4beb3f51"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dataNotify</b> (qint64 size, int filesCount, int directoryCount)</td></tr>
+<tr class="separator:a07175cc9af34df86972e0c7a4beb3f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aefae83ed68ba98a681fd20883ede7f67"><td class="memItemLeft" align="right" valign="top"><a id="aefae83ed68ba98a681fd20883ede7f67"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFileStatisticsJob</b> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:aefae83ed68ba98a681fd20883ede7f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf48153b983c182eecfbaafbde20de13"><td class="memItemLeft" align="right" valign="top"><a id="adf48153b983c182eecfbaafbde20de13"></a>
+State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const</td></tr>
+<tr class="separator:adf48153b983c182eecfbaafbde20de13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb24fe60b4d93515a378c22ce41d40c"><td class="memItemLeft" align="right" valign="top"><a id="a7eb24fe60b4d93515a378c22ce41d40c"></a>
+FileHints&#160;</td><td class="memItemRight" valign="bottom"><b>fileHints</b> () const</td></tr>
+<tr class="separator:a7eb24fe60b4d93515a378c22ce41d40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf115292aee3269dc552b9359dba578"><td class="memItemLeft" align="right" valign="top"><a id="aeaf115292aee3269dc552b9359dba578"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>totalSize</b> () const</td></tr>
+<tr class="separator:aeaf115292aee3269dc552b9359dba578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1086ba691be645c6570a69329ee766c"><td class="memItemLeft" align="right" valign="top"><a id="ad1086ba691be645c6570a69329ee766c"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>totalProgressSize</b> () const</td></tr>
+<tr class="separator:ad1086ba691be645c6570a69329ee766c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c92cb135bd7c4770e1e9a34fdb362f5"><td class="memItemLeft" align="right" valign="top"><a id="a7c92cb135bd7c4770e1e9a34fdb362f5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>filesCount</b> () const</td></tr>
+<tr class="separator:a7c92cb135bd7c4770e1e9a34fdb362f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d033d24a2e8196879f8c1d8e3928a2"><td class="memItemLeft" align="right" valign="top"><a id="ab8d033d24a2e8196879f8c1d8e3928a2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>directorysCount</b> (bool includeSelf=true) const</td></tr>
+<tr class="separator:ab8d033d24a2e8196879f8c1d8e3928a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a39724e7b326e56713003cebd7f92cfaa"><td class="memItemLeft" align="right" valign="top"><a id="a39724e7b326e56713003cebd7f92cfaa"></a>
+State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:a39724e7b326e56713003cebd7f92cfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf52a09a0fcff6d049204f2912a689f8"><td class="memItemLeft" align="right" valign="top"><a id="adf52a09a0fcff6d049204f2912a689f8"></a>
+FileHints&#160;</td><td class="memItemRight" valign="bottom"><b>fileHints</b></td></tr>
+<tr class="separator:adf52a09a0fcff6d049204f2912a689f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dfilestatisticsjob_8h_source.html">dfilestatisticsjob.h</a> 第 <a class="el" href="dfilestatisticsjob_8h_source.html#l00031">31</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/io/<a class="el" href="dfilestatisticsjob_8h_source.html">dfilestatisticsjob.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/io/<a class="el" href="dfilestatisticsjob_8cpp_source.html">dfilestatisticsjob.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_d_file_statistics_job.html">DFileStatisticsJob</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

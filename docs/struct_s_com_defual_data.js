@@ -1,0 +1,27 @@
+var struct_s_com_defual_data =
+[
+    [ "SComDefualData", "struct_s_com_defual_data.html#a5eecf48412d2269bae8814c91d4460a7", null ],
+    [ "save", "struct_s_com_defual_data.html#a5b7a4a90a317824ebe34c2372ce3aa01", null ],
+    [ "adjustScence", "struct_s_com_defual_data.html#a53a4313195dc470e1e5cea153a047bff", null ],
+    [ "blurType", "struct_s_com_defual_data.html#a39524a6cfcba8b7e5282294837c6cbbd", null ],
+    [ "blurWidth", "struct_s_com_defual_data.html#a505ad4f7176c347fb1c439e3d27104ac", null ],
+    [ "bursh", "struct_s_com_defual_data.html#a4bfb00ac33c570e7ea5a9f98244057ec", null ],
+    [ "comVaild", "struct_s_com_defual_data.html#afb227ac43feef9d0ca95a4b91fb57555", null ],
+    [ "cutSize", "struct_s_com_defual_data.html#ac55d509570b262a1df656e07c0bcd4e6", null ],
+    [ "cutType", "struct_s_com_defual_data.html#a065fffbd48ddc40e0ee0d0a04a281f35", null ],
+    [ "flipType", "struct_s_com_defual_data.html#a9bc26e49fe9fcd6ad11b095f0db6bf54", null ],
+    [ "lineEndType", "struct_s_com_defual_data.html#a872d6ad90105c08648929be08de702bb", null ],
+    [ "lineStartType", "struct_s_com_defual_data.html#a16d5ba6de147b7d672dfd83ba213e5a6", null ],
+    [ "penColor", "struct_s_com_defual_data.html#a51ee841f7b4adf384def6129b10e229f", null ],
+    [ "penEndType", "struct_s_com_defual_data.html#a50b99f2b80298b31784ed4daeab9ead8", null ],
+    [ "penStartType", "struct_s_com_defual_data.html#a4ee5ae5c41cf8c9e9fd080f73416bfc1", null ],
+    [ "penWidth", "struct_s_com_defual_data.html#a7c7baf41d87adea5f0b0f4f6edf38841", null ],
+    [ "polySideCount", "struct_s_com_defual_data.html#aaa364470142ccad9be70e3dfb7426d83", null ],
+    [ "rectRadius", "struct_s_com_defual_data.html#a5d6cce3b0d00feb1bec2acc7b7e00f4a", null ],
+    [ "starAnCount", "struct_s_com_defual_data.html#a50504400774b1bc1ed5f0b1c83f9a680", null ],
+    [ "starInRadiusRadio", "struct_s_com_defual_data.html#ae9fe376eac556ebeb8e35f8e005a4b56", null ],
+    [ "textColor", "struct_s_com_defual_data.html#a04f43cae65c76cb5a1ed356f0f11d0e4", null ],
+    [ "textFontFamily", "struct_s_com_defual_data.html#a4655b334829b0334642cc15cf7b8bb63", null ],
+    [ "textFontSize", "struct_s_com_defual_data.html#af04ef62f43155932a79db46406e296f8", null ],
+    [ "textFontStyle", "struct_s_com_defual_data.html#af23958cc0109bbf4777443bc18cc2337", null ]
+];

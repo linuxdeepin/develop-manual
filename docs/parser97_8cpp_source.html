@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-lib/3rdParty/wv2/parser97.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('parser97_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">parser97.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* This file is part of the wvWare 2 project</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">   Copyright (C) 2001-2003 Werner Trobin &lt;trobin@kde.org&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">   This library is free software; you can redistribute it and/or</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">   modify it under the terms of the GNU Library General Public</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">   License version 2 as published by the Free Software Foundation.</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">   This library is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">   but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">   Library General Public License for more details.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">   You should have received a copy of the GNU Library General Public License</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   along with this library; see the file COPYING.LIB.  If not, write to</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   the Free Software Foundation, Inc., 59 Temple Place - Suite 330,</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">   Boston, MA 02111-1307, USA.</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;parser97.h&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;headers97.h&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacewv_ware.html">wvWare</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;Parser97::Parser97( <a class="code" href="classwv_ware_1_1_abstract_o_l_e_storage.html">AbstractOLEStorage</a>* storage, <a class="code" href="classwv_ware_1_1_abstract_o_l_e_stream_reader.html">AbstractOLEStreamReader</a>* wordDocument ) :</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classwv_ware_1_1_parser9x.html">Parser9x</a>( storage, wordDocument, <a class="code" href="namespace_word97.html">Word97</a>::FIB( wordDocument, true ) )</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> ( !<a class="code" href="classwv_ware_1_1_parser.html#abdfd14369b15b5924960b4b783a137f7">isOk</a>() )</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Initialize the remaining data structures</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    init();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;Parser97::~Parser97()</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> Parser97::init()</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> ( m_fib.<a class="code" href="structwv_ware_1_1_word97_1_1_f_i_b.html#a40788fcaa3d990a41a3b9d75e9d4b047">ccpHdd</a> != 0 )</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        m_headers = <span class="keyword">new</span> <a class="code" href="classwv_ware_1_1_headers97.html">Headers97</a>( m_fib.<a class="code" href="structwv_ware_1_1_word97_1_1_f_i_b.html#a4ac526f3bee270dbdaa8e070ff38d72c">fcPlcfhdd</a>, m_fib.<a class="code" href="structwv_ware_1_1_word97_1_1_f_i_b.html#a05f854e71a687cb24bcd974eb83bf9c6">lcbPlcfhdd</a>, m_table );</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="ttc" id="structwv_ware_1_1_word97_1_1_f_i_b_html_a40788fcaa3d990a41a3b9d75e9d4b047"><div class="ttname"><a href="structwv_ware_1_1_word97_1_1_f_i_b.html#a40788fcaa3d990a41a3b9d75e9d4b047">wvWare::Word97::FIB::ccpHdd</a></div><div class="ttdeci">U32 ccpHdd</div><div class="ttdef"><b>Definition:</b> <a href="word97__generated_8h_source.html#l04388">word97_generated.h:4388</a></div></div>
+<div class="ttc" id="namespacewv_ware_html"><div class="ttname"><a href="namespacewv_ware.html">wvWare</a></div><div class="ttdef"><b>Definition:</b> <a href="associatedstrings_8h_source.html#l00024">associatedstrings.h:24</a></div></div>
+<div class="ttc" id="classwv_ware_1_1_parser9x_html"><div class="ttname"><a href="classwv_ware_1_1_parser9x.html">wvWare::Parser9x</a></div><div class="ttdef"><b>Definition:</b> <a href="parser9x_8h_source.html#l00105">parser9x.h:105</a></div></div>
+<div class="ttc" id="namespace_word97_html"><div class="ttname"><a href="namespace_word97.html">Word97</a></div><div class="ttdef"><b>Definition:</b> <a href="template-conv_8cpp_source.html#l00043">template-conv.cpp:43</a></div></div>
+<div class="ttc" id="classwv_ware_1_1_abstract_o_l_e_storage_html"><div class="ttname"><a href="classwv_ware_1_1_abstract_o_l_e_storage.html">wvWare::AbstractOLEStorage</a></div><div class="ttdef"><b>Definition:</b> <a href="olestorage_8h_source.html#l00032">olestorage.h:32</a></div></div>
+<div class="ttc" id="structwv_ware_1_1_word97_1_1_f_i_b_html_a4ac526f3bee270dbdaa8e070ff38d72c"><div class="ttname"><a href="structwv_ware_1_1_word97_1_1_f_i_b.html#a4ac526f3bee270dbdaa8e070ff38d72c">wvWare::Word97::FIB::fcPlcfhdd</a></div><div class="ttdeci">U32 fcPlcfhdd</div><div class="ttdef"><b>Definition:</b> <a href="word97__generated_8h_source.html#l04626">word97_generated.h:4626</a></div></div>
+<div class="ttc" id="classwv_ware_1_1_parser_html_abdfd14369b15b5924960b4b783a137f7"><div class="ttname"><a href="classwv_ware_1_1_parser.html#abdfd14369b15b5924960b4b783a137f7">wvWare::Parser::isOk</a></div><div class="ttdeci">bool isOk() const</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00073">parser.h:73</a></div></div>
+<div class="ttc" id="structwv_ware_1_1_word97_1_1_f_i_b_html_a05f854e71a687cb24bcd974eb83bf9c6"><div class="ttname"><a href="structwv_ware_1_1_word97_1_1_f_i_b.html#a05f854e71a687cb24bcd974eb83bf9c6">wvWare::Word97::FIB::lcbPlcfhdd</a></div><div class="ttdeci">U32 lcbPlcfhdd</div><div class="ttdef"><b>Definition:</b> <a href="word97__generated_8h_source.html#l04632">word97_generated.h:4632</a></div></div>
+<div class="ttc" id="classwv_ware_1_1_headers97_html"><div class="ttname"><a href="classwv_ware_1_1_headers97.html">wvWare::Headers97</a></div><div class="ttdef"><b>Definition:</b> <a href="headers97_8h_source.html#l00032">headers97.h:32</a></div></div>
+<div class="ttc" id="classwv_ware_1_1_abstract_o_l_e_stream_reader_html"><div class="ttname"><a href="classwv_ware_1_1_abstract_o_l_e_stream_reader.html">wvWare::AbstractOLEStreamReader</a></div><div class="ttdef"><b>Definition:</b> <a href="olestream_8h_source.html#l00082">olestream.h:82</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_f9029d0d717014796f47cbb96a029b81.html">dde-file-manager-lib</a></li><li class="navelem"><a class="el" href="dir_4dd2d4ba6cd720644dbd89f8c1c32872.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_b0267436bd976f1acaf03e906e8ee2f7.html">wv2</a></li><li class="navelem"><b>parser97.cpp</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:18 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

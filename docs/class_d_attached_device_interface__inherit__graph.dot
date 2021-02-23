@@ -1,0 +1,12 @@
+digraph "DAttachedDeviceInterface"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="DAttachedDeviceInterface",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="DAttachedUdisks2Device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_attached_udisks2_device.html",tooltip="An attached (mounted) block device (partition) "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DAttachedVfsDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_attached_vfs_device.html",tooltip="An attached (mounted) virtual filesystem device from gio "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MockDAttachedDeviceInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mock_d_attached_device_interface.html"];
+}

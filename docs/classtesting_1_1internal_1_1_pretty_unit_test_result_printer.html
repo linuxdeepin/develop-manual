@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: testing::internal::PrettyUnitTestResultPrinter类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">testing::internal::PrettyUnitTestResultPrinter类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 testing::internal::PrettyUnitTestResultPrinter 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtesting_1_1internal_1_1_pretty_unit_test_result_printer__inherit__graph.png" border="0" usemap="#testing_1_1internal_1_1_pretty_unit_test_result_printer_inherit__map" alt="Inheritance graph"/></div>
+<map name="testing_1_1internal_1_1_pretty_unit_test_result_printer_inherit__map" id="testing_1_1internal_1_1_pretty_unit_test_result_printer_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+testing::internal::PrettyUnitTestResultPrinter 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtesting_1_1internal_1_1_pretty_unit_test_result_printer__coll__graph.png" border="0" usemap="#testing_1_1internal_1_1_pretty_unit_test_result_printer_coll__map" alt="Collaboration graph"/></div>
+<map name="testing_1_1internal_1_1_pretty_unit_test_result_printer_coll__map" id="testing_1_1internal_1_1_pretty_unit_test_result_printer_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7a6b6de195b4ef3c9f2edd2e6c270f3e"><td class="memItemLeft" align="right" valign="top"><a id="a7a6b6de195b4ef3c9f2edd2e6c270f3e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestProgramStart</b> (const UnitTest &amp;)</td></tr>
+<tr class="separator:a7a6b6de195b4ef3c9f2edd2e6c270f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdba10a8c97e272ab4cee97cb652c957"><td class="memItemLeft" align="right" valign="top"><a id="abdba10a8c97e272ab4cee97cb652c957"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestIterationStart</b> (const UnitTest &amp;unit_test, int iteration)</td></tr>
+<tr class="separator:abdba10a8c97e272ab4cee97cb652c957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846a5e82b421e04fcdd2b1b2b64b162f"><td class="memItemLeft" align="right" valign="top"><a id="a846a5e82b421e04fcdd2b1b2b64b162f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnvironmentsSetUpStart</b> (const UnitTest &amp;unit_test)</td></tr>
+<tr class="separator:a846a5e82b421e04fcdd2b1b2b64b162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadba892f02606a8b0c5f5982b3553aac"><td class="memItemLeft" align="right" valign="top"><a id="aadba892f02606a8b0c5f5982b3553aac"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnvironmentsSetUpEnd</b> (const UnitTest &amp;)</td></tr>
+<tr class="separator:aadba892f02606a8b0c5f5982b3553aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb68c729565d4bcdf8418a52902c3de"><td class="memItemLeft" align="right" valign="top"><a id="adcb68c729565d4bcdf8418a52902c3de"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestCaseStart</b> (const TestCase &amp;test_case)</td></tr>
+<tr class="separator:adcb68c729565d4bcdf8418a52902c3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5078ee71cfa97e37ae7a9366149195c5"><td class="memItemLeft" align="right" valign="top"><a id="a5078ee71cfa97e37ae7a9366149195c5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestStart</b> (const TestInfo &amp;test_info)</td></tr>
+<tr class="separator:a5078ee71cfa97e37ae7a9366149195c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7589e8df7485349498a3a81bf16e2f68"><td class="memItemLeft" align="right" valign="top"><a id="a7589e8df7485349498a3a81bf16e2f68"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestPartResult</b> (const <a class="el" href="classtesting_1_1_test_part_result.html">TestPartResult</a> &amp;result)</td></tr>
+<tr class="separator:a7589e8df7485349498a3a81bf16e2f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06749ff2b32a16c127374ecd015f13e0"><td class="memItemLeft" align="right" valign="top"><a id="a06749ff2b32a16c127374ecd015f13e0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestEnd</b> (const TestInfo &amp;test_info)</td></tr>
+<tr class="separator:a06749ff2b32a16c127374ecd015f13e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a62fe58fa6f6aace813eb62b31e5a51"><td class="memItemLeft" align="right" valign="top"><a id="a7a62fe58fa6f6aace813eb62b31e5a51"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestCaseEnd</b> (const TestCase &amp;test_case)</td></tr>
+<tr class="separator:a7a62fe58fa6f6aace813eb62b31e5a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea9dc849c92fdbc1d8505f4c74ffc1a"><td class="memItemLeft" align="right" valign="top"><a id="afea9dc849c92fdbc1d8505f4c74ffc1a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnvironmentsTearDownStart</b> (const UnitTest &amp;unit_test)</td></tr>
+<tr class="separator:afea9dc849c92fdbc1d8505f4c74ffc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23094ef3b714778b2f742d39818c280"><td class="memItemLeft" align="right" valign="top"><a id="ab23094ef3b714778b2f742d39818c280"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnvironmentsTearDownEnd</b> (const UnitTest &amp;)</td></tr>
+<tr class="separator:ab23094ef3b714778b2f742d39818c280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29b30216023baddda04ef5889f484ff"><td class="memItemLeft" align="right" valign="top"><a id="ac29b30216023baddda04ef5889f484ff"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestIterationEnd</b> (const UnitTest &amp;unit_test, int iteration)</td></tr>
+<tr class="separator:ac29b30216023baddda04ef5889f484ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c92c062889abdb940b04ffe113f5980"><td class="memItemLeft" align="right" valign="top"><a id="a8c92c062889abdb940b04ffe113f5980"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestProgramEnd</b> (const UnitTest &amp;)</td></tr>
+<tr class="separator:a8c92c062889abdb940b04ffe113f5980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248840fde373e65a25eaaa1d2a0f3065"><td class="memItemLeft" align="right" valign="top"><a id="a248840fde373e65a25eaaa1d2a0f3065"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestProgramStart</b> (const UnitTest &amp;) override</td></tr>
+<tr class="separator:a248840fde373e65a25eaaa1d2a0f3065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7e8909452ef92aaf02f4cffde5ee28"><td class="memItemLeft" align="right" valign="top"><a id="a0e7e8909452ef92aaf02f4cffde5ee28"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestIterationStart</b> (const UnitTest &amp;unit_test, int iteration) override</td></tr>
+<tr class="separator:a0e7e8909452ef92aaf02f4cffde5ee28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac17a4a708aca7df5876e48868408a2be"><td class="memItemLeft" align="right" valign="top"><a id="ac17a4a708aca7df5876e48868408a2be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnvironmentsSetUpStart</b> (const UnitTest &amp;unit_test) override</td></tr>
+<tr class="separator:ac17a4a708aca7df5876e48868408a2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9853207ad1aedfe89c72f8047ac3541a"><td class="memItemLeft" align="right" valign="top"><a id="a9853207ad1aedfe89c72f8047ac3541a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnvironmentsSetUpEnd</b> (const UnitTest &amp;) override</td></tr>
+<tr class="separator:a9853207ad1aedfe89c72f8047ac3541a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f57a94ab15116425b5b1882b4794b56"><td class="memItemLeft" align="right" valign="top"><a id="a6f57a94ab15116425b5b1882b4794b56"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestCaseStart</b> (const TestCase &amp;test_case) override</td></tr>
+<tr class="separator:a6f57a94ab15116425b5b1882b4794b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079ac0eb5f8cdd2511cfd33ef931338b"><td class="memItemLeft" align="right" valign="top"><a id="a079ac0eb5f8cdd2511cfd33ef931338b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestStart</b> (const TestInfo &amp;test_info) override</td></tr>
+<tr class="separator:a079ac0eb5f8cdd2511cfd33ef931338b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89caba1698d6999082e938f814dd8ece"><td class="memItemLeft" align="right" valign="top"><a id="a89caba1698d6999082e938f814dd8ece"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestPartResult</b> (const <a class="el" href="classtesting_1_1_test_part_result.html">TestPartResult</a> &amp;result) override</td></tr>
+<tr class="separator:a89caba1698d6999082e938f814dd8ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085f90bb9f3128d8d8864c19e1e188ef"><td class="memItemLeft" align="right" valign="top"><a id="a085f90bb9f3128d8d8864c19e1e188ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestEnd</b> (const TestInfo &amp;test_info) override</td></tr>
+<tr class="separator:a085f90bb9f3128d8d8864c19e1e188ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7a17a23b314933e450f549de88b9a5"><td class="memItemLeft" align="right" valign="top"><a id="acc7a17a23b314933e450f549de88b9a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestCaseEnd</b> (const TestCase &amp;test_case) override</td></tr>
+<tr class="separator:acc7a17a23b314933e450f549de88b9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97efe483cbb1c55d32bdc7a997a99f13"><td class="memItemLeft" align="right" valign="top"><a id="a97efe483cbb1c55d32bdc7a997a99f13"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnvironmentsTearDownStart</b> (const UnitTest &amp;unit_test) override</td></tr>
+<tr class="separator:a97efe483cbb1c55d32bdc7a997a99f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6700b0664749940a93917c5dcc3b90ed"><td class="memItemLeft" align="right" valign="top"><a id="a6700b0664749940a93917c5dcc3b90ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnvironmentsTearDownEnd</b> (const UnitTest &amp;) override</td></tr>
+<tr class="separator:a6700b0664749940a93917c5dcc3b90ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447fc02d3e3af17cef6f0727bab7414a"><td class="memItemLeft" align="right" valign="top"><a id="a447fc02d3e3af17cef6f0727bab7414a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestIterationEnd</b> (const UnitTest &amp;unit_test, int iteration) override</td></tr>
+<tr class="separator:a447fc02d3e3af17cef6f0727bab7414a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c7e1a921099dd50fbadd2b0ce3692a"><td class="memItemLeft" align="right" valign="top"><a id="a26c7e1a921099dd50fbadd2b0ce3692a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTestProgramEnd</b> (const UnitTest &amp;) override</td></tr>
+<tr class="separator:a26c7e1a921099dd50fbadd2b0ce3692a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a5b60a9aed1db02837b11450f6e8d0f71"><td class="memItemLeft" align="right" valign="top"><a id="a5b60a9aed1db02837b11450f6e8d0f71"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintTestName</b> (const char *test_case, const char *test)</td></tr>
+<tr class="separator:a5b60a9aed1db02837b11450f6e8d0f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6463878ddb96303f620c62353bbdb5"><td class="memItemLeft" align="right" valign="top"><a id="aba6463878ddb96303f620c62353bbdb5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintTestName</b> (const char *test_suite, const char *test)</td></tr>
+<tr class="separator:aba6463878ddb96303f620c62353bbdb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dde-file-manager_2third-party_2googletest_2googletest_2src_2gtest_8cc_source.html">gtest.cc</a> 第 <a class="el" href="dde-file-manager_2third-party_2googletest_2googletest_2src_2gtest_8cc_source.html#l03098">3098</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/third-party/googletest/googletest/src/<a class="el" href="dde-file-manager_2third-party_2googletest_2googletest_2src_2gtest_8cc_source.html">gtest.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>testing</b></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html">PrettyUnitTestResultPrinter</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

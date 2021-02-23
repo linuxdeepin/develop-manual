@@ -1,0 +1,7 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="std::tr1::gtest_internal\l::TupleElement\< true, 6,\l tuple\< T0, T1, T2, T3,\l T4, T5, T6, T7, T8, T9 \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstd_1_1tr1_1_1gtest__internal_1_1_tuple_element_3_01true_00_016_00_01tuple_3_01_t0_00_01_t4579bc76a3178dc750deb2b47a8e75e7.html"];
+}

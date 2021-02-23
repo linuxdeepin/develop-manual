@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: MenuWorker类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_menu_worker.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_menu_worker-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">MenuWorker类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_menu_worker.html" title="The MenuWorker class 此类用于处理任务栏右键菜单的逻辑 ">MenuWorker</a> class 此类用于处理任务栏右键菜单的逻辑  
+ <a href="class_menu_worker.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dde-dock_2frame_2util_2menuworker_8h_source.html">menuworker.h</a>&gt;</code></p>
+<div class="dynheader">
+类 MenuWorker 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_worker__inherit__graph.png" border="0" usemap="#_menu_worker_inherit__map" alt="Inheritance graph"/></div>
+<map name="_menu_worker_inherit__map" id="_menu_worker_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+MenuWorker 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_worker__coll__graph.png" border="0" usemap="#_menu_worker_coll__map" alt="Collaboration graph"/></div>
+<map name="_menu_worker_coll__map" id="_menu_worker_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a3621534978a35291a7a09a89fa18cd60"><td class="memItemLeft" align="right" valign="top"><a id="a3621534978a35291a7a09a89fa18cd60"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>MenuAction</b> { <br />
+&#160;&#160;<b>Open</b> = 1, 
+<b>Desktop</b> = 2, 
+<b>Dock</b> = 3, 
+<b>Startup</b> = 4, 
+<br />
+&#160;&#160;<b>Proxy</b> = 5, 
+<b>SwitchScale</b> = 6, 
+<b>Uninstall</b> = 7
+<br />
+ }</td></tr>
+<tr class="separator:a3621534978a35291a7a09a89fa18cd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a05ebf0130881116d4973d0401152b167"><td class="memItemLeft" align="right" valign="top"><a id="a05ebf0130881116d4973d0401152b167"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoHide</b> (const bool autoHide)</td></tr>
+<tr class="separator:a05ebf0130881116d4973d0401152b167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9f7ebc375c0caf9c58634d4dd7b9fd"><td class="memItemLeft" align="right" valign="top"><a id="a9e9f7ebc375c0caf9c58634d4dd7b9fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showMenuByAppItem</b> (QPoint pos, const QModelIndex &amp;index)</td></tr>
+<tr class="separator:a9e9f7ebc375c0caf9c58634d4dd7b9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b3ebbc02228909663a1fe0d49dafb2"><td class="memItemLeft" align="right" valign="top"><a id="aa4b3ebbc02228909663a1fe0d49dafb2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleOpen</b> ()</td></tr>
+<tr class="separator:aa4b3ebbc02228909663a1fe0d49dafb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d2d6547c5310e8c2360ed65cab1200"><td class="memItemLeft" align="right" valign="top"><a id="af9d2d6547c5310e8c2360ed65cab1200"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleToDesktop</b> ()</td></tr>
+<tr class="separator:af9d2d6547c5310e8c2360ed65cab1200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5680293e9d985d15942469a634a99876"><td class="memItemLeft" align="right" valign="top"><a id="a5680293e9d985d15942469a634a99876"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleToDock</b> ()</td></tr>
+<tr class="separator:a5680293e9d985d15942469a634a99876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e186dae77187591213328b507650ecd"><td class="memItemLeft" align="right" valign="top"><a id="a0e186dae77187591213328b507650ecd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleToStartup</b> ()</td></tr>
+<tr class="separator:a0e186dae77187591213328b507650ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee45f4aa7446edd60666ec3230edcab5"><td class="memItemLeft" align="right" valign="top"><a id="aee45f4aa7446edd60666ec3230edcab5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleToProxy</b> ()</td></tr>
+<tr class="separator:aee45f4aa7446edd60666ec3230edcab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb09a917fed15e8eea748bbdfe92acd"><td class="memItemLeft" align="right" valign="top"><a id="a7bb09a917fed15e8eea748bbdfe92acd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleSwitchScaling</b> ()</td></tr>
+<tr class="separator:a7bb09a917fed15e8eea748bbdfe92acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd0c12fb758cca3b95601b75bea53a7"><td class="memItemLeft" align="right" valign="top"><a id="a9dd0c12fb758cca3b95601b75bea53a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleMenuClosed</b> ()</td></tr>
+<tr class="separator:a9dd0c12fb758cca3b95601b75bea53a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c402cb2c602b4e09d4160bbd8cd4dea"><td class="memItemLeft" align="right" valign="top"><a id="a9c402cb2c602b4e09d4160bbd8cd4dea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentModelIndex</b> (const QModelIndex &amp;index)</td></tr>
+<tr class="separator:a9c402cb2c602b4e09d4160bbd8cd4dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251400bf939c0054f47563b96193217e"><td class="memItemLeft" align="right" valign="top"><a id="a251400bf939c0054f47563b96193217e"></a>
+const QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentModelIndex</b> ()</td></tr>
+<tr class="separator:a251400bf939c0054f47563b96193217e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb7d64542be374c16a91faeb04a7869"><td class="memItemLeft" align="right" valign="top"><a id="a5fb7d64542be374c16a91faeb04a7869"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleMenuAction</b> (int index)</td></tr>
+<tr class="separator:a5fb7d64542be374c16a91faeb04a7869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a508510e7a46984202fc71eb7af5ace8c"><td class="memItemLeft" align="right" valign="top"><a id="a508510e7a46984202fc71eb7af5ace8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>autoHideChanged</b> (const bool autoHide) const</td></tr>
+<tr class="separator:a508510e7a46984202fc71eb7af5ace8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028d69a41907cc027c7d3782762683d5"><td class="memItemLeft" align="right" valign="top"><a id="a028d69a41907cc027c7d3782762683d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>trayCountChanged</b> ()</td></tr>
+<tr class="separator:a028d69a41907cc027c7d3782762683d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1f44e585782e71deeee7bd8ca1e05c"><td class="memItemLeft" align="right" valign="top"><a id="aeb1f44e585782e71deeee7bd8ca1e05c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>appLaunched</b> ()</td></tr>
+<tr class="separator:aeb1f44e585782e71deeee7bd8ca1e05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeafef97aede3a6ddcdd07d06e111a17"><td class="memItemLeft" align="right" valign="top"><a id="adeafef97aede3a6ddcdd07d06e111a17"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>menuAccepted</b> ()</td></tr>
+<tr class="separator:adeafef97aede3a6ddcdd07d06e111a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28d974e74837c9bf2c19615e01391bb"><td class="memItemLeft" align="right" valign="top"><a id="ae28d974e74837c9bf2c19615e01391bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unInstallApp</b> (const QModelIndex &amp;index)</td></tr>
+<tr class="separator:ae28d974e74837c9bf2c19615e01391bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3c0dcc15acda2479f3d03d472668c8fd"><td class="memItemLeft" align="right" valign="top"><a id="a3c0dcc15acda2479f3d03d472668c8fd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MenuWorker</b> (<a class="el" href="class_d_bus_dock.html">DBusDock</a> *dockInter, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a3c0dcc15acda2479f3d03d472668c8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7314b0a6c8c4e3e5058f3578b34769"><td class="memItemLeft" align="right" valign="top"><a id="a7d7314b0a6c8c4e3e5058f3578b34769"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initMember</b> ()</td></tr>
+<tr class="separator:a7d7314b0a6c8c4e3e5058f3578b34769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae89277448a6733f3250c53c03f11bf"><td class="memItemLeft" align="right" valign="top"><a id="afae89277448a6733f3250c53c03f11bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initUI</b> ()</td></tr>
+<tr class="separator:afae89277448a6733f3250c53c03f11bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7187df6d4aa712b003ea9a94375f627a"><td class="memItemLeft" align="right" valign="top"><a id="a7187df6d4aa712b003ea9a94375f627a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initConnection</b> ()</td></tr>
+<tr class="separator:a7187df6d4aa712b003ea9a94375f627a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33787a5ee4b83203678bc952dd3ac93b"><td class="memItemLeft" align="right" valign="top"><a id="a33787a5ee4b83203678bc952dd3ac93b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showDockSettingsMenu</b> ()</td></tr>
+<tr class="separator:a33787a5ee4b83203678bc952dd3ac93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2029d8d30f5ea551a57005586a88ce8c"><td class="memItemLeft" align="right" valign="top"><a id="a2029d8d30f5ea551a57005586a88ce8c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>menuEnable</b> () const</td></tr>
+<tr class="separator:a2029d8d30f5ea551a57005586a88ce8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d86b688f46f02b7c2cdd8a83436ad9"><td class="memItemLeft" align="right" valign="top"><a id="ae5d86b688f46f02b7c2cdd8a83436ad9"></a>
+quint8&#160;</td><td class="memItemRight" valign="bottom"><b>Opacity</b> () const</td></tr>
+<tr class="separator:ae5d86b688f46f02b7c2cdd8a83436ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55683d1e058bfe6dec988f0f37b7e811"><td class="memItemLeft" align="right" valign="top"><a id="a55683d1e058bfe6dec988f0f37b7e811"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onGSettingsChanged</b> (const QString &amp;key)</td></tr>
+<tr class="separator:a55683d1e058bfe6dec988f0f37b7e811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79935def047a03b8c45ae4eb65627be0"><td class="memItemLeft" align="right" valign="top"><a id="a79935def047a03b8c45ae4eb65627be0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onTrashGSettingsChanged</b> (const QString &amp;key)</td></tr>
+<tr class="separator:a79935def047a03b8c45ae4eb65627be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a82c4afbcd6cb88cef5f4015e01bc3"><td class="memItemLeft" align="right" valign="top"><a id="ab4a82c4afbcd6cb88cef5f4015e01bc3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MenuWorker</b> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:ab4a82c4afbcd6cb88cef5f4015e01bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46484becef011e76802f3b498c73fc7"><td class="memItemLeft" align="right" valign="top"><a id="aa46484becef011e76802f3b498c73fc7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initConnect</b> ()</td></tr>
+<tr class="separator:aa46484becef011e76802f3b498c73fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43100cc8d2afaf99a0eb0cb90314e891"><td class="memItemLeft" align="right" valign="top"><a id="a43100cc8d2afaf99a0eb0cb90314e891"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isMenuShown</b> () const</td></tr>
+<tr class="separator:a43100cc8d2afaf99a0eb0cb90314e891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f983200a8f76e93b6eb696d5793299"><td class="memItemLeft" align="right" valign="top"><a id="ab4f983200a8f76e93b6eb696d5793299"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isItemOnDock</b> (QString appKey)</td></tr>
+<tr class="separator:ab4f983200a8f76e93b6eb696d5793299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123a9fa27a94909bd52a2d0edb92b43b"><td class="memItemLeft" align="right" valign="top"><a id="a123a9fa27a94909bd52a2d0edb92b43b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isItemOnDesktop</b> (QString appKey)</td></tr>
+<tr class="separator:a123a9fa27a94909bd52a2d0edb92b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6731243324216d2bf5091216ddbed870"><td class="memItemLeft" align="right" valign="top"><a id="a6731243324216d2bf5091216ddbed870"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isItemStartup</b> (QString appKey)</td></tr>
+<tr class="separator:a6731243324216d2bf5091216ddbed870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b9fdd71e6651897f90c5aae1a736e0"><td class="memItemLeft" align="right" valign="top"><a id="a17b9fdd71e6651897f90c5aae1a736e0"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>menuGeometry</b> () const</td></tr>
+<tr class="separator:a17b9fdd71e6651897f90c5aae1a736e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <a class="el" href="class_menu_worker.html" title="The MenuWorker class 此类用于处理任务栏右键菜单的逻辑 ">MenuWorker</a> class 此类用于处理任务栏右键菜单的逻辑 </p>
+
+<p class="definition">在文件 <a class="el" href="dde-dock_2frame_2util_2menuworker_8h_source.html">menuworker.h</a> 第 <a class="el" href="dde-dock_2frame_2util_2menuworker_8h_source.html#l00036">36</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-dock/frame/util/<a class="el" href="dde-dock_2frame_2util_2menuworker_8h_source.html">menuworker.h</a></li>
+<li>dde-dock/frame/util/<a class="el" href="dde-dock_2frame_2util_2menuworker_8cpp_source.html">menuworker.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_menu_worker.html">MenuWorker</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

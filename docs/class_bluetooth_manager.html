@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: BluetoothManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_bluetooth_manager.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_bluetooth_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">BluetoothManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is singleton class. you should <code>#include "app/define.h"</code> and <code>"bluetooth/bluetoothmanager.h"</code>, then use the macro <code>bluetoothManager</code> call method  
+ <a href="class_bluetooth_manager.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bluetoothmanager_8h_source.html">bluetoothmanager.h</a>&gt;</code></p>
+<div class="dynheader">
+类 BluetoothManager 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bluetooth_manager__inherit__graph.png" border="0" usemap="#_bluetooth_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_bluetooth_manager_inherit__map" id="_bluetooth_manager_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+BluetoothManager 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bluetooth_manager__coll__graph.png" border="0" usemap="#_bluetooth_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_bluetooth_manager_coll__map" id="_bluetooth_manager_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:aad32f17740a6e31e536aafc8b6cc679c"><td class="memItemLeft" align="right" valign="top"><a id="aad32f17740a6e31e536aafc8b6cc679c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bluetooth_manager.html#aad32f17740a6e31e536aafc8b6cc679c">refresh</a> ()</td></tr>
+<tr class="memdesc:aad32f17740a6e31e536aafc8b6cc679c"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步接口：调用刷新蓝牙模块，初始化数据 <br /></td></tr>
+<tr class="separator:aad32f17740a6e31e536aafc8b6cc679c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf1d2ec0b59ee4ee9e279165c54c761"><td class="memItemLeft" align="right" valign="top"><a id="afbf1d2ec0b59ee4ee9e279165c54c761"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bluetooth_manager.html#afbf1d2ec0b59ee4ee9e279165c54c761">showBluetoothSettings</a> ()</td></tr>
+<tr class="memdesc:afbf1d2ec0b59ee4ee9e279165c54c761"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开控制中心的‘蓝牙’界面 <br /></td></tr>
+<tr class="separator:afbf1d2ec0b59ee4ee9e279165c54c761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04d74e5042cea311cbca86531faa971"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bluetooth_manager.html#aa04d74e5042cea311cbca86531faa971">sendFiles</a> (const <a class="el" href="class_bluetooth_device.html">BluetoothDevice</a> &amp;device, const QStringList &amp;filePath)</td></tr>
+<tr class="memdesc:aa04d74e5042cea311cbca86531faa971"><td class="mdescLeft">&#160;</td><td class="mdescRight">向设备发送文件  <a href="#aa04d74e5042cea311cbca86531faa971">更多...</a><br /></td></tr>
+<tr class="separator:aa04d74e5042cea311cbca86531faa971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aab465dd0d89b89812f8a49dc56cb01"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bluetooth_manager.html#a5aab465dd0d89b89812f8a49dc56cb01">sendFiles</a> (const QString &amp;id, const QStringList &amp;filePath)</td></tr>
+<tr class="memdesc:a5aab465dd0d89b89812f8a49dc56cb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">向设备发送文件  <a href="#a5aab465dd0d89b89812f8a49dc56cb01">更多...</a><br /></td></tr>
+<tr class="separator:a5aab465dd0d89b89812f8a49dc56cb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930b6ace84565a1760d5d8228d15c278"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bluetooth_manager.html#a930b6ace84565a1760d5d8228d15c278">cancelTransfer</a> (const QString &amp;sessionPath)</td></tr>
+<tr class="memdesc:a930b6ace84565a1760d5d8228d15c278"><td class="mdescLeft">&#160;</td><td class="mdescRight">cancleTransfer 取消某个传输会话  <a href="#a930b6ace84565a1760d5d8228d15c278">更多...</a><br /></td></tr>
+<tr class="separator:a930b6ace84565a1760d5d8228d15c278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35204c720d2bf343c85f700016fa7540"><td class="memItemLeft" align="right" valign="top"><a id="a35204c720d2bf343c85f700016fa7540"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canSendBluetoothRequest</b> ()</td></tr>
+<tr class="separator:a35204c720d2bf343c85f700016fa7540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ad3b6e39da2b14bcd19803ea0a2829629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bluetooth_manager.html#ad3b6e39da2b14bcd19803ea0a2829629">transferProgressUpdated</a> (const QString &amp;sessionPath, qulonglong total, qulonglong transferred, int currFileIndex)</td></tr>
+<tr class="memdesc:ad3b6e39da2b14bcd19803ea0a2829629"><td class="mdescLeft">&#160;</td><td class="mdescRight">transferProcessUpdated 当前传输会话进度更新  <a href="#ad3b6e39da2b14bcd19803ea0a2829629">更多...</a><br /></td></tr>
+<tr class="separator:ad3b6e39da2b14bcd19803ea0a2829629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5105c6f8016e228924be068543f722c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bluetooth_manager.html#af5105c6f8016e228924be068543f722c">transferCancledByRemote</a> (const QString &amp;sessionPath)</td></tr>
+<tr class="memdesc:af5105c6f8016e228924be068543f722c"><td class="mdescLeft">&#160;</td><td class="mdescRight">transferCancledByRemote  <a href="#af5105c6f8016e228924be068543f722c">更多...</a><br /></td></tr>
+<tr class="separator:af5105c6f8016e228924be068543f722c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e3e6983a6cdafebd3fcd8d64cbbdea"><td class="memItemLeft" align="right" valign="top"><a id="a94e3e6983a6cdafebd3fcd8d64cbbdea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileTransferFinished</b> (const QString &amp;sessionPath, const QString &amp;filePath)</td></tr>
+<tr class="separator:a94e3e6983a6cdafebd3fcd8d64cbbdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e89f6b110cdcad9ec4a16b4a430ac22"><td class="memItemLeft" align="right" valign="top"><a id="a7e89f6b110cdcad9ec4a16b4a430ac22"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>transferFailed</b> (const QString &amp;sessionPath, const QString &amp;filePath, const QString &amp;errMsg)</td></tr>
+<tr class="separator:a7e89f6b110cdcad9ec4a16b4a430ac22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af35b3bfe27cb0db22264115fba1c585a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bluetooth_model.html">BluetoothModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bluetooth_manager.html#af35b3bfe27cb0db22264115fba1c585a">model</a> ()</td></tr>
+<tr class="memdesc:af35b3bfe27cb0db22264115fba1c585a"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回数据模型  <a href="#af35b3bfe27cb0db22264115fba1c585a">更多...</a><br /></td></tr>
+<tr class="separator:af35b3bfe27cb0db22264115fba1c585a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ae65a1ecdd56b7963cd5a967502ef0cc4"><td class="memItemLeft" align="right" valign="top"><a id="ae65a1ecdd56b7963cd5a967502ef0cc4"></a>
+static <a class="el" href="class_bluetooth_manager.html">BluetoothManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
+<tr class="separator:ae65a1ecdd56b7963cd5a967502ef0cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This is singleton class. you should <code>#include "app/define.h"</code> and <code>"bluetooth/bluetoothmanager.h"</code>, then use the macro <code>bluetoothManager</code> call method </p>
+
+<p class="definition">在文件 <a class="el" href="bluetoothmanager_8h_source.html">bluetoothmanager.h</a> 第 <a class="el" href="bluetoothmanager_8h_source.html#l00039">39</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a930b6ace84565a1760d5d8228d15c278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930b6ace84565a1760d5d8228d15c278">&#9670;&nbsp;</a></span>cancelTransfer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BluetoothManager::cancelTransfer </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>sessionPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cancleTransfer 取消某个传输会话 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionPath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="bluetoothmanager_8cpp_source.html">bluetoothmanager.cpp</a> 第 <a class="el" href="bluetoothmanager_8cpp_source.html#l00401">401</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af35b3bfe27cb0db22264115fba1c585a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35b3bfe27cb0db22264115fba1c585a">&#9670;&nbsp;</a></span>model()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bluetooth_model.html">BluetoothModel</a> * BluetoothManager::model </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回数据模型 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="bluetoothmanager_8cpp_source.html">bluetoothmanager.cpp</a> 第 <a class="el" href="bluetoothmanager_8cpp_source.html#l00360">360</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa04d74e5042cea311cbca86531faa971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04d74e5042cea311cbca86531faa971">&#9670;&nbsp;</a></span>sendFiles <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString BluetoothManager::sendFiles </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_bluetooth_device.html">BluetoothDevice</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向设备发送文件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>设备对象 </td></tr>
+    <tr><td class="paramname">filePath</td><td>文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回一个 sessionPath，用于对传输进行取消，返回空说明调用dbus接口时发生了错误 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="bluetoothmanager_8cpp_source.html">bluetoothmanager.cpp</a> 第 <a class="el" href="bluetoothmanager_8cpp_source.html#l00374">374</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5aab465dd0d89b89812f8a49dc56cb01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aab465dd0d89b89812f8a49dc56cb01">&#9670;&nbsp;</a></span>sendFiles <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString BluetoothManager::sendFiles </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向设备发送文件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>设备对象中的id </td></tr>
+    <tr><td class="paramname">filePath</td><td>文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回一个 sessionPath，用于对传输进行取消，返回空说明调用dbus接口时发生了错误 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="bluetoothmanager_8cpp_source.html">bluetoothmanager.cpp</a> 第 <a class="el" href="bluetoothmanager_8cpp_source.html#l00379">379</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af5105c6f8016e228924be068543f722c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5105c6f8016e228924be068543f722c">&#9670;&nbsp;</a></span>transferCancledByRemote</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BluetoothManager::transferCancledByRemote </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>sessionPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>transferCancledByRemote </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionPath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad3b6e39da2b14bcd19803ea0a2829629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b6e39da2b14bcd19803ea0a2829629">&#9670;&nbsp;</a></span>transferProgressUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BluetoothManager::transferProgressUpdated </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>sessionPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qulonglong&#160;</td>
+          <td class="paramname"><em>total</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qulonglong&#160;</td>
+          <td class="paramname"><em>transferred</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currFileIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>transferProcessUpdated 当前传输会话进度更新 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionPath</td><td>用来标识当前传输进程的会话id </td></tr>
+    <tr><td class="paramname">total</td><td>当前传输列表的总bytes </td></tr>
+    <tr><td class="paramname">transferred</td><td>当前已传输的 bytes </td></tr>
+    <tr><td class="paramname">currFileIndex</td><td>当前传输文件的序号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/bluetooth/<a class="el" href="bluetoothmanager_8h_source.html">bluetoothmanager.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/bluetooth/<a class="el" href="bluetoothmanager_8cpp_source.html">bluetoothmanager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_bluetooth_manager.html">BluetoothManager</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

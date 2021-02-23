@@ -1,0 +1,29 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3067 [label="DAbstractDialog",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3067 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="BaseDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_base_dialog.html"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="OpenWithDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_with_dialog.html"];
+  Node3067 -> Node3070 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3070 [label="CAbstractProcessDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_abstract_process_dialog.html"];
+  Node3067 -> Node3071 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3071 [label="CloseAllDialogIndicator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_close_all_dialog_indicator.html"];
+  Node3067 -> Node3072 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3072 [label="DCC_NAMESPACE::accounts\l::AddFingeDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1accounts_1_1_add_finge_dialog.html"];
+  Node3067 -> Node3073 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3073 [label="DCC_NAMESPACE::commoninfo\l::DeveloperModeDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1commoninfo_1_1_developer_mode_dialog.html"];
+  Node3067 -> Node3074 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3074 [label="DCC_NAMESPACE::display\l::SecondaryScreenDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1display_1_1_secondary_screen_dialog.html"];
+  Node3067 -> Node3075 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3075 [label="DequalizerDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dequalizer_dialog.html"];
+  Node3067 -> Node3076 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3076 [label="DTaskDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_task_dialog.html"];
+  Node3067 -> Node3077 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3077 [label="FilePreviewDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_file_preview_dialog.html"];
+  Node3067 -> Node3078 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3078 [label="InfoDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_info_dialog.html"];
+}

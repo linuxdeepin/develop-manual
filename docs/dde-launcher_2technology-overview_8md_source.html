@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-launcher/technology-overview.md 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dde-launcher_2technology-overview_8md.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dde-launcher/technology-overview.md</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;# dde-launcher 开发文档</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;# 整体设计</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;由于 `dde-launcher` 需要在全屏模式和窗口模式来回切换，并且还注册了 DBus 服务。为了方便处理，使用 `LauncherSys` 作为中心控制类。</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;根据当前需要，`LauncherSys` 将选择性的切换显示全屏与窗口模式的实例。同时，DBus 服务也绑定在这个对象上，在调用时根据当前情况将对应的操作进行分发。</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;## 基本模块间关系</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;所有用来显示的模块（`FullScreenFrame`、`MiniFrame`、`WindowedFrame`）及与它们搭配的 `Delegate` 都只负责前端界面的处理，所有前端界面的数据都是从同一个 `AppsListModel` 中获取到的。在界面上进行的各种动画，也都是由各个 View 配合 Model 中保存的数据来完成的。</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;`AppsManager` 是一个对数据进行整理、封装，处理数据变动与更新的管理模块。其底层访问 `dde-session-initializater` 提供的 DBus 服务来获取应用列表及相关数据信息。对上则为 `AppListModel` 提供整合后的应用数据列表。</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;`AppItemDelegate` 与 `AppListDelegate` 分别用作全屏模式与窗口模式的绘图模块。它利用标准的 Qt Model-View 设计模式做到了模块间的分离。</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;## FullscreenFrame</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;在全屏模式下，有两种显示效果，即单 View 显示（如搜索界面或不分类模式）和多 View 显示（分类模式下）。</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;无论哪种模式下，所有的 View 都是被放置在一个纵向自适应增长的 VBoxLayout 上面，也是在这一层进行鼠标滚动的处理。即：__所有的 View 都是以 FitToSize 的方式进行展开的，滚动由它们的父控件处理__。这样可以把鼠标事件直接拿到最顶层处理，避免各个子控件在互相处理事件时带来混乱。</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;## WindowdFrame</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;在窗口模式下，数据来源及操作方式都和全屏模式相同，只需要替换掉显示的 View 和绘图的 Delegate 即可，参考 `LauncherSys` 中的相关代码。</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;## 输入法</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;由于特殊的需求，要求在按下按键时，立即跳转到搜索框中并开始搜索。为了保证输入法在按下第一个键之前就已经激活并能够正常捕获第一个字符，需要提前激活输入法。</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;为了实现这个功能，将窗口“伪装”成可输入区域，激活输入法并实现 `inputMethodEvent`、`inputMethodQuery` 等接口，实现与输入法的通讯，并接受输入法提交的结果转发到搜索栏中进行搜索。</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;# 模块设计</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;## Model</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;由于涉及到后端数据变动、应用分类及一些数据更新，在 `AppsListModel` 中又额外加了一层包装 `AppsManager`，单独用作对 DBus 数据进行过滤、分类等处理，然后将整理好的结构化的数据交给上层 `AppsListModel` 使用。</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;同时，为了减少 DBus 调用，一些 Cache 也在 `AppsManager` 中实现。</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;## View</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;目前有 `WindowedFrame` 和 `FullscreenFrame` 正在使用，它们都以 `AppsListModel` 作为数据源来显示应用列表。当以后有新设计需求时，可以添加新的 `View` 模块，实现对应的 Delegate 绘图即可接入。</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;## Delegate</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;根据 View 的特点和设计风格，从 `AppsListModel` 中获取数据进行绘图。</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;## Menu</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;`Menu` 模块是用于显示 Item 右键菜单的，无论在哪个 View 下，都使用这个 Menu 进行菜单显示，对应的操作由 View 及 `AppsManager` 处理。</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;## Utils</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;`CalculateUtils` 类负责进行基本的数据运算，例如不同模式下的图标大小、字体大小计算。</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;`Utils` 类是一些 qss 加载函数、图标查找函数等杂项的存放。</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;`RecentlyUsed` 类负责解析和处理最近使用的文件列表，它是读取 `~/.local/share/recently-used.xbel` 进行显示的，这主要是之前的一个定制功能，没有做的很仔细，由 `HISTORY_PANEL` 选项控制。</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;# 接口设计</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;## DBus 服务接口</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;Launcher 通过 DBus 服务提供了以下接口：</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;- Exit： 结束当前进程</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;- Hide： 隐藏当前 Launcher</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;- Show： 显示当前 Launcher</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;- ShowByMode： 以指定模式显示 Launcher，当前未实现此接口</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;- UninstallApp： 由于卸载 App 需要确认，调用此对话框即可到达确认界面</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;- Toggle： 切换 Launcher 的显示/隐藏模式</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;- IsVisible： 获取当前 Launcher 的显示状态</div></div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>technology-overview.md</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

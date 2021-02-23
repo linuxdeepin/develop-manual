@@ -1,0 +1,11 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2958 [label="DFloatingWidget",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2958 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="FooterWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_footer_widget.html"];
+  Node2958 -> Node2960 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2960 [label="PlayQueueWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_play_queue_widget.html"];
+}

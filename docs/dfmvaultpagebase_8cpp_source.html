@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-lib/views/dfmvaultpagebase.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dfmvaultpagebase_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dfmvaultpagebase.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;dfmvaultpagebase.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;vault/vaulthelper.h&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;controllers/vaultcontroller.h&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;dfilemanagerwindow.h&quot;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QWindow&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_d_f_m_vault_page_base.html#a4d2204b62d40e3653971553cdc8b047a">   25</a></span>&#160;<a class="code" href="class_d_f_m_vault_page_base.html#a4d2204b62d40e3653971553cdc8b047a">DFMVaultPageBase::DFMVaultPageBase</a>(QWidget *parent)</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    : DDialog(parent)</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_d_f_m_global.html#a5c0052fbf4b06b6f71aef316cf5c7831">DFMGlobal::isWayLand</a>())</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">//设置对话框窗口最大最小化按钮隐藏</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        this-&gt;setWindowFlags(this-&gt;windowFlags() &amp; ~Qt::WindowMinMaxButtonsHint);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        this-&gt;setAttribute(Qt::WA_NativeWindow);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">//this-&gt;windowHandle()-&gt;setProperty(&quot;_d_dwayland_window-type&quot;, &quot;wallpaper&quot;);</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this-&gt;windowHandle()-&gt;setProperty(<span class="stringliteral">&quot;_d_dwayland_minimizable&quot;</span>, <span class="keyword">false</span>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        this-&gt;windowHandle()-&gt;setProperty(<span class="stringliteral">&quot;_d_dwayland_maximizable&quot;</span>, <span class="keyword">false</span>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        this-&gt;windowHandle()-&gt;setProperty(<span class="stringliteral">&quot;_d_dwayland_resizable&quot;</span>, <span class="keyword">false</span>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        this-&gt;moveToCenter();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_d_f_m_vault_page_base.html#a04c23606a3da157a33bc17d5e1e41675">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_d_f_m_vault_page_base.html#a04c23606a3da157a33bc17d5e1e41675">DFMVaultPageBase::enterVaultDir</a>()</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_d_url.html">DUrl</a> vaultUrl = VaultController::makeVaultUrl(<a class="code" href="class_vault_controller.html#a88cf7958cc1f514da5e5e45810338d69">VaultController::makeVaultLocalPath</a>());</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_d_file_manager_window.html">DFileManagerWindow</a> *wnd = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_d_file_manager_window.html">DFileManagerWindow</a> *<span class="keyword">&gt;</span>(m_wndptr);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    AppController::instance()-&gt;<a class="code" href="class_app_controller.html#aaca8334440a68a2c5bc2ea04cc62a1c3">actionOpen</a>(dMakeEventPointer&lt;DFMUrlListBaseEvent&gt;(wnd, <a class="code" href="class_q_list.html">DUrlList</a>() &lt;&lt; vaultUrl));</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> DFMVaultPageBase::closeEvent(QCloseEvent *event)</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 记录当前退出模态对话框状态</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    VaultHelper::isModel = <span class="keyword">false</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    DDialog::closeEvent(event);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> DFMVaultPageBase::setWndPtr(QWidget *wnd)</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    m_wndptr = wnd;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;QWidget *DFMVaultPageBase::getWndPtr()<span class="keyword"> const</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> m_wndptr;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> DFMVaultPageBase::showTop()</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    this-&gt;activateWindow();</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    this-&gt;showNormal();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    this-&gt;<span class="keyword">raise</span>();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 记录当前处于模态弹窗状态</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    VaultHelper::isModel = <span class="keyword">true</span>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div><div class="ttc" id="class_d_f_m_vault_page_base_html_a04c23606a3da157a33bc17d5e1e41675"><div class="ttname"><a href="class_d_f_m_vault_page_base.html#a04c23606a3da157a33bc17d5e1e41675">DFMVaultPageBase::enterVaultDir</a></div><div class="ttdeci">void enterVaultDir()</div><div class="ttdef"><b>Definition:</b> <a href="dfmvaultpagebase_8cpp_source.html#l00041">dfmvaultpagebase.cpp:41</a></div></div>
+<div class="ttc" id="class_d_file_manager_window_html"><div class="ttname"><a href="class_d_file_manager_window.html">DFileManagerWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="dfilemanagerwindow_8h_source.html#l00077">dfilemanagerwindow.h:77</a></div></div>
+<div class="ttc" id="class_app_controller_html_aaca8334440a68a2c5bc2ea04cc62a1c3"><div class="ttname"><a href="class_app_controller.html#aaca8334440a68a2c5bc2ea04cc62a1c3">AppController::actionOpen</a></div><div class="ttdeci">void actionOpen(const QSharedPointer&lt; DFMUrlListBaseEvent &gt; &amp;event, const bool isEnter=false)</div><div class="ttdef"><b>Definition:</b> <a href="dde-file-manager-lib_2controllers_2appcontroller_8cpp_source.html#l00165">appcontroller.cpp:165</a></div></div>
+<div class="ttc" id="class_vault_controller_html_a88cf7958cc1f514da5e5e45810338d69"><div class="ttname"><a href="class_vault_controller.html#a88cf7958cc1f514da5e5e45810338d69">VaultController::makeVaultLocalPath</a></div><div class="ttdeci">static QString makeVaultLocalPath(QString path=&quot;&quot;, QString base=&quot;&quot;)</div><div class="ttdoc">makeVaultLocalPath 创建本地路径 </div><div class="ttdef"><b>Definition:</b> <a href="vaultcontroller_8cpp_source.html#l01059">vaultcontroller.cpp:1059</a></div></div>
+<div class="ttc" id="class_d_f_m_vault_page_base_html_a4d2204b62d40e3653971553cdc8b047a"><div class="ttname"><a href="class_d_f_m_vault_page_base.html#a4d2204b62d40e3653971553cdc8b047a">DFMVaultPageBase::DFMVaultPageBase</a></div><div class="ttdeci">DFMVaultPageBase(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="dfmvaultpagebase_8cpp_source.html#l00025">dfmvaultpagebase.cpp:25</a></div></div>
+<div class="ttc" id="class_d_f_m_global_html_a5c0052fbf4b06b6f71aef316cf5c7831"><div class="ttname"><a href="class_d_f_m_global.html#a5c0052fbf4b06b6f71aef316cf5c7831">DFMGlobal::isWayLand</a></div><div class="ttdeci">static bool isWayLand()</div><div class="ttdoc">isWayLand 判断是否是wayland </div><div class="ttdef"><b>Definition:</b> <a href="dfmglobal_8cpp_source.html#l01073">dfmglobal.cpp:1073</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; DUrl &gt;</a></div></div>
+<div class="ttc" id="class_d_url_html"><div class="ttname"><a href="class_d_url.html">DUrl</a></div><div class="ttdef"><b>Definition:</b> <a href="durl_8h_source.html#l00087">durl.h:87</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_f9029d0d717014796f47cbb96a029b81.html">dde-file-manager-lib</a></li><li class="navelem"><a class="el" href="dir_972560ee1036296a65278e17d209aee2.html">views</a></li><li class="navelem"><b>dfmvaultpagebase.cpp</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:21 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

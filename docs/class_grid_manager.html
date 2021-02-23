@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: GridManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_grid_manager.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_grid_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">GridManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 GridManager 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_grid_manager__inherit__graph.png" border="0" usemap="#_grid_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_grid_manager_inherit__map" id="_grid_manager_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+GridManager 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_grid_manager__coll__graph.png" border="0" usemap="#_grid_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_grid_manager_coll__map" id="_grid_manager_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a2d006f93fb482d7b6ffb888ba853476b"><td class="memItemLeft" align="right" valign="top"><a id="a2d006f93fb482d7b6ffb888ba853476b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SyncOperation</b> { <br />
+&#160;&#160;<b>soAutoMerge</b>, 
+<b>soRename</b>, 
+<b>soIconSize</b>, 
+<b>soSort</b>, 
+<br />
+&#160;&#160;<b>soHideEditing</b>, 
+<b>soUpdate</b>, 
+<b>soAutoMergeUpdate</b>, 
+<b>soHidenSwitch</b>, 
+<br />
+&#160;&#160;<b>soGsettingUpdate</b>
+<br />
+ }</td></tr>
+<tr class="separator:a2d006f93fb482d7b6ffb888ba853476b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a65ab19efef921943b507ec988815aea2"><td class="memItemLeft" align="right" valign="top"><a id="a65ab19efef921943b507ec988815aea2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sigSyncOperation</b> (int so, QVariant var=QVariant())</td></tr>
+<tr class="separator:a65ab19efef921943b507ec988815aea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987b7c4fe677a53dee870cf3557da768"><td class="memItemLeft" align="right" valign="top"><a id="a987b7c4fe677a53dee870cf3557da768"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sigSyncSelection</b> (class <a class="el" href="class_canvas_grid_view.html">CanvasGridView</a> *, <a class="el" href="class_q_list.html">DUrlList</a> url)</td></tr>
+<tr class="separator:a987b7c4fe677a53dee870cf3557da768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abc974d66ecca5f302a4247ee43333a42"><td class="memItemLeft" align="right" valign="top"><a id="abc974d66ecca5f302a4247ee43333a42"></a>
+<a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getInitRootUrl</b> ()</td></tr>
+<tr class="separator:abc974d66ecca5f302a4247ee43333a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b91c5dd7e1126d467448ac7c90c5b3"><td class="memItemLeft" align="right" valign="top"><a id="aa6b91c5dd7e1126d467448ac7c90c5b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initGridItemsInfos</b> ()</td></tr>
+<tr class="separator:aa6b91c5dd7e1126d467448ac7c90c5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7752f1759c9ae86b4514145381556b"><td class="memItemLeft" align="right" valign="top"><a id="a6a7752f1759c9ae86b4514145381556b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initAutoMerge</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; DAbstractFileInfoPointer &gt; &amp;items)</td></tr>
+<tr class="separator:a6a7752f1759c9ae86b4514145381556b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba55ff9d249adff52394145105d301eb"><td class="memItemLeft" align="right" valign="top"><a id="aba55ff9d249adff52394145105d301eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initArrage</b> (const QStringList &amp;items)</td></tr>
+<tr class="separator:aba55ff9d249adff52394145105d301eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac272653fb7142110da1b8b1a3328f1fe"><td class="memItemLeft" align="right" valign="top"><a id="ac272653fb7142110da1b8b1a3328f1fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initCustom</b> (QStringList &amp;items)</td></tr>
+<tr class="separator:ac272653fb7142110da1b8b1a3328f1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f9c9e4a5f9b69a39a43ee2ccfe28ae"><td class="memItemLeft" align="right" valign="top"><a id="a12f9c9e4a5f9b69a39a43ee2ccfe28ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initCustom</b> (const QStringList &amp;orderedItems, const QHash&lt; QString, bool &gt; &amp;indexHash)</td></tr>
+<tr class="separator:a12f9c9e4a5f9b69a39a43ee2ccfe28ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8557172bd45653c4440c5feaacb85002"><td class="memItemLeft" align="right" valign="top"><a id="a8557172bd45653c4440c5feaacb85002"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (int screenNum, QPoint pos, const QString &amp;id)</td></tr>
+<tr class="separator:a8557172bd45653c4440c5feaacb85002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36fbd0cb20e6c518f7cfc8094b7a85fb"><td class="memItemLeft" align="right" valign="top"><a id="a36fbd0cb20e6c518f7cfc8094b7a85fb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (int screenNum, const QString &amp;id)</td></tr>
+<tr class="separator:a36fbd0cb20e6c518f7cfc8094b7a85fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883d12664fc4bd389a7f5bec8b1596d0"><td class="memItemLeft" align="right" valign="top"><a id="a883d12664fc4bd389a7f5bec8b1596d0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (int screenNum, const QStringList &amp;selecteds, const QString &amp;current, int x, int y)</td></tr>
+<tr class="separator:a883d12664fc4bd389a7f5bec8b1596d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad310308c001ef59a8024b9e4d520cf88"><td class="memItemLeft" align="right" valign="top"><a id="ad310308c001ef59a8024b9e4d520cf88"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (int fromScreen, int toScreen, const QStringList &amp;selectedIds, const QString &amp;itemId, int x, int y)</td></tr>
+<tr class="separator:ad310308c001ef59a8024b9e4d520cf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64890e479c375e3a5a7c907bd8dddfc1"><td class="memItemLeft" align="right" valign="top"><a id="a64890e479c375e3a5a7c907bd8dddfc1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (int screenNum, const QString &amp;id)</td></tr>
+<tr class="separator:a64890e479c375e3a5a7c907bd8dddfc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd9ce02003397a47b7233276635ecde"><td class="memItemLeft" align="right" valign="top"><a id="a5dd9ce02003397a47b7233276635ecde"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>popOverlap</b> ()</td></tr>
+<tr class="separator:a5dd9ce02003397a47b7233276635ecde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2b1d7feb49fb80da7c9917b7ec6d74"><td class="memItemLeft" align="right" valign="top"><a id="a3e2b1d7feb49fb80da7c9917b7ec6d74"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>addToOverlap</b> (const QString &amp;itemId)</td></tr>
+<tr class="separator:a3e2b1d7feb49fb80da7c9917b7ec6d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8f70f9d7fee75b48d20efa7888672e"><td class="memItemLeft" align="right" valign="top"><a id="adc8f70f9d7fee75b48d20efa7888672e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>emptyPostionCount</b> (int screenNum) const</td></tr>
+<tr class="separator:adc8f70f9d7fee75b48d20efa7888672e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c595cbfb97f52272b758544b9ad425d"><td class="memItemLeft" align="right" valign="top"><a id="a8c595cbfb97f52272b758544b9ad425d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="separator:a8c595cbfb97f52272b758544b9ad425d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3677420d41c31915d865f0061e26b1d"><td class="memItemLeft" align="right" valign="top"><a id="ac3677420d41c31915d865f0061e26b1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>restCoord</b> ()</td></tr>
+<tr class="separator:ac3677420d41c31915d865f0061e26b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa867dc350230bc25e877e02d9d26663"><td class="memItemLeft" align="right" valign="top"><a id="afa867dc350230bc25e877e02d9d26663"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addCoord</b> (int screenNum, QPair&lt; int, int &gt; coordInfo)</td></tr>
+<tr class="separator:afa867dc350230bc25e877e02d9d26663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bdbca5f746baeaa5f7a01b869dbe180"><td class="memItemLeft" align="right" valign="top"><a id="a4bdbca5f746baeaa5f7a01b869dbe180"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>firstItemId</b> (int screenNum)</td></tr>
+<tr class="separator:a4bdbca5f746baeaa5f7a01b869dbe180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291715fec6fdbfe7386f20436b3afc0e"><td class="memItemLeft" align="right" valign="top"><a id="a291715fec6fdbfe7386f20436b3afc0e"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>lastItemId</b> (int screenNum)</td></tr>
+<tr class="separator:a291715fec6fdbfe7386f20436b3afc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1adcc5eca821a8bc89c073c4256ee6"><td class="memItemLeft" align="right" valign="top"><a id="aee1adcc5eca821a8bc89c073c4256ee6"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>lastItemTop</b> (int screenNum)</td></tr>
+<tr class="separator:aee1adcc5eca821a8bc89c073c4256ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575015ce78a8c4240abe8bd7fa9222eb"><td class="memItemLeft" align="right" valign="top"><a id="a575015ce78a8c4240abe8bd7fa9222eb"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>itemIds</b> (int screenNum)</td></tr>
+<tr class="separator:a575015ce78a8c4240abe8bd7fa9222eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8df86c42a8253d645cb58874e82511"><td class="memItemLeft" align="right" valign="top"><a id="a6b8df86c42a8253d645cb58874e82511"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>allItems</b> () const</td></tr>
+<tr class="separator:a6b8df86c42a8253d645cb58874e82511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d828cddae5cf32a57c1373605977f1"><td class="memItemLeft" align="right" valign="top"><a id="aa7d828cddae5cf32a57c1373605977f1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>contains</b> (int screebNum, const QString &amp;id)</td></tr>
+<tr class="separator:aa7d828cddae5cf32a57c1373605977f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a673948b1a3215584e10ccbf0d204b"><td class="memItemLeft" align="right" valign="top"><a id="ad4a673948b1a3215584e10ccbf0d204b"></a>
+QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> (int screenNum, const QString &amp;id)</td></tr>
+<tr class="separator:ad4a673948b1a3215584e10ccbf0d204b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44cc5d9fc498a6df4718a2305a80c4d"><td class="memItemLeft" align="right" valign="top"><a id="ab44cc5d9fc498a6df4718a2305a80c4d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const QString &amp;itemId, QPair&lt; int, QPoint &gt; &amp;pos)</td></tr>
+<tr class="separator:ab44cc5d9fc498a6df4718a2305a80c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0423ff8596495cd8d3f4ff9c14bf6a5f"><td class="memItemLeft" align="right" valign="top"><a id="a0423ff8596495cd8d3f4ff9c14bf6a5f"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>itemId</b> (int screenNum, int x, int y)</td></tr>
+<tr class="separator:a0423ff8596495cd8d3f4ff9c14bf6a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a547e23279d48f2fe16853692a29b76d7"><td class="memItemLeft" align="right" valign="top"><a id="a547e23279d48f2fe16853692a29b76d7"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>itemId</b> (int screenNum, QPoint pos)</td></tr>
+<tr class="separator:a547e23279d48f2fe16853692a29b76d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce174d503603c1d8ae123592ebb5c65"><td class="memItemLeft" align="right" valign="top"><a id="acce174d503603c1d8ae123592ebb5c65"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>itemTop</b> (int screenNum, int x, int y)</td></tr>
+<tr class="separator:acce174d503603c1d8ae123592ebb5c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee8402dcedbda2c324f990e5251a2fc"><td class="memItemLeft" align="right" valign="top"><a id="a2ee8402dcedbda2c324f990e5251a2fc"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>itemTop</b> (int screenNum, QPoint pos)</td></tr>
+<tr class="separator:a2ee8402dcedbda2c324f990e5251a2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7d9680c37f21eeb95f0bac14dcca3d"><td class="memItemLeft" align="right" valign="top"><a id="afd7d9680c37f21eeb95f0bac14dcca3d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEmpty</b> (int screenNum, int x, int y)</td></tr>
+<tr class="separator:afd7d9680c37f21eeb95f0bac14dcca3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f06cd3b63b461fc6e0fae2187c36f83"><td class="memItemLeft" align="right" valign="top"><a id="a3f06cd3b63b461fc6e0fae2187c36f83"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>overlapItems</b> (int screen) const</td></tr>
+<tr class="separator:a3f06cd3b63b461fc6e0fae2187c36f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2633f3301c1c692e5a2e56ca8e0a2181"><td class="memItemLeft" align="right" valign="top"><a id="a2633f3301c1c692e5a2e56ca8e0a2181"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>shouldArrange</b> () const</td></tr>
+<tr class="separator:a2633f3301c1c692e5a2e56ca8e0a2181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabdea623e88713bf03221b200472935"><td class="memItemLeft" align="right" valign="top"><a id="acabdea623e88713bf03221b200472935"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoArrange</b> () const</td></tr>
+<tr class="separator:acabdea623e88713bf03221b200472935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954350ee5aefe0fa1aa4c7e5d438867c"><td class="memItemLeft" align="right" valign="top"><a id="a954350ee5aefe0fa1aa4c7e5d438867c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoMerge</b> () const</td></tr>
+<tr class="separator:a954350ee5aefe0fa1aa4c7e5d438867c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72b35f32963853a827f97e7dc5687fc"><td class="memItemLeft" align="right" valign="top"><a id="ae72b35f32963853a827f97e7dc5687fc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>doneInit</b> () const</td></tr>
+<tr class="separator:ae72b35f32963853a827f97e7dc5687fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7b8402c0336362bc20316b6875cdf4"><td class="memItemLeft" align="right" valign="top"><a id="a6d7b8402c0336362bc20316b6875cdf4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggleArrange</b> ()</td></tr>
+<tr class="separator:a6d7b8402c0336362bc20316b6875cdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ab06d60c607ee6ef06aef003c358ab"><td class="memItemLeft" align="right" valign="top"><a id="a27ab06d60c607ee6ef06aef003c358ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoMerge</b> (bool enable=true)</td></tr>
+<tr class="separator:a27ab06d60c607ee6ef06aef003c358ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a9f306dd083410cf0b11f6673abfa2"><td class="memItemLeft" align="right" valign="top"><a id="a56a9f306dd083410cf0b11f6673abfa2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggleAutoMerge</b> ()</td></tr>
+<tr class="separator:a56a9f306dd083410cf0b11f6673abfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d59a5ea3e100860d6582c642706e3ce"><td class="memItemLeft" align="right" valign="top"><a id="a1d59a5ea3e100860d6582c642706e3ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reArrange</b> ()</td></tr>
+<tr class="separator:a1d59a5ea3e100860d6582c642706e3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ccd521f288830c680f52dfbc39290f"><td class="memItemLeft" align="right" valign="top"><a id="a54ccd521f288830c680f52dfbc39290f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>gridCount</b> () const</td></tr>
+<tr class="separator:a54ccd521f288830c680f52dfbc39290f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f91acccf61f334d907e1e0aba1a41d"><td class="memItemLeft" align="right" valign="top"><a id="ac9f91acccf61f334d907e1e0aba1a41d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>gridCount</b> (int screenNum) const</td></tr>
+<tr class="separator:ac9f91acccf61f334d907e1e0aba1a41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb54381598d7287f25f0c7b6e8f5ece"><td class="memItemLeft" align="right" valign="top"><a id="aabb54381598d7287f25f0c7b6e8f5ece"></a>
+QPair&lt; int, QPoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>forwardFindEmpty</b> (int screenNum, QPoint start) const</td></tr>
+<tr class="separator:aabb54381598d7287f25f0c7b6e8f5ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ca5fcb4a59306a9e7499e40870137a"><td class="memItemLeft" align="right" valign="top"><a id="a44ca5fcb4a59306a9e7499e40870137a"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>gridSize</b> (int screenNum) const</td></tr>
+<tr class="separator:a44ca5fcb4a59306a9e7499e40870137a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8c972ebb74c9366e44eec6ace1c165"><td class="memItemLeft" align="right" valign="top"><a id="a0c8c972ebb74c9366e44eec6ace1c165"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGridSize</b> (int screenNum, int w, int h)</td></tr>
+<tr class="separator:a0c8c972ebb74c9366e44eec6ace1c165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e357bd18ee24a57aa2104795dcf118"><td class="memItemLeft" align="right" valign="top"><a id="a79e357bd18ee24a57aa2104795dcf118"></a>
+<a class="el" href="class_grid_core.html">GridCore</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>core</b> ()</td></tr>
+<tr class="separator:a79e357bd18ee24a57aa2104795dcf118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117d11a9dc169360e0f68493de64432a"><td class="memItemLeft" align="right" valign="top"><a id="a117d11a9dc169360e0f68493de64432a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setWhetherShowHiddenFiles</b> (bool value) noexcept</td></tr>
+<tr class="separator:a117d11a9dc169360e0f68493de64432a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addde92a3eba6311e3643ebda7bc8c67b"><td class="memItemLeft" align="right" valign="top"><a id="addde92a3eba6311e3643ebda7bc8c67b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getWhetherShowHiddenFiles</b> () noexcept</td></tr>
+<tr class="separator:addde92a3eba6311e3643ebda7bc8c67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4cce45b82e9873938a80d95f72aa80e"><td class="memItemLeft" align="right" valign="top"><a id="ac4cce45b82e9873938a80d95f72aa80e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getCanvasFullStatus</b> (int screenId)</td></tr>
+<tr class="separator:ac4cce45b82e9873938a80d95f72aa80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac168f882da330314a7c795ccad6f88ee"><td class="memItemLeft" align="right" valign="top"><a id="ac168f882da330314a7c795ccad6f88ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDisplayMode</b> (bool single)</td></tr>
+<tr class="separator:ac168f882da330314a7c795ccad6f88ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923d0b63c5e3ad4136216536caf2fe4b"><td class="memItemLeft" align="right" valign="top"><a id="a923d0b63c5e3ad4136216536caf2fe4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delaySyncAllProfile</b> (int ms=100)</td></tr>
+<tr class="separator:a923d0b63c5e3ad4136216536caf2fe4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa201ec36160651147f3217022774bf36"><td class="memItemLeft" align="right" valign="top"><a id="aa201ec36160651147f3217022774bf36"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentVirtualExpandUrl</b> (const <a class="el" href="class_d_url.html">DUrl</a> url)</td></tr>
+<tr class="separator:aa201ec36160651147f3217022774bf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03efebcc520e3234516dbb72c5f849f0"><td class="memItemLeft" align="right" valign="top"><a id="a03efebcc520e3234516dbb72c5f849f0"></a>
+<a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentVirtualExpandUrl</b> ()</td></tr>
+<tr class="separator:a03efebcc520e3234516dbb72c5f849f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49bec0308861aa0b63d10fadf2e99d19"><td class="memItemLeft" align="right" valign="top"><a id="a49bec0308861aa0b63d10fadf2e99d19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentAllItems</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; DAbstractFileInfoPointer &gt; &amp;infoList)</td></tr>
+<tr class="separator:a49bec0308861aa0b63d10fadf2e99d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc6cbd60ca90fd9454c53fa14f5404a"><td class="memItemLeft" align="right" valign="top"><a id="a7bc6cbd60ca90fd9454c53fa14f5404a"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>isGsettingShow</b> (const QString &amp;targetkey, const QVariant defaultValue)</td></tr>
+<tr class="separator:a7bc6cbd60ca90fd9454c53fa14f5404a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e08e60d1b8bce9a814a0ec0ee486a3"><td class="memItemLeft" align="right" valign="top"><a id="ae4e08e60d1b8bce9a814a0ec0ee486a3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>desktopFileShow</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url, const bool defaultValue)</td></tr>
+<tr class="separator:ae4e08e60d1b8bce9a814a0ec0ee486a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886aa654ebecce848c720d87011214da"><td class="memItemLeft" align="right" valign="top"><a id="a886aa654ebecce848c720d87011214da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dump</b> ()</td></tr>
+<tr class="separator:a886aa654ebecce848c720d87011214da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a6168a640af6f35bc10ae41ced5c2e029"><td class="memItemLeft" align="right" valign="top"><a id="a6168a640af6f35bc10ae41ced5c2e029"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>sortMainDesktopFile</b> (QStringList &amp;list, int role, Qt::SortOrder order)</td></tr>
+<tr class="separator:a6168a640af6f35bc10ae41ced5c2e029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_singleton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_singleton')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="class_singleton.html">Singleton&lt; GridManager &gt;</a></td></tr>
+<tr class="memitem:a653aa7351e551af1bae09d01aa713091 inherit pub_static_methods_class_singleton"><td class="memItemLeft" align="right" valign="top"><a id="a653aa7351e551af1bae09d01aa713091"></a>
+static <a class="el" href="class_grid_manager.html">GridManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
+<tr class="separator:a653aa7351e551af1bae09d01aa713091 inherit pub_static_methods_class_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653aa7351e551af1bae09d01aa713091 inherit pub_static_methods_class_singleton"><td class="memItemLeft" align="right" valign="top"><a id="a653aa7351e551af1bae09d01aa713091"></a>
+static <a class="el" href="class_grid_manager.html">GridManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
+<tr class="separator:a653aa7351e551af1bae09d01aa713091 inherit pub_static_methods_class_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a7f651a2a5b15bfb8b09d3f2add845e29"><td class="memItemLeft" align="right" valign="top"><a id="a7f651a2a5b15bfb8b09d3f2add845e29"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_needRenameItem</b></td></tr>
+<tr class="separator:a7f651a2a5b15bfb8b09d3f2add845e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a088443fc2bc11eb7d2875351dca105a8"><td class="memItemLeft" align="right" valign="top"><a id="a088443fc2bc11eb7d2875351dca105a8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (int screenNum, QPoint pos, const QString &amp;id)</td></tr>
+<tr class="separator:a088443fc2bc11eb7d2875351dca105a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_singleton"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_singleton')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_singleton.html">Singleton&lt; GridManager &gt;</a></td></tr>
+<tr class="memitem:a363d3f7d5276e6ee74966d9606df2086 inherit pro_methods_class_singleton"><td class="memItemLeft" align="right" valign="top"><a id="a363d3f7d5276e6ee74966d9606df2086"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Singleton</b> (const <a class="el" href="class_singleton.html">Singleton</a> &amp;)</td></tr>
+<tr class="separator:a363d3f7d5276e6ee74966d9606df2086 inherit pro_methods_class_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90761b9486d76162ab59c871b5cc030f inherit pro_methods_class_singleton"><td class="memItemLeft" align="right" valign="top"><a id="a90761b9486d76162ab59c871b5cc030f"></a>
+<a class="el" href="class_singleton.html">Singleton</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_singleton.html">Singleton</a> &amp;)</td></tr>
+<tr class="separator:a90761b9486d76162ab59c871b5cc030f inherit pro_methods_class_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:aae9611b8cc0dd4e8e4912ba52d9f2ef5"><td class="memItemLeft" align="right" valign="top"><a id="aae9611b8cc0dd4e8e4912ba52d9f2ef5"></a>
+QScopedPointer&lt; <a class="el" href="class_grid_manager_private.html">GridManagerPrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d</b></td></tr>
+<tr class="separator:aae9611b8cc0dd4e8e4912ba52d9f2ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a8c2580261e025dbad5dc6f7e3c83d470"><td class="memItemLeft" align="right" valign="top"><a id="a8c2580261e025dbad5dc6f7e3c83d470"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Singleton&lt; GridManager &gt;</b></td></tr>
+<tr class="separator:a8c2580261e025dbad5dc6f7e3c83d470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="gridmanager_8h_source.html">gridmanager.h</a> 第 <a class="el" href="gridmanager_8h_source.html#l00026">26</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-desktop/presenter/<a class="el" href="gridmanager_8h_source.html">gridmanager.h</a></li>
+<li>dde-file-manager/dde-desktop/presenter/<a class="el" href="gridmanager_8cpp_source.html">gridmanager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_grid_manager.html">GridManager</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

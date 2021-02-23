@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dcc::bluetooth::Device类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdcc_1_1bluetooth_1_1_device.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classdcc_1_1bluetooth_1_1_device-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dcc::bluetooth::Device类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 dcc::bluetooth::Device 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1bluetooth_1_1_device__inherit__graph.png" border="0" usemap="#dcc_1_1bluetooth_1_1_device_inherit__map" alt="Inheritance graph"/></div>
+<map name="dcc_1_1bluetooth_1_1_device_inherit__map" id="dcc_1_1bluetooth_1_1_device_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+dcc::bluetooth::Device 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1bluetooth_1_1_device__coll__graph.png" border="0" usemap="#dcc_1_1bluetooth_1_1_device_coll__map" alt="Collaboration graph"/></div>
+<map name="dcc_1_1bluetooth_1_1_device_coll__map" id="dcc_1_1bluetooth_1_1_device_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa76eeaff0a6216a9cea0ba4e612b3a52"><td class="memItemLeft" align="right" valign="top"><a id="aa76eeaff0a6216a9cea0ba4e612b3a52"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>State</b> { <b>StateUnavailable</b> = 0, 
+<b>StateAvailable</b> = 1, 
+<b>StateConnected</b> = 2, 
+<b>StateDisconnecting</b> = 3
+ }</td></tr>
+<tr class="separator:aa76eeaff0a6216a9cea0ba4e612b3a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:aeabbcad7760f2ca0b5674619c6a0b986"><td class="memItemLeft" align="right" valign="top"><a id="aeabbcad7760f2ca0b5674619c6a0b986"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>nameChanged</b> (const QString &amp;name) const</td></tr>
+<tr class="separator:aeabbcad7760f2ca0b5674619c6a0b986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980a889556ebf48f2b5c483b6ba3d211"><td class="memItemLeft" align="right" valign="top"><a id="a980a889556ebf48f2b5c483b6ba3d211"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>aliasChanged</b> (const QString &amp;alias) const</td></tr>
+<tr class="separator:a980a889556ebf48f2b5c483b6ba3d211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51faf091fcda360f1c81397ed5dad27a"><td class="memItemLeft" align="right" valign="top"><a id="a51faf091fcda360f1c81397ed5dad27a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pairedChanged</b> (const bool &amp;paired) const</td></tr>
+<tr class="separator:a51faf091fcda360f1c81397ed5dad27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f17146406e7122ce1d0b69bddac0ee"><td class="memItemLeft" align="right" valign="top"><a id="ae2f17146406e7122ce1d0b69bddac0ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stateChanged</b> (const State &amp;state, bool paired) const</td></tr>
+<tr class="separator:ae2f17146406e7122ce1d0b69bddac0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d9d62515c7c5e556ac33538a0f01bf"><td class="memItemLeft" align="right" valign="top"><a id="a44d9d62515c7c5e556ac33538a0f01bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>trustedChanged</b> (const bool trusted) const</td></tr>
+<tr class="separator:a44d9d62515c7c5e556ac33538a0f01bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb644bf9fb14ed6ca36ec71f67760a09"><td class="memItemLeft" align="right" valign="top"><a id="afb644bf9fb14ed6ca36ec71f67760a09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connectingChanged</b> (const bool &amp;connecting) const</td></tr>
+<tr class="separator:afb644bf9fb14ed6ca36ec71f67760a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae17845a0781723b5a5576dbf9a5d0193"><td class="memItemLeft" align="right" valign="top"><a id="ae17845a0781723b5a5576dbf9a5d0193"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Device</b> (QObject *parent=0)</td></tr>
+<tr class="separator:ae17845a0781723b5a5576dbf9a5d0193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8510e233b06addaa7bee583ffa1ce9"><td class="memItemLeft" align="right" valign="top"><a id="a2f8510e233b06addaa7bee583ffa1ce9"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> () const</td></tr>
+<tr class="separator:a2f8510e233b06addaa7bee583ffa1ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560861f4223110dbf34fff78b673bb94"><td class="memItemLeft" align="right" valign="top"><a id="a560861f4223110dbf34fff78b673bb94"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setId</b> (const QString &amp;id)</td></tr>
+<tr class="separator:a560861f4223110dbf34fff78b673bb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e18aa0d672fd0965037b092883947c"><td class="memItemLeft" align="right" valign="top"><a id="ad0e18aa0d672fd0965037b092883947c"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>address</b> () const</td></tr>
+<tr class="separator:ad0e18aa0d672fd0965037b092883947c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd6651c4fb4c6a45960ae7fac0a4930"><td class="memItemLeft" align="right" valign="top"><a id="a9bd6651c4fb4c6a45960ae7fac0a4930"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddress</b> (const QString &amp;addr)</td></tr>
+<tr class="separator:a9bd6651c4fb4c6a45960ae7fac0a4930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d2b6f328feab027885d90af4098d65"><td class="memItemLeft" align="right" valign="top"><a id="a93d2b6f328feab027885d90af4098d65"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const</td></tr>
+<tr class="separator:a93d2b6f328feab027885d90af4098d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3753e42a3e1c8b59c5f1c1074bb503"><td class="memItemLeft" align="right" valign="top"><a id="a7f3753e42a3e1c8b59c5f1c1074bb503"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (const QString &amp;name)</td></tr>
+<tr class="separator:a7f3753e42a3e1c8b59c5f1c1074bb503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0464ee4f296a7cec84b2f7c56d77011c"><td class="memItemLeft" align="right" valign="top"><a id="a0464ee4f296a7cec84b2f7c56d77011c"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>alias</b> () const</td></tr>
+<tr class="separator:a0464ee4f296a7cec84b2f7c56d77011c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a348eb9f1a5b9619f78afe7772f9a0"><td class="memItemLeft" align="right" valign="top"><a id="a78a348eb9f1a5b9619f78afe7772f9a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlias</b> (const QString &amp;alias)</td></tr>
+<tr class="separator:a78a348eb9f1a5b9619f78afe7772f9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70d7cb4a1c033a2abbdb4a8c876eadf"><td class="memItemLeft" align="right" valign="top"><a id="af70d7cb4a1c033a2abbdb4a8c876eadf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>paired</b> () const</td></tr>
+<tr class="separator:af70d7cb4a1c033a2abbdb4a8c876eadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfa88a82179023f588332e3d12de2c3"><td class="memItemLeft" align="right" valign="top"><a id="a7dfa88a82179023f588332e3d12de2c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPaired</b> (bool paired)</td></tr>
+<tr class="separator:a7dfa88a82179023f588332e3d12de2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd1cc3f22ef3ca45d9003df89740d05"><td class="memItemLeft" align="right" valign="top"><a id="a6bd1cc3f22ef3ca45d9003df89740d05"></a>
+State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const</td></tr>
+<tr class="separator:a6bd1cc3f22ef3ca45d9003df89740d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67925c5fc0444a859a26487b8c7f8779"><td class="memItemLeft" align="right" valign="top"><a id="a67925c5fc0444a859a26487b8c7f8779"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setState</b> (const State &amp;state, bool connectState)</td></tr>
+<tr class="separator:a67925c5fc0444a859a26487b8c7f8779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029f69fc5a2bee0b4d6da2cf70e14aee"><td class="memItemLeft" align="right" valign="top"><a id="a029f69fc5a2bee0b4d6da2cf70e14aee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>trusted</b> () const</td></tr>
+<tr class="separator:a029f69fc5a2bee0b4d6da2cf70e14aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b7425b4dde420a4dedd9931a579cd2"><td class="memItemLeft" align="right" valign="top"><a id="ab5b7425b4dde420a4dedd9931a579cd2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTrusted</b> (bool trusted)</td></tr>
+<tr class="separator:ab5b7425b4dde420a4dedd9931a579cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6cb0da7d5485f99d63e2bb7b37c498"><td class="memItemLeft" align="right" valign="top"><a id="acd6cb0da7d5485f99d63e2bb7b37c498"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>connecting</b> () const</td></tr>
+<tr class="separator:acd6cb0da7d5485f99d63e2bb7b37c498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa670bff6c6327bf67f17fd7376dcf5"><td class="memItemLeft" align="right" valign="top"><a id="a2aa670bff6c6327bf67f17fd7376dcf5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setConnecting</b> (bool connecting)</td></tr>
+<tr class="separator:a2aa670bff6c6327bf67f17fd7376dcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818b27682ead71b7be9a8c63e615ae97"><td class="memItemLeft" align="right" valign="top"><a id="a818b27682ead71b7be9a8c63e615ae97"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>deviceType</b> () const</td></tr>
+<tr class="separator:a818b27682ead71b7be9a8c63e615ae97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b10c15c183ce9bd781908888e122c5a"><td class="memItemLeft" align="right" valign="top"><a id="a6b10c15c183ce9bd781908888e122c5a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDeviceType</b> (const QString &amp;deviceType)</td></tr>
+<tr class="separator:a6b10c15c183ce9bd781908888e122c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93908289163239f438b86078c78dfcd0"><td class="memItemLeft" align="right" valign="top"><a id="a93908289163239f438b86078c78dfcd0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>connectState</b> () const</td></tr>
+<tr class="separator:a93908289163239f438b86078c78dfcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9265233fedf52c1151aa099d32f46a4d"><td class="memItemLeft" align="right" valign="top"><a id="a9265233fedf52c1151aa099d32f46a4d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canSendFile</b> () const</td></tr>
+<tr class="separator:a9265233fedf52c1151aa099d32f46a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dde-control-center_2src_2frame_2modules_2bluetooth_2device_8h_source.html">device.h</a> 第 <a class="el" href="dde-control-center_2src_2frame_2modules_2bluetooth_2device_8h_source.html#l00054">54</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-control-center/src/frame/modules/bluetooth/<a class="el" href="dde-control-center_2src_2frame_2modules_2bluetooth_2device_8h_source.html">device.h</a></li>
+<li>dde-control-center/src/frame/modules/bluetooth/<a class="el" href="dde-control-center_2src_2frame_2modules_2bluetooth_2device_8cpp_source.html">device.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>dcc</b></li><li class="navelem"><b>bluetooth</b></li><li class="navelem"><a class="el" href="classdcc_1_1bluetooth_1_1_device.html">Device</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

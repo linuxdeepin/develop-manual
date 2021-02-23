@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: PDFParser::Implementation::PDFReader类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">PDFParser::Implementation::PDFReader类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+PDFParser::Implementation::PDFReader 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader__coll__graph.png" border="0" usemap="#_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_coll__map" alt="Collaboration graph"/></div>
+<map name="_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_coll__map" id="_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_array.html">PDFArray</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_boolean.html">PDFBoolean</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_dictionary.html">PDFDictionary</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_indirect_object.html">PDFIndirectObject</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_name.html">PDFName</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_null.html">PDFNull</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_numeric_float.html">PDFNumericFloat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_numeric_integer.html">PDFNumericInteger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_object.html">PDFObject</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_reference_call.html">PDFReferenceCall</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_stream.html">PDFStream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_string.html">PDFString</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_reference_info.html">ReferenceInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:addfc80eb6278058406d2ad6de7edfd02"><td class="memItemLeft" align="right" valign="top"><a id="addfc80eb6278058406d2ad6de7edfd02"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PDFObjectTypes</b> { <br />
+&#160;&#160;<b>dictionary</b>, 
+<b>boolean</b>, 
+<b>int_numeric</b>, 
+<b>float_numeric</b>, 
+<br />
+&#160;&#160;<b>array</b>, 
+<b>string</b>, 
+<b>name</b>, 
+<b>stream</b>, 
+<br />
+&#160;&#160;<b>null</b>, 
+<b>indirect_object</b>, 
+<b>reference_call</b>, 
+<b>operator_obj</b>, 
+<br />
+&#160;&#160;<b>unknown_obj</b>
+<br />
+ }</td></tr>
+<tr class="separator:addfc80eb6278058406d2ad6de7edfd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55e8fe4a08586d91e6dafacd15a1992"><td class="memItemLeft" align="right" valign="top"><a id="aa55e8fe4a08586d91e6dafacd15a1992"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CompressionTypes</b> { <br />
+&#160;&#160;<b>ascii_hex</b>, 
+<b>lzw</b>, 
+<b>rle</b>, 
+<b>ascii_85</b>, 
+<br />
+&#160;&#160;<b>flat</b>, 
+<b>unknown_compression</b>
+<br />
+ }</td></tr>
+<tr class="separator:aa55e8fe4a08586d91e6dafacd15a1992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00516959dfbf663899000301eca52a43"><td class="memItemLeft" align="right" valign="top"><a id="a00516959dfbf663899000301eca52a43"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>OperatorTypes</b> { <br />
+&#160;&#160;<b>Tj</b>, 
+<b>TJ</b>, 
+<b>Td</b>, 
+<b>TD</b>, 
+<br />
+&#160;&#160;<b>T_star</b>, 
+<b>Tm</b>, 
+<b>double_quote</b>, 
+<b>quote</b>, 
+<br />
+&#160;&#160;<b>TL</b>, 
+<b>BT</b>, 
+<b>ET</b>, 
+<b>Tf</b>, 
+<br />
+&#160;&#160;<b>TZ</b>, 
+<b>cm</b>, 
+<b>q</b>, 
+<b>Q</b>, 
+<br />
+&#160;&#160;<b>Tc</b>, 
+<b>Tw</b>, 
+<b>Ts</b>, 
+<b>Do</b>, 
+<br />
+&#160;&#160;<b>usecmap</b>, 
+<b>begincidrange</b>, 
+<b>endcidrange</b>, 
+<b>begincidchar</b>, 
+<br />
+&#160;&#160;<b>endcidchar</b>, 
+<b>beginnotdefrange</b>, 
+<b>endnotdefrange</b>, 
+<b>beginnotdefchar</b>, 
+<br />
+&#160;&#160;<b>endnotdefchar</b>, 
+<b>beginbfrange</b>, 
+<b>endbfrange</b>, 
+<b>beginbfchar</b>, 
+<br />
+&#160;&#160;<b>endbfchar</b>, 
+<b>unknown_operator</b>
+<br />
+ }</td></tr>
+<tr class="separator:a00516959dfbf663899000301eca52a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a08405c19e08b7c24482646f4fa0d66b6"><td class="memItemLeft" align="right" valign="top"><a id="a08405c19e08b7c24482646f4fa0d66b6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PDFReader</b> (<a class="el" href="classdoctotext_1_1_data_stream.html">DataStream</a> *data_stream)</td></tr>
+<tr class="separator:a08405c19e08b7c24482646f4fa0d66b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4140b266ec358ff93d2e84e5f8cc17"><td class="memItemLeft" align="right" valign="top"><a id="a7e4140b266ec358ff93d2e84e5f8cc17"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readLine</b> (std::string &amp;line)</td></tr>
+<tr class="separator:a7e4140b266ec358ff93d2e84e5f8cc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cf6d037ded0c4022bf8ee6857765ba"><td class="memItemLeft" align="right" valign="top"><a id="a93cf6d037ded0c4022bf8ee6857765ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>skipComment</b> ()</td></tr>
+<tr class="separator:a93cf6d037ded0c4022bf8ee6857765ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6ada25773627079cd4ca1214f8abe8"><td class="memItemLeft" align="right" valign="top"><a id="a7d6ada25773627079cd4ca1214f8abe8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>skipKeyword</b> (const std::string &amp;keyword)</td></tr>
+<tr class="separator:a7d6ada25773627079cd4ca1214f8abe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc23ccd807ba2822ed19eddac67a685"><td class="memItemLeft" align="right" valign="top"><a id="aafc23ccd807ba2822ed19eddac67a685"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readName</b> (<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_name.html">PDFName</a> &amp;name)</td></tr>
+<tr class="separator:aafc23ccd807ba2822ed19eddac67a685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c62b8008f385bb1ff2949dd93e1f91"><td class="memItemLeft" align="right" valign="top"><a id="a49c62b8008f385bb1ff2949dd93e1f91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readString</b> (<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_string.html">PDFString</a> &amp;string)</td></tr>
+<tr class="separator:a49c62b8008f385bb1ff2949dd93e1f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9c4e65287494877af9cda7c7bb9e8b"><td class="memItemLeft" align="right" valign="top"><a id="a2b9c4e65287494877af9cda7c7bb9e8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readBoolean</b> (<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_boolean.html">PDFBoolean</a> &amp;boolean)</td></tr>
+<tr class="separator:a2b9c4e65287494877af9cda7c7bb9e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d0610ca33dc50a5322ca70cdbfb9ad"><td class="memItemLeft" align="right" valign="top"><a id="a39d0610ca33dc50a5322ca70cdbfb9ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readArray</b> (<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_array.html">PDFArray</a> &amp;array)</td></tr>
+<tr class="separator:a39d0610ca33dc50a5322ca70cdbfb9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e206936825fecb89d16be9e2ea244c"><td class="memItemLeft" align="right" valign="top"><a id="a26e206936825fecb89d16be9e2ea244c"></a>
+<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_object.html">PDFObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>readNumeric</b> ()</td></tr>
+<tr class="separator:a26e206936825fecb89d16be9e2ea244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11370bbc786dbce8b09c476cebd7998"><td class="memItemLeft" align="right" valign="top"><a id="aa11370bbc786dbce8b09c476cebd7998"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readNull</b> (<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_null.html">PDFNull</a> &amp;null)</td></tr>
+<tr class="separator:aa11370bbc786dbce8b09c476cebd7998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8aa0d9de933234a5b073954d65b64e8"><td class="memItemLeft" align="right" valign="top"><a id="ad8aa0d9de933234a5b073954d65b64e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readStream</b> (<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_stream.html">PDFStream</a> &amp;stream)</td></tr>
+<tr class="separator:ad8aa0d9de933234a5b073954d65b64e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38d474b9047d429e466b61048c38913"><td class="memItemLeft" align="right" valign="top"><a id="af38d474b9047d429e466b61048c38913"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readIndirectReference</b> (<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_reference_call.html">PDFReferenceCall</a> &amp;reference)</td></tr>
+<tr class="separator:af38d474b9047d429e466b61048c38913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ba694f09197ad26c186f973d1af507"><td class="memItemLeft" align="right" valign="top"><a id="a77ba694f09197ad26c186f973d1af507"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readDictionary</b> (<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_dictionary.html">PDFDictionary</a> &amp;dictionary)</td></tr>
+<tr class="separator:a77ba694f09197ad26c186f973d1af507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70a0959c34e4fdce44f024c6fa3eee7"><td class="memItemLeft" align="right" valign="top"><a id="ab70a0959c34e4fdce44f024c6fa3eee7"></a>
+<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_object.html">PDFObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>readIndirectObject</b> (size_t index)</td></tr>
+<tr class="separator:ab70a0959c34e4fdce44f024c6fa3eee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fb9e42286c5b12ed0d670e6f656fc6"><td class="memItemLeft" align="right" valign="top"><a id="ae6fb9e42286c5b12ed0d670e6f656fc6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>seek</b> (int offset, int whence)</td></tr>
+<tr class="separator:ae6fb9e42286c5b12ed0d670e6f656fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00be6660111d3ce62ab42697431e03e9"><td class="memItemLeft" align="right" valign="top"><a id="a00be6660111d3ce62ab42697431e03e9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (char *buffer, size_t elements_len, size_t elements_count)</td></tr>
+<tr class="separator:a00be6660111d3ce62ab42697431e03e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf41fb7bd60e016870ff4e259c33149"><td class="memItemLeft" align="right" valign="top"><a id="aebf41fb7bd60e016870ff4e259c33149"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>tell</b> ()</td></tr>
+<tr class="separator:aebf41fb7bd60e016870ff4e259c33149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a51c022d470db85fb94e634057487ecdd"><td class="memItemLeft" align="right" valign="top"><a id="a51c022d470db85fb94e634057487ecdd"></a>
+static CompressionTypes&#160;</td><td class="memItemRight" valign="bottom"><b>getCompressionCode</b> (const std::string &amp;compression_name)</td></tr>
+<tr class="separator:a51c022d470db85fb94e634057487ecdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d30493ce38caa0d35a55fe9f8c2c87"><td class="memItemLeft" align="right" valign="top"><a id="a49d30493ce38caa0d35a55fe9f8c2c87"></a>
+static OperatorTypes&#160;</td><td class="memItemRight" valign="bottom"><b>getOperatorCode</b> (const std::string &amp;operator_name)</td></tr>
+<tr class="separator:a49d30493ce38caa0d35a55fe9f8c2c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ada5e0d345ce68dbe028b13d52ed79942"><td class="memItemLeft" align="right" valign="top"><a id="ada5e0d345ce68dbe028b13d52ed79942"></a>
+<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_dictionary.html">PDFDictionary</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_root_dictionary</b></td></tr>
+<tr class="separator:ada5e0d345ce68dbe028b13d52ed79942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0248923965cb0cc9158886b3998eac"><td class="memItemLeft" align="right" valign="top"><a id="acc0248923965cb0cc9158886b3998eac"></a>
+<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_dictionary.html">PDFDictionary</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_info</b></td></tr>
+<tr class="separator:acc0248923965cb0cc9158886b3998eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae330db83a4891b163109450c42a7a9e6"><td class="memItemLeft" align="right" valign="top"><a id="ae330db83a4891b163109450c42a7a9e6"></a>
+<a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_stream.html">PDFStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_metadata</b></td></tr>
+<tr class="separator:ae330db83a4891b163109450c42a7a9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="pdf__parser_8cpp_source.html">pdf_parser.cpp</a> 第 <a class="el" href="pdf__parser_8cpp_source.html#l00867">867</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/3rdParty/doctotext/<a class="el" href="pdf__parser_8cpp_source.html">pdf_parser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_p_d_f_parser.html">PDFParser</a></li><li class="navelem"><a class="el" href="struct_p_d_f_parser_1_1_implementation.html">Implementation</a></li><li class="navelem"><a class="el" href="class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader.html">PDFReader</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

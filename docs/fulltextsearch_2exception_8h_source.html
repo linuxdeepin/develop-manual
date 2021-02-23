@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-lib/fulltextsearch/exception.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('fulltextsearch_2exception_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">exception.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DOCTOTEXT_EXCEPTION_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DOCTOTEXT_EXCEPTION_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacedoctotext.html">doctotext</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">class </span>Exception : <span class="keyword">public</span> std::exception</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">private</span>:</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keyword">struct </span>Implementation;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            Implementation* <a class="code" href="namespaceimpl.html">impl</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">public</span>:</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            Exception() throw();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            Exception(const <a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">string</span>&amp; first_error_message) throw();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            Exception(const Exception&amp; ex) throw();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            ~Exception() throw();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            Exception&amp; operator = (const Exception&amp; ex) throw();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            const <span class="keywordtype">char</span>* what(){ <span class="keywordflow">return</span> <span class="stringliteral">&quot;doctotext_exception&quot;</span>; }</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            std::string <a class="code" href="classdoctotext_1_1_exception.html#a1490b6df103141fa84635a18b5628cec">getBacktrace</a>();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classdoctotext_1_1_exception.html#a49922ad8840470895a5958c9716b518c">appendError</a>(<span class="keyword">const</span> std::string&amp; error_message);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            std::list&lt;std::string&gt;::iterator <a class="code" href="classdoctotext_1_1_exception.html#a7bae2072b466585125edc5f467ddf2b2">getErrorIterator</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordtype">size_t</span> <a class="code" href="classdoctotext_1_1_exception.html#ac0b8aca0e868e6d04c1f63615bda0c88">getErrorCount</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacedoctotext_html"><div class="ttname"><a href="namespacedoctotext.html">doctotext</a></div><div class="ttdef"><b>Definition:</b> <a href="3rd_party_2doctotext_2attachment_8h_source.html#l00008">attachment.h:8</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_exception_html_ac0b8aca0e868e6d04c1f63615bda0c88"><div class="ttname"><a href="classdoctotext_1_1_exception.html#ac0b8aca0e868e6d04c1f63615bda0c88">doctotext::Exception::getErrorCount</a></div><div class="ttdeci">size_t getErrorCount() const</div><div class="ttdef"><b>Definition:</b> <a href="exception_8cpp_source.html#l00134">exception.cpp:134</a></div></div>
+<div class="ttc" id="namespaceimpl_html"><div class="ttname"><a href="namespaceimpl.html">impl</a></div><div class="ttdef"><b>Definition:</b> <a href="dsqlitehandle_8cpp_source.html#l00067">dsqlitehandle.cpp:67</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="dsqlitehandle_8cpp_source.html#l00045">dsqlitehandle.cpp:45</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_exception_html_a49922ad8840470895a5958c9716b518c"><div class="ttname"><a href="classdoctotext_1_1_exception.html#a49922ad8840470895a5958c9716b518c">doctotext::Exception::appendError</a></div><div class="ttdeci">void appendError(const std::string &amp;error_message)</div><div class="ttdef"><b>Definition:</b> <a href="exception_8cpp_source.html#l00124">exception.cpp:124</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_exception_html_a1490b6df103141fa84635a18b5628cec"><div class="ttname"><a href="classdoctotext_1_1_exception.html#a1490b6df103141fa84635a18b5628cec">doctotext::Exception::getBacktrace</a></div><div class="ttdeci">std::string getBacktrace()</div><div class="ttdef"><b>Definition:</b> <a href="exception_8cpp_source.html#l00114">exception.cpp:114</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_exception_html_a7bae2072b466585125edc5f467ddf2b2"><div class="ttname"><a href="classdoctotext_1_1_exception.html#a7bae2072b466585125edc5f467ddf2b2">doctotext::Exception::getErrorIterator</a></div><div class="ttdeci">std::list&lt; std::string &gt;::iterator getErrorIterator() const</div><div class="ttdef"><b>Definition:</b> <a href="exception_8cpp_source.html#l00129">exception.cpp:129</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_f9029d0d717014796f47cbb96a029b81.html">dde-file-manager-lib</a></li><li class="navelem"><a class="el" href="dir_b22e54f57c128ea1ecf706271b288220.html">fulltextsearch</a></li><li class="navelem"><b>exception.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:18 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

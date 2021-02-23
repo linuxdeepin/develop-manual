@@ -1,0 +1,41 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node891 [label="QUndoCommand",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node891 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="CBringToFrontCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_bring_to_front_command.html",tooltip="The CBringToFrontCommand class 图元置顶撤消重做命令graphicsScene "];
+  Node891 -> Node893 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node893 [label="CItemsAlignCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_items_align_command.html",tooltip="The CItemsAlignCommand class 设置图元对齐 "];
+  Node891 -> Node894 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node894 [label="COneLayerDownCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_one_layer_down_command.html",tooltip="The COneLayerDownCommand class 图元向下一层撤消重做命令 "];
+  Node891 -> Node895 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node895 [label="COneLayerUpCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_one_layer_up_command.html",tooltip="The COneLayerUpCommand class 图元向上一层撤消重做命令 "];
+  Node891 -> Node896 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node896 [label="CSceneCutCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_scene_cut_command.html",tooltip="The CSceneCutCommand class 裁剪撤消重做命令 "];
+  Node891 -> Node897 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node897 [label="CSendToBackCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_send_to_back_command.html",tooltip="The CSendToBackCommand class 图元置底撤消重做命令 "];
+  Node891 -> Node898 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node898 [label="CUndoRedoCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_undo_redo_command.html",tooltip="The CUndoRedoCommand class 撤销还原的基类 "];
+  Node898 -> Node899 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node899 [label="CFunUndoRedo\< UndoFun,\l RedoFun \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_fun_undo_redo.html",tooltip="The CFunUndoRedo 执行一个函数的undo redo "];
+  Node898 -> Node900 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node900 [label="CItemUndoRedoCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_item_undo_redo_command.html",tooltip="The CItemUndoRedoCommand 图元相关的操作 "];
+  Node900 -> Node901 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node901 [label="CBzItemAllCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_bz_item_all_command.html",tooltip="The CItemMoveCommand 画板 移动图元 "];
+  Node900 -> Node902 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node902 [label="CItemMoveCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_item_move_command.html",tooltip="The CItemMoveCommand 画板 移动图元 "];
+  Node900 -> Node903 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node903 [label="CItemSizeCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_item_size_command.html",tooltip="The CItemSizeCommand item图元大小变化 "];
+  Node898 -> Node904 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node904 [label="CSceneUndoRedoCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_scene_undo_redo_command.html",tooltip="The CSceneUndoRedoCommand 场景相关的操作 "];
+  Node904 -> Node905 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node905 [label="CSceneBoundingChangedCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_scene_bounding_changed_command.html"];
+  Node904 -> Node906 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node906 [label="CSceneGroupChangedCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_scene_group_changed_command.html"];
+  Node904 -> Node907 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node907 [label="CSceneItemNumChangedCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_scene_item_num_changed_command.html"];
+  Node898 -> Node908 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node908 [label="CUndoRedoCommandGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_undo_redo_command_group.html",tooltip="The CUndoRedoCommandGroup 撤销还原操作组 "];
+}

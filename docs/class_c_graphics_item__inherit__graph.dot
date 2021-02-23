@@ -1,0 +1,31 @@
+digraph "CGraphicsItem"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="CGraphicsItem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="QAbstractGraphicsShapeItem",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CGraphicsCutItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_cut_item.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CGraphicsItemGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_item_group.html",tooltip="The CGraphicsItemGroup class 组合图元管理类 所有的图元操作都通过该类执行。 "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CGraphicsLineItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_line_item.html"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CGraphicsPenItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_pen_item.html"];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CGraphicsRectItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_rect_item.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CGraphicsEllipseItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_ellipse_item.html"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CGraphicsPolygonalStarItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_polygonal_star_item.html"];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CGraphicsPolygonItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_polygon_item.html"];
+  Node6 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CGraphicsTextItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_text_item.html"];
+  Node6 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CGraphicsTriangleItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_triangle_item.html"];
+  Node6 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="CPictureItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_picture_item.html"];
+}

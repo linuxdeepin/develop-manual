@@ -1,0 +1,37 @@
+var class_d_f_m_task_widget =
+[
+    [ "BUTTON", "class_d_f_m_task_widget.html#a4a4fcbbb41c21478a9e4105019c5b8ab", [
+      [ "PAUSE", "class_d_f_m_task_widget.html#a4a4fcbbb41c21478a9e4105019c5b8abae153d4870b95765c608773d196b670a2", null ],
+      [ "STOP", "class_d_f_m_task_widget.html#a4a4fcbbb41c21478a9e4105019c5b8aba528ddf0556f63f0a0a13c2cb8c0c1211", null ],
+      [ "SKIP", "class_d_f_m_task_widget.html#a4a4fcbbb41c21478a9e4105019c5b8aba4eb6f8cc85f3d4381938b71ed2c097f8", null ],
+      [ "REPLACE", "class_d_f_m_task_widget.html#a4a4fcbbb41c21478a9e4105019c5b8abae294aea53b655652e5b9df72dac2e8a6", null ],
+      [ "COEXIST", "class_d_f_m_task_widget.html#a4a4fcbbb41c21478a9e4105019c5b8aba4d2020a99f00c348bc23aea40811ba77", null ],
+      [ "CHECKBOX_NOASK", "class_d_f_m_task_widget.html#a4a4fcbbb41c21478a9e4105019c5b8abad6b783f0875422d5a1ca1d2f1aff0930", null ]
+    ] ],
+    [ "DFMTaskWidget", "class_d_f_m_task_widget.html#aa72ea52daa1d4114f8f7f026d1fe4ade", null ],
+    [ "~DFMTaskWidget", "class_d_f_m_task_widget.html#a50083e82fe981c9176cbdb97d2934bd4", null ],
+    [ "butonClicked", "class_d_f_m_task_widget.html#ad08fd7c10d5161e7a0dae15c60b99c46", null ],
+    [ "enterEvent", "class_d_f_m_task_widget.html#a4862e5a7fd9850cdbaf5f927e4275dd7", null ],
+    [ "getButton", "class_d_f_m_task_widget.html#ae63784bffa212eb463204094d74d2f78", null ],
+    [ "heightChanged", "class_d_f_m_task_widget.html#a32a90ff2728c08128b0945a50ed903ce", null ],
+    [ "hideButton", "class_d_f_m_task_widget.html#a188708235b8638f2c6c584618ad5eb5e", null ],
+    [ "hoverChanged", "class_d_f_m_task_widget.html#a60e88a01db6b9ee4bd57482552036bb3", null ],
+    [ "leaveEvent", "class_d_f_m_task_widget.html#ae1431ad5fe126e285cad888791a26f29", null ],
+    [ "onBurnProgressChanged", "class_d_f_m_task_widget.html#a2e9356e0543f791d68496234a43adcfa", null ],
+    [ "onMouseHover", "class_d_f_m_task_widget.html#a11c67466bdb4ee8be4b5d5716ed49cf7", null ],
+    [ "onProgressChanged", "class_d_f_m_task_widget.html#ab0a2a23da49e37abad8733d0872f1e0f", null ],
+    [ "onSpeedUpdated", "class_d_f_m_task_widget.html#a098d70cf19d1f67607b237a1f0112edb", null ],
+    [ "onStateChanged", "class_d_f_m_task_widget.html#aa740fd7b9b85265686e4d4c017864ce5", null ],
+    [ "paintEvent", "class_d_f_m_task_widget.html#acfd06f9e3ff59d6b8ad1bf71740b4e7d", null ],
+    [ "progressStart", "class_d_f_m_task_widget.html#af8899df456762ef7aa13636acc08d375", null ],
+    [ "setButtonText", "class_d_f_m_task_widget.html#ace96fa4b9df23d4fd3fb517f6cab152e", null ],
+    [ "setConflictMsg", "class_d_f_m_task_widget.html#abd2e4e6b90eb35673247ec84568af9dc", null ],
+    [ "setErrorMsg", "class_d_f_m_task_widget.html#af7a9a82e00b06cd7ac6a9d05dde937b3", null ],
+    [ "setHoverEnable", "class_d_f_m_task_widget.html#ab0045a3afdf12e47b8d669f8a4220345", null ],
+    [ "setMsgText", "class_d_f_m_task_widget.html#a18317c17654a029213760f55d10a919b", null ],
+    [ "setProgressValue", "class_d_f_m_task_widget.html#afb750681334c4d5d589342be14abb194", null ],
+    [ "setSpeedText", "class_d_f_m_task_widget.html#af08658e662460328cacf852b9506a009", null ],
+    [ "setTaskId", "class_d_f_m_task_widget.html#a15ad8ac00d1d40f1d316a7af0a23352b", null ],
+    [ "showConflictButtons", "class_d_f_m_task_widget.html#a548980fd7d40c01e95cd94049552be60", null ],
+    [ "taskId", "class_d_f_m_task_widget.html#a36aa19713ad2ccfd7fe8c29de6abc246", null ]
+];

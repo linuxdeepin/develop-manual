@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-lib/vault/openssl/pbkdf2.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('pbkdf2_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">pbkdf2.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;pbkdf2.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;openssl/bn.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;openssl/evp.h&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">char</span> pbkdf2::nibble_to_hex_char(<span class="keywordtype">char</span> nibble)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">char</span> buf[16] = {<span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;1&#39;</span>, <span class="charliteral">&#39;2&#39;</span>, <span class="charliteral">&#39;3&#39;</span>, <span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;5&#39;</span>, <span class="charliteral">&#39;6&#39;</span>, <span class="charliteral">&#39;7&#39;</span>,</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                    <span class="charliteral">&#39;8&#39;</span>, <span class="charliteral">&#39;9&#39;</span>, <span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;d&#39;</span>, <span class="charliteral">&#39;e&#39;</span>, <span class="charliteral">&#39;f&#39;</span>};</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">return</span> buf[nibble &amp; 0xF];</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">char</span> *pbkdf2::octet_string_hex_string(<span class="keyword">const</span> <span class="keywordtype">char</span> *str, <span class="keywordtype">int</span> length)</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *s = str;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> i = 0;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    length *= 2;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span>(length &gt; CLIPHER_LENGHT_MAX)</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        length = CLIPHER_LENGHT_MAX - 1;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">char</span> *bit_string = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(malloc(<span class="keywordtype">size_t</span>(length+1)));</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">for</span>(i = 0; i &lt; length; i += 2){</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        bit_string[i] = nibble_to_hex_char(*s &gt;&gt; 4);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        bit_string[i+1] = nibble_to_hex_char(*s &amp; 0xF);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        s++;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    bit_string[i] = 0;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> bit_string;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// 生成随机盐</span></div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classpbkdf2.html#a1d522846b582602dea409259f78d0bfb">   37</a></span>&#160;QString <a class="code" href="classpbkdf2.html#a1d522846b582602dea409259f78d0bfb">pbkdf2::createRandomSalt</a>(<span class="keywordtype">int</span> byte)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    BIGNUM *rnd = BN_new();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> bits = byte * 4;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> top = 0, bottom = 0;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    BN_rand(rnd, bits, top, bottom);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">char</span> *cstr = BN_bn2hex(rnd);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QString strRandSalt = QString::fromUtf8(QByteArray(cstr));</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    BN_free(rnd);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> strRandSalt;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classpbkdf2.html#a63928d7a50fabdba2aed1d48e455a065">   53</a></span>&#160;QString <a class="code" href="classpbkdf2.html#a63928d7a50fabdba2aed1d48e455a065">pbkdf2::pbkdf2EncrypyPassword</a>(<span class="keyword">const</span> QString &amp;password, <span class="keyword">const</span> QString &amp;randSalt, <span class="keywordtype">int</span> iteration, <span class="keywordtype">int</span> clipherByteNum)</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(clipherByteNum &lt; 0 || clipherByteNum % 2 != 0)</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;clipherByteNum can&#39;t less than zero and must be even!&quot;</span>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// 字节长度</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> nClipherLength = clipherByteNum / 2;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// 格式化随机盐</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    uchar salt_value[SALT_LENGTH_MAX];</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    memset(salt_value, 0, SALT_LENGTH_MAX);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> nSaltLength = randSalt.length();</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; nSaltLength; i++){</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        salt_value[i] = uchar(randSalt.at(i).toLatin1());</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 生成密文</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QString strClipherText(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    uchar *out = <span class="keyword">reinterpret_cast&lt;</span>uchar*<span class="keyword">&gt;</span>(malloc(<span class="keywordtype">size_t</span>(clipherByteNum/2 + 1)));</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    memset(out, 0, <span class="keywordtype">size_t</span>(clipherByteNum/2 + 1));</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// 修复wayland-bug-51478</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *pwd = password.toStdString().c_str();</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span>(PKCS5_PBKDF2_HMAC_SHA1(pwd, password.length(),</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                              salt_value, randSalt.length(),</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                              iteration,</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                              nClipherLength,</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                              out) != 0){</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">char</span> *pstr = octet_string_hex_string(reinterpret_cast&lt;char*&gt;(out), nClipherLength);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">// 修复wayland-bug-51478</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        strClipherText = QString(pstr);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;PKCS5_PBKDF2_HMAC_SHA1 failed&quot;</span>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    free(out);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> strClipherText;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div><div class="ttc" id="classpbkdf2_html_a63928d7a50fabdba2aed1d48e455a065"><div class="ttname"><a href="classpbkdf2.html#a63928d7a50fabdba2aed1d48e455a065">pbkdf2::pbkdf2EncrypyPassword</a></div><div class="ttdeci">static QString pbkdf2EncrypyPassword(const QString &amp;password, const QString &amp;randSalt, int iteration, int clipherByteNum)</div><div class="ttdoc">pbkdf2EncrypyPassword PBKDF2加密密码 </div><div class="ttdef"><b>Definition:</b> <a href="pbkdf2_8cpp_source.html#l00053">pbkdf2.cpp:53</a></div></div>
+<div class="ttc" id="classpbkdf2_html_a1d522846b582602dea409259f78d0bfb"><div class="ttname"><a href="classpbkdf2.html#a1d522846b582602dea409259f78d0bfb">pbkdf2::createRandomSalt</a></div><div class="ttdeci">static QString createRandomSalt(int byte)</div><div class="ttdoc">createRandomSalt 创建随机数（十六进制字符串） </div><div class="ttdef"><b>Definition:</b> <a href="pbkdf2_8cpp_source.html#l00037">pbkdf2.cpp:37</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_f9029d0d717014796f47cbb96a029b81.html">dde-file-manager-lib</a></li><li class="navelem"><a class="el" href="dir_8945fe81f6cffdce26fbcb845efe8250.html">vault</a></li><li class="navelem"><a class="el" href="dir_baa878564ca48f436435180523ddb04e.html">openssl</a></li><li class="navelem"><b>pbkdf2.cpp</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:21 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-dock/frame/util/abstractpluginscontroller.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('abstractpluginscontroller_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">abstractpluginscontroller.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2011 ~ 2018 Deepin Technology Co., Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Author:     sbw &lt;sbw@sbw.so&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Maintainer: sbw &lt;sbw@sbw.so&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * any later version.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef ABSTRACTPLUGINSCONTROLLER_H</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define ABSTRACTPLUGINSCONTROLLER_H</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;pluginproxyinterface.h&quot;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;pluginloader.h&quot;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;com_deepin_dde_daemon_dock.h&gt;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;QPluginLoader&gt;</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;QList&gt;</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;QMap&gt;</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QDBusConnectionInterface&gt;</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using</span> <a class="code" href="class_d_bus_dock.html">DockDaemonInter</a> = <a class="code" href="class_d_bus_dock.html">com::deepin::dde::daemon::Dock</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span><a class="code" href="class_plugins_item_interface.html">PluginsItemInterface</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_abstract_plugins_controller.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_abstract_plugins_controller.html">AbstractPluginsController</a> : <span class="keyword">public</span> QObject, <a class="code" href="class_plugin_proxy_interface.html">PluginProxyInterface</a></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_abstract_plugins_controller.html">AbstractPluginsController</a>(QObject *parent = 0);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// implements PluginProxyInterface</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_abstract_plugins_controller.html#ade7d304e9226cb7cda9aceb9f539b050">saveValue</a>(<a class="code" href="class_plugins_item_interface.html">PluginsItemInterface</a> *<span class="keyword">const</span> itemInter, <span class="keyword">const</span> QString &amp;key, <span class="keyword">const</span> QVariant &amp;value) <span class="keyword">override</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> QVariant <a class="code" href="class_abstract_plugins_controller.html#a16495b307894de0409575a7522700d41">getValue</a>(<a class="code" href="class_plugins_item_interface.html">PluginsItemInterface</a> *<span class="keyword">const</span> itemInter, <span class="keyword">const</span> QString &amp;key, <span class="keyword">const</span> QVariant&amp; fallback = QVariant()) <span class="keyword">override</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_abstract_plugins_controller.html#aa4f92f7c2bad8bf3b83eea9df82276d1">removeValue</a>(<a class="code" href="class_plugins_item_interface.html">PluginsItemInterface</a> * <span class="keyword">const</span> itemInter, <span class="keyword">const</span> QStringList &amp;keyList) <span class="keyword">override</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;signals:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> pluginLoaderFinished();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_q_map.html">QMap&lt;PluginsItemInterface *, QMap&lt;QString, QObject *&gt;</a>&gt; &amp;pluginsMap();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QObject *pluginItemAt(<a class="code" href="class_plugins_item_interface.html">PluginsItemInterface</a> * <span class="keyword">const</span> itemInter, <span class="keyword">const</span> QString &amp;itemKey) <span class="keyword">const</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_plugins_item_interface.html">PluginsItemInterface</a> *pluginInterAt(<span class="keyword">const</span> QString &amp;itemKey);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_plugins_item_interface.html">PluginsItemInterface</a> *pluginInterAt(QObject *destItem);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">protected</span> Q_SLOTS:</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> startLoader(<a class="code" href="class_plugin_loader.html">PluginLoader</a> *loader);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> displayModeChanged();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> positionChanged();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> loadPlugin(<span class="keyword">const</span> QString &amp;pluginFile, <span class="keywordtype">bool</span> lastone);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> initPlugin(<a class="code" href="class_plugins_item_interface.html">PluginsItemInterface</a> *interface);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> refreshPluginSettings();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> eventFilter(QObject *o, QEvent *e) <span class="keyword">override</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QDBusConnectionInterface *m_dbusDaemonInterface;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_d_bus_dock.html">DockDaemonInter</a> *m_dockDaemonInter;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="class_q_map.html">QMap&lt;PluginsItemInterface *, QMap&lt;QString, QObject *&gt;</a>&gt; m_pluginsMap;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QJsonObject m_pluginSettingsObject;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif // ABSTRACTPLUGINSCONTROLLER_H</span></div><div class="ttc" id="class_d_bus_dock_html"><div class="ttname"><a href="class_d_bus_dock.html">DBusDock</a></div><div class="ttdef"><b>Definition:</b> <a href="dde-file-manager_2dde-desktop_2dbus_2dbusdock_8h_source.html#l00043">dbusdock.h:43</a></div></div>
+<div class="ttc" id="class_plugin_proxy_interface_html"><div class="ttname"><a href="class_plugin_proxy_interface.html">PluginProxyInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="pluginproxyinterface_8h_source.html#l00030">pluginproxyinterface.h:30</a></div></div>
+<div class="ttc" id="class_abstract_plugins_controller_html_ade7d304e9226cb7cda9aceb9f539b050"><div class="ttname"><a href="class_abstract_plugins_controller.html#ade7d304e9226cb7cda9aceb9f539b050">AbstractPluginsController::saveValue</a></div><div class="ttdeci">void saveValue(PluginsItemInterface *const itemInter, const QString &amp;key, const QVariant &amp;value) override</div><div class="ttdoc">saveValue save module config to .config/deepin/dde-dock.conf all key-values of all plugins will be sa...</div><div class="ttdef"><b>Definition:</b> <a href="abstractpluginscontroller_8cpp_source.html#l00051">abstractpluginscontroller.cpp:51</a></div></div>
+<div class="ttc" id="class_abstract_plugins_controller_html"><div class="ttname"><a href="class_abstract_plugins_controller.html">AbstractPluginsController</a></div><div class="ttdef"><b>Definition:</b> <a href="abstractpluginscontroller_8h_source.html#l00038">abstractpluginscontroller.h:38</a></div></div>
+<div class="ttc" id="class_abstract_plugins_controller_html_a16495b307894de0409575a7522700d41"><div class="ttname"><a href="class_abstract_plugins_controller.html#a16495b307894de0409575a7522700d41">AbstractPluginsController::getValue</a></div><div class="ttdeci">const QVariant getValue(PluginsItemInterface *const itemInter, const QString &amp;key, const QVariant &amp;fallback=QVariant()) override</div><div class="ttdoc">getValue SeeAlse: saveValue return value from .config/deepin/dde-dock.conf </div><div class="ttdef"><b>Definition:</b> <a href="abstractpluginscontroller_8cpp_source.html#l00087">abstractpluginscontroller.cpp:87</a></div></div>
+<div class="ttc" id="class_plugin_loader_html"><div class="ttname"><a href="class_plugin_loader.html">PluginLoader</a></div><div class="ttdef"><b>Definition:</b> <a href="pluginloader_8h_source.html#l00027">pluginloader.h:27</a></div></div>
+<div class="ttc" id="class_plugins_item_interface_html"><div class="ttname"><a href="class_plugins_item_interface.html">PluginsItemInterface</a></div><div class="ttdoc">The PluginsItemInterface class the dock plugins item interface, all dock plugins should inheirt this ...</div><div class="ttdef"><b>Definition:</b> <a href="pluginsiteminterface_8h_source.html#l00035">pluginsiteminterface.h:35</a></div></div>
+<div class="ttc" id="class_abstract_plugins_controller_html_aa4f92f7c2bad8bf3b83eea9df82276d1"><div class="ttname"><a href="class_abstract_plugins_controller.html#aa4f92f7c2bad8bf3b83eea9df82276d1">AbstractPluginsController::removeValue</a></div><div class="ttdeci">void removeValue(PluginsItemInterface *const itemInter, const QStringList &amp;keyList) override</div><div class="ttdoc">removeValue remove the values specified by keyList remove all values of itemInter if keyList is empty...</div><div class="ttdef"><b>Definition:</b> <a href="abstractpluginscontroller_8cpp_source.html#l00098">abstractpluginscontroller.cpp:98</a></div></div>
+<div class="ttc" id="class_q_map_html"><div class="ttname"><a href="class_q_map.html">QMap</a></div><div class="ttdef"><b>Definition:</b> <a href="dbuscontrolcenterservice_8h_source.html#l00050">dbuscontrolcenterservice.h:50</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1893d7e513f7d9eb564a7c9868b4b459.html">dde-dock</a></li><li class="navelem"><a class="el" href="dir_a0778ad33239a328eac556325cbee9e3.html">frame</a></li><li class="navelem"><a class="el" href="dir_10155ee1e79faa63356c2dcab42099b7.html">util</a></li><li class="navelem"><b>abstractpluginscontroller.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

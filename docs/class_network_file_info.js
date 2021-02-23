@@ -1,0 +1,27 @@
+var class_network_file_info =
+[
+    [ "NetworkFileInfo", "class_network_file_info.html#abc16fd92cae6f17a7a6587ab7dcacf18", null ],
+    [ "~NetworkFileInfo", "class_network_file_info.html#ae684506420adb8822db54c1ba3584d87", null ],
+    [ "absoluteFilePath", "class_network_file_info.html#a7cb2c0df30ae280c23c16ca3eeccf4f8", null ],
+    [ "canDrop", "class_network_file_info.html#a4c9acb85a79c9e2c72e4f4f9e73e5eda", null ],
+    [ "canIteratorDir", "class_network_file_info.html#a17fbfacbcdbdac80913a2ce31c656ce1", null ],
+    [ "canRedirectionFileUrl", "class_network_file_info.html#a4c6e5640dbae60a29fcb2c29bf778dd2", null ],
+    [ "canRename", "class_network_file_info.html#a9baf3bcf22fd347648dc49d1280d3e2c", null ],
+    [ "exists", "class_network_file_info.html#a47ae71036dc3fc20b86ccf68bb7789a2", null ],
+    [ "fileDisplayName", "class_network_file_info.html#afcfde847d65305e916a1c7b868289b63", null ],
+    [ "fileItemDisableFlags", "class_network_file_info.html#a6308622edfd85d59c1ad6e057d78ffbf", null ],
+    [ "filePath", "class_network_file_info.html#a85ebc10ba1bb94413d89d9d060115992", null ],
+    [ "filesCount", "class_network_file_info.html#a76f6aa89627255b0ee63e2c1848c68f1", null ],
+    [ "iconName", "class_network_file_info.html#a7cdebf514359691a358e00ab1142c6de", null ],
+    [ "isDir", "class_network_file_info.html#a8919706472dd58ff4f55f637c84b8966", null ],
+    [ "isReadable", "class_network_file_info.html#a81750f895b72b8f109fbd71020d7f2a4", null ],
+    [ "isVirtualEntry", "class_network_file_info.html#a3b909e93ae0b2a63d7e9525c213ef781", null ],
+    [ "isWritable", "class_network_file_info.html#aed0683ef5ed84b22bfdc1b4024820352", null ],
+    [ "menuActionList", "class_network_file_info.html#a2b07f0cf947a23b1fabc8d3129ce593f", null ],
+    [ "networkNode", "class_network_file_info.html#a55b71c9c0f31cd0b66d9465c5ac738c9", null ],
+    [ "parentUrl", "class_network_file_info.html#a18d82f30f6b4610013f4565ee54a87aa", null ],
+    [ "redirectedFileUrl", "class_network_file_info.html#ab41c1bc8ab5b06e256eab01432a26d98", null ],
+    [ "setNetworkNode", "class_network_file_info.html#a1a4899ec3b375ff7a324b537265207a3", null ],
+    [ "supportSelectionModes", "class_network_file_info.html#a596222b6066d8c9f069712c8bf7506cc", null ],
+    [ "supportViewMode", "class_network_file_info.html#ac4211994f7db069d2c3dece3cb1f6c31", null ]
+];

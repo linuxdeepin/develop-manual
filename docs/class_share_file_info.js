@@ -1,0 +1,27 @@
+var class_share_file_info =
+[
+    [ "ShareFileInfo", "class_share_file_info.html#ae2889bb3441424bc97fe320685df4a88", null ],
+    [ "~ShareFileInfo", "class_share_file_info.html#a771d73ef8b70c2e9d59553acdb3b5cba", null ],
+    [ "additionalIcon", "class_share_file_info.html#adb5ba865d35543b08b4994ca1b34b21a", null ],
+    [ "canDrop", "class_share_file_info.html#a81c7e1f99453200817e90c2e9c7bcc1f", null ],
+    [ "canIteratorDir", "class_share_file_info.html#af3f00c19245c718f18d5f5af25328019", null ],
+    [ "canRedirectionFileUrl", "class_share_file_info.html#a3608a92fec40150c60d524305e48351e", null ],
+    [ "canRename", "class_share_file_info.html#ad11b7674b9d241babc1359e88c3e925a", null ],
+    [ "canTag", "class_share_file_info.html#ad63641c5e15b29c7feb4acd8b8e0763d", null ],
+    [ "columnDefaultVisibleForRole", "class_share_file_info.html#ad8256f2030c6d48773f5a21e4e4deae5", null ],
+    [ "disableMenuActionList", "class_share_file_info.html#ab6099ae76d41183c8acf8d64a570b156", null ],
+    [ "exists", "class_share_file_info.html#a71aed322c23d118dc514a5c7c872380d", null ],
+    [ "fileDisplayName", "class_share_file_info.html#a046dd19eb960ff1df5aff8680a5b3303", null ],
+    [ "fileItemDisableFlags", "class_share_file_info.html#a47769fbc72eb17f4fdb6d08b62c1e971", null ],
+    [ "isDir", "class_share_file_info.html#a421d0469684ead17c73c612e50bad226", null ],
+    [ "isReadable", "class_share_file_info.html#a284e580a28811ec62f1caa2e9c7e4f0d", null ],
+    [ "isShared", "class_share_file_info.html#a5bd73b6284bd633145b53e0295c4ca07", null ],
+    [ "isVirtualEntry", "class_share_file_info.html#ab6dfabd2f3a69b16121d340c181bcf71", null ],
+    [ "isWritable", "class_share_file_info.html#a9c399a6df6541640a6d8f32bbc439d99", null ],
+    [ "makeAbsolute", "class_share_file_info.html#a597efe69c31dc87016558f1db9a248e2", null ],
+    [ "menuActionByColumnRole", "class_share_file_info.html#a6c0f830e6803947449c3cf14bb0207dd", null ],
+    [ "menuActionList", "class_share_file_info.html#aeab4e1c5fcec173186698cc6d8f871e7", null ],
+    [ "mimeDataUrl", "class_share_file_info.html#a195a44f6ac26259db77a25ac8ee988a8", null ],
+    [ "parentUrl", "class_share_file_info.html#a3e90e72d1c582264a799557afea2f7df", null ],
+    [ "redirectedFileUrl", "class_share_file_info.html#a4b4cb7698ff364e64db58154a4e951dc", null ]
+];

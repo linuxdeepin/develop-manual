@@ -1,0 +1,15 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1634 [label="QIODevice",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1634 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="DFileDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_file_device.html"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="DFileIODeviceProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_file_i_o_device_proxy.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DLocalFileDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_local_file_device.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DGIOFileDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_g_i_o_file_device.html"];
+}

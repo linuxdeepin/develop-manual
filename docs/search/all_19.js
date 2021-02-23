@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['yabottom',['yaBottom',['../structwv_ware_1_1_word97_1_1_f_s_p_a.html#a99ae083a41a1f928fab43b4747524cd4',1,'wvWare::Word97::FSPA']]],
+  ['yagrid',['yaGrid',['../structwv_ware_1_1_word97_1_1_d_o_g_r_i_d.html#ab777814655389c79e8b205ecbe1d9671',1,'wvWare::Word97::DOGRID']]],
+  ['yaoffset',['yaOffset',['../structwv_ware_1_1_word95_1_1_d_p_t_x_b_x.html#a747c64a6ff33225d894fdd6a16241ff5',1,'wvWare::Word95::DPTXBX::yaOffset()'],['../structwv_ware_1_1_word95_1_1_d_p_p_o_l_y_l_i_n_e.html#ad169d739f3edd50c0977d468c8c168bd',1,'wvWare::Word95::DPPOLYLINE::yaOffset()'],['../structwv_ware_1_1_word95_1_1_d_p_a_r_c.html#af0b7989db80463c2e586c0995a4c7853',1,'wvWare::Word95::DPARC::yaOffset()'],['../structwv_ware_1_1_word95_1_1_d_p_e_l_l_i_p_s_e.html#a04d4282ce38eb61324305fe6e2c1013a',1,'wvWare::Word95::DPELLIPSE::yaOffset()'],['../structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#ade89d22b062fc5239985ec586bf4bd82',1,'wvWare::Word95::DPLINE::yaOffset()'],['../structwv_ware_1_1_word95_1_1_d_p_r_e_c_t.html#ac6c06f50b7890777f2a040e96dfc66b6',1,'wvWare::Word95::DPRECT::yaOffset()'],['../structwv_ware_1_1_word95_1_1_d_p_s_a_m_p_l_e.html#a787a923d04bdde1ec39d621ed45fbc17',1,'wvWare::Word95::DPSAMPLE::yaOffset()']]],
+  ['yapage',['yaPage',['../structwv_ware_1_1_word95_1_1_s_e_p.html#ac435d58c7e475f69cb45093d6fece697',1,'wvWare::Word95::SEP::yaPage()'],['../structwv_ware_1_1_word97_1_1_s_e_p.html#a42362f912aee24b1c4d41896f66c7b11',1,'wvWare::Word97::SEP::yaPage()']]],
+  ['yapagenup',['yaPageNUp',['../structwv_ware_1_1_word97_1_1_s_e_p.html#a2adaef2e6e89f76f70dcfa7fbd5051ce',1,'wvWare::Word97::SEP']]],
+  ['yatop',['yaTop',['../structwv_ware_1_1_word97_1_1_f_s_p_a.html#ac185acf832b5e743259a58d97a676d1d',1,'wvWare::Word97::FSPA']]],
+  ['yext',['yExt',['../structwv_ware_1_1_word95_1_1_m_e_t_a_f_i_l_e_p_i_c_t.html#add5fd012d511ddfd08664928b168a64c',1,'wvWare::Word95::METAFILEPICT::yExt()'],['../structwv_ware_1_1_word97_1_1_m_e_t_a_f_i_l_e_p_i_c_t.html#ac782955734f5e6071e83cef4e6c15d97',1,'wvWare::Word97::METAFILEPICT::yExt()']]],
+  ['yr',['yr',['../structwv_ware_1_1_word95_1_1_d_t_t_m.html#aad01c17ea6982d81a8c22f71d8d1450c',1,'wvWare::Word95::DTTM::yr()'],['../structwv_ware_1_1_word97_1_1_d_t_t_m.html#a1b18ffad3503edde52be5c520699b942',1,'wvWare::Word97::DTTM::yr()']]],
+  ['ysr',['ysr',['../structwv_ware_1_1_word95_1_1_c_h_p.html#a278aa6f17f167ac34772d64429e8320c',1,'wvWare::Word95::CHP::ysr()'],['../structwv_ware_1_1_word97_1_1_c_h_p.html#afc2f904a9703dc32d44041f65691b5f4',1,'wvWare::Word97::CHP::ysr()']]]
+];

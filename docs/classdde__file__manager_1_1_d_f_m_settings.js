@@ -1,0 +1,38 @@
+var classdde__file__manager_1_1_d_f_m_settings =
+[
+    [ "ConfigType", "classdde__file__manager_1_1_d_f_m_settings.html#a54c70872932baf130d1ea2c721317786", [
+      [ "AppConfig", "classdde__file__manager_1_1_d_f_m_settings.html#a54c70872932baf130d1ea2c721317786af27c41d65d80001394efd11cbfff0d98", null ],
+      [ "GenericConfig", "classdde__file__manager_1_1_d_f_m_settings.html#a54c70872932baf130d1ea2c721317786aae9eb9cb00176f8994793f5f7f175e7c", null ]
+    ] ],
+    [ "DFMSettings", "classdde__file__manager_1_1_d_f_m_settings.html#a5d126c5885176eccb103a73ed317c628", null ],
+    [ "DFMSettings", "classdde__file__manager_1_1_d_f_m_settings.html#a6d52cf868fd419c824fab897f16e1e91", null ],
+    [ "~DFMSettings", "classdde__file__manager_1_1_d_f_m_settings.html#a6c4207b84429919ee757a7dbac76f7e2", null ],
+    [ "autoSync", "classdde__file__manager_1_1_d_f_m_settings.html#ac44f211ac8c1b4c3a728b17c6aa20318", null ],
+    [ "clear", "classdde__file__manager_1_1_d_f_m_settings.html#a682f11d34b57664324ddd56bfaaffbac", null ],
+    [ "contains", "classdde__file__manager_1_1_d_f_m_settings.html#af3f489ec031a51a4efa5d6eab1a9f038", null ],
+    [ "groups", "classdde__file__manager_1_1_d_f_m_settings.html#a6a8c405735c2d9a608170407e99c71f0", null ],
+    [ "isRemovable", "classdde__file__manager_1_1_d_f_m_settings.html#a3e2b8e57f9194b262425c14d1b89c2a0", null ],
+    [ "isRemovable", "classdde__file__manager_1_1_d_f_m_settings.html#aea80cc7eca2921727afa4fe7a68fc35e", null ],
+    [ "keyList", "classdde__file__manager_1_1_d_f_m_settings.html#ae023a055d4afcdf4d7cb022f9b560e56", null ],
+    [ "keys", "classdde__file__manager_1_1_d_f_m_settings.html#a36a77352b64aeb8edfa64a316cd6a053", null ],
+    [ "reload", "classdde__file__manager_1_1_d_f_m_settings.html#a3fb324d6b279c1d2c4427116dead07a5", null ],
+    [ "remove", "classdde__file__manager_1_1_d_f_m_settings.html#a522cedf2f595769126e1c0c47ddb1dc6", null ],
+    [ "remove", "classdde__file__manager_1_1_d_f_m_settings.html#a004e97e29b987c88ff4bf7ab088aacb0", null ],
+    [ "removeGroup", "classdde__file__manager_1_1_d_f_m_settings.html#a6fb23ce9a67729fdc72f143644a6d654", null ],
+    [ "setAutoSync", "classdde__file__manager_1_1_d_f_m_settings.html#af24a8bd59a5f9c6a9c07e4b1d562e264", null ],
+    [ "setValue", "classdde__file__manager_1_1_d_f_m_settings.html#ad2e300717e25d48f378aab7378a03e7f", null ],
+    [ "setValue", "classdde__file__manager_1_1_d_f_m_settings.html#a8eecaadb12d4e61a946d9d3ac0116786", null ],
+    [ "setValueNoNotify", "classdde__file__manager_1_1_d_f_m_settings.html#a3f0a88d9204a0b0e47362d9099a33ecf", null ],
+    [ "setValueNoNotify", "classdde__file__manager_1_1_d_f_m_settings.html#a1fbe0d846e4070718a12bcf65ad64c1e", null ],
+    [ "setWatchChanges", "classdde__file__manager_1_1_d_f_m_settings.html#a08accb223d09d0ffc44af0e2cd3fb8ae", null ],
+    [ "sync", "classdde__file__manager_1_1_d_f_m_settings.html#ae769db7e43927811032a3a034870f23a", null ],
+    [ "urlValue", "classdde__file__manager_1_1_d_f_m_settings.html#ace575fa8a1aa01ca394ecde5b403b83e", null ],
+    [ "urlValue", "classdde__file__manager_1_1_d_f_m_settings.html#a49f44125af126f848c2c4f957da27fbe", null ],
+    [ "value", "classdde__file__manager_1_1_d_f_m_settings.html#a1bfd905e5ce430a0daee527e8b8f550e", null ],
+    [ "value", "classdde__file__manager_1_1_d_f_m_settings.html#a3edcdccebc4f8ae114679eb30c4612ee", null ],
+    [ "valueChanged", "classdde__file__manager_1_1_d_f_m_settings.html#a268f0c2c68570c5152b3effcf98ec365", null ],
+    [ "valueEdited", "classdde__file__manager_1_1_d_f_m_settings.html#aaf229bcf150fc16a5aad3cb7eedd99ec", null ],
+    [ "watchChanges", "classdde__file__manager_1_1_d_f_m_settings.html#aec803f16db576e7abdbd6209c98ae14b", null ],
+    [ "autoSync", "classdde__file__manager_1_1_d_f_m_settings.html#a78b587027cff621894447c99fc3f5788", null ],
+    [ "watchChanges", "classdde__file__manager_1_1_d_f_m_settings.html#a54a862134870039cfc8d9b332d140e65", null ]
+];

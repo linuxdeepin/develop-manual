@@ -1,0 +1,27 @@
+var class_d_bus_system_info =
+[
+    [ "DBusSystemInfo", "class_d_bus_system_info.html#a938b7e309a039938fad4a0ebd45d7793", null ],
+    [ "~DBusSystemInfo", "class_d_bus_system_info.html#a53151bafd9d277c56af75b1cdd05da45", null ],
+    [ "diskCap", "class_d_bus_system_info.html#a8f9f9ea9144ae2fc56c849d003aaa1a3", null ],
+    [ "DiskCapChanged", "class_d_bus_system_info.html#a1a90ba7e30b4ec3072e47c18944edef2", null ],
+    [ "distroDesc", "class_d_bus_system_info.html#abd7a362fe3a2d90c91e2c76aa17ce9fb", null ],
+    [ "DistroDescChanged", "class_d_bus_system_info.html#a8f028f81e6576aa9279e44329e9d9659", null ],
+    [ "distroID", "class_d_bus_system_info.html#abc9238038b06dd03ec170d101fc58c9e", null ],
+    [ "DistroIDChanged", "class_d_bus_system_info.html#aee2b7bd68baddd9f7169e534a6c7a5b9", null ],
+    [ "distroVer", "class_d_bus_system_info.html#a6f7a75da2a37f6ed50dcb5e94dcce642", null ],
+    [ "DistroVerChanged", "class_d_bus_system_info.html#a317104e3d0be04cad9d502f6e3684904", null ],
+    [ "memoryCap", "class_d_bus_system_info.html#a8ba6567a62c19e9514c6fbbb1d23707a", null ],
+    [ "MemoryCapChanged", "class_d_bus_system_info.html#a6428189c892d18d9e001b2dc62a0daaa", null ],
+    [ "processor", "class_d_bus_system_info.html#ac1ca3b08557796dfceed031bfaf47ff9", null ],
+    [ "systemType", "class_d_bus_system_info.html#aa0821a11284adefec785616201fd5af7", null ],
+    [ "version", "class_d_bus_system_info.html#a3abd367c1edd57389f9e80120a07d7e6", null ],
+    [ "VersionChanged", "class_d_bus_system_info.html#af85b93eb0cdd58592d55d6037229fd78", null ],
+    [ "DiskCap", "class_d_bus_system_info.html#a9cf5ca14b1578cd646e7d57c59b74219", null ],
+    [ "DistroDesc", "class_d_bus_system_info.html#a0efbf45fc14d0f69e7228f191f95430b", null ],
+    [ "DistroID", "class_d_bus_system_info.html#ab690a49d33b47b6593e45fef9450771b", null ],
+    [ "DistroVer", "class_d_bus_system_info.html#a4bdb8fe5d488e5f159904b960f74cbe1", null ],
+    [ "MemoryCap", "class_d_bus_system_info.html#ae4f6c12dc4ffb6a807a451762f217342", null ],
+    [ "Processor", "class_d_bus_system_info.html#a3342a5c0e60b4ed5e8277da9724e012b", null ],
+    [ "SystemType", "class_d_bus_system_info.html#a1d1ce1fa56510bde6882b5b80f6c5173", null ],
+    [ "Version", "class_d_bus_system_info.html#aa5b81aa6d9c1a22b46d444c95bf8140c", null ]
+];

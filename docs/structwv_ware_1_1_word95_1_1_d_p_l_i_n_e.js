@@ -1,0 +1,26 @@
+var structwv_ware_1_1_word95_1_1_d_p_l_i_n_e =
+[
+    [ "DPLINE", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#af17ab67a123d8df0d89a2b82bc740df4", null ],
+    [ "DPLINE", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a212a8cb4bb689fbee24ea145c1eec01f", null ],
+    [ "clear", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a249e96fea895a23260f78a4eab3db962", null ],
+    [ "read", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a0e536039e68f4183811f33fddcf61110", null ],
+    [ "dphead", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a3c1a61885a49065855b961798e1b053c", null ],
+    [ "epplEnd", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#abd9e340ca044388345ae052692f04357", null ],
+    [ "epplStart", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#af2ac028ce3fb2b8deb64effceb753734", null ],
+    [ "eppsEnd", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#aa72b432b26b7f7f5e58fe5dea6b739fb", null ],
+    [ "eppsStart", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a9ea14fd3c59afbfad15f173679a22a19", null ],
+    [ "eppwEnd", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#ac0242d34c37239efa0fc780d05021510", null ],
+    [ "eppwStart", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a95777ad41880b1c7aca4b7233407b1e1", null ],
+    [ "lnpc", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a2c622a14bd5719fcdc84016b79f0e0da", null ],
+    [ "lnps", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a540badb9bb116326d43ff4fb06477af8", null ],
+    [ "lnpw", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#ace5efe6891431fdc020de75ec51ea433", null ],
+    [ "shdwpi", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#ac977d8fae6b587e6509afbc322c004d3", null ],
+    [ "unused24_6", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#ad7c95eab827def04d6bc4c8d16e65b28", null ],
+    [ "unused26_6", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a1d626e3a70e8d5632919ac9561543000", null ],
+    [ "xaEnd", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a9fb89cb44d3540791e29b6ac8274cd8d", null ],
+    [ "xaOffset", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#adfdaa91f0f4d0aa0dad75c518d245023", null ],
+    [ "xaStart", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#af79773b9d1a46fae88c521bad66e5da1", null ],
+    [ "yaEnd", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#a84c320c53ec4f1e56de00ffcb52e94e0", null ],
+    [ "yaOffset", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#ade89d22b062fc5239985ec586bf4bd82", null ],
+    [ "yaStart", "structwv_ware_1_1_word95_1_1_d_p_l_i_n_e.html#aea27204f3d4829de163e71d742415c3f", null ]
+];

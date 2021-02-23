@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-plugins/pluginView/viewplugin.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('viewplugin_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">viewplugin.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2016 ~ 2018 Deepin Technology Co., Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *               2016 ~ 2018 dragondjf</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Author:     dragondjf&lt;dingjiangfeng@deepin.com&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Maintainer: dragondjf&lt;dingjiangfeng@deepin.com&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *             zccrs&lt;zhangjide@deepin.com&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *             Tangtong&lt;tangtong@deepin.com&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * any later version.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef VIEWPLUGIN_H</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define VIEWPLUGIN_H</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include  &quot;../plugininterfaces/view/viewinterface.h&quot;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_view_plugin.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_view_plugin.html">ViewPlugin</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code" href="class_view_interface.html">ViewInterface</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    Q_PLUGIN_METADATA(IID ViewInterface_iid FILE <span class="stringliteral">&quot;pluginView.json&quot;</span>)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_INTERFACES(<a class="code" href="class_view_interface.html">ViewInterface</a>)</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_view_plugin.html">ViewPlugin</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QString <a class="code" href="class_view_plugin.html#a277a3d4c9adfb2ba9e73ad836b437eaf">bookMarkText</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QIcon <a class="code" href="class_view_plugin.html#a060c4a4dfffaf39e08ae6a5a38b2791b">bookMarkNormalIcon</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QIcon <a class="code" href="class_view_plugin.html#a3a14177892eb41a8114827f71b0754ec">bookMarkHoverIcon</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QIcon <a class="code" href="class_view_plugin.html#a37e8f25eeae62d2021fb641d0a16110f">bookMarkPressedIcon</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QIcon <a class="code" href="class_view_plugin.html#a6050c6d924cfb0fe3a7e4fbc5875b55e">bookMarkCheckedIcon</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QString <a class="code" href="class_view_plugin.html#a0afb65a7298c15ce59979b9cae850842">crumbText</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QIcon <a class="code" href="class_view_plugin.html#acea4d8302ed43a35dbdaf7c8d0fb0fd8">crumbNormalIcon</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QIcon <a class="code" href="class_view_plugin.html#a9956cec652c4e9559600ab9e5da32f7e">crumbHoverIcon</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QIcon <a class="code" href="class_view_plugin.html#a2249b2b963e21c378b2bf4fdf9e68153">crumbPressedIcon</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QIcon <a class="code" href="class_view_plugin.html#ac77982b27f2e24a37ac80a91505ef5b8">crumbCheckedIcon</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_view_plugin.html#aa9a763f1566472430346388440704a9d">isAddSeparator</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QString <a class="code" href="class_view_plugin.html#af072ce3799114f318e4271a1f61c7599">scheme</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QWidget* <a class="code" href="class_view_plugin.html#a8af2f664aa5b5f473cd4439d3590095d">createView</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // VIEWPLUGIN_H</span></div><div class="ttc" id="class_view_plugin_html_a0afb65a7298c15ce59979b9cae850842"><div class="ttname"><a href="class_view_plugin.html#a0afb65a7298c15ce59979b9cae850842">ViewPlugin::crumbText</a></div><div class="ttdeci">QString crumbText() override</div><div class="ttdoc">crumbText </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00059">viewplugin.cpp:59</a></div></div>
+<div class="ttc" id="class_view_plugin_html_af072ce3799114f318e4271a1f61c7599"><div class="ttname"><a href="class_view_plugin.html#af072ce3799114f318e4271a1f61c7599">ViewPlugin::scheme</a></div><div class="ttdeci">QString scheme() override</div><div class="ttdoc">scheme </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00089">viewplugin.cpp:89</a></div></div>
+<div class="ttc" id="class_view_plugin_html_acea4d8302ed43a35dbdaf7c8d0fb0fd8"><div class="ttname"><a href="class_view_plugin.html#acea4d8302ed43a35dbdaf7c8d0fb0fd8">ViewPlugin::crumbNormalIcon</a></div><div class="ttdeci">QIcon crumbNormalIcon() override</div><div class="ttdoc">crumbNormalIcon </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00064">viewplugin.cpp:64</a></div></div>
+<div class="ttc" id="class_view_plugin_html_a8af2f664aa5b5f473cd4439d3590095d"><div class="ttname"><a href="class_view_plugin.html#a8af2f664aa5b5f473cd4439d3590095d">ViewPlugin::createView</a></div><div class="ttdeci">QWidget * createView() override</div><div class="ttdoc">createView </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00094">viewplugin.cpp:94</a></div></div>
+<div class="ttc" id="class_view_plugin_html_ac77982b27f2e24a37ac80a91505ef5b8"><div class="ttname"><a href="class_view_plugin.html#ac77982b27f2e24a37ac80a91505ef5b8">ViewPlugin::crumbCheckedIcon</a></div><div class="ttdeci">QIcon crumbCheckedIcon() override</div><div class="ttdoc">crumbCheckedIcon </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00079">viewplugin.cpp:79</a></div></div>
+<div class="ttc" id="class_view_plugin_html_a3a14177892eb41a8114827f71b0754ec"><div class="ttname"><a href="class_view_plugin.html#a3a14177892eb41a8114827f71b0754ec">ViewPlugin::bookMarkHoverIcon</a></div><div class="ttdeci">QIcon bookMarkHoverIcon() override</div><div class="ttdoc">bookMarkHoverIcon </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00044">viewplugin.cpp:44</a></div></div>
+<div class="ttc" id="class_view_plugin_html_a2249b2b963e21c378b2bf4fdf9e68153"><div class="ttname"><a href="class_view_plugin.html#a2249b2b963e21c378b2bf4fdf9e68153">ViewPlugin::crumbPressedIcon</a></div><div class="ttdeci">QIcon crumbPressedIcon() override</div><div class="ttdoc">crumbPressedIcon </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00074">viewplugin.cpp:74</a></div></div>
+<div class="ttc" id="class_view_plugin_html_a060c4a4dfffaf39e08ae6a5a38b2791b"><div class="ttname"><a href="class_view_plugin.html#a060c4a4dfffaf39e08ae6a5a38b2791b">ViewPlugin::bookMarkNormalIcon</a></div><div class="ttdeci">QIcon bookMarkNormalIcon() override</div><div class="ttdoc">bookMarkNormalIcon </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00039">viewplugin.cpp:39</a></div></div>
+<div class="ttc" id="class_view_plugin_html"><div class="ttname"><a href="class_view_plugin.html">ViewPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8h_source.html#l00031">viewplugin.h:31</a></div></div>
+<div class="ttc" id="class_view_plugin_html_a6050c6d924cfb0fe3a7e4fbc5875b55e"><div class="ttname"><a href="class_view_plugin.html#a6050c6d924cfb0fe3a7e4fbc5875b55e">ViewPlugin::bookMarkCheckedIcon</a></div><div class="ttdeci">QIcon bookMarkCheckedIcon() override</div><div class="ttdoc">bookMarkCheckedIcon </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00054">viewplugin.cpp:54</a></div></div>
+<div class="ttc" id="class_view_plugin_html_a37e8f25eeae62d2021fb641d0a16110f"><div class="ttname"><a href="class_view_plugin.html#a37e8f25eeae62d2021fb641d0a16110f">ViewPlugin::bookMarkPressedIcon</a></div><div class="ttdeci">QIcon bookMarkPressedIcon() override</div><div class="ttdoc">bookMarkPressedIcon </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00049">viewplugin.cpp:49</a></div></div>
+<div class="ttc" id="class_view_plugin_html_a277a3d4c9adfb2ba9e73ad836b437eaf"><div class="ttname"><a href="class_view_plugin.html#a277a3d4c9adfb2ba9e73ad836b437eaf">ViewPlugin::bookMarkText</a></div><div class="ttdeci">QString bookMarkText() override</div><div class="ttdoc">bookMarkText </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00034">viewplugin.cpp:34</a></div></div>
+<div class="ttc" id="class_view_interface_html"><div class="ttname"><a href="class_view_interface.html">ViewInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="viewinterface_8h_source.html#l00035">viewinterface.h:35</a></div></div>
+<div class="ttc" id="class_view_plugin_html_aa9a763f1566472430346388440704a9d"><div class="ttname"><a href="class_view_plugin.html#aa9a763f1566472430346388440704a9d">ViewPlugin::isAddSeparator</a></div><div class="ttdeci">bool isAddSeparator() override</div><div class="ttdoc">isAddSeparator </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00084">viewplugin.cpp:84</a></div></div>
+<div class="ttc" id="class_view_plugin_html_a9956cec652c4e9559600ab9e5da32f7e"><div class="ttname"><a href="class_view_plugin.html#a9956cec652c4e9559600ab9e5da32f7e">ViewPlugin::crumbHoverIcon</a></div><div class="ttdeci">QIcon crumbHoverIcon() override</div><div class="ttdoc">crumbHoverIcon </div><div class="ttdef"><b>Definition:</b> <a href="viewplugin_8cpp_source.html#l00069">viewplugin.cpp:69</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_682c40588d88c0b13f5ffc6fa500f6e8.html">dde-file-manager-plugins</a></li><li class="navelem"><a class="el" href="dir_aed72141da18bc4ab7c189c6f8612713.html">pluginView</a></li><li class="navelem"><b>viewplugin.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:21 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

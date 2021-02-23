@@ -1,0 +1,7 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="dcc::mouse::DouTestWidget\l::DoubleTestPic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdcc_1_1mouse_1_1_dou_test_widget_1_1_double_test_pic.html"];
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: deepin-draw/src/drawshape/drawItems/bzItems/cgraphicstriangleitem.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('cgraphicstriangleitem_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cgraphicstriangleitem.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2019 ~ %YEAR% Deepin Technology Co., Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Author:     WangXin</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * any later version.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef CGRAPHICSTRIANGLEITEM_H</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define CGRAPHICSTRIANGLEITEM_H</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;cgraphicsrectitem.h&quot;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QPainterPath&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_graphics_triangle_item.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_graphics_triangle_item.html">CGraphicsTriangleItem</a> : <span class="keyword">public</span> <a class="code" href="class_c_graphics_rect_item.html">CGraphicsRectItem</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_c_graphics_triangle_item.html">CGraphicsTriangleItem</a>(<a class="code" href="class_c_graphics_item.html">CGraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_c_graphics_triangle_item.html">CGraphicsTriangleItem</a>(<span class="keyword">const</span> QRectF &amp;<a class="code" href="class_c_graphics_rect_item.html#a2df3dd5bab2b25e3aca0061f9ae13454">rect</a>, <a class="code" href="class_c_graphics_item.html">CGraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_c_graphics_triangle_item.html">CGraphicsTriangleItem</a>(qreal x, qreal y, qreal w, qreal h, <a class="code" href="class_c_graphics_item.html">CGraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_graphics_triangle_item.html#ab7bd2accfd96319ff4bc7463c34dafd5">type</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_graphics_triangle_item.html#a7adf6edd9f10d28e45b47bbe65fb73cd">loadGraphicsUnit</a>(<span class="keyword">const</span> <a class="code" href="struct_c_graphics_unit.html">CGraphicsUnit</a> &amp;data) <span class="keyword">override</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="struct_c_graphics_unit.html">CGraphicsUnit</a> <a class="code" href="class_c_graphics_triangle_item.html#a081ef83d5cc70a86634ad863782c5d7d">getGraphicsUnit</a>(EDataReason reson) <span class="keyword">const override</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QPainterPath <a class="code" href="class_c_graphics_triangle_item.html#ad901c30d31ef44524d5c8a0b2ecc3f4f">getSelfOrgShape</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_graphics_triangle_item.html#a82ac6e99ef32ccde692c6389cdfdbcbe">paint</a>(QPainter *painter, <span class="keyword">const</span> QStyleOptionGraphicsItem *option,</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;               QWidget *widget) <span class="keyword">override</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> calcPoints_helper(QVector&lt;QPointF&gt; &amp;outVector, qreal offset = 0.0) <span class="keyword">const</span>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QPolygonF polyForPen;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif // CGRAPHICSTRIANGLEITEM_H</span></div><div class="ttc" id="class_c_graphics_triangle_item_html_a081ef83d5cc70a86634ad863782c5d7d"><div class="ttname"><a href="class_c_graphics_triangle_item.html#a081ef83d5cc70a86634ad863782c5d7d">CGraphicsTriangleItem::getGraphicsUnit</a></div><div class="ttdeci">CGraphicsUnit getGraphicsUnit(EDataReason reson) const override</div><div class="ttdoc">getGraphicsUnit 得到图元数据 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicstriangleitem_8cpp_source.html#l00055">cgraphicstriangleitem.cpp:55</a></div></div>
+<div class="ttc" id="class_c_graphics_item_html"><div class="ttname"><a href="class_c_graphics_item.html">CGraphicsItem</a></div><div class="ttdef"><b>Definition:</b> <a href="cgraphicsitem_8h_source.html#l00043">cgraphicsitem.h:43</a></div></div>
+<div class="ttc" id="class_c_graphics_triangle_item_html_a82ac6e99ef32ccde692c6389cdfdbcbe"><div class="ttname"><a href="class_c_graphics_triangle_item.html#a82ac6e99ef32ccde692c6389cdfdbcbe">CGraphicsTriangleItem::paint</a></div><div class="ttdeci">void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</div><div class="ttdoc">paint 绘制图元 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicstriangleitem_8cpp_source.html#l00093">cgraphicstriangleitem.cpp:93</a></div></div>
+<div class="ttc" id="class_c_graphics_rect_item_html"><div class="ttname"><a href="class_c_graphics_rect_item.html">CGraphicsRectItem</a></div><div class="ttdef"><b>Definition:</b> <a href="cgraphicsrectitem_8h_source.html#l00031">cgraphicsrectitem.h:31</a></div></div>
+<div class="ttc" id="class_c_graphics_triangle_item_html_ab7bd2accfd96319ff4bc7463c34dafd5"><div class="ttname"><a href="class_c_graphics_triangle_item.html#ab7bd2accfd96319ff4bc7463c34dafd5">CGraphicsTriangleItem::type</a></div><div class="ttdeci">int type() const override</div><div class="ttdoc">type 图元的类型 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicstriangleitem_8cpp_source.html#l00088">cgraphicstriangleitem.cpp:88</a></div></div>
+<div class="ttc" id="class_c_graphics_triangle_item_html_ad901c30d31ef44524d5c8a0b2ecc3f4f"><div class="ttname"><a href="class_c_graphics_triangle_item.html#ad901c30d31ef44524d5c8a0b2ecc3f4f">CGraphicsTriangleItem::getSelfOrgShape</a></div><div class="ttdeci">QPainterPath getSelfOrgShape() const override</div><div class="ttdoc">selfOrgShape 图元的原始形状（rect类图元不包括边线） </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicstriangleitem_8cpp_source.html#l00077">cgraphicstriangleitem.cpp:77</a></div></div>
+<div class="ttc" id="class_c_graphics_rect_item_html_a2df3dd5bab2b25e3aca0061f9ae13454"><div class="ttname"><a href="class_c_graphics_rect_item.html#a2df3dd5bab2b25e3aca0061f9ae13454">CGraphicsRectItem::rect</a></div><div class="ttdeci">QRectF rect() const override</div><div class="ttdoc">rect 矩形的大小 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicsrectitem_8cpp_source.html#l00162">cgraphicsrectitem.cpp:162</a></div></div>
+<div class="ttc" id="struct_c_graphics_unit_html"><div class="ttname"><a href="struct_c_graphics_unit.html">CGraphicsUnit</a></div><div class="ttdef"><b>Definition:</b> <a href="sitemdata_8h_source.html#l00647">sitemdata.h:647</a></div></div>
+<div class="ttc" id="class_c_graphics_triangle_item_html_a7adf6edd9f10d28e45b47bbe65fb73cd"><div class="ttname"><a href="class_c_graphics_triangle_item.html#a7adf6edd9f10d28e45b47bbe65fb73cd">CGraphicsTriangleItem::loadGraphicsUnit</a></div><div class="ttdeci">void loadGraphicsUnit(const CGraphicsUnit &amp;data) override</div><div class="ttdoc">loadGraphicsUnit 加载图元数据 </div><div class="ttdef"><b>Definition:</b> <a href="cgraphicstriangleitem_8cpp_source.html#l00046">cgraphicstriangleitem.cpp:46</a></div></div>
+<div class="ttc" id="class_c_graphics_triangle_item_html"><div class="ttname"><a href="class_c_graphics_triangle_item.html">CGraphicsTriangleItem</a></div><div class="ttdef"><b>Definition:</b> <a href="cgraphicstriangleitem_8h_source.html#l00025">cgraphicstriangleitem.h:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_caff2b1fd7545ce757c8a3b9a7f3898b.html">deepin-draw</a></li><li class="navelem"><a class="el" href="dir_965b9c804c0c8766184e23b894154521.html">src</a></li><li class="navelem"><a class="el" href="dir_4918845f4b587318be6f85693383e83a.html">drawshape</a></li><li class="navelem"><a class="el" href="dir_4c8b3ba55c68338e3d634e1cc8836cbf.html">drawItems</a></li><li class="navelem"><a class="el" href="dir_ee21388da19f85567db7fc742978e142.html">bzItems</a></li><li class="navelem"><b>cgraphicstriangleitem.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:13 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

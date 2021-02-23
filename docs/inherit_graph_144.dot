@@ -1,0 +1,11 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3045 [label="DArrowRectangle",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3045 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="dcc::widgets::ErrorTip",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdcc_1_1widgets_1_1_error_tip.html"];
+  Node3045 -> Node3047 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3047 [label="DockPopupWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dock_popup_window.html"];
+}

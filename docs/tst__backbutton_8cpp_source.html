@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-control-center/unittest/tst_dccwidgets/tst_backbutton.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('tst__backbutton_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">tst_backbutton.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../../include/widgets/backbutton.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacedcc_1_1widgets.html">dcc::widgets</a>;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_tst___back_buttbon.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tst___back_buttbon.html">Tst_BackButtbon</a> : <span class="keyword">public</span> <a class="code" href="classtesting_1_1_test.html">testing::Test</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> SetUp()<span class="keyword"> override</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">    </span>{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        obj = <span class="keyword">new</span> <a class="code" href="classdcc_1_1widgets_1_1_back_button.html">BackButton</a>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    }</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> TearDown()<span class="keyword"> override</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">    </span>{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">delete</span> obj;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        obj = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classdcc_1_1widgets_1_1_back_button.html">BackButton</a> *obj = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div><div class="ttc" id="namespacedcc_1_1widgets_html"><div class="ttname"><a href="namespacedcc_1_1widgets.html">dcc::widgets</a></div><div class="ttdef"><b>Definition:</b> <a href="backbutton_8h_source.html#l00036">backbutton.h:36</a></div></div>
+<div class="ttc" id="classtesting_1_1_test_html"><div class="ttname"><a href="classtesting_1_1_test.html">testing::Test</a></div><div class="ttdef"><b>Definition:</b> <a href="dde-file-manager_2third-party_2googletest_2googletest_2include_2gtest_2gtest_8h_source.html#l00409">gtest.h:409</a></div></div>
+<div class="ttc" id="class_tst___back_buttbon_html"><div class="ttname"><a href="class_tst___back_buttbon.html">Tst_BackButtbon</a></div><div class="ttdef"><b>Definition:</b> <a href="tst__backbutton_8cpp_source.html#l00007">tst_backbutton.cpp:7</a></div></div>
+<div class="ttc" id="classdcc_1_1widgets_1_1_back_button_html"><div class="ttname"><a href="classdcc_1_1widgets_1_1_back_button.html">dcc::widgets::BackButton</a></div><div class="ttdef"><b>Definition:</b> <a href="backbutton_8h_source.html#l00038">backbutton.h:38</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_834e19a6aa3729d6bc399b722cda0ce0.html">dde-control-center</a></li><li class="navelem"><a class="el" href="dir_39bc61e6de44c8a0e060e99cd0f0f5c6.html">unittest</a></li><li class="navelem"><a class="el" href="dir_a056bf1138049667b58ee23d7afee4e6.html">tst_dccwidgets</a></li><li class="navelem"><b>tst_backbutton.cpp</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

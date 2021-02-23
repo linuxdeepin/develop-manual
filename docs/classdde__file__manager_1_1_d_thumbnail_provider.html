@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde_file_manager::DThumbnailProvider类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdde__file__manager_1_1_d_thumbnail_provider.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classdde__file__manager_1_1_d_thumbnail_provider-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dde_file_manager::DThumbnailProvider类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 dde_file_manager::DThumbnailProvider 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdde__file__manager_1_1_d_thumbnail_provider__inherit__graph.png" border="0" usemap="#dde__file__manager_1_1_d_thumbnail_provider_inherit__map" alt="Inheritance graph"/></div>
+<map name="dde__file__manager_1_1_d_thumbnail_provider_inherit__map" id="dde__file__manager_1_1_d_thumbnail_provider_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+dde_file_manager::DThumbnailProvider 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdde__file__manager_1_1_d_thumbnail_provider__coll__graph.png" border="0" usemap="#dde__file__manager_1_1_d_thumbnail_provider_coll__map" alt="Collaboration graph"/></div>
+<map name="dde__file__manager_1_1_d_thumbnail_provider_coll__map" id="dde__file__manager_1_1_d_thumbnail_provider_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ae13765a32fe08a7eac8b2ab05239964d"><td class="memItemLeft" align="right" valign="top"><a id="ae13765a32fe08a7eac8b2ab05239964d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> { <b>Small</b> = 64, 
+<b>Normal</b> = 128, 
+<b>Large</b> = 256
+ }</td></tr>
+<tr class="separator:ae13765a32fe08a7eac8b2ab05239964d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac952d790f40e4a7950fa3a1fb74124df"><td class="memItemLeft" align="right" valign="top"><a id="ac952d790f40e4a7950fa3a1fb74124df"></a>
+typedef std::function&lt; void(const QString &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CallBack</b></td></tr>
+<tr class="separator:ac952d790f40e4a7950fa3a1fb74124df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:aa8462ad2c8d59671a5b19bd014d22c49"><td class="memItemLeft" align="right" valign="top"><a id="aa8462ad2c8d59671a5b19bd014d22c49"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>thumbnailChanged</b> (const QString &amp;sourceFilePath, const QString &amp;thumbnailPath) const</td></tr>
+<tr class="separator:aa8462ad2c8d59671a5b19bd014d22c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6b8a3776b8b6b8271fe588fcbcbbcf"><td class="memItemLeft" align="right" valign="top"><a id="a6f6b8a3776b8b6b8271fe588fcbcbbcf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createThumbnailFinished</b> (const QString &amp;sourceFilePath, const QString &amp;thumbnailPath) const</td></tr>
+<tr class="separator:a6f6b8a3776b8b6b8271fe588fcbcbbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc34b64684be8e7c03d32cb05fa247f2"><td class="memItemLeft" align="right" valign="top"><a id="adc34b64684be8e7c03d32cb05fa247f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createThumbnailFailed</b> (const QString &amp;sourceFilePath) const</td></tr>
+<tr class="separator:adc34b64684be8e7c03d32cb05fa247f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2ad84e48a051bc0d8c53ec6a1d3bba1a"><td class="memItemLeft" align="right" valign="top"><a id="a2ad84e48a051bc0d8c53ec6a1d3bba1a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasThumbnail</b> (const QFileInfo &amp;info) const</td></tr>
+<tr class="separator:a2ad84e48a051bc0d8c53ec6a1d3bba1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499f834cae39e4a98a343bb19790fb6a"><td class="memItemLeft" align="right" valign="top"><a id="a499f834cae39e4a98a343bb19790fb6a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasThumbnail</b> (const QMimeType &amp;mimeType) const</td></tr>
+<tr class="separator:a499f834cae39e4a98a343bb19790fb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3101c82059299407a115bdb6890d10"><td class="memItemLeft" align="right" valign="top"><a id="aeb3101c82059299407a115bdb6890d10"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>thumbnailFilePath</b> (const QFileInfo &amp;info, Size size) const</td></tr>
+<tr class="separator:aeb3101c82059299407a115bdb6890d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe10d86c8d0f69dc4b3628907ffed03"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdde__file__manager_1_1_d_thumbnail_provider.html#afbe10d86c8d0f69dc4b3628907ffed03">createThumbnail</a> (const QFileInfo &amp;info, Size size, const CallBack &amp;callback)</td></tr>
+<tr class="separator:afbe10d86c8d0f69dc4b3628907ffed03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2198bb9d372b078f2d8952a7a4f3908c"><td class="memItemLeft" align="right" valign="top"><a id="a2198bb9d372b078f2d8952a7a4f3908c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>appendToProduceQueue</b> (const QFileInfo &amp;info, Size size, CallBack callback=0)</td></tr>
+<tr class="separator:a2198bb9d372b078f2d8952a7a4f3908c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f3843eccbc2addc4e4681147b9eae2"><td class="memItemLeft" align="right" valign="top"><a id="ab3f3843eccbc2addc4e4681147b9eae2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeInProduceQueue</b> (const QFileInfo &amp;info, Size size)</td></tr>
+<tr class="separator:ab3f3843eccbc2addc4e4681147b9eae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf0285f22bbc2106131639a9f987816"><td class="memItemLeft" align="right" valign="top"><a id="a5bf0285f22bbc2106131639a9f987816"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>errorString</b> () const</td></tr>
+<tr class="separator:a5bf0285f22bbc2106131639a9f987816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace58d5ec83353ea2b99fd20c6169bbc3"><td class="memItemLeft" align="right" valign="top"><a id="ace58d5ec83353ea2b99fd20c6169bbc3"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>defaultSizeLimit</b> () const</td></tr>
+<tr class="separator:ace58d5ec83353ea2b99fd20c6169bbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2171afb838073a7fd38699a49454c4"><td class="memItemLeft" align="right" valign="top"><a id="a1c2171afb838073a7fd38699a49454c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultSizeLimit</b> (qint64 size)</td></tr>
+<tr class="separator:a1c2171afb838073a7fd38699a49454c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ace827a312613030578d81700f06f2b"><td class="memItemLeft" align="right" valign="top"><a id="a4ace827a312613030578d81700f06f2b"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>sizeLimit</b> (const QMimeType &amp;mimeType) const</td></tr>
+<tr class="separator:a4ace827a312613030578d81700f06f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28254bba50896a382d2fa8e1f8efdaca"><td class="memItemLeft" align="right" valign="top"><a id="a28254bba50896a382d2fa8e1f8efdaca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSizeLimit</b> (const QMimeType &amp;mimeType, qint64 size)</td></tr>
+<tr class="separator:a28254bba50896a382d2fa8e1f8efdaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ab323e294088d866bcc07594e23d2375a"><td class="memItemLeft" align="right" valign="top"><a id="ab323e294088d866bcc07594e23d2375a"></a>
+static <a class="el" href="classdde__file__manager_1_1_d_thumbnail_provider.html">DThumbnailProvider</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
+<tr class="separator:ab323e294088d866bcc07594e23d2375a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ad72b57b331a92a1a5c507403cc284325"><td class="memItemLeft" align="right" valign="top"><a id="ad72b57b331a92a1a5c507403cc284325"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DThumbnailProvider</b> (QObject *parent=0)</td></tr>
+<tr class="separator:ad72b57b331a92a1a5c507403cc284325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c76305a1fbaa5d82c65e9fcbd25d66"><td class="memItemLeft" align="right" valign="top"><a id="a36c76305a1fbaa5d82c65e9fcbd25d66"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> () override</td></tr>
+<tr class="separator:a36c76305a1fbaa5d82c65e9fcbd25d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dthumbnailprovider_8h_source.html">dthumbnailprovider.h</a> 第 <a class="el" href="dthumbnailprovider_8h_source.html#l00042">42</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="afbe10d86c8d0f69dc4b3628907ffed03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe10d86c8d0f69dc4b3628907ffed03">&#9670;&nbsp;</a></span>createThumbnail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString dde_file_manager::DThumbnailProvider::createThumbnail </td>
+          <td>(</td>
+          <td class="paramtype">const QFileInfo &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DThumbnailProvider::Size&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CallBack &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Warnning: Do not store thumbnails to the fail path</p>
+<p>新增djvu格式文件缩略图预览</p>
+<p>使用子进程来调用deepin-reader程序生成djvu格式文件缩略图</p>
+<p>生成缩略图缓存地址</p>
+<p>fix bug#49451 因为使用mime.preferredSuffix(),会导致后续image.save崩溃，具体原因还需进一步跟进 QImageReader构造时不传format参数，让其自行判断 fix bug #53200 QImageReader构造时不传format参数，会造成没有读取不了真实的文件 类型比如将png图标后缀修改为jpg，读取的类型不对 </p>
+
+<p class="definition">在文件 <a class="el" href="dthumbnailprovider_8cpp_source.html">dthumbnailprovider.cpp</a> 第 <a class="el" href="dthumbnailprovider_8cpp_source.html#l00284">284</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dthumbnailprovider_8h_source.html">dthumbnailprovider.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dthumbnailprovider_8cpp_source.html">dthumbnailprovider.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedde__file__manager.html">dde_file_manager</a></li><li class="navelem"><a class="el" href="classdde__file__manager_1_1_d_thumbnail_provider.html">DThumbnailProvider</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

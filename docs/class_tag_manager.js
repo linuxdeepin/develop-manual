@@ -1,0 +1,38 @@
+var class_tag_manager =
+[
+    [ "SqlType", "class_tag_manager.html#a2cabf3abd23a660a690ec52062239d6d", [
+      [ "GetAllTags", "class_tag_manager.html#a2cabf3abd23a660a690ec52062239d6dad05008b9cc30828620618652b57798eb", null ],
+      [ "MakeFilesTags", "class_tag_manager.html#a2cabf3abd23a660a690ec52062239d6da83f4be37d53e65ce6ac496ba04cf3ca5", null ],
+      [ "GetTagsThroughFile", "class_tag_manager.html#a2cabf3abd23a660a690ec52062239d6da87552b10783ac92643dfcf4bcdcda9db", null ],
+      [ "GetFilesThroughTag", "class_tag_manager.html#a2cabf3abd23a660a690ec52062239d6da945d58a0c97c86f4d9120f332a79ce9c", null ],
+      [ "MakeFilesTagThroughColor", "class_tag_manager.html#a2cabf3abd23a660a690ec52062239d6da5c4d08aa0d6d3c3a63e54b790fd50e2f", null ]
+    ] ],
+    [ "TagManager", "class_tag_manager.html#a588aa8ce4fbcbace9c0c5b41e2947b8e", null ],
+    [ "~TagManager", "class_tag_manager.html#af45e20582a410dcd9710fe0d602a2896", null ],
+    [ "TagManager", "class_tag_manager.html#af4e6bb1a5a4fc3898621163fa1821508", null ],
+    [ "addNewTag", "class_tag_manager.html#a7f43648472603ca10ba37c55433abe0e", null ],
+    [ "allTagOfDefaultColors", "class_tag_manager.html#a564ef2a3b314bdff9a2263f8396a0dac", null ],
+    [ "changeTagColor", "class_tag_manager.html#a64e2a3e04e2211a0c21a945c7118df3b", null ],
+    [ "changeTagColor", "class_tag_manager.html#a96d0d860ff70aabb626cd93581b94b8a", null ],
+    [ "changeTagName", "class_tag_manager.html#aa79188660404420458d0e209d7952a70", null ],
+    [ "changeTagName", "class_tag_manager.html#a4d66684c5f68df65ffd2b1fe47988fab", null ],
+    [ "deleteTag", "class_tag_manager.html#aeabbc42caffdd6775d0ef6d8134607bc", null ],
+    [ "deleteTags", "class_tag_manager.html#a56ff9d6cc895152840790d33f7e78f8d", null ],
+    [ "filesWereTagged", "class_tag_manager.html#a7f1988dfcafaa28832e4ef9907cc87e7", null ],
+    [ "getAllTags", "class_tag_manager.html#adafde8f1ac469c4f7c3ea081490f58ea", null ],
+    [ "getColorByColorName", "class_tag_manager.html#a853bbf1d9095c6368abb7aa76b6120b7", null ],
+    [ "getColorByDisplayName", "class_tag_manager.html#a016ff8fa43ac9261ade28d775138941b", null ],
+    [ "getColorNameByColor", "class_tag_manager.html#a6e1c28f39598e51085c7b3592b02799a", null ],
+    [ "getFilesThroughTag", "class_tag_manager.html#a9e744200a7bb5a76d83a791a0cddeec9", null ],
+    [ "getTagColor", "class_tag_manager.html#a5eab9a61574c3cfb1951a7113e00e345", null ],
+    [ "getTagColorName", "class_tag_manager.html#a6fa08959fe33c8feb6f9c7322e9a449b", null ],
+    [ "getTagIconName", "class_tag_manager.html#a68c0514475f5d30c5f44a288492cdab1", null ],
+    [ "getTagIconName", "class_tag_manager.html#ab3a439c5271b66f265c0353a1755241e", null ],
+    [ "getTagNameThroughColor", "class_tag_manager.html#aefe85c482e7a772ec18434d51f5da9d5", null ],
+    [ "getTagsThroughFiles", "class_tag_manager.html#a7c3523f519d07a93382f1d4bf7782a74", null ],
+    [ "makeFilesTags", "class_tag_manager.html#a5354f94aa3f655a55e52c0dcf1b1e84c", null ],
+    [ "makeFilesTagThroughColor", "class_tag_manager.html#a94489ec6d4615e4431ac5e07b06ec8b0", null ],
+    [ "operator=", "class_tag_manager.html#ad0a873463c6f6a6802702870bd8e336f", null ],
+    [ "removeTagsOfFiles", "class_tag_manager.html#a59b650d6531ed35b72789c303ad35e4b", null ],
+    [ "untagFiles", "class_tag_manager.html#a9ab5d2cac99ac113e6be62c61633d15b", null ]
+];

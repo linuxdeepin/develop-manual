@@ -1,0 +1,15 @@
+digraph "zip_internal"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="zip_internal",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" z_filefunc" ,fontname="Helvetica"];
+  Node2 [label="zlib_filefunc_def_s",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structzlib__filefunc__def__s.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" central_dir" ,fontname="Helvetica"];
+  Node3 [label="linkedlist_data_s",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlinkedlist__data__s.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" last_block\nfirst_block" ,fontname="Helvetica"];
+  Node4 [label="linkedlist_datablock\l_internal_s",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlinkedlist__datablock__internal__s.html"];
+  Node4 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next_datablock" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ci" ,fontname="Helvetica"];
+  Node5 [label="curfile_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structcurfile__info.html"];
+}

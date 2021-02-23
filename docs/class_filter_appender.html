@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: FilterAppender类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_filter_appender.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_filter_appender-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">FilterAppender类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The RollingFileAppender(modifed as FilterAppender) class extends FileAppender so that the underlying file is rolled over at a user chosen frequency.  
+ <a href="class_filter_appender.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="filter_appender_8h_source.html">filterAppender.h</a>&gt;</code></p>
+<div class="dynheader">
+类 FilterAppender 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_filter_appender__inherit__graph.png" border="0" usemap="#_filter_appender_inherit__map" alt="Inheritance graph"/></div>
+<map name="_filter_appender_inherit__map" id="_filter_appender_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+FilterAppender 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_filter_appender__coll__graph.png" border="0" usemap="#_filter_appender_coll__map" alt="Collaboration graph"/></div>
+<map name="_filter_appender_coll__map" id="_filter_appender_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a65e581bd5620b55880a404d9f537bb47"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47">DatePattern</a> { <br />
+&#160;&#160;<a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47a23650de0ad0841623056580f3fa460f4">MinutelyRollover</a> = 0, 
+<a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47a70ff9f3bf40d6d226d54b0a29e5ad33a">HourlyRollover</a>, 
+<a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47aa5413e2cc4d66b16c149af130e7dbfae">HalfDailyRollover</a>, 
+<a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47a3b6740dae735f00b286642d5dee9aa38">DailyRollover</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47ab1c523f51315a95e8f2a658e82d84e06">WeeklyRollover</a>, 
+<a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47a9d5bb3e2e21b3d8446d7d501b536d05d">MonthlyRollover</a>
+<br />
+ }</td></tr>
+<tr class="separator:a65e581bd5620b55880a404d9f537bb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1244cd10da43283468e657dfd8ee576f"><td class="memItemLeft" align="right" valign="top"><a id="a1244cd10da43283468e657dfd8ee576f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FilterAppender</b> (const QString &amp;fileName=QString())</td></tr>
+<tr class="separator:a1244cd10da43283468e657dfd8ee576f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334dd6add76b967ad5bad741243dc96d"><td class="memItemLeft" align="right" valign="top"><a id="a334dd6add76b967ad5bad741243dc96d"></a>
+<a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47">DatePattern</a>&#160;</td><td class="memItemRight" valign="bottom"><b>datePattern</b> () const</td></tr>
+<tr class="separator:a334dd6add76b967ad5bad741243dc96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296a452840a8fd66b22c6e6d407aff2a"><td class="memItemLeft" align="right" valign="top"><a id="a296a452840a8fd66b22c6e6d407aff2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDatePattern</b> (<a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47">DatePattern</a> datePattern)</td></tr>
+<tr class="separator:a296a452840a8fd66b22c6e6d407aff2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c92e5acf91d087eb9f55cf27daf5f7"><td class="memItemLeft" align="right" valign="top"><a id="a67c92e5acf91d087eb9f55cf27daf5f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDatePattern</b> (const QString &amp;datePattern)</td></tr>
+<tr class="separator:a67c92e5acf91d087eb9f55cf27daf5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94c3538e87f328cd5a273e49bd7de39"><td class="memItemLeft" align="right" valign="top"><a id="af94c3538e87f328cd5a273e49bd7de39"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>datePatternString</b> () const</td></tr>
+<tr class="separator:af94c3538e87f328cd5a273e49bd7de39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e94f23122463900a96388cd8bb2cd2"><td class="memItemLeft" align="right" valign="top"><a id="a10e94f23122463900a96388cd8bb2cd2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLogFilesLimit</b> (int limit)</td></tr>
+<tr class="separator:a10e94f23122463900a96388cd8bb2cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683ca827eaa6580c986e30623e1835fd"><td class="memItemLeft" align="right" valign="top"><a id="a683ca827eaa6580c986e30623e1835fd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>logFilesLimit</b> () const</td></tr>
+<tr class="separator:a683ca827eaa6580c986e30623e1835fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35cf96882336577d519a5f0493396fe7"><td class="memItemLeft" align="right" valign="top"><a id="a35cf96882336577d519a5f0493396fe7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLogSizeLimit</b> (int qint64)</td></tr>
+<tr class="separator:a35cf96882336577d519a5f0493396fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bcbad47b1ed91b3c64092c31fb793b1"><td class="memItemLeft" align="right" valign="top"><a id="a9bcbad47b1ed91b3c64092c31fb793b1"></a>
+qint64&#160;</td><td class="memItemRight" valign="bottom"><b>logSizeLimit</b> () const</td></tr>
+<tr class="separator:a9bcbad47b1ed91b3c64092c31fb793b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad088cfbc3d5cf80f38d59eb7b19d19db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filter_appender.html#ad088cfbc3d5cf80f38d59eb7b19d19db">addFilter</a> (const QString &amp;filterField)</td></tr>
+<tr class="memdesc:ad088cfbc3d5cf80f38d59eb7b19d19db"><td class="mdescLeft">&#160;</td><td class="mdescRight">addFilter 添加过滤关键字  <a href="#ad088cfbc3d5cf80f38d59eb7b19d19db">更多...</a><br /></td></tr>
+<tr class="separator:ad088cfbc3d5cf80f38d59eb7b19d19db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5eb26d9612490585c98a62495d67bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filter_appender.html#a1f5eb26d9612490585c98a62495d67bb">removeFilter</a> (const QString &amp;filterField)</td></tr>
+<tr class="memdesc:a1f5eb26d9612490585c98a62495d67bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">removeFilter 移除过滤关键字  <a href="#a1f5eb26d9612490585c98a62495d67bb">更多...</a><br /></td></tr>
+<tr class="separator:a1f5eb26d9612490585c98a62495d67bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df17615ac4cf3085d42b9666baa1862"><td class="memItemLeft" align="right" valign="top">const QStringList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filter_appender.html#a4df17615ac4cf3085d42b9666baa1862">getFilters</a> () const</td></tr>
+<tr class="memdesc:a4df17615ac4cf3085d42b9666baa1862"><td class="mdescLeft">&#160;</td><td class="mdescRight">getFilters 获取所有的关键字  <a href="#a4df17615ac4cf3085d42b9666baa1862">更多...</a><br /></td></tr>
+<tr class="separator:a4df17615ac4cf3085d42b9666baa1862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b583cb891875228c0403f69957b83db"><td class="memItemLeft" align="right" valign="top"><a id="a4b583cb891875228c0403f69957b83db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filter_appender.html#a4b583cb891875228c0403f69957b83db">clearFilters</a> ()</td></tr>
+<tr class="memdesc:a4b583cb891875228c0403f69957b83db"><td class="mdescLeft">&#160;</td><td class="mdescRight">clearFilters 清除所有需要的关键字 <br /></td></tr>
+<tr class="separator:a4b583cb891875228c0403f69957b83db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a18d46f2c0074fe984efbd856911780de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filter_appender.html#a18d46f2c0074fe984efbd856911780de">append</a> (const QDateTime &amp;timeStamp, Dtk::Core::Logger::LogLevel logLevel, const char *file, int line, const char *function, const QString &amp;category, const QString &amp;message)</td></tr>
+<tr class="separator:a18d46f2c0074fe984efbd856911780de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The RollingFileAppender(modifed as FilterAppender) class extends FileAppender so that the underlying file is rolled over at a user chosen frequency. </p>
+<p>The class is based on Log4Qt.DailyRollingFileAppender class (<a href="http://log4qt.sourceforge.net/">http://log4qt.sourceforge.net/</a>) and has the same date pattern format.</p>
+<p>For example, if the fileName is set to /foo/bar and the DatePattern set to the daily rollover ('.'yyyy-MM-dd'.log'), on 2014-02-16 at midnight, the logging file /foo/bar.log will be copied to /foo/bar.2014-02-16.log and logging for 2014-02-17 will continue in /foo/bar until it rolls over the next day.</p>
+<p>The logFilesLimit parameter is used to automatically delete the oldest log files in the directory during rollover (so no more than logFilesLimit recent log files exist in the directory at any moment). </p><dl class="section see"><dt>参见</dt><dd>setDatePattern(DatePattern), setLogFilesLimit(int) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="filter_appender_8h_source.html">filterAppender.h</a> 第 <a class="el" href="filter_appender_8h_source.html#l00042">42</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a65e581bd5620b55880a404d9f537bb47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e581bd5620b55880a404d9f537bb47">&#9670;&nbsp;</a></span>DatePattern</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_filter_appender.html#a65e581bd5620b55880a404d9f537bb47">FilterAppender::DatePattern</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The enum DatePattern defines constants for date patterns. </p><dl class="section see"><dt>参见</dt><dd>setDatePattern(DatePattern) </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a65e581bd5620b55880a404d9f537bb47a23650de0ad0841623056580f3fa460f4"></a>MinutelyRollover&#160;</td><td class="fielddoc"><p>The minutely date pattern string is "'.'yyyy-MM-dd-hh-mm". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a65e581bd5620b55880a404d9f537bb47a70ff9f3bf40d6d226d54b0a29e5ad33a"></a>HourlyRollover&#160;</td><td class="fielddoc"><p>The hourly date pattern string is "'.'yyyy-MM-dd-hh". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a65e581bd5620b55880a404d9f537bb47aa5413e2cc4d66b16c149af130e7dbfae"></a>HalfDailyRollover&#160;</td><td class="fielddoc"><p>The half-daily date pattern string is "'.'yyyy-MM-dd-a". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a65e581bd5620b55880a404d9f537bb47a3b6740dae735f00b286642d5dee9aa38"></a>DailyRollover&#160;</td><td class="fielddoc"><p>The daily date pattern string is "'.'yyyy-MM-dd". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a65e581bd5620b55880a404d9f537bb47ab1c523f51315a95e8f2a658e82d84e06"></a>WeeklyRollover&#160;</td><td class="fielddoc"><p>The weekly date pattern string is "'.'yyyy-ww". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a65e581bd5620b55880a404d9f537bb47a9d5bb3e2e21b3d8446d7d501b536d05d"></a>MonthlyRollover&#160;</td><td class="fielddoc"><p>The monthly date pattern string is "'.'yyyy-MM". </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="filter_appender_8h_source.html">filterAppender.h</a> 第 <a class="el" href="filter_appender_8h_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ad088cfbc3d5cf80f38d59eb7b19d19db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad088cfbc3d5cf80f38d59eb7b19d19db">&#9670;&nbsp;</a></span>addFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FilterAppender::addFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filterField</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>addFilter 添加过滤关键字 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filterField</td><td>需要过滤的关键字 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="filter_appender_8cpp_source.html">filterAppender.cpp</a> 第 <a class="el" href="filter_appender_8cpp_source.html#l00251">251</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a18d46f2c0074fe984efbd856911780de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d46f2c0074fe984efbd856911780de">&#9670;&nbsp;</a></span>append()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FilterAppender::append </td>
+          <td>(</td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>timeStamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dtk::Core::Logger::LogLevel&#160;</td>
+          <td class="paramname"><em>logLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>关键字过滤 </p>
+
+<p class="definition">在文件 <a class="el" href="filter_appender_8cpp_source.html">filterAppender.cpp</a> 第 <a class="el" href="filter_appender_8cpp_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4df17615ac4cf3085d42b9666baa1862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df17615ac4cf3085d42b9666baa1862">&#9670;&nbsp;</a></span>getFilters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QStringList &amp; FilterAppender::getFilters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getFilters 获取所有的关键字 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="filter_appender_8cpp_source.html">filterAppender.cpp</a> 第 <a class="el" href="filter_appender_8cpp_source.html#l00263">263</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1f5eb26d9612490585c98a62495d67bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5eb26d9612490585c98a62495d67bb">&#9670;&nbsp;</a></span>removeFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FilterAppender::removeFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filterField</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>removeFilter 移除过滤关键字 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filterField</td><td>需要移除的关键字 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="filter_appender_8cpp_source.html">filterAppender.cpp</a> 第 <a class="el" href="filter_appender_8cpp_source.html#l00257">257</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/log/<a class="el" href="filter_appender_8h_source.html">filterAppender.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/log/<a class="el" href="filter_appender_8cpp_source.html">filterAppender.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_filter_appender.html">FilterAppender</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

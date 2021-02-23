@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-daemon/vault/vaultmanager.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('vaultmanager_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">vaultmanager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef VAULTMANAGER_H</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define VAULTMANAGER_H</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QDBusContext&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span><a class="code" href="class_vault_adaptor.html">VaultAdaptor</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span><a class="code" href="class_vault_clock.html">VaultClock</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_vault_manager.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_vault_manager.html">VaultManager</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> QDBusContext</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_vault_manager.html">VaultManager</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ~<a class="code" href="class_vault_manager.html">VaultManager</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_vault_manager.html#acad4a03be9b758008251b5f2353f6991">   40</a></span>&#160;    <span class="keyword">static</span> QString <a class="code" href="class_vault_manager.html#acad4a03be9b758008251b5f2353f6991">ObjectPath</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> QString PolicyKitCreateActionId;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> QString PolicyKitRemoveActionId;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vault_manager.html#a901a664d84555b316306775d124e377b">sysUserChanged</a>(<span class="keyword">const</span> QString&amp; curUser);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vault_manager.html#aeeb54cfb1628a642ec862fabdc8ddd47">setRefreshTime</a>(quint64 time);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    quint64 <a class="code" href="class_vault_manager.html#a564fb99db8804c38224e66037fbae9fd">getLastestTime</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    quint64 <a class="code" href="class_vault_manager.html#a4b24478c1990be97483dd9318ef87272">getSelfTime</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_vault_manager.html#aa1ff4908a6707d11f2eadd3e81ee41d7">checkAuthentication</a>(QString type);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_vault_manager.html#a4ac47d8a10374474c208e8de6bc61524">isLockEventTriggered</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vault_manager.html#afe87ca3c7e3fb003286c3a979783c6d7">triggerLockEvent</a>();</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vault_manager.html#a73447dcce39c900129456c6247019877">clearLockEvent</a>();</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vault_manager.html#af92084ff5d5f790c61b1ec15d6c6e9b9">computerSleep</a>(<span class="keywordtype">bool</span> bSleep);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    QString getCurrentUser() <span class="keyword">const</span>;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="class_vault_adaptor.html">VaultAdaptor</a>* m_vaultAdaptor = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="class_q_map.html">QMap&lt;QString, VaultClock*&gt;</a> m_mapUserClock; <span class="comment">// map user and timer.</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="class_vault_clock.html">VaultClock</a> *m_curVaultClock; <span class="comment">// current user clock.</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    QString m_curUser; <span class="comment">// current system user.</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    qint64 m_pcTime; <span class="comment">// 主机时间</span></div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif // VAULTMANAGER_H</span></div><div class="ttc" id="class_vault_clock_html"><div class="ttname"><a href="class_vault_clock.html">VaultClock</a></div><div class="ttdoc">The VaultClock class </div><div class="ttdef"><b>Definition:</b> <a href="vaultclock_8h_source.html#l00028">vaultclock.h:28</a></div></div>
+<div class="ttc" id="class_vault_manager_html_a4b24478c1990be97483dd9318ef87272"><div class="ttname"><a href="class_vault_manager.html#a4b24478c1990be97483dd9318ef87272">VaultManager::getSelfTime</a></div><div class="ttdeci">quint64 getSelfTime() const</div><div class="ttdoc">getSelfTime 获取自定义时间 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8cpp_source.html#l00096">vaultmanager.cpp:96</a></div></div>
+<div class="ttc" id="class_vault_manager_html"><div class="ttname"><a href="class_vault_manager.html">VaultManager</a></div><div class="ttdoc">The VaultManager class 保险箱管理类 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8h_source.html#l00033">vaultmanager.h:33</a></div></div>
+<div class="ttc" id="class_vault_manager_html_a901a664d84555b316306775d124e377b"><div class="ttname"><a href="class_vault_manager.html#a901a664d84555b316306775d124e377b">VaultManager::sysUserChanged</a></div><div class="ttdeci">void sysUserChanged(const QString &amp;curUser)</div><div class="ttdoc">slotUserChanged 用户切换槽函数 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8cpp_source.html#l00072">vaultmanager.cpp:72</a></div></div>
+<div class="ttc" id="class_vault_adaptor_html"><div class="ttname"><a href="class_vault_adaptor.html">VaultAdaptor</a></div><div class="ttdef"><b>Definition:</b> <a href="vault__adaptor_8h_source.html#l00030">vault_adaptor.h:30</a></div></div>
+<div class="ttc" id="class_vault_manager_html_afe87ca3c7e3fb003286c3a979783c6d7"><div class="ttname"><a href="class_vault_manager.html#afe87ca3c7e3fb003286c3a979783c6d7">VaultManager::triggerLockEvent</a></div><div class="ttdeci">void triggerLockEvent()</div><div class="ttdoc">triggerLockEvent 触发锁定事件 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8cpp_source.html#l00129">vaultmanager.cpp:129</a></div></div>
+<div class="ttc" id="class_vault_manager_html_a73447dcce39c900129456c6247019877"><div class="ttname"><a href="class_vault_manager.html#a73447dcce39c900129456c6247019877">VaultManager::clearLockEvent</a></div><div class="ttdeci">void clearLockEvent()</div><div class="ttdoc">clearLockEvent 清除锁定事件 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8cpp_source.html#l00134">vaultmanager.cpp:134</a></div></div>
+<div class="ttc" id="class_vault_manager_html_aeeb54cfb1628a642ec862fabdc8ddd47"><div class="ttname"><a href="class_vault_manager.html#aeeb54cfb1628a642ec862fabdc8ddd47">VaultManager::setRefreshTime</a></div><div class="ttdeci">void setRefreshTime(quint64 time)</div><div class="ttdoc">setRefreshTime 设置保险箱刷新时间 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8cpp_source.html#l00086">vaultmanager.cpp:86</a></div></div>
+<div class="ttc" id="class_vault_manager_html_a564fb99db8804c38224e66037fbae9fd"><div class="ttname"><a href="class_vault_manager.html#a564fb99db8804c38224e66037fbae9fd">VaultManager::getLastestTime</a></div><div class="ttdeci">quint64 getLastestTime() const</div><div class="ttdoc">getLastestTime 获取保险柜计时 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8cpp_source.html#l00091">vaultmanager.cpp:91</a></div></div>
+<div class="ttc" id="class_vault_manager_html_acad4a03be9b758008251b5f2353f6991"><div class="ttname"><a href="class_vault_manager.html#acad4a03be9b758008251b5f2353f6991">VaultManager::ObjectPath</a></div><div class="ttdeci">static QString ObjectPath</div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8h_source.html#l00040">vaultmanager.h:40</a></div></div>
+<div class="ttc" id="class_vault_manager_html_aa1ff4908a6707d11f2eadd3e81ee41d7"><div class="ttname"><a href="class_vault_manager.html#aa1ff4908a6707d11f2eadd3e81ee41d7">VaultManager::checkAuthentication</a></div><div class="ttdeci">bool checkAuthentication(QString type)</div><div class="ttdoc">checkAuthentication 权限验证 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8cpp_source.html#l00101">vaultmanager.cpp:101</a></div></div>
+<div class="ttc" id="class_vault_manager_html_af92084ff5d5f790c61b1ec15d6c6e9b9"><div class="ttname"><a href="class_vault_manager.html#af92084ff5d5f790c61b1ec15d6c6e9b9">VaultManager::computerSleep</a></div><div class="ttdeci">void computerSleep(bool bSleep)</div><div class="ttdoc">computerSleep 通过dbus接口获取电脑休眠状态 该函数将主机休眠时间记录到时钟 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8cpp_source.html#l00139">vaultmanager.cpp:139</a></div></div>
+<div class="ttc" id="class_vault_manager_html_a4ac47d8a10374474c208e8de6bc61524"><div class="ttname"><a href="class_vault_manager.html#a4ac47d8a10374474c208e8de6bc61524">VaultManager::isLockEventTriggered</a></div><div class="ttdeci">bool isLockEventTriggered() const</div><div class="ttdoc">isLockEventTriggered 是否存在已触发的锁定事件 </div><div class="ttdef"><b>Definition:</b> <a href="vaultmanager_8cpp_source.html#l00124">vaultmanager.cpp:124</a></div></div>
+<div class="ttc" id="class_q_map_html"><div class="ttname"><a href="class_q_map.html">QMap</a></div><div class="ttdef"><b>Definition:</b> <a href="dbuscontrolcenterservice_8h_source.html#l00050">dbuscontrolcenterservice.h:50</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_34fde95c0e5ddda136b2d5bc2521a70b.html">dde-file-manager-daemon</a></li><li class="navelem"><a class="el" href="dir_b18b094e369a95cee1279292f6298d47.html">vault</a></li><li class="navelem"><b>vaultmanager.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:18 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

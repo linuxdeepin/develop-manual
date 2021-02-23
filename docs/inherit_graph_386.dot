@@ -1,0 +1,29 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="PDFParser::Implementation\l::PDFReader::PDFObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_object.html"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="PDFParser::Implementation\l::PDFReader::PDFArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_array.html"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PDFParser::Implementation\l::PDFReader::PDFBoolean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_boolean.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PDFParser::Implementation\l::PDFReader::PDFDictionary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_dictionary.html"];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PDFParser::Implementation\l::PDFReader::PDFIndirectObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_indirect_object.html"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PDFParser::Implementation\l::PDFReader::PDFName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_name.html"];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PDFParser::Implementation\l::PDFReader::PDFNull",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_null.html"];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PDFParser::Implementation\l::PDFReader::PDFNumericFloat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_numeric_float.html"];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PDFParser::Implementation\l::PDFReader::PDFNumericInteger",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_numeric_integer.html"];
+  Node0 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PDFParser::Implementation\l::PDFReader::PDFReferenceCall",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_reference_call.html"];
+  Node0 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PDFParser::Implementation\l::PDFReader::PDFStream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_stream.html"];
+  Node0 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PDFParser::Implementation\l::PDFReader::PDFString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_f_parser_1_1_implementation_1_1_p_d_f_reader_1_1_p_d_f_string.html"];
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: DockItem类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dock_item.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-slots">Protected 槽</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pro-static-attribs">静态 Protected 属性</a> &#124;
+<a href="class_dock_item-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DockItem类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DockItem 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dock_item__inherit__graph.png" border="0" usemap="#_dock_item_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dock_item_inherit__map" id="_dock_item_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+DockItem 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dock_item__coll__graph.png" border="0" usemap="#_dock_item_coll__map" alt="Collaboration graph"/></div>
+<map name="_dock_item_coll__map" id="_dock_item_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a3d9069ab297f80113ac1bcefbd08f0bb"><td class="memItemLeft" align="right" valign="top"><a id="a3d9069ab297f80113ac1bcefbd08f0bb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ItemType</b> { <br />
+&#160;&#160;<b>Launcher</b>, 
+<b>App</b>, 
+<b>Plugins</b>, 
+<b>FixedPlugin</b>, 
+<br />
+&#160;&#160;<b>Placeholder</b>, 
+<b>TrayPlugin</b>
+<br />
+ }</td></tr>
+<tr class="separator:a3d9069ab297f80113ac1bcefbd08f0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a5247e4ab30e51ebda82eb10f98af8166"><td class="memItemLeft" align="right" valign="top"><a id="a5247e4ab30e51ebda82eb10f98af8166"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>refershIcon</b> ()</td></tr>
+<tr class="separator:a5247e4ab30e51ebda82eb10f98af8166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c50855a9d315fdfd3db91e42128cef4"><td class="memItemLeft" align="right" valign="top"><a id="a5c50855a9d315fdfd3db91e42128cef4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showPopupApplet</b> (QWidget *const applet)</td></tr>
+<tr class="separator:a5c50855a9d315fdfd3db91e42128cef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af500daf62168104db15dc9c66c05f0c3"><td class="memItemLeft" align="right" valign="top"><a id="af500daf62168104db15dc9c66c05f0c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hidePopup</b> ()</td></tr>
+<tr class="separator:af500daf62168104db15dc9c66c05f0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5f0a08f9c0bd3b155f77c0d2322aeb"><td class="memItemLeft" align="right" valign="top"><a id="ade5f0a08f9c0bd3b155f77c0d2322aeb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDraging</b> (bool bDrag)</td></tr>
+<tr class="separator:ade5f0a08f9c0bd3b155f77c0d2322aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838319b9e0fce703b9afd7e069e1706d"><td class="memItemLeft" align="right" valign="top"><a id="a838319b9e0fce703b9afd7e069e1706d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDragging</b> ()</td></tr>
+<tr class="separator:a838319b9e0fce703b9afd7e069e1706d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ae0e9b2e52816c90e0e98bdd94ff401af"><td class="memItemLeft" align="right" valign="top"><a id="ae0e9b2e52816c90e0e98bdd94ff401af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragStarted</b> () const</td></tr>
+<tr class="separator:ae0e9b2e52816c90e0e98bdd94ff401af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4d80c8644e41aa981947e55387c1da"><td class="memItemLeft" align="right" valign="top"><a id="aee4d80c8644e41aa981947e55387c1da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>itemDropped</b> (QObject *destination, const QPoint &amp;dropPoint) const</td></tr>
+<tr class="separator:aee4d80c8644e41aa981947e55387c1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd5468fa25c98e92ad3544cefdf61aa"><td class="memItemLeft" align="right" valign="top"><a id="aabd5468fa25c98e92ad3544cefdf61aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestWindowAutoHide</b> (const bool autoHide) const</td></tr>
+<tr class="separator:aabd5468fa25c98e92ad3544cefdf61aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714cfd66d7ac429cfebe18b78c4deb1b"><td class="memItemLeft" align="right" valign="top"><a id="a714cfd66d7ac429cfebe18b78c4deb1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestRefreshWindowVisible</b> () const</td></tr>
+<tr class="separator:a714cfd66d7ac429cfebe18b78c4deb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4429e7a77e1d114de5ff5f735733cb0e"><td class="memItemLeft" align="right" valign="top"><a id="a4429e7a77e1d114de5ff5f735733cb0e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DockItem</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a4429e7a77e1d114de5ff5f735733cb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed60b6e4dbc118e9493782a494c7b7cb"><td class="memItemLeft" align="right" valign="top"><a id="aed60b6e4dbc118e9493782a494c7b7cb"></a>
+virtual ItemType&#160;</td><td class="memItemRight" valign="bottom"><b>itemType</b> () const</td></tr>
+<tr class="separator:aed60b6e4dbc118e9493782a494c7b7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf95d3dd947ca381160a06979a1062be"><td class="memItemLeft" align="right" valign="top"><a id="adf95d3dd947ca381160a06979a1062be"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const override</td></tr>
+<tr class="separator:adf95d3dd947ca381160a06979a1062be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b1c0b7a31e8d15c7881d9b9bbef0ab"><td class="memItemLeft" align="right" valign="top"><a id="ab8b1c0b7a31e8d15c7881d9b9bbef0ab"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>accessibleName</b> ()</td></tr>
+<tr class="separator:ab8b1c0b7a31e8d15c7881d9b9bbef0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a24d8362a78339dee3c186b2b42b7e4cf"><td class="memItemLeft" align="right" valign="top"><a id="a24d8362a78339dee3c186b2b42b7e4cf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setDockPosition</b> (const Position side)</td></tr>
+<tr class="separator:a24d8362a78339dee3c186b2b42b7e4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a89c5bd28cca82129c93671bf6f0e90"><td class="memItemLeft" align="right" valign="top"><a id="a4a89c5bd28cca82129c93671bf6f0e90"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setDockDisplayMode</b> (const DisplayMode mode)</td></tr>
+<tr class="separator:a4a89c5bd28cca82129c93671bf6f0e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected 槽</h2></td></tr>
+<tr class="memitem:a0ccc5e7d2f7070c00eff632aa0e58bba"><td class="memItemLeft" align="right" valign="top"><a id="a0ccc5e7d2f7070c00eff632aa0e58bba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showContextMenu</b> ()</td></tr>
+<tr class="separator:a0ccc5e7d2f7070c00eff632aa0e58bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4d10a28ab5988eb969b585d6a37d56"><td class="memItemLeft" align="right" valign="top"><a id="a0b4d10a28ab5988eb969b585d6a37d56"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onContextMenuAccepted</b> ()</td></tr>
+<tr class="separator:a0b4d10a28ab5988eb969b585d6a37d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:acc6ed811396e1197ff1f28bf4ea5a699"><td class="memItemLeft" align="right" valign="top"><a id="acc6ed811396e1197ff1f28bf4ea5a699"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (QEvent *event)</td></tr>
+<tr class="separator:acc6ed811396e1197ff1f28bf4ea5a699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721c44e5107b8079668d9ff1530be604"><td class="memItemLeft" align="right" valign="top"><a id="a721c44e5107b8079668d9ff1530be604"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *e)</td></tr>
+<tr class="separator:a721c44e5107b8079668d9ff1530be604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68d1e74012b90e5fcc02cedf54267ee"><td class="memItemLeft" align="right" valign="top"><a id="aa68d1e74012b90e5fcc02cedf54267ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *e)</td></tr>
+<tr class="separator:aa68d1e74012b90e5fcc02cedf54267ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb55011a535445e209a4a037dced82d8"><td class="memItemLeft" align="right" valign="top"><a id="abb55011a535445e209a4a037dced82d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enterEvent</b> (QEvent *e)</td></tr>
+<tr class="separator:abb55011a535445e209a4a037dced82d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09897d5724ca882b90bd94b46b69e82"><td class="memItemLeft" align="right" valign="top"><a id="ab09897d5724ca882b90bd94b46b69e82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>leaveEvent</b> (QEvent *e)</td></tr>
+<tr class="separator:ab09897d5724ca882b90bd94b46b69e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4cadd9a89575e7cda28cd8edb9ebcb"><td class="memItemLeft" align="right" valign="top"><a id="a7b4cadd9a89575e7cda28cd8edb9ebcb"></a>
+const QRect&#160;</td><td class="memItemRight" valign="bottom"><b>perfectIconRect</b> () const</td></tr>
+<tr class="separator:a7b4cadd9a89575e7cda28cd8edb9ebcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcb7ffe26321f60b08b0c6274426f7d"><td class="memItemLeft" align="right" valign="top"><a id="a7dcb7ffe26321f60b08b0c6274426f7d"></a>
+const QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>popupMarkPoint</b> ()</td></tr>
+<tr class="separator:a7dcb7ffe26321f60b08b0c6274426f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40782c2219c650e005e9f1a801493c80"><td class="memItemLeft" align="right" valign="top"><a id="a40782c2219c650e005e9f1a801493c80"></a>
+const QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>topleftPoint</b> () const</td></tr>
+<tr class="separator:a40782c2219c650e005e9f1a801493c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa550c93d373c45feab9acc3cfb72662f"><td class="memItemLeft" align="right" valign="top"><a id="aa550c93d373c45feab9acc3cfb72662f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hideNonModel</b> ()</td></tr>
+<tr class="separator:aa550c93d373c45feab9acc3cfb72662f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc99ec850267134fdc44b782b203b5b"><td class="memItemLeft" align="right" valign="top"><a id="acbc99ec850267134fdc44b782b203b5b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>popupWindowAccept</b> ()</td></tr>
+<tr class="separator:acbc99ec850267134fdc44b782b203b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5bc74e1c5ceaab1ae3260451f1120a"><td class="memItemLeft" align="right" valign="top"><a id="afe5bc74e1c5ceaab1ae3260451f1120a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>showPopupWindow</b> (QWidget *const content, const bool model=false)</td></tr>
+<tr class="separator:afe5bc74e1c5ceaab1ae3260451f1120a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94a9b28a9dbdd0d3fe7e41bf7b1bc35"><td class="memItemLeft" align="right" valign="top"><a id="ae94a9b28a9dbdd0d3fe7e41bf7b1bc35"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>showHoverTips</b> ()</td></tr>
+<tr class="separator:ae94a9b28a9dbdd0d3fe7e41bf7b1bc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026b63eddbe0b57b74adedc5d866632c"><td class="memItemLeft" align="right" valign="top"><a id="a026b63eddbe0b57b74adedc5d866632c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>invokedMenuItem</b> (const QString &amp;itemId, const bool checked)</td></tr>
+<tr class="separator:a026b63eddbe0b57b74adedc5d866632c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4741ec8aba7743079310c21a4f0a0bec"><td class="memItemLeft" align="right" valign="top"><a id="a4741ec8aba7743079310c21a4f0a0bec"></a>
+virtual const QString&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenu</b> () const</td></tr>
+<tr class="separator:a4741ec8aba7743079310c21a4f0a0bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9ac15adb590a436537fd5680bdd9d9"><td class="memItemLeft" align="right" valign="top"><a id="a7d9ac15adb590a436537fd5680bdd9d9"></a>
+virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>popupTips</b> ()</td></tr>
+<tr class="separator:a7d9ac15adb590a436537fd5680bdd9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a2dc5978a8db7a16955bdb97d065fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dock_item.html#aa5a2dc5978a8db7a16955bdb97d065fe">checkAndResetTapHoldGestureState</a> ()</td></tr>
+<tr class="memdesc:aa5a2dc5978a8db7a16955bdb97d065fe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dock_item.html#aa5a2dc5978a8db7a16955bdb97d065fe" title="DockItem::checkAndResetTapHoldGestureState checks if a QTapAndHoldGesture happens during the mouse pr...">DockItem::checkAndResetTapHoldGestureState</a> checks if a QTapAndHoldGesture happens during the mouse press and release event pair.  <a href="#aa5a2dc5978a8db7a16955bdb97d065fe">更多...</a><br /></td></tr>
+<tr class="separator:aa5a2dc5978a8db7a16955bdb97d065fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fdfe84c8aacb96762ea0c022195d57"><td class="memItemLeft" align="right" valign="top"><a id="ab7fdfe84c8aacb96762ea0c022195d57"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>gestureEvent</b> (QGestureEvent *event)</td></tr>
+<tr class="separator:ab7fdfe84c8aacb96762ea0c022195d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ad9388c4cfab84f99405744a3cf238dbb"><td class="memItemLeft" align="right" valign="top"><a id="ad9388c4cfab84f99405744a3cf238dbb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_hover</b></td></tr>
+<tr class="separator:ad9388c4cfab84f99405744a3cf238dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb1586d6e6ac0f24bacb3c858419a38"><td class="memItemLeft" align="right" valign="top"><a id="afdb1586d6e6ac0f24bacb3c858419a38"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_popupShown</b></td></tr>
+<tr class="separator:afdb1586d6e6ac0f24bacb3c858419a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8034c8a51de2ad2bedaac1c8fe088a3"><td class="memItemLeft" align="right" valign="top"><a id="aa8034c8a51de2ad2bedaac1c8fe088a3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_tapAndHold</b></td></tr>
+<tr class="separator:aa8034c8a51de2ad2bedaac1c8fe088a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac8f4e72349722fdf2401c76218e9b7"><td class="memItemLeft" align="right" valign="top"><a id="aeac8f4e72349722fdf2401c76218e9b7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_draging</b></td></tr>
+<tr class="separator:aeac8f4e72349722fdf2401c76218e9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1749d5ee29f10f5d3d84f4a4ee17a262"><td class="memItemLeft" align="right" valign="top"><a id="a1749d5ee29f10f5d3d84f4a4ee17a262"></a>
+QMenu&#160;</td><td class="memItemRight" valign="bottom"><b>m_contextMenu</b></td></tr>
+<tr class="separator:a1749d5ee29f10f5d3d84f4a4ee17a262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afea60826636f75f263869e566b0256"><td class="memItemLeft" align="right" valign="top"><a id="a0afea60826636f75f263869e566b0256"></a>
+QPointer&lt; QWidget &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastPopupWidget</b></td></tr>
+<tr class="separator:a0afea60826636f75f263869e566b0256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98115dea3245ad77a97653e47a19c6d2"><td class="memItemLeft" align="right" valign="top"><a id="a98115dea3245ad77a97653e47a19c6d2"></a>
+QTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_popupTipsDelayTimer</b></td></tr>
+<tr class="separator:a98115dea3245ad77a97653e47a19c6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a7d2b39f0c56448368abe8219b06b5"><td class="memItemLeft" align="right" valign="top"><a id="a30a7d2b39f0c56448368abe8219b06b5"></a>
+QTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_popupAdjustDelayTimer</b></td></tr>
+<tr class="separator:a30a7d2b39f0c56448368abe8219b06b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+静态 Protected 属性</h2></td></tr>
+<tr class="memitem:a8e57b8861d9c20e00d82b678edd3481f"><td class="memItemLeft" align="right" valign="top"><a id="a8e57b8861d9c20e00d82b678edd3481f"></a>
+static Position&#160;</td><td class="memItemRight" valign="bottom"><b>DockPosition</b> = Position::Top</td></tr>
+<tr class="separator:a8e57b8861d9c20e00d82b678edd3481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5033df86ff5a0fe64116a374e4493a"><td class="memItemLeft" align="right" valign="top"><a id="a8b5033df86ff5a0fe64116a374e4493a"></a>
+static DisplayMode&#160;</td><td class="memItemRight" valign="bottom"><b>DockDisplayMode</b> = DisplayMode::Efficient</td></tr>
+<tr class="separator:a8b5033df86ff5a0fe64116a374e4493a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a37a481521295b0661508cc2918692"><td class="memItemLeft" align="right" valign="top"><a id="ac6a37a481521295b0661508cc2918692"></a>
+static QPointer&lt; <a class="el" href="class_dock_popup_window.html">DockPopupWindow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PopupWindow</b></td></tr>
+<tr class="separator:ac6a37a481521295b0661508cc2918692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dockitem_8h_source.html">dockitem.h</a> 第 <a class="el" href="dockitem_8h_source.html#l00038">38</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="aa5a2dc5978a8db7a16955bdb97d065fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5a2dc5978a8db7a16955bdb97d065fe">&#9670;&nbsp;</a></span>checkAndResetTapHoldGestureState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DockItem::checkAndResetTapHoldGestureState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dock_item.html#aa5a2dc5978a8db7a16955bdb97d065fe" title="DockItem::checkAndResetTapHoldGestureState checks if a QTapAndHoldGesture happens during the mouse pr...">DockItem::checkAndResetTapHoldGestureState</a> checks if a QTapAndHoldGesture happens during the mouse press and release event pair. </p>
+<dl class="section return"><dt>返回</dt><dd>true if yes, otherwise false. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dockitem_8cpp_source.html">dockitem.cpp</a> 第 <a class="el" href="dockitem_8cpp_source.html#l00364">364</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-dock/frame/item/<a class="el" href="dockitem_8h_source.html">dockitem.h</a></li>
+<li>dde-dock/frame/item/<a class="el" href="dockitem_8cpp_source.html">dockitem.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_dock_item.html">DockItem</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

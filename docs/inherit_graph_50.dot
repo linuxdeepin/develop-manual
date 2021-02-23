@@ -1,0 +1,19 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1011 [label="QPushButton",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1011 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="Button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_button.html"];
+  Node1011 -> Node1013 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1013 [label="MiniCategoryItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mini_category_item.html"];
+  Node1011 -> Node1014 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1014 [label="MiniFrameButton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mini_frame_button.html"];
+  Node1011 -> Node1015 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1015 [label="NavigationButton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_navigation_button.html"];
+  Node1011 -> Node1016 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1016 [label="PushButtonList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_push_button_list.html"];
+  Node1011 -> Node1017 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1017 [label="RoundedButton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_rounded_button.html"];
+}

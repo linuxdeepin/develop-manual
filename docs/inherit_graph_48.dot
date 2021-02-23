@@ -1,0 +1,45 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2987 [label="DDialog",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2987 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="BurnOptDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_burn_opt_dialog.html"];
+  Node2987 -> Node2989 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2989 [label="CExportImageDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_export_image_dialog.html"];
+  Node2987 -> Node2990 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2990 [label="CloseConfirmDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_close_confirm_dialog.html"];
+  Node2987 -> Node2991 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2991 [label="ComputerPropertyDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_computer_property_dialog.html"];
+  Node2987 -> Node2992 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2992 [label="ConnectToServerDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_connect_to_server_dialog.html"];
+  Node2987 -> Node2993 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2993 [label="CProgressDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_progress_dialog.html"];
+  Node2987 -> Node2994 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2994 [label="DFMVaultPageBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_f_m_vault_page_base.html"];
+  Node2994 -> Node2995 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2995 [label="DFMVaultActiveView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_f_m_vault_active_view.html"];
+  Node2994 -> Node2996 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2996 [label="DFMVaultRecoveryKeyPages",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_f_m_vault_recovery_key_pages.html"];
+  Node2994 -> Node2997 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2997 [label="DFMVaultRemovePages",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_f_m_vault_remove_pages.html"];
+  Node2994 -> Node2998 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2998 [label="DFMVaultUnlockPages",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_f_m_vault_unlock_pages.html"];
+  Node2987 -> Node2999 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2999 [label="DMultiFilePropertyDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_multi_file_property_dialog.html"];
+  Node2987 -> Node3000 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3000 [label="MountAskPasswordDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mount_ask_password_dialog.html"];
+  Node2987 -> Node3001 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3001 [label="MountSecretDiskAskPassword\lDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mount_secret_disk_ask_password_dialog.html"];
+  Node2987 -> Node3002 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3002 [label="MoveToTrashConflictDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_move_to_trash_conflict_dialog.html"];
+  Node2987 -> Node3003 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3003 [label="RecoveryDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_recovery_dialog.html"];
+  Node2987 -> Node3004 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3004 [label="ReminderDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_reminder_dialog.html"];
+  Node2987 -> Node3005 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3005 [label="TimeoutDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_timeout_dialog.html"];
+  Node2987 -> Node3006 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3006 [label="UserSharePasswordSetting\lDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_user_share_password_setting_dialog.html"];
+}

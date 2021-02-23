@@ -1,0 +1,759 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: DFileViewHelper类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_d_file_view_helper.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_d_file_view_helper-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DFileViewHelper类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 DFileViewHelper 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_file_view_helper__inherit__graph.png" border="0" usemap="#_d_file_view_helper_inherit__map" alt="Inheritance graph"/></div>
+<map name="_d_file_view_helper_inherit__map" id="_d_file_view_helper_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+DFileViewHelper 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_file_view_helper__coll__graph.png" border="0" usemap="#_d_file_view_helper_coll__map" alt="Collaboration graph"/></div>
+<map name="_d_file_view_helper_coll__map" id="_d_file_view_helper_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a8ef7000a8eaac21a5e31e628c596a15c"><td class="memItemLeft" align="right" valign="top"><a id="a8ef7000a8eaac21a5e31e628c596a15c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleCommitData</b> (QWidget *editor) const</td></tr>
+<tr class="separator:a8ef7000a8eaac21a5e31e628c596a15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ab4d5b4d99eb612bcc475bad2f4e772c8"><td class="memItemLeft" align="right" valign="top"><a id="ab4d5b4d99eb612bcc475bad2f4e772c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>triggerEdit</b> (const QModelIndex &amp;index)</td></tr>
+<tr class="separator:ab4d5b4d99eb612bcc475bad2f4e772c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9a8d548090901bb022c0ebc96e6ede54"><td class="memItemLeft" align="right" valign="top"><a id="a9a8d548090901bb022c0ebc96e6ede54"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFileViewHelper</b> (QAbstractItemView *parent)</td></tr>
+<tr class="separator:a9a8d548090901bb022c0ebc96e6ede54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79aa130f183633b1072b7b01b4d6893"><td class="memItemLeft" align="right" valign="top"><a id="ac79aa130f183633b1072b7b01b4d6893"></a>
+QAbstractItemView *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const</td></tr>
+<tr class="separator:ac79aa130f183633b1072b7b01b4d6893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac5c491c6126e065f2385754cfa4757"><td class="memItemLeft" align="right" valign="top">virtual quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a6ac5c491c6126e065f2385754cfa4757">windowId</a> () const</td></tr>
+<tr class="memdesc:a6ac5c491c6126e065f2385754cfa4757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window id of the top-level window in the parent widget.  <a href="#a6ac5c491c6126e065f2385754cfa4757">更多...</a><br /></td></tr>
+<tr class="separator:a6ac5c491c6126e065f2385754cfa4757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56201dd713b4014288c111d035846e7b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a56201dd713b4014288c111d035846e7b">isTransparent</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:a56201dd713b4014288c111d035846e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if index is transparent; otherwise return false.  <a href="#a56201dd713b4014288c111d035846e7b">更多...</a><br /></td></tr>
+<tr class="separator:a56201dd713b4014288c111d035846e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1225137cf67fa62138d4ae64ccbf3f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#aaf1225137cf67fa62138d4ae64ccbf3f">isSelected</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:aaf1225137cf67fa62138d4ae64ccbf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if index is selected; otherwise return false.  <a href="#aaf1225137cf67fa62138d4ae64ccbf3f">更多...</a><br /></td></tr>
+<tr class="separator:aaf1225137cf67fa62138d4ae64ccbf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21b7700501dd79774756667dcb85631"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#ac21b7700501dd79774756667dcb85631">isDropTarget</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:ac21b7700501dd79774756667dcb85631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if file view drag moveing and mouse hover on index; otherwise return false.  <a href="#ac21b7700501dd79774756667dcb85631">更多...</a><br /></td></tr>
+<tr class="separator:ac21b7700501dd79774756667dcb85631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfdd789d6a0d4feb3914e0e0968703f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a4cfdd789d6a0d4feb3914e0e0968703f">selectedIndexsCount</a> () const</td></tr>
+<tr class="memdesc:a4cfdd789d6a0d4feb3914e0e0968703f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the view of selected index count.  <a href="#a4cfdd789d6a0d4feb3914e0e0968703f">更多...</a><br /></td></tr>
+<tr class="separator:a4cfdd789d6a0d4feb3914e0e0968703f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1f1c540e919500504864a52ec72b6c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a2b1f1c540e919500504864a52ec72b6c">rowCount</a> () const</td></tr>
+<tr class="memdesc:a2b1f1c540e919500504864a52ec72b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the view row count.  <a href="#a2b1f1c540e919500504864a52ec72b6c">更多...</a><br /></td></tr>
+<tr class="separator:a2b1f1c540e919500504864a52ec72b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d9273435533551ecb532d9f4763f4b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#ab0d9273435533551ecb532d9f4763f4b">indexOfRow</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:ab0d9273435533551ecb532d9f4763f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index row index.  <a href="#ab0d9273435533551ecb532d9f4763f4b">更多...</a><br /></td></tr>
+<tr class="separator:ab0d9273435533551ecb532d9f4763f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313e52a448daf8e394f8382f27ee8fee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; QIcon &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a313e52a448daf8e394f8382f27ee8fee">additionalIcon</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:a313e52a448daf8e394f8382f27ee8fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns corner icon by file info(file permission...).  <a href="#a313e52a448daf8e394f8382f27ee8fee">更多...</a><br /></td></tr>
+<tr class="separator:a313e52a448daf8e394f8382f27ee8fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7690ba33af599eee319fdfe0651dcde5"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a7690ba33af599eee319fdfe0651dcde5">baseName</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:a7690ba33af599eee319fdfe0651dcde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the complete base name of the file without the path. The complete base name consists of all characters in the file up to (but not including) the file suffix.  <a href="#a7690ba33af599eee319fdfe0651dcde5">更多...</a><br /></td></tr>
+<tr class="separator:a7690ba33af599eee319fdfe0651dcde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf45a4ceeba4644593dace6a600cf8f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_list.html">QList</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#adbf45a4ceeba4644593dace6a600cf8f">columnRoleList</a> () const</td></tr>
+<tr class="memdesc:adbf45a4ceeba4644593dace6a600cf8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the view role list by column  <a href="#adbf45a4ceeba4644593dace6a600cf8f">更多...</a><br /></td></tr>
+<tr class="separator:adbf45a4ceeba4644593dace6a600cf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02053175c06173dc7c72c3a8cea14336"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a02053175c06173dc7c72c3a8cea14336">columnWidth</a> (int columnIndex) const</td></tr>
+<tr class="memdesc:a02053175c06173dc7c72c3a8cea14336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return column width by column index  <a href="#a02053175c06173dc7c72c3a8cea14336">更多...</a><br /></td></tr>
+<tr class="separator:a02053175c06173dc7c72c3a8cea14336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351449f6c822aa2e0fdebae25782b6c3"><td class="memItemLeft" align="right" valign="top"><a id="a351449f6c822aa2e0fdebae25782b6c3"></a>
+virtual <a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>currentUrl</b> () const</td></tr>
+<tr class="separator:a351449f6c822aa2e0fdebae25782b6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38483ec9906d0614b779a280fe7ebb0b"><td class="memItemLeft" align="right" valign="top"><a id="a38483ec9906d0614b779a280fe7ebb0b"></a>
+virtual const DAbstractFileInfoPointer&#160;</td><td class="memItemRight" valign="bottom"><b>fileInfo</b> (const QModelIndex &amp;index) const =0</td></tr>
+<tr class="separator:a38483ec9906d0614b779a280fe7ebb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefb48db88b3c39da453fbae39a91332"><td class="memItemLeft" align="right" valign="top"><a id="aaefb48db88b3c39da453fbae39a91332"></a>
+virtual <a class="el" href="class_d_f_m_styled_item_delegate.html">DFMStyledItemDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>itemDelegate</b> () const =0</td></tr>
+<tr class="separator:aaefb48db88b3c39da453fbae39a91332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34554360a0e954c46727fc00feeef153"><td class="memItemLeft" align="right" valign="top"><a id="a34554360a0e954c46727fc00feeef153"></a>
+virtual <a class="el" href="class_d_file_system_model.html">DFileSystemModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>model</b> () const =0</td></tr>
+<tr class="separator:a34554360a0e954c46727fc00feeef153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0af8f88a2302e3ae718f23f19ee2c8"><td class="memItemLeft" align="right" valign="top"><a id="aae0af8f88a2302e3ae718f23f19ee2c8"></a>
+virtual const <a class="el" href="class_q_list.html">DUrlList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>selectedUrls</b> () const =0</td></tr>
+<tr class="separator:aae0af8f88a2302e3ae718f23f19ee2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53037d9ab16b23b5e0447c1dada0ea0d"><td class="memItemLeft" align="right" valign="top"><a id="a53037d9ab16b23b5e0447c1dada0ea0d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>select</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;list)=0</td></tr>
+<tr class="separator:a53037d9ab16b23b5e0447c1dada0ea0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58219567486522d93ccdf54323369b2"><td class="memItemLeft" align="right" valign="top"><a id="af58219567486522d93ccdf54323369b2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>initStyleOption</b> (QStyleOptionViewItem *option, const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:af58219567486522d93ccdf54323369b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b552089bc0a6dcffcc6e6072541aa3"><td class="memItemLeft" align="right" valign="top"><a id="a22b552089bc0a6dcffcc6e6072541aa3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>handleMenu</b> (QMenu *menu)</td></tr>
+<tr class="separator:a22b552089bc0a6dcffcc6e6072541aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f4af0e537bbc5a0bbd7972cb8054ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a34f4af0e537bbc5a0bbd7972cb8054ad">setIndexWidget</a> (const QModelIndex &amp;index, QWidget *widget)</td></tr>
+<tr class="memdesc:a34f4af0e537bbc5a0bbd7972cb8054ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the given widget on the item at the given index, passing the ownership of the widget to the view viewport. If index is invalid (e.g., if you pass the root index), this function will do nothing.  <a href="#a34f4af0e537bbc5a0bbd7972cb8054ad">更多...</a><br /></td></tr>
+<tr class="separator:a34f4af0e537bbc5a0bbd7972cb8054ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4b3007ac16e5da681f91a273b82331"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a3f4b3007ac16e5da681f91a273b82331">indexWidget</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:a3f4b3007ac16e5da681f91a273b82331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the widget for the item at the given index.  <a href="#a3f4b3007ac16e5da681f91a273b82331">更多...</a><br /></td></tr>
+<tr class="separator:a3f4b3007ac16e5da681f91a273b82331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecde8bd5abe5e83c33d4fad307bbb124"><td class="memItemLeft" align="right" valign="top"><a id="aecde8bd5abe5e83c33d4fad307bbb124"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#aecde8bd5abe5e83c33d4fad307bbb124">updateGeometries</a> ()</td></tr>
+<tr class="memdesc:aecde8bd5abe5e83c33d4fad307bbb124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the geometry of the child widgets of the view. <br /></td></tr>
+<tr class="separator:aecde8bd5abe5e83c33d4fad307bbb124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee3e57175fd14e0e2f530060ee69f68"><td class="memItemLeft" align="right" valign="top">QMargins&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#acee3e57175fd14e0e2f530060ee69f68">fileViewViewportMargins</a> () const</td></tr>
+<tr class="memdesc:acee3e57175fd14e0e2f530060ee69f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the margins around the file view. By default all the margins are zero.  <a href="#acee3e57175fd14e0e2f530060ee69f68">更多...</a><br /></td></tr>
+<tr class="separator:acee3e57175fd14e0e2f530060ee69f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffb9a91ca17b72112ff3798b179a22e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#abffb9a91ca17b72112ff3798b179a22e">keyboardSearch</a> (char key)</td></tr>
+<tr class="memdesc:abffb9a91ca17b72112ff3798b179a22e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_file_view_helper.html#abffb9a91ca17b72112ff3798b179a22e" title="DFileViewHelper::keyboardSearch ">DFileViewHelper::keyboardSearch</a>  <a href="#abffb9a91ca17b72112ff3798b179a22e">更多...</a><br /></td></tr>
+<tr class="separator:abffb9a91ca17b72112ff3798b179a22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c90bd1935f5ab96c7d6b2031ca5fd64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_file_view_helper.html#a7c90bd1935f5ab96c7d6b2031ca5fd64">isEmptyArea</a> (const QPoint &amp;pos) const</td></tr>
+<tr class="memdesc:a7c90bd1935f5ab96c7d6b2031ca5fd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the position is empty area; otherwise return false.  <a href="#a7c90bd1935f5ab96c7d6b2031ca5fd64">更多...</a><br /></td></tr>
+<tr class="separator:a7c90bd1935f5ab96c7d6b2031ca5fd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9da933b1d36e3fca0d846737b21d848"><td class="memItemLeft" align="right" valign="top"><a id="af9da933b1d36e3fca0d846737b21d848"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>preproccessDropEvent</b> (QDropEvent *event) const</td></tr>
+<tr class="separator:af9da933b1d36e3fca0d846737b21d848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dbcd7b96be52b2adf1984569cdad7c"><td class="memItemLeft" align="right" valign="top"><a id="a60dbcd7b96be52b2adf1984569cdad7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>preproccessDropEvent</b> (QDropEvent *event, const <a class="el" href="class_q_list.html">QList</a>&lt; QUrl &gt; &amp;urls) const</td></tr>
+<tr class="separator:a60dbcd7b96be52b2adf1984569cdad7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8h_source.html">dfileviewhelper.h</a> 第 <a class="el" href="dfileviewhelper_8h_source.html#l00028">28</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a313e52a448daf8e394f8382f27ee8fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313e52a448daf8e394f8382f27ee8fee">&#9670;&nbsp;</a></span>additionalIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt; QIcon &gt; DFileViewHelper::additionalIcon </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns corner icon by file info(file permission...). </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00466">466</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7690ba33af599eee319fdfe0651dcde5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7690ba33af599eee319fdfe0651dcde5">&#9670;&nbsp;</a></span>baseName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DFileViewHelper::baseName </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the complete base name of the file without the path. The complete base name consists of all characters in the file up to (but not including) the file suffix. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00487">487</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adbf45a4ceeba4644593dace6a600cf8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf45a4ceeba4644593dace6a600cf8f">&#9670;&nbsp;</a></span>columnRoleList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt; int &gt; DFileViewHelper::columnRoleList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the view role list by column </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_file_view_helper.html#a7fc04d5de8c887152f87f08efbf54326">FileViewHelper</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00502">502</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a02053175c06173dc7c72c3a8cea14336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02053175c06173dc7c72c3a8cea14336">&#9670;&nbsp;</a></span>columnWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DFileViewHelper::columnWidth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columnIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return column width by column index </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">columnIndex</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_file_view_helper.html#ac691749b6e14abb1b87d329bd44a3060">FileViewHelper</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00512">512</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acee3e57175fd14e0e2f530060ee69f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee3e57175fd14e0e2f530060ee69f68">&#9670;&nbsp;</a></span>fileViewViewportMargins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMargins DFileViewHelper::fileViewViewportMargins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the margins around the file view. By default all the margins are zero. </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00659">659</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab0d9273435533551ecb532d9f4763f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d9273435533551ecb532d9f4763f4b">&#9670;&nbsp;</a></span>indexOfRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DFileViewHelper::indexOfRow </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the index row index. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_file_view_helper.html#aab36c56f249d002474b73365df485679">FileViewHelper</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00454">454</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3f4b3007ac16e5da681f91a273b82331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f4b3007ac16e5da681f91a273b82331">&#9670;&nbsp;</a></span>indexWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * DFileViewHelper::indexWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the widget for the item at the given index. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_file_view_helper.html#a34f4af0e537bbc5a0bbd7972cb8054ad" title="Sets the given widget on the item at the given index, passing the ownership of the widget to the view...">setIndexWidget()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00642">642</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac21b7700501dd79774756667dcb85631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21b7700501dd79774756667dcb85631">&#9670;&nbsp;</a></span>isDropTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DFileViewHelper::isDropTarget </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if file view drag moveing and mouse hover on index; otherwise return false. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_file_view_helper.html#a7ec091b1a59910bafb5ec9e62233ffb7">FileViewHelper</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00424">424</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7c90bd1935f5ab96c7d6b2031ca5fd64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c90bd1935f5ab96c7d6b2031ca5fd64">&#9670;&nbsp;</a></span>isEmptyArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DFileViewHelper::isEmptyArea </td>
+          <td>(</td>
+          <td class="paramtype">const QPoint &amp;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the position is empty area; otherwise return false. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00695">695</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaf1225137cf67fa62138d4ae64ccbf3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1225137cf67fa62138d4ae64ccbf3f">&#9670;&nbsp;</a></span>isSelected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DFileViewHelper::isSelected </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if index is selected; otherwise return false. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_canvas_view_helper.html#ad0a2d8b1ed8724676a3f499cdfeaefc9">CanvasViewHelper</a> , 以及 <a class="el" href="class_file_view_helper.html#a6cad842b5023134d60130955b9a0453d">FileViewHelper</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00414">414</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a56201dd713b4014288c111d035846e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56201dd713b4014288c111d035846e7b">&#9670;&nbsp;</a></span>isTransparent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DFileViewHelper::isTransparent </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if index is transparent; otherwise return false. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00355">355</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abffb9a91ca17b72112ff3798b179a22e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffb9a91ca17b72112ff3798b179a22e">&#9670;&nbsp;</a></span>keyboardSearch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFileViewHelper::keyboardSearch </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_d_file_view_helper.html#abffb9a91ca17b72112ff3798b179a22e" title="DFileViewHelper::keyboardSearch ">DFileViewHelper::keyboardSearch</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00668">668</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2b1f1c540e919500504864a52ec72b6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1f1c540e919500504864a52ec72b6c">&#9670;&nbsp;</a></span>rowCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DFileViewHelper::rowCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the view row count. </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_file_view_helper.html#a3141eb05c1dd099f7de860fe85e6a6f3">FileViewHelper</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00444">444</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4cfdd789d6a0d4feb3914e0e0968703f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfdd789d6a0d4feb3914e0e0968703f">&#9670;&nbsp;</a></span>selectedIndexsCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DFileViewHelper::selectedIndexsCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the view of selected index count. </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_canvas_view_helper.html#a6520505705b9686051c9e8bf74b5b56b">CanvasViewHelper</a> , 以及 <a class="el" href="class_file_view_helper.html#ab62b5a92b8b3c6f1f0a390364375d9c3">FileViewHelper</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00435">435</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a34f4af0e537bbc5a0bbd7972cb8054ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f4af0e537bbc5a0bbd7972cb8054ad">&#9670;&nbsp;</a></span>setIndexWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFileViewHelper::setIndexWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the given widget on the item at the given index, passing the ownership of the widget to the view viewport. If index is invalid (e.g., if you pass the root index), this function will do nothing. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+    <tr><td class="paramname">widget</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_file_view_helper.html#a3f4b3007ac16e5da681f91a273b82331" title="Returns the widget for the item at the given index. ">indexWidget()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00631">631</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6ac5c491c6126e065f2385754cfa4757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac5c491c6126e065f2385754cfa4757">&#9670;&nbsp;</a></span>windowId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 DFileViewHelper::windowId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the window id of the top-level window in the parent widget. </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>被 <a class="el" href="class_file_view_helper.html#ab1c4df4dcda4c94bd196bb461d9135e3">FileViewHelper</a> , 以及 <a class="el" href="class_canvas_view_helper.html#a16642f2a7ff420821a4911467424004b">CanvasViewHelper</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a> 第 <a class="el" href="dfileviewhelper_8cpp_source.html#l00345">345</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfileviewhelper_8h_source.html">dfileviewhelper.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfileviewhelper_8cpp_source.html">dfileviewhelper.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_d_file_view_helper.html">DFileViewHelper</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

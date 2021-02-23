@@ -1,0 +1,16 @@
+digraph "DCC_NAMESPACE::mouse::TouchPadSettingWidget"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node3 [label="DCC_NAMESPACE::mouse\l::TouchPadSettingWidget",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="dcc::ContentWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdcc_1_1_content_widget.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="QWidget",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_backBtn" ,fontname="Helvetica"];
+  Node6 [label="dcc::widgets::BackButton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdcc_1_1widgets_1_1_back_button.html"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="dcc::widgets::Translucent\lFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdcc_1_1widgets_1_1_translucent_frame.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="QFrame",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

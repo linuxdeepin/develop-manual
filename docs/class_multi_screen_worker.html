@@ -1,0 +1,652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: MultiScreenWorker类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_multi_screen_worker.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_multi_screen_worker-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">MultiScreenWorker类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 MultiScreenWorker 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_multi_screen_worker__inherit__graph.png" border="0" usemap="#_multi_screen_worker_inherit__map" alt="Inheritance graph"/></div>
+<map name="_multi_screen_worker_inherit__map" id="_multi_screen_worker_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+MultiScreenWorker 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_multi_screen_worker__coll__graph.png" border="0" usemap="#_multi_screen_worker_coll__map" alt="Collaboration graph"/></div>
+<map name="_multi_screen_worker_coll__map" id="_multi_screen_worker_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ac0afa91528aced329da481c1a0b2793d"><td class="memItemLeft" align="right" valign="top"><a id="ac0afa91528aced329da481c1a0b2793d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Flag</b> { <b>Motion</b> = 1 &lt;&lt; 0, 
+<b>Button</b> = 1 &lt;&lt; 1, 
+<b>Key</b> = 1 &lt;&lt; 2
+ }</td></tr>
+<tr class="separator:ac0afa91528aced329da481c1a0b2793d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d474b1b98a835bae6bc9b72ca6968f"><td class="memItemLeft" align="right" valign="top"><a id="a30d474b1b98a835bae6bc9b72ca6968f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AniAction</b> { <b>Show</b> = 0, 
+<b>Hide</b>
+ }</td></tr>
+<tr class="separator:a30d474b1b98a835bae6bc9b72ca6968f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:ab7cb7f7c49196b801a51ad888b6b4d1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#ab7cb7f7c49196b801a51ad888b6b4d1f">onAutoHideChanged</a> (bool autoHide)</td></tr>
+<tr class="separator:ab7cb7f7c49196b801a51ad888b6b4d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc39f5c01d507d93d6de586fcef3943"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#a9dc39f5c01d507d93d6de586fcef3943">updateDaemonDockSize</a> (int dockSize)</td></tr>
+<tr class="memdesc:a9dc39f5c01d507d93d6de586fcef3943"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateDaemonDockSize  <a href="#a9dc39f5c01d507d93d6de586fcef3943">更多...</a><br /></td></tr>
+<tr class="separator:a9dc39f5c01d507d93d6de586fcef3943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768da7b1e8f522901b051d453cb6e14e"><td class="memItemLeft" align="right" valign="top"><a id="a768da7b1e8f522901b051d453cb6e14e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onDragStateChanged</b> (bool draging)</td></tr>
+<tr class="separator:a768da7b1e8f522901b051d453cb6e14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af52bb555907bfbec0792e3ec2c8eb0"><td class="memItemLeft" align="right" valign="top"><a id="a6af52bb555907bfbec0792e3ec2c8eb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleDbusSignal</b> (QDBusMessage)</td></tr>
+<tr class="separator:a6af52bb555907bfbec0792e3ec2c8eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ad8b05da4bc87347dc37c1df0a0bfc797"><td class="memItemLeft" align="right" valign="top"><a id="ad8b05da4bc87347dc37c1df0a0bfc797"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>opacityChanged</b> (const quint8 value) const</td></tr>
+<tr class="separator:ad8b05da4bc87347dc37c1df0a0bfc797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8dbbb92988c1116c6d7268abed1f7cc"><td class="memItemLeft" align="right" valign="top"><a id="af8dbbb92988c1116c6d7268abed1f7cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>displayModeChanegd</b> ()</td></tr>
+<tr class="separator:af8dbbb92988c1116c6d7268abed1f7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79270acdd38ee7b93e7f5fd81a53bc7a"><td class="memItemLeft" align="right" valign="top"><a id="a79270acdd38ee7b93e7f5fd81a53bc7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUpdateRegionMonitor</b> ()</td></tr>
+<tr class="separator:a79270acdd38ee7b93e7f5fd81a53bc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50bdbb9b4ee3a2ffcbe6a75a3efd0fc"><td class="memItemLeft" align="right" valign="top"><a id="ad50bdbb9b4ee3a2ffcbe6a75a3efd0fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUpdateFrontendGeometry</b> ()</td></tr>
+<tr class="separator:ad50bdbb9b4ee3a2ffcbe6a75a3efd0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703de2314f22a7b33d3d0c862e3d9390"><td class="memItemLeft" align="right" valign="top"><a id="a703de2314f22a7b33d3d0c862e3d9390"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#a703de2314f22a7b33d3d0c862e3d9390">requestNotifyWindowManager</a> ()</td></tr>
+<tr class="memdesc:a703de2314f22a7b33d3d0c862e3d9390"><td class="mdescLeft">&#160;</td><td class="mdescRight">!! 给后端的区域不能为是或宽度为0的区域,否则会带来HideState死循环切换的bug <br /></td></tr>
+<tr class="separator:a703de2314f22a7b33d3d0c862e3d9390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab711b821577062cc7c6d23e67b555a69"><td class="memItemLeft" align="right" valign="top"><a id="ab711b821577062cc7c6d23e67b555a69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUpdatePosition</b> (const Position &amp;fromPos, const Position &amp;toPos)</td></tr>
+<tr class="separator:ab711b821577062cc7c6d23e67b555a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e366795cb19568637394c7e9f79a8f6"><td class="memItemLeft" align="right" valign="top"><a id="a3e366795cb19568637394c7e9f79a8f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUpdateLayout</b> ()</td></tr>
+<tr class="separator:a3e366795cb19568637394c7e9f79a8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfba0a8f0f48eed0a7177c919638662f"><td class="memItemLeft" align="right" valign="top"><a id="abfba0a8f0f48eed0a7177c919638662f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUpdateDragArea</b> ()</td></tr>
+<tr class="separator:abfba0a8f0f48eed0a7177c919638662f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a862c0996f9c5212932e2e49a394e8b2a"><td class="memItemLeft" align="right" valign="top"><a id="a862c0996f9c5212932e2e49a394e8b2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUpdateMonitorInfo</b> ()</td></tr>
+<tr class="separator:a862c0996f9c5212932e2e49a394e8b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5a094cff21948a323e4424d8fde19f"><td class="memItemLeft" align="right" valign="top"><a id="afa5a094cff21948a323e4424d8fde19f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestDelayShowDock</b> (const QString &amp;screenName)</td></tr>
+<tr class="separator:afa5a094cff21948a323e4424d8fde19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf7bd7c51318bd58d088f4807bb0107"><td class="memItemLeft" align="right" valign="top"><a id="a6cf7bd7c51318bd58d088f4807bb0107"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestStopShowAni</b> ()</td></tr>
+<tr class="separator:a6cf7bd7c51318bd58d088f4807bb0107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8778b14ea78d410f20f9a9e9eda7c0"><td class="memItemLeft" align="right" valign="top"><a id="a9b8778b14ea78d410f20f9a9e9eda7c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestStopHideAni</b> ()</td></tr>
+<tr class="separator:a9b8778b14ea78d410f20f9a9e9eda7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1c87235f87e69e7146e8b49888c726"><td class="memItemLeft" align="right" valign="top"><a id="aec1c87235f87e69e7146e8b49888c726"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUpdateDockEntry</b> ()</td></tr>
+<tr class="separator:aec1c87235f87e69e7146e8b49888c726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a54558ee1318c2d8de3fb4f7c148cf366"><td class="memItemLeft" align="right" valign="top"><a id="a54558ee1318c2d8de3fb4f7c148cf366"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MultiScreenWorker</b> (QWidget *parent, DWindowManagerHelper *helper)</td></tr>
+<tr class="separator:a54558ee1318c2d8de3fb4f7c148cf366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed1fdd9294329d8d2dc1effc6b0cf2f"><td class="memItemLeft" align="right" valign="top"><a id="a1ed1fdd9294329d8d2dc1effc6b0cf2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initShow</b> ()</td></tr>
+<tr class="separator:a1ed1fdd9294329d8d2dc1effc6b0cf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e0dd8f2e2072336b41c231f24dfc9d"><td class="memItemLeft" align="right" valign="top"><a id="a51e0dd8f2e2072336b41c231f24dfc9d"></a>
+<a class="el" href="class_d_bus_dock.html">DBusDock</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dockInter</b> ()</td></tr>
+<tr class="separator:a51e0dd8f2e2072336b41c231f24dfc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f230bee89130c0aa46043fa0e9a1dfb"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#a9f230bee89130c0aa46043fa0e9a1dfb">lastScreen</a> ()</td></tr>
+<tr class="memdesc:a9f230bee89130c0aa46043fa0e9a1dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">lastScreen  <a href="#a9f230bee89130c0aa46043fa0e9a1dfb">更多...</a><br /></td></tr>
+<tr class="separator:a9f230bee89130c0aa46043fa0e9a1dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc95f0aac88cab61710313ddb8aafb3"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#abdc95f0aac88cab61710313ddb8aafb3">deskScreen</a> ()</td></tr>
+<tr class="memdesc:abdc95f0aac88cab61710313ddb8aafb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">deskScreen  <a href="#abdc95f0aac88cab61710313ddb8aafb3">更多...</a><br /></td></tr>
+<tr class="separator:abdc95f0aac88cab61710313ddb8aafb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555bd82c670df2efc3c05bc249467530"><td class="memItemLeft" align="right" valign="top">const Position &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#a555bd82c670df2efc3c05bc249467530">position</a> ()</td></tr>
+<tr class="memdesc:a555bd82c670df2efc3c05bc249467530"><td class="mdescLeft">&#160;</td><td class="mdescRight">position  <a href="#a555bd82c670df2efc3c05bc249467530">更多...</a><br /></td></tr>
+<tr class="separator:a555bd82c670df2efc3c05bc249467530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73042784dc68fd02d386cf9e364aa69"><td class="memItemLeft" align="right" valign="top">const DisplayMode &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#af73042784dc68fd02d386cf9e364aa69">displayMode</a> ()</td></tr>
+<tr class="memdesc:af73042784dc68fd02d386cf9e364aa69"><td class="mdescLeft">&#160;</td><td class="mdescRight">displayMode  <a href="#af73042784dc68fd02d386cf9e364aa69">更多...</a><br /></td></tr>
+<tr class="separator:af73042784dc68fd02d386cf9e364aa69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4037e94041346fa4f720cdf5676e9035"><td class="memItemLeft" align="right" valign="top">const HideMode &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#a4037e94041346fa4f720cdf5676e9035">hideMode</a> ()</td></tr>
+<tr class="memdesc:a4037e94041346fa4f720cdf5676e9035"><td class="mdescLeft">&#160;</td><td class="mdescRight">hideMode  <a href="#a4037e94041346fa4f720cdf5676e9035">更多...</a><br /></td></tr>
+<tr class="separator:a4037e94041346fa4f720cdf5676e9035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c2247a9ba4b1477881eb66b80fe33e"><td class="memItemLeft" align="right" valign="top">const HideState &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#a44c2247a9ba4b1477881eb66b80fe33e">hideState</a> ()</td></tr>
+<tr class="memdesc:a44c2247a9ba4b1477881eb66b80fe33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">hideState  <a href="#a44c2247a9ba4b1477881eb66b80fe33e">更多...</a><br /></td></tr>
+<tr class="separator:a44c2247a9ba4b1477881eb66b80fe33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57bd817eb351860fd616f89ceff4a30c"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#a57bd817eb351860fd616f89ceff4a30c">opacity</a> ()</td></tr>
+<tr class="memdesc:a57bd817eb351860fd616f89ceff4a30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">opacity  <a href="#a57bd817eb351860fd616f89ceff4a30c">更多...</a><br /></td></tr>
+<tr class="separator:a57bd817eb351860fd616f89ceff4a30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd139848a1594734590343bf1c3df4d4"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#afd139848a1594734590343bf1c3df4d4">dockRect</a> (const QString &amp;screenName, const Position &amp;pos, const HideMode &amp;<a class="el" href="class_multi_screen_worker.html#a4037e94041346fa4f720cdf5676e9035">hideMode</a>, const DisplayMode &amp;<a class="el" href="class_multi_screen_worker.html#af73042784dc68fd02d386cf9e364aa69">displayMode</a>)</td></tr>
+<tr class="memdesc:afd139848a1594734590343bf1c3df4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">dockRect  <a href="#afd139848a1594734590343bf1c3df4d4">更多...</a><br /></td></tr>
+<tr class="separator:afd139848a1594734590343bf1c3df4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcad7d1e6ec68b85a5c74ea33e60572"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#a5dcad7d1e6ec68b85a5c74ea33e60572">dockRect</a> (const QString &amp;screenName)</td></tr>
+<tr class="memdesc:a5dcad7d1e6ec68b85a5c74ea33e60572"><td class="mdescLeft">&#160;</td><td class="mdescRight">dockRect  <a href="#a5dcad7d1e6ec68b85a5c74ea33e60572">更多...</a><br /></td></tr>
+<tr class="separator:a5dcad7d1e6ec68b85a5c74ea33e60572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1dc5ec612373aa06094b2495247770"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multi_screen_worker.html#aed1dc5ec612373aa06094b2495247770">dockRectWithoutScale</a> (const QString &amp;screenName, const Position &amp;pos, const HideMode &amp;<a class="el" href="class_multi_screen_worker.html#a4037e94041346fa4f720cdf5676e9035">hideMode</a>, const DisplayMode &amp;<a class="el" href="class_multi_screen_worker.html#af73042784dc68fd02d386cf9e364aa69">displayMode</a>)</td></tr>
+<tr class="memdesc:aed1dc5ec612373aa06094b2495247770"><td class="mdescLeft">&#160;</td><td class="mdescRight">realDockRect 给出不计算缩放情况的区域信息(和后端接口保持一致)  <a href="#aed1dc5ec612373aa06094b2495247770">更多...</a><br /></td></tr>
+<tr class="separator:aed1dc5ec612373aa06094b2495247770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8h_source.html">multiscreenworker.h</a> 第 <a class="el" href="multiscreenworker_8h_source.html#l00205">205</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="abdc95f0aac88cab61710313ddb8aafb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc95f0aac88cab61710313ddb8aafb3">&#9670;&nbsp;</a></span>deskScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString&amp; MultiScreenWorker::deskScreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deskScreen </p>
+<dl class="section return"><dt>返回</dt><dd>任务栏目标屏幕.可以理解为任务栏当前所在屏幕 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8h_source.html">multiscreenworker.h</a> 第 <a class="el" href="multiscreenworker_8h_source.html#l00236">236</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af73042784dc68fd02d386cf9e364aa69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af73042784dc68fd02d386cf9e364aa69">&#9670;&nbsp;</a></span>displayMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const DisplayMode&amp; MultiScreenWorker::displayMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>displayMode </p>
+<dl class="section return"><dt>返回</dt><dd>任务栏显示模式(时尚模式,高效模式) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8h_source.html">multiscreenworker.h</a> 第 <a class="el" href="multiscreenworker_8h_source.html#l00246">246</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afd139848a1594734590343bf1c3df4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd139848a1594734590343bf1c3df4d4">&#9670;&nbsp;</a></span>dockRect() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect MultiScreenWorker::dockRect </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>screenName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Position &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const HideMode &amp;&#160;</td>
+          <td class="paramname"><em>hideMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DisplayMode &amp;&#160;</td>
+          <td class="paramname"><em>displayMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dockRect </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">screenName</td><td>屏幕名 </td></tr>
+    <tr><td class="paramname">pos</td><td>任务栏位置 </td></tr>
+    <tr><td class="paramname">hideMode</td><td>模式 </td></tr>
+    <tr><td class="paramname">displayMode</td><td>状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>按照给定的数据计算出任务栏所在位置 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8cpp_source.html">multiscreenworker.cpp</a> 第 <a class="el" href="multiscreenworker_8cpp_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5dcad7d1e6ec68b85a5c74ea33e60572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcad7d1e6ec68b85a5c74ea33e60572">&#9670;&nbsp;</a></span>dockRect() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect MultiScreenWorker::dockRect </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>screenName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dockRect </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">screenName</td><td>屏幕名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>按照当前屏幕的当前属性给出任务栏所在区域 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8cpp_source.html">multiscreenworker.cpp</a> 第 <a class="el" href="multiscreenworker_8cpp_source.html#l00115">115</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aed1dc5ec612373aa06094b2495247770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed1dc5ec612373aa06094b2495247770">&#9670;&nbsp;</a></span>dockRectWithoutScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect MultiScreenWorker::dockRectWithoutScale </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>screenName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Position &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const HideMode &amp;&#160;</td>
+          <td class="paramname"><em>hideMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DisplayMode &amp;&#160;</td>
+          <td class="paramname"><em>displayMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>realDockRect 给出不计算缩放情况的区域信息(和后端接口保持一致) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">screenName</td><td>屏幕名 </td></tr>
+    <tr><td class="paramname">pos</td><td>任务栏位置 </td></tr>
+    <tr><td class="paramname">hideMode</td><td>模式 </td></tr>
+    <tr><td class="paramname">displayMode</td><td>状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8cpp_source.html">multiscreenworker.cpp</a> 第 <a class="el" href="multiscreenworker_8cpp_source.html#l00120">120</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4037e94041346fa4f720cdf5676e9035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4037e94041346fa4f720cdf5676e9035">&#9670;&nbsp;</a></span>hideMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const HideMode&amp; MultiScreenWorker::hideMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>hideMode </p>
+<dl class="section return"><dt>返回</dt><dd>任务栏状态(一直显示,一直隐藏,智能隐藏) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8h_source.html">multiscreenworker.h</a> 第 <a class="el" href="multiscreenworker_8h_source.html#l00251">251</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a44c2247a9ba4b1477881eb66b80fe33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c2247a9ba4b1477881eb66b80fe33e">&#9670;&nbsp;</a></span>hideState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const HideState&amp; MultiScreenWorker::hideState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>hideState </p>
+<dl class="section return"><dt>返回</dt><dd>任务栏的智能隐藏时的一个状态值(1显示,2隐藏,其他不处理) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8h_source.html">multiscreenworker.h</a> 第 <a class="el" href="multiscreenworker_8h_source.html#l00256">256</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9f230bee89130c0aa46043fa0e9a1dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f230bee89130c0aa46043fa0e9a1dfb">&#9670;&nbsp;</a></span>lastScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString&amp; MultiScreenWorker::lastScreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>lastScreen </p>
+<dl class="section return"><dt>返回</dt><dd>任务栏上次所在的屏幕 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8h_source.html">multiscreenworker.h</a> 第 <a class="el" href="multiscreenworker_8h_source.html#l00231">231</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab7cb7f7c49196b801a51ad888b6b4d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7cb7f7c49196b801a51ad888b6b4d1f">&#9670;&nbsp;</a></span>onAutoHideChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MultiScreenWorker::onAutoHideChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>autoHide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>当任务栏由一直隐藏模式切换至一直显示模式时，由于信号先调用的这里，再调用的DBus服务去修改m_hideMode的值， 导致这里走的是KeepHidden，任务栏表现为直接隐藏了，而不是一直显示。 引入特性：右键菜单关闭后，延时500ms任务栏才执行动画</p>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8cpp_source.html">multiscreenworker.cpp</a> 第 <a class="el" href="multiscreenworker_8cpp_source.html#l00128">128</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a57bd817eb351860fd616f89ceff4a30c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57bd817eb351860fd616f89ceff4a30c">&#9670;&nbsp;</a></span>opacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint8 MultiScreenWorker::opacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>opacity </p>
+<dl class="section return"><dt>返回</dt><dd>任务栏透明度 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8h_source.html">multiscreenworker.h</a> 第 <a class="el" href="multiscreenworker_8h_source.html#l00261">261</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a555bd82c670df2efc3c05bc249467530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555bd82c670df2efc3c05bc249467530">&#9670;&nbsp;</a></span>position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Position&amp; MultiScreenWorker::position </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>position </p>
+<dl class="section return"><dt>返回</dt><dd>任务栏所在方向(上下左右) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8h_source.html">multiscreenworker.h</a> 第 <a class="el" href="multiscreenworker_8h_source.html#l00241">241</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9dc39f5c01d507d93d6de586fcef3943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc39f5c01d507d93d6de586fcef3943">&#9670;&nbsp;</a></span>updateDaemonDockSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MultiScreenWorker::updateDaemonDockSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dockSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>updateDaemonDockSize </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dockSize</td><td>这里的高度是通过qt获取的，不能使用后端的接口数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="multiscreenworker_8cpp_source.html">multiscreenworker.cpp</a> 第 <a class="el" href="multiscreenworker_8cpp_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-dock/frame/util/<a class="el" href="multiscreenworker_8h_source.html">multiscreenworker.h</a></li>
+<li>dde-dock/frame/util/<a class="el" href="multiscreenworker_8cpp_source.html">multiscreenworker.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_multi_screen_worker.html">MultiScreenWorker</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+digraph "GridManagerPrivate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GridManagerPrivate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" positionProfiles" ,fontname="Helvetica"];
+  Node2 [label="QMap\< int, QString \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_cellStatus" ,fontname="Helvetica"];
+  Node3 [label="QMap\< int, QVector\l\< bool \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_itemGrids" ,fontname="Helvetica"];
+  Node4 [label="QMap\< int, QMap\< QString,\l QPoint \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_gridItems" ,fontname="Helvetica"];
+  Node5 [label="QMap\< int, QMap\< QPoint,\l QString \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" screensCoordInfo" ,fontname="Helvetica"];
+  Node6 [label="QMap\< int, QPair\< int,\l int \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_allItems" ,fontname="Helvetica"];
+  Node7 [label="QList\< DAbstractFileInfo\lPointer \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_list.html"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_screenFullStatus" ,fontname="Helvetica"];
+  Node8 [label="QMap\< int, bool \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_currentVirtualUrl" ,fontname="Helvetica"];
+  Node9 [label="DUrl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_url.html"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="QUrl",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

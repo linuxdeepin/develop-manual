@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: CanvasGridView类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_canvas_grid_view.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pro-slots">Protected 槽</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_canvas_grid_view-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CanvasGridView类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 CanvasGridView 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_canvas_grid_view__inherit__graph.png" border="0" usemap="#_canvas_grid_view_inherit__map" alt="Inheritance graph"/></div>
+<map name="_canvas_grid_view_inherit__map" id="_canvas_grid_view_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+CanvasGridView 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_canvas_grid_view__coll__graph.png" border="0" usemap="#_canvas_grid_view_coll__map" alt="Collaboration graph"/></div>
+<map name="_canvas_grid_view_coll__map" id="_canvas_grid_view_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a7eb6ff758482488ffdce75d522032dde"><td class="memItemLeft" align="right" valign="top"><a id="a7eb6ff758482488ffdce75d522032dde"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenuAction</b> { <br />
+&#160;&#160;<b>DisplaySettings</b> = MenuAction::UserMenuAction + 1, 
+<b>CornerSettings</b>, 
+<b>WallpaperSettings</b>, 
+<b>FileManagerProperty</b>, 
+<br />
+&#160;&#160;<b>AutoMerge</b>, 
+<b>AutoSort</b>, 
+<b>IconSize</b>, 
+<b>IconSize0</b> = IconSize, 
+<br />
+&#160;&#160;<b>IconSize1</b> = IconSize + 1, 
+<b>IconSize2</b> = IconSize + 2, 
+<b>IconSize3</b> = IconSize + 3, 
+<b>IconSize4</b> = IconSize + 4
+<br />
+ }</td></tr>
+<tr class="separator:a7eb6ff758482488ffdce75d522032dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a1006434e3860b0927603a3d9edfc1b8f"><td class="memItemLeft" align="right" valign="top"><a id="a1006434e3860b0927603a3d9edfc1b8f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>edit</b> (const QModelIndex &amp;index, EditTrigger trigger, QEvent *event) override</td></tr>
+<tr class="separator:a1006434e3860b0927603a3d9edfc1b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73063d54d76ed6e5351a894a86fd350d"><td class="memItemLeft" align="right" valign="top"><a id="a73063d54d76ed6e5351a894a86fd350d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDodgeDuration</b> (double dodgeDuration)</td></tr>
+<tr class="separator:a73063d54d76ed6e5351a894a86fd350d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483dfa7603c3a536e9e94978be65aec4"><td class="memItemLeft" align="right" valign="top"><a id="a483dfa7603c3a536e9e94978be65aec4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>selectAll</b> () override</td></tr>
+<tr class="separator:a483dfa7603c3a536e9e94978be65aec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932ea820df18b609b26dde7f958ee9cf"><td class="memItemLeft" align="right" valign="top"><a id="a932ea820df18b609b26dde7f958ee9cf"></a>
+Q_SCRIPTABLE void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableUIDebug</b> (bool enable)</td></tr>
+<tr class="separator:a932ea820df18b609b26dde7f958ee9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b480fa79a3651b0a964dabe4321935"><td class="memItemLeft" align="right" valign="top"><a id="a72b480fa79a3651b0a964dabe4321935"></a>
+Q_SCRIPTABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> ()</td></tr>
+<tr class="separator:a72b480fa79a3651b0a964dabe4321935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c25729e59dcd9e8a2915e4d5dc1b7e5"><td class="memItemLeft" align="right" valign="top"><a id="a8c25729e59dcd9e8a2915e4d5dc1b7e5"></a>
+Q_SCRIPTABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>Dump</b> ()</td></tr>
+<tr class="separator:a8c25729e59dcd9e8a2915e4d5dc1b7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30af1f581b5c9448a92610e7bdbfcb0"><td class="memItemLeft" align="right" valign="top"><a id="ae30af1f581b5c9448a92610e7bdbfcb0"></a>
+Q_SCRIPTABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>DumpPos</b> (qint32 x, qint32 y)</td></tr>
+<tr class="separator:ae30af1f581b5c9448a92610e7bdbfcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507c2df61d5578b64c6e9566d9a8ef05"><td class="memItemLeft" align="right" valign="top"><a id="a507c2df61d5578b64c6e9566d9a8ef05"></a>
+Q_SCRIPTABLE void&#160;</td><td class="memItemRight" valign="bottom"><b>Refresh</b> ()</td></tr>
+<tr class="separator:a507c2df61d5578b64c6e9566d9a8ef05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a2e46e71f98a286c84dc364f61e9ce63c"><td class="memItemLeft" align="right" valign="top"><a id="a2e46e71f98a286c84dc364f61e9ce63c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sortRoleChanged</b> (int role, Qt::SortOrder order)</td></tr>
+<tr class="separator:a2e46e71f98a286c84dc364f61e9ce63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e42ba70de7634ec1835a845f90c2f5"><td class="memItemLeft" align="right" valign="top"><a id="ab0e42ba70de7634ec1835a845f90c2f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>autoAlignToggled</b> ()</td></tr>
+<tr class="separator:ab0e42ba70de7634ec1835a845f90c2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7243d0b7d73b91058d8f6c6f03038530"><td class="memItemLeft" align="right" valign="top"><a id="a7243d0b7d73b91058d8f6c6f03038530"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>autoMergeToggled</b> ()</td></tr>
+<tr class="separator:a7243d0b7d73b91058d8f6c6f03038530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a65a9e6c1a7a06f7212cf26b58b9b2d"><td class="memItemLeft" align="right" valign="top"><a id="a5a65a9e6c1a7a06f7212cf26b58b9b2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeIconLevel</b> (int iconLevel)</td></tr>
+<tr class="separator:a5a65a9e6c1a7a06f7212cf26b58b9b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8dc71820b4bb9c88ae65fca584f1bf"><td class="memItemLeft" align="right" valign="top"><a id="abe8dc71820b4bb9c88ae65fca584f1bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dodgeDurationChanged</b> (double dodgeDuration)</td></tr>
+<tr class="separator:abe8dc71820b4bb9c88ae65fca584f1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae475102e5e25b8bb0613dc04d54831dc"><td class="memItemLeft" align="right" valign="top"><a id="ae475102e5e25b8bb0613dc04d54831dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>itemDeleted</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:ae475102e5e25b8bb0613dc04d54831dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a3ed2d6873344a177a254df6f12a21"><td class="memItemLeft" align="right" valign="top"><a id="a58a3ed2d6873344a177a254df6f12a21"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>itemCreated</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:a58a3ed2d6873344a177a254df6f12a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1258f74c847ea9a3f151d3f33067ebb5"><td class="memItemLeft" align="right" valign="top"><a id="a1258f74c847ea9a3f151d3f33067ebb5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CanvasGridView</b> (const QString &amp;screen, QWidget *parent=Q_NULLPTR)</td></tr>
+<tr class="separator:a1258f74c847ea9a3f151d3f33067ebb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c93f674102e0a0912611f8684e682f"><td class="memItemLeft" align="right" valign="top"><a id="a61c93f674102e0a0912611f8684e682f"></a>
+virtual QRect&#160;</td><td class="memItemRight" valign="bottom"><b>visualRect</b> (const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:a61c93f674102e0a0912611f8684e682f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45c644d87df72d7c4e9315338af5cfb"><td class="memItemLeft" align="right" valign="top"><a id="ad45c644d87df72d7c4e9315338af5cfb"></a>
+virtual QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>indexAt</b> (const QPoint &amp;point) const override</td></tr>
+<tr class="separator:ad45c644d87df72d7c4e9315338af5cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a94b4c1d72abcacd518dc00bc1ff1ab"><td class="memItemLeft" align="right" valign="top"><a id="a3a94b4c1d72abcacd518dc00bc1ff1ab"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>scrollTo</b> (const QModelIndex &amp;index, ScrollHint hint=EnsureVisible) override</td></tr>
+<tr class="separator:a3a94b4c1d72abcacd518dc00bc1ff1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277700728e2953fcee9bbd06e7d84ce8"><td class="memItemLeft" align="right" valign="top"><a id="a277700728e2953fcee9bbd06e7d84ce8"></a>
+virtual QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>moveCursor</b> (CursorAction cursorAction, Qt::KeyboardModifiers modifiers) override</td></tr>
+<tr class="separator:a277700728e2953fcee9bbd06e7d84ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f54c5812269fb228a33d8d875a7f199"><td class="memItemLeft" align="right" valign="top"><a id="a0f54c5812269fb228a33d8d875a7f199"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>horizontalOffset</b> () const override</td></tr>
+<tr class="separator:a0f54c5812269fb228a33d8d875a7f199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02cf1f2f42ecdeb8f2e8c50e15af1c19"><td class="memItemLeft" align="right" valign="top"><a id="a02cf1f2f42ecdeb8f2e8c50e15af1c19"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>verticalOffset</b> () const override</td></tr>
+<tr class="separator:a02cf1f2f42ecdeb8f2e8c50e15af1c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5fe330636b0a9f071f54cb23783611"><td class="memItemLeft" align="right" valign="top"><a id="a4b5fe330636b0a9f071f54cb23783611"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isIndexHidden</b> (const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:a4b5fe330636b0a9f071f54cb23783611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ef29980aab5427074d299bd2c0b96a"><td class="memItemLeft" align="right" valign="top"><a id="af8ef29980aab5427074d299bd2c0b96a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelection</b> (const QRect &amp;rect, QItemSelectionModel::SelectionFlags command) override</td></tr>
+<tr class="separator:af8ef29980aab5427074d299bd2c0b96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737fc1b0f5ed89d18b667762518d030d"><td class="memItemLeft" align="right" valign="top"><a id="a737fc1b0f5ed89d18b667762518d030d"></a>
+virtual QRegion&#160;</td><td class="memItemRight" valign="bottom"><b>visualRegionForSelection</b> (const QItemSelection &amp;selection) const override</td></tr>
+<tr class="separator:a737fc1b0f5ed89d18b667762518d030d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dea198cae41787aa8ae0e0b2d1c5b98"><td class="memItemLeft" align="right" valign="top"><a id="a8dea198cae41787aa8ae0e0b2d1c5b98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a8dea198cae41787aa8ae0e0b2d1c5b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5213c9f68092901fc45ea5641a1719b"><td class="memItemLeft" align="right" valign="top"><a id="aa5213c9f68092901fc45ea5641a1719b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:aa5213c9f68092901fc45ea5641a1719b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb1038620e4662b10f0623fefbccefa"><td class="memItemLeft" align="right" valign="top"><a id="abbb1038620e4662b10f0623fefbccefa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:abbb1038620e4662b10f0623fefbccefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e20502de75482961ad732882ea7d476"><td class="memItemLeft" align="right" valign="top"><a id="a8e20502de75482961ad732882ea7d476"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a8e20502de75482961ad732882ea7d476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b3c195d6ffed51f6bfad269ce7d421"><td class="memItemLeft" align="right" valign="top"><a id="a25b3c195d6ffed51f6bfad269ce7d421"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>wheelEvent</b> (QWheelEvent *event) override</td></tr>
+<tr class="separator:a25b3c195d6ffed51f6bfad269ce7d421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49044c67b75079b7653f3d16d1c13b4"><td class="memItemLeft" align="right" valign="top"><a id="af49044c67b75079b7653f3d16d1c13b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (QKeyEvent *event) override</td></tr>
+<tr class="separator:af49044c67b75079b7653f3d16d1c13b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa515f718840f17e2425e38aa0123062e"><td class="memItemLeft" align="right" valign="top"><a id="aa515f718840f17e2425e38aa0123062e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragEnterEvent</b> (QDragEnterEvent *event) override</td></tr>
+<tr class="separator:aa515f718840f17e2425e38aa0123062e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a7cccb4649427281dd83b296921952"><td class="memItemLeft" align="right" valign="top"><a id="a56a7cccb4649427281dd83b296921952"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragMoveEvent</b> (QDragMoveEvent *event) override</td></tr>
+<tr class="separator:a56a7cccb4649427281dd83b296921952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed3abd1350e895a4494948676639048"><td class="memItemLeft" align="right" valign="top"><a id="abed3abd1350e895a4494948676639048"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragLeaveEvent</b> (QDragLeaveEvent *event) override</td></tr>
+<tr class="separator:abed3abd1350e895a4494948676639048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed24c903e348c78559460fdfa034bc16"><td class="memItemLeft" align="right" valign="top"><a id="aed24c903e348c78559460fdfa034bc16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dropEvent</b> (QDropEvent *event) override</td></tr>
+<tr class="separator:aed24c903e348c78559460fdfa034bc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fd0a4c033f05c63511afe1f6ebdb58"><td class="memItemLeft" align="right" valign="top"><a id="ac5fd0a4c033f05c63511afe1f6ebdb58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *) override</td></tr>
+<tr class="separator:ac5fd0a4c033f05c63511afe1f6ebdb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe9188f976f599079ad594df5763f8ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas_grid_view.html#afe9188f976f599079ad594df5763f8ef">focusInEvent</a> (QFocusEvent *event) override</td></tr>
+<tr class="separator:afe9188f976f599079ad594df5763f8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd92695382d776c3dbfc63cc4b8ca5ba"><td class="memItemLeft" align="right" valign="top"><a id="acd92695382d776c3dbfc63cc4b8ca5ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>focusOutEvent</b> (QFocusEvent *event) override</td></tr>
+<tr class="separator:acd92695382d776c3dbfc63cc4b8ca5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f065e33e6adf9253e8797db403ea204"><td class="memItemLeft" align="right" valign="top"><a id="a4f065e33e6adf9253e8797db403ea204"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuEvent</b> (QContextMenuEvent *event) override</td></tr>
+<tr class="separator:a4f065e33e6adf9253e8797db403ea204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5cded7897c2cb5f96172d8b036d2a6"><td class="memItemLeft" align="right" valign="top"><a id="a6e5cded7897c2cb5f96172d8b036d2a6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (QEvent *event) override</td></tr>
+<tr class="separator:a6e5cded7897c2cb5f96172d8b036d2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26dc570ac1954722711a5b9b338f91c2"><td class="memItemLeft" align="right" valign="top"><a id="a26dc570ac1954722711a5b9b338f91c2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>rowsInserted</b> (const QModelIndex &amp;parent, int first, int last) override</td></tr>
+<tr class="separator:a26dc570ac1954722711a5b9b338f91c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b9d40b788402fbb2a0a6c105b733cc"><td class="memItemLeft" align="right" valign="top"><a id="af1b9d40b788402fbb2a0a6c105b733cc"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardSearch</b> (const QString &amp;search) override</td></tr>
+<tr class="separator:af1b9d40b788402fbb2a0a6c105b733cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49fd548d9cd5168f78966f56e3ea363a"><td class="memItemLeft" align="right" valign="top"><a id="a49fd548d9cd5168f78966f56e3ea363a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fakeDropEvent</b> () noexcept</td></tr>
+<tr class="separator:a49fd548d9cd5168f78966f56e3ea363a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472b2641ff2736142071b2b1f348a637"><td class="memItemLeft" align="right" valign="top"><a id="a472b2641ff2736142071b2b1f348a637"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>canvansScreenName</b> ()</td></tr>
+<tr class="separator:a472b2641ff2736142071b2b1f348a637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8638268eb90bc0c1340915cad58079ba"><td class="memItemLeft" align="right" valign="top"><a id="a8638268eb90bc0c1340915cad58079ba"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>rectForIndex</b> (const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:a8638268eb90bc0c1340915cad58079ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14fe22fa66aea7b725ff5f9d9db83bf6"><td class="memItemLeft" align="right" valign="top"><a id="a14fe22fa66aea7b725ff5f9d9db83bf6"></a>
+<a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>currentUrl</b> () const</td></tr>
+<tr class="separator:a14fe22fa66aea7b725ff5f9d9db83bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c032160b0739d9f12335f3cd7269ab8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas_grid_view.html#a6c032160b0739d9f12335f3cd7269ab8">setCurrentUrl</a> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:a6c032160b0739d9f12335f3cd7269ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1b400a939f801eac7b8a7ab2dae3b0"><td class="memItemLeft" align="right" valign="top"><a id="a9f1b400a939f801eac7b8a7ab2dae3b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initRootUrl</b> ()</td></tr>
+<tr class="separator:a9f1b400a939f801eac7b8a7ab2dae3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12cc7946cb0eb90887b588013122e57"><td class="memItemLeft" align="right" valign="top"><a id="ad12cc7946cb0eb90887b588013122e57"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setRootUrl</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:ad12cc7946cb0eb90887b588013122e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a80e584f65fdf42ea201030dfd77ade"><td class="memItemLeft" align="right" valign="top"><a id="a8a80e584f65fdf42ea201030dfd77ade"></a>
+const <a class="el" href="class_q_list.html">DUrlList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>autoMergeSelectedUrls</b> () const</td></tr>
+<tr class="separator:a8a80e584f65fdf42ea201030dfd77ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811c8b6dc6179ac5c22052077d2e27ce"><td class="memItemLeft" align="right" valign="top"><a id="a811c8b6dc6179ac5c22052077d2e27ce"></a>
+const <a class="el" href="class_q_list.html">DUrlList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>selectedUrls</b> () const</td></tr>
+<tr class="separator:a811c8b6dc6179ac5c22052077d2e27ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf775ef2f615ea3a96dc2b261ae209a"><td class="memItemLeft" align="right" valign="top"><a id="a2bf775ef2f615ea3a96dc2b261ae209a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScreenNum</b> (int num)</td></tr>
+<tr class="separator:a2bf775ef2f615ea3a96dc2b261ae209a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32101169d1cff1799663708aa6d9a5c9"><td class="memItemLeft" align="right" valign="top"><a id="a32101169d1cff1799663708aa6d9a5c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScreenName</b> (const QString &amp;name)</td></tr>
+<tr class="separator:a32101169d1cff1799663708aa6d9a5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48682a528f02825c91d9bf1efb03aa1f"><td class="memItemLeft" align="right" valign="top"><a id="a48682a528f02825c91d9bf1efb03aa1f"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>screenName</b> () const</td></tr>
+<tr class="separator:a48682a528f02825c91d9bf1efb03aa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1c15baac7f5e3962c819f6acb9221e"><td class="memItemLeft" align="right" valign="top"><a id="a0e1c15baac7f5e3962c819f6acb9221e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSelected</b> (const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:a0e1c15baac7f5e3962c819f6acb9221e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6633add104bd08e3a611301da8a8ab"><td class="memItemLeft" align="right" valign="top"><a id="a5e6633add104bd08e3a611301da8a8ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>select</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;list)</td></tr>
+<tr class="separator:a5e6633add104bd08e3a611301da8a8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24b02fabc313509f1006bd0e421792d"><td class="memItemLeft" align="right" valign="top"><a id="ab24b02fabc313509f1006bd0e421792d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>selectedIndexCount</b> () const</td></tr>
+<tr class="separator:ab24b02fabc313509f1006bd0e421792d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5fb88e7831839f0d03a52c3f30568a"><td class="memItemLeft" align="right" valign="top"><a id="a0a5fb88e7831839f0d03a52c3f30568a"></a>
+<a class="el" href="class_d_file_system_model.html">DFileSystemModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>model</b> () const</td></tr>
+<tr class="separator:a0a5fb88e7831839f0d03a52c3f30568a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f572f151351ed6d84eb18d17263df1"><td class="memItemLeft" align="right" valign="top"><a id="aa7f572f151351ed6d84eb18d17263df1"></a>
+<a class="el" href="class_d_file_selection_model.html">DFileSelectionModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>selectionModel</b> () const</td></tr>
+<tr class="separator:aa7f572f151351ed6d84eb18d17263df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab006d3dcda623cc6e2b285dbf6b14d08"><td class="memItemLeft" align="right" valign="top"><a id="ab006d3dcda623cc6e2b285dbf6b14d08"></a>
+<a class="el" href="class_desktop_item_delegate.html">DesktopItemDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>itemDelegate</b> () const</td></tr>
+<tr class="separator:ab006d3dcda623cc6e2b285dbf6b14d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5655426893a49d31ba6970de1b37f656"><td class="memItemLeft" align="right" valign="top"><a id="a5655426893a49d31ba6970de1b37f656"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setItemDelegate</b> (<a class="el" href="class_desktop_item_delegate.html">DesktopItemDelegate</a> *delegate)</td></tr>
+<tr class="separator:a5655426893a49d31ba6970de1b37f656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53df6d5037633cd69b098a1a929ebd60"><td class="memItemLeft" align="right" valign="top"><a id="a53df6d5037633cd69b098a1a929ebd60"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>dodgeDuration</b> () const</td></tr>
+<tr class="separator:a53df6d5037633cd69b098a1a929ebd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a018c376fca6d11acdb3ed0c62de767"><td class="memItemLeft" align="right" valign="top"><a id="a4a018c376fca6d11acdb3ed0c62de767"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>openUrl</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:a4a018c376fca6d11acdb3ed0c62de767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeaf38bdb899c0a3d56328b73f6de2f7"><td class="memItemLeft" align="right" valign="top"><a id="aaeaf38bdb899c0a3d56328b73f6de2f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>openUrls</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;urls)</td></tr>
+<tr class="separator:aaeaf38bdb899c0a3d56328b73f6de2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b398d28c4a5ae6cb01e5b8ec910fc87"><td class="memItemLeft" align="right" valign="top"><a id="a3b398d28c4a5ae6cb01e5b8ec910fc87"></a>
+QMargins&#160;</td><td class="memItemRight" valign="bottom"><b>cellMargins</b> () const</td></tr>
+<tr class="separator:a3b398d28c4a5ae6cb01e5b8ec910fc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43f0a42d11e48ab5d6427f0e6431c03"><td class="memItemLeft" align="right" valign="top"><a id="ac43f0a42d11e48ab5d6427f0e6431c03"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>cellSize</b> () const</td></tr>
+<tr class="separator:ac43f0a42d11e48ab5d6427f0e6431c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b4f131c20457eb61dc43cb6967bba0"><td class="memItemLeft" align="right" valign="top"><a id="ab3b4f131c20457eb61dc43cb6967bba0"></a>
+WId&#160;</td><td class="memItemRight" valign="bottom"><b>winId</b> () const</td></tr>
+<tr class="separator:ab3b4f131c20457eb61dc43cb6967bba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e9bd47519c76cb8b77fe14d9c037a1"><td class="memItemLeft" align="right" valign="top"><a id="ac4e9bd47519c76cb8b77fe14d9c037a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoMerge</b> (bool enabled=false)</td></tr>
+<tr class="separator:ac4e9bd47519c76cb8b77fe14d9c037a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad22730740c11b461d37b832e5712b19"><td class="memItemLeft" align="right" valign="top"><a id="aad22730740c11b461d37b832e5712b19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toggleEntryExpandedState</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:aad22730740c11b461d37b832e5712b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a875825adab67c19ba9772af9e15a0"><td class="memItemLeft" align="right" valign="top"><a id="ac1a875825adab67c19ba9772af9e15a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateEntryExpandedState</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:ac1a875825adab67c19ba9772af9e15a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171cebc5257e138305c02a3fd93a130f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas_grid_view.html#a171cebc5257e138305c02a3fd93a130f">setGeometry</a> (const QRect &amp;rect)</td></tr>
+<tr class="separator:a171cebc5257e138305c02a3fd93a130f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38dabc8f1ecbfd75fdd056f2825baea"><td class="memItemLeft" align="right" valign="top"><a id="ab38dabc8f1ecbfd75fdd056f2825baea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delayModelRefresh</b> (int ms=50)</td></tr>
+<tr class="separator:ab38dabc8f1ecbfd75fdd056f2825baea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224f0d94e7a1110f3956b0366a3485f0"><td class="memItemLeft" align="right" valign="top"><a id="a224f0d94e7a1110f3956b0366a3485f0"></a>
+<a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>currentCursorFile</b> () const</td></tr>
+<tr class="separator:a224f0d94e7a1110f3956b0366a3485f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af3b5be5d78a9c6ade47c8a886a630c"><td class="memItemLeft" align="right" valign="top"><a id="a9af3b5be5d78a9c6ade47c8a886a630c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>screenNum</b> () const</td></tr>
+<tr class="separator:a9af3b5be5d78a9c6ade47c8a886a630c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae15eae0f4759b1ad39326d861a64b514"><td class="memItemLeft" align="right" valign="top"><a id="ae15eae0f4759b1ad39326d861a64b514"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>syncIconLevel</b> (int level)</td></tr>
+<tr class="separator:ae15eae0f4759b1ad39326d861a64b514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3b7fc7aeb3bc58c1bd70a0a631dafa"><td class="memItemLeft" align="right" valign="top"><a id="a7b3b7fc7aeb3bc58c1bd70a0a631dafa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateHiddenItems</b> ()</td></tr>
+<tr class="separator:a7b3b7fc7aeb3bc58c1bd70a0a631dafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a582711149f13d6d7bc6fb8671bf4afa7"><td class="memItemLeft" align="right" valign="top"><a id="a582711149f13d6d7bc6fb8671bf4afa7"></a>
+static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_flag</b> { false }</td></tr>
+<tr class="separator:a582711149f13d6d7bc6fb8671bf4afa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ecf08375a193237fd25b0d84e9d1c04"><td class="memItemLeft" align="right" valign="top"><a id="a6ecf08375a193237fd25b0d84e9d1c04"></a>
+static <a class="el" href="class_q_map.html">QMap</a>&lt; DMD_TYPES, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>virtualEntryExpandState</b></td></tr>
+<tr class="separator:a6ecf08375a193237fd25b0d84e9d1c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected 槽</h2></td></tr>
+<tr class="memitem:a4c0a64da88dc50120b64a02653bd8b5c"><td class="memItemLeft" align="right" valign="top"><a id="a4c0a64da88dc50120b64a02653bd8b5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onRefreshFinished</b> ()</td></tr>
+<tr class="separator:a4c0a64da88dc50120b64a02653bd8b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a238fdb3030e7e48259c961cff8a81e87"><td class="memItemLeft" align="right" valign="top"><a id="a238fdb3030e7e48259c961cff8a81e87"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delayAutoMerge</b> (int ms=50)</td></tr>
+<tr class="separator:a238fdb3030e7e48259c961cff8a81e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0127b582619e207b5c23e66cfd96a724"><td class="memItemLeft" align="right" valign="top"><a id="a0127b582619e207b5c23e66cfd96a724"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delayArrage</b> (int ms=50)</td></tr>
+<tr class="separator:a0127b582619e207b5c23e66cfd96a724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967d04bebaea38a8958806b28d766cee"><td class="memItemLeft" align="right" valign="top"><a id="a967d04bebaea38a8958806b28d766cee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delayCustom</b> (int ms=50)</td></tr>
+<tr class="separator:a967d04bebaea38a8958806b28d766cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ad01710887a394aa81cf3b5661932c6ba"><td class="memItemLeft" align="right" valign="top"><a id="ad01710887a394aa81cf3b5661932c6ba"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>dodgeDuration</b></td></tr>
+<tr class="separator:ad01710887a394aa81cf3b5661932c6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ab815b54e3876207b9e6b506637cf7e7f"><td class="memItemLeft" align="right" valign="top"><a id="ab815b54e3876207b9e6b506637cf7e7f"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DEventFilter</b></td></tr>
+<tr class="separator:ab815b54e3876207b9e6b506637cf7e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="canvasgridview_8h_source.html">canvasgridview.h</a> 第 <a class="el" href="canvasgridview_8h_source.html#l00027">27</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="afe9188f976f599079ad594df5763f8ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe9188f976f599079ad594df5763f8ef">&#9670;&nbsp;</a></span>focusInEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CanvasGridView::focusInEvent </td>
+          <td>(</td>
+          <td class="paramtype">QFocusEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>set menu actions filter </p>
+
+<p class="definition">在文件 <a class="el" href="canvasgridview_8cpp_source.html">canvasgridview.cpp</a> 第 <a class="el" href="canvasgridview_8cpp_source.html#l01721">1721</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c032160b0739d9f12335f3cd7269ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c032160b0739d9f12335f3cd7269ab8">&#9670;&nbsp;</a></span>setCurrentUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CanvasGridView::setCurrentUrl </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_url.html">DUrl</a> &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>由于model中已做了刷新，故无需下面代码 task#40201 </p>
+
+<p class="definition">在文件 <a class="el" href="canvasgridview_8cpp_source.html">canvasgridview.cpp</a> 第 <a class="el" href="canvasgridview_8cpp_source.html#l01916">1916</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a171cebc5257e138305c02a3fd93a130f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a171cebc5257e138305c02a3fd93a130f">&#9670;&nbsp;</a></span>setGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CanvasGridView::setGeometry </td>
+          <td>(</td>
+          <td class="paramtype">const QRect &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>防止获取到的屏幕区域是0x0的时候崩溃 </p>
+
+<p class="definition">在文件 <a class="el" href="canvasgridview_8cpp_source.html">canvasgridview.cpp</a> 第 <a class="el" href="canvasgridview_8cpp_source.html#l00353">353</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-desktop/view/<a class="el" href="canvasgridview_8h_source.html">canvasgridview.h</a></li>
+<li>dde-file-manager/dde-desktop/view/<a class="el" href="canvasgridview_8cpp_source.html">canvasgridview.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_canvas_grid_view.html">CanvasGridView</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

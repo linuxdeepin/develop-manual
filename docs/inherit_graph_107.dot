@@ -1,0 +1,39 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1830 [label="QDBusAbstractAdaptor",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1830 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="CopyJobAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_copy_job_adaptor.html"];
+  Node1830 -> Node1832 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1832 [label="CreateFolderJobAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_create_folder_job_adaptor.html"];
+  Node1830 -> Node1833 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1833 [label="CreateTemplateFileAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_create_template_file_adaptor.html"];
+  Node1830 -> Node1834 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1834 [label="DBusAdaptors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_bus_adaptors.html"];
+  Node1830 -> Node1835 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1835 [label="DBusControlCenterService",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_bus_control_center_service.html"];
+  Node1830 -> Node1836 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1836 [label="DBusDockAdaptors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_bus_dock_adaptors.html"];
+  Node1830 -> Node1837 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1837 [label="dbusdraw_adaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdbusdraw__adaptor.html"];
+  Node1830 -> Node1838 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1838 [label="DBusLauncherService",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_bus_launcher_service.html"];
+  Node1830 -> Node1839 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1839 [label="DeleteJobAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_delete_job_adaptor.html"];
+  Node1830 -> Node1840 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1840 [label="FileOperationAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_file_operation_adaptor.html"];
+  Node1830 -> Node1841 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1841 [label="MoveJobAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_move_job_adaptor.html"];
+  Node1830 -> Node1842 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1842 [label="PartitionManagerAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_partition_manager_adaptor.html"];
+  Node1830 -> Node1843 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1843 [label="RenameJobAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_rename_job_adaptor.html"];
+  Node1830 -> Node1844 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1844 [label="TagManagerDaemonAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tag_manager_daemon_adaptor.html"];
+  Node1830 -> Node1845 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1845 [label="UserShareAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_user_share_adaptor.html"];
+  Node1830 -> Node1846 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1846 [label="VaultAdaptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vault_adaptor.html"];
+}

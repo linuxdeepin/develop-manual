@@ -1,0 +1,701 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: wvWare::TextHandler类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classwv_ware_1_1_text_handler.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classwv_ware_1_1_text_handler-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">wvWare::TextHandler类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="handlers_8h_source.html">handlers.h</a>&gt;</code></p>
+<div class="dynheader">
+类 wvWare::TextHandler 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classwv_ware_1_1_text_handler__inherit__graph.png" border="0" usemap="#wv_ware_1_1_text_handler_inherit__map" alt="Inheritance graph"/></div>
+<map name="wv_ware_1_1_text_handler_inherit__map" id="wv_ware_1_1_text_handler_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ae86acdc37d974923a8af53a7ae9c8206"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#ae86acdc37d974923a8af53a7ae9c8206">SpecialCharacter</a> { <br />
+&#160;&#160;<b>CurrentPageNumber</b> = 0, 
+<b>LineNumber</b> = 6, 
+<b>AbbreviatedDate</b> = 10, 
+<b>TimeHMS</b> = 11, 
+<br />
+&#160;&#160;<b>CurrentSectionNumber</b> = 12, 
+<b>AbbreviatedDayOfWeek</b> = 14, 
+<b>DayOfWeek</b> = 15, 
+<b>DayShort</b> = 16, 
+<br />
+&#160;&#160;<b>HourCurrentTime</b> = 22, 
+<b>HourCurrentTimeTwoDigits</b> = 23, 
+<b>MinuteCurrentTime</b> = 24, 
+<b>MinuteCurrentTimeTwoDigits</b> = 25, 
+<br />
+&#160;&#160;<b>SecondsCurrentTime</b> = 26, 
+<b>AMPMCurrentTime</b> = 27, 
+<b>CurrentTimeHMSOld</b> = 28, 
+<b>DateM</b> = 29, 
+<br />
+&#160;&#160;<b>DateShort</b> = 30, 
+<b>MonthShort</b> = 33, 
+<b>YearLong</b> = 34, 
+<b>YearShort</b> = 35, 
+<br />
+&#160;&#160;<b>AbbreviatedMonth</b> = 36, 
+<b>MonthLong</b> = 37, 
+<b>CurrentTimeHMS</b> = 38, 
+<b>DateLong</b> = 39
+<br />
+ }</td></tr>
+<tr class="separator:ae86acdc37d974923a8af53a7ae9c8206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d5b7d6337d685cbc1dd66bba89bacb8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#a9d5b7d6337d685cbc1dd66bba89bacb8">VerySpecialCharacter</a> { <br />
+&#160;&#160;<b>Picture</b> = 1, 
+<b>FootnoteAuto</b> = 2, 
+<b>FieldBegin</b> = 19, 
+<b>FieldSeparator</b> = 20, 
+<br />
+&#160;&#160;<b>FieldEnd</b> = 21, 
+<b>FieldEscapeChar</b> = 92
+<br />
+ }</td></tr>
+<tr class="separator:a9d5b7d6337d685cbc1dd66bba89bacb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae921af839647a738b4b7e438c31a825f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#ae921af839647a738b4b7e438c31a825f">sectionStart</a> (<a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_s_e_p.html">Word97::SEP</a> &gt; sep)</td></tr>
+<tr class="separator:ae921af839647a738b4b7e438c31a825f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1ac463886a500b52acae38348413e6"><td class="memItemLeft" align="right" valign="top"><a id="a2a1ac463886a500b52acae38348413e6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>sectionEnd</b> ()</td></tr>
+<tr class="separator:a2a1ac463886a500b52acae38348413e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9ea4137af79ba368068c11947d724f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#aea9ea4137af79ba368068c11947d724f">pageBreak</a> ()</td></tr>
+<tr class="separator:aea9ea4137af79ba368068c11947d724f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222b7eadd7f12947cf46857d88fd8f4d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#a222b7eadd7f12947cf46857d88fd8f4d">headersFound</a> (const <a class="el" href="classwv_ware_1_1_functor.html">HeaderFunctor</a> &amp;parseHeaders)</td></tr>
+<tr class="separator:a222b7eadd7f12947cf46857d88fd8f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d9f1952b62e8221ea62d29eece8148"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#a51d9f1952b62e8221ea62d29eece8148">paragraphStart</a> (<a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="classwv_ware_1_1_paragraph_properties.html">ParagraphProperties</a> &gt; paragraphProperties)</td></tr>
+<tr class="separator:a51d9f1952b62e8221ea62d29eece8148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6300ffbf9b607962e842c0a1aa3cdd7e"><td class="memItemLeft" align="right" valign="top"><a id="a6300ffbf9b607962e842c0a1aa3cdd7e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>paragraphEnd</b> ()</td></tr>
+<tr class="separator:a6300ffbf9b607962e842c0a1aa3cdd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e8e43261a65705d9aaf88f5c612f25"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#a92e8e43261a65705d9aaf88f5c612f25">runOfText</a> (const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;text, <a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt; chp)</td></tr>
+<tr class="separator:a92e8e43261a65705d9aaf88f5c612f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3c8e15f506d068bb3c81c30ac87d04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#a1d3c8e15f506d068bb3c81c30ac87d04">specialCharacter</a> (<a class="el" href="classwv_ware_1_1_text_handler.html#ae86acdc37d974923a8af53a7ae9c8206">SpecialCharacter</a> character, <a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt; chp)</td></tr>
+<tr class="separator:a1d3c8e15f506d068bb3c81c30ac87d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa06874bf66ae707b18a1555509e906eb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#aa06874bf66ae707b18a1555509e906eb">footnoteFound</a> (FootnoteData::Type type, <a class="el" href="structwv_ware_1_1_u_char.html">UChar</a> character, <a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt; chp, const <a class="el" href="classwv_ware_1_1_functor.html">FootnoteFunctor</a> &amp;parseFootnote)</td></tr>
+<tr class="separator:aa06874bf66ae707b18a1555509e906eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b88872c3e3f56443a0bdd54f1767075"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#a9b88872c3e3f56443a0bdd54f1767075">footnoteAutoNumber</a> (<a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt; chp)</td></tr>
+<tr class="separator:a9b88872c3e3f56443a0bdd54f1767075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac064e3683355351e9469ba7f19807a81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#ac064e3683355351e9469ba7f19807a81">fieldStart</a> (const <a class="el" href="structwv_ware_1_1_f_l_d.html">FLD</a> *fld, <a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt; chp)</td></tr>
+<tr class="separator:ac064e3683355351e9469ba7f19807a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5e297d32811dbf98aefc9aaebf209d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#abe5e297d32811dbf98aefc9aaebf209d">fieldSeparator</a> (const <a class="el" href="structwv_ware_1_1_f_l_d.html">FLD</a> *fld, <a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt; chp)</td></tr>
+<tr class="separator:abe5e297d32811dbf98aefc9aaebf209d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa470fb10385cadb4e1566b4b564f2f48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#aa470fb10385cadb4e1566b4b564f2f48">fieldEnd</a> (const <a class="el" href="structwv_ware_1_1_f_l_d.html">FLD</a> *fld, <a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt; chp)</td></tr>
+<tr class="separator:aa470fb10385cadb4e1566b4b564f2f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14884950323d5c3ff5446950e65f8264"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwv_ware_1_1_text_handler.html#a14884950323d5c3ff5446950e65f8264">tableRowFound</a> (const <a class="el" href="classwv_ware_1_1_functor.html">TableRowFunctor</a> &amp;tableRow, <a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_t_a_p.html">Word97::TAP</a> &gt; tap)</td></tr>
+<tr class="separator:a14884950323d5c3ff5446950e65f8264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <a class="el" href="classwv_ware_1_1_text_handler.html">TextHandler</a> class is the main worker in this filter. It tells you about sections, paragraphs, and characters inside the document. If you want to have a fast filter, try to make those methods fast, they will get called very oftern. </p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8h_source.html">handlers.h</a> 第 <a class="el" href="handlers_8h_source.html#l00181">181</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="ae86acdc37d974923a8af53a7ae9c8206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86acdc37d974923a8af53a7ae9c8206">&#9670;&nbsp;</a></span>SpecialCharacter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classwv_ware_1_1_text_handler.html#ae86acdc37d974923a8af53a7ae9c8206">wvWare::TextHandler::SpecialCharacter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The enum only contains characters which are "easy" to handle (as they don't need any further information). All the other fSpec characters are/will be handled via functors. The values match the ones found in the specification.</p>
+<p>The current list is just a first draft, I have no idea how many of them will be moved out because they're more complex as expected. </p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8h_source.html">handlers.h</a> 第 <a class="el" href="handlers_8h_source.html#l00238">238</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9d5b7d6337d685cbc1dd66bba89bacb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d5b7d6337d685cbc1dd66bba89bacb8">&#9670;&nbsp;</a></span>VerySpecialCharacter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classwv_ware_1_1_text_handler.html#a9d5b7d6337d685cbc1dd66bba89bacb8">wvWare::TextHandler::VerySpecialCharacter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Very special characters (bad, bad name) are the ones which need additional information from the file (i.e. the plain "put the current date there" isn't sufficent). </p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8h_source.html">handlers.h</a> 第 <a class="el" href="handlers_8h_source.html#l00254">254</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa470fb10385cadb4e1566b4b564f2f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa470fb10385cadb4e1566b4b564f2f48">&#9670;&nbsp;</a></span>fieldEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::fieldEnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structwv_ware_1_1_f_l_d.html">FLD</a> *&#160;</td>
+          <td class="paramname"><em>fld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt;&#160;</td>
+          <td class="paramname"><em>chp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The end of the field result is indicated by this callback, fields may be nested up to 20 levels, so take care :-) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fld</td><td>Describes the type of the field for live fields. May be 0! </td></tr>
+    <tr><td class="paramname">chp</td><td>The character properties of the field end (ASCII 21) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00176">176</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abe5e297d32811dbf98aefc9aaebf209d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5e297d32811dbf98aefc9aaebf209d">&#9670;&nbsp;</a></span>fieldSeparator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::fieldSeparator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structwv_ware_1_1_f_l_d.html">FLD</a> *&#160;</td>
+          <td class="paramname"><em>fld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt;&#160;</td>
+          <td class="paramname"><em>chp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This callback separates the two parts of a field. The first part contains control codes and keywords, the second part is the field result. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fld</td><td>Describes the type of the field for live fields. May be 0! </td></tr>
+    <tr><td class="paramname">chp</td><td>The character properties of the field separator (ASCII 20) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00172">172</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac064e3683355351e9469ba7f19807a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac064e3683355351e9469ba7f19807a81">&#9670;&nbsp;</a></span>fieldStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::fieldStart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structwv_ware_1_1_f_l_d.html">FLD</a> *&#160;</td>
+          <td class="paramname"><em>fld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt;&#160;</td>
+          <td class="paramname"><em>chp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This callback indicates the start of a field. <a class="el" href="classwv_ware_1_1_fields.html">Fields</a> consist of two parts, separated by a field separator. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fld</td><td>Describes the type of the field for live fields. May be 0! </td></tr>
+    <tr><td class="paramname">chp</td><td>The character properties of the field start (ASCII 19) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00168">168</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9b88872c3e3f56443a0bdd54f1767075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b88872c3e3f56443a0bdd54f1767075">&#9670;&nbsp;</a></span>footnoteAutoNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::footnoteAutoNumber </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt;&#160;</td>
+          <td class="paramname"><em>chp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This callback will get triggered when parsing a auto-numbered footnote. The passed CHP is the character formatting information provided for the "number" </p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00164">164</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa06874bf66ae707b18a1555509e906eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06874bf66ae707b18a1555509e906eb">&#9670;&nbsp;</a></span>footnoteFound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::footnoteFound </td>
+          <td>(</td>
+          <td class="paramtype">FootnoteData::Type&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_u_char.html">UChar</a>&#160;</td>
+          <td class="paramname"><em>character</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt;&#160;</td>
+          <td class="paramname"><em>chp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_functor.html">FootnoteFunctor</a> &amp;&#160;</td>
+          <td class="paramname"><em>parseFootnote</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The parser found a footnote. The passed functor will trigger the parsing of this footnote/endnote, the default implementation just emits the passed character (unless it's an auto-numbered footnote, we won't emit ASCII 2 by default) with runOfText (that it doesn't get lost if someone doesn't override this method) and invokes the functor. </p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00156">156</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a222b7eadd7f12947cf46857d88fd8f4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a222b7eadd7f12947cf46857d88fd8f4d">&#9670;&nbsp;</a></span>headersFound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::headersFound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_functor.html">HeaderFunctor</a> &amp;&#160;</td>
+          <td class="paramname"><em>parseHeaders</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Emitted when we found headers or footers. The default implementation simply invokes the functor. This function is called right after the start of a new section. </p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00135">135</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aea9ea4137af79ba368068c11947d724f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9ea4137af79ba368068c11947d724f">&#9670;&nbsp;</a></span>pageBreak()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::pageBreak </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A page break within a section. </p>
+
+<p>被 <a class="el" href="class_doc_to_text_text_handler.html#a846e08b9b3675f39c61302a1de660ef3">DocToTextTextHandler</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00131">131</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a51d9f1952b62e8221ea62d29eece8148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d9f1952b62e8221ea62d29eece8148">&#9670;&nbsp;</a></span>paragraphStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::paragraphStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="classwv_ware_1_1_paragraph_properties.html">ParagraphProperties</a> &gt;&#160;</td>
+          <td class="paramname"><em>paragraphProperties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Denotes the start of a paragraph. The paragraph properties are passed in the <code>paragraphProperties</code> argument. </p>
+
+<p>被 <a class="el" href="class_doc_to_text_text_handler.html#a9e43aa53c2ba182a3c129e4ec1638a53">DocToTextTextHandler</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00140">140</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a92e8e43261a65705d9aaf88f5c612f25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e8e43261a65705d9aaf88f5c612f25">&#9670;&nbsp;</a></span>runOfText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::runOfText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_u_string.html">UString</a> &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt;&#160;</td>
+          <td class="paramname"><em>chp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>runOfText is the main worker in this API. It provides a chunk of text with the properties passed. A run of text inside a Word document may encompass an entire document, but in our implementation we chop those runs of text into smaller pieces. A run of text will never cross paragraph boundaries, even if the paragraph properties of the two or more containing paragraphs are the same. It would probably be slightly faster to do that, but IMHO it's just not worth the pain this would cause. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The text of this run, <a class="el" href="classwv_ware_1_1_u_string.html" title="Unicode string class ">UString</a> holds it as UCS-2 host order string. </td></tr>
+    <tr><td class="paramname">chp</td><td>The character properties attached to this run of text </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00148">148</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae921af839647a738b4b7e438c31a825f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae921af839647a738b4b7e438c31a825f">&#9670;&nbsp;</a></span>sectionStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::sectionStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_s_e_p.html">Word97::SEP</a> &gt;&#160;</td>
+          <td class="paramname"><em>sep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Denotes the start of a section. The section properties are passed in the <code>sep</code> argument. </p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00123">123</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1d3c8e15f506d068bb3c81c30ac87d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3c8e15f506d068bb3c81c30ac87d04">&#9670;&nbsp;</a></span>specialCharacter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::specialCharacter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwv_ware_1_1_text_handler.html#ae86acdc37d974923a8af53a7ae9c8206">SpecialCharacter</a>&#160;</td>
+          <td class="paramname"><em>character</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_c_h_p.html">Word97::CHP</a> &gt;&#160;</td>
+          <td class="paramname"><em>chp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method passes the simple cases of special characters we find. More complex ones will get their own callback. </p>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00152">152</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a14884950323d5c3ff5446950e65f8264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14884950323d5c3ff5446950e65f8264">&#9670;&nbsp;</a></span>tableRowFound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextHandler::tableRowFound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwv_ware_1_1_functor.html">TableRowFunctor</a> &amp;&#160;</td>
+          <td class="paramname"><em>tableRow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwv_ware_1_1_shared_ptr.html">SharedPtr</a>&lt; const <a class="el" href="structwv_ware_1_1_word97_1_1_t_a_p.html">Word97::TAP</a> &gt;&#160;</td>
+          <td class="paramname"><em>tap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method is called every time we find a table row. The default implementation invokes the functor, which triggers the parsing process for the given table row. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tap</td><td>the table row properties. Those are the same as the ones you'll get when invoking the functor, but by having them here, you can do some preprocessing on the whole table first. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="handlers_8cpp_source.html">handlers.cpp</a> 第 <a class="el" href="handlers_8cpp_source.html#l00180">180</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/3rdParty/wv2/<a class="el" href="handlers_8h_source.html">handlers.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/3rdParty/wv2/<a class="el" href="handlers_8cpp_source.html">handlers.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>wvWare</b></li><li class="navelem"><a class="el" href="classwv_ware_1_1_text_handler.html">TextHandler</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

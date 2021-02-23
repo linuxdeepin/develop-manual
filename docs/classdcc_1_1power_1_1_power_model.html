@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dcc::power::PowerModel类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdcc_1_1power_1_1_power_model.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classdcc_1_1power_1_1_power_model-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dcc::power::PowerModel类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 dcc::power::PowerModel 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1power_1_1_power_model__inherit__graph.png" border="0" usemap="#dcc_1_1power_1_1_power_model_inherit__map" alt="Inheritance graph"/></div>
+<map name="dcc_1_1power_1_1_power_model_inherit__map" id="dcc_1_1power_1_1_power_model_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+dcc::power::PowerModel 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1power_1_1_power_model__coll__graph.png" border="0" usemap="#dcc_1_1power_1_1_power_model_coll__map" alt="Collaboration graph"/></div>
+<map name="dcc_1_1power_1_1_power_model_coll__map" id="dcc_1_1power_1_1_power_model_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a003cf366d5aea19fbd00f2a55ed19108"><td class="memItemLeft" align="right" valign="top"><a id="a003cf366d5aea19fbd00f2a55ed19108"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sleepLockChanged</b> (const bool sleepLock)</td></tr>
+<tr class="separator:a003cf366d5aea19fbd00f2a55ed19108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad01722c9d6265da00e1ed931224e3b"><td class="memItemLeft" align="right" valign="top"><a id="a1ad01722c9d6265da00e1ed931224e3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>canSleepChanged</b> (const bool canSleep)</td></tr>
+<tr class="separator:a1ad01722c9d6265da00e1ed931224e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab3284e06ae02fc46d90361438289bd"><td class="memItemLeft" align="right" valign="top"><a id="a3ab3284e06ae02fc46d90361438289bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>screenBlackLockChanged</b> (const bool screenBlackLock)</td></tr>
+<tr class="separator:a3ab3284e06ae02fc46d90361438289bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5a421357ff33cbe12404edcf1331d8"><td class="memItemLeft" align="right" valign="top"><a id="a5d5a421357ff33cbe12404edcf1331d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>lidPresentChanged</b> (const bool lidPresent)</td></tr>
+<tr class="separator:a5d5a421357ff33cbe12404edcf1331d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c529981071a17659ef539f9634432e"><td class="memItemLeft" align="right" valign="top"><a id="ac3c529981071a17659ef539f9634432e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sleepOnLidOnPowerCloseChanged</b> (const bool sleepOnLidClose)</td></tr>
+<tr class="separator:ac3c529981071a17659ef539f9634432e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3767f7f987dce1528ac08d9c226a8c"><td class="memItemLeft" align="right" valign="top"><a id="a1e3767f7f987dce1528ac08d9c226a8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sleepOnLidOnBatteryCloseChanged</b> (const bool sleepOnLidClose)</td></tr>
+<tr class="separator:a1e3767f7f987dce1528ac08d9c226a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b52651121e43594deb0fc60f6e57746"><td class="memItemLeft" align="right" valign="top"><a id="a3b52651121e43594deb0fc60f6e57746"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>screenBlackDelayChangedOnPower</b> (const int screenBlackDelay)</td></tr>
+<tr class="separator:a3b52651121e43594deb0fc60f6e57746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43950eda5bdff46666ecf86943a2e18e"><td class="memItemLeft" align="right" valign="top"><a id="a43950eda5bdff46666ecf86943a2e18e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sleepDelayChangedOnPower</b> (const int sleepDelay)</td></tr>
+<tr class="separator:a43950eda5bdff46666ecf86943a2e18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79e60aeb185cc85870d4ef65fa643e5"><td class="memItemLeft" align="right" valign="top"><a id="aa79e60aeb185cc85870d4ef65fa643e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>screenBlackDelayChangedOnBattery</b> (const int screenBlackDelay)</td></tr>
+<tr class="separator:aa79e60aeb185cc85870d4ef65fa643e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3a45b28e144e3a67ab83b43fb337b1"><td class="memItemLeft" align="right" valign="top"><a id="aaf3a45b28e144e3a67ab83b43fb337b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sleepDelayChangedOnBattery</b> (const int sleepDelay)</td></tr>
+<tr class="separator:aaf3a45b28e144e3a67ab83b43fb337b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9825ed7d36b67d339a6b8928ed08a1"><td class="memItemLeft" align="right" valign="top"><a id="a1f9825ed7d36b67d339a6b8928ed08a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>canHibernateChanged</b> (const bool canHibernate)</td></tr>
+<tr class="separator:a1f9825ed7d36b67d339a6b8928ed08a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8a91206272041835ea27481c54b003"><td class="memItemLeft" align="right" valign="top"><a id="a3a8a91206272041835ea27481c54b003"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hibernateChanged</b> (const bool hibernate)</td></tr>
+<tr class="separator:a3a8a91206272041835ea27481c54b003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b5633e1d36119a89110ec1c413c00ac"><td class="memItemLeft" align="right" valign="top"><a id="a9b5633e1d36119a89110ec1c413c00ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>autoPowerSavingModeChanged</b> (bool autoPowerSaveMode)</td></tr>
+<tr class="separator:a9b5633e1d36119a89110ec1c413c00ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3ece16cd3d420e12bf483a4b1da0b5"><td class="memItemLeft" align="right" valign="top"><a id="a7f3ece16cd3d420e12bf483a4b1da0b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>powerSaveModeChanged</b> (bool powerSaveMode)</td></tr>
+<tr class="separator:a7f3ece16cd3d420e12bf483a4b1da0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d17d0fa990bd96b48d6c77660ee5261"><td class="memItemLeft" align="right" valign="top"><a id="a9d17d0fa990bd96b48d6c77660ee5261"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>haveBettaryChanged</b> (bool haveBettary)</td></tr>
+<tr class="separator:a9d17d0fa990bd96b48d6c77660ee5261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c705ff0e77dcd3c740f31e7f4ac5b4"><td class="memItemLeft" align="right" valign="top"><a id="a72c705ff0e77dcd3c740f31e7f4ac5b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>batteryLockScreenDelayChanged</b> (const int batteryLockScreenTime)</td></tr>
+<tr class="separator:a72c705ff0e77dcd3c740f31e7f4ac5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a821ef29ffbf4d85d4ce3b1bd6c96ab"><td class="memItemLeft" align="right" valign="top"><a id="a3a821ef29ffbf4d85d4ce3b1bd6c96ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>powerLockScreenDelayChanged</b> (const int powerLockScreenTime)</td></tr>
+<tr class="separator:a3a821ef29ffbf4d85d4ce3b1bd6c96ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead301a963bc65ebb4c4e556aa66872c"><td class="memItemLeft" align="right" valign="top"><a id="aead301a963bc65ebb4c4e556aa66872c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>batteryPercentageChanged</b> (double batteryPercentage)</td></tr>
+<tr class="separator:aead301a963bc65ebb4c4e556aa66872c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316b73cd524f47693eac942141bfc643"><td class="memItemLeft" align="right" valign="top"><a id="a316b73cd524f47693eac942141bfc643"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>powerSavingModeAutoWhenQuantifyLowChanged</b> (const bool state)</td></tr>
+<tr class="separator:a316b73cd524f47693eac942141bfc643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ac9561f3d6ff16aff76435a31f85f7"><td class="memItemLeft" align="right" valign="top"><a id="a74ac9561f3d6ff16aff76435a31f85f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>powerSavingModeAutoChanged</b> (const bool state)</td></tr>
+<tr class="separator:a74ac9561f3d6ff16aff76435a31f85f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c72f89d6118927d72f99d7da58e349f"><td class="memItemLeft" align="right" valign="top"><a id="a1c72f89d6118927d72f99d7da58e349f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>powerSavingModeLowerBrightnessThresholdChanged</b> (const uint level)</td></tr>
+<tr class="separator:a1c72f89d6118927d72f99d7da58e349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d11c32d443a347f2d3536ad05592f4"><td class="memItemLeft" align="right" valign="top"><a id="a66d11c32d443a347f2d3536ad05592f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>linePowerPressPowerBtnActionChanged</b> (const int reply)</td></tr>
+<tr class="separator:a66d11c32d443a347f2d3536ad05592f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd78a3f9c1c8cb02642926e27ad6ac5e"><td class="memItemLeft" align="right" valign="top"><a id="afd78a3f9c1c8cb02642926e27ad6ac5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>linePowerLidClosedActionChanged</b> (const int reply)</td></tr>
+<tr class="separator:afd78a3f9c1c8cb02642926e27ad6ac5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0658d5b9db6ced09eeefc62dac03d95"><td class="memItemLeft" align="right" valign="top"><a id="ae0658d5b9db6ced09eeefc62dac03d95"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>batteryPressPowerBtnActionChanged</b> (const int reply)</td></tr>
+<tr class="separator:ae0658d5b9db6ced09eeefc62dac03d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26d087bdaa1fd1ec7b7665828356a08"><td class="memItemLeft" align="right" valign="top"><a id="af26d087bdaa1fd1ec7b7665828356a08"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>batteryLidClosedActionChanged</b> (const int reply)</td></tr>
+<tr class="separator:af26d087bdaa1fd1ec7b7665828356a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187fd6640baf98155dee4a77ada25f78"><td class="memItemLeft" align="right" valign="top"><a id="a187fd6640baf98155dee4a77ada25f78"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>lowPowerNotifyEnableChanged</b> (const bool state)</td></tr>
+<tr class="separator:a187fd6640baf98155dee4a77ada25f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5dd42063f64e03e217313a77659acc0"><td class="memItemLeft" align="right" valign="top"><a id="af5dd42063f64e03e217313a77659acc0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>lowPowerNotifyThresholdChanged</b> (const int value)</td></tr>
+<tr class="separator:af5dd42063f64e03e217313a77659acc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff0a9d2b8c678b0a3b39060558b780d1"><td class="memItemLeft" align="right" valign="top"><a id="aff0a9d2b8c678b0a3b39060558b780d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>lowPowerAutoSleepThresholdChanged</b> (const int value)</td></tr>
+<tr class="separator:aff0a9d2b8c678b0a3b39060558b780d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04cbc62ed6258f95b243ba8550fb76b"><td class="memItemLeft" align="right" valign="top"><a id="af04cbc62ed6258f95b243ba8550fb76b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>suspendChanged</b> (bool suspendState)</td></tr>
+<tr class="separator:af04cbc62ed6258f95b243ba8550fb76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a7b948acdb1ff6c956b8af8fdf0fea"><td class="memItemLeft" align="right" valign="top"><a id="a62a7b948acdb1ff6c956b8af8fdf0fea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>powerPlanChanged</b> (const QString &amp;value)</td></tr>
+<tr class="separator:a62a7b948acdb1ff6c956b8af8fdf0fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7195254b02ea8bf2dfe04146d130163c"><td class="memItemLeft" align="right" valign="top"><a id="a7195254b02ea8bf2dfe04146d130163c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>highPerformaceChanged</b> (bool value)</td></tr>
+<tr class="separator:a7195254b02ea8bf2dfe04146d130163c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a92ca6a7ebe080db5b698f42511aac268"><td class="memItemLeft" align="right" valign="top"><a id="a92ca6a7ebe080db5b698f42511aac268"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PowerModel</b> (QObject *parent=0)</td></tr>
+<tr class="separator:a92ca6a7ebe080db5b698f42511aac268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21adba4442f4ce24c3d176a5a4e9a5e5"><td class="memItemLeft" align="right" valign="top"><a id="a21adba4442f4ce24c3d176a5a4e9a5e5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>screenBlackLock</b> () const</td></tr>
+<tr class="separator:a21adba4442f4ce24c3d176a5a4e9a5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc30207058b8a7fb64fd63fbee51de27"><td class="memItemLeft" align="right" valign="top"><a id="afc30207058b8a7fb64fd63fbee51de27"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScreenBlackLock</b> (const bool lock)</td></tr>
+<tr class="separator:afc30207058b8a7fb64fd63fbee51de27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22567a150d8dcf0a7890d327935d7326"><td class="memItemLeft" align="right" valign="top"><a id="a22567a150d8dcf0a7890d327935d7326"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sleepLock</b> () const</td></tr>
+<tr class="separator:a22567a150d8dcf0a7890d327935d7326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299b906023d1da016f4945b3ddda4cb3"><td class="memItemLeft" align="right" valign="top"><a id="a299b906023d1da016f4945b3ddda4cb3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSleepLock</b> (bool sleepLock)</td></tr>
+<tr class="separator:a299b906023d1da016f4945b3ddda4cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709c1517b1ff3fe44d7eeece9e1883e3"><td class="memItemLeft" align="right" valign="top"><a id="a709c1517b1ff3fe44d7eeece9e1883e3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canSleep</b> () const</td></tr>
+<tr class="separator:a709c1517b1ff3fe44d7eeece9e1883e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6bea7d5c7a871ebb31d77254aab7c9"><td class="memItemLeft" align="right" valign="top"><a id="abd6bea7d5c7a871ebb31d77254aab7c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCanSleep</b> (bool canSleep)</td></tr>
+<tr class="separator:abd6bea7d5c7a871ebb31d77254aab7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cb9f37b56ef07df916f7e55fc4586a"><td class="memItemLeft" align="right" valign="top"><a id="a89cb9f37b56ef07df916f7e55fc4586a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lidPresent</b> () const</td></tr>
+<tr class="separator:a89cb9f37b56ef07df916f7e55fc4586a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a72d763ec652a69afe68c98f6691a81"><td class="memItemLeft" align="right" valign="top"><a id="a9a72d763ec652a69afe68c98f6691a81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLidPresent</b> (bool lidPresent)</td></tr>
+<tr class="separator:a9a72d763ec652a69afe68c98f6691a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d581e2ace2e4b3d96c4b8e9540b7bbd"><td class="memItemLeft" align="right" valign="top"><a id="a3d581e2ace2e4b3d96c4b8e9540b7bbd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>screenBlackDelayOnPower</b> () const</td></tr>
+<tr class="separator:a3d581e2ace2e4b3d96c4b8e9540b7bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584875b043e52e59bf8cee3d61eff403"><td class="memItemLeft" align="right" valign="top"><a id="a584875b043e52e59bf8cee3d61eff403"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScreenBlackDelayOnPower</b> (const int screenBlackDelayOnPower)</td></tr>
+<tr class="separator:a584875b043e52e59bf8cee3d61eff403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a88d7abd157890b975fdfbea778b8c8"><td class="memItemLeft" align="right" valign="top"><a id="a3a88d7abd157890b975fdfbea778b8c8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sleepDelayOnPower</b> () const</td></tr>
+<tr class="separator:a3a88d7abd157890b975fdfbea778b8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16de541fb080bb814832bc7872feb65"><td class="memItemLeft" align="right" valign="top"><a id="ac16de541fb080bb814832bc7872feb65"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSleepDelayOnPower</b> (const int sleepDelayOnPower)</td></tr>
+<tr class="separator:ac16de541fb080bb814832bc7872feb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ba865ee7c66d87b944072f8e0004cf"><td class="memItemLeft" align="right" valign="top"><a id="a22ba865ee7c66d87b944072f8e0004cf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>screenBlackDelayOnBattery</b> () const</td></tr>
+<tr class="separator:a22ba865ee7c66d87b944072f8e0004cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e9e5df1c4832186a7d55858a78c993"><td class="memItemLeft" align="right" valign="top"><a id="a54e9e5df1c4832186a7d55858a78c993"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScreenBlackDelayOnBattery</b> (const int screenBlackDelayOnBattery)</td></tr>
+<tr class="separator:a54e9e5df1c4832186a7d55858a78c993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c435b55cbc7ac0c2ebccc6f0c417c36"><td class="memItemLeft" align="right" valign="top"><a id="a5c435b55cbc7ac0c2ebccc6f0c417c36"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sleepDelayOnBattery</b> () const</td></tr>
+<tr class="separator:a5c435b55cbc7ac0c2ebccc6f0c417c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af687b1de083ebe94bc1e3629ffb94274"><td class="memItemLeft" align="right" valign="top"><a id="af687b1de083ebe94bc1e3629ffb94274"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSleepDelayOnBattery</b> (const int sleepDelayOnBattery)</td></tr>
+<tr class="separator:af687b1de083ebe94bc1e3629ffb94274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e8bdfce81658efe6d0cd321a4e40c3"><td class="memItemLeft" align="right" valign="top"><a id="ad6e8bdfce81658efe6d0cd321a4e40c3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sleepOnLidOnPowerClose</b> () const</td></tr>
+<tr class="separator:ad6e8bdfce81658efe6d0cd321a4e40c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac201f1422e98167aa9091968e575c850"><td class="memItemLeft" align="right" valign="top"><a id="ac201f1422e98167aa9091968e575c850"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSleepOnLidOnPowerClose</b> (bool sleepOnLidClose)</td></tr>
+<tr class="separator:ac201f1422e98167aa9091968e575c850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4193eb2da99ac294d80a29ae4677b757"><td class="memItemLeft" align="right" valign="top"><a id="a4193eb2da99ac294d80a29ae4677b757"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sleepOnLidOnBatteryClose</b> () const</td></tr>
+<tr class="separator:a4193eb2da99ac294d80a29ae4677b757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c6dfb5db7954492ab97f0ba7ddc62d0"><td class="memItemLeft" align="right" valign="top"><a id="a7c6dfb5db7954492ab97f0ba7ddc62d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSleepOnLidOnBatteryClose</b> (bool sleepOnLidOnBatteryClose)</td></tr>
+<tr class="separator:a7c6dfb5db7954492ab97f0ba7ddc62d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e12881aa6b92d233d9e489678f10d90"><td class="memItemLeft" align="right" valign="top"><a id="a5e12881aa6b92d233d9e489678f10d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getBatteryLockScreenDelay</b> () const</td></tr>
+<tr class="separator:a5e12881aa6b92d233d9e489678f10d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633ac1292b05df06259cb98b0c6ac988"><td class="memItemLeft" align="right" valign="top"><a id="a633ac1292b05df06259cb98b0c6ac988"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBatteryLockScreenDelay</b> (const int value)</td></tr>
+<tr class="separator:a633ac1292b05df06259cb98b0c6ac988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77411a5532757221354b5381fe8140ac"><td class="memItemLeft" align="right" valign="top"><a id="a77411a5532757221354b5381fe8140ac"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getPowerLockScreenDelay</b> () const</td></tr>
+<tr class="separator:a77411a5532757221354b5381fe8140ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c26da59e8c2bb7466a65ca48909d106"><td class="memItemLeft" align="right" valign="top"><a id="a6c26da59e8c2bb7466a65ca48909d106"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPowerLockScreenDelay</b> (const int value)</td></tr>
+<tr class="separator:a6c26da59e8c2bb7466a65ca48909d106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4376a88deb5e96a9343eb70e5b756702"><td class="memItemLeft" align="right" valign="top"><a id="a4376a88deb5e96a9343eb70e5b756702"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoPowerSaveMode</b> () const</td></tr>
+<tr class="separator:a4376a88deb5e96a9343eb70e5b756702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da922df7c930ab7794ccfba8385bcf0"><td class="memItemLeft" align="right" valign="top"><a id="a6da922df7c930ab7794ccfba8385bcf0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoPowerSaveMode</b> (bool autoPowerSavingMode)</td></tr>
+<tr class="separator:a6da922df7c930ab7794ccfba8385bcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b2a96b24c690ef3d43bae3b32ba37c"><td class="memItemLeft" align="right" valign="top"><a id="af9b2a96b24c690ef3d43bae3b32ba37c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>powerSaveMode</b> () const</td></tr>
+<tr class="separator:af9b2a96b24c690ef3d43bae3b32ba37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cb3bbd8c05031a385cb7413dc02bd6"><td class="memItemLeft" align="right" valign="top"><a id="ab9cb3bbd8c05031a385cb7413dc02bd6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPowerSaveMode</b> (bool powerSaveMode)</td></tr>
+<tr class="separator:ab9cb3bbd8c05031a385cb7413dc02bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4a112a33d648fa71737f8a1f8d0c37"><td class="memItemLeft" align="right" valign="top"><a id="a4b4a112a33d648fa71737f8a1f8d0c37"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>haveBettary</b> () const</td></tr>
+<tr class="separator:a4b4a112a33d648fa71737f8a1f8d0c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a5b7efbb384f7594fa792d60eeaaec"><td class="memItemLeft" align="right" valign="top"><a id="a52a5b7efbb384f7594fa792d60eeaaec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHaveBettary</b> (bool haveBettary)</td></tr>
+<tr class="separator:a52a5b7efbb384f7594fa792d60eeaaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a147d960602dbad747c0bc9624f85f"><td class="memItemLeft" align="right" valign="top"><a id="a61a147d960602dbad747c0bc9624f85f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBatteryPercentage</b> (double batteryPercentage)</td></tr>
+<tr class="separator:a61a147d960602dbad747c0bc9624f85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10eb59caf621fc96558d48b59fcb57eb"><td class="memItemLeft" align="right" valign="top"><a id="a10eb59caf621fc96558d48b59fcb57eb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getDoubleCompare</b> (const double value1, const double value2)</td></tr>
+<tr class="separator:a10eb59caf621fc96558d48b59fcb57eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23bf637b0fe0c2994de7f22d40d1053"><td class="memItemLeft" align="right" valign="top"><a id="ad23bf637b0fe0c2994de7f22d40d1053"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>powerSavingModeAutoWhenQuantifyLow</b> () const</td></tr>
+<tr class="separator:ad23bf637b0fe0c2994de7f22d40d1053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf39b83bd0461e4590aa663c1867ac5e"><td class="memItemLeft" align="right" valign="top"><a id="abf39b83bd0461e4590aa663c1867ac5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPowerSavingModeAutoWhenQuantifyLow</b> (bool bLowBatteryAutoIntoSaveEnergyMode)</td></tr>
+<tr class="separator:abf39b83bd0461e4590aa663c1867ac5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee5abe7e09826340dd9e3b6cc3a2533"><td class="memItemLeft" align="right" valign="top"><a id="aeee5abe7e09826340dd9e3b6cc3a2533"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>powerSavingModeAuto</b> () const</td></tr>
+<tr class="separator:aeee5abe7e09826340dd9e3b6cc3a2533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097cd11150b477cf66b8c564e5409ef3"><td class="memItemLeft" align="right" valign="top"><a id="a097cd11150b477cf66b8c564e5409ef3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPowerSavingModeAuto</b> (bool bAutoIntoSaveEnergyMode)</td></tr>
+<tr class="separator:a097cd11150b477cf66b8c564e5409ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c4d5a3dbe245178fda064f5e9e33f4"><td class="memItemLeft" align="right" valign="top"><a id="a76c4d5a3dbe245178fda064f5e9e33f4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>powerSavingModeLowerBrightnessThreshold</b> () const</td></tr>
+<tr class="separator:a76c4d5a3dbe245178fda064f5e9e33f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36c6494352a5c94cf83b6689ea01ce0"><td class="memItemLeft" align="right" valign="top"><a id="ae36c6494352a5c94cf83b6689ea01ce0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPowerSavingModeLowerBrightnessThreshold</b> (uint dPowerSavingModeLowerBrightnessThreshold)</td></tr>
+<tr class="separator:ae36c6494352a5c94cf83b6689ea01ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed4e21236e3b8cb1fc873aa34b0cb00"><td class="memItemLeft" align="right" valign="top"><a id="a0ed4e21236e3b8cb1fc873aa34b0cb00"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>linePowerPressPowerBtnAction</b> () const</td></tr>
+<tr class="separator:a0ed4e21236e3b8cb1fc873aa34b0cb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a12ea0b5f0341cf08df32c6aac7b13"><td class="memItemLeft" align="right" valign="top"><a id="a32a12ea0b5f0341cf08df32c6aac7b13"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLinePowerPressPowerBtnAction</b> (int nLinePowerPressPowerBtnAction)</td></tr>
+<tr class="separator:a32a12ea0b5f0341cf08df32c6aac7b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556099c6a527059fd8e0786c8caa3a3d"><td class="memItemLeft" align="right" valign="top"><a id="a556099c6a527059fd8e0786c8caa3a3d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>linePowerLidClosedAction</b> () const</td></tr>
+<tr class="separator:a556099c6a527059fd8e0786c8caa3a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2098429fc6b5fffb0e71279da2ab9bf8"><td class="memItemLeft" align="right" valign="top"><a id="a2098429fc6b5fffb0e71279da2ab9bf8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLinePowerLidClosedAction</b> (int nLinePowerLidClosedAction)</td></tr>
+<tr class="separator:a2098429fc6b5fffb0e71279da2ab9bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5772149da8141e27f4cd91e501dbe823"><td class="memItemLeft" align="right" valign="top"><a id="a5772149da8141e27f4cd91e501dbe823"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>batteryPressPowerBtnAction</b> () const</td></tr>
+<tr class="separator:a5772149da8141e27f4cd91e501dbe823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3848fec8e902dcdf7374d015a0673a00"><td class="memItemLeft" align="right" valign="top"><a id="a3848fec8e902dcdf7374d015a0673a00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBatteryPressPowerBtnAction</b> (int nBatteryPressPowerBtnAction)</td></tr>
+<tr class="separator:a3848fec8e902dcdf7374d015a0673a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf0cc5c8d6d7e5750eeea0cab8491a5c"><td class="memItemLeft" align="right" valign="top"><a id="adf0cc5c8d6d7e5750eeea0cab8491a5c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>batteryLidClosedAction</b> () const</td></tr>
+<tr class="separator:adf0cc5c8d6d7e5750eeea0cab8491a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6cc53f897cf492137a93a03734b1e0c"><td class="memItemLeft" align="right" valign="top"><a id="aa6cc53f897cf492137a93a03734b1e0c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBatteryLidClosedAction</b> (int nBatteryLidClosedAction)</td></tr>
+<tr class="separator:aa6cc53f897cf492137a93a03734b1e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a98990cc451cb8f128f76f38525ef4"><td class="memItemLeft" align="right" valign="top"><a id="ae0a98990cc451cb8f128f76f38525ef4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lowPowerNotifyEnable</b> () const</td></tr>
+<tr class="separator:ae0a98990cc451cb8f128f76f38525ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d98f79df053aa340b0e6c49a95255a7"><td class="memItemLeft" align="right" valign="top"><a id="a9d98f79df053aa340b0e6c49a95255a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLowPowerNotifyEnable</b> (bool bLowPowerNotifyEnable)</td></tr>
+<tr class="separator:a9d98f79df053aa340b0e6c49a95255a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8973cc285240ba923107b3698d97e0"><td class="memItemLeft" align="right" valign="top"><a id="a7a8973cc285240ba923107b3698d97e0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>lowPowerNotifyThreshold</b> () const</td></tr>
+<tr class="separator:a7a8973cc285240ba923107b3698d97e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ace268231dcbc3416a9d158ab07810"><td class="memItemLeft" align="right" valign="top"><a id="ad6ace268231dcbc3416a9d158ab07810"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLowPowerNotifyThreshold</b> (int dLowPowerNotifyThreshold)</td></tr>
+<tr class="separator:ad6ace268231dcbc3416a9d158ab07810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f590c953d302834135d1f1e96aed38"><td class="memItemLeft" align="right" valign="top"><a id="af6f590c953d302834135d1f1e96aed38"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>lowPowerAutoSleepThreshold</b> () const</td></tr>
+<tr class="separator:af6f590c953d302834135d1f1e96aed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7834765fe090d8891fe5a71c5de8d0"><td class="memItemLeft" align="right" valign="top"><a id="afa7834765fe090d8891fe5a71c5de8d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLowPowerAutoSleepThreshold</b> (int dLowPowerAutoSleepThreshold)</td></tr>
+<tr class="separator:afa7834765fe090d8891fe5a71c5de8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ae7168849156f777aad0e629bfcc07"><td class="memItemLeft" align="right" valign="top"><a id="a67ae7168849156f777aad0e629bfcc07"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getSuspend</b> () const</td></tr>
+<tr class="separator:a67ae7168849156f777aad0e629bfcc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd71925461aa472c228d90da308836fa"><td class="memItemLeft" align="right" valign="top"><a id="acd71925461aa472c228d90da308836fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSuspend</b> (bool suspend)</td></tr>
+<tr class="separator:acd71925461aa472c228d90da308836fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a2e1e9e753d05459295a7558afbd26"><td class="memItemLeft" align="right" valign="top"><a id="a27a2e1e9e753d05459295a7558afbd26"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canHibernate</b> () const</td></tr>
+<tr class="separator:a27a2e1e9e753d05459295a7558afbd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c7f6c85637d66ea5777f752a72c279"><td class="memItemLeft" align="right" valign="top"><a id="a44c7f6c85637d66ea5777f752a72c279"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCanHibernate</b> (bool value)</td></tr>
+<tr class="separator:a44c7f6c85637d66ea5777f752a72c279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c0dc21759b12d052de7950b4109240"><td class="memItemLeft" align="right" valign="top"><a id="a09c0dc21759b12d052de7950b4109240"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getHibernate</b> () const</td></tr>
+<tr class="separator:a09c0dc21759b12d052de7950b4109240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020992cbe1e40ed4116d88f7f6826326"><td class="memItemLeft" align="right" valign="top"><a id="a020992cbe1e40ed4116d88f7f6826326"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHibernate</b> (bool hibernate)</td></tr>
+<tr class="separator:a020992cbe1e40ed4116d88f7f6826326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81ce2001be079c463b33b5a1485cc92"><td class="memItemLeft" align="right" valign="top"><a id="ac81ce2001be079c463b33b5a1485cc92"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getPowerPlan</b> () const</td></tr>
+<tr class="separator:ac81ce2001be079c463b33b5a1485cc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7ceb2ced717dbdf77225d5b01eea37"><td class="memItemLeft" align="right" valign="top"><a id="a7b7ceb2ced717dbdf77225d5b01eea37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPowerPlan</b> (const QString &amp;powerPlan)</td></tr>
+<tr class="separator:a7b7ceb2ced717dbdf77225d5b01eea37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1c97cec63e186c5502538668fd9e43"><td class="memItemLeft" align="right" valign="top"><a id="a5d1c97cec63e186c5502538668fd9e43"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isHighPerformanceSupported</b> () const</td></tr>
+<tr class="separator:a5d1c97cec63e186c5502538668fd9e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a11678d11e5a9ccd938816cf8846820"><td class="memItemLeft" align="right" valign="top"><a id="a0a11678d11e5a9ccd938816cf8846820"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHighPerformanceSupported</b> (bool isHighSupport)</td></tr>
+<tr class="separator:a0a11678d11e5a9ccd938816cf8846820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ad8ac83ae7f961928ffb3214717fea65a"><td class="memItemLeft" align="right" valign="top"><a id="ad8ac83ae7f961928ffb3214717fea65a"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>PowerWorker</b></td></tr>
+<tr class="separator:ad8ac83ae7f961928ffb3214717fea65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="powermodel_8h_source.html">powermodel.h</a> 第 <a class="el" href="powermodel_8h_source.html#l00035">35</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-control-center/src/frame/modules/power/<a class="el" href="powermodel_8h_source.html">powermodel.h</a></li>
+<li>dde-control-center/src/frame/modules/power/<a class="el" href="powermodel_8cpp_source.html">powermodel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>dcc</b></li><li class="navelem"><b>power</b></li><li class="navelem"><a class="el" href="classdcc_1_1power_1_1_power_model.html">PowerModel</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

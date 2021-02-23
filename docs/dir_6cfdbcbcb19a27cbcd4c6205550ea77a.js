@@ -1,0 +1,25 @@
+var dir_6cfdbcbcb19a27cbcd4c6205550ea77a =
+[
+    [ "dfmcrumbfactory.cpp", "dfmcrumbfactory_8cpp_source.html", null ],
+    [ "dfmcrumbfactory.h", "dfmcrumbfactory_8h_source.html", null ],
+    [ "dfmcrumbplugin.cpp", "dfmcrumbplugin_8cpp_source.html", null ],
+    [ "dfmcrumbplugin.h", "dfmcrumbplugin_8h_source.html", null ],
+    [ "dfmfactoryloader.cpp", "dfmfactoryloader_8cpp_source.html", null ],
+    [ "dfmfactoryloader.h", "dfmfactoryloader_8h_source.html", null ],
+    [ "dfmfilecontrollerfactory.cpp", "dfmfilecontrollerfactory_8cpp_source.html", null ],
+    [ "dfmfilecontrollerfactory.h", "dfmfilecontrollerfactory_8h_source.html", null ],
+    [ "dfmfilecontrollerplugin.cpp", "dfmfilecontrollerplugin_8cpp_source.html", null ],
+    [ "dfmfilecontrollerplugin.h", "dfmfilecontrollerplugin_8h_source.html", null ],
+    [ "dfmfilepreviewfactory.cpp", "dfmfilepreviewfactory_8cpp_source.html", null ],
+    [ "dfmfilepreviewfactory.h", "dfmfilepreviewfactory_8h_source.html", null ],
+    [ "dfmfilepreviewplugin.cpp", "dfmfilepreviewplugin_8cpp_source.html", null ],
+    [ "dfmfilepreviewplugin.h", "dfmfilepreviewplugin_8h_source.html", null ],
+    [ "dfmgenericfactory.cpp", "dfmgenericfactory_8cpp_source.html", null ],
+    [ "dfmgenericfactory.h", "dfmgenericfactory_8h_source.html", null ],
+    [ "dfmgenericplugin.cpp", "dfmgenericplugin_8cpp_source.html", null ],
+    [ "dfmgenericplugin.h", "dfmgenericplugin_8h_source.html", null ],
+    [ "dfmviewfactory.cpp", "dfmviewfactory_8cpp_source.html", null ],
+    [ "dfmviewfactory.h", "dfmviewfactory_8h_source.html", null ],
+    [ "dfmviewplugin.cpp", "dfmviewplugin_8cpp_source.html", null ],
+    [ "dfmviewplugin.h", "dfmviewplugin_8h_source.html", null ]
+];

@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: CUndoRedoCommand类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_c_undo_redo_command.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-types">Protected 类型</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-static-methods">静态 Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pro-static-attribs">静态 Protected 属性</a> &#124;
+<a href="class_c_undo_redo_command-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CUndoRedoCommand类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_c_undo_redo_command.html" title="The CUndoRedoCommand class 撤销还原的基类 ">CUndoRedoCommand</a> class 撤销还原的基类  
+ <a href="class_c_undo_redo_command.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cundoredocommand_8h_source.html">cundoredocommand.h</a>&gt;</code></p>
+<div class="dynheader">
+类 CUndoRedoCommand 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_undo_redo_command__inherit__graph.png" border="0" usemap="#_c_undo_redo_command_inherit__map" alt="Inheritance graph"/></div>
+<map name="_c_undo_redo_command_inherit__map" id="_c_undo_redo_command_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+CUndoRedoCommand 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_undo_redo_command__coll__graph.png" border="0" usemap="#_c_undo_redo_command_coll__map" alt="Collaboration graph"/></div>
+<map name="_c_undo_redo_command_coll__map" id="_c_undo_redo_command_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_undo_redo_command_1_1_c_key.html">CKey</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_undo_redo_command_1_1_s_command_info.html">SCommandInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_undo_redo_command_1_1_s_command_info_couple.html">SCommandInfoCouple</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1c6b438980782305cf158cf77e9bf990"><td class="memItemLeft" align="right" valign="top"><a id="a1c6b438980782305cf158cf77e9bf990"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EDrawUndoCmdType</b> { <br />
+&#160;&#160;<b>ESceneChangedCmd</b>, 
+<b>EItemChangedCmd</b>, 
+<b>EDrawGroupCmd</b>, 
+<b>EDrawCmdUnknowed</b>, 
+<br />
+&#160;&#160;<b>EDrawCmdCount</b>
+<br />
+ }</td></tr>
+<tr class="separator:a1c6b438980782305cf158cf77e9bf990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac6c30d76b8a83cdf91785b51b04b15e4"><td class="memItemLeft" align="right" valign="top"><a id="ac6c30d76b8a83cdf91785b51b04b15e4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_undo_redo_command.html#ac6c30d76b8a83cdf91785b51b04b15e4">CUndoRedoCommand</a> ()</td></tr>
+<tr class="memdesc:ac6c30d76b8a83cdf91785b51b04b15e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_c_undo_redo_command.html" title="The CUndoRedoCommand class 撤销还原的基类 ">CUndoRedoCommand</a> 构造函数 <br /></td></tr>
+<tr class="separator:ac6c30d76b8a83cdf91785b51b04b15e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68aee9cf9ff36764c37929a1da1b1fc7"><td class="memItemLeft" align="right" valign="top"><a id="a68aee9cf9ff36764c37929a1da1b1fc7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> () Q_DECL_FINAL</td></tr>
+<tr class="separator:a68aee9cf9ff36764c37929a1da1b1fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6bef3dbc7339b0ac01e8d58efe753f6"><td class="memItemLeft" align="right" valign="top"><a id="ae6bef3dbc7339b0ac01e8d58efe753f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> () Q_DECL_FINAL</td></tr>
+<tr class="separator:ae6bef3dbc7339b0ac01e8d58efe753f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45b719bba1a4ac364ab93bb83b172c1"><td class="memItemLeft" align="right" valign="top"><a id="ad45b719bba1a4ac364ab93bb83b172c1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>real_undo</b> ()</td></tr>
+<tr class="separator:ad45b719bba1a4ac364ab93bb83b172c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b5d53824c935aa74e565d174e2b192"><td class="memItemLeft" align="right" valign="top"><a id="a97b5d53824c935aa74e565d174e2b192"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>real_redo</b> ()</td></tr>
+<tr class="separator:a97b5d53824c935aa74e565d174e2b192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbadf7ea1435897a154b070700f12a66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_undo_redo_command.html#adbadf7ea1435897a154b070700f12a66">setVar</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; QVariant &gt; &amp;vars, EVarUndoOrRedo varTp)</td></tr>
+<tr class="memdesc:adbadf7ea1435897a154b070700f12a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">The setVar 设置数据参数  <a href="#adbadf7ea1435897a154b070700f12a66">更多...</a><br /></td></tr>
+<tr class="separator:adbadf7ea1435897a154b070700f12a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95927f5efab383ed55e2d1ddc1a3ef4b"><td class="memItemLeft" align="right" valign="top"><a id="a95927f5efab383ed55e2d1ddc1a3ef4b"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_undo_redo_command.html#a95927f5efab383ed55e2d1ddc1a3ef4b">var</a> (EVarUndoOrRedo varTp)</td></tr>
+<tr class="memdesc:a95927f5efab383ed55e2d1ddc1a3ef4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The var 数据参数 <br /></td></tr>
+<tr class="separator:a95927f5efab383ed55e2d1ddc1a3ef4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aae5d771fc0ad3c4fe94286c851b43b7a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_undo_redo_command.html#aae5d771fc0ad3c4fe94286c851b43b7a">recordUndoCommand</a> (EDrawUndoCmdType tp, int expendTp, const <a class="el" href="class_q_list.html">QList</a>&lt; QVariant &gt; &amp;datas, bool init=false, bool NoNeedRedoVars=true)</td></tr>
+<tr class="memdesc:aae5d771fc0ad3c4fe94286c851b43b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The recordUndoCommand 记录操作  <a href="#aae5d771fc0ad3c4fe94286c851b43b7a">更多...</a><br /></td></tr>
+<tr class="separator:aae5d771fc0ad3c4fe94286c851b43b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636253c8f82934db723ccc39cfae0f99"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_undo_redo_command.html#a636253c8f82934db723ccc39cfae0f99">recordRedoCommand</a> (EDrawUndoCmdType tp, int expendTp, const <a class="el" href="class_q_list.html">QList</a>&lt; QVariant &gt; &amp;datas)</td></tr>
+<tr class="memdesc:a636253c8f82934db723ccc39cfae0f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The recordCommand 记录操作  <a href="#a636253c8f82934db723ccc39cfae0f99">更多...</a><br /></td></tr>
+<tr class="separator:a636253c8f82934db723ccc39cfae0f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13476d3a2d3b390f0c0f9866aa515251"><td class="memItemLeft" align="right" valign="top"><a id="a13476d3a2d3b390f0c0f9866aa515251"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_undo_redo_command.html#a13476d3a2d3b390f0c0f9866aa515251">finishRecord</a> (bool doRedoCmd=false)</td></tr>
+<tr class="memdesc:a13476d3a2d3b390f0c0f9866aa515251"><td class="mdescLeft">&#160;</td><td class="mdescRight">The clearCommand 执行记录了的所有操作(执行完成后会调用clearCommand清除) <br /></td></tr>
+<tr class="separator:a13476d3a2d3b390f0c0f9866aa515251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3af04e6b94adbd01e797a14ca686870"><td class="memItemLeft" align="right" valign="top"><a id="ac3af04e6b94adbd01e797a14ca686870"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_undo_redo_command.html#ac3af04e6b94adbd01e797a14ca686870">clearCommand</a> ()</td></tr>
+<tr class="memdesc:ac3af04e6b94adbd01e797a14ca686870"><td class="mdescLeft">&#160;</td><td class="mdescRight">The clearCommand 清除记录了的所有操作 <br /></td></tr>
+<tr class="separator:ac3af04e6b94adbd01e797a14ca686870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bec03099edc0fa9944cfd5fa7edb618"><td class="memItemLeft" align="right" valign="top"><a id="a0bec03099edc0fa9944cfd5fa7edb618"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>pushStack</b> (<a class="el" href="class_c_undo_redo_command.html">CUndoRedoCommand</a> *pCmd)</td></tr>
+<tr class="separator:a0bec03099edc0fa9944cfd5fa7edb618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4675932b6f45b42dd3ab9f705b27f751"><td class="memItemLeft" align="right" valign="top"><a id="a4675932b6f45b42dd3ab9f705b27f751"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setBlockRedoWhenPushedToStack</b> (bool b)</td></tr>
+<tr class="separator:a4675932b6f45b42dd3ab9f705b27f751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1538508c33cdd109a72d33f4d0598e"><td class="memItemLeft" align="right" valign="top"><a id="a4d1538508c33cdd109a72d33f4d0598e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setUndoRedoStack</b> (QUndoStack *stack, void *pGraphicsView)</td></tr>
+<tr class="separator:a4d1538508c33cdd109a72d33f4d0598e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781ae3f688a02547721200f310be03c7"><td class="memItemLeft" align="right" valign="top"><a id="a781ae3f688a02547721200f310be03c7"></a>
+static QUndoStack *&#160;</td><td class="memItemRight" valign="bottom"><b>getUndoRedoStack</b> (void *p=nullptr)</td></tr>
+<tr class="separator:a781ae3f688a02547721200f310be03c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:a64411179fdbd735962a2323d3cf0ddd1"><td class="memItemLeft" align="right" valign="top"><a id="a64411179fdbd735962a2323d3cf0ddd1"></a>
+typedef <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_c_undo_redo_command_1_1_s_command_info_couple.html">SCommandInfoCouple</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>QCommandInfoList</b></td></tr>
+<tr class="separator:a64411179fdbd735962a2323d3cf0ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a97a379a7a47c8c7d07f7e2717a8578f8"><td class="memItemLeft" align="right" valign="top"><a id="a97a379a7a47c8c7d07f7e2717a8578f8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_undo_redo_command.html#a97a379a7a47c8c7d07f7e2717a8578f8">parsingVars</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; QVariant &gt; &amp;vars, EVarUndoOrRedo varTp)</td></tr>
+<tr class="memdesc:a97a379a7a47c8c7d07f7e2717a8578f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parsingVars 解析数据参数 <br /></td></tr>
+<tr class="separator:a97a379a7a47c8c7d07f7e2717a8578f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+静态 Protected 成员函数</h2></td></tr>
+<tr class="memitem:a803b5151e0d41f97d31843e7c200482d"><td class="memItemLeft" align="right" valign="top"><a id="a803b5151e0d41f97d31843e7c200482d"></a>
+static <a class="el" href="class_c_undo_redo_command.html">CUndoRedoCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCmdByCmdInfo</b> (const <a class="el" href="struct_c_undo_redo_command_1_1_s_command_info_couple.html">SCommandInfoCouple</a> &amp;info)</td></tr>
+<tr class="separator:a803b5151e0d41f97d31843e7c200482d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ac82801a2512ba488787abcec68aabe86"><td class="memItemLeft" align="right" valign="top"><a id="ac82801a2512ba488787abcec68aabe86"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_vars</b> [VarTpCount]</td></tr>
+<tr class="separator:ac82801a2512ba488787abcec68aabe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+静态 Protected 属性</h2></td></tr>
+<tr class="memitem:a79606944a36bd59983fdb3ecbc9ee2f2"><td class="memItemLeft" align="right" valign="top"><a id="a79606944a36bd59983fdb3ecbc9ee2f2"></a>
+static <a class="el" href="class_q_list.html">QCommandInfoList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_recordedCmdInfoList</b> = <a class="el" href="class_q_list.html">CUndoRedoCommand::QCommandInfoList</a>()</td></tr>
+<tr class="separator:a79606944a36bd59983fdb3ecbc9ee2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2d55b565bb336630d567008f5521bb"><td class="memItemLeft" align="right" valign="top"><a id="a8a2d55b565bb336630d567008f5521bb"></a>
+static <a class="el" href="class_q_map.html">QMap</a>&lt; <a class="el" href="struct_c_undo_redo_command_1_1_c_key.html">CKey</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>s_forFindCoupleMap</b> = <a class="el" href="class_q_map.html">QMap</a>&lt;<a class="el" href="struct_c_undo_redo_command_1_1_c_key.html">CUndoRedoCommand::CKey</a>, int&gt;()</td></tr>
+<tr class="separator:a8a2d55b565bb336630d567008f5521bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b2ac3f29f7ed8d01956d839c9d4074"><td class="memItemLeft" align="right" valign="top"><a id="a90b2ac3f29f7ed8d01956d839c9d4074"></a>
+static <a class="el" href="class_q_map.html">QMap</a>&lt; void *, QUndoStack * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>s_undoStacks</b> = <a class="el" href="class_q_map.html">QMap</a>&lt;void *, QUndoStack *&gt;()</td></tr>
+<tr class="separator:a90b2ac3f29f7ed8d01956d839c9d4074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81f07d8672f07cf2cf4af3f15c43866"><td class="memItemLeft" align="right" valign="top"><a id="ac81f07d8672f07cf2cf4af3f15c43866"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>s_blockRedoWhenPushToStack</b> = false</td></tr>
+<tr class="separator:ac81f07d8672f07cf2cf4af3f15c43866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <a class="el" href="class_c_undo_redo_command.html" title="The CUndoRedoCommand class 撤销还原的基类 ">CUndoRedoCommand</a> class 撤销还原的基类 </p>
+
+<p class="definition">在文件 <a class="el" href="cundoredocommand_8h_source.html">cundoredocommand.h</a> 第 <a class="el" href="cundoredocommand_8h_source.html#l00037">37</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a636253c8f82934db723ccc39cfae0f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a636253c8f82934db723ccc39cfae0f99">&#9670;&nbsp;</a></span>recordRedoCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CUndoRedoCommand::recordRedoCommand </td>
+          <td>(</td>
+          <td class="paramtype">CUndoRedoCommand::EDrawUndoCmdType&#160;</td>
+          <td class="paramname"><em>tp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>expendTp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; QVariant &gt; &amp;&#160;</td>
+          <td class="paramname"><em>datas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The recordCommand 记录操作 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">undoIndex　undo的索引用于将当前的redo指令与其匹配</td><td></td></tr>
+    <tr><td class="paramname">tp　操作的类型</td><td></td></tr>
+    <tr><td class="paramname">datas　redo操作相关的数据参数等（不同的子类不同的解释）</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cundoredocommand_8cpp_source.html">cundoredocommand.cpp</a> 第 <a class="el" href="cundoredocommand_8cpp_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aae5d771fc0ad3c4fe94286c851b43b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5d771fc0ad3c4fe94286c851b43b7a">&#9670;&nbsp;</a></span>recordUndoCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CUndoRedoCommand::recordUndoCommand </td>
+          <td>(</td>
+          <td class="paramtype">CUndoRedoCommand::EDrawUndoCmdType&#160;</td>
+          <td class="paramname"><em>tp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>expendTp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; QVariant &gt; &amp;&#160;</td>
+          <td class="paramname"><em>datas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>init</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>NoNeedRedoVars</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The recordUndoCommand 记录操作 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tp　操作的类型</td><td></td></tr>
+    <tr><td class="paramname">tp　操作的额外类型标记</td><td>如果没有额外的就填-1 </td></tr>
+    <tr><td class="paramname">datas　undo操作相关的数据参数等（不同的子类不同的解释）</td><td></td></tr>
+    <tr><td class="paramname">init</td><td>是否清除之前的复合操作 </td></tr>
+    <tr><td class="paramname">return</td><td>返回绑定的undo命令的索引(用于匹对redo) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cundoredocommand_8cpp_source.html">cundoredocommand.cpp</a> 第 <a class="el" href="cundoredocommand_8cpp_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adbadf7ea1435897a154b070700f12a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbadf7ea1435897a154b070700f12a66">&#9670;&nbsp;</a></span>setVar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CUndoRedoCommand::setVar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; QVariant &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vars</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EVarUndoOrRedo&#160;</td>
+          <td class="paramname"><em>varTp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The setVar 设置数据参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vars</td><td>参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cundoredocommand_8cpp_source.html">cundoredocommand.cpp</a> 第 <a class="el" href="cundoredocommand_8cpp_source.html#l00178">178</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>deepin-draw/src/frame/<a class="el" href="cundoredocommand_8h_source.html">cundoredocommand.h</a></li>
+<li>deepin-draw/src/frame/<a class="el" href="cundoredocommand_8cpp_source.html">cundoredocommand.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_c_undo_redo_command.html">CUndoRedoCommand</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

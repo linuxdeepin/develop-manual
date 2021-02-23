@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: VaultManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_vault_manager.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="class_vault_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">VaultManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_vault_manager.html" title="The VaultManager class 保险箱管理类 ">VaultManager</a> class 保险箱管理类  
+ <a href="class_vault_manager.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="vaultmanager_8h_source.html">vaultmanager.h</a>&gt;</code></p>
+<div class="dynheader">
+类 VaultManager 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vault_manager__inherit__graph.png" border="0" usemap="#_vault_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_vault_manager_inherit__map" id="_vault_manager_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+VaultManager 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vault_manager__coll__graph.png" border="0" usemap="#_vault_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_vault_manager_coll__map" id="_vault_manager_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a901a664d84555b316306775d124e377b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#a901a664d84555b316306775d124e377b">sysUserChanged</a> (const QString &amp;curUser)</td></tr>
+<tr class="memdesc:a901a664d84555b316306775d124e377b"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotUserChanged 用户切换槽函数  <a href="#a901a664d84555b316306775d124e377b">更多...</a><br /></td></tr>
+<tr class="separator:a901a664d84555b316306775d124e377b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb54cfb1628a642ec862fabdc8ddd47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#aeeb54cfb1628a642ec862fabdc8ddd47">setRefreshTime</a> (quint64 time)</td></tr>
+<tr class="memdesc:aeeb54cfb1628a642ec862fabdc8ddd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">setRefreshTime 设置保险箱刷新时间  <a href="#aeeb54cfb1628a642ec862fabdc8ddd47">更多...</a><br /></td></tr>
+<tr class="separator:aeeb54cfb1628a642ec862fabdc8ddd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564fb99db8804c38224e66037fbae9fd"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#a564fb99db8804c38224e66037fbae9fd">getLastestTime</a> () const</td></tr>
+<tr class="memdesc:a564fb99db8804c38224e66037fbae9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">getLastestTime 获取保险柜计时  <a href="#a564fb99db8804c38224e66037fbae9fd">更多...</a><br /></td></tr>
+<tr class="separator:a564fb99db8804c38224e66037fbae9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b24478c1990be97483dd9318ef87272"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#a4b24478c1990be97483dd9318ef87272">getSelfTime</a> () const</td></tr>
+<tr class="memdesc:a4b24478c1990be97483dd9318ef87272"><td class="mdescLeft">&#160;</td><td class="mdescRight">getSelfTime 获取自定义时间  <a href="#a4b24478c1990be97483dd9318ef87272">更多...</a><br /></td></tr>
+<tr class="separator:a4b24478c1990be97483dd9318ef87272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ff4908a6707d11f2eadd3e81ee41d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#aa1ff4908a6707d11f2eadd3e81ee41d7">checkAuthentication</a> (QString type)</td></tr>
+<tr class="memdesc:aa1ff4908a6707d11f2eadd3e81ee41d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">checkAuthentication 权限验证  <a href="#aa1ff4908a6707d11f2eadd3e81ee41d7">更多...</a><br /></td></tr>
+<tr class="separator:aa1ff4908a6707d11f2eadd3e81ee41d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac47d8a10374474c208e8de6bc61524"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#a4ac47d8a10374474c208e8de6bc61524">isLockEventTriggered</a> () const</td></tr>
+<tr class="memdesc:a4ac47d8a10374474c208e8de6bc61524"><td class="mdescLeft">&#160;</td><td class="mdescRight">isLockEventTriggered 是否存在已触发的锁定事件  <a href="#a4ac47d8a10374474c208e8de6bc61524">更多...</a><br /></td></tr>
+<tr class="separator:a4ac47d8a10374474c208e8de6bc61524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe87ca3c7e3fb003286c3a979783c6d7"><td class="memItemLeft" align="right" valign="top"><a id="afe87ca3c7e3fb003286c3a979783c6d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#afe87ca3c7e3fb003286c3a979783c6d7">triggerLockEvent</a> ()</td></tr>
+<tr class="memdesc:afe87ca3c7e3fb003286c3a979783c6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">triggerLockEvent 触发锁定事件 <br /></td></tr>
+<tr class="separator:afe87ca3c7e3fb003286c3a979783c6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73447dcce39c900129456c6247019877"><td class="memItemLeft" align="right" valign="top"><a id="a73447dcce39c900129456c6247019877"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#a73447dcce39c900129456c6247019877">clearLockEvent</a> ()</td></tr>
+<tr class="memdesc:a73447dcce39c900129456c6247019877"><td class="mdescLeft">&#160;</td><td class="mdescRight">clearLockEvent 清除锁定事件 <br /></td></tr>
+<tr class="separator:a73447dcce39c900129456c6247019877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92084ff5d5f790c61b1ec15d6c6e9b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#af92084ff5d5f790c61b1ec15d6c6e9b9">computerSleep</a> (bool bSleep)</td></tr>
+<tr class="memdesc:af92084ff5d5f790c61b1ec15d6c6e9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">computerSleep 通过dbus接口获取电脑休眠状态 该函数将主机休眠时间记录到时钟  <a href="#af92084ff5d5f790c61b1ec15d6c6e9b9">更多...</a><br /></td></tr>
+<tr class="separator:af92084ff5d5f790c61b1ec15d6c6e9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a97df00d07f5e773d3eefd8ad6983c408"><td class="memItemLeft" align="right" valign="top"><a id="a97df00d07f5e773d3eefd8ad6983c408"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VaultManager</b> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:a97df00d07f5e773d3eefd8ad6983c408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:acad4a03be9b758008251b5f2353f6991"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vault_manager.html#acad4a03be9b758008251b5f2353f6991">ObjectPath</a> = &quot;/com/deepin/filemanager/daemon/<a class="el" href="class_vault_manager.html">VaultManager</a>&quot;</td></tr>
+<tr class="separator:acad4a03be9b758008251b5f2353f6991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fa8d7ec70d2e4415a7220f7bc570ce"><td class="memItemLeft" align="right" valign="top"><a id="a13fa8d7ec70d2e4415a7220f7bc570ce"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>PolicyKitCreateActionId</b> = &quot;com.deepin.filemanager.daemon.VaultManager.Create&quot;</td></tr>
+<tr class="separator:a13fa8d7ec70d2e4415a7220f7bc570ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e65e09cf2d6a685af802a444fd26ff4"><td class="memItemLeft" align="right" valign="top"><a id="a7e65e09cf2d6a685af802a444fd26ff4"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>PolicyKitRemoveActionId</b> = &quot;com.deepin.filemanager.daemon.VaultManager.Remove&quot;</td></tr>
+<tr class="separator:a7e65e09cf2d6a685af802a444fd26ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <a class="el" href="class_vault_manager.html" title="The VaultManager class 保险箱管理类 ">VaultManager</a> class 保险箱管理类 </p>
+
+<p class="definition">在文件 <a class="el" href="vaultmanager_8h_source.html">vaultmanager.h</a> 第 <a class="el" href="vaultmanager_8h_source.html#l00033">33</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="aa1ff4908a6707d11f2eadd3e81ee41d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ff4908a6707d11f2eadd3e81ee41d7">&#9670;&nbsp;</a></span>checkAuthentication</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VaultManager::checkAuthentication </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>checkAuthentication 权限验证 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="vaultmanager_8cpp_source.html">vaultmanager.cpp</a> 第 <a class="el" href="vaultmanager_8cpp_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af92084ff5d5f790c61b1ec15d6c6e9b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92084ff5d5f790c61b1ec15d6c6e9b9">&#9670;&nbsp;</a></span>computerSleep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VaultManager::computerSleep </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSleep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>computerSleep 通过dbus接口获取电脑休眠状态 该函数将主机休眠时间记录到时钟 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bSleep</td><td>true为正要进入休眠，false为进入唤醒状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="vaultmanager_8cpp_source.html">vaultmanager.cpp</a> 第 <a class="el" href="vaultmanager_8cpp_source.html#l00139">139</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a564fb99db8804c38224e66037fbae9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564fb99db8804c38224e66037fbae9fd">&#9670;&nbsp;</a></span>getLastestTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 VaultManager::getLastestTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getLastestTime 获取保险柜计时 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="vaultmanager_8cpp_source.html">vaultmanager.cpp</a> 第 <a class="el" href="vaultmanager_8cpp_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4b24478c1990be97483dd9318ef87272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b24478c1990be97483dd9318ef87272">&#9670;&nbsp;</a></span>getSelfTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 VaultManager::getSelfTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getSelfTime 获取自定义时间 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="vaultmanager_8cpp_source.html">vaultmanager.cpp</a> 第 <a class="el" href="vaultmanager_8cpp_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4ac47d8a10374474c208e8de6bc61524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac47d8a10374474c208e8de6bc61524">&#9670;&nbsp;</a></span>isLockEventTriggered</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VaultManager::isLockEventTriggered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>isLockEventTriggered 是否存在已触发的锁定事件 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="vaultmanager_8cpp_source.html">vaultmanager.cpp</a> 第 <a class="el" href="vaultmanager_8cpp_source.html#l00124">124</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aeeb54cfb1628a642ec862fabdc8ddd47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb54cfb1628a642ec862fabdc8ddd47">&#9670;&nbsp;</a></span>setRefreshTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VaultManager::setRefreshTime </td>
+          <td>(</td>
+          <td class="paramtype">quint64&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setRefreshTime 设置保险箱刷新时间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="vaultmanager_8cpp_source.html">vaultmanager.cpp</a> 第 <a class="el" href="vaultmanager_8cpp_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a901a664d84555b316306775d124e377b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901a664d84555b316306775d124e377b">&#9670;&nbsp;</a></span>sysUserChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VaultManager::sysUserChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>curUser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotUserChanged 用户切换槽函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curUser</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="vaultmanager_8cpp_source.html">vaultmanager.cpp</a> 第 <a class="el" href="vaultmanager_8cpp_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="acad4a03be9b758008251b5f2353f6991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad4a03be9b758008251b5f2353f6991">&#9670;&nbsp;</a></span>ObjectPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString VaultManager::ObjectPath = &quot;/com/deepin/filemanager/daemon/<a class="el" href="class_vault_manager.html">VaultManager</a>&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This file is part of the filemanager project. Copyright 2020 luzhen <a href="#" onclick="location.href='mai'+'lto:'+'luz'+'he'+'n@u'+'ni'+'ont'+'ec'+'h.c'+'om'; return false;">luzhe<span style="display: none;">.nosp@m.</span>n@un<span style="display: none;">.nosp@m.</span>ionte<span style="display: none;">.nosp@m.</span>ch.c<span style="display: none;">.nosp@m.</span>om</a>.</p>
+<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>. </p>
+
+<p class="definition">在文件 <a class="el" href="vaultmanager_8h_source.html">vaultmanager.h</a> 第 <a class="el" href="vaultmanager_8h_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-daemon/vault/<a class="el" href="vaultmanager_8h_source.html">vaultmanager.h</a></li>
+<li>dde-file-manager/dde-file-manager-daemon/vault/<a class="el" href="vaultmanager_8cpp_source.html">vaultmanager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_vault_manager.html">VaultManager</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: WirelessItem类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_wireless_item.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_wireless_item-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">WirelessItem类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 WirelessItem 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_wireless_item__inherit__graph.png" border="0" usemap="#_wireless_item_inherit__map" alt="Inheritance graph"/></div>
+<map name="_wireless_item_inherit__map" id="_wireless_item_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+WirelessItem 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_wireless_item__coll__graph.png" border="0" usemap="#_wireless_item_coll__map" alt="Collaboration graph"/></div>
+<map name="_wireless_item_coll__map" id="_wireless_item_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ada68a60e55770b0fda2f43f9b268ca6a"><td class="memItemLeft" align="right" valign="top"><a id="ada68a60e55770b0fda2f43f9b268ca6a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WirelessStatus</b> { <br />
+&#160;&#160;<b>Unknown</b> = 0, 
+<b>Enabled</b> = 0x00010000, 
+<b>Disabled</b> = 0x00020000, 
+<b>Connected</b> = 0x00040000, 
+<br />
+&#160;&#160;<b>Disconnected</b> = 0x00080000, 
+<b>Connecting</b> = 0x00100000, 
+<b>Authenticating</b> = 0x00200000, 
+<b>ObtainingIP</b> = 0x00400000, 
+<br />
+&#160;&#160;<b>ObtainIpFailed</b> = 0x00800000, 
+<b>ConnectNoInternet</b> = 0x01000000, 
+<b>Failed</b> = 0x02000000
+<br />
+ }</td></tr>
+<tr class="separator:ada68a60e55770b0fda2f43f9b268ca6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a662e5b8ee7d3558a8d62c386d578f93c"><td class="memItemLeft" align="right" valign="top"><a id="a662e5b8ee7d3558a8d62c386d578f93c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDeviceInfo</b> (const int index)</td></tr>
+<tr class="separator:a662e5b8ee7d3558a8d62c386d578f93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:aa70f24deaddfe9068982ca712819b1e4"><td class="memItemLeft" align="right" valign="top"><a id="aa70f24deaddfe9068982ca712819b1e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestActiveAP</b> (const QString &amp;devPath, const QString &amp;apPath, const QString &amp;uuid) const</td></tr>
+<tr class="separator:aa70f24deaddfe9068982ca712819b1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1957c56a1638e5867c85cbdc8758c7"><td class="memItemLeft" align="right" valign="top"><a id="a0e1957c56a1638e5867c85cbdc8758c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestDeactiveAP</b> (const QString &amp;devPath) const</td></tr>
+<tr class="separator:a0e1957c56a1638e5867c85cbdc8758c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ca3d18f67c7f8a65fc6914a75121dd"><td class="memItemLeft" align="right" valign="top"><a id="a35ca3d18f67c7f8a65fc6914a75121dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>feedSecret</b> (const QString &amp;connectionPath, const QString &amp;settingName, const QString &amp;password, const bool autoConnect)</td></tr>
+<tr class="separator:a35ca3d18f67c7f8a65fc6914a75121dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ca3e42dfb227d671bcd00c38bbde82"><td class="memItemLeft" align="right" valign="top"><a id="a48ca3e42dfb227d671bcd00c38bbde82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cancelSecret</b> (const QString &amp;connectionPath, const QString &amp;settingName)</td></tr>
+<tr class="separator:a48ca3e42dfb227d671bcd00c38bbde82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c6f6d9c83a295daf8119bec3d7ae83"><td class="memItemLeft" align="right" valign="top"><a id="ab0c6f6d9c83a295daf8119bec3d7ae83"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>queryActiveConnInfo</b> ()</td></tr>
+<tr class="separator:ab0c6f6d9c83a295daf8119bec3d7ae83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5deaf03c49db5b57d1cd795176b138"><td class="memItemLeft" align="right" valign="top"><a id="a3c5deaf03c49db5b57d1cd795176b138"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestWirelessScan</b> ()</td></tr>
+<tr class="separator:a3c5deaf03c49db5b57d1cd795176b138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190ffeda93fdd7834d5e77cc11d595c6"><td class="memItemLeft" align="right" valign="top"><a id="a190ffeda93fdd7834d5e77cc11d595c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createApConfig</b> (const QString &amp;devPath, const QString &amp;apPath)</td></tr>
+<tr class="separator:a190ffeda93fdd7834d5e77cc11d595c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5dfa84b2543b50e81db4f37d5829ee8"><td class="memItemLeft" align="right" valign="top"><a id="ae5dfa84b2543b50e81db4f37d5829ee8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>queryConnectionSession</b> (const QString &amp;devPath, const QString &amp;uuid)</td></tr>
+<tr class="separator:ae5dfa84b2543b50e81db4f37d5829ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e687f8b1e78d7f73eff2dd7a405acac"><td class="memItemLeft" align="right" valign="top"><a id="a7e687f8b1e78d7f73eff2dd7a405acac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deviceStateChanged</b> ()</td></tr>
+<tr class="separator:a7e687f8b1e78d7f73eff2dd7a405acac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_class_device_item"><td colspan="2" onclick="javascript:toggleInherit('signals_class_device_item')"><img src="closed.png" alt="-"/>&#160;信号 继承自 <a class="el" href="class_device_item.html">DeviceItem</a></td></tr>
+<tr class="memitem:a24966a5457d30732c80d7a204b958597 inherit signals_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="a24966a5457d30732c80d7a204b958597"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestSetDeviceEnable</b> (const QString &amp;path, const bool enable) const</td></tr>
+<tr class="separator:a24966a5457d30732c80d7a204b958597 inherit signals_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a050f213c738d1b4f36ec378e191a8d2e"><td class="memItemLeft" align="right" valign="top"><a id="a050f213c738d1b4f36ec378e191a8d2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WirelessItem</b> (dde::network::WirelessDevice *device)</td></tr>
+<tr class="separator:a050f213c738d1b4f36ec378e191a8d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a433583d47c29b23d387e2cf915c4851a"><td class="memItemLeft" align="right" valign="top"><a id="a433583d47c29b23d387e2cf915c4851a"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>itemApplet</b> () override</td></tr>
+<tr class="separator:a433583d47c29b23d387e2cf915c4851a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3020012cb11f217a06bcf9f468ade4"><td class="memItemLeft" align="right" valign="top"><a id="a4b3020012cb11f217a06bcf9f468ade4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>APcount</b> ()</td></tr>
+<tr class="separator:a4b3020012cb11f217a06bcf9f468ade4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53b8943172b18b1496f6b747cd63d69"><td class="memItemLeft" align="right" valign="top"><a id="ad53b8943172b18b1496f6b747cd63d69"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deviceEanbled</b> ()</td></tr>
+<tr class="separator:ad53b8943172b18b1496f6b747cd63d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831a9cda10d82f3c009c9a02efb50b85"><td class="memItemLeft" align="right" valign="top"><a id="a831a9cda10d82f3c009c9a02efb50b85"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDeviceEnabled</b> (bool enable)</td></tr>
+<tr class="separator:a831a9cda10d82f3c009c9a02efb50b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d8fac298a7b50238e8e8c5e8cfb056"><td class="memItemLeft" align="right" valign="top"><a id="a45d8fac298a7b50238e8e8c5e8cfb056"></a>
+WirelessStatus&#160;</td><td class="memItemRight" valign="bottom"><b>getDeviceState</b> ()</td></tr>
+<tr class="separator:a45d8fac298a7b50238e8e8c5e8cfb056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6b9140b3ae00dded1e3ae18be86275"><td class="memItemLeft" align="right" valign="top"><a id="a5b6b9140b3ae00dded1e3ae18be86275"></a>
+QJsonObject &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getConnectedApInfo</b> ()</td></tr>
+<tr class="separator:a5b6b9140b3ae00dded1e3ae18be86275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6e6fa4926809ba2eac81f057492ab5"><td class="memItemLeft" align="right" valign="top"><a id="a1c6e6fa4926809ba2eac81f057492ab5"></a>
+QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><b>getActiveWirelessConnectionInfo</b> ()</td></tr>
+<tr class="separator:a1c6e6fa4926809ba2eac81f057492ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33765606b378a58bb94023916f33bc4"><td class="memItemLeft" align="right" valign="top"><a id="af33765606b378a58bb94023916f33bc4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>deviceInfo</b> ()</td></tr>
+<tr class="separator:af33765606b378a58bb94023916f33bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa21da3d2f7eaefba720ff854822d5c"><td class="memItemLeft" align="right" valign="top"><a id="aefa21da3d2f7eaefba720ff854822d5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setControlPanelVisible</b> (bool visible)</td></tr>
+<tr class="separator:aefa21da3d2f7eaefba720ff854822d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_device_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_device_item')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_device_item.html">DeviceItem</a></td></tr>
+<tr class="memitem:a8ea94b8418879ee0813e905fb88179c0 inherit pub_methods_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="a8ea94b8418879ee0813e905fb88179c0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceItem</b> (dde::network::NetworkDevice *device, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a8ea94b8418879ee0813e905fb88179c0 inherit pub_methods_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc4b53eb12dbe7fc134482bf8349f52 inherit pub_methods_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="aebc4b53eb12dbe7fc134482bf8349f52"></a>
+const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>path</b> () const</td></tr>
+<tr class="separator:aebc4b53eb12dbe7fc134482bf8349f52 inherit pub_methods_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52838abebe0d79278227350073dd480a inherit pub_methods_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="a52838abebe0d79278227350073dd480a"></a>
+const QPointer&lt; dde::network::NetworkDevice &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>device</b> ()</td></tr>
+<tr class="separator:a52838abebe0d79278227350073dd480a inherit pub_methods_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93af44477f9e8f8da355f90291d8e153 inherit pub_methods_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="a93af44477f9e8f8da355f90291d8e153"></a>
+virtual const QString&#160;</td><td class="memItemRight" valign="bottom"><b>itemCommand</b> () const</td></tr>
+<tr class="separator:a93af44477f9e8f8da355f90291d8e153 inherit pub_methods_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3aa94869d88109ecf471f3b6cd8ce5 inherit pub_methods_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="a8c3aa94869d88109ecf471f3b6cd8ce5"></a>
+virtual const QString&#160;</td><td class="memItemRight" valign="bottom"><b>itemContextMenu</b> ()</td></tr>
+<tr class="separator:a8c3aa94869d88109ecf471f3b6cd8ce5 inherit pub_methods_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b332d830cd6b647c7491ffb2aed7e02 inherit pub_methods_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="a6b332d830cd6b647c7491ffb2aed7e02"></a>
+virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>itemTips</b> ()</td></tr>
+<tr class="separator:a6b332d830cd6b647c7491ffb2aed7e02 inherit pub_methods_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac750fc3a19602bfbec9596f04a07ae inherit pub_methods_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="aaac750fc3a19602bfbec9596f04a07ae"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>invokeMenuItem</b> (const QString &amp;menuId)</td></tr>
+<tr class="separator:aaac750fc3a19602bfbec9596f04a07ae inherit pub_methods_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6580277056e148bb91a3635ef3dc945d inherit pub_methods_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="a6580277056e148bb91a3635ef3dc945d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshConnectivity</b> ()</td></tr>
+<tr class="separator:a6580277056e148bb91a3635ef3dc945d inherit pub_methods_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a5ced53ca2a6e6e43ed65b084c5ede168"><td class="memItemLeft" align="right" valign="top"><a id="a5ced53ca2a6e6e43ed65b084c5ede168"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *o, QEvent *e)</td></tr>
+<tr class="separator:a5ced53ca2a6e6e43ed65b084c5ede168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_device_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_device_item')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_device_item.html">DeviceItem</a></td></tr>
+<tr class="memitem:a2c9ba91379c08b50569ee86f6f2b7d3c inherit pro_methods_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="a2c9ba91379c08b50569ee86f6f2b7d3c"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const</td></tr>
+<tr class="separator:a2c9ba91379c08b50569ee86f6f2b7d3c inherit pro_methods_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_device_item"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_device_item')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_device_item.html">DeviceItem</a></td></tr>
+<tr class="memitem:a33ac9abef4804eb4ec877f6bb27c88d4 inherit pro_attribs_class_device_item"><td class="memItemLeft" align="right" valign="top"><a id="a33ac9abef4804eb4ec877f6bb27c88d4"></a>
+QPointer&lt; dde::network::NetworkDevice &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_device</b></td></tr>
+<tr class="separator:a33ac9abef4804eb4ec877f6bb27c88d4 inherit pro_attribs_class_device_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="wirelessitem_8h_source.html">wirelessitem.h</a> 第 <a class="el" href="wirelessitem_8h_source.html#l00035">35</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-dock/plugins/network/item/<a class="el" href="wirelessitem_8h_source.html">wirelessitem.h</a></li>
+<li>dde-dock/plugins/network/item/<a class="el" href="wirelessitem_8cpp_source.html">wirelessitem.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_wireless_item.html">WirelessItem</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

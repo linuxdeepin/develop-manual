@@ -1,0 +1,8 @@
+digraph "dde-file-manager/dde-file-manager-lib/3rdParty/wv2/global.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="dde-file-manager/dde\l-file-manager-lib/3rdParty\l/wv2/global.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="dllmagic.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dllmagic_8h_source.html"];
+}

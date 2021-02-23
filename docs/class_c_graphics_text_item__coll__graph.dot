@@ -1,0 +1,21 @@
+digraph "CGraphicsTextItem"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node4 [label="CGraphicsTextItem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CGraphicsRectItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_rect_item.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CGraphicsItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_item.html"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="QAbstractGraphicsShapeItem",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _blurInfos" ,fontname="Helvetica"];
+  Node8 [label="QList\< SBlurInfo \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_list.html"];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _pGroup" ,fontname="Helvetica"];
+  Node9 [label="CGraphicsItemGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_graphics_item_group.html",tooltip="The CGraphicsItemGroup class 组合图元管理类 所有的图元操作都通过该类执行。 "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="QObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _tempActiveBlurInfo" ,fontname="Helvetica"];
+  Node11 [label="SBlurInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_s_blur_info.html"];
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde_file_manager::DFMApplication类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdde__file__manager_1_1_d_f_m_application.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classdde__file__manager_1_1_d_f_m_application-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dde_file_manager::DFMApplication类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 dde_file_manager::DFMApplication 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdde__file__manager_1_1_d_f_m_application__inherit__graph.png" border="0" usemap="#dde__file__manager_1_1_d_f_m_application_inherit__map" alt="Inheritance graph"/></div>
+<map name="dde__file__manager_1_1_d_f_m_application_inherit__map" id="dde__file__manager_1_1_d_f_m_application_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+dde_file_manager::DFMApplication 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdde__file__manager_1_1_d_f_m_application__coll__graph.png" border="0" usemap="#dde__file__manager_1_1_d_f_m_application_coll__map" alt="Collaboration graph"/></div>
+<map name="dde__file__manager_1_1_d_f_m_application_coll__map" id="dde__file__manager_1_1_d_f_m_application_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ae1be2f4cc02acc5c70a2851b582bb8e9"><td class="memItemLeft" align="right" valign="top"><a id="ae1be2f4cc02acc5c70a2851b582bb8e9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ApplicationAttribute</b> { <br />
+&#160;&#160;<b>AA_AllwayOpenOnNewWindow</b>, 
+<b>AA_IconSizeLevel</b>, 
+<b>AA_ViewMode</b>, 
+<b>AA_ViewSizeAdjustable</b>, 
+<br />
+&#160;&#160;<b>AA_ViewComppactMode</b>, 
+<b>AA_ViewAutoCompace</b>, 
+<b>AA_OpenFileMode</b>, 
+<b>AA_UrlOfNewWindow</b>, 
+<br />
+&#160;&#160;<b>AA_UrlOfNewTab</b>, 
+<b>AA_ThemeName</b>
+<br />
+ }</td></tr>
+<tr class="separator:ae1be2f4cc02acc5c70a2851b582bb8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1352b6d19f9e16c049705a2b8785a5bd"><td class="memItemLeft" align="right" valign="top"><a id="a1352b6d19f9e16c049705a2b8785a5bd"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>GenericAttribute</b> { <br />
+&#160;&#160;<b>GA_IndexInternal</b>, 
+<b>GA_IndexExternal</b>, 
+<b>GA_IndexFullTextSearch</b>, 
+<b>GA_PreviewCompressFile</b>, 
+<br />
+&#160;&#160;<b>GA_PreviewTextFile</b>, 
+<b>GA_PreviewDocumentFile</b>, 
+<b>GA_PreviewImage</b>, 
+<b>GA_PreviewVideo</b>, 
+<br />
+&#160;&#160;<b>GA_AutoMount</b>, 
+<b>GA_AutoMountAndOpen</b>, 
+<b>GA_OverrideFileChooserDialog</b>, 
+<b>GA_ShowedHiddenOnSearch</b>, 
+<br />
+&#160;&#160;<b>GA_ShowedHiddenFiles</b>, 
+<b>GA_ShowedFileSuffixOnRename</b>, 
+<b>GA_DisableNonRemovableDeviceUnmount</b>, 
+<b>GA_HiddenSystemPartition</b>, 
+<br />
+&#160;&#160;<b>GA_ShowRecentFileEntry</b>, 
+<b>GA_ShowCsdCrumbBarClickableArea</b>
+<br />
+ }</td></tr>
+<tr class="separator:a1352b6d19f9e16c049705a2b8785a5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:aa116ada7bb2d530ec1ffd30447381db0"><td class="memItemLeft" align="right" valign="top"><a id="aa116ada7bb2d530ec1ffd30447381db0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>appAttributeChanged</b> (ApplicationAttribute aa, const QVariant &amp;value)</td></tr>
+<tr class="separator:aa116ada7bb2d530ec1ffd30447381db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2cbe620d92e10bb604834056f7e60b"><td class="memItemLeft" align="right" valign="top"><a id="a3c2cbe620d92e10bb604834056f7e60b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>genericAttributeChanged</b> (GenericAttribute ga, const QVariant &amp;value)</td></tr>
+<tr class="separator:a3c2cbe620d92e10bb604834056f7e60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affac45ec1e9c4190b46f1c53bd2ecc37"><td class="memItemLeft" align="right" valign="top"><a id="affac45ec1e9c4190b46f1c53bd2ecc37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>appAttributeEdited</b> (ApplicationAttribute aa, const QVariant &amp;value)</td></tr>
+<tr class="separator:affac45ec1e9c4190b46f1c53bd2ecc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f898a057af10a1cbbc268d2ae6e6c6"><td class="memItemLeft" align="right" valign="top"><a id="aa3f898a057af10a1cbbc268d2ae6e6c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>genericAttributeEdited</b> (GenericAttribute ga, const QVariant &amp;value)</td></tr>
+<tr class="separator:aa3f898a057af10a1cbbc268d2ae6e6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa880b750d12a2ace0c1074e3d54e26ba"><td class="memItemLeft" align="right" valign="top"><a id="aa880b750d12a2ace0c1074e3d54e26ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>iconSizeLevelChanged</b> (int level)</td></tr>
+<tr class="separator:aa880b750d12a2ace0c1074e3d54e26ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8003a7fe71722ffa1f0dd840589e0ab5"><td class="memItemLeft" align="right" valign="top"><a id="a8003a7fe71722ffa1f0dd840589e0ab5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>viewModeChanged</b> (int mode)</td></tr>
+<tr class="separator:a8003a7fe71722ffa1f0dd840589e0ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27423b1660b0bff8f934eb4a817ba823"><td class="memItemLeft" align="right" valign="top"><a id="a27423b1660b0bff8f934eb4a817ba823"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>previewCompressFileChanged</b> (bool enable)</td></tr>
+<tr class="separator:a27423b1660b0bff8f934eb4a817ba823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8b75b9840e7da793144db9447272c2"><td class="memItemLeft" align="right" valign="top"><a id="a9f8b75b9840e7da793144db9447272c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>previewAttributeChanged</b> (GenericAttribute ga, bool enable)</td></tr>
+<tr class="separator:a9f8b75b9840e7da793144db9447272c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae630dd1c8c87dd7ecfad29bd59b463fd"><td class="memItemLeft" align="right" valign="top"><a id="ae630dd1c8c87dd7ecfad29bd59b463fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showedHiddenFilesChanged</b> (bool enable)</td></tr>
+<tr class="separator:ae630dd1c8c87dd7ecfad29bd59b463fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4feb48b38093936d605d92f47d610747"><td class="memItemLeft" align="right" valign="top"><a id="a4feb48b38093936d605d92f47d610747"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>recentDisplayChanged</b> (bool enable)</td></tr>
+<tr class="separator:a4feb48b38093936d605d92f47d610747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c66e3c226cbe42331bcdc1fbfcf9256"><td class="memItemLeft" align="right" valign="top"><a id="a1c66e3c226cbe42331bcdc1fbfcf9256"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>csdClickableAreaAttributeChanged</b> (bool enabled)</td></tr>
+<tr class="separator:a1c66e3c226cbe42331bcdc1fbfcf9256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02fc38074ad6d8ad499b704ae56350c"><td class="memItemLeft" align="right" valign="top"><a id="ae02fc38074ad6d8ad499b704ae56350c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>genericSettingCreated</b> (<a class="el" href="classdde__file__manager_1_1_d_f_m_settings.html">DFMSettings</a> *settings)</td></tr>
+<tr class="separator:ae02fc38074ad6d8ad499b704ae56350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1d5750b7405d73f9ef459879445cdd"><td class="memItemLeft" align="right" valign="top"><a id="a8a1d5750b7405d73f9ef459879445cdd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>appSettingCreated</b> (<a class="el" href="classdde__file__manager_1_1_d_f_m_settings.html">DFMSettings</a> *settings)</td></tr>
+<tr class="separator:a8a1d5750b7405d73f9ef459879445cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9a22d354365b13ac611c94c7e3f4226d"><td class="memItemLeft" align="right" valign="top"><a id="a9a22d354365b13ac611c94c7e3f4226d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFMApplication</b> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:a9a22d354365b13ac611c94c7e3f4226d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a0fc96fc8dba077f3fb84ba8f16c0448c"><td class="memItemLeft" align="right" valign="top"><a id="a0fc96fc8dba077f3fb84ba8f16c0448c"></a>
+static QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>appAttribute</b> (ApplicationAttribute aa)</td></tr>
+<tr class="separator:a0fc96fc8dba077f3fb84ba8f16c0448c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccc37c83d6f5f618ed1a65090f10f00"><td class="memItemLeft" align="right" valign="top"><a id="a3ccc37c83d6f5f618ed1a65090f10f00"></a>
+static <a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>appUrlAttribute</b> (ApplicationAttribute aa)</td></tr>
+<tr class="separator:a3ccc37c83d6f5f618ed1a65090f10f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abc13276f912470b1e33bf1a35d7605"><td class="memItemLeft" align="right" valign="top"><a id="a2abc13276f912470b1e33bf1a35d7605"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAppAttribute</b> (ApplicationAttribute aa, const QVariant &amp;value)</td></tr>
+<tr class="separator:a2abc13276f912470b1e33bf1a35d7605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf27862d7ed21bdcfb8d5548a27ac4b"><td class="memItemLeft" align="right" valign="top"><a id="aedf27862d7ed21bdcfb8d5548a27ac4b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>syncAppAttribute</b> ()</td></tr>
+<tr class="separator:aedf27862d7ed21bdcfb8d5548a27ac4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada00f48b195aacc5d4c560a7f693d46e"><td class="memItemLeft" align="right" valign="top"><a id="ada00f48b195aacc5d4c560a7f693d46e"></a>
+static QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>genericAttribute</b> (GenericAttribute ga)</td></tr>
+<tr class="separator:ada00f48b195aacc5d4c560a7f693d46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666ed9eff003f2eeb812180ab767cf8d"><td class="memItemLeft" align="right" valign="top"><a id="a666ed9eff003f2eeb812180ab767cf8d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setGenericAttribute</b> (GenericAttribute ga, const QVariant &amp;value)</td></tr>
+<tr class="separator:a666ed9eff003f2eeb812180ab767cf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8396c185b488bb17e3e6b22701c37bbf"><td class="memItemLeft" align="right" valign="top"><a id="a8396c185b488bb17e3e6b22701c37bbf"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>syncGenericAttribute</b> ()</td></tr>
+<tr class="separator:a8396c185b488bb17e3e6b22701c37bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac358043777274f7b0bb308e37404b70"><td class="memItemLeft" align="right" valign="top"><a id="aac358043777274f7b0bb308e37404b70"></a>
+static <a class="el" href="classdde__file__manager_1_1_d_f_m_application.html">DFMApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
+<tr class="separator:aac358043777274f7b0bb308e37404b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ef8971989128609c02c4c88b534b67"><td class="memItemLeft" align="right" valign="top"><a id="ae7ef8971989128609c02c4c88b534b67"></a>
+static <a class="el" href="classdde__file__manager_1_1_d_f_m_settings.html">DFMSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>genericSetting</b> ()</td></tr>
+<tr class="separator:ae7ef8971989128609c02c4c88b534b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f146f66c7b25b898756d6fbf4eaef06"><td class="memItemLeft" align="right" valign="top"><a id="a4f146f66c7b25b898756d6fbf4eaef06"></a>
+static <a class="el" href="classdde__file__manager_1_1_d_f_m_settings.html">DFMSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>appSetting</b> ()</td></tr>
+<tr class="separator:a4f146f66c7b25b898756d6fbf4eaef06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad815989374278e1a45448a9278dd00e1"><td class="memItemLeft" align="right" valign="top"><a id="ad815989374278e1a45448a9278dd00e1"></a>
+static <a class="el" href="classdde__file__manager_1_1_d_f_m_settings.html">DFMSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>genericObtuselySetting</b> ()</td></tr>
+<tr class="separator:ad815989374278e1a45448a9278dd00e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55422ca3a14a5ec26258e1b8b01b2da"><td class="memItemLeft" align="right" valign="top"><a id="aa55422ca3a14a5ec26258e1b8b01b2da"></a>
+static <a class="el" href="classdde__file__manager_1_1_d_f_m_settings.html">DFMSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>appObtuselySetting</b> ()</td></tr>
+<tr class="separator:aa55422ca3a14a5ec26258e1b8b01b2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a723585059f0bf80f975a3935c347a38c"><td class="memItemLeft" align="right" valign="top"><a id="a723585059f0bf80f975a3935c347a38c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFMApplication</b> (DFMApplicationPrivate *dd, QObject *parent=nullptr)</td></tr>
+<tr class="separator:a723585059f0bf80f975a3935c347a38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dfmapplication_8h_source.html">dfmapplication.h</a> 第 <a class="el" href="dfmapplication_8h_source.html#l00032">32</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfmapplication_8h_source.html">dfmapplication.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfmapplication_8cpp_source.html">dfmapplication.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedde__file__manager.html">dde_file_manager</a></li><li class="navelem"><a class="el" href="classdde__file__manager_1_1_d_f_m_application.html">DFMApplication</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

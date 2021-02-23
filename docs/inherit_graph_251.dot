@@ -1,0 +1,7 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="DThreadUtil::_TMP\<\l void \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_thread_util_1_1___t_m_p_3_01void_01_4.html"];
+}

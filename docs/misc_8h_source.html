@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-lib/3rdParty/doctotext/misc.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('misc_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">misc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DOCTOTEXT_MISC_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DOCTOTEXT_MISC_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;formatting_style.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;wv2/ustring.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacedoctotext.html">doctotext</a> {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="classdoctotext_1_1_link.html">Link</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct </span>tm;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacedoctotext.html">doctotext</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacewv_ware.html">wvWare</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">typedef</span> std::vector&lt;std::string&gt; svector;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;std::string formatTable(std::vector&lt;svector&gt; &amp;mcols, <span class="keyword">const</span> <a class="code" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a> &amp;options);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;std::string formatUrl(<span class="keyword">const</span> std::string &amp;mlink_url, <span class="keyword">const</span> std::string &amp;mlink_text, <span class="keyword">const</span> <a class="code" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a> &amp;options);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;std::string formatList(std::vector&lt;std::string&gt; &amp;mlist, <span class="keyword">const</span> <a class="code" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a> &amp;options);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;std::string formatNumberedList(std::vector&lt;std::string&gt; &amp;mlist);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;std::string ustring_to_string(<span class="keyword">const</span> <a class="code" href="classwv_ware_1_1_u_string.html">UString</a> &amp;s);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">bool</span> string_to_date(<span class="keyword">const</span> std::string &amp;s, tm &amp;date);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;std::string date_to_string(<span class="keyword">const</span> tm &amp;date);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;std::string uint_to_string(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> value);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="classwv_ware_1_1_u_string.html">UString</a> utf8_to_ustring(<span class="keyword">const</span> std::string &amp;src);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;std::string unichar_to_utf8(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> unichar);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> utf16_unichar_has_4_bytes(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ch)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> (ch &amp; 0xFC00) == 0xD800;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> insertSpecialLinkBlockIntoText(std::string &amp;text, <span class="keyword">const</span> <a class="code" href="classdoctotext_1_1_link.html">Link</a> &amp;link);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> decodeSpecialLinkBlocks(std::string &amp;text, std::vector&lt;Link&gt; &amp;links, std::ostream &amp;log_stream);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;std::string int_to_str(<span class="keywordtype">int</span> i);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">int</span> str_to_int(<span class="keyword">const</span> std::string &amp;s);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacedoctotext_html"><div class="ttname"><a href="namespacedoctotext.html">doctotext</a></div><div class="ttdef"><b>Definition:</b> <a href="3rd_party_2doctotext_2attachment_8h_source.html#l00008">attachment.h:8</a></div></div>
+<div class="ttc" id="namespacewv_ware_html"><div class="ttname"><a href="namespacewv_ware.html">wvWare</a></div><div class="ttdef"><b>Definition:</b> <a href="associatedstrings_8h_source.html#l00024">associatedstrings.h:24</a></div></div>
+<div class="ttc" id="classwv_ware_1_1_u_string_html"><div class="ttname"><a href="classwv_ware_1_1_u_string.html">wvWare::UString</a></div><div class="ttdoc">Unicode string class </div><div class="ttdef"><b>Definition:</b> <a href="ustring_8h_source.html#l00184">ustring.h:184</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_link_html"><div class="ttname"><a href="classdoctotext_1_1_link.html">doctotext::Link</a></div><div class="ttdef"><b>Definition:</b> <a href="3rd_party_2doctotext_2link_8h_source.html#l00020">link.h:20</a></div></div>
+<div class="ttc" id="structdoctotext_1_1_formatting_style_html"><div class="ttname"><a href="structdoctotext_1_1_formatting_style.html">doctotext::FormattingStyle</a></div><div class="ttdef"><b>Definition:</b> <a href="3rd_party_2doctotext_2formatting__style_8h_source.html#l00032">formatting_style.h:32</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_f9029d0d717014796f47cbb96a029b81.html">dde-file-manager-lib</a></li><li class="navelem"><a class="el" href="dir_4dd2d4ba6cd720644dbd89f8c1c32872.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_bc5f619acc33e5710e53a6ed80f86e03.html">doctotext</a></li><li class="navelem"><b>misc.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:18 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

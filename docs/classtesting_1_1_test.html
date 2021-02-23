@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: testing::Test类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtesting_1_1_test.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classtesting_1_1_test-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">testing::Test类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>被 <a class="el" href="class_ad_hoc_test_result_test.html">AdHocTestResultTest</a>, <a class="el" href="classbar_1_1_mixed_up_test_case_test.html">bar::MixedUpTestCaseTest</a>, <a class="el" href="classbar_1_1_mixed_up_test_case_with_same_test_name_test.html">bar::MixedUpTestCaseWithSameTestNameTest</a>, <a class="el" href="classbar_1_1_mixed_up_test_suite_test.html">bar::MixedUpTestSuiteTest</a>, <a class="el" href="classbar_1_1_mixed_up_test_suite_with_same_test_name_test.html">bar::MixedUpTestSuiteWithSameTestNameTest</a>, <a class="el" href="class_canvas_grid_view_test.html">CanvasGridViewTest</a>, <a class="el" href="class_canvas_view_manager_test.html">CanvasViewManagerTest</a>, <a class="el" href="class_common_test.html">CommonTest&lt; T &gt;</a>, <a class="el" href="class_common_test.html">CommonTest&lt; T &gt;</a>, <a class="el" href="class_control_center_unit_test.html">ControlCenterUnitTest</a>, <a class="el" href="class_d_file_copy_move_job_test.html">DFileCopyMoveJobTest</a>, <a class="el" href="class_d_file_copy_queue_test.html">DFileCopyQueueTest</a>, <a class="el" href="class_d_file_i_o_device_proxy_test.html">DFileIODeviceProxyTest</a>, <a class="el" href="class_d_file_statistics_job_test.html">DFileStatisticsJobTest</a>, <a class="el" href="class_d_f_m___b_e_g_i_n___n_a_m_e_s_p_a_c_e_1_1_d_f_m_file_basic_info_widget_test.html">DFM_BEGIN_NAMESPACE::DFMFileBasicInfoWidgetTest</a>, <a class="el" href="class_d_f_m___b_e_g_i_n___n_a_m_e_s_p_a_c_e_1_1_test_image_perview.html">DFM_BEGIN_NAMESPACE::TestImagePerview</a>, <a class="el" href="class_d_f_m___b_e_g_i_n___n_a_m_e_s_p_a_c_e_1_1_test_music_preview.html">DFM_BEGIN_NAMESPACE::TestMusicPreview</a>, <a class="el" href="class_d_f_m___b_e_g_i_n___n_a_m_e_s_p_a_c_e_1_1_test_p_d_fpreview.html">DFM_BEGIN_NAMESPACE::TestPDFpreview</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_computer_view_test.html">DFM_USE_NAMESPACE::ComputerViewTest</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_d_f_m_additional_menu_test.html">DFM_USE_NAMESPACE::DFMAdditionalMenuTest</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_d_f_m_address_bar_test.html">DFM_USE_NAMESPACE::DFMAddressBarTest</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_d_f_m_advance_search_bar_test.html">DFM_USE_NAMESPACE::DFMAdvanceSearchBarTest</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_d_f_m_side_bar_item_delegate_test.html">DFM_USE_NAMESPACE::DFMSideBarItemDelegateTest</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_d_thumbnail_provider_test.html">DFM_USE_NAMESPACE::DThumbnailProviderTest</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_book_mark_manager.html">DFM_USE_NAMESPACE::TestBookMarkManager</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_computer_view_item_delegate.html">DFM_USE_NAMESPACE::TestComputerViewItemDelegate</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_d_completer_list_view.html">DFM_USE_NAMESPACE::TestDCompleterListView</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_d_f_m_crumb_manager.html">DFM_USE_NAMESPACE::TestDFMCrumbManager</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_d_f_m_media_info.html">DFM_USE_NAMESPACE::TestDFMMediaInfo</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_d_f_m_settings.html">DFM_USE_NAMESPACE::TestDFMSettings</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_d_f_m_side_bar_manager.html">DFM_USE_NAMESPACE::TestDFMSideBarManager</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_d_f_m_side_bar_model.html">DFM_USE_NAMESPACE::TestDFMSideBarModel</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_d_f_m_side_bar_vault_item_handler.html">DFM_USE_NAMESPACE::TestDFMSideBarVaultItemHandler</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_d_f_m_smb_crumb_controller.html">DFM_USE_NAMESPACE::TestDFMSmbCrumbController</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_d_f_m_vault_crumb_controller.html">DFM_USE_NAMESPACE::TestDFMVaultCrumbController</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_full_text_search.html">DFM_USE_NAMESPACE::TestFullTextSearch</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_operator_center.html">DFM_USE_NAMESPACE::TestOperatorCenter</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_unknow_file_pre_view.html">DFM_USE_NAMESPACE::TestUnknowFilePreView</a>, <a class="el" href="class_d_f_m___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_vault_controller.html">DFM_USE_NAMESPACE::TestVaultController</a>, <a class="el" href="class_d_f_m_user_share_crumb_controller_test.html">DFMUserShareCrumbControllerTest</a>, <a class="el" href="class_d_g_i_o_file_device_test.html">DGIOFileDeviceTest</a>, <a class="el" href="class_d_g_u_i___u_s_e___n_a_m_e_s_p_a_c_e_1_1_test_disk_plugin_item.html">DGUI_USE_NAMESPACE::TestDiskPluginItem</a>, <a class="el" href="class_d_local_file_device_test.html">DLocalFileDeviceTest</a>, <a class="el" href="class_d_local_file_handler_test.html">DLocalFileHandlerTest</a>, <a class="el" href="class_d_mime_database_test.html">DMimeDatabaseTest</a>, <a class="el" href="class_d_storage_info_test.html">DStorageInfoTest</a>, <a class="el" href="class_dynamic_fixture.html">DynamicFixture</a>, <a class="el" href="class_dynamic_unit_test_fixture.html">DynamicUnitTestFixture</a>, <a class="el" href="class_expect_failure_test.html">ExpectFailureTest</a>, <a class="el" href="class_expect_failure_test.html">ExpectFailureTest</a>, <a class="el" href="class_fatal_failure_in_fixture_constructor_test.html">FatalFailureInFixtureConstructorTest</a>, <a class="el" href="class_fatal_failure_in_fixture_constructor_test.html">FatalFailureInFixtureConstructorTest</a>, <a class="el" href="class_fatal_failure_in_set_up_test.html">FatalFailureInSetUpTest</a>, <a class="el" href="class_fatal_failure_in_set_up_test.html">FatalFailureInSetUpTest</a>, <a class="el" href="classfoo_1_1_mixed_up_test_case_test.html">foo::MixedUpTestCaseTest</a>, <a class="el" href="classfoo_1_1_mixed_up_test_case_with_same_test_name_test.html">foo::MixedUpTestCaseWithSameTestNameTest</a>, <a class="el" href="classfoo_1_1_mixed_up_test_suite_test.html">foo::MixedUpTestSuiteTest</a>, <a class="el" href="classfoo_1_1_mixed_up_test_suite_with_same_test_name_test.html">foo::MixedUpTestSuiteWithSameTestNameTest</a>, <a class="el" href="class_foo_test.html">FooTest</a>, <a class="el" href="class_foo_test.html">FooTest</a>, <a class="el" href="class_foo_test.html">FooTest</a>, <a class="el" href="class_foo_test.html">FooTest</a>, <a class="el" href="class_g_mock_output_test.html">GMockOutputTest</a>, <a class="el" href="class_g_mock_output_test.html">GMockOutputTest</a>, <a class="el" href="class_hot_zone_test.html">HotZoneTest</a>, <a class="el" href="class_launcher_unit_test.html">LauncherUnitTest</a>, <a class="el" href="class_macro_naming_test_non_parametrized.html">MacroNamingTestNonParametrized</a>, <a class="el" href="class_macro_naming_test_non_parametrized.html">MacroNamingTestNonParametrized</a>, <a class="el" href="class_network_controller_test.html">NetworkControllerTest</a>, <a class="el" href="class_non_fatal_failure_in_fixture_constructor_test.html">NonFatalFailureInFixtureConstructorTest</a>, <a class="el" href="class_non_fatal_failure_in_fixture_constructor_test.html">NonFatalFailureInFixtureConstructorTest</a>, <a class="el" href="class_non_fatal_failure_in_set_up_test.html">NonFatalFailureInSetUpTest</a>, <a class="el" href="class_non_fatal_failure_in_set_up_test.html">NonFatalFailureInSetUpTest</a>, <a class="el" href="class_non_parameterized_base_test.html">NonParameterizedBaseTest</a>, <a class="el" href="class_non_parameterized_base_test.html">NonParameterizedBaseTest</a>, <a class="el" href="class_predicate1_test.html">Predicate1Test</a>, <a class="el" href="class_predicate1_test.html">Predicate1Test</a>, <a class="el" href="class_predicate2_test.html">Predicate2Test</a>, <a class="el" href="class_predicate2_test.html">Predicate2Test</a>, <a class="el" href="class_predicate3_test.html">Predicate3Test</a>, <a class="el" href="class_predicate3_test.html">Predicate3Test</a>, <a class="el" href="class_predicate4_test.html">Predicate4Test</a>, <a class="el" href="class_predicate4_test.html">Predicate4Test</a>, <a class="el" href="class_predicate5_test.html">Predicate5Test</a>, <a class="el" href="class_predicate5_test.html">Predicate5Test</a>, <a class="el" href="class_property_one.html">PropertyOne</a>, <a class="el" href="class_property_one.html">PropertyOne</a>, <a class="el" href="class_property_two.html">PropertyTwo</a>, <a class="el" href="class_property_two.html">PropertyTwo</a>, <a class="el" href="class_protected_fixture_methods_test.html">ProtectedFixtureMethodsTest</a>, <a class="el" href="class_protected_fixture_methods_test.html">ProtectedFixtureMethodsTest</a>, <a class="el" href="class_setup_fail_test.html">SetupFailTest</a>, <a class="el" href="class_share_info_test.html">ShareInfoTest</a>, <a class="el" href="class_tear_down_fail_test.html">TearDownFailTest</a>, <a class="el" href="class_t_e_s_t__before___t_e_s_t___f__in__same__test__case.html">TEST_before_TEST_F_in_same_test_case</a>, <a class="el" href="class_t_e_s_t__before___t_e_s_t___f__in__same__test__case.html">TEST_before_TEST_F_in_same_test_case</a>, <a class="el" href="class_test___dock_item.html">Test_DockItem</a>, <a class="el" href="class_t_e_s_t___f__before___t_e_s_t__in__same__test__case.html">TEST_F_before_TEST_in_same_test_case</a>, <a class="el" href="class_t_e_s_t___f__before___t_e_s_t__in__same__test__case.html">TEST_F_before_TEST_in_same_test_case</a>, <a class="el" href="class_test___monitor.html">Test_Monitor</a>, <a class="el" href="class_test___state_button.html">Test_StateButton</a>, <a class="el" href="classtesting_1_1_code_location_for_t_e_s_t_f.html">testing::CodeLocationForTESTF</a>, <a class="el" href="classtesting_1_1_code_location_for_t_e_s_t_f.html">testing::CodeLocationForTESTF</a>, <a class="el" href="classtesting_1_1_code_location_for_t_y_p_e_d_t_e_s_t.html">testing::CodeLocationForTYPEDTEST&lt; T &gt;</a>, <a class="el" href="classtesting_1_1_code_location_for_t_y_p_e_d_t_e_s_t.html">testing::CodeLocationForTYPEDTEST&lt; T &gt;</a>, <a class="el" href="classtesting_1_1_code_location_for_t_y_p_e_d_t_e_s_t_p.html">testing::CodeLocationForTYPEDTESTP&lt; T &gt;</a>, <a class="el" href="classtesting_1_1_code_location_for_t_y_p_e_d_t_e_s_t_p.html">testing::CodeLocationForTYPEDTESTP&lt; T &gt;</a>, <a class="el" href="classtesting_1_1_current_test_info_test.html">testing::CurrentTestInfoTest</a>, <a class="el" href="classtesting_1_1_current_test_info_test.html">testing::CurrentTestInfoTest</a>, <a class="el" href="classtesting_1_1gmock__function__mocker__test_1_1_expect_call_test.html">testing::gmock_function_mocker_test::ExpectCallTest&lt; T &gt;</a>, <a class="el" href="classtesting_1_1gmock__function__mocker__test_1_1_function_mocker_test.html">testing::gmock_function_mocker_test::FunctionMockerTest&lt; T &gt;</a>, <a class="el" href="classtesting_1_1gmock__function__mocker__test_1_1_mock_method_mock_function_signature_test.html">testing::gmock_function_mocker_test::MockMethodMockFunctionSignatureTest&lt; F &gt;</a>, <a class="el" href="classtesting_1_1gmock__function__mocker__test_1_1_overloaded_mock_method_test.html">testing::gmock_function_mocker_test::OverloadedMockMethodTest&lt; T &gt;</a>, <a class="el" href="classtesting_1_1gmock__function__mocker__test_1_1_template_mock_test.html">testing::gmock_function_mocker_test::TemplateMockTest&lt; T &gt;</a>, <a class="el" href="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test.html">testing::gmock_generated_function_mockers_test::FunctionMockerTest</a>, <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_backtracking_b_p_m_test.html">testing::gmock_matchers_test::BacktrackingBPMTest</a>, <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_backtracking_b_p_m_test.html">testing::gmock_matchers_test::BacktrackingBPMTest</a>, <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_floating_point_test.html">testing::gmock_matchers_test::FloatingPointTest&lt; RawType &gt;</a>, <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_floating_point_test.html">testing::gmock_matchers_test::FloatingPointTest&lt; RawType &gt;</a>, <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_unordered_elements_are_test.html">testing::gmock_matchers_test::UnorderedElementsAreTest</a>, <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_unordered_elements_are_test.html">testing::gmock_matchers_test::UnorderedElementsAreTest</a>, <a class="el" href="classtesting_1_1internal_1_1_listener_test.html">testing::internal::ListenerTest</a>, <a class="el" href="classtesting_1_1internal_1_1_listener_test.html">testing::internal::ListenerTest</a>, <a class="el" href="classtesting_1_1internal_1_1_unit_test_record_property_test_helper.html">testing::internal::UnitTestRecordPropertyTestHelper</a>, <a class="el" href="classtesting_1_1internal_1_1_unit_test_record_property_test_helper.html">testing::internal::UnitTestRecordPropertyTestHelper</a>, <a class="el" href="classtesting_1_1_parse_flags_test.html">testing::ParseFlagsTest</a>, <a class="el" href="classtesting_1_1_parse_flags_test.html">testing::ParseFlagsTest</a>, <a class="el" href="classtesting_1_1_set_up_test_case_test.html">testing::SetUpTestCaseTest</a>, <a class="el" href="classtesting_1_1_set_up_test_case_test.html">testing::SetUpTestCaseTest</a>, <a class="el" href="classtesting_1_1_set_up_test_suite_test.html">testing::SetUpTestSuiteTest</a>, <a class="el" href="classtesting_1_1_test_info_test.html">testing::TestInfoTest</a>, <a class="el" href="classtesting_1_1_test_info_test.html">testing::TestInfoTest</a>, testing::TestWithParam&lt; T &gt;, testing::TestWithParam&lt; T &gt;, <a class="el" href="class_test_text_preview.html">TestTextPreview</a>, <a class="el" href="class_test_video_preview.html">TestVideoPreview</a>, testing::TestWithParam&lt; int &gt;, testing::TestWithParam&lt; int &gt;, testing::TestWithParam&lt; MyEnums &gt;, testing::TestWithParam&lt; MyEnums &gt;, testing::TestWithParam&lt; MyType &gt;, testing::TestWithParam&lt; MyType &gt;, testing::TestWithParam&lt; size_t &gt;, testing::TestWithParam&lt; size_t &gt;, testing::TestWithParam&lt; std::pair&lt; int, int &gt; &gt;, testing::TestWithParam&lt; std::pair&lt; int, int &gt; &gt;, testing::TestWithParam&lt; std::pair&lt; size_t, size_t &gt; &gt;, testing::TestWithParam&lt; std::pair&lt; size_t, size_t &gt; &gt;, testing::TestWithParam&lt; std::string &gt;, testing::TestWithParam&lt; std::string &gt;, <a class="el" href="class_tst___back_buttbon.html">Tst_BackButtbon</a>, <a class="el" href="class_tst___basic_list_delegate.html">Tst_BasicListDelegate</a>, <a class="el" href="class_tst___basic_list_model.html">Tst_BasicListModel</a>, <a class="el" href="class_tst___basic_list_view.html">Tst_BasicListView</a>, <a class="el" href="class_tst___boxframe.html">Tst_Boxframe</a>, <a class="el" href="class_tst___button_tuple.html">Tst_ButtonTuple</a>, <a class="el" href="class_tst__calculate.html">Tst_calculate</a>, <a class="el" href="class_tst___combo_box_widget.html">Tst_ComboBoxWidget</a>, <a class="el" href="class_tst___combox_widget.html">Tst_ComboxWidget</a>, <a class="el" href="class_tst___content_widget.html">Tst_ContentWidget</a>, <a class="el" href="class_tst___d_c_c_slider.html">Tst_DCCSlider</a>, <a class="el" href="class_tst___d_c_c_slider_annotated.html">Tst_DCCSliderAnnotated</a>, <a class="el" href="class_tst___editable_next_page_widget.html">Tst_EditableNextPageWidget</a>, <a class="el" href="class_tst___file_choose_widget.html">Tst_FileChooseWidget</a>, <a class="el" href="class_tst___h_separator.html">Tst_HSeparator</a>, <a class="el" href="class_tst___line_edit_widget.html">Tst_LineEditWidget</a>, <a class="el" href="class_tst___loading_indicator.html">Tst_LoadingIndicator</a>, <a class="el" href="class_tst___loading_next_page_widget.html">Tst_LoadingNextPageWidget</a>, <a class="el" href="class_tst___menu_worker.html">Tst_MenuWorker</a>, <a class="el" href="class_tst___multi_select_list_view.html">Tst_MultiSelectListView</a>, <a class="el" href="class_tst___next_button.html">Tst_NextButton</a>, <a class="el" href="class_tst___next_page_widget.html">Tst_NextPageWidget</a>, <a class="el" href="class_tst___option_item.html">Tst_OptionItem</a>, <a class="el" href="class_tst___option_list_page.html">Tst_OptionListPage</a>, <a class="el" href="class_tst___power_display_widget.html">Tst_PowerDisplayWidget</a>, <a class="el" href="class_tst___search_input.html">Tst_SearchInput</a>, <a class="el" href="class_tst___settings_group.html">Tst_SettingsGroup</a>, <a class="el" href="class_tst___settings_head.html">Tst_SettingsHead</a>, <a class="el" href="class_tst___settings_header_item.html">Tst_SettingsHeaderItem</a>, <a class="el" href="class_tst___settings_item.html">Tst_SettingsItem</a>, <a class="el" href="class_tst___spin_box_widget.html">Tst_SpinBoxWidget</a>, <a class="el" href="class_tst___switch_widget.html">Tst_SwitchWidget</a>, <a class="el" href="class_tst___theme_item.html">Tst_ThemeItem</a>, <a class="el" href="class_tst___theme_item_pic.html">Tst_ThemeItemPic</a>, <a class="el" href="class_tst___timeout_dialog.html">Tst_TimeoutDialog</a>, <a class="el" href="class_tst___tips_item.html">Tst_TipsItem</a>, <a class="el" href="class_tst___titled_slider_item.html">Tst_TitledSliderItem</a>, <a class="el" href="class_tst___title_label.html">Tst_TitleLabel</a>, <a class="el" href="class_tst___title_value_item.html">Tst_TitleValueItem</a>, <a class="el" href="class_tst___translucent_frame.html">Tst_TranslucentFrame</a>, <a class="el" href="class_tst___util.html">Tst_Util</a>, <a class="el" href="class_typed_test.html">TypedTest&lt; T &gt;</a>, <a class="el" href="class_typed_test.html">TypedTest&lt; T &gt;</a>, <a class="el" href="class_type_param_test.html">TypeParamTest&lt; T &gt;</a>, <a class="el" href="class_type_param_test.html">TypeParamTest&lt; T &gt;</a>, <a class="el" href="class_user_share_manager_test.html">UserShareManagerTest</a>, <a class="el" href="classworks__here_1_1_not_instantiated_type_test.html">works_here::NotInstantiatedTypeTest&lt; T &gt;</a> , 以及 <a class="el" href="classworks__here_1_1_not_used_type_test.html">works_here::NotUsedTypeTest&lt; T &gt;</a> 继承.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>Setup_should_be_spelled_SetUp</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ae173b07a0fdd09fc1d417a2bb6cbdd76"><td class="memItemLeft" align="right" valign="top"><a id="ae173b07a0fdd09fc1d417a2bb6cbdd76"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUpTestSuite</b> ()</td></tr>
+<tr class="separator:ae173b07a0fdd09fc1d417a2bb6cbdd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7704c8223ba28338a66ca2eaeba66383"><td class="memItemLeft" align="right" valign="top"><a id="a7704c8223ba28338a66ca2eaeba66383"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>TearDownTestSuite</b> ()</td></tr>
+<tr class="separator:a7704c8223ba28338a66ca2eaeba66383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af374706cbaf0ffc460f4fd04e7c150f1"><td class="memItemLeft" align="right" valign="top"><a id="af374706cbaf0ffc460f4fd04e7c150f1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>TearDownTestCase</b> ()</td></tr>
+<tr class="separator:af374706cbaf0ffc460f4fd04e7c150f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccbac42fee8c5b00b0bfe89b6c49d79"><td class="memItemLeft" align="right" valign="top"><a id="a5ccbac42fee8c5b00b0bfe89b6c49d79"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUpTestCase</b> ()</td></tr>
+<tr class="separator:a5ccbac42fee8c5b00b0bfe89b6c49d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a89846458f0e8ed1c9457c957e8182a"><td class="memItemLeft" align="right" valign="top"><a id="a0a89846458f0e8ed1c9457c957e8182a"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasFatalFailure</b> ()</td></tr>
+<tr class="separator:a0a89846458f0e8ed1c9457c957e8182a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e896f1b1836f8ac075c26d7b7c9fb8"><td class="memItemLeft" align="right" valign="top"><a id="a07e896f1b1836f8ac075c26d7b7c9fb8"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasNonfatalFailure</b> ()</td></tr>
+<tr class="separator:a07e896f1b1836f8ac075c26d7b7c9fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0ada5dbc9e772acb2b6cd0b1b300d7"><td class="memItemLeft" align="right" valign="top"><a id="a7f0ada5dbc9e772acb2b6cd0b1b300d7"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSkipped</b> ()</td></tr>
+<tr class="separator:a7f0ada5dbc9e772acb2b6cd0b1b300d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a00be7dd0a6bfdc8d47a1b784623613"><td class="memItemLeft" align="right" valign="top"><a id="a7a00be7dd0a6bfdc8d47a1b784623613"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasFailure</b> ()</td></tr>
+<tr class="separator:a7a00be7dd0a6bfdc8d47a1b784623613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0448aec9e389fab70f6a75a59ff6aa2"><td class="memItemLeft" align="right" valign="top"><a id="ae0448aec9e389fab70f6a75a59ff6aa2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordProperty</b> (const std::string &amp;key, const std::string &amp;value)</td></tr>
+<tr class="separator:ae0448aec9e389fab70f6a75a59ff6aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af602903efb17730b977304fc56500881"><td class="memItemLeft" align="right" valign="top"><a id="af602903efb17730b977304fc56500881"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordProperty</b> (const std::string &amp;key, int value)</td></tr>
+<tr class="separator:af602903efb17730b977304fc56500881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a190315150c303ddf801313fd1a777733"><td class="memItemLeft" align="right" valign="top"><a id="a190315150c303ddf801313fd1a777733"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUp</b> ()</td></tr>
+<tr class="separator:a190315150c303ddf801313fd1a777733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0ab439802cbe0ef7552f1a9f791923"><td class="memItemLeft" align="right" valign="top"><a id="a5f0ab439802cbe0ef7552f1a9f791923"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>TearDown</b> ()</td></tr>
+<tr class="separator:a5f0ab439802cbe0ef7552f1a9f791923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b38992669fb844864807cf32e416853"><td class="memItemLeft" align="right" valign="top"><a id="a8b38992669fb844864807cf32e416853"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUp</b> ()</td></tr>
+<tr class="separator:a8b38992669fb844864807cf32e416853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3c02c9f81afe1357adfc45afccd474"><td class="memItemLeft" align="right" valign="top"><a id="aab3c02c9f81afe1357adfc45afccd474"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>TearDown</b> ()</td></tr>
+<tr class="separator:aab3c02c9f81afe1357adfc45afccd474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aed3c96e2bd5a46339c1cbe49a4a233ee"><td class="memItemLeft" align="right" valign="top"><a id="aed3c96e2bd5a46339c1cbe49a4a233ee"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>TestInfo</b></td></tr>
+<tr class="separator:aed3c96e2bd5a46339c1cbe49a4a233ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dde-file-manager_2third-party_2googletest_2googletest_2include_2gtest_2gtest_8h_source.html">gtest.h</a> 第 <a class="el" href="dde-file-manager_2third-party_2googletest_2googletest_2include_2gtest_2gtest_8h_source.html#l00409">409</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/third-party/googletest/googletest/include/gtest/<a class="el" href="dde-file-manager_2third-party_2googletest_2googletest_2include_2gtest_2gtest_8h_source.html">gtest.h</a></li>
+<li>dde-file-manager/third-party/googletest/googletest/src/<a class="el" href="dde-file-manager_2third-party_2googletest_2googletest_2src_2gtest_8cc_source.html">gtest.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>testing</b></li><li class="navelem"><a class="el" href="classtesting_1_1_test.html">Test</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

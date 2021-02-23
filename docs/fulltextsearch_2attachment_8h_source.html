@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/dde-file-manager-lib/fulltextsearch/attachment.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('fulltextsearch_2attachment_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">attachment.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DOCTOTEXT_ATTACHMENT_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DOCTOTEXT_ATTACHMENT_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;variant.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacedoctotext.html">doctotext</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">class </span>Attachment</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">private</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">struct </span>Implementation;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            Implementation* <a class="code" href="namespaceimpl.html">impl</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Attachment();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            Attachment(<span class="keyword">const</span> std::string&amp; file_name);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            Attachment(<span class="keyword">const</span> Attachment&amp; attachment);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            Attachment&amp; operator = (<span class="keyword">const</span> Attachment&amp; attachment);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            ~Attachment();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordtype">void</span> setFileName(<span class="keyword">const</span> std::string&amp; file_name);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordtype">void</span> setBinaryContent(<span class="keyword">const</span> std::string&amp; binary_content);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">void</span> addField(<span class="keyword">const</span> std::string&amp; field_name, <span class="keyword">const</span> Variant&amp; field_value);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classdoctotext_1_1_attachment.html#afed756819f6928c7eac785d484bdfe4e">filename</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classdoctotext_1_1_attachment.html#a24efec0d71c9a94c88cd0a805aa144f3">binaryContent</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">size_t</span> <a class="code" href="classdoctotext_1_1_attachment.html#a7212d090e339e203151c4875713bffa0">binaryContentSize</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classdoctotext_1_1_attachment.html#ac22b61bfc12d8a0dba873c6c1ddc8ee3">hasField</a>(<span class="keyword">const</span> std::string&amp; field_name) <span class="keyword">const</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keyword">const</span> Variant&amp; <a class="code" href="classdoctotext_1_1_attachment.html#a8a4a7ecf4786dcd0168bfd4292377a5e">getField</a>(<span class="keyword">const</span> std::string&amp; field_name) <span class="keyword">const</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keyword">const</span> std::map&lt;std::string, Variant&gt;&amp; <a class="code" href="classdoctotext_1_1_attachment.html#a9ad7526af70c6dcac65818657d3db0b3">getFields</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacedoctotext_html"><div class="ttname"><a href="namespacedoctotext.html">doctotext</a></div><div class="ttdef"><b>Definition:</b> <a href="3rd_party_2doctotext_2attachment_8h_source.html#l00008">attachment.h:8</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_attachment_html_a8a4a7ecf4786dcd0168bfd4292377a5e"><div class="ttname"><a href="classdoctotext_1_1_attachment.html#a8a4a7ecf4786dcd0168bfd4292377a5e">doctotext::Attachment::getField</a></div><div class="ttdeci">const Variant &amp; getField(const std::string &amp;field_name) const</div><div class="ttdoc">Returns value for given key (metadata) </div><div class="ttdef"><b>Definition:</b> <a href="attachment_8cpp_source.html#l00143">attachment.cpp:143</a></div></div>
+<div class="ttc" id="namespaceimpl_html"><div class="ttname"><a href="namespaceimpl.html">impl</a></div><div class="ttdef"><b>Definition:</b> <a href="dsqlitehandle_8cpp_source.html#l00067">dsqlitehandle.cpp:67</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_attachment_html_a24efec0d71c9a94c88cd0a805aa144f3"><div class="ttname"><a href="classdoctotext_1_1_attachment.html#a24efec0d71c9a94c88cd0a805aa144f3">doctotext::Attachment::binaryContent</a></div><div class="ttdeci">const char * binaryContent() const</div><div class="ttdoc">Gets binary content of the attachment </div><div class="ttdef"><b>Definition:</b> <a href="attachment_8cpp_source.html#l00128">attachment.cpp:128</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_attachment_html_a7212d090e339e203151c4875713bffa0"><div class="ttname"><a href="classdoctotext_1_1_attachment.html#a7212d090e339e203151c4875713bffa0">doctotext::Attachment::binaryContentSize</a></div><div class="ttdeci">size_t binaryContentSize() const</div><div class="ttdoc">Returns size of the binary content </div><div class="ttdef"><b>Definition:</b> <a href="attachment_8cpp_source.html#l00133">attachment.cpp:133</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_attachment_html_a9ad7526af70c6dcac65818657d3db0b3"><div class="ttname"><a href="classdoctotext_1_1_attachment.html#a9ad7526af70c6dcac65818657d3db0b3">doctotext::Attachment::getFields</a></div><div class="ttdeci">const std::map&lt; std::string, Variant &gt; &amp; getFields() const</div><div class="ttdoc">Returns map with all keys and values </div><div class="ttdef"><b>Definition:</b> <a href="attachment_8cpp_source.html#l00148">attachment.cpp:148</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_attachment_html_ac22b61bfc12d8a0dba873c6c1ddc8ee3"><div class="ttname"><a href="classdoctotext_1_1_attachment.html#ac22b61bfc12d8a0dba873c6c1ddc8ee3">doctotext::Attachment::hasField</a></div><div class="ttdeci">bool hasField(const std::string &amp;field_name) const</div><div class="ttdoc">Checks if metadata for given key exist (for example &quot;Content-Type&quot;) </div><div class="ttdef"><b>Definition:</b> <a href="attachment_8cpp_source.html#l00138">attachment.cpp:138</a></div></div>
+<div class="ttc" id="classdoctotext_1_1_attachment_html_afed756819f6928c7eac785d484bdfe4e"><div class="ttname"><a href="classdoctotext_1_1_attachment.html#afed756819f6928c7eac785d484bdfe4e">doctotext::Attachment::filename</a></div><div class="ttdeci">const char * filename() const</div><div class="ttdoc">Gets attachment file name </div><div class="ttdef"><b>Definition:</b> <a href="attachment_8cpp_source.html#l00123">attachment.cpp:123</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_f9029d0d717014796f47cbb96a029b81.html">dde-file-manager-lib</a></li><li class="navelem"><a class="el" href="dir_b22e54f57c128ea1ecf706271b288220.html">fulltextsearch</a></li><li class="navelem"><b>attachment.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:18 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: deepin-music</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('md_deepin-music__r_e_a_d_m_e.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">deepin-music </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Deepin music is a local music player with beautiful design and simple functions developed by Deepin Technology.</p>
+<h3>Dependencies</h3>
+<h3>Build dependencies</h3>
+<p><em>The <b>master</b> branch is current development branch, build dependencies may changes without update README.md, refer to <code>./debian/control</code> for a working build depends list</em></p>
+<ul>
+<li>pkg-config</li>
+<li>libtag1-dev</li>
+<li>libicu-dev</li>
+<li>libcue-dev</li>
+<li>libtag1-dev</li>
+<li>libavutil-dev</li>
+<li>libavcodec-dev</li>
+<li>libavformat-dev</li>
+<li>libdtkcore-dev</li>
+<li>libdtkgui-dev</li>
+<li>Qt5(&gt;= 5.6) with modules:<ul>
+<li>qt5-qmake</li>
+<li>libqt5svg5-dev</li>
+<li>qttools5-dev-tools</li>
+<li>qtmultimedia5-dev</li>
+<li>libkf5codecs-dev</li>
+</ul>
+</li>
+<li>Deepin-tool-kit(&gt;=2.0) with modules:<ul>
+<li>libdtkwidget-dev</li>
+</ul>
+</li>
+</ul>
+<h2>Installation</h2>
+<h3>Build from source code</h3>
+<ol type="1">
+<li>Make sure you have installed all dependencies.</li>
+</ol>
+<p><em>Package name may be different between distros, if deepin-music is available from your distro, check the packaging script delivered from your distro is a better idea.</em></p>
+<p>Assume you are using <a href="https://distrowatch.com/table.php?distribution=deepin">Deepin</a> or other debian-based distro which got deepin-music delivered:</p>
+<div class="fragment"><div class="line">$ apt build-dep deepin-music</div></div><!-- fragment --><ol type="1">
+<li>Build:</li>
+</ol>
+<div class="fragment"><div class="line">$ cd deepin-music</div><div class="line">$ mkdir Build</div><div class="line">$ cd Build</div><div class="line">$ cmake ..</div><div class="line">$ make</div></div><!-- fragment --><ol type="1">
+<li>Install:</li>
+</ol>
+<div class="fragment"><div class="line">$ sudo make install</div></div><!-- fragment --><p>The executable binary file could be found at <code>/usr/bin/deepin-music</code></p>
+<h2>Usage</h2>
+<p>Execute <code>deepin-music</code></p>
+<h2>Documentations</h2>
+<ul>
+<li><a href="https://linuxdeepin.github.io/">Development Documentation</a></li>
+<li><a href="https://wikidev.uniontech.com/index.php?title=%E9%9F%B3%E4%B9%90">User Documentation</a> | <a href="https://wikidev.uniontech.com/index.php?title=音乐">用户文档</a></li>
+</ul>
+<h2>Getting help</h2>
+<ul>
+<li><a href="https://bbs.deepin.org/">Official Forum</a></li>
+<li><a href="https://github.com/linuxdeepin/developer-center">Developer Center</a></li>
+<li><a href="https://gitter.im/orgs/linuxdeepin/rooms">Gitter</a></li>
+<li><a href="https://webchat.freenode.net/?channels=deepin">IRC Channel</a></li>
+<li><a href="https://wiki.deepin.org/">Wiki</a></li>
+</ul>
+<h2>Getting involved</h2>
+<p>We encourage you to report issues and contribute changes</p>
+<ul>
+<li><a href="https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers-en">Contribution guide for developers</a> (English)</li>
+<li><a href="https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers">开发者代码贡献指南</a> (中文)</li>
+</ul>
+<h2>License</h2>
+<p>This project is licensed under [GPLv3](LICENSE) or any later version. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

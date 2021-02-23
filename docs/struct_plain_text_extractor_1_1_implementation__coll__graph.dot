@@ -1,0 +1,12 @@
+digraph "doctotext::PlainTextExtractor::Implementation"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="doctotext::PlainTextExtractor\l::Implementation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_interf" ,fontname="Helvetica"];
+  Node2 [label="doctotext::PlainTextExtractor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdoctotext_1_1_plain_text_extractor.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_formatting_style" ,fontname="Helvetica"];
+  Node3 [label="doctotext::FormattingStyle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdoctotext_1_1_formatting_style.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" list_style" ,fontname="Helvetica"];
+  Node4 [label="doctotext::ListStyle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdoctotext_1_1_list_style.html"];
+}

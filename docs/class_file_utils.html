@@ -1,0 +1,845 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: FileUtils类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_file_utils.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="class_file_utils-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">FileUtils类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Utility class providing static helper methods for file management  
+ <a href="class_file_utils.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="fileutils_8h_source.html">fileutils.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a8405cd44411025e3312839bc9f6213af"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#a8405cd44411025e3312839bc9f6213af">removeRecurse</a> (const QString &amp;path, const QString &amp;name)</td></tr>
+<tr class="memdesc:a8405cd44411025e3312839bc9f6213af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive removes file or directory  <a href="#a8405cd44411025e3312839bc9f6213af">更多...</a><br /></td></tr>
+<tr class="separator:a8405cd44411025e3312839bc9f6213af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1a1d09aaa15014ef36c2ca431f9be4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#a5b1a1d09aaa15014ef36c2ca431f9be4">recurseFolder</a> (const QString &amp;path, const QString &amp;parent, QStringList *list)</td></tr>
+<tr class="memdesc:a5b1a1d09aaa15014ef36c2ca431f9be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects all file names in given path (recursive)  <a href="#a5b1a1d09aaa15014ef36c2ca431f9be4">更多...</a><br /></td></tr>
+<tr class="separator:a5b1a1d09aaa15014ef36c2ca431f9be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1781a94a64b2e5f4e7faed27144c7a91"><td class="memItemLeft" align="right" valign="top"><a id="a1781a94a64b2e5f4e7faed27144c7a91"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>filesCount</b> (const QString &amp;dir)</td></tr>
+<tr class="separator:a1781a94a64b2e5f4e7faed27144c7a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423d4a43b6bf439cda3aede0b0efe05c"><td class="memItemLeft" align="right" valign="top"><a id="a423d4a43b6bf439cda3aede0b0efe05c"></a>
+static QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>filesList</b> (const QString &amp;dir)</td></tr>
+<tr class="separator:a423d4a43b6bf439cda3aede0b0efe05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae470d5e8be267ef434e1556f5dff2fe4"><td class="memItemLeft" align="right" valign="top"><a id="ae470d5e8be267ef434e1556f5dff2fe4"></a>
+static qint64&#160;</td><td class="memItemRight" valign="bottom"><b>totalSize</b> (const QString &amp;targetFile)</td></tr>
+<tr class="separator:ae470d5e8be267ef434e1556f5dff2fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229055d43b2cbaa670a058c0b25829a1"><td class="memItemLeft" align="right" valign="top">static qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#a229055d43b2cbaa670a058c0b25829a1">totalSize</a> (const <a class="el" href="class_q_list.html">DUrlList</a> &amp;files)</td></tr>
+<tr class="memdesc:a229055d43b2cbaa670a058c0b25829a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns size of all given files/dirs (including nested files/dirs)  <a href="#a229055d43b2cbaa670a058c0b25829a1">更多...</a><br /></td></tr>
+<tr class="separator:a229055d43b2cbaa670a058c0b25829a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1503225da09ff1c68173c4b59b91f8"><td class="memItemLeft" align="right" valign="top"><a id="aed1503225da09ff1c68173c4b59b91f8"></a>
+static qint64&#160;</td><td class="memItemRight" valign="bottom"><b>totalSize</b> (const <a class="el" href="class_q_list.html">DUrlList</a> &amp;files, const qint64 &amp;maxLimit, bool &amp;isInLimit)</td></tr>
+<tr class="separator:aed1503225da09ff1c68173c4b59b91f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b97c9b7d29a8488e6f97936756ad5bf"><td class="memItemLeft" align="right" valign="top"><a id="a0b97c9b7d29a8488e6f97936756ad5bf"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isArchive</b> (const QString &amp;path)</td></tr>
+<tr class="separator:a0b97c9b7d29a8488e6f97936756ad5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788bb310fe5a67656895b83eb1f5cb94"><td class="memItemLeft" align="right" valign="top"><a id="a788bb310fe5a67656895b83eb1f5cb94"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>canFastReadArchive</b> (const QString &amp;path)</td></tr>
+<tr class="separator:a788bb310fe5a67656895b83eb1f5cb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7524fdffa6ce97130d3494f1b1725cb9"><td class="memItemLeft" align="right" valign="top">static QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#a7524fdffa6ce97130d3494f1b1725cb9">getApplicationNames</a> ()</td></tr>
+<tr class="memdesc:a7524fdffa6ce97130d3494f1b1725cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns names of available applications  <a href="#a7524fdffa6ce97130d3494f1b1725cb9">更多...</a><br /></td></tr>
+<tr class="separator:a7524fdffa6ce97130d3494f1b1725cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a946688877780582d7b8134a89646cd"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#a1a946688877780582d7b8134a89646cd">getRealSuffix</a> (const QString &amp;name)</td></tr>
+<tr class="memdesc:a1a946688877780582d7b8134a89646cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns real suffix for given file  <a href="#a1a946688877780582d7b8134a89646cd">更多...</a><br /></td></tr>
+<tr class="separator:a1a946688877780582d7b8134a89646cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44b8123b2480c1487d565a34f767028"><td class="memItemLeft" align="right" valign="top">static QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#ac44b8123b2480c1487d565a34f767028">searchGenericIcon</a> (const QString &amp;category, const QIcon &amp;defaultIcon=QIcon::fromTheme(&quot;unknown&quot;))</td></tr>
+<tr class="memdesc:ac44b8123b2480c1487d565a34f767028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for generic icon  <a href="#ac44b8123b2480c1487d565a34f767028">更多...</a><br /></td></tr>
+<tr class="separator:ac44b8123b2480c1487d565a34f767028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f76a977c4444c48f0a11e96869944e"><td class="memItemLeft" align="right" valign="top">static QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#ae1f76a977c4444c48f0a11e96869944e">searchMimeIcon</a> (QString mime, const QIcon &amp;defaultIcon=QIcon::fromTheme(&quot;unknown&quot;))</td></tr>
+<tr class="memdesc:ae1f76a977c4444c48f0a11e96869944e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns mime icon  <a href="#ae1f76a977c4444c48f0a11e96869944e">更多...</a><br /></td></tr>
+<tr class="separator:ae1f76a977c4444c48f0a11e96869944e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af487de683f5cc0ccd9a13b22afa5ef"><td class="memItemLeft" align="right" valign="top">static QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#a4af487de683f5cc0ccd9a13b22afa5ef">searchAppIcon</a> (const <a class="el" href="class_desktop_file.html">DesktopFile</a> &amp;app, const QIcon &amp;defaultIcon=QIcon::fromTheme(&quot;application-x-executable&quot;))</td></tr>
+<tr class="memdesc:a4af487de683f5cc0ccd9a13b22afa5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for application icon in the filesystem  <a href="#a4af487de683f5cc0ccd9a13b22afa5ef">更多...</a><br /></td></tr>
+<tr class="separator:a4af487de683f5cc0ccd9a13b22afa5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b08bc5531a21db93d32d6411ef4735"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#a24b08bc5531a21db93d32d6411ef4735">formatSize</a> (qint64 num, bool withUnitVisible=true, int precision=1, int forceUnit=-1, QStringList unitList=QStringList())</td></tr>
+<tr class="memdesc:a24b08bc5531a21db93d32d6411ef4735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display human readable file size.  <a href="#a24b08bc5531a21db93d32d6411ef4735">更多...</a><br /></td></tr>
+<tr class="separator:a24b08bc5531a21db93d32d6411ef4735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1b9f97bfcd7188009d84baa06c1412"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#a0d1b9f97bfcd7188009d84baa06c1412">diskUsageString</a> (quint64 &amp;usedSize, quint64 &amp;totalSize, QString strVolTag=&quot;&quot;)</td></tr>
+<tr class="memdesc:a0d1b9f97bfcd7188009d84baa06c1412"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算机页面磁盘大小数据  <a href="#a0d1b9f97bfcd7188009d84baa06c1412">更多...</a><br /></td></tr>
+<tr class="separator:a0d1b9f97bfcd7188009d84baa06c1412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2ef9b519ad2f1e909fc49f725d92ba"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_utils.html#a3a2ef9b519ad2f1e909fc49f725d92ba">defaultOpticalSize</a> (const QString &amp;tagName, quint64 &amp;usedSize, quint64 &amp;totalSize)</td></tr>
+<tr class="memdesc:a3a2ef9b519ad2f1e909fc49f725d92ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析配置文件，获取光盘大小数据 光盘打开后可以显示大小，并挂载然而关闭文管后再重新启动会导致之前的状态机失效（未持久化存储） 因此会显示为0M，且状态为已挂载的状态，而右下角插件则因为读取了配置而显示正确的大小  <a href="#a3a2ef9b519ad2f1e909fc49f725d92ba">更多...</a><br /></td></tr>
+<tr class="separator:a3a2ef9b519ad2f1e909fc49f725d92ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a33a3e26b98dcaa16d127d1e30ca4ed"><td class="memItemLeft" align="right" valign="top"><a id="a6a33a3e26b98dcaa16d127d1e30ca4ed"></a>
+static <a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>newDocumentUrl</b> (const DAbstractFileInfoPointer targetDirInfo, const QString &amp;baseName, const QString &amp;suffix)</td></tr>
+<tr class="separator:a6a33a3e26b98dcaa16d127d1e30ca4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8147a4a11f0e66d1d9a037fed8682bd3"><td class="memItemLeft" align="right" valign="top"><a id="a8147a4a11f0e66d1d9a037fed8682bd3"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>newDocmentName</b> (QString targetdir, const QString &amp;baseName, const QString &amp;suffix)</td></tr>
+<tr class="separator:a8147a4a11f0e66d1d9a037fed8682bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686778c909dcc4d9af6eef9fc087d22c"><td class="memItemLeft" align="right" valign="top"><a id="a686778c909dcc4d9af6eef9fc087d22c"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>cpTemplateFileToTargetDir</b> (const QString &amp;targetdir, const QString &amp;baseName, const QString &amp;suffix, WId windowId)</td></tr>
+<tr class="separator:a686778c909dcc4d9af6eef9fc087d22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78cbd2062eabb0b986361992657b5166"><td class="memItemLeft" align="right" valign="top"><a id="a78cbd2062eabb0b986361992657b5166"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>openFile</b> (const QString &amp;filePath)</td></tr>
+<tr class="separator:a78cbd2062eabb0b986361992657b5166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57d2f140a903eafbc0908df8b2d3c0f"><td class="memItemLeft" align="right" valign="top"><a id="ae57d2f140a903eafbc0908df8b2d3c0f"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>openFiles</b> (const QStringList &amp;filePaths)</td></tr>
+<tr class="separator:ae57d2f140a903eafbc0908df8b2d3c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30753ac32caec9733158185c9dff27a5"><td class="memItemLeft" align="right" valign="top"><a id="a30753ac32caec9733158185c9dff27a5"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>openEnterFiles</b> (const QStringList &amp;filePaths)</td></tr>
+<tr class="separator:a30753ac32caec9733158185c9dff27a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12b9c74e2011b96a541b603ce21ba75"><td class="memItemLeft" align="right" valign="top"><a id="ae12b9c74e2011b96a541b603ce21ba75"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>launchApp</b> (const QString &amp;desktopFile, const QStringList &amp;filePaths={})</td></tr>
+<tr class="separator:ae12b9c74e2011b96a541b603ce21ba75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b247c474581f83ecfd75260f74c9ab"><td class="memItemLeft" align="right" valign="top"><a id="aa1b247c474581f83ecfd75260f74c9ab"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>launchAppByDBus</b> (const QString &amp;desktopFile, const QStringList &amp;filePaths={})</td></tr>
+<tr class="separator:aa1b247c474581f83ecfd75260f74c9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44c6091a44a1c289ea206a7bb708d2c"><td class="memItemLeft" align="right" valign="top"><a id="ae44c6091a44a1c289ea206a7bb708d2c"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>launchAppByGio</b> (const QString &amp;desktopFile, const QStringList &amp;filePaths={})</td></tr>
+<tr class="separator:ae44c6091a44a1c289ea206a7bb708d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a3004bb651131041cb415f90ac1db9"><td class="memItemLeft" align="right" valign="top"><a id="ac8a3004bb651131041cb415f90ac1db9"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>openFilesByApp</b> (const QString &amp;desktopFile, const QStringList &amp;filePaths)</td></tr>
+<tr class="separator:ac8a3004bb651131041cb415f90ac1db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bae38ffa543506f8b759953a4defb35"><td class="memItemLeft" align="right" valign="top"><a id="a9bae38ffa543506f8b759953a4defb35"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFileManagerSelf</b> (const QString &amp;desktopFile)</td></tr>
+<tr class="separator:a9bae38ffa543506f8b759953a4defb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84133d786fcf87e9fcfea4d8dd664a14"><td class="memItemLeft" align="right" valign="top"><a id="a84133d786fcf87e9fcfea4d8dd664a14"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>defaultTerminalPath</b> ()</td></tr>
+<tr class="separator:a84133d786fcf87e9fcfea4d8dd664a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3549531bc92a1a76eb4bf34f03765175"><td class="memItemLeft" align="right" valign="top"><a id="a3549531bc92a1a76eb4bf34f03765175"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setBackground</b> (const QString &amp;pictureFilePath)</td></tr>
+<tr class="separator:a3549531bc92a1a76eb4bf34f03765175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4166d3c4d8c96565ab339418968d4b"><td class="memItemLeft" align="right" valign="top"><a id="a4e4166d3c4d8c96565ab339418968d4b"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>md5</b> (const QString &amp;fpath)</td></tr>
+<tr class="separator:a4e4166d3c4d8c96565ab339418968d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6441ac48d59f6af578c11d7c86d1759d"><td class="memItemLeft" align="right" valign="top"><a id="a6441ac48d59f6af578c11d7c86d1759d"></a>
+static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>md5</b> (QFile *file, const QString &amp;filePath)</td></tr>
+<tr class="separator:a6441ac48d59f6af578c11d7c86d1759d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6741741ac8705da08f977f8382edc705"><td class="memItemLeft" align="right" valign="top"><a id="a6741741ac8705da08f977f8382edc705"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFileExecutable</b> (const QString &amp;path)</td></tr>
+<tr class="separator:a6741741ac8705da08f977f8382edc705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d1df2e3a08d48273eead00c63c67aa"><td class="memItemLeft" align="right" valign="top"><a id="aa4d1df2e3a08d48273eead00c63c67aa"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>shouldAskUserToAddExecutableFlag</b> (const QString &amp;path)</td></tr>
+<tr class="separator:aa4d1df2e3a08d48273eead00c63c67aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a53c0df8c00a140eb09309acf26aea"><td class="memItemLeft" align="right" valign="top"><a id="ae1a53c0df8c00a140eb09309acf26aea"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFileRunnable</b> (const QString &amp;path)</td></tr>
+<tr class="separator:ae1a53c0df8c00a140eb09309acf26aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ee46638716affb650dab8771427067"><td class="memItemLeft" align="right" valign="top"><a id="a06ee46638716affb650dab8771427067"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFileWindowsUrlShortcut</b> (const QString &amp;path)</td></tr>
+<tr class="separator:a06ee46638716affb650dab8771427067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5c2435a8c5b965eb9567c5821801d8"><td class="memItemLeft" align="right" valign="top"><a id="a9a5c2435a8c5b965eb9567c5821801d8"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>getInternetShortcutUrl</b> (const QString &amp;path)</td></tr>
+<tr class="separator:a9a5c2435a8c5b965eb9567c5821801d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2905ddd785032640dc6a99b60e0b2d8"><td class="memItemLeft" align="right" valign="top"><a id="ad2905ddd785032640dc6a99b60e0b2d8"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>getFileMimetype</b> (const QString &amp;path)</td></tr>
+<tr class="separator:ad2905ddd785032640dc6a99b60e0b2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f57d08e463c1393538d6faf0e11cd1f"><td class="memItemLeft" align="right" valign="top"><a id="a1f57d08e463c1393538d6faf0e11cd1f"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isExecutableScript</b> (const QString &amp;path)</td></tr>
+<tr class="separator:a1f57d08e463c1393538d6faf0e11cd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164ff88b11ae604fda0d850cfc172d5c"><td class="memItemLeft" align="right" valign="top"><a id="a164ff88b11ae604fda0d850cfc172d5c"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>openExcutableScriptFile</b> (const QString &amp;path, int flag)</td></tr>
+<tr class="separator:a164ff88b11ae604fda0d850cfc172d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10a32122692902d641cc53d4463296f"><td class="memItemLeft" align="right" valign="top"><a id="aa10a32122692902d641cc53d4463296f"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>addExecutableFlagAndExecuse</b> (const QString &amp;path, int flag)</td></tr>
+<tr class="separator:aa10a32122692902d641cc53d4463296f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5360cb99dcad005dc49d63483fb29daf"><td class="memItemLeft" align="right" valign="top"><a id="a5360cb99dcad005dc49d63483fb29daf"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>openExcutableFile</b> (const QString &amp;path, int flag)</td></tr>
+<tr class="separator:a5360cb99dcad005dc49d63483fb29daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e21960e9cb3f4b80899155ebbc4a35"><td class="memItemLeft" align="right" valign="top"><a id="a17e21960e9cb3f4b80899155ebbc4a35"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>runCommand</b> (const QString &amp;cmd, const QStringList &amp;args, const QString &amp;wd=QString())</td></tr>
+<tr class="separator:a17e21960e9cb3f4b80899155ebbc4a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37affe66296fe5de77cfdd38092bed9b"><td class="memItemLeft" align="right" valign="top"><a id="a37affe66296fe5de77cfdd38092bed9b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>mkpath</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;path)</td></tr>
+<tr class="separator:a37affe66296fe5de77cfdd38092bed9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887bd726b002a7e7c245e8ec5fec78b3"><td class="memItemLeft" align="right" valign="top"><a id="a887bd726b002a7e7c245e8ec5fec78b3"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>displayPath</b> (const QString &amp;pathStr)</td></tr>
+<tr class="separator:a887bd726b002a7e7c245e8ec5fec78b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3545b8ba12b3e3505e78b4b8b9b5800"><td class="memItemLeft" align="right" valign="top"><a id="ab3545b8ba12b3e3505e78b4b8b9b5800"></a>
+static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>imageFormatName</b> (QImage::Format f)</td></tr>
+<tr class="separator:ab3545b8ba12b3e3505e78b4b8b9b5800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb612119895e1142d85d8c40efd05d14"><td class="memItemLeft" align="right" valign="top"><a id="acb612119895e1142d85d8c40efd05d14"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>getFileContent</b> (const QString &amp;file)</td></tr>
+<tr class="separator:acb612119895e1142d85d8c40efd05d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3c364617017866682fee7a669745d1"><td class="memItemLeft" align="right" valign="top"><a id="add3c364617017866682fee7a669745d1"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeTextFile</b> (const QString &amp;filePath, const QString &amp;content)</td></tr>
+<tr class="separator:add3c364617017866682fee7a669745d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15ccc3beaff246fa707767ae1468eca"><td class="memItemLeft" align="right" valign="top"><a id="af15ccc3beaff246fa707767ae1468eca"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>migrateConfigFileFromCache</b> (const QString &amp;key)</td></tr>
+<tr class="separator:af15ccc3beaff246fa707767ae1468eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf228cc67e48b214773ed9644d09635"><td class="memItemLeft" align="right" valign="top"><a id="acbf228cc67e48b214773ed9644d09635"></a>
+static <a class="el" href="class_q_map.html">QMap</a>&lt; QString, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getKernelParameters</b> ()</td></tr>
+<tr class="separator:acbf228cc67e48b214773ed9644d09635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657326eefb6c13da187ea6ecc7f071f9"><td class="memItemLeft" align="right" valign="top"><a id="a657326eefb6c13da187ea6ecc7f071f9"></a>
+static DFMGlobal::MenuExtension&#160;</td><td class="memItemRight" valign="bottom"><b>getMenuExtension</b> (const <a class="el" href="class_q_list.html">DUrlList</a> &amp;urlList)</td></tr>
+<tr class="separator:a657326eefb6c13da187ea6ecc7f071f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb01978f0baf9ea23ff91311daa81bf"><td class="memItemLeft" align="right" valign="top"><a id="abfb01978f0baf9ea23ff91311daa81bf"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGvfsMountFile</b> (const QString &amp;filePath, const bool &amp;isEx=false)</td></tr>
+<tr class="separator:abfb01978f0baf9ea23ff91311daa81bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90832f20895a3904537e563cb54fdcd8"><td class="memItemLeft" align="right" valign="top"><a id="a90832f20895a3904537e563cb54fdcd8"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFileExists</b> (const QString &amp;filePath)</td></tr>
+<tr class="separator:a90832f20895a3904537e563cb54fdcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab906a37f5d5cb5acfd5bd69c04bfb247"><td class="memItemLeft" align="right" valign="top"><a id="ab906a37f5d5cb5acfd5bd69c04bfb247"></a>
+static QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><b>getJsonObjectFromFile</b> (const QString &amp;filePath)</td></tr>
+<tr class="separator:ab906a37f5d5cb5acfd5bd69c04bfb247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117b5a132f2d6f9a3d570418d2012583"><td class="memItemLeft" align="right" valign="top"><a id="a117b5a132f2d6f9a3d570418d2012583"></a>
+static QJsonArray&#160;</td><td class="memItemRight" valign="bottom"><b>getJsonArrayFromFile</b> (const QString &amp;filePath)</td></tr>
+<tr class="separator:a117b5a132f2d6f9a3d570418d2012583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ea7e97942dc4545d0951436304a5c2"><td class="memItemLeft" align="right" valign="top"><a id="a44ea7e97942dc4545d0951436304a5c2"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeJsonObjectFile</b> (const QString &amp;filePath, const QJsonObject &amp;obj)</td></tr>
+<tr class="separator:a44ea7e97942dc4545d0951436304a5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937daf9b662a19d402184f63aadc1f5a"><td class="memItemLeft" align="right" valign="top"><a id="a937daf9b662a19d402184f63aadc1f5a"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeJsonnArrayFile</b> (const QString &amp;filePath, const QJsonArray &amp;array)</td></tr>
+<tr class="separator:a937daf9b662a19d402184f63aadc1f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ffb7512d11f94984074978aa314700"><td class="memItemLeft" align="right" valign="top"><a id="a50ffb7512d11f94984074978aa314700"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>mountAVFS</b> ()</td></tr>
+<tr class="separator:a50ffb7512d11f94984074978aa314700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4498484dd8c199d72990ac6129383b5d"><td class="memItemLeft" align="right" valign="top"><a id="a4498484dd8c199d72990ac6129383b5d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>umountAVFS</b> ()</td></tr>
+<tr class="separator:a4498484dd8c199d72990ac6129383b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10e4d427ef2b8c764aa86c548bc4601"><td class="memItemLeft" align="right" valign="top"><a id="aa10e4d427ef2b8c764aa86c548bc4601"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDesktopFile</b> (const QString &amp;filePath)</td></tr>
+<tr class="separator:aa10e4d427ef2b8c764aa86c548bc4601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5435b2306074f06db0a8625eb91584fe"><td class="memItemLeft" align="right" valign="top"><a id="a5435b2306074f06db0a8625eb91584fe"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDesktopFile</b> (const QFileInfo &amp;fileInfo)</td></tr>
+<tr class="separator:a5435b2306074f06db0a8625eb91584fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856b15db21233b5114bc6241cf749334"><td class="memItemLeft" align="right" valign="top"><a id="a856b15db21233b5114bc6241cf749334"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDesktopFile</b> (const QString &amp;filePath, QMimeType &amp;mimetype)</td></tr>
+<tr class="separator:a856b15db21233b5114bc6241cf749334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e326cddcd7ad8240aa598a8d1b1c4ea"><td class="memItemLeft" align="right" valign="top"><a id="a1e326cddcd7ad8240aa598a8d1b1c4ea"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDesktopFile</b> (const QFileInfo &amp;fileInfo, QMimeType &amp;mimetyp)</td></tr>
+<tr class="separator:a1e326cddcd7ad8240aa598a8d1b1c4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29fd0724684a156584ac92265af96a65"><td class="memItemLeft" align="right" valign="top"><a id="a29fd0724684a156584ac92265af96a65"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>addRecentFile</b> (const QString &amp;filePath, const <a class="el" href="class_desktop_file.html">DesktopFile</a> &amp;desktopFile, const QString &amp;mimetype)</td></tr>
+<tr class="separator:a29fd0724684a156584ac92265af96a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac082136a9ebb4348cc5bb017964ca4df"><td class="memItemLeft" align="right" valign="top"><a id="ac082136a9ebb4348cc5bb017964ca4df"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>deviceShouldBeIgnore</b> (const QString &amp;devId)</td></tr>
+<tr class="separator:ac082136a9ebb4348cc5bb017964ca4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:abd2da74744cbc4d8c572bd8aab10c5ee"><td class="memItemLeft" align="right" valign="top"><a id="abd2da74744cbc4d8c572bd8aab10c5ee"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>XDG_RUNTIME_DIR</b> = &quot;&quot;</td></tr>
+<tr class="separator:abd2da74744cbc4d8c572bd8aab10c5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a0aa1804e22bf95c81382fbe33c071"><td class="memItemLeft" align="right" valign="top"><a id="a40a0aa1804e22bf95c81382fbe33c071"></a>
+static QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>CURRENT_ISGVFSFILE_PATH</b></td></tr>
+<tr class="separator:a40a0aa1804e22bf95c81382fbe33c071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Utility class providing static helper methods for file management </p>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8h_source.html">fileutils.h</a> 第 <a class="el" href="fileutils_8h_source.html#l00044">44</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a3a2ef9b519ad2f1e909fc49f725d92ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2ef9b519ad2f1e909fc49f725d92ba">&#9670;&nbsp;</a></span>defaultOpticalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString FileUtils::defaultOpticalSize </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>tagName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint64 &amp;&#160;</td>
+          <td class="paramname"><em>usedSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint64 &amp;&#160;</td>
+          <td class="paramname"><em>totalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解析配置文件，获取光盘大小数据 光盘打开后可以显示大小，并挂载然而关闭文管后再重新启动会导致之前的状态机失效（未持久化存储） 因此会显示为0M，且状态为已挂载的状态，而右下角插件则因为读取了配置而显示正确的大小 </p>
+<dl class="section return"><dt>返回</dt><dd>挂载状态时返回配置文件中存储的光盘大小 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00501">501</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0d1b9f97bfcd7188009d84baa06c1412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1b9f97bfcd7188009d84baa06c1412">&#9670;&nbsp;</a></span>diskUsageString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString FileUtils::diskUsageString </td>
+          <td>(</td>
+          <td class="paramtype">quint64 &amp;&#160;</td>
+          <td class="paramname"><em>usedSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint64 &amp;&#160;</td>
+          <td class="paramname"><em>totalSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>strVolTag</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算机页面磁盘大小数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">usedSize</td><td>使用引用的原因是光驱的数据可能重置，若不重置则会影响进度条异常 </td></tr>
+    <tr><td class="paramname">totalSize</td><td>使用引用的原因是光驱的数据可能重置，若不重置则会影响进度条异常 </td></tr>
+    <tr><td class="paramname">strVolTag</td><td>这个标识符加入的用于判定是否为光驱 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00459">459</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a24b08bc5531a21db93d32d6411ef4735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b08bc5531a21db93d32d6411ef4735">&#9670;&nbsp;</a></span>formatSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString FileUtils::formatSize </td>
+          <td>(</td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>withUnitVisible</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precision</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>forceUnit</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QStringList&#160;</td>
+          <td class="paramname"><em>unitList</em> = <code>QStringList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Display human readable file size. </p>
+<p>by default, will display size unit. like <code>1.2 GB</code> or <code>616 MB</code>. By using <em>forceUnit</em> argument we can also force to display a unit size with the required unit. 0 for bytes, 1 for KiB, 2 for MiB, 3 for GiB, etc.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>The file size number. </td></tr>
+    <tr><td class="paramname">withUnitVisible</td><td>Size unit visible or not. </td></tr>
+    <tr><td class="paramname">precision</td><td>Precision for float number after the dot. </td></tr>
+    <tr><td class="paramname">forceUnit</td><td>Force to use a unit. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00414">414</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7524fdffa6ce97130d3494f1b1725cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7524fdffa6ce97130d3494f1b1725cb9">&#9670;&nbsp;</a></span>getApplicationNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList FileUtils::getApplicationNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns names of available applications </p>
+<dl class="section return"><dt>返回</dt><dd>application name list </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00261">261</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1a946688877780582d7b8134a89646cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a946688877780582d7b8134a89646cd">&#9670;&nbsp;</a></span>getRealSuffix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString FileUtils::getRealSuffix </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns real suffix for given file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>suffix </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00281">281</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5b1a1d09aaa15014ef36c2ca431f9be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1a1d09aaa15014ef36c2ca431f9be4">&#9670;&nbsp;</a></span>recurseFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileUtils::recurseFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QStringList *&#160;</td>
+          <td class="paramname"><em>list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Collects all file names in given path (recursive) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>path </td></tr>
+    <tr><td class="paramname">parent</td><td>parent path </td></tr>
+    <tr><td class="paramname">list</td><td>resulting list of files </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00124">124</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8405cd44411025e3312839bc9f6213af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8405cd44411025e3312839bc9f6213af">&#9670;&nbsp;</a></span>removeRecurse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FileUtils::removeRecurse </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recursive removes file or directory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>path to file </td></tr>
+    <tr><td class="paramname">name</td><td>name of file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>true if file/directory was successfully removed </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4af487de683f5cc0ccd9a13b22afa5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af487de683f5cc0ccd9a13b22afa5ef">&#9670;&nbsp;</a></span>searchAppIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIcon FileUtils::searchAppIcon </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_desktop_file.html">DesktopFile</a> &amp;&#160;</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QIcon &amp;&#160;</td>
+          <td class="paramname"><em>defaultIcon</em> = <code>QIcon::fromTheme(&quot;application-x-executable&quot;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches for application icon in the filesystem </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td></td></tr>
+    <tr><td class="paramname">defaultIcon</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>icon </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00332">332</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac44b8123b2480c1487d565a34f767028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac44b8123b2480c1487d565a34f767028">&#9670;&nbsp;</a></span>searchGenericIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIcon FileUtils::searchGenericIcon </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QIcon &amp;&#160;</td>
+          <td class="paramname"><em>defaultIcon</em> = <code>QIcon::fromTheme(&quot;unknown&quot;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches for generic icon </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>icon </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00314">314</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae1f76a977c4444c48f0a11e96869944e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1f76a977c4444c48f0a11e96869944e">&#9670;&nbsp;</a></span>searchMimeIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIcon FileUtils::searchMimeIcon </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>mime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QIcon &amp;&#160;</td>
+          <td class="paramname"><em>defaultIcon</em> = <code>QIcon::fromTheme(&quot;unknown&quot;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns mime icon </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mime</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>icon </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00302">302</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a229055d43b2cbaa670a058c0b25829a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229055d43b2cbaa670a058c0b25829a1">&#9670;&nbsp;</a></span>totalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint64 FileUtils::totalSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">DUrlList</a> &amp;&#160;</td>
+          <td class="paramname"><em>files</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns size of all given files/dirs (including nested files/dirs) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">files</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>total size </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a> 第 <a class="el" href="fileutils_8cpp_source.html#l00202">202</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/shutil/<a class="el" href="fileutils_8h_source.html">fileutils.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/shutil/<a class="el" href="fileutils_8cpp_source.html">fileutils.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_file_utils.html">FileUtils</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

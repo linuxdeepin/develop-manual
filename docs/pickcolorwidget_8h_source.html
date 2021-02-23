@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: deepin-draw/src/frame/AttributesWidgets/private/pickcolorwidget.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('pickcolorwidget_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">pickcolorwidget.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2019 ~ %YEAR% Deepin Technology Co., Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Author:     RenRan</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * any later version.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef PICKCOLORWIDGET_H</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define PICKCOLORWIDGET_H</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;DWidget&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;editlabel.h&quot;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;colorlabel.h&quot;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;colorslider.h&quot;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;DWIDGET_USE_NAMESPACE</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_icon_button.html">CIconButton</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span><a class="code" href="class_color_picker_interface.html">ColorPickerInterface</a>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_pick_color_widget.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pick_color_widget.html">PickColorWidget</a> : <span class="keyword">public</span> DWidget</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_pick_color_widget.html">PickColorWidget</a>(DWidget *parent);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ~<a class="code" href="class_pick_color_widget.html">PickColorWidget</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QColor <a class="code" href="class_pick_color_widget.html#afb5a08863cc59dadf5352ce279127329">color</a>();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pick_color_widget.html#a3522d6e70e122e85d5caa60bc0ee1cf5">setColor</a>(<span class="keyword">const</span> QColor &amp;c, <span class="keywordtype">bool</span> internalChanged = <span class="keyword">true</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pick_color_widget.html#a94326a38f4e89321d5f69b3cea8a3688">setTheme</a>(<span class="keywordtype">int</span>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;signals:</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pick_color_widget.html#aef57a8eefd25fb2dca63b0b8fdf7e829">colorChanged</a>(<span class="keyword">const</span> QColor &amp;color);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pick_color_widget.html#ab9ddd945ffc45b1974b2146d807dea09">previewedColorChanged</a>(<span class="keyword">const</span> QColor &amp;color);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> updateColor(<span class="keyword">const</span> QColor &amp;color = QColor());</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_edit_label.html">EditLabel</a> *m_redEditLabel;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_edit_label.html">EditLabel</a> *m_greenEditLabel;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_edit_label.html">EditLabel</a> *m_blueEditLabel;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_c_icon_button.html">CIconButton</a> *m_picker;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_color_label.html">ColorLabel</a> *m_colorLabel;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_color_slider.html">ColorSlider</a> *m_colorSlider;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_color_picker_interface.html">ColorPickerInterface</a> *m_cp;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QColor curColor;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif // PICKCOLORWIDGET_H</span></div><div class="ttc" id="class_color_label_html"><div class="ttname"><a href="class_color_label.html">ColorLabel</a></div><div class="ttdef"><b>Definition:</b> <a href="colorlabel_8h_source.html#l00032">colorlabel.h:32</a></div></div>
+<div class="ttc" id="class_pick_color_widget_html_ab9ddd945ffc45b1974b2146d807dea09"><div class="ttname"><a href="class_pick_color_widget.html#ab9ddd945ffc45b1974b2146d807dea09">PickColorWidget::previewedColorChanged</a></div><div class="ttdeci">void previewedColorChanged(const QColor &amp;color)</div><div class="ttdoc">previewedColorChanged　颜色预览信号 </div></div>
+<div class="ttc" id="class_pick_color_widget_html_afb5a08863cc59dadf5352ce279127329"><div class="ttname"><a href="class_pick_color_widget.html#afb5a08863cc59dadf5352ce279127329">PickColorWidget::color</a></div><div class="ttdeci">QColor color()</div><div class="ttdoc">color 当前颜色 </div><div class="ttdef"><b>Definition:</b> <a href="pickcolorwidget_8cpp_source.html#l00136">pickcolorwidget.cpp:136</a></div></div>
+<div class="ttc" id="class_c_icon_button_html"><div class="ttname"><a href="class_c_icon_button.html">CIconButton</a></div><div class="ttdef"><b>Definition:</b> <a href="ciconbutton_8h_source.html#l00009">ciconbutton.h:9</a></div></div>
+<div class="ttc" id="class_pick_color_widget_html"><div class="ttname"><a href="class_pick_color_widget.html">PickColorWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="pickcolorwidget_8h_source.html#l00033">pickcolorwidget.h:33</a></div></div>
+<div class="ttc" id="class_edit_label_html"><div class="ttname"><a href="class_edit_label.html">EditLabel</a></div><div class="ttdef"><b>Definition:</b> <a href="editlabel_8h_source.html#l00027">editlabel.h:27</a></div></div>
+<div class="ttc" id="class_color_picker_interface_html"><div class="ttname"><a href="class_color_picker_interface.html">ColorPickerInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="colorpickerinterface_8h_source.html#l00035">colorpickerinterface.h:35</a></div></div>
+<div class="ttc" id="class_pick_color_widget_html_a94326a38f4e89321d5f69b3cea8a3688"><div class="ttname"><a href="class_pick_color_widget.html#a94326a38f4e89321d5f69b3cea8a3688">PickColorWidget::setTheme</a></div><div class="ttdeci">void setTheme(int)</div><div class="ttdoc">setTheme　更新按钮主题 </div><div class="ttdef"><b>Definition:</b> <a href="pickcolorwidget_8cpp_source.html#l00127">pickcolorwidget.cpp:127</a></div></div>
+<div class="ttc" id="class_color_slider_html"><div class="ttname"><a href="class_color_slider.html">ColorSlider</a></div><div class="ttdef"><b>Definition:</b> <a href="colorslider_8h_source.html#l00027">colorslider.h:27</a></div></div>
+<div class="ttc" id="class_pick_color_widget_html_aef57a8eefd25fb2dca63b0b8fdf7e829"><div class="ttname"><a href="class_pick_color_widget.html#aef57a8eefd25fb2dca63b0b8fdf7e829">PickColorWidget::colorChanged</a></div><div class="ttdeci">void colorChanged(const QColor &amp;color)</div><div class="ttdoc">colorChanged　获取颜色信号 </div></div>
+<div class="ttc" id="class_pick_color_widget_html_a3522d6e70e122e85d5caa60bc0ee1cf5"><div class="ttname"><a href="class_pick_color_widget.html#a3522d6e70e122e85d5caa60bc0ee1cf5">PickColorWidget::setColor</a></div><div class="ttdeci">void setColor(const QColor &amp;c, bool internalChanged=true)</div><div class="ttdoc">setColor 设置颜色 </div><div class="ttdef"><b>Definition:</b> <a href="pickcolorwidget_8cpp_source.html#l00141">pickcolorwidget.cpp:141</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_caff2b1fd7545ce757c8a3b9a7f3898b.html">deepin-draw</a></li><li class="navelem"><a class="el" href="dir_965b9c804c0c8766184e23b894154521.html">src</a></li><li class="navelem"><a class="el" href="dir_5e95a0b844964c1648700872ea464a14.html">frame</a></li><li class="navelem"><a class="el" href="dir_012fbcdeca7ae4ff6f9de16e6fa52aae.html">AttributesWidgets</a></li><li class="navelem"><a class="el" href="dir_299138009465e01198ede3df6a1434ca.html">private</a></li><li class="navelem"><b>pickcolorwidget.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:13 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

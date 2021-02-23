@@ -1,0 +1,1774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: CDrawScene类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_c_draw_scene.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_c_draw_scene-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CDrawScene类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 CDrawScene 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_draw_scene__inherit__graph.png" border="0" usemap="#_c_draw_scene_inherit__map" alt="Inheritance graph"/></div>
+<map name="_c_draw_scene_inherit__map" id="_c_draw_scene_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+CDrawScene 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_draw_scene__coll__graph.png" border="0" usemap="#_c_draw_scene_coll__map" alt="Collaboration graph"/></div>
+<map name="_c_draw_scene_coll__map" id="_c_draw_scene_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a77c385b44a7ffa496ecbc397b86acb54"><td class="memItemLeft" align="right" valign="top"><a id="a77c385b44a7ffa496ecbc397b86acb54"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ESortItemTp</b> { <b>EDesSort</b>, 
+<b>EAesSort</b>, 
+<b>ESortCount</b>
+ }</td></tr>
+<tr class="separator:a77c385b44a7ffa496ecbc397b86acb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cf99848368ae19ee07ec700a48bbfa"><td class="memItemLeft" align="right" valign="top"><a id="ab0cf99848368ae19ee07ec700a48bbfa"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CGroupBzItemsTree</b> = <a class="el" href="struct_c_bz_group_tree.html">CBzGroupTree</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> * &gt;</td></tr>
+<tr class="separator:ab0cf99848368ae19ee07ec700a48bbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a592147026be1bca410fedc338c5cb6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a592147026be1bca410fedc338c5cb6e0">changeMouseShape</a> (EDrawToolMode type)</td></tr>
+<tr class="memdesc:a592147026be1bca410fedc338c5cb6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">changeMouseShape 切换鼠标形状  <a href="#a592147026be1bca410fedc338c5cb6e0">更多...</a><br /></td></tr>
+<tr class="separator:a592147026be1bca410fedc338c5cb6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5682b66a4b7b20e752d845688d949b76"><td class="memItemLeft" align="right" valign="top"><a id="a5682b66a4b7b20e752d845688d949b76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a5682b66a4b7b20e752d845688d949b76">setDrawForeground</a> (bool b)</td></tr>
+<tr class="memdesc:a5682b66a4b7b20e752d845688d949b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">setDrawForeground 是否绘制前景元素(前景主要绘制了框选矩形,高亮,模糊图元截图时不需要绘制这些) <br /></td></tr>
+<tr class="separator:a5682b66a4b7b20e752d845688d949b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9abb3e65af23ad51c98f84985f9d6fc2"><td class="memItemLeft" align="right" valign="top"><a id="a9abb3e65af23ad51c98f84985f9d6fc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a9abb3e65af23ad51c98f84985f9d6fc2">doLeave</a> ()</td></tr>
+<tr class="memdesc:a9abb3e65af23ad51c98f84985f9d6fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">setDrawForeground 是否绘制前景元素 <br /></td></tr>
+<tr class="separator:a9abb3e65af23ad51c98f84985f9d6fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a7f6b6a7b9fa851a7424d8eb91e97a203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a7f6b6a7b9fa851a7424d8eb91e97a203">signalAttributeChanged</a> (bool flag, int primitiveType)</td></tr>
+<tr class="memdesc:a7f6b6a7b9fa851a7424d8eb91e97a203"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalAttributeChanged 发送属性栏更改的信号  <a href="#a7f6b6a7b9fa851a7424d8eb91e97a203">更多...</a><br /></td></tr>
+<tr class="separator:a7f6b6a7b9fa851a7424d8eb91e97a203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61888fa91282dea15e21dc565a2fdec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#aa61888fa91282dea15e21dc565a2fdec">signalChangeToSelect</a> (bool showTitle=false)</td></tr>
+<tr class="memdesc:aa61888fa91282dea15e21dc565a2fdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalChangeToSelect 发送工具栏切换为选择的信号  <a href="#aa61888fa91282dea15e21dc565a2fdec">更多...</a><br /></td></tr>
+<tr class="separator:aa61888fa91282dea15e21dc565a2fdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ff62c4e78695482e7c5ef7cdbd9997"><td class="memItemLeft" align="right" valign="top"><a id="a95ff62c4e78695482e7c5ef7cdbd9997"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a95ff62c4e78695482e7c5ef7cdbd9997">signalQuitCutAndChangeToSelect</a> ()</td></tr>
+<tr class="memdesc:a95ff62c4e78695482e7c5ef7cdbd9997"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalQuitCutMode 退出裁剪模式 <br /></td></tr>
+<tr class="separator:a95ff62c4e78695482e7c5ef7cdbd9997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845e6473234dbf2b032cf87b488869e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a845e6473234dbf2b032cf87b488869e8">itemAdded</a> (QGraphicsItem *item, bool pushToStack=true)</td></tr>
+<tr class="memdesc:a845e6473234dbf2b032cf87b488869e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemAdded 增加图元  <a href="#a845e6473234dbf2b032cf87b488869e8">更多...</a><br /></td></tr>
+<tr class="separator:a845e6473234dbf2b032cf87b488869e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ccb640c56c9ee9697fe320b675039d"><td class="memItemLeft" align="right" valign="top"><a id="a26ccb640c56c9ee9697fe320b675039d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a26ccb640c56c9ee9697fe320b675039d">signalUpdateCutSize</a> ()</td></tr>
+<tr class="memdesc:a26ccb640c56c9ee9697fe320b675039d"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalUpdateCutSize 更新裁剪的大小 <br /></td></tr>
+<tr class="separator:a26ccb640c56c9ee9697fe320b675039d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318a30eec320e20791d9ebcc9d5a2471"><td class="memItemLeft" align="right" valign="top"><a id="a318a30eec320e20791d9ebcc9d5a2471"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a318a30eec320e20791d9ebcc9d5a2471">signalUpdateTextFont</a> ()</td></tr>
+<tr class="memdesc:a318a30eec320e20791d9ebcc9d5a2471"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalUpdateTextFont 更新文字字体 <br /></td></tr>
+<tr class="separator:a318a30eec320e20791d9ebcc9d5a2471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef243a1e2e81e469a726080561518db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a4ef243a1e2e81e469a726080561518db">signalSceneCut</a> (QRectF newRect)</td></tr>
+<tr class="memdesc:a4ef243a1e2e81e469a726080561518db"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalSceneCut 裁剪场景  <a href="#a4ef243a1e2e81e469a726080561518db">更多...</a><br /></td></tr>
+<tr class="separator:a4ef243a1e2e81e469a726080561518db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b64729173dc95bdd1212ca1eadae99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a54b64729173dc95bdd1212ca1eadae99">signalIsModify</a> (bool isModify)</td></tr>
+<tr class="memdesc:a54b64729173dc95bdd1212ca1eadae99"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalIsModify 是否更改  <a href="#a54b64729173dc95bdd1212ca1eadae99">更多...</a><br /></td></tr>
+<tr class="separator:a54b64729173dc95bdd1212ca1eadae99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a70a106ccc838efc6d898fe31872ede5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a70a106ccc838efc6d898fe31872ede5f">CDrawScene</a> (<a class="el" href="class_c_graphics_view.html">CGraphicsView</a> *view=nullptr, const QString &amp;uuid=&quot;&quot;, bool <a class="el" href="class_c_draw_scene.html#a5d9de01ffe6b0a342e1c77577681376e">isModified</a>=false)</td></tr>
+<tr class="memdesc:a70a106ccc838efc6d898fe31872ede5f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_draw_scene.html">CDrawScene</a> 构造函数  <a href="#a70a106ccc838efc6d898fe31872ede5f">更多...</a><br /></td></tr>
+<tr class="separator:a70a106ccc838efc6d898fe31872ede5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960807f4f68ff85b3f373f4693990fac"><td class="memItemLeft" align="right" valign="top"><a id="a960807f4f68ff85b3f373f4693990fac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a960807f4f68ff85b3f373f4693990fac">resetScene</a> ()</td></tr>
+<tr class="memdesc:a960807f4f68ff85b3f373f4693990fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">initScene 初始化一个新的场景 <br /></td></tr>
+<tr class="separator:a960807f4f68ff85b3f373f4693990fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a346ee523cf4da892d03f5c147d10d3"><td class="memItemLeft" align="right" valign="top"><a id="a8a346ee523cf4da892d03f5c147d10d3"></a>
+<a class="el" href="class_c_graphics_view.html">CGraphicsView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a8a346ee523cf4da892d03f5c147d10d3">drawView</a> ()</td></tr>
+<tr class="memdesc:a8a346ee523cf4da892d03f5c147d10d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawView 返回视图指针 <br /></td></tr>
+<tr class="separator:a8a346ee523cf4da892d03f5c147d10d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9bab0a9fce11c784342fd61cb2dbdc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ab9bab0a9fce11c784342fd61cb2dbdc0">keyEvent</a> (QKeyEvent *keyEvent)</td></tr>
+<tr class="memdesc:ab9bab0a9fce11c784342fd61cb2dbdc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">keyEvent 从绘图工具返回键盘事件  <a href="#ab9bab0a9fce11c784342fd61cb2dbdc0">更多...</a><br /></td></tr>
+<tr class="separator:ab9bab0a9fce11c784342fd61cb2dbdc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac757123b1fdc84d2554ef825477f537e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ac757123b1fdc84d2554ef825477f537e">setCursor</a> (const QCursor &amp;cursor)</td></tr>
+<tr class="memdesc:ac757123b1fdc84d2554ef825477f537e"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCursor 设置鼠标指针形状  <a href="#ac757123b1fdc84d2554ef825477f537e">更多...</a><br /></td></tr>
+<tr class="separator:ac757123b1fdc84d2554ef825477f537e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae456b543d1fba372c94bebba78841cc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ae456b543d1fba372c94bebba78841cc0">mouseEvent</a> (QGraphicsSceneMouseEvent *mouseEvent)</td></tr>
+<tr class="memdesc:ae456b543d1fba372c94bebba78841cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">mouseEvent 鼠标事件  <a href="#ae456b543d1fba372c94bebba78841cc0">更多...</a><br /></td></tr>
+<tr class="separator:ae456b543d1fba372c94bebba78841cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6294ad5cb40c629f7b5eb0414c16d7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ad6294ad5cb40c629f7b5eb0414c16d7f">drawBackground</a> (QPainter *painter, const QRectF &amp;rect) override</td></tr>
+<tr class="memdesc:ad6294ad5cb40c629f7b5eb0414c16d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawBackground  <a href="#ad6294ad5cb40c629f7b5eb0414c16d7f">更多...</a><br /></td></tr>
+<tr class="separator:ad6294ad5cb40c629f7b5eb0414c16d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c06974d72e667b7b32a2494fdbce00"><td class="memItemLeft" align="right" valign="top"><a id="ae6c06974d72e667b7b32a2494fdbce00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ae6c06974d72e667b7b32a2494fdbce00">resetSceneBackgroundBrush</a> ()</td></tr>
+<tr class="memdesc:ae6c06974d72e667b7b32a2494fdbce00"><td class="mdescLeft">&#160;</td><td class="mdescRight">resetSceneBackgroundBrush 重新设置背景颜色 <br /></td></tr>
+<tr class="separator:ae6c06974d72e667b7b32a2494fdbce00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4f2ccd0f9381dd91c763076b99109a"><td class="memItemLeft" align="right" valign="top"><a id="abd4f2ccd0f9381dd91c763076b99109a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#abd4f2ccd0f9381dd91c763076b99109a">showCutItem</a> ()</td></tr>
+<tr class="memdesc:abd4f2ccd0f9381dd91c763076b99109a"><td class="mdescLeft">&#160;</td><td class="mdescRight">showCutItem 显示裁剪图元 <br /></td></tr>
+<tr class="separator:abd4f2ccd0f9381dd91c763076b99109a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736b062f2f4c1b84256299e33ab34479"><td class="memItemLeft" align="right" valign="top"><a id="a736b062f2f4c1b84256299e33ab34479"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a736b062f2f4c1b84256299e33ab34479">quitCutMode</a> ()</td></tr>
+<tr class="memdesc:a736b062f2f4c1b84256299e33ab34479"><td class="mdescLeft">&#160;</td><td class="mdescRight">quitCutMode 退出裁剪 <br /></td></tr>
+<tr class="separator:a736b062f2f4c1b84256299e33ab34479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0bb6276b67a3c7a562f8e50c041c5f"><td class="memItemLeft" align="right" valign="top"><a id="aeb0bb6276b67a3c7a562f8e50c041c5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#aeb0bb6276b67a3c7a562f8e50c041c5f">doCutScene</a> ()</td></tr>
+<tr class="memdesc:aeb0bb6276b67a3c7a562f8e50c041c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">doCutScene 进行裁剪 <br /></td></tr>
+<tr class="separator:aeb0bb6276b67a3c7a562f8e50c041c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af657c15d31f7b24a0e65fa44b324ecda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#af657c15d31f7b24a0e65fa44b324ecda">doAdjustmentScene</a> (QRectF rect, <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *item=nullptr)</td></tr>
+<tr class="memdesc:af657c15d31f7b24a0e65fa44b324ecda"><td class="mdescLeft">&#160;</td><td class="mdescRight">doAdjustmentScene 自适应  <a href="#af657c15d31f7b24a0e65fa44b324ecda">更多...</a><br /></td></tr>
+<tr class="separator:af657c15d31f7b24a0e65fa44b324ecda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a710f28221e37fecd30a95912c3462"><td class="memItemLeft" align="right" valign="top"><a id="af0a710f28221e37fecd30a95912c3462"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#af0a710f28221e37fecd30a95912c3462">setItemsActive</a> (bool canSelecte)</td></tr>
+<tr class="memdesc:af0a710f28221e37fecd30a95912c3462"><td class="mdescLeft">&#160;</td><td class="mdescRight">setItemsActive　设置所有图元是否是活跃的,可操作的(可能的应用场景:裁剪模式下图元都不可操作) <br /></td></tr>
+<tr class="separator:af0a710f28221e37fecd30a95912c3462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f3f4291f8de34632339a16ad2bce08"><td class="memItemLeft" align="right" valign="top"><a id="a37f3f4291f8de34632339a16ad2bce08"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a37f3f4291f8de34632339a16ad2bce08">blockUpdateBlurItem</a> (bool b)</td></tr>
+<tr class="memdesc:a37f3f4291f8de34632339a16ad2bce08"><td class="mdescLeft">&#160;</td><td class="mdescRight">blockUpdateBlurItem　禁止刷新模糊(用于减少模糊的刷新次数,避免多次重复刷新,记得还原) <br /></td></tr>
+<tr class="separator:a37f3f4291f8de34632339a16ad2bce08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa11b33b716d3ece3056d611484892e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a3aa11b33b716d3ece3056d611484892e">switchTheme</a> (int type)</td></tr>
+<tr class="memdesc:a3aa11b33b716d3ece3056d611484892e"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateBlurItem 刷新模糊  <a href="#a3aa11b33b716d3ece3056d611484892e">更多...</a><br /></td></tr>
+<tr class="separator:a3aa11b33b716d3ece3056d611484892e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004cda33502479b465d9e0c7b1827bd6"><td class="memItemLeft" align="right" valign="top"><a id="a004cda33502479b465d9e0c7b1827bd6"></a>
+<a class="el" href="class_c_draw_param_sigleton.html">CDrawParamSigleton</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a004cda33502479b465d9e0c7b1827bd6">getDrawParam</a> ()</td></tr>
+<tr class="memdesc:a004cda33502479b465d9e0c7b1827bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCDrawParam　获取绘制数据 <br /></td></tr>
+<tr class="separator:a004cda33502479b465d9e0c7b1827bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9de01ffe6b0a342e1c77577681376e"><td class="memItemLeft" align="right" valign="top"><a id="a5d9de01ffe6b0a342e1c77577681376e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a5d9de01ffe6b0a342e1c77577681376e">isModified</a> () const</td></tr>
+<tr class="memdesc:a5d9de01ffe6b0a342e1c77577681376e"><td class="mdescLeft">&#160;</td><td class="mdescRight">isModified　是否被修改过 <br /></td></tr>
+<tr class="separator:a5d9de01ffe6b0a342e1c77577681376e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7848596937b03effbb2456217f9062c3"><td class="memItemLeft" align="right" valign="top"><a id="a7848596937b03effbb2456217f9062c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a7848596937b03effbb2456217f9062c3">setModify</a> (bool isModify)</td></tr>
+<tr class="memdesc:a7848596937b03effbb2456217f9062c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">setModify　设置场景是否被修改过(发生过变化) <br /></td></tr>
+<tr class="separator:a7848596937b03effbb2456217f9062c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e11b4fba4b7b36e0f90198b69b0068f"><td class="memItemLeft" align="right" valign="top"><a id="a5e11b4fba4b7b36e0f90198b69b0068f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a5e11b4fba4b7b36e0f90198b69b0068f">addCItem</a> (QGraphicsItem *pItem, bool calZ=true)</td></tr>
+<tr class="memdesc:a5e11b4fba4b7b36e0f90198b69b0068f"><td class="mdescLeft">&#160;</td><td class="mdescRight">addCItem　添加图元 <br /></td></tr>
+<tr class="separator:a5e11b4fba4b7b36e0f90198b69b0068f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d1319e6276c2ff92c8a6c571dff6bd"><td class="memItemLeft" align="right" valign="top"><a id="ae5d1319e6276c2ff92c8a6c571dff6bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ae5d1319e6276c2ff92c8a6c571dff6bd">removeCItem</a> (QGraphicsItem *pItem)</td></tr>
+<tr class="memdesc:ae5d1319e6276c2ff92c8a6c571dff6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">removeCItem　删除图元 <br /></td></tr>
+<tr class="separator:ae5d1319e6276c2ff92c8a6c571dff6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bab32625d6818b53ac75726dc4e16f1"><td class="memItemLeft" align="right" valign="top"><a id="a6bab32625d6818b53ac75726dc4e16f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a6bab32625d6818b53ac75726dc4e16f1">blockAssignZValue</a> (bool b)</td></tr>
+<tr class="memdesc:a6bab32625d6818b53ac75726dc4e16f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">blockAssignZValue　禁止自动分配给图元z值(在一些直接还原图元z值的情况加入场景时,不需要进行z值分配) <br /></td></tr>
+<tr class="separator:a6bab32625d6818b53ac75726dc4e16f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8573601d89f8a391fef9d3bd4d39da"><td class="memItemLeft" align="right" valign="top"><a id="afe8573601d89f8a391fef9d3bd4d39da"></a>
+<a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#afe8573601d89f8a391fef9d3bd4d39da">getAssociatedBzItem</a> (QGraphicsItem *pItem)</td></tr>
+<tr class="memdesc:afe8573601d89f8a391fef9d3bd4d39da"><td class="mdescLeft">&#160;</td><td class="mdescRight">getAssociatedBzItem　得到与pItem有关联的基本业务图元 <br /></td></tr>
+<tr class="separator:afe8573601d89f8a391fef9d3bd4d39da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae6a722d901371ac30dfc752cfe791b"><td class="memItemLeft" align="right" valign="top"><a id="aeae6a722d901371ac30dfc752cfe791b"></a>
+<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#aeae6a722d901371ac30dfc752cfe791b">selectGroup</a> ()</td></tr>
+<tr class="memdesc:aeae6a722d901371ac30dfc752cfe791b"><td class="mdescLeft">&#160;</td><td class="mdescRight">selectGroup　多选组合图元 <br /></td></tr>
+<tr class="separator:aeae6a722d901371ac30dfc752cfe791b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1413c2d69036a0c618823c80396e1e"><td class="memItemLeft" align="right" valign="top"><a id="afc1413c2d69036a0c618823c80396e1e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#afc1413c2d69036a0c618823c80396e1e">clearSelectGroup</a> ()</td></tr>
+<tr class="memdesc:afc1413c2d69036a0c618823c80396e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">clearSelectGroup　清理选中 <br /></td></tr>
+<tr class="separator:afc1413c2d69036a0c618823c80396e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298a7fa3eb2bce792c33bd4a73620f5f"><td class="memItemLeft" align="right" valign="top"><a id="a298a7fa3eb2bce792c33bd4a73620f5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a298a7fa3eb2bce792c33bd4a73620f5f">selectItem</a> (QGraphicsItem *pItem, bool onlyBzItem=true, bool updateAttri=true, bool updateRect=true)</td></tr>
+<tr class="memdesc:a298a7fa3eb2bce792c33bd4a73620f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">selectItem　选择一个图元 <br /></td></tr>
+<tr class="separator:a298a7fa3eb2bce792c33bd4a73620f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3d0999987b97a52086d8760907d64f"><td class="memItemLeft" align="right" valign="top"><a id="a4b3d0999987b97a52086d8760907d64f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a4b3d0999987b97a52086d8760907d64f">notSelectItem</a> (QGraphicsItem *pItem, bool updateAttri=true, bool updateRect=true)</td></tr>
+<tr class="memdesc:a4b3d0999987b97a52086d8760907d64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">notSelectItem　不选择某个图元 <br /></td></tr>
+<tr class="separator:a4b3d0999987b97a52086d8760907d64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c6a4da97104ed85129a61d319d9ee1"><td class="memItemLeft" align="right" valign="top"><a id="a71c6a4da97104ed85129a61d319d9ee1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a71c6a4da97104ed85129a61d319d9ee1">blockSelect</a> (bool b)</td></tr>
+<tr class="memdesc:a71c6a4da97104ed85129a61d319d9ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">blockSelect锁住选中 (为true后调用selectItem或selectItemsByRect函数将没有作用,应用场景一般加载组合树时不期望进行选中操作) (但可以通过获取选择组合selectGroup()-&gt;add进行添加的方式进行选中,这种方式不受该标记限制) <br /></td></tr>
+<tr class="separator:a71c6a4da97104ed85129a61d319d9ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8abc0d974cf38fdeade5411ab8ed49c3"><td class="memItemLeft" align="right" valign="top"><a id="a8abc0d974cf38fdeade5411ab8ed49c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a8abc0d974cf38fdeade5411ab8ed49c3">selectItemsByRect</a> (const QRectF &amp;rect, bool replace=true, bool onlyBzItem=true)</td></tr>
+<tr class="memdesc:a8abc0d974cf38fdeade5411ab8ed49c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">selectItemsByRect　通过一个矩形范围选中图元 <br /></td></tr>
+<tr class="separator:a8abc0d974cf38fdeade5411ab8ed49c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da98bf227a71128421a8fa5cd0952e5"><td class="memItemLeft" align="right" valign="top"><a id="a0da98bf227a71128421a8fa5cd0952e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a0da98bf227a71128421a8fa5cd0952e5">updateMrItemBoundingRect</a> ()</td></tr>
+<tr class="memdesc:a0da98bf227a71128421a8fa5cd0952e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">selectItemsByRect　通过一个矩形范围选中图元 <br /></td></tr>
+<tr class="separator:a0da98bf227a71128421a8fa5cd0952e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3e482fd49812110fadf9b732a6c8ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a2e3e482fd49812110fadf9b732a6c8ef">getBzItems</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; QGraphicsItem *&gt; &amp;items=<a class="el" href="class_q_list.html">QList</a>&lt; QGraphicsItem *&gt;(), ESortItemTp tp=EDesSort)</td></tr>
+<tr class="memdesc:a2e3e482fd49812110fadf9b732a6c8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">getBzItems　获取一组图元中的基本业务图元(默认是按照z值降序)  <a href="#a2e3e482fd49812110fadf9b732a6c8ef">更多...</a><br /></td></tr>
+<tr class="separator:a2e3e482fd49812110fadf9b732a6c8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdd52d7521130306da6b4c43354db9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a3fdd52d7521130306da6b4c43354db9e">getRootItems</a> (ESortItemTp tp=EDesSort)</td></tr>
+<tr class="memdesc:a3fdd52d7521130306da6b4c43354db9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">getRootItems　获取场景中所有的根图元(包括顶根组合图元),即bzGroup(true) == nullptr的图元  <a href="#a3fdd52d7521130306da6b4c43354db9e">更多...</a><br /></td></tr>
+<tr class="separator:a3fdd52d7521130306da6b4c43354db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a3a2722b79eaec43e7fd6019ec070f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a50a3a2722b79eaec43e7fd6019ec070f">moveBzItemsLayer</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;items, EZMoveType tp, int step=1, <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *pBaseInGroup=nullptr, bool pushToStack=false)</td></tr>
+<tr class="memdesc:a50a3a2722b79eaec43e7fd6019ec070f"><td class="mdescLeft">&#160;</td><td class="mdescRight">moveBzItemsLayer 设置图元绘制的顺序  <a href="#a50a3a2722b79eaec43e7fd6019ec070f">更多...</a><br /></td></tr>
+<tr class="separator:a50a3a2722b79eaec43e7fd6019ec070f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b738e6a288abbcdcb1de4dda257646"><td class="memItemLeft" align="right" valign="top"><a id="a67b738e6a288abbcdcb1de4dda257646"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a67b738e6a288abbcdcb1de4dda257646">isCurrentZMovable</a> (EZMoveType tp, int step=1, <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *pBaseInGroup=nullptr)</td></tr>
+<tr class="memdesc:a67b738e6a288abbcdcb1de4dda257646"><td class="mdescLeft">&#160;</td><td class="mdescRight">isCurrentZMovable 判断当前是否可改变图层顺序 <br /></td></tr>
+<tr class="separator:a67b738e6a288abbcdcb1de4dda257646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a54c14ca5c8e2649332152651fc596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a42a54c14ca5c8e2649332152651fc596">topBzItem</a> (const QPointF &amp;pos, bool penalgor=true, int IncW=0)</td></tr>
+<tr class="memdesc:a42a54c14ca5c8e2649332152651fc596"><td class="mdescLeft">&#160;</td><td class="mdescRight">topBzItem　获取某一点下的最顶层画板图元  <a href="#a42a54c14ca5c8e2649332152651fc596">更多...</a><br /></td></tr>
+<tr class="separator:a42a54c14ca5c8e2649332152651fc596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdab206ef7b78fdc7223a2ae444f422e"><td class="memItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#abdab206ef7b78fdc7223a2ae444f422e">firstItem</a> (const QPointF &amp;pos, const <a class="el" href="class_q_list.html">QList</a>&lt; QGraphicsItem *&gt; &amp;items=<a class="el" href="class_q_list.html">QList</a>&lt; QGraphicsItem *&gt;(), bool isListDesSorted=true, bool penalgor=false, bool isBzItem=false, bool seeNodeAsBzItem=false, bool filterMrAndHightLight=true, int incW=0)</td></tr>
+<tr class="memdesc:abdab206ef7b78fdc7223a2ae444f422e"><td class="mdescLeft">&#160;</td><td class="mdescRight">firstItem　获取一组图元中的第一个(最顶层)图元  <a href="#abdab206ef7b78fdc7223a2ae444f422e">更多...</a><br /></td></tr>
+<tr class="separator:abdab206ef7b78fdc7223a2ae444f422e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4103a2b5c0feec8b61551e248c1a3c93"><td class="memItemLeft" align="right" valign="top"><a id="a4103a2b5c0feec8b61551e248c1a3c93"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a4103a2b5c0feec8b61551e248c1a3c93">getMaxZValue</a> ()</td></tr>
+<tr class="memdesc:a4103a2b5c0feec8b61551e248c1a3c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">getMaxZValue　获取图元最大z值 <br /></td></tr>
+<tr class="separator:a4103a2b5c0feec8b61551e248c1a3c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b83a7d05604afd52685142ebef40678"><td class="memItemLeft" align="right" valign="top"><a id="a0b83a7d05604afd52685142ebef40678"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a0b83a7d05604afd52685142ebef40678">blockMouseMoveEvent</a> (bool b)</td></tr>
+<tr class="memdesc:a0b83a7d05604afd52685142ebef40678"><td class="mdescLeft">&#160;</td><td class="mdescRight">阻止响应鼠标移动事件 <br /></td></tr>
+<tr class="separator:a0b83a7d05604afd52685142ebef40678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06e04b710bfb7001db8df657246cd2f"><td class="memItemLeft" align="right" valign="top"><a id="ac06e04b710bfb7001db8df657246cd2f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ac06e04b710bfb7001db8df657246cd2f">isBlockMouseMoveEvent</a> ()</td></tr>
+<tr class="memdesc:ac06e04b710bfb7001db8df657246cd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前是否处于阻止响应鼠标移动事件 <br /></td></tr>
+<tr class="separator:ac06e04b710bfb7001db8df657246cd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51494d17a973a378d644178441d6ba63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a51494d17a973a378d644178441d6ba63">recordSecenInfoToCmd</a> (int exptype, EVarUndoOrRedo varFor, const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;items=<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt;())</td></tr>
+<tr class="memdesc:a51494d17a973a378d644178441d6ba63"><td class="mdescLeft">&#160;</td><td class="mdescRight">recordSecenInfoToCmd 记录场景的对应类型的属性信息(当前仅支持组合情况的变化,因为其他需要带参数表示变化的对象是谁)  <a href="#a51494d17a973a378d644178441d6ba63">更多...</a><br /></td></tr>
+<tr class="separator:a51494d17a973a378d644178441d6ba63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36c425132f112946030d45a8025cf25"><td class="memItemLeft" align="right" valign="top"><a id="ab36c425132f112946030d45a8025cf25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ab36c425132f112946030d45a8025cf25">recordItemsInfoToCmd</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;items, EVarUndoOrRedo varFor, bool clearInfo=true)</td></tr>
+<tr class="memdesc:ab36c425132f112946030d45a8025cf25"><td class="mdescLeft">&#160;</td><td class="mdescRight">recordItemsInfoToCmd 记录图元的信息 <br /></td></tr>
+<tr class="separator:ab36c425132f112946030d45a8025cf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ed9935713fda5a5fd8b4a6f367deca"><td class="memItemLeft" align="right" valign="top"><a id="af3ed9935713fda5a5fd8b4a6f367deca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#af3ed9935713fda5a5fd8b4a6f367deca">finishRecord</a> (bool doRedoCmd=false)</td></tr>
+<tr class="memdesc:af3ed9935713fda5a5fd8b4a6f367deca"><td class="mdescLeft">&#160;</td><td class="mdescRight">完成记录执行操作 <br /></td></tr>
+<tr class="separator:af3ed9935713fda5a5fd8b4a6f367deca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b2e8b0327baca198851f084d7ff09c"><td class="memItemLeft" align="right" valign="top"><a id="a14b2e8b0327baca198851f084d7ff09c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a14b2e8b0327baca198851f084d7ff09c">isGroupable</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;pBzItems=<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt;())</td></tr>
+<tr class="memdesc:a14b2e8b0327baca198851f084d7ff09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">isGroupable 是否可以创建一个组合(默认是判断当前场景选中情况下是否可以进行组合) <br /></td></tr>
+<tr class="separator:a14b2e8b0327baca198851f084d7ff09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25286c34f597858ee8687f4dcf354eb3"><td class="memItemLeft" align="right" valign="top"><a id="a25286c34f597858ee8687f4dcf354eb3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a25286c34f597858ee8687f4dcf354eb3">isUnGroupable</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;pBzItems=<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt;())</td></tr>
+<tr class="memdesc:a25286c34f597858ee8687f4dcf354eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">isUnGroupable 框选的内容是否有组合图元可以进行撤销组合 <br /></td></tr>
+<tr class="separator:a25286c34f597858ee8687f4dcf354eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0d7efd657a631317d7edeb10740cb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a3a0d7efd657a631317d7edeb10740cb9">getSameGroup</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;pBzItems, bool top=false, bool onlyNormal=true, bool sameNullCreatVirGroup=false)</td></tr>
+<tr class="memdesc:a3a0d7efd657a631317d7edeb10740cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">getManageGroup 获取到传入的图元的共同的顶层组合(如果不存在,那么返回空)  <a href="#a3a0d7efd657a631317d7edeb10740cb9">更多...</a><br /></td></tr>
+<tr class="separator:a3a0d7efd657a631317d7edeb10740cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2490c18a3765da2d935d4dafb448cfd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a2490c18a3765da2d935d4dafb448cfd3">creatGroup</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;pBzItems=<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt;(), int groupType=0, bool pushUndo=false, <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *pBzItemZBase=nullptr, bool getMinZItemIfNull=false)</td></tr>
+<tr class="memdesc:a2490c18a3765da2d935d4dafb448cfd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">creatGroup 基于多个图元创建一个组合(会将新创建的组合加入到这个场景中)  <a href="#a2490c18a3765da2d935d4dafb448cfd3">更多...</a><br /></td></tr>
+<tr class="separator:a2490c18a3765da2d935d4dafb448cfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18483cb96bd17c083423a356180a742d"><td class="memItemLeft" align="right" valign="top"><a id="a18483cb96bd17c083423a356180a742d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a18483cb96bd17c083423a356180a742d">cancelGroup</a> (<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *pGroup=nullptr, bool pushUndo=false)</td></tr>
+<tr class="memdesc:a18483cb96bd17c083423a356180a742d"><td class="mdescLeft">&#160;</td><td class="mdescRight">creatGroup 取消当前选中的组合 <br /></td></tr>
+<tr class="separator:a18483cb96bd17c083423a356180a742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0d5c238ab8d21ef2a1b2d731df6eab"><td class="memItemLeft" align="right" valign="top"><a id="afa0d5c238ab8d21ef2a1b2d731df6eab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#afa0d5c238ab8d21ef2a1b2d731df6eab">destoryGroup</a> (<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *pGroup, bool deleteIt=false, bool pushUndo=false)</td></tr>
+<tr class="memdesc:afa0d5c238ab8d21ef2a1b2d731df6eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">destoryGroup 销毁一个组合 <br /></td></tr>
+<tr class="separator:afa0d5c238ab8d21ef2a1b2d731df6eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31776a51aa4bd382632f845ec05ab133"><td class="memItemLeft" align="right" valign="top"><a id="a31776a51aa4bd382632f845ec05ab133"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a31776a51aa4bd382632f845ec05ab133">destoryAllGroup</a> (bool deleteIt=false, bool pushUndo=false)</td></tr>
+<tr class="memdesc:a31776a51aa4bd382632f845ec05ab133"><td class="mdescLeft">&#160;</td><td class="mdescRight">destoryAllGroup 销毁所有组合 <br /></td></tr>
+<tr class="separator:a31776a51aa4bd382632f845ec05ab133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02c608f7470da05d9e14d54ea0aba18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#aa02c608f7470da05d9e14d54ea0aba18">bzGroups</a> ()</td></tr>
+<tr class="memdesc:aa02c608f7470da05d9e14d54ea0aba18"><td class="mdescLeft">&#160;</td><td class="mdescRight">getGroup 通过一个业务图元获取到它所处的组合图元(返回空证明不在某个组合图元中,即不处于组合状态)  <a href="#aa02c608f7470da05d9e14d54ea0aba18">更多...</a><br /></td></tr>
+<tr class="separator:aa02c608f7470da05d9e14d54ea0aba18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1db33346383041800ff62434aecfba"><td class="memItemLeft" align="right" valign="top"><a id="a2e1db33346383041800ff62434aecfba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshLook</b> (const QPointF &amp;pos=QPointF())</td></tr>
+<tr class="separator:a2e1db33346383041800ff62434aecfba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52703888a2d1186db4727d4775565901"><td class="memItemLeft" align="right" valign="top"><a id="a52703888a2d1186db4727d4775565901"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearHighlight</b> ()</td></tr>
+<tr class="separator:a52703888a2d1186db4727d4775565901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3a4344d0b96e02f2b1b58c037b3ab7"><td class="memItemLeft" align="right" valign="top"><a id="aef3a4344d0b96e02f2b1b58c037b3ab7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHighlightHelper</b> (const QPainterPath &amp;path)</td></tr>
+<tr class="separator:aef3a4344d0b96e02f2b1b58c037b3ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4d1c12d9e4f1311e6c70d6ff36bf2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_bz_group_tree.html">CGroupBzItemsTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#add4d1c12d9e4f1311e6c70d6ff36bf2a">getGroupTree</a> (<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *pGroup=nullptr)</td></tr>
+<tr class="memdesc:add4d1c12d9e4f1311e6c70d6ff36bf2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getGroupTree 获取pGroup的组合信息(以树结构进行表示,业务图元以CGraphicsItem指针的形式保存)  <a href="#add4d1c12d9e4f1311e6c70d6ff36bf2a">更多...</a><br /></td></tr>
+<tr class="separator:add4d1c12d9e4f1311e6c70d6ff36bf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac34dd9e488be362616dafd3364732cb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_bz_group_tree.html">CGroupBzItemsTreeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ac34dd9e488be362616dafd3364732cb5">getGroupTreeInfo</a> (<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *pGroup=nullptr, EDataReason reson=EDuplicate)</td></tr>
+<tr class="memdesc:ac34dd9e488be362616dafd3364732cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">getGroupTreeInfo 获取pGroup的组合信息(以树结构进行表示,抽象出所有业务图元的数据,以CGraphicsUnit的数据形式保存)  <a href="#ac34dd9e488be362616dafd3364732cb5">更多...</a><br /></td></tr>
+<tr class="separator:ac34dd9e488be362616dafd3364732cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d9abc6c6588576f30dd964099b56ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ad2d9abc6c6588576f30dd964099b56ec">loadGroupTree</a> (const <a class="el" href="struct_c_bz_group_tree.html">CGroupBzItemsTree</a> &amp;info)</td></tr>
+<tr class="memdesc:ad2d9abc6c6588576f30dd964099b56ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">loadGroupTree 从组合树中读取到信息直接实现改组合(返回顶层组合)  <a href="#ad2d9abc6c6588576f30dd964099b56ec">更多...</a><br /></td></tr>
+<tr class="separator:ad2d9abc6c6588576f30dd964099b56ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4b77e46067862416a78d3af139dd4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a0b4b77e46067862416a78d3af139dd4f">loadGroupTreeInfo</a> (const <a class="el" href="struct_c_bz_group_tree.html">CGroupBzItemsTreeInfo</a> &amp;info, bool notClear=false)</td></tr>
+<tr class="memdesc:a0b4b77e46067862416a78d3af139dd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">loadGroupTreeInfo 从组合树中读取到信息直接实现改组合(返回顶层组合)  <a href="#a0b4b77e46067862416a78d3af139dd4f">更多...</a><br /></td></tr>
+<tr class="separator:a0b4b77e46067862416a78d3af139dd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:afc6b70971aed1cc6d5295a70b8ac1d6a"><td class="memItemLeft" align="right" valign="top"><a id="afc6b70971aed1cc6d5295a70b8ac1d6a"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#afc6b70971aed1cc6d5295a70b8ac1d6a">isBussizeItem</a> (QGraphicsItem *pItem)</td></tr>
+<tr class="memdesc:afc6b70971aed1cc6d5295a70b8ac1d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">isBussizeItem　是否是基本业务图元 <br /></td></tr>
+<tr class="separator:afc6b70971aed1cc6d5295a70b8ac1d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196e981b7e48bdb87c3021625befe3fa"><td class="memItemLeft" align="right" valign="top"><a id="a196e981b7e48bdb87c3021625befe3fa"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a196e981b7e48bdb87c3021625befe3fa">isBussizeHandleNodeItem</a> (QGraphicsItem *pItem)</td></tr>
+<tr class="memdesc:a196e981b7e48bdb87c3021625befe3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">isBussizeHandleNodeItem　是否是基本业务图元的节点图元 <br /></td></tr>
+<tr class="separator:a196e981b7e48bdb87c3021625befe3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f2df0cdbf3465dfe87b243c320fea7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ad5f2df0cdbf3465dfe87b243c320fea7">isNormalGroupItem</a> (QGraphicsItem *pItem)</td></tr>
+<tr class="memdesc:ad5f2df0cdbf3465dfe87b243c320fea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">isBzAssicaitedItem　是否是与基本业务图元有关联图元  <a href="#ad5f2df0cdbf3465dfe87b243c320fea7">更多...</a><br /></td></tr>
+<tr class="separator:ad5f2df0cdbf3465dfe87b243c320fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d570bc6770da9c1253c80ed4f5ceb8d"><td class="memItemLeft" align="right" valign="top"><a id="a2d570bc6770da9c1253c80ed4f5ceb8d"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a2d570bc6770da9c1253c80ed4f5ceb8d">isDrawItem</a> (QGraphicsItem *pItem)</td></tr>
+<tr class="memdesc:a2d570bc6770da9c1253c80ed4f5ceb8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">isDrawItem　是否是画板图元(Normal组合图元+基本业务图元) <br /></td></tr>
+<tr class="separator:a2d570bc6770da9c1253c80ed4f5ceb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209ec1b3fc1adacdeb6b4b0eec388f49"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a209ec1b3fc1adacdeb6b4b0eec388f49"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a209ec1b3fc1adacdeb6b4b0eec388f49">sortZ</a> (<a class="el" href="class_q_list.html">QList</a>&lt; T *&gt; &amp;list, ESortItemTp tp=EDesSort)</td></tr>
+<tr class="memdesc:a209ec1b3fc1adacdeb6b4b0eec388f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">sortZ　通过z值对一组图元进行排序  <a href="#a209ec1b3fc1adacdeb6b4b0eec388f49">更多...</a><br /></td></tr>
+<tr class="separator:a209ec1b3fc1adacdeb6b4b0eec388f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1ee589365351012c10754bd7e0eebe"><td class="memTemplParams" colspan="2"><a id="aab1ee589365351012c10754bd7e0eebe"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aab1ee589365351012c10754bd7e0eebe"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_q_list.html">QList</a>&lt; T * &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#aab1ee589365351012c10754bd7e0eebe">returnSortZItems</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; T *&gt; &amp;list, ESortItemTp tp=EDesSort)</td></tr>
+<tr class="memdesc:aab1ee589365351012c10754bd7e0eebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">returnSortZItems　按照某一升降顺序进行排序 <br /></td></tr>
+<tr class="separator:aab1ee589365351012c10754bd7e0eebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c57420756b36c102c1a06f258579695"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a8c57420756b36c102c1a06f258579695">copyCreatGroup</a> (<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *pGroup)</td></tr>
+<tr class="memdesc:a8c57420756b36c102c1a06f258579695"><td class="mdescLeft">&#160;</td><td class="mdescRight">creatGroup 复制出一个和参数pGroup一样的组合(前提:该组合必须已经处于scene中,同时新创建的组合会被加入到这个组合的场景中去)  <a href="#a8c57420756b36c102c1a06f258579695">更多...</a><br /></td></tr>
+<tr class="separator:a8c57420756b36c102c1a06f258579695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ab0221198ca058611e40e20349c9f6786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ab0221198ca058611e40e20349c9f6786">mousePressEvent</a> (QGraphicsSceneMouseEvent *<a class="el" href="class_c_draw_scene.html#ae456b543d1fba372c94bebba78841cc0">mouseEvent</a>) override</td></tr>
+<tr class="memdesc:ab0221198ca058611e40e20349c9f6786"><td class="mdescLeft">&#160;</td><td class="mdescRight">mousePressEvent 鼠标按下事件  <a href="#ab0221198ca058611e40e20349c9f6786">更多...</a><br /></td></tr>
+<tr class="separator:ab0221198ca058611e40e20349c9f6786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66811e984bd6d19b7f924d9cd1f5744"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#ab66811e984bd6d19b7f924d9cd1f5744">mouseMoveEvent</a> (QGraphicsSceneMouseEvent *<a class="el" href="class_c_draw_scene.html#ae456b543d1fba372c94bebba78841cc0">mouseEvent</a>) override</td></tr>
+<tr class="memdesc:ab66811e984bd6d19b7f924d9cd1f5744"><td class="mdescLeft">&#160;</td><td class="mdescRight">mouseMoveEvent 鼠标移动事件  <a href="#ab66811e984bd6d19b7f924d9cd1f5744">更多...</a><br /></td></tr>
+<tr class="separator:ab66811e984bd6d19b7f924d9cd1f5744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8327f52622f543d1267638c9145b0153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#a8327f52622f543d1267638c9145b0153">mouseReleaseEvent</a> (QGraphicsSceneMouseEvent *<a class="el" href="class_c_draw_scene.html#ae456b543d1fba372c94bebba78841cc0">mouseEvent</a>) override</td></tr>
+<tr class="memdesc:a8327f52622f543d1267638c9145b0153"><td class="mdescLeft">&#160;</td><td class="mdescRight">mouseReleaseEvent 鼠标放开事件  <a href="#a8327f52622f543d1267638c9145b0153">更多...</a><br /></td></tr>
+<tr class="separator:a8327f52622f543d1267638c9145b0153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7326a38e276ac54adb1c27933bb1bc45"><td class="memItemLeft" align="right" valign="top"><a id="a7326a38e276ac54adb1c27933bb1bc45"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (QGraphicsSceneMouseEvent *<a class="el" href="class_c_draw_scene.html#ae456b543d1fba372c94bebba78841cc0">mouseEvent</a>) override</td></tr>
+<tr class="separator:a7326a38e276ac54adb1c27933bb1bc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6f0e9c32c9bdb115240533eb60c1f6"><td class="memItemLeft" align="right" valign="top"><a id="aab6f0e9c32c9bdb115240533eb60c1f6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (QEvent *event) override</td></tr>
+<tr class="separator:aab6f0e9c32c9bdb115240533eb60c1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1bee2d9e6c60d4ecc4fdced0eabda6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw_scene.html#aeb1bee2d9e6c60d4ecc4fdced0eabda6">drawItems</a> (QPainter *painter, int numItems, QGraphicsItem *items[], const QStyleOptionGraphicsItem options[], QWidget *widget=nullptr) override</td></tr>
+<tr class="memdesc:aeb1bee2d9e6c60d4ecc4fdced0eabda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawItems 绘制所有图元  <a href="#aeb1bee2d9e6c60d4ecc4fdced0eabda6">更多...</a><br /></td></tr>
+<tr class="separator:aeb1bee2d9e6c60d4ecc4fdced0eabda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb9290545abff79709b26c75b570989"><td class="memItemLeft" align="right" valign="top"><a id="a6cb9290545abff79709b26c75b570989"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawForeground</b> (QPainter *painter, const QRectF &amp;rect) override</td></tr>
+<tr class="separator:a6cb9290545abff79709b26c75b570989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="cdrawscene_8h_source.html">cdrawscene.h</a> 第 <a class="el" href="cdrawscene_8h_source.html#l00047">47</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a70a106ccc838efc6d898fe31872ede5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a106ccc838efc6d898fe31872ede5f">&#9670;&nbsp;</a></span>CDrawScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CDrawScene::CDrawScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_graphics_view.html">CGraphicsView</a> *&#160;</td>
+          <td class="paramname"><em>view</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>uuid</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isModified</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_draw_scene.html">CDrawScene</a> 构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa02c608f7470da05d9e14d54ea0aba18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02c608f7470da05d9e14d54ea0aba18">&#9670;&nbsp;</a></span>bzGroups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> * &gt; CDrawScene::bzGroups </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getGroup 通过一个业务图元获取到它所处的组合图元(返回空证明不在某个组合图元中,即不处于组合状态) </p>
+<p>bzGroups 返回当前场景下的所有组合情况 </p>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01836">1836</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a592147026be1bca410fedc338c5cb6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a592147026be1bca410fedc338c5cb6e0">&#9670;&nbsp;</a></span>changeMouseShape</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::changeMouseShape </td>
+          <td>(</td>
+          <td class="paramtype">EDrawToolMode&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>changeMouseShape 切换鼠标形状 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00872">872</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8c57420756b36c102c1a06f258579695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c57420756b36c102c1a06f258579695">&#9670;&nbsp;</a></span>copyCreatGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> * CDrawScene::copyCreatGroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td>
+          <td class="paramname"><em>pGroup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>creatGroup 复制出一个和参数pGroup一样的组合(前提:该组合必须已经处于scene中,同时新创建的组合会被加入到这个组合的场景中去) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pGroup</td><td>源组合图元 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01735">1735</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2490c18a3765da2d935d4dafb448cfd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2490c18a3765da2d935d4dafb448cfd3">&#9670;&nbsp;</a></span>creatGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> * CDrawScene::creatGroup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>pBzItems</em> = <code><a class="el" href="class_q_list.html">QList</a>&lt;<a class="el" href="class_c_graphics_item.html">CGraphicsItem</a>&#160;*&gt;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>groupType</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pushUndo</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td>
+          <td class="paramname"><em>pBzItemZBase</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>getMinZItemIfNull</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creatGroup 基于多个图元创建一个组合(会将新创建的组合加入到这个场景中) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBzItems</td><td>场景内的图元们(这个图元会被加入到新创建的组合中去) </td></tr>
+    <tr><td class="paramname">pushUndo</td><td>改操作是否支持撤销还原 </td></tr>
+    <tr><td class="paramname">pBzItemZBase</td><td>组合创建时,需要指定一个基础z值,以确定组合内基本图元的z值,为nullptr时取组合中z值最小的基本图元 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回新创建的组合图元,失败返回nullptr(比如pBzItems的个数小于2,或者其中图元已经处于一个组合下了) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01671">1671</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af657c15d31f7b24a0e65fa44b324ecda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af657c15d31f7b24a0e65fa44b324ecda">&#9670;&nbsp;</a></span>doAdjustmentScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::doAdjustmentScene </td>
+          <td>(</td>
+          <td class="paramtype">QRectF&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td>
+          <td class="paramname"><em>item</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>doAdjustmentScene 自适应 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>scene大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00851">851</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad6294ad5cb40c629f7b5eb0414c16d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6294ad5cb40c629f7b5eb0414c16d7f">&#9670;&nbsp;</a></span>drawBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::drawBackground </td>
+          <td>(</td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>painter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QRectF &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>drawBackground </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td></td></tr>
+    <tr><td class="paramname">rect</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00149">149</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aeb1bee2d9e6c60d4ecc4fdced0eabda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1bee2d9e6c60d4ecc4fdced0eabda6">&#9670;&nbsp;</a></span>drawItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::drawItems </td>
+          <td>(</td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>painter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QGraphicsItem *&#160;</td>
+          <td class="paramname"><em>items</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOptionGraphicsItem&#160;</td>
+          <td class="paramname"><em>options</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>drawItems 绘制所有图元 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td></td></tr>
+    <tr><td class="paramname">numItems</td><td></td></tr>
+    <tr><td class="paramname">items</td><td></td></tr>
+    <tr><td class="paramname">options</td><td></td></tr>
+    <tr><td class="paramname">widget</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00329">329</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abdab206ef7b78fdc7223a2ae444f422e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdab206ef7b78fdc7223a2ae444f422e">&#9670;&nbsp;</a></span>firstItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsItem * CDrawScene::firstItem </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; QGraphicsItem *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>items</em> = <code><a class="el" href="class_q_list.html">QList</a>&lt;QGraphicsItem&#160;*&gt;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isListDesSorted</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>penalgor</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isBzItem</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>seeNodeAsBzItem</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>filterMrAndHightLight</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>incW</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>firstItem　获取一组图元中的第一个(最顶层)图元 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>位置 </td></tr>
+    <tr><td class="paramname">items</td><td>某一组图元 </td></tr>
+    <tr><td class="paramname">isListDesSorted</td><td>该组图元items是否是按照z值降序排列好了 </td></tr>
+    <tr><td class="paramname">penalgor</td><td>是否是考虑使用穿透算法过滤 </td></tr>
+    <tr><td class="paramname">isBzItem</td><td>返回的图元是否必须是基本业务图元 </td></tr>
+    <tr><td class="paramname">seeNodeAsBzItem</td><td>是否items中的基本业务图元的节点图元会被当做是这个基本业务图元来看待 </td></tr>
+    <tr><td class="paramname">filterMrAndHightLight</td><td>过滤掉高亮和多选组合图元 </td></tr>
+    <tr><td class="paramname">incW</td><td>以pos为中心作incW半径矩形,将这个矩形范围内的图元也考虑进来 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01365">1365</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2e3e482fd49812110fadf9b732a6c8ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3e482fd49812110fadf9b732a6c8ef">&#9670;&nbsp;</a></span>getBzItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> * &gt; CDrawScene::getBzItems </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; QGraphicsItem *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>items</em> = <code><a class="el" href="class_q_list.html">QList</a>&lt;QGraphicsItem&#160;*&gt;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESortItemTp&#160;</td>
+          <td class="paramname"><em>tp</em> = <code>EDesSort</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getBzItems　获取一组图元中的基本业务图元(默认是按照z值降序) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">items</td><td>某一组图元,注意:如果为空,那么会获取当前场景下的所有基本业务图元 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01170">1170</a> 行定义.</p>
+
+</div>
+</div>
+<a id="add4d1c12d9e4f1311e6c70d6ff36bf2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4d1c12d9e4f1311e6c70d6ff36bf2a">&#9670;&nbsp;</a></span>getGroupTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_c_bz_group_tree.html">CDrawScene::CGroupBzItemsTree</a> CDrawScene::getGroupTree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td>
+          <td class="paramname"><em>pGroup</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getGroupTree 获取pGroup的组合信息(以树结构进行表示,业务图元以CGraphicsItem指针的形式保存) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fatherGroup</td><td>传nullptr表示获取到当前场景下组合信息否则仅收集获取pGroup的信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00428">428</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac34dd9e488be362616dafd3364732cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34dd9e488be362616dafd3364732cb5">&#9670;&nbsp;</a></span>getGroupTreeInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_c_bz_group_tree.html">CGroupBzItemsTreeInfo</a> CDrawScene::getGroupTreeInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td>
+          <td class="paramname"><em>pGroup</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EDataReason&#160;</td>
+          <td class="paramname"><em>reson</em> = <code>EDuplicate</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getGroupTreeInfo 获取pGroup的组合信息(以树结构进行表示,抽象出所有业务图元的数据,以CGraphicsUnit的数据形式保存) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fatherGroup</td><td>传nullptr表示获取到当前场景下组合信息否则仅收集获取pGroup的信息 </td></tr>
+    <tr><td class="paramname">reson</td><td>可决定CGraphicsUnit的数据有那些形势 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00460">460</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3fdd52d7521130306da6b4c43354db9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fdd52d7521130306da6b4c43354db9e">&#9670;&nbsp;</a></span>getRootItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> * &gt; CDrawScene::getRootItems </td>
+          <td>(</td>
+          <td class="paramtype">CDrawScene::ESortItemTp&#160;</td>
+          <td class="paramname"><em>tp</em> = <code>EDesSort</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getRootItems　获取场景中所有的根图元(包括顶根组合图元),即bzGroup(true) == nullptr的图元 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tp</td><td>表示排序类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01192">1192</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3a0d7efd657a631317d7edeb10740cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0d7efd657a631317d7edeb10740cb9">&#9670;&nbsp;</a></span>getSameGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> * CDrawScene::getSameGroup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>pBzItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>top</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>onlyNormal</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sameNullCreatVirGroup</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getManageGroup 获取到传入的图元的共同的顶层组合(如果不存在,那么返回空) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBzItems</td><td>待获取的业务图元们 </td></tr>
+    <tr><td class="paramname">top为false有意义,如果图元们的组合都是nullptr,那么当sameNullCreatVirGroup为true时,会创建一个虚拟的组合进行统一管理,否则依然返回nullptr,用完记得删除!!!</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回共同的组合图元,如果有不同的组合图元返回nullptr </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01639">1639</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad5f2df0cdbf3465dfe87b243c320fea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f2df0cdbf3465dfe87b243c320fea7">&#9670;&nbsp;</a></span>isNormalGroupItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDrawScene::isNormalGroupItem </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsItem *&#160;</td>
+          <td class="paramname"><em>pItem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>isBzAssicaitedItem　是否是与基本业务图元有关联图元 </p>
+<p>isNormalGroupItem　是否是常规的组合图元 </p>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01069">1069</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a845e6473234dbf2b032cf87b488869e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a845e6473234dbf2b032cf87b488869e8">&#9670;&nbsp;</a></span>itemAdded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::itemAdded </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsItem *&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pushToStack</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemAdded 增加图元 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab9bab0a9fce11c784342fd61cb2dbdc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9bab0a9fce11c784342fd61cb2dbdc0">&#9670;&nbsp;</a></span>keyEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::keyEvent </td>
+          <td>(</td>
+          <td class="paramtype">QKeyEvent *&#160;</td>
+          <td class="paramname"><em>keyEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>keyEvent 从绘图工具返回键盘事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyEvent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2d9abc6c6588576f30dd964099b56ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d9abc6c6588576f30dd964099b56ec">&#9670;&nbsp;</a></span>loadGroupTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> * CDrawScene::loadGroupTree </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_c_bz_group_tree.html">CGroupBzItemsTree</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>loadGroupTree 从组合树中读取到信息直接实现改组合(返回顶层组合) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>组合数信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00517">517</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0b4b77e46067862416a78d3af139dd4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b4b77e46067862416a78d3af139dd4f">&#9670;&nbsp;</a></span>loadGroupTreeInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> * CDrawScene::loadGroupTreeInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_c_bz_group_tree.html">CGroupBzItemsTreeInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>notClear</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>loadGroupTreeInfo 从组合树中读取到信息直接实现改组合(返回顶层组合) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>组合数信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回一个组合图元,这个组合图元以树状结构描述了新添加的图元信息(一般它没有实际意义只是一个抽象描述,用完记得删除) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00552">552</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae456b543d1fba372c94bebba78841cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae456b543d1fba372c94bebba78841cc0">&#9670;&nbsp;</a></span>mouseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::mouseEvent </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsSceneMouseEvent *&#160;</td>
+          <td class="paramname"><em>mouseEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mouseEvent 鼠标事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mouseEvent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00125">125</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab66811e984bd6d19b7f924d9cd1f5744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66811e984bd6d19b7f924d9cd1f5744">&#9670;&nbsp;</a></span>mouseMoveEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::mouseMoveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsSceneMouseEvent *&#160;</td>
+          <td class="paramname"><em>mouseEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>mouseMoveEvent 鼠标移动事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mouseEvent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00195">195</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab0221198ca058611e40e20349c9f6786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0221198ca058611e40e20349c9f6786">&#9670;&nbsp;</a></span>mousePressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::mousePressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsSceneMouseEvent *&#160;</td>
+          <td class="paramname"><em>mouseEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>mousePressEvent 鼠标按下事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mouseEvent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00183">183</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8327f52622f543d1267638c9145b0153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8327f52622f543d1267638c9145b0153">&#9670;&nbsp;</a></span>mouseReleaseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::mouseReleaseEvent </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsSceneMouseEvent *&#160;</td>
+          <td class="paramname"><em>mouseEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>mouseReleaseEvent 鼠标放开事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mouseEvent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00207">207</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a50a3a2722b79eaec43e7fd6019ec070f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a3a2722b79eaec43e7fd6019ec070f">&#9670;&nbsp;</a></span>moveBzItemsLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::moveBzItemsLayer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EZMoveType&#160;</td>
+          <td class="paramname"><em>tp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>step</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td>
+          <td class="paramname"><em>pBaseInGroup</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pushToStack</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>moveBzItemsLayer 设置图元绘制的顺序 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">items表示要移动的基本业务图元</td><td></td></tr>
+    <tr><td class="paramname">tp表示z要移动的方向</td><td></td></tr>
+    <tr><td class="paramname">step要跳动的步数(-1表示到极限),tp为EDownLayer或EUpLayer时有效</td><td></td></tr>
+    <tr><td class="paramname">pBaseInGroup</td><td>仅当tp为EToGroup才有效,以某一个图元z值为基准进行设置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01208">1208</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a51494d17a973a378d644178441d6ba63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51494d17a973a378d644178441d6ba63">&#9670;&nbsp;</a></span>recordSecenInfoToCmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::recordSecenInfoToCmd </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exptype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EVarUndoOrRedo&#160;</td>
+          <td class="paramname"><em>varFor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>items</em> = <code><a class="el" href="class_q_list.html">QList</a>&lt;<a class="el" href="class_c_graphics_item.html">CGraphicsItem</a>&#160;*&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recordSecenInfoToCmd 记录场景的对应类型的属性信息(当前仅支持组合情况的变化,因为其他需要带参数表示变化的对象是谁) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exptype</td><td>场景改变的是什么类型,可去CSceneUndoRedoCommand查看 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01549">1549</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac757123b1fdc84d2554ef825477f537e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac757123b1fdc84d2554ef825477f537e">&#9670;&nbsp;</a></span>setCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::setCursor </td>
+          <td>(</td>
+          <td class="paramtype">const QCursor &amp;&#160;</td>
+          <td class="paramname"><em>cursor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setCursor 设置鼠标指针形状 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cursor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00174">174</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7f6b6a7b9fa851a7424d8eb91e97a203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f6b6a7b9fa851a7424d8eb91e97a203">&#9670;&nbsp;</a></span>signalAttributeChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::signalAttributeChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>primitiveType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signalAttributeChanged 发送属性栏更改的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flag</td><td></td></tr>
+    <tr><td class="paramname">primitiveType</td><td>图元类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa61888fa91282dea15e21dc565a2fdec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa61888fa91282dea15e21dc565a2fdec">&#9670;&nbsp;</a></span>signalChangeToSelect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::signalChangeToSelect </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>showTitle</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signalChangeToSelect 发送工具栏切换为选择的信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">showTitle</td><td>是否显示select工具的顶层标题(也就是"画板"标题文字) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54b64729173dc95bdd1212ca1eadae99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b64729173dc95bdd1212ca1eadae99">&#9670;&nbsp;</a></span>signalIsModify</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::signalIsModify </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isModify</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signalIsModify 是否更改 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newRect</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ef243a1e2e81e469a726080561518db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef243a1e2e81e469a726080561518db">&#9670;&nbsp;</a></span>signalSceneCut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::signalSceneCut </td>
+          <td>(</td>
+          <td class="paramtype">QRectF&#160;</td>
+          <td class="paramname"><em>newRect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signalSceneCut 裁剪场景 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newRect</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a209ec1b3fc1adacdeb6b4b0eec388f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209ec1b3fc1adacdeb6b4b0eec388f49">&#9670;&nbsp;</a></span>sortZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CDrawScene::sortZ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_list.html">QList</a>&lt; T *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESortItemTp&#160;</td>
+          <td class="paramname"><em>tp</em> = <code>EDesSort</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sortZ　通过z值对一组图元进行排序 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>某一组图元(即是入参也是出参) </td></tr>
+    <tr><td class="paramname">tp</td><td>排序方式(升序还是降序) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8h_source.html">cdrawscene.h</a> 第 <a class="el" href="cdrawscene_8h_source.html#l00281">281</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3aa11b33b716d3ece3056d611484892e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa11b33b716d3ece3056d611484892e">&#9670;&nbsp;</a></span>switchTheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDrawScene::switchTheme </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>updateBlurItem 刷新模糊 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">changeItem</td><td>引起变化的图元 switchTheme　切换主题 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l00973">973</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a42a54c14ca5c8e2649332152651fc596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a54c14ca5c8e2649332152651fc596">&#9670;&nbsp;</a></span>topBzItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> * CDrawScene::topBzItem </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>penalgor</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>IncW</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>topBzItem　获取某一点下的最顶层画板图元 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>位置 </td></tr>
+    <tr><td class="paramname">penalgor</td><td>是否是考虑使用穿透算法过滤 </td></tr>
+    <tr><td class="paramname">IncW</td><td>以pos为中心作Incw半径矩形,将这个矩形范围内的图元也考虑进来 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a> 第 <a class="el" href="cdrawscene_8cpp_source.html#l01359">1359</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>deepin-draw/src/drawshape/<a class="el" href="cdrawscene_8h_source.html">cdrawscene.h</a></li>
+<li>deepin-draw/src/drawshape/<a class="el" href="cdrawscene_8cpp_source.html">cdrawscene.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_c_draw_scene.html">CDrawScene</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+var struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font =
+[
+    [ "Font", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#aec11e39c1a4aebbcbe09f8a2f93079cf", null ],
+    [ "~Font", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a8da4172608bb41e46ebf5aad79a4666c", null ],
+    [ "convertToCidString", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a9dbb4a2222ba2c4eb7cedc5bad301d8c", null ],
+    [ "getDescent", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a123e42b6d19b426f1ebb770b42f3b355", null ],
+    [ "getHeight", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a0681cbbbc8139403a334a5687d66230c", null ],
+    [ "getNextCIDandDecode", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#ac29c8866153803120fa2e0476c0b1533", null ],
+    [ "getWidth", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#adb4052ce4a7176dbf4a8f29bea4ed966", null ],
+    [ "hasNextCid", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a2e894d0883fc222dc550ffe83a087fac", null ],
+    [ "setCidString", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a09cfd1fec7f83c1f60119e83161dc1e8", null ],
+    [ "m_base_font", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a881cf5884cb67fb761ebe7b55ead5255", null ],
+    [ "m_cid_begin", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a6ffddedbc341678faf59a0608e4a232a", null ],
+    [ "m_cid_len", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a3eb7ad53bf53fd8b484e2178d943cc2a", null ],
+    [ "m_cmap", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a025b940d5c29270d8d53f21e98566700", null ],
+    [ "m_font_descriptor", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#acc8ec5e43d6d23943e7ad8822e16c252", null ],
+    [ "m_font_dictionary", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#aee2567a08c4f55997ea7e3dc070ca036", null ],
+    [ "m_font_encoding", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a6d1c95f827b2c39d5fd35b131ae3bc95", null ],
+    [ "m_font_metrics", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a39b175a7db22582079ce59debaa1deb5", null ],
+    [ "m_font_type", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a65cd7220f77fb89bbc69f3717ad6fe50", null ],
+    [ "m_multibyte", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#a037bea1d9edd2138f3b44b68e8f8be7b", null ],
+    [ "m_own_simple_encoding_table", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#ab9159b02f6ecd5e1fc0128f9f246248e", null ],
+    [ "m_predefined_cmap", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#ad98c5fc70de6b9c583f1b38fcefcd0c0", null ],
+    [ "m_predefined_simple_encoding", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#abcf77b140dd17613c5a6be78f6020f4d", null ],
+    [ "m_simple_encoding_table", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#aab2da7d0fdd8bc3a043b0fb4f7cfca6f", null ],
+    [ "m_to_cid_cmap", "struct_p_d_f_parser_1_1_implementation_1_1_p_d_f_content_1_1_font.html#ae42fbd00be017f3c81879354fc3b883d", null ]
+];

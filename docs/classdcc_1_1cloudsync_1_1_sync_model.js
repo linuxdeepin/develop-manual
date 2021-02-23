@@ -1,0 +1,27 @@
+var classdcc_1_1cloudsync_1_1_sync_model =
+[
+    [ "SyncModel", "classdcc_1_1cloudsync_1_1_sync_model.html#aea2ecdecf3f2b846f8ffb19485ac057e", null ],
+    [ "enableSync", "classdcc_1_1cloudsync_1_1_sync_model.html#a30c7f57ceb99be51c7726af7da287ecd", null ],
+    [ "enableSyncChanged", "classdcc_1_1cloudsync_1_1_sync_model.html#a82dd5d2a6f0d36f72f18bae9d45e69f1", null ],
+    [ "getActivation", "classdcc_1_1cloudsync_1_1_sync_model.html#a94cc3915378eb62a8456e59254f5f6c1", null ],
+    [ "getModuleStateByType", "classdcc_1_1cloudsync_1_1_sync_model.html#a767e4788d1d2fb4d8ca39a0548342cf3", null ],
+    [ "lastSyncTime", "classdcc_1_1cloudsync_1_1_sync_model.html#a4b1916493d17288260e1b09f38ab1aa7", null ],
+    [ "lastSyncTimeChanged", "classdcc_1_1cloudsync_1_1_sync_model.html#ad6191467ed43c83dbff499f29109aa03", null ],
+    [ "licenseStateChanged", "classdcc_1_1cloudsync_1_1_sync_model.html#a8647afd44048a96ae5c62b9c36129015", null ],
+    [ "moduleSyncState", "classdcc_1_1cloudsync_1_1_sync_model.html#a5affc3e4a1ccd2316ffc10f00d1a5274", null ],
+    [ "moduleSyncStateChanged", "classdcc_1_1cloudsync_1_1_sync_model.html#a0b90cd0c76c10422379493848dd7d3ad", null ],
+    [ "setActivation", "classdcc_1_1cloudsync_1_1_sync_model.html#aa94d9c78ab4d34b765f8169863bff46d", null ],
+    [ "setEnableSync", "classdcc_1_1cloudsync_1_1_sync_model.html#a49d8fa9fec5c75044cec180d7e7bf2ab", null ],
+    [ "setLastSyncTime", "classdcc_1_1cloudsync_1_1_sync_model.html#a8bf5ff18cfc40ebc95280f27cb07d76d", null ],
+    [ "setModuleSyncState", "classdcc_1_1cloudsync_1_1_sync_model.html#aaed08a6227a96300005d9661e8180f99", null ],
+    [ "setSyncIsValid", "classdcc_1_1cloudsync_1_1_sync_model.html#abdb12e285e924f34ce8e23c6d10598f9", null ],
+    [ "setSyncState", "classdcc_1_1cloudsync_1_1_sync_model.html#acfaf15f8623934ca819e48fbfe820b0d", null ],
+    [ "setUserinfo", "classdcc_1_1cloudsync_1_1_sync_model.html#ac521bc01990025823c54ea6a8a1a3e91", null ],
+    [ "syncIsValid", "classdcc_1_1cloudsync_1_1_sync_model.html#a48fa036a5ffddaedcc24ec415742b7c8", null ],
+    [ "syncIsValidChanged", "classdcc_1_1cloudsync_1_1_sync_model.html#a674707b8e41dad75f8ecdb4ecb24345c", null ],
+    [ "syncState", "classdcc_1_1cloudsync_1_1_sync_model.html#a74b13c2f99c38773afd19e3264dad444", null ],
+    [ "syncStateChanged", "classdcc_1_1cloudsync_1_1_sync_model.html#aff75f1790d3f6a2e9a1e5dca06eb63bc", null ],
+    [ "userDisplayName", "classdcc_1_1cloudsync_1_1_sync_model.html#a0d797973b9cff00b8a680f1533be50be", null ],
+    [ "userinfo", "classdcc_1_1cloudsync_1_1_sync_model.html#a746e6c44fcdb9e0304f1fac080092384", null ],
+    [ "userInfoChanged", "classdcc_1_1cloudsync_1_1_sync_model.html#a34bff811f9cb561405d22d554b4077e4", null ]
+];

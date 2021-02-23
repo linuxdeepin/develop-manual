@@ -1,0 +1,22 @@
+digraph "DCC_NAMESPACE::sync::LogoutPage"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="DCC_NAMESPACE::sync\l::LogoutPage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="DCC_NAMESPACE::sync\l::LoginedIn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1sync_1_1_logined_in.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="QWidget",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_downloader" ,fontname="Helvetica"];
+  Node6 [label="DCC_NAMESPACE::sync\l::DownloadUrl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1sync_1_1_download_url.html"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="QObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_avatar" ,fontname="Helvetica"];
+  Node8 [label="DCC_NAMESPACE::sync\l::AvatarWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1sync_1_1_avatar_widget.html"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="QLabel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_model" ,fontname="Helvetica"];
+  Node10 [label="dcc::cloudsync::SyncModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdcc_1_1cloudsync_1_1_sync_model.html"];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

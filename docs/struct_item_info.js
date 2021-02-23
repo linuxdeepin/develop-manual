@@ -1,0 +1,27 @@
+var struct_item_info =
+[
+    [ "ItemInfo", "struct_item_info.html#ad7693c73878c5b0a822728afb9ffb096", null ],
+    [ "ItemInfo", "struct_item_info.html#a656519a14578e443301d0be3be44c97f", null ],
+    [ "~ItemInfo", "struct_item_info.html#a6116ee615ba5704971cf5f2d51fa31e4", null ],
+    [ "category", "struct_item_info.html#a1b6f9a3bf04ea40aaba1fc19f9c46d4d", null ],
+    [ "operator<", "struct_item_info.html#a7c8a5bad7b6482dd5eab892d43d5b6bf", null ],
+    [ "operator==", "struct_item_info.html#ac567f345a318a201aab52bee9bf0cc5a", null ],
+    [ "updateInfo", "struct_item_info.html#ae1f4ee5a4af4cb050374085a64531639", null ],
+    [ "operator<<", "struct_item_info.html#aa3d31906979c11cbc50d83dab94bc6cc", null ],
+    [ "operator<<", "struct_item_info.html#a6d1ffd55ced603f10e8bf6546c33b4cf", null ],
+    [ "operator<<", "struct_item_info.html#a9805820ab6c97913f081ef93135851ff", null ],
+    [ "operator>>", "struct_item_info.html#ad72b41dda2f04310580577e4c77ffd8c", null ],
+    [ "operator>>", "struct_item_info.html#a226b0ebd1d9d7feaf1f4418a8b7cd1ce", null ],
+    [ "adapter", "struct_item_info.html#a1367697fd9b60ce6b08d0880fc476e76", null ],
+    [ "device", "struct_item_info.html#a75c3b5ee5332122c289e5872ba110fd7", null ],
+    [ "device", "struct_item_info.html#ac7674b136b55b493be7cb6809794a7b8", null ],
+    [ "info", "struct_item_info.html#a933ef310ad7146a717a493d4cca32fac", null ],
+    [ "m_categoryId", "struct_item_info.html#a0da8f81fd94e3a8c11107d84dbd0a412", null ],
+    [ "m_desktop", "struct_item_info.html#afb2cb281c6ffb57edac73cb1b217d704", null ],
+    [ "m_firstRunTime", "struct_item_info.html#a00441201488f9cc157a5bc3c0455d896", null ],
+    [ "m_iconKey", "struct_item_info.html#a77d8d25b75b6b4851ad089f80b512479", null ],
+    [ "m_installedTime", "struct_item_info.html#a5eb90a867dbc156085400a270a421244", null ],
+    [ "m_key", "struct_item_info.html#a317933d42c2ce320984c69cece1530d6", null ],
+    [ "m_name", "struct_item_info.html#a80c603cf8672891a84c5ec624c12416e", null ],
+    [ "m_openCount", "struct_item_info.html#a40006ea0ee0a7b47ce8d288bab1dc6e8", null ]
+];

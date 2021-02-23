@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: DDE Control Center</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('md_dde-control-center__r_e_a_d_m_e.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">DDE Control Center </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>DDE Control Center is the control panel of Deepin <a class="el" href="class_desktop.html">Desktop</a> Environment.</p>
+<h2>Dependencies</h2>
+<h3>Build dependencies</h3>
+<ul>
+<li>pkg-config</li>
+<li>cmake</li>
+<li>Qt5(&gt;= 5.6) with modules:<ul>
+<li>qt5-default</li>
+<li>qt5declarative5-dev</li>
+<li>qt5svg5-dev</li>
+<li>qttools5-dev-tools</li>
+<li>qtdeclarative5-dev</li>
+</ul>
+</li>
+<li>Deepin-tool-kit(&gt;=2.0) with modules:<ul>
+<li>dtkcore-dev</li>
+<li>dtkwidget-dev</li>
+<li>dtkcore-bin</li>
+</ul>
+</li>
+<li>geoip-dev</li>
+<li>dde-qt-dbus-factory</li>
+<li>gsettings-qt-dev</li>
+<li>dde-network-utils-dev</li>
+<li>kf5networkmanagerqt-dev</li>
+<li>xrandr-dev</li>
+<li>mtdev-dev</li>
+<li>fontconfig1-dev</li>
+<li>freetype6-dev</li>
+<li>egl1-mesa-dev</li>
+<li>xcb-ewmh-dev</li>
+</ul>
+<h3>Runtime dependencies</h3>
+<ul>
+<li><a href="https://github.com/linuxdeepin/deepin-tool-kit">deepin-tool-kit</a></li>
+<li><a href="https://github.com/linuxdeepin/dde-api">dde-api</a></li>
+<li><a href="https://github.com/linuxdeepin/dde-daemon">dde-daemon</a></li>
+<li><a href="https://github.com/linuxdeepin/startdde">startdde</a></li>
+<li><a href="https://github.com/linuxdeepin/dde-qt-dbus-factory">dde-qt-dbus-factory</a></li>
+<li><a href="https://github.com/linuxdeepin/qt5integration">qt5integration</a></li>
+<li>geoip-database</li>
+<li>Qt5(&gt;= 5.6)<ul>
+<li>Qt5-DBus</li>
+<li>Qt5-Multimedia</li>
+<li>Qt5-MultimediaWidgets</li>
+<li>Qt5-Svg</li>
+</ul>
+</li>
+</ul>
+<h2>Installation</h2>
+<h3>Build from source code</h3>
+<ol type="1">
+<li>Make sure you have installed all dependencies.</li>
+<li>Build: <div class="fragment"><div class="line">$ cd dde-control-center</div><div class="line">$ mkdir Build</div><div class="line">$ cd Build</div><div class="line">$ cmake ..</div><div class="line">$ make</div></div><!-- fragment --></li>
+<li>Install: <div class="fragment"><div class="line">$ sudo make install</div></div><!-- fragment --></li>
+</ol>
+<p>The executable binary file could be found at <code>/usr/bin/dde-control-center</code> after the installation is finished, and plugins will be placed into <code>/usr/lib/dde-control-center/modules/</code>.</p>
+<h2>Usage</h2>
+<p>Execute <code>dde-control-center -h</code> to get more details.</p>
+<h2>Getting help</h2>
+<p>You can press <code>F1</code> to start <a href="https://github.com/linuxdeepin/deepin-manual">deepin-manual</a> when you focus on DDE Control Center window.</p>
+<p>You may also find these channels useful if you encounter any other issues:</p>
+<ul>
+<li><a href="https://gitter.im/orgs/linuxdeepin/rooms">Gitter</a></li>
+<li><a href="https://webchat.freenode.net/?channels=deepin">IRC Channel</a></li>
+<li><a href="https://bbs.deepin.org/">Official Forum</a></li>
+<li><a href="https://wiki.deepin.org/">Wiki</a></li>
+</ul>
+<h2>Getting involved</h2>
+<p>We encourage you to report issues and contribute changes</p>
+<ul>
+<li><a href="https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers-en">Contribution guide for developers</a>. (English)</li>
+<li><a href="https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers">开发者代码贡献指南</a> (中文)</li>
+</ul>
+<h2>License</h2>
+<p>DDE Control Center is licensed under [GPLv3](LICENSE). </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:14 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

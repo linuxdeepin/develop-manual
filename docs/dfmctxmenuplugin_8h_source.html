@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/doc/qdoc/snippets/context-menu-ext/dfmctxmenuplugin.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dfmctxmenuplugin_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dfmctxmenuplugin.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DFMCTXMENUPLUGIN_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DFMCTXMENUPLUGIN_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;dde-file-manager-plugins/menuinterface.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_d_f_m_ctx_menu_plugin.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_d_f_m_ctx_menu_plugin.html">DFMCtxMenuPlugin</a> : <span class="keyword">public</span> <a class="code" href="class_menu_interface.html">MenuInterface</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    Q_INTERFACES(<a class="code" href="class_menu_interface.html">MenuInterface</a>)</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    Q_PLUGIN_METADATA(IID MenuInterface_iid)</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_d_f_m_ctx_menu_plugin.html">DFMCtxMenuPlugin</a>();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;QAction*&gt;</a> <a class="code" href="class_d_f_m_ctx_menu_plugin.html#a34774e26728154fc4766845a84457383">additionalMenu</a>(<span class="keyword">const</span> QStringList &amp;files, <span class="keyword">const</span> QString&amp; currentDir) <span class="keyword">override</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif // DFMCTXMENUPLUGIN_H</span></div><div class="ttc" id="class_menu_interface_html"><div class="ttname"><a href="class_menu_interface.html">MenuInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="menuinterface_8h_source.html#l00040">menuinterface.h:40</a></div></div>
+<div class="ttc" id="class_d_f_m_ctx_menu_plugin_html_a34774e26728154fc4766845a84457383"><div class="ttname"><a href="class_d_f_m_ctx_menu_plugin.html#a34774e26728154fc4766845a84457383">DFMCtxMenuPlugin::additionalMenu</a></div><div class="ttdeci">QList&lt; QAction * &gt; additionalMenu(const QStringList &amp;files, const QString &amp;currentDir) override</div><div class="ttdoc">additionalMenu </div><div class="ttdef"><b>Definition:</b> <a href="dfmctxmenuplugin_8cpp_source.html#l00007">dfmctxmenuplugin.cpp:7</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="dbuscontrolcenterservice_8h_source.html#l00049">dbuscontrolcenterservice.h:49</a></div></div>
+<div class="ttc" id="class_d_f_m_ctx_menu_plugin_html"><div class="ttname"><a href="class_d_f_m_ctx_menu_plugin.html">DFMCtxMenuPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dfmctxmenuplugin_8h_source.html#l00006">dfmctxmenuplugin.h:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b92aedbef8f10317dbbf98e48a7b4a23.html">dde-file-manager</a></li><li class="navelem"><a class="el" href="dir_64a24863b3edc7f8f2c626840eaddc6a.html">doc</a></li><li class="navelem"><a class="el" href="dir_f388c9333ec0d168c6ab3e8acb4ed7d4.html">qdoc</a></li><li class="navelem"><a class="el" href="dir_b2b659618e77465a3be89d55c1ab50a3.html">snippets</a></li><li class="navelem"><a class="el" href="dir_af6eceec453dad7f13ef7f3a61df7a81.html">context-menu-ext</a></li><li class="navelem"><b>dfmctxmenuplugin.h</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:22 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

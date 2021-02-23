@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: 连接编辑页面</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('md_dde-control-center_src_frame_modules_network_network-design.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">连接编辑页面 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>经过重构之后，网络编辑相关功能将不再依赖dde-session-daemon，而是通过libkf5networkmanagerqt库和NetworkManager直接通信。</p>
+<h2>基本结构</h2>
+<p>提供编辑功能相关的主要文件有类似connectioneditpage，settings目录和sections目录中的文件。 类似connectioneditpage的文件是编辑界面的入口，其上层就是一些设备界面，如WiredPage，WirelessPage等， 设备界面负责将编辑页面实例化并显示出来，剩下的事情就全部都是编辑界面的工作了。 之所以说类似connectioneditpage的文件是因为某些编辑页面需要一切更多的设备相关的数据才能初始化， 比如connectionwirelesseditpage， 在编辑一个从没有连接过的Ap时，就需要知道这个Ap的信息。</p>
+<p>编辑页面在实现上主要被分为了两个部分：</p>
+<ul>
+<li>顶部和底部的按钮们</li>
+<li>中部是一个编辑widget</li>
+</ul>
+<p>中部widget是由settings目录下的文件提供的，按照不同的网络连接实现了不同的settings类。 从编辑页面的角度来看中部的编辑widget是一个整体，但实际的实现是由一个个section组合起来的， 所有的section都在sections目录下，按照功能抽象和实现了诸如通用，8021x，ipv4，以太，无线等等不同的section， 可以按需使用，也可以继承进行扩展。</p>
+<h2>主要类</h2>
+<h3>控制中心中的类</h3>
+<table class="doxtable">
+<tr>
+<th align="left">类名 </th><th align="left">简介  </th></tr>
+<tr>
+<td align="left">ConnectionEditPage </td><td align="left">编辑界面入口类 </td></tr>
+<tr>
+<td align="left">AbstractSettings </td><td align="left">Settings抽象类，供ConnectionEditPage统一管理 </td></tr>
+<tr>
+<td align="left">AbstractSections </td><td align="left">Sections抽象类，供Settings统一管理 </td></tr>
+</table>
+<p>其他的类基本都是继承上述三个类，然后实现检查错误和保存设置的方法，并做一些自己的界面处理工作。 在集成一些非抽象类时，需要留意类中的init方法，可以参考已有的继承例子: <code>SecretWiredSection继承Secret8021xSection</code></p>
+<h3>库中的类</h3>
+<p>命名空间：NetworkManage</p>
+<p>在控制中心的代码中使用了库中的代码的地方都指明使用了其命名空间</p>
+<table class="doxtable">
+<tr>
+<th align="left">类名 </th><th align="left">简介  </th></tr>
+<tr>
+<td align="left">Connection </td><td align="left">代表了一个NetworkManager的连接(可对应到具体配置文件) </td></tr>
+<tr>
+<td align="left">ConnectionSettings </td><td align="left">一个连接的设置，包含一些通用设置也可以获取到具体的Setting，其定义了各种Connection类型的enum </td></tr>
+<tr>
+<td align="left">Setting </td><td align="left">所有具体Setting的父类，其定义了各种Setting类型的enum </td></tr>
+<tr>
+<td align="left">Ipv4Setting </td><td align="left">继承自Setting，抽象了ipv4的设置，可以将其对应到控制中心的ipv4设置小节 </td></tr>
+<tr>
+<td align="left">... </td><td align="left">还有大量其他类似的子类Setting </td></tr>
+</table>
+<h3>库相关的其他知识</h3>
+<p>libkf5networkmanagerqt这个库的文档并不是十分详细，有时还没有源码的头文件的注释详细，不过文档也是一份参考， 而且对于迅速浏览这个库的结构，内容有很大帮助，文档包含在<code>libkf5networkmanagerqt-doc</code>这个包里， 安装这个包之后可以在qt-creator里的帮助里找到这份文档。</p>
+<p>除了上述类相关的，库中还有几个需要了解的**很重要**的函数库(直接在NetworkManager命名空间下的函数)：</p>
+<table class="doxtable">
+<tr>
+<th align="left">文件名 </th><th align="left">简介  </th></tr>
+<tr>
+<td align="left">manager.h </td><td align="left">这个头文件包含了很多管理性质的函数，如激活断开一个连接 </td></tr>
+<tr>
+<td align="left">settings.h </td><td align="left">新增查找一个连接 </td></tr>
+<tr>
+<td align="left">utils.h </td><td align="left">一些有用的工具函数 </td></tr>
+</table>
+<h2>主要流程</h2>
+<p>以有线网络的编辑举例： WiredPage将Connection的uuid作为参数去实例化一个ConnectionEditPage，ConnectionEditPage通过uuid从获取到一个Connection对象 和ConnectionSettings对象，进而用ConnectionSettings对象实例化控制中心的Settings类，Connection对象用来在最后保存设置。 控制中心的Settings类通过ConnectionSettings对象可以拿到Connection中包含的各种Setting， 根据自己的类型，使用对应类型的Setting对象去实例化不同的Section， 将各个Section组合在一起，并统一管理。</p>
+<p>总之，就是将一个Connection分级，按照界面的分级情况将对应的数据下发给界面所对应的类， 并且最终都会分配到一个Section类上， Section类进行详细工作。 </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:14 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

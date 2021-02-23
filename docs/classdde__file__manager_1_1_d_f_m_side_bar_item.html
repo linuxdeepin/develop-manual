@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde_file_manager::DFMSideBarItem类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdde__file__manager_1_1_d_f_m_side_bar_item.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="classdde__file__manager_1_1_d_f_m_side_bar_item-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dde_file_manager::DFMSideBarItem类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 dde_file_manager::DFMSideBarItem 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdde__file__manager_1_1_d_f_m_side_bar_item__inherit__graph.png" border="0" usemap="#dde__file__manager_1_1_d_f_m_side_bar_item_inherit__map" alt="Inheritance graph"/></div>
+<map name="dde__file__manager_1_1_d_f_m_side_bar_item_inherit__map" id="dde__file__manager_1_1_d_f_m_side_bar_item_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+dde_file_manager::DFMSideBarItem 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdde__file__manager_1_1_d_f_m_side_bar_item__coll__graph.png" border="0" usemap="#dde__file__manager_1_1_d_f_m_side_bar_item_coll__map" alt="Collaboration graph"/></div>
+<map name="dde__file__manager_1_1_d_f_m_side_bar_item_coll__map" id="dde__file__manager_1_1_d_f_m_side_bar_item_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a10a0dc8e481827e9c4b65ea47ec8228a"><td class="memItemLeft" align="right" valign="top"><a id="a10a0dc8e481827e9c4b65ea47ec8228a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Roles</b> { <br />
+&#160;&#160;<b>ItemTypeRole</b> = Dtk::UserRole + 1, 
+<b>ItemUrlRole</b>, 
+<b>ItemGroupNameRole</b>, 
+<b>ItemUseRegisteredHandlerRole</b>, 
+<br />
+&#160;&#160;<b>ItemUniqueKeyRole</b>, 
+<b>ItemVolTagRole</b>, 
+<b>ItemUserCustomRole</b> = Dtk::UserRole + 0x0100
+<br />
+ }</td></tr>
+<tr class="separator:a10a0dc8e481827e9c4b65ea47ec8228a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbc21e9168e4056a62d586eea9f9f55"><td class="memItemLeft" align="right" valign="top"><a id="a1fbc21e9168e4056a62d586eea9f9f55"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ItemTypes</b> { <b>SidebarItem</b>, 
+<b>Separator</b>
+ }</td></tr>
+<tr class="separator:a1fbc21e9168e4056a62d586eea9f9f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad471c24a3a22f9ee40159138333e3dac"><td class="memItemLeft" align="right" valign="top"><a id="ad471c24a3a22f9ee40159138333e3dac"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CdAction</b> { <b>ChangeDirectory</b>, 
+<b>MountPartitionThenCd</b>, 
+<b>UserCustom</b> = 0x0100
+ }</td></tr>
+<tr class="separator:ad471c24a3a22f9ee40159138333e3dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a86a8851381c6420760f8c14e6756b240"><td class="memItemLeft" align="right" valign="top"><a id="a86a8851381c6420760f8c14e6756b240"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFMSideBarItem</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url=<a class="el" href="class_d_url.html">DUrl</a>(), const QString &amp;groupName=&quot;default&quot;)</td></tr>
+<tr class="separator:a86a8851381c6420760f8c14e6756b240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13c3488e1fb5a1064b6bdbaebfc37c9"><td class="memItemLeft" align="right" valign="top"><a id="ad13c3488e1fb5a1064b6bdbaebfc37c9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DFMSideBarItem</b> (const QIcon &amp;icon, const QString &amp;text, const <a class="el" href="class_d_url.html">DUrl</a> &amp;url=<a class="el" href="class_d_url.html">DUrl</a>(), const QString &amp;groupName=&quot;default&quot;)</td></tr>
+<tr class="separator:ad13c3488e1fb5a1064b6bdbaebfc37c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2ab08893a291053ecc20bc34f0df15"><td class="memItemLeft" align="right" valign="top"><a id="a2f2ab08893a291053ecc20bc34f0df15"></a>
+<a class="el" href="class_d_url.html">DUrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>url</b> () const</td></tr>
+<tr class="separator:a2f2ab08893a291053ecc20bc34f0df15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316452e29cf6f576b78bc74ed48115a9"><td class="memItemLeft" align="right" valign="top"><a id="a316452e29cf6f576b78bc74ed48115a9"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>groupName</b> () const</td></tr>
+<tr class="separator:a316452e29cf6f576b78bc74ed48115a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4003ab0c42ec60bc563586c46577cdd5"><td class="memItemLeft" align="right" valign="top"><a id="a4003ab0c42ec60bc563586c46577cdd5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>itemType</b> () const</td></tr>
+<tr class="separator:a4003ab0c42ec60bc563586c46577cdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646cd3e5ba29fa8bca5c09fc4afd4372"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdde__file__manager_1_1_d_f_m_side_bar_item.html#a646cd3e5ba29fa8bca5c09fc4afd4372">type</a> () const</td></tr>
+<tr class="memdesc:a646cd3e5ba29fa8bca5c09fc4afd4372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of this item.  <a href="#a646cd3e5ba29fa8bca5c09fc4afd4372">更多...</a><br /></td></tr>
+<tr class="separator:a646cd3e5ba29fa8bca5c09fc4afd4372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af929ada33d0cf8faaefd0fa279e41a5d"><td class="memItemLeft" align="right" valign="top"><a id="af929ada33d0cf8faaefd0fa279e41a5d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>useRegisteredHandler</b> () const</td></tr>
+<tr class="separator:af929ada33d0cf8faaefd0fa279e41a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439430e902cda6652de1eeba84719e8c"><td class="memItemLeft" align="right" valign="top"><a id="a439430e902cda6652de1eeba84719e8c"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>registeredHandler</b> (const QString &amp;fallback=QString()) const</td></tr>
+<tr class="separator:a439430e902cda6652de1eeba84719e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68fd062a637146eadfee6ef6ea222b1"><td class="memItemLeft" align="right" valign="top"><a id="af68fd062a637146eadfee6ef6ea222b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUrl</b> (const <a class="el" href="class_d_url.html">DUrl</a> &amp;url)</td></tr>
+<tr class="separator:af68fd062a637146eadfee6ef6ea222b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236a8a69c65007e8a16e2fa2edab1f3c"><td class="memItemLeft" align="right" valign="top"><a id="a236a8a69c65007e8a16e2fa2edab1f3c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setGroupName</b> (const QString &amp;groupName)</td></tr>
+<tr class="separator:a236a8a69c65007e8a16e2fa2edab1f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cfdbdc5af6063484ad00c8666b01c9"><td class="memItemLeft" align="right" valign="top"><a id="a42cfdbdc5af6063484ad00c8666b01c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRegisteredHandler</b> (const QString &amp;identifier)</td></tr>
+<tr class="separator:a42cfdbdc5af6063484ad00c8666b01c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a1ab8591e49e1e82ba931c10ce87a5904"><td class="memItemLeft" align="right" valign="top"><a id="a1ab8591e49e1e82ba931c10ce87a5904"></a>
+static <a class="el" href="classdde__file__manager_1_1_d_f_m_side_bar_item.html">DFMSideBarItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createSeparatorItem</b> (const QString &amp;groupName)</td></tr>
+<tr class="separator:a1ab8591e49e1e82ba931c10ce87a5904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a6a53990203f2abe40f60b11d2f68bfd5"><td class="memItemLeft" align="right" valign="top"><a id="a6a53990203f2abe40f60b11d2f68bfd5"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>SidebarItemType</b> = QStandardItem::UserType + 1</td></tr>
+<tr class="separator:a6a53990203f2abe40f60b11d2f68bfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dfmsidebaritem_8h_source.html">dfmsidebaritem.h</a> 第 <a class="el" href="dfmsidebaritem_8h_source.html#l00032">32</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a646cd3e5ba29fa8bca5c09fc4afd4372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646cd3e5ba29fa8bca5c09fc4afd4372">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dde_file_manager::DFMSideBarItem::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the type of this item. </p>
+<p>The type is used to distinguish custom items from the base class, don't confused with the Roles::ItemTypeRole data role, they are NOT the same thing, for that purpose please use itemType() instead.</p>
+<dl class="section see"><dt>参见</dt><dd>itemType() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dfmsidebaritem_8cpp_source.html">dfmsidebaritem.cpp</a> 第 <a class="el" href="dfmsidebaritem_8cpp_source.html#l00089">89</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfmsidebaritem_8h_source.html">dfmsidebaritem.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/interfaces/<a class="el" href="dfmsidebaritem_8cpp_source.html">dfmsidebaritem.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedde__file__manager.html">dde_file_manager</a></li><li class="navelem"><a class="el" href="classdde__file__manager_1_1_d_f_m_side_bar_item.html">DFMSideBarItem</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

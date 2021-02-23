@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dde-file-manager/doc/PLUGIN-README.md 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_p_l_u_g_i_n-_r_e_a_d_m_e_8md.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dde-file-manager/doc/PLUGIN-README.md</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;## 深度文管上下文菜单 OEM 支持插件</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;在启用此插件支持后，在深度文件管理器载入此插件时，会识别指定目录下的 `.desktop` 文件，并将其视为扩展菜单项，加入到文件管理器的上下文菜单中。</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;### OEM 方式</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;每个定制菜单项为一个独立的 Application 类型的 `.desktop` 文件（遵循 [desktop-entry-spec](https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#extra-actions-identifier)）。对于每个文件，在其 `[Desktop Entry]` 下至少需要包含 `Name` 和 `Exec` 字段，`Name` 的内容为添加到上下文菜单中时将会显示的名称，`Exec` 的内容为当单击此新增的菜单项时将会执行的行为（遵循 desktop 文件规范标准，可以使用 `%u` 等参数）。</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;定制菜单支持使用 `Actions` 字段增加指定的子菜单，子菜单需至少包含 `Name` 和 `Exec` 字段，可以通过 `Icon` 指定图标。若指定子菜单，则入口项（原本 `[Desktop Entry]` 下）的 `Exec` 字段将不再有效。</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;对于文件管理器菜单项定制，支持额外的字段可供定制，可以使用 `X-DFM-MenuTypes` 字段来指定菜单项在何种情况会显示，此字段可包含一个或多个类型，其中包括 `SingleFile`, `SingleDir`, `MultiFileDirs` 和 `EmptyArea` 四种。</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;| 名称 | 含义 |</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;| :- | :- |</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;| `SingleFile` | 在单独的文件上触发上下文菜单 |</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;| `SingleDir` | 在单独的文件夹/目录上触发上下文菜单 |</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;| `MultiFileDirs` | 在多个文件/文件夹上触发上下文菜单 |</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;| `EmptyArea`| 在空白区域触发上下文菜单 |</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;可以使用 `;` 作为分割填写多个值，但注意，包含 `X-DFM-MenuTypes` 字段但内容为空的情况和不包含 `X-DFM-MenuTypes` 字段的情况不同，包含但为空将不会在任何位置显示，不包含将会视为会在任何情况下显示。</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;`MimeType` 可以根据被选中的文件类型决定菜单项是否显示被添加的项，支持模糊匹配（如 `MimeType=image/*;` ）。 同 `X-DFM-MenuTypes` 一样， `MimeType` 只能用在 `[Desktop Entry]` 项目中，使用 `;` 作为分割填写多个值， `MimeType` 字段但内容为空的情况和不包含 `MimeType` 字段的情况不同，包含但为空将不会在任何位置显示，不包含将会视为 `MimeType=*;`。</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;`X-DFM-ExcludeMimeTypes` 可以排除特定的文件类型，只能用在 `[Desktop Entry]` 项目中，使用 `;` 作为分割填写多个值，支持模糊匹配。优先于 `MimeTypes`项过滤文件，即如果 `MimeTypes` 和 `X-DFM-ExcludeMimeTypes`同时包含某种文件类型时，该文件类型被选中将无法显示菜单。</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;注意： MimeType 本身呈树形结构关系，配置 `MimeType` 所对应的值将匹配文件所对应的最佳匹配 MimeType 及其完整父级关系，即若文件的 MimeType 关系树中任意一项匹配了 `MimeType` 中所配置的值，则匹配成功。例如，若配置 `MimeType=text/plain;` 则除 `text/plain` 外还会匹配 `application/json` `application/xml` 等类型的文件，因为它们的父级 MimeType 关系中包含 `text/plain`。 而 `X-DFM-ExcludeMimeTypes` 则仅对完全匹配此配置中所包含的 MimeType 进行过滤，不过滤其父级关系。如 `*.xlxs` 文件的父级 MimeType 有 `application/zip`,但 `ExcludeMimeTypes=application/zip` 不会过滤掉 `*.xlxs` 文件。 </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;`X-DFM-NotShowIn` 可以决定是否在桌面或者文件管理器显示菜单，此字段可包含一个或多个类型，其中包括 `FileManager`, `Desktop` 两种，字段不存在或字段为空时在桌面和文件管理均可显示。</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;| 名称 | 含义 |</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;| :- | :- |</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;| `FileManager` | 在文件管理器中触发上下文菜单 |</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;| `Desktop` | 在桌面触发上下文菜单 |</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;`X-DFM-SupportSchemes` 可以决定是否在指定的目录scheme下显示菜单，此字段可包含一个或多个类型，其中包括 `file`, `trash`, `recent`, `bookmark` 等多种，字段不包含时任何位置均可显示菜单，字段内容为空时将不显示菜单。</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;| 名称 | 含义 |</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;| :- | :- |</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;| `file` | 在本地文件上触发上下文菜单 |</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;| `trash ` | 在回收站中触发上下文菜单 |</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;| `recent ` | 在最近文件中触发上下文菜单 |</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;| `bookmark ` | 在书签文件触发上下文菜单 |</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;`X-DFM-SupportSuffix`  可以决定是否根据(全)后缀名过滤显示菜单，如在 `test.7z.002` `test.7z.003` `test.7z.004` 等文件上显示压缩菜单，由于分卷文件 `MimeType` 是 `application/octet-stream` 无法通过文件类型显示，特增加通过后缀显示菜单，此情况可以用 `7z.*` 来支持。</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;OEM 厂商需要将待添加的 `desktop` 文件放置到 `/usr/share/deepin/dde-file-manager/oem-menuextensions/` 位置，在下次启动文件管理器时[^1]，选中任意一个或多个文件并触发上下文菜单，将可以看到新增的项目位于其中。</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;### 示例 `.desktop` 文件</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;可以将下面的示例存储为 `test.desktop` 并放置到 `/usr/share/deepin/dde-file-manager/oem-menuextensions/` 中，关闭现有的所有文件管理器窗口并打开新的文件管理器窗口，定制的菜单将会出现在单独目录或多选文件的情况的上下文菜单中。</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;### 示例 1 - 单项菜单</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;``` ini</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;[Desktop Entry]</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;Type=Application</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;Exec=/home/wzc/Temp/test.sh %U</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;Icon=utilities-terminal</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;Name=示例菜单项名称</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;X-DFM-MenuTypes=SingleDir;MultiFileDirs;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;```</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;### 示例 2 - 包含子菜单</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;注意这种情况时，由于包含子菜单，故在 `[Desktop Entry]` 下添加 `Exec` 不会起任何作用。另外，`X-DFM-MenuTypes` 只能用在 `[Desktop Entry]` 项目中，不能用在子菜单中。</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;``` ini</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;[Desktop Entry]</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;Type=Application</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;Icon=utilities-terminal</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;Name=示例菜单项名称</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;Actions=TestAction;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;X-DFM-MenuTypes=SingleDir;MultiFileDirs;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;[Desktop Action TestAction]</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;Name=示例子菜单</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;Exec=/home/wzc/Temp/test.sh %U</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;```</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;### 完整示例 - 复制文件路径</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;1. 切换到 `.desktop` 文件所在目录 `/usr/share/deepin/dde-file-manager/oem-menuextensions/` 。</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;```</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;sudo mkdir /usr/share/deepin/dde-file-manager</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;sudo mkdir /usr/share/deepin/dde-file-manager/oem-menuextensions</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;cd /usr/share/deepin/dde-file-manager/oem-menuextensions</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;```</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;2. 使用文本编辑器（如 `deepin-editor` 或 `vim` ）创建一个文本文件（需要root权限保存）, 名称可以自定义， 后缀名为`.desktop`。</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;```</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;sudo deepin-editor copyfilepath.desktop</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;```</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;3. 在文件中加入以下内容， `Icon` 图标可以去 `/usr/share/icons/` 中选择合适的图标。 </div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;```</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;[Desktop Entry]</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;Type=Application</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;Icon=edit-copy</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;Name=复制文件路径</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;X-DFM-MenuTypes=SingleFile;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;Exec=~/copyfilepath.sh %u</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;MimeType=text/plain;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;X-DFM-NotShowIn=Desktop</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;X-DFM-ExcludeMimeTypes=application/xml;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;```</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;4. 在主目录下创建 `copyfilepath.sh` 脚本。</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;```</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;cd ~</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;deepin-editor copyfilepath.sh</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;```</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;在文本中加入以下内容</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;```</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;#!/bin/bash</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;echo -n $1 | xclip -i -selection clipboard</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;```</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;至此，重新启动文件管理器，文件列表中常规文本文件的右键菜单会多一个菜单项 `复制文件路径`，点击即可将文件路径复制到剪切板中。</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;[^1]: 注：这是由于菜单列表仅在文件管理器（桌面）启动时识别并记录一次。在部分平台，深度文件管理器存在加速启动用的进程常驻后台，您可能需要结束所有文件管理器进程。类似的，对于桌面，也需要重启桌面的相应进程才能使桌面使用新增的菜单。</div></div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>PLUGIN-README.md</b></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:38:22 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

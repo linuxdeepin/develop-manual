@@ -1,0 +1,987 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: CGraphicsTextItem类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_c_graphics_text_item.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_c_graphics_text_item-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CGraphicsTextItem类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 CGraphicsTextItem 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_graphics_text_item__inherit__graph.png" border="0" usemap="#_c_graphics_text_item_inherit__map" alt="Inheritance graph"/></div>
+<map name="_c_graphics_text_item_inherit__map" id="_c_graphics_text_item_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+CGraphicsTextItem 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_graphics_text_item__coll__graph.png" border="0" usemap="#_c_graphics_text_item_coll__map" alt="Collaboration graph"/></div>
+<map name="_c_graphics_text_item_coll__map" id="_c_graphics_text_item_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a13940e7311a5d760b9d6cff46caf7a5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a13940e7311a5d760b9d6cff46caf7a5b">EState</a> { <b>EReadOnly</b>, 
+<b>EInEdit</b>
+ }<tr class="memdesc:a13940e7311a5d760b9d6cff46caf7a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTextState 设置当前文字的状态  <a href="class_c_graphics_text_item.html#a13940e7311a5d760b9d6cff46caf7a5b">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a13940e7311a5d760b9d6cff46caf7a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_c_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_c_graphics_item')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a></td></tr>
+<tr class="memitem:aadbe2262aa5cafda44c023d8e541c4c6 inherit pub_types_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aadbe2262aa5cafda44c023d8e541c4c6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EFilpDirect</b> { <b>EFilpHor</b>, 
+<b>EFilpVer</b>
+ }</td></tr>
+<tr class="separator:aadbe2262aa5cafda44c023d8e541c4c6 inherit pub_types_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9797016b4dcee94a838073bc4b46a9f inherit pub_types_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ab9797016b4dcee94a838073bc4b46a9f"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>Type</b> = UserType
+ }</td></tr>
+<tr class="separator:ab9797016b4dcee94a838073bc4b46a9f inherit pub_types_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abdc4e3d08ba8d7d6e6beaab42d3c404b"><td class="memItemLeft" align="right" valign="top"><a id="abdc4e3d08ba8d7d6e6beaab42d3c404b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#abdc4e3d08ba8d7d6e6beaab42d3c404b">CGraphicsTextItem</a> (const QString &amp;text=&quot;&quot;, <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:abdc4e3d08ba8d7d6e6beaab42d3c404b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_graphics_text_item.html">CGraphicsTextItem</a> 构造函数 <br /></td></tr>
+<tr class="separator:abdc4e3d08ba8d7d6e6beaab42d3c404b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85337b8e9a4b9564a2f692b956309d8d"><td class="memItemLeft" align="right" valign="top"><a id="a85337b8e9a4b9564a2f692b956309d8d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a85337b8e9a4b9564a2f692b956309d8d">~CGraphicsTextItem</a> () override</td></tr>
+<tr class="memdesc:a85337b8e9a4b9564a2f692b956309d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> 析构函数 <br /></td></tr>
+<tr class="separator:a85337b8e9a4b9564a2f692b956309d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaabb10327919356a609126ddc666b0a"><td class="memItemLeft" align="right" valign="top"><a id="abaabb10327919356a609126ddc666b0a"></a>
+<a class="el" href="class_c_text_edit.html">CTextEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#abaabb10327919356a609126ddc666b0a">textEditor</a> () const</td></tr>
+<tr class="memdesc:abaabb10327919356a609126ddc666b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">textEditor 文字编辑控件 <br /></td></tr>
+<tr class="separator:abaabb10327919356a609126ddc666b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd61ed42d4a7fe592aa8c16c6920efb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#aabd61ed42d4a7fe592aa8c16c6920efb">type</a> () const override</td></tr>
+<tr class="memdesc:aabd61ed42d4a7fe592aa8c16c6920efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">proxyWidgetItem 代理编辑控件的场景图元(被设置为文字图元的子item)  <a href="#aabd61ed42d4a7fe592aa8c16c6920efb">更多...</a><br /></td></tr>
+<tr class="separator:aabd61ed42d4a7fe592aa8c16c6920efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce06a8b99064b91a34e0442bc2477bc"><td class="memItemLeft" align="right" valign="top"><a id="a9ce06a8b99064b91a34e0442bc2477bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a9ce06a8b99064b91a34e0442bc2477bc">setRect</a> (const QRectF &amp;<a class="el" href="class_c_graphics_rect_item.html#a2df3dd5bab2b25e3aca0061f9ae13454">rect</a>) override</td></tr>
+<tr class="memdesc:a9ce06a8b99064b91a34e0442bc2477bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">setRect 设置文字图元的大小 <br /></td></tr>
+<tr class="separator:a9ce06a8b99064b91a34e0442bc2477bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7521dd2edd41083ab55cc0c88d9c85"><td class="memItemLeft" align="right" valign="top"><a id="a3a7521dd2edd41083ab55cc0c88d9c85"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a3a7521dd2edd41083ab55cc0c88d9c85">updateProxyItemPos</a> ()</td></tr>
+<tr class="memdesc:a3a7521dd2edd41083ab55cc0c88d9c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateProxyItemPos 刷新代理图元的位置 <br /></td></tr>
+<tr class="separator:a3a7521dd2edd41083ab55cc0c88d9c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb928a4c57f6ef1751d0242e633846c"><td class="memItemLeft" align="right" valign="top"><a id="a7eb928a4c57f6ef1751d0242e633846c"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a7eb928a4c57f6ef1751d0242e633846c">font</a> () const</td></tr>
+<tr class="memdesc:a7eb928a4c57f6ef1751d0242e633846c"><td class="mdescLeft">&#160;</td><td class="mdescRight">font 文字的字体 <br /></td></tr>
+<tr class="separator:a7eb928a4c57f6ef1751d0242e633846c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af880b56b1d076bfe2ce556ad95d111"><td class="memItemLeft" align="right" valign="top"><a id="a9af880b56b1d076bfe2ce556ad95d111"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a9af880b56b1d076bfe2ce556ad95d111">setFont</a> (const QFont &amp;<a class="el" href="class_c_graphics_text_item.html#a7eb928a4c57f6ef1751d0242e633846c">font</a>)</td></tr>
+<tr class="memdesc:a9af880b56b1d076bfe2ce556ad95d111"><td class="mdescLeft">&#160;</td><td class="mdescRight">setFont 设置文字的字体 <br /></td></tr>
+<tr class="separator:a9af880b56b1d076bfe2ce556ad95d111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a37fcb750013849e8c8edce7dc3784"><td class="memItemLeft" align="right" valign="top"><a id="a56a37fcb750013849e8c8edce7dc3784"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a56a37fcb750013849e8c8edce7dc3784">setFontStyle</a> (const QString &amp;style)</td></tr>
+<tr class="memdesc:a56a37fcb750013849e8c8edce7dc3784"><td class="mdescLeft">&#160;</td><td class="mdescRight">setFontStyle 设置文字字体的样式 <br /></td></tr>
+<tr class="separator:a56a37fcb750013849e8c8edce7dc3784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6720a474e23473fe8fba3d59df5951"><td class="memItemLeft" align="right" valign="top"><a id="a8c6720a474e23473fe8fba3d59df5951"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a8c6720a474e23473fe8fba3d59df5951">fontStyle</a> ()</td></tr>
+<tr class="memdesc:a8c6720a474e23473fe8fba3d59df5951"><td class="mdescLeft">&#160;</td><td class="mdescRight">fontStyle 文字字体的样式 <br /></td></tr>
+<tr class="separator:a8c6720a474e23473fe8fba3d59df5951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5feaf2ae6199ef215e2dd6c11a11b93"><td class="memItemLeft" align="right" valign="top"><a id="ac5feaf2ae6199ef215e2dd6c11a11b93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#ac5feaf2ae6199ef215e2dd6c11a11b93">setFontSize</a> (int size)</td></tr>
+<tr class="memdesc:ac5feaf2ae6199ef215e2dd6c11a11b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">setFontSize 设置文字字体的大小(pt) <br /></td></tr>
+<tr class="separator:ac5feaf2ae6199ef215e2dd6c11a11b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a78d78c1580eb23484c78d566d3450"><td class="memItemLeft" align="right" valign="top"><a id="a58a78d78c1580eb23484c78d566d3450"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a58a78d78c1580eb23484c78d566d3450">fontSize</a> ()</td></tr>
+<tr class="memdesc:a58a78d78c1580eb23484c78d566d3450"><td class="mdescLeft">&#160;</td><td class="mdescRight">fontSize 文字字字体的大小(pt) <br /></td></tr>
+<tr class="separator:a58a78d78c1580eb23484c78d566d3450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315735c3b5bc519516600dc95414096c"><td class="memItemLeft" align="right" valign="top"><a id="a315735c3b5bc519516600dc95414096c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a315735c3b5bc519516600dc95414096c">setFontFamily</a> (const QString &amp;family)</td></tr>
+<tr class="memdesc:a315735c3b5bc519516600dc95414096c"><td class="mdescLeft">&#160;</td><td class="mdescRight">setFontFamily 设置文字字体的族名 <br /></td></tr>
+<tr class="separator:a315735c3b5bc519516600dc95414096c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72df6f0b0b402a0cccaf2e892493a364"><td class="memItemLeft" align="right" valign="top"><a id="a72df6f0b0b402a0cccaf2e892493a364"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a72df6f0b0b402a0cccaf2e892493a364">fontFamily</a> ()</td></tr>
+<tr class="memdesc:a72df6f0b0b402a0cccaf2e892493a364"><td class="mdescLeft">&#160;</td><td class="mdescRight">fontFamily 文字字体的族名 <br /></td></tr>
+<tr class="separator:a72df6f0b0b402a0cccaf2e892493a364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad076da056570f44ef974c039209096"><td class="memItemLeft" align="right" valign="top"><a id="abad076da056570f44ef974c039209096"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#abad076da056570f44ef974c039209096">setTextColor</a> (const QColor &amp;col)</td></tr>
+<tr class="memdesc:abad076da056570f44ef974c039209096"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTextColor 设置文字的颜色 <br /></td></tr>
+<tr class="separator:abad076da056570f44ef974c039209096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9d7f93349e2ee577e78b074a37b4c4"><td class="memItemLeft" align="right" valign="top"><a id="a4c9d7f93349e2ee577e78b074a37b4c4"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a4c9d7f93349e2ee577e78b074a37b4c4">textColor</a> () const</td></tr>
+<tr class="memdesc:a4c9d7f93349e2ee577e78b074a37b4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">textColor 文字的颜色 <br /></td></tr>
+<tr class="separator:a4c9d7f93349e2ee577e78b074a37b4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390150cd7db8b3211986fff951974570"><td class="memItemLeft" align="right" valign="top"><a id="a390150cd7db8b3211986fff951974570"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a390150cd7db8b3211986fff951974570">setCurrentFormat</a> (const QTextCharFormat &amp;format, bool merge=false)</td></tr>
+<tr class="memdesc:a390150cd7db8b3211986fff951974570"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCurrentFormat 设置字符格式 <br /></td></tr>
+<tr class="separator:a390150cd7db8b3211986fff951974570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0995ddc8e8a5ecdb04493fa02a1c0ee3"><td class="memItemLeft" align="right" valign="top"><a id="a0995ddc8e8a5ecdb04493fa02a1c0ee3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a0995ddc8e8a5ecdb04493fa02a1c0ee3">updateTextFormat</a> ()</td></tr>
+<tr class="memdesc:a0995ddc8e8a5ecdb04493fa02a1c0ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateTextFormat 从当前view的CDrawParamSigleton缓存中读取文字的信息进行格式刷新 <br /></td></tr>
+<tr class="separator:a0995ddc8e8a5ecdb04493fa02a1c0ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a724e9a207775de1112499e481dda71e2"><td class="memItemLeft" align="right" valign="top"><a id="a724e9a207775de1112499e481dda71e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a724e9a207775de1112499e481dda71e2">loadGraphicsUnit</a> (const <a class="el" href="struct_c_graphics_unit.html">CGraphicsUnit</a> &amp;data) override</td></tr>
+<tr class="memdesc:a724e9a207775de1112499e481dda71e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">loadGraphicsUnit 加载文字图元数据 <br /></td></tr>
+<tr class="separator:a724e9a207775de1112499e481dda71e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a331f24ce9a9f144ddd46046df1700c"><td class="memItemLeft" align="right" valign="top"><a id="a6a331f24ce9a9f144ddd46046df1700c"></a>
+<a class="el" href="struct_c_graphics_unit.html">CGraphicsUnit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a6a331f24ce9a9f144ddd46046df1700c">getGraphicsUnit</a> (EDataReason reson) const override</td></tr>
+<tr class="memdesc:a6a331f24ce9a9f144ddd46046df1700c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getGraphicsUnit 获取当前文字图元的数据 <br /></td></tr>
+<tr class="separator:a6a331f24ce9a9f144ddd46046df1700c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d9d0d418458a35b87f5bee9aa31bc5"><td class="memItemLeft" align="right" valign="top"><a id="a08d9d0d418458a35b87f5bee9aa31bc5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTextState</b> (<a class="el" href="class_c_graphics_text_item.html#a13940e7311a5d760b9d6cff46caf7a5b">EState</a> state, bool selectAllText=true)</td></tr>
+<tr class="separator:a08d9d0d418458a35b87f5bee9aa31bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4c22a27a3771f82ccb08265b88f850"><td class="memItemLeft" align="right" valign="top"><a id="a1f4c22a27a3771f82ccb08265b88f850"></a>
+<a class="el" href="class_c_graphics_text_item.html#a13940e7311a5d760b9d6cff46caf7a5b">EState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a1f4c22a27a3771f82ccb08265b88f850">textState</a> () const</td></tr>
+<tr class="memdesc:a1f4c22a27a3771f82ccb08265b88f850"><td class="mdescLeft">&#160;</td><td class="mdescRight">textState 当前文字状态(EReadOnly:0表示只读的状态,EInEdit:1表示编辑中的状态) <br /></td></tr>
+<tr class="separator:a1f4c22a27a3771f82ccb08265b88f850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f742212b79fbbb60ebc23a9dbd33545"><td class="memItemLeft" align="right" valign="top"><a id="a8f742212b79fbbb60ebc23a9dbd33545"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a8f742212b79fbbb60ebc23a9dbd33545">isEditState</a> () const</td></tr>
+<tr class="memdesc:a8f742212b79fbbb60ebc23a9dbd33545"><td class="mdescLeft">&#160;</td><td class="mdescRight">isEditState 当前是否是编辑状态 <br /></td></tr>
+<tr class="separator:a8f742212b79fbbb60ebc23a9dbd33545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87bd683bd33be1e8f99f9c5858285910"><td class="memItemLeft" align="right" valign="top"><a id="a87bd683bd33be1e8f99f9c5858285910"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a87bd683bd33be1e8f99f9c5858285910">toFocusEiditor</a> ()</td></tr>
+<tr class="memdesc:a87bd683bd33be1e8f99f9c5858285910"><td class="mdescLeft">&#160;</td><td class="mdescRight">toFocusEiditor 使编辑控件占有焦点 <br /></td></tr>
+<tr class="separator:a87bd683bd33be1e8f99f9c5858285910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b6ca68f3ef2b517e6214256737e030"><td class="memItemLeft" align="right" valign="top"><a id="a89b6ca68f3ef2b517e6214256737e030"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a89b6ca68f3ef2b517e6214256737e030">doCut</a> ()</td></tr>
+<tr class="memdesc:a89b6ca68f3ef2b517e6214256737e030"><td class="mdescLeft">&#160;</td><td class="mdescRight">右键餐单功能 <br /></td></tr>
+<tr class="separator:a89b6ca68f3ef2b517e6214256737e030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ce84d8064a134781c152f32db96b0c"><td class="memItemLeft" align="right" valign="top"><a id="ab8ce84d8064a134781c152f32db96b0c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>doCopy</b> ()</td></tr>
+<tr class="separator:ab8ce84d8064a134781c152f32db96b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22e7002b442ba674fcfa3b9e307ca4f"><td class="memItemLeft" align="right" valign="top"><a id="ac22e7002b442ba674fcfa3b9e307ca4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>doPaste</b> ()</td></tr>
+<tr class="separator:ac22e7002b442ba674fcfa3b9e307ca4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad409b03f7da09c2609d8efb16e4eac5e"><td class="memItemLeft" align="right" valign="top"><a id="ad409b03f7da09c2609d8efb16e4eac5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>doSelectAll</b> ()</td></tr>
+<tr class="separator:ad409b03f7da09c2609d8efb16e4eac5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5e195c6344ebe06119cd5a9c55b8c8"><td class="memItemLeft" align="right" valign="top"><a id="a5b5e195c6344ebe06119cd5a9c55b8c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelectTextBlockAlign</b> (const Qt::Alignment &amp;align)</td></tr>
+<tr class="separator:a5b5e195c6344ebe06119cd5a9c55b8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec4b036b2c93f6cf2bf53c92d69adb2"><td class="memItemLeft" align="right" valign="top"><a id="a0ec4b036b2c93f6cf2bf53c92d69adb2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>doUndo</b> ()</td></tr>
+<tr class="separator:a0ec4b036b2c93f6cf2bf53c92d69adb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3eb33fa7c2cf51dbbef63e7bd956770"><td class="memItemLeft" align="right" valign="top"><a id="ad3eb33fa7c2cf51dbbef63e7bd956770"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>doRedo</b> ()</td></tr>
+<tr class="separator:ad3eb33fa7c2cf51dbbef63e7bd956770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8551c0013842fe6112c116a2c67eb0"><td class="memItemLeft" align="right" valign="top"><a id="acc8551c0013842fe6112c116a2c67eb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>doDelete</b> ()</td></tr>
+<tr class="separator:acc8551c0013842fe6112c116a2c67eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05a6026b6f3958a1d1f31c005e16a4f"><td class="memItemLeft" align="right" valign="top"><a id="ae05a6026b6f3958a1d1f31c005e16a4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#ae05a6026b6f3958a1d1f31c005e16a4f">setAutoAdjustSize</a> (bool b)</td></tr>
+<tr class="memdesc:ae05a6026b6f3958a1d1f31c005e16a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">setAutoAdjustSize 设置是否根据文本的内容调整大小 <br /></td></tr>
+<tr class="separator:ae05a6026b6f3958a1d1f31c005e16a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e908cbe6f05c80e88fc476922fb626f"><td class="memItemLeft" align="right" valign="top"><a id="a2e908cbe6f05c80e88fc476922fb626f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a2e908cbe6f05c80e88fc476922fb626f">isAutoAdjustSize</a> () const</td></tr>
+<tr class="memdesc:a2e908cbe6f05c80e88fc476922fb626f"><td class="mdescLeft">&#160;</td><td class="mdescRight">isAutoAdjustSize 是否根据文本的内容调整大小(否则就是自动换行) <br /></td></tr>
+<tr class="separator:a2e908cbe6f05c80e88fc476922fb626f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7352ad3216e4b13686cf391c33c89bd1"><td class="memItemLeft" align="right" valign="top">QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a7352ad3216e4b13686cf391c33c89bd1">getHighLightPath</a> () override</td></tr>
+<tr class="memdesc:a7352ad3216e4b13686cf391c33c89bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">getHighLightPath 获取高亮path  <a href="#a7352ad3216e4b13686cf391c33c89bd1">更多...</a><br /></td></tr>
+<tr class="separator:a7352ad3216e4b13686cf391c33c89bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d215e771c504ed12a8f824d95124f1e"><td class="memItemLeft" align="right" valign="top"><a id="a2d215e771c504ed12a8f824d95124f1e"></a>
+QTextCharFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a2d215e771c504ed12a8f824d95124f1e">currentCharFormat</a> ()</td></tr>
+<tr class="memdesc:a2d215e771c504ed12a8f824d95124f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">currentCharFormat 获取到当前的字体格式 <br /></td></tr>
+<tr class="separator:a2d215e771c504ed12a8f824d95124f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac8559b54c6a2e5ff4039e2f0786b88"><td class="memItemLeft" align="right" valign="top"><a id="adac8559b54c6a2e5ff4039e2f0786b88"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#adac8559b54c6a2e5ff4039e2f0786b88">isSelectionEmpty</a> ()</td></tr>
+<tr class="memdesc:adac8559b54c6a2e5ff4039e2f0786b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">isSelectionEmpty 是否存在选中的文字 <br /></td></tr>
+<tr class="separator:adac8559b54c6a2e5ff4039e2f0786b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffacf0b2b191d049e77370489c2ea3b"><td class="memItemLeft" align="right" valign="top"><a id="a5ffacf0b2b191d049e77370489c2ea3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a5ffacf0b2b191d049e77370489c2ea3b">beginPreview</a> ()</td></tr>
+<tr class="memdesc:a5ffacf0b2b191d049e77370489c2ea3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">beginPreview 如果某个改动是频繁连续的,在改动的过程中需要预览,那么在开始前可以调用该函数进行预览准备 <br /></td></tr>
+<tr class="separator:a5ffacf0b2b191d049e77370489c2ea3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd5a8aa96569dabda7b579c81e673da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a8fd5a8aa96569dabda7b579c81e673da">endPreview</a> (bool revert=true)</td></tr>
+<tr class="memdesc:a8fd5a8aa96569dabda7b579c81e673da"><td class="mdescLeft">&#160;</td><td class="mdescRight">endPreview 结束预览  <a href="#a8fd5a8aa96569dabda7b579c81e673da">更多...</a><br /></td></tr>
+<tr class="separator:a8fd5a8aa96569dabda7b579c81e673da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb8bd9c7226848797ba9d73004b32be"><td class="memItemLeft" align="right" valign="top"><a id="a8cb8bd9c7226848797ba9d73004b32be"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a8cb8bd9c7226848797ba9d73004b32be">isPreview</a> ()</td></tr>
+<tr class="memdesc:a8cb8bd9c7226848797ba9d73004b32be"><td class="mdescLeft">&#160;</td><td class="mdescRight">beginPreview 是否正在预览中 <br /></td></tr>
+<tr class="separator:a8cb8bd9c7226848797ba9d73004b32be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_c_graphics_rect_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_graphics_rect_item')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_c_graphics_rect_item.html">CGraphicsRectItem</a></td></tr>
+<tr class="memitem:aeb995eeb51adcb2996f2d25493771d3a inherit pub_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top"><a id="aeb995eeb51adcb2996f2d25493771d3a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CGraphicsRectItem</b> (<a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *parent=nullptr)</td></tr>
+<tr class="separator:aeb995eeb51adcb2996f2d25493771d3a inherit pub_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1177d7d73e516fec0e1f2897c0f4ba inherit pub_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top"><a id="ada1177d7d73e516fec0e1f2897c0f4ba"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CGraphicsRectItem</b> (const QRectF &amp;<a class="el" href="class_c_graphics_rect_item.html#a2df3dd5bab2b25e3aca0061f9ae13454">rect</a>, <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *parent=nullptr)</td></tr>
+<tr class="separator:ada1177d7d73e516fec0e1f2897c0f4ba inherit pub_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4d59640f70655dce3f8ba17a6baacd inherit pub_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top"><a id="aeb4d59640f70655dce3f8ba17a6baacd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CGraphicsRectItem</b> (qreal x, qreal y, qreal w, qreal h, <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *parent=nullptr)</td></tr>
+<tr class="separator:aeb4d59640f70655dce3f8ba17a6baacd inherit pub_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df3dd5bab2b25e3aca0061f9ae13454 inherit pub_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_rect_item.html#a2df3dd5bab2b25e3aca0061f9ae13454">rect</a> () const override</td></tr>
+<tr class="memdesc:a2df3dd5bab2b25e3aca0061f9ae13454 inherit pub_methods_class_c_graphics_rect_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">rect 矩形的大小  <a href="class_c_graphics_rect_item.html#a2df3dd5bab2b25e3aca0061f9ae13454">更多...</a><br /></td></tr>
+<tr class="separator:a2df3dd5bab2b25e3aca0061f9ae13454 inherit pub_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184262ba52798a5834aa529531eef7d1 inherit pub_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top"><a id="a184262ba52798a5834aa529531eef7d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_rect_item.html#a184262ba52798a5834aa529531eef7d1">doScaling</a> (<a class="el" href="class_c_graph_item_scal_event.html">CGraphItemScalEvent</a> *event) override</td></tr>
+<tr class="memdesc:a184262ba52798a5834aa529531eef7d1 inherit pub_methods_class_c_graphics_rect_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">operating 执行操作 <br /></td></tr>
+<tr class="separator:a184262ba52798a5834aa529531eef7d1 inherit pub_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb98e34911d14f58bf71395a01574bd inherit pub_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top"><a id="a1fb98e34911d14f58bf71395a01574bd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>testScaling</b> (<a class="el" href="class_c_graph_item_scal_event.html">CGraphItemScalEvent</a> *event) override</td></tr>
+<tr class="separator:a1fb98e34911d14f58bf71395a01574bd inherit pub_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fcfdcac662c2dce1e770473f620af4b inherit pub_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_rect_item.html#a4fcfdcac662c2dce1e770473f620af4b">setXYRedius</a> (int xRedius, int yRedius, bool preview=false)</td></tr>
+<tr class="memdesc:a4fcfdcac662c2dce1e770473f620af4b inherit pub_methods_class_c_graphics_rect_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setXYRedius 设置矩形圆角半径  <a href="class_c_graphics_rect_item.html#a4fcfdcac662c2dce1e770473f620af4b">更多...</a><br /></td></tr>
+<tr class="separator:a4fcfdcac662c2dce1e770473f620af4b inherit pub_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c40a7d78e12cb4a81c98d4758ce80f inherit pub_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_rect_item.html#a72c40a7d78e12cb4a81c98d4758ce80f">getXRedius</a> ()</td></tr>
+<tr class="memdesc:a72c40a7d78e12cb4a81c98d4758ce80f inherit pub_methods_class_c_graphics_rect_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">getXYRedius 默认返回一个，返回圆角半径  <a href="class_c_graphics_rect_item.html#a72c40a7d78e12cb4a81c98d4758ce80f">更多...</a><br /></td></tr>
+<tr class="separator:a72c40a7d78e12cb4a81c98d4758ce80f inherit pub_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00b9f7a3bcf71f370d3dd7144aad557 inherit pub_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_rect_item.html#af00b9f7a3bcf71f370d3dd7144aad557">getPaintRedius</a> ()</td></tr>
+<tr class="memdesc:af00b9f7a3bcf71f370d3dd7144aad557 inherit pub_methods_class_c_graphics_rect_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">getXYRedius 默认返回一个，返回圆角半径  <a href="class_c_graphics_rect_item.html#af00b9f7a3bcf71f370d3dd7144aad557">更多...</a><br /></td></tr>
+<tr class="separator:af00b9f7a3bcf71f370d3dd7144aad557 inherit pub_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_c_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_graphics_item')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a></td></tr>
+<tr class="memitem:ab08bcdd9fc2cf23f64bd16067b0a8af1 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ab08bcdd9fc2cf23f64bd16067b0a8af1">CGraphicsItem</a> (QGraphicsItem *parent)</td></tr>
+<tr class="memdesc:ab08bcdd9fc2cf23f64bd16067b0a8af1 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> 构造函数  <a href="class_c_graphics_item.html#ab08bcdd9fc2cf23f64bd16067b0a8af1">更多...</a><br /></td></tr>
+<tr class="separator:ab08bcdd9fc2cf23f64bd16067b0a8af1 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad480bd976cfef6b9fb649ec01abe0a6c inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ad480bd976cfef6b9fb649ec01abe0a6c">setScene</a> (QGraphicsScene *scene, bool calZ=true)</td></tr>
+<tr class="memdesc:ad480bd976cfef6b9fb649ec01abe0a6c inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setScene 设置图元所处的场景  <a href="class_c_graphics_item.html#ad480bd976cfef6b9fb649ec01abe0a6c">更多...</a><br /></td></tr>
+<tr class="separator:ad480bd976cfef6b9fb649ec01abe0a6c inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a523901c2603341e1f2a61010bf1df055 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_graphics_view.html">CGraphicsView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a523901c2603341e1f2a61010bf1df055">curView</a> () const</td></tr>
+<tr class="memdesc:a523901c2603341e1f2a61010bf1df055 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">curView 返回当前所处的view  <a href="class_c_graphics_item.html#a523901c2603341e1f2a61010bf1df055">更多...</a><br /></td></tr>
+<tr class="separator:a523901c2603341e1f2a61010bf1df055 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736f640b9f4756779456729d6bd5e9c2 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_draw_scene.html">CDrawScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a736f640b9f4756779456729d6bd5e9c2">drawScene</a> () const</td></tr>
+<tr class="memdesc:a736f640b9f4756779456729d6bd5e9c2 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawScene 返回当前所处的scene  <a href="class_c_graphics_item.html#a736f640b9f4756779456729d6bd5e9c2">更多...</a><br /></td></tr>
+<tr class="separator:a736f640b9f4756779456729d6bd5e9c2 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eca30399fb199f1e0efbf9f6f970239 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a4eca30399fb199f1e0efbf9f6f970239">setPenColor</a> (const QColor &amp;c, bool isPreview=false)</td></tr>
+<tr class="memdesc:a4eca30399fb199f1e0efbf9f6f970239 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setPenColor 设置线颜色  <a href="class_c_graphics_item.html#a4eca30399fb199f1e0efbf9f6f970239">更多...</a><br /></td></tr>
+<tr class="separator:a4eca30399fb199f1e0efbf9f6f970239 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffe2e4b8cf01f7436358b22c698e18e inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#adffe2e4b8cf01f7436358b22c698e18e">setPenWidth</a> (int w, bool isPreview=false)</td></tr>
+<tr class="memdesc:adffe2e4b8cf01f7436358b22c698e18e inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setPenWidth 设置线颜色  <a href="class_c_graphics_item.html#adffe2e4b8cf01f7436358b22c698e18e">更多...</a><br /></td></tr>
+<tr class="separator:adffe2e4b8cf01f7436358b22c698e18e inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c37ca1f7829a773c53bc6a27c01c01 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#af2c37ca1f7829a773c53bc6a27c01c01">setBrushColor</a> (const QColor &amp;c, bool isPreview=false)</td></tr>
+<tr class="memdesc:af2c37ca1f7829a773c53bc6a27c01c01 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setBrushColor 设置线颜色  <a href="class_c_graphics_item.html#af2c37ca1f7829a773c53bc6a27c01c01">更多...</a><br /></td></tr>
+<tr class="separator:af2c37ca1f7829a773c53bc6a27c01c01 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00aea8bce10450bcc975368b33f90382 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">QBrush&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a00aea8bce10450bcc975368b33f90382">paintBrush</a> () const</td></tr>
+<tr class="memdesc:a00aea8bce10450bcc975368b33f90382 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">paintBrush 填充信息  <a href="class_c_graphics_item.html#a00aea8bce10450bcc975368b33f90382">更多...</a><br /></td></tr>
+<tr class="separator:a00aea8bce10450bcc975368b33f90382 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5847f061ba7a77a3d1a99c838fea8265 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">QPen&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a5847f061ba7a77a3d1a99c838fea8265">paintPen</a> (Qt::PenJoinStyle style=Qt::MiterJoin) const</td></tr>
+<tr class="memdesc:a5847f061ba7a77a3d1a99c838fea8265 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setBrushColor 线条信息  <a href="class_c_graphics_item.html#a5847f061ba7a77a3d1a99c838fea8265">更多...</a><br /></td></tr>
+<tr class="separator:a5847f061ba7a77a3d1a99c838fea8265 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e726589f141bd511704ba3f4dd23902 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a7e726589f141bd511704ba3f4dd23902">boundingRect</a> () const override</td></tr>
+<tr class="memdesc:a7e726589f141bd511704ba3f4dd23902 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">boundingRect 自身坐标系的包围矩形  <a href="class_c_graphics_item.html#a7e726589f141bd511704ba3f4dd23902">更多...</a><br /></td></tr>
+<tr class="separator:a7e726589f141bd511704ba3f4dd23902 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be841154706d29d82afa2268a894dde inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a9be841154706d29d82afa2268a894dde">boundingRectTruly</a> () const</td></tr>
+<tr class="memdesc:a9be841154706d29d82afa2268a894dde inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">boundingRectTruly 自身坐标系的真实显示的包围矩形  <a href="class_c_graphics_item.html#a9be841154706d29d82afa2268a894dde">更多...</a><br /></td></tr>
+<tr class="separator:a9be841154706d29d82afa2268a894dde inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb406c3780a6371dbebbe677d8215219 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aeb406c3780a6371dbebbe677d8215219"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aeb406c3780a6371dbebbe677d8215219">shape</a> () const override</td></tr>
+<tr class="memdesc:aeb406c3780a6371dbebbe677d8215219 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape 返回图元的形状 <br /></td></tr>
+<tr class="separator:aeb406c3780a6371dbebbe677d8215219 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b03931c7da9b8998a87eb389936874b inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a6b03931c7da9b8998a87eb389936874b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a6b03931c7da9b8998a87eb389936874b">setCache</a> (bool enable)</td></tr>
+<tr class="memdesc:a6b03931c7da9b8998a87eb389936874b inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCache 设置是否启动缓冲图加速绘制 <br /></td></tr>
+<tr class="separator:a6b03931c7da9b8998a87eb389936874b inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89c4aff6cc45f033aa516d7eb59e388 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ab89c4aff6cc45f033aa516d7eb59e388"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ab89c4aff6cc45f033aa516d7eb59e388">isCached</a> () const</td></tr>
+<tr class="memdesc:ab89c4aff6cc45f033aa516d7eb59e388 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isCached 是否当前是缓冲绘制激活的 <br /></td></tr>
+<tr class="separator:ab89c4aff6cc45f033aa516d7eb59e388 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc800d58d35122fe515fe051bb345276 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="adc800d58d35122fe515fe051bb345276"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#adc800d58d35122fe515fe051bb345276">setAutoCache</a> (bool autoCache, int autoCacheMs=8)</td></tr>
+<tr class="memdesc:adc800d58d35122fe515fe051bb345276 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setAutoCache 设置是否自动根据绘制耗时启动缓冲图加速绘制 <br /></td></tr>
+<tr class="separator:adc800d58d35122fe515fe051bb345276 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d956fed860230332fe983e3531a710 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ac6d956fed860230332fe983e3531a710">selfOrgShape</a> () const</td></tr>
+<tr class="memdesc:ac6d956fed860230332fe983e3531a710 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isAutoCache 是否自动激活缓冲绘制  <a href="class_c_graphics_item.html#ac6d956fed860230332fe983e3531a710">更多...</a><br /></td></tr>
+<tr class="separator:ac6d956fed860230332fe983e3531a710 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e5f3476e6c4b2b89b840ad2fba97d1 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a47e5f3476e6c4b2b89b840ad2fba97d1"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a47e5f3476e6c4b2b89b840ad2fba97d1">penStrokerShape</a> () const</td></tr>
+<tr class="memdesc:a47e5f3476e6c4b2b89b840ad2fba97d1 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape 返回图元的线条轮廓形状 <br /></td></tr>
+<tr class="separator:a47e5f3476e6c4b2b89b840ad2fba97d1 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b3cd93a097db9765077115e5bc915c inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aa9b3cd93a097db9765077115e5bc915c"></a>
+virtual QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aa9b3cd93a097db9765077115e5bc915c">getCenter</a> (CSizeHandleRect::EDirection dir)</td></tr>
+<tr class="memdesc:aa9b3cd93a097db9765077115e5bc915c inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCenter 返回图元的线条轮廓形状 <br /></td></tr>
+<tr class="separator:aa9b3cd93a097db9765077115e5bc915c inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeffab6a20ff4b88146dbc7ced8bb4fcc inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aeffab6a20ff4b88146dbc7ced8bb4fcc">isBzGroup</a> (int *groupTp=nullptr) const</td></tr>
+<tr class="memdesc:aeffab6a20ff4b88146dbc7ced8bb4fcc inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isBzGroup 是否是一个组合图元  <a href="class_c_graphics_item.html#aeffab6a20ff4b88146dbc7ced8bb4fcc">更多...</a><br /></td></tr>
+<tr class="separator:aeffab6a20ff4b88146dbc7ced8bb4fcc inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf6f766af7bf55fe72e21942f8ecad3 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aecf6f766af7bf55fe72e21942f8ecad3"></a>
+<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aecf6f766af7bf55fe72e21942f8ecad3">bzGroup</a> (bool onlyNormal=true) const</td></tr>
+<tr class="memdesc:aecf6f766af7bf55fe72e21942f8ecad3 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">bzGroup 返回当前所处的组合图元(onlyNormal为true不包括选择管理group) <br /></td></tr>
+<tr class="separator:aecf6f766af7bf55fe72e21942f8ecad3 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d905f5e3d3a4b69e4756603988a233b inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a6d905f5e3d3a4b69e4756603988a233b"></a>
+<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a6d905f5e3d3a4b69e4756603988a233b">bzTopGroup</a> (bool onlyNormal=true) const</td></tr>
+<tr class="memdesc:a6d905f5e3d3a4b69e4756603988a233b inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">bzGroup 返回最顶层的组合图元(onlyNormal为true不包括选择管理group) <br /></td></tr>
+<tr class="separator:a6d905f5e3d3a4b69e4756603988a233b inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690caf8540e682fe3256ec8f21ec802c inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a690caf8540e682fe3256ec8f21ec802c">thisBzProxyItem</a> (bool topleve=true)</td></tr>
+<tr class="memdesc:a690caf8540e682fe3256ec8f21ec802c inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">thisBzProxyItem 图元的代管指针(当不处于组合时返回自身,当处于组合时返回组合图元)  <a href="class_c_graphics_item.html#a690caf8540e682fe3256ec8f21ec802c">更多...</a><br /></td></tr>
+<tr class="separator:a690caf8540e682fe3256ec8f21ec802c inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587af3d586523dd7518a9ebd1b6a5464 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a587af3d586523dd7518a9ebd1b6a5464"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a587af3d586523dd7518a9ebd1b6a5464">setBzGroup</a> (<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *pGroup)</td></tr>
+<tr class="memdesc:a587af3d586523dd7518a9ebd1b6a5464 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setBzGroup 设置组合图元 (将自身添加到一个组合图元中去) <br /></td></tr>
+<tr class="separator:a587af3d586523dd7518a9ebd1b6a5464 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525127ee3282994ca9ee3e94804b56e5 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a525127ee3282994ca9ee3e94804b56e5"></a>
+virtual qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a525127ee3282994ca9ee3e94804b56e5">drawZValue</a> ()</td></tr>
+<tr class="memdesc:a525127ee3282994ca9ee3e94804b56e5 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawZValue 图元的z值(一般等于zValue(),但组合图元的z值应该和组合中z值最小的图元相等) <br /></td></tr>
+<tr class="separator:a525127ee3282994ca9ee3e94804b56e5 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9ad36b367e98906d78217f2d6932fa7 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aa9ad36b367e98906d78217f2d6932fa7">contains</a> (const QPointF &amp;point) const override</td></tr>
+<tr class="memdesc:aa9ad36b367e98906d78217f2d6932fa7 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains 点是否在图元中（重载实现更好选中，增加用户体验）  <a href="class_c_graphics_item.html#aa9ad36b367e98906d78217f2d6932fa7">更多...</a><br /></td></tr>
+<tr class="separator:aa9ad36b367e98906d78217f2d6932fa7 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d256b53a3b3fde8dbe1e33b78fbced2 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a0d256b53a3b3fde8dbe1e33b78fbced2">isBzItem</a> () const</td></tr>
+<tr class="memdesc:a0d256b53a3b3fde8dbe1e33b78fbced2 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isBzItem 是否是业务图元(不包括多选图元)  <a href="class_c_graphics_item.html#a0d256b53a3b3fde8dbe1e33b78fbced2">更多...</a><br /></td></tr>
+<tr class="separator:a0d256b53a3b3fde8dbe1e33b78fbced2 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05d90cf732ec03d9d7a233f8886dc3a inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ad05d90cf732ec03d9d7a233f8886dc3a">isSizeHandleExisted</a> ()</td></tr>
+<tr class="memdesc:ad05d90cf732ec03d9d7a233f8886dc3a inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isSizeHandleExisted 是否自身存在resize节点  <a href="class_c_graphics_item.html#ad05d90cf732ec03d9d7a233f8886dc3a">更多...</a><br /></td></tr>
+<tr class="separator:ad05d90cf732ec03d9d7a233f8886dc3a inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d7cf5ea4340e873e17155f72450854 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ac9d7cf5ea4340e873e17155f72450854">doFilp</a> (EFilpDirect dir=EFilpHor)</td></tr>
+<tr class="memdesc:ac9d7cf5ea4340e873e17155f72450854 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">doFilp 在当前基础上翻转一下  <a href="class_c_graphics_item.html#ac9d7cf5ea4340e873e17155f72450854">更多...</a><br /></td></tr>
+<tr class="separator:ac9d7cf5ea4340e873e17155f72450854 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66491c1986478a65a134d655a3c9cdb0 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a66491c1986478a65a134d655a3c9cdb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a66491c1986478a65a134d655a3c9cdb0">setFilpBaseOrg</a> (EFilpDirect dir, bool b)</td></tr>
+<tr class="memdesc:a66491c1986478a65a134d655a3c9cdb0 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setFilpBaseOrg 设置在初始图像上是否翻转,否则和原图一致 <br /></td></tr>
+<tr class="separator:a66491c1986478a65a134d655a3c9cdb0 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf40af98ec7a1e19f28d7f9414f567dd inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aaf40af98ec7a1e19f28d7f9414f567dd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aaf40af98ec7a1e19f28d7f9414f567dd">isFilped</a> (EFilpDirect dir) const</td></tr>
+<tr class="memdesc:aaf40af98ec7a1e19f28d7f9414f567dd inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isFilped 图像是否翻转过(相对原图) <br /></td></tr>
+<tr class="separator:aaf40af98ec7a1e19f28d7f9414f567dd inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a15bbae57def86b67bde999bf7596f inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual CSizeHandleRect::EDirection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a56a15bbae57def86b67bde999bf7596f">hitTest</a> (const QPointF &amp;point) const</td></tr>
+<tr class="memdesc:a56a15bbae57def86b67bde999bf7596f inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">hitTest 碰撞检测，用来检测鼠标在图元的哪个点位上  <a href="class_c_graphics_item.html#a56a15bbae57def86b67bde999bf7596f">更多...</a><br /></td></tr>
+<tr class="separator:a56a15bbae57def86b67bde999bf7596f inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af866a7dcbce056e21079d6219b5e335b inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#af866a7dcbce056e21079d6219b5e335b">isRectPenetrable</a> (const QRectF &amp;rectLocal)</td></tr>
+<tr class="memdesc:af866a7dcbce056e21079d6219b5e335b inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isPosPenetrable 某一矩形区域在图元上是否是可穿透的（透明的）  <a href="class_c_graphics_item.html#af866a7dcbce056e21079d6219b5e335b">更多...</a><br /></td></tr>
+<tr class="separator:af866a7dcbce056e21079d6219b5e335b inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665fe97ed17c24929c4599b86b987782 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a665fe97ed17c24929c4599b86b987782"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a665fe97ed17c24929c4599b86b987782">operatingBegin</a> (<a class="el" href="class_c_graph_item_event.html">CGraphItemEvent</a> *event)</td></tr>
+<tr class="memdesc:a665fe97ed17c24929c4599b86b987782 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">move 操作开始 <br /></td></tr>
+<tr class="separator:a665fe97ed17c24929c4599b86b987782 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962f4a3ed9ed7764fbd40c7fcaf84529 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a962f4a3ed9ed7764fbd40c7fcaf84529"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a962f4a3ed9ed7764fbd40c7fcaf84529">operating</a> (<a class="el" href="class_c_graph_item_event.html">CGraphItemEvent</a> *event)</td></tr>
+<tr class="memdesc:a962f4a3ed9ed7764fbd40c7fcaf84529 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">operating 执行操作 <br /></td></tr>
+<tr class="separator:a962f4a3ed9ed7764fbd40c7fcaf84529 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7de941b6ae9db2ed156d8c2f9a7327 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aed7de941b6ae9db2ed156d8c2f9a7327"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aed7de941b6ae9db2ed156d8c2f9a7327">testOpetating</a> (<a class="el" href="class_c_graph_item_event.html">CGraphItemEvent</a> *event)</td></tr>
+<tr class="memdesc:aed7de941b6ae9db2ed156d8c2f9a7327 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">testOpetating 测试操作是否可行 <br /></td></tr>
+<tr class="separator:aed7de941b6ae9db2ed156d8c2f9a7327 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06bcc92968fb6fea1cc9945200e6db0 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ac06bcc92968fb6fea1cc9945200e6db0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ac06bcc92968fb6fea1cc9945200e6db0">operatingEnd</a> (<a class="el" href="class_c_graph_item_event.html">CGraphItemEvent</a> *event)</td></tr>
+<tr class="memdesc:ac06bcc92968fb6fea1cc9945200e6db0 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">move 操作结束 <br /></td></tr>
+<tr class="separator:ac06bcc92968fb6fea1cc9945200e6db0 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c983897bd8fb86ce9086a790156cd7 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a88c983897bd8fb86ce9086a790156cd7">doMoveBegin</a> (<a class="el" href="class_c_graph_item_move_event.html">CGraphItemMoveEvent</a> *event)</td></tr>
+<tr class="memdesc:a88c983897bd8fb86ce9086a790156cd7 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动事件相关函数  <a href="class_c_graphics_item.html#a88c983897bd8fb86ce9086a790156cd7">更多...</a><br /></td></tr>
+<tr class="separator:a88c983897bd8fb86ce9086a790156cd7 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0430599aa90ad4e712d41a4302deda inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a8f0430599aa90ad4e712d41a4302deda"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>doMoving</b> (<a class="el" href="class_c_graph_item_move_event.html">CGraphItemMoveEvent</a> *event)</td></tr>
+<tr class="separator:a8f0430599aa90ad4e712d41a4302deda inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0077774434c6cff4b948d7492e90c5b inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="af0077774434c6cff4b948d7492e90c5b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>testMoving</b> (<a class="el" href="class_c_graph_item_move_event.html">CGraphItemMoveEvent</a> *event)</td></tr>
+<tr class="separator:af0077774434c6cff4b948d7492e90c5b inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a284df611394a50222b0aeeda716d3b3a inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a284df611394a50222b0aeeda716d3b3a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>doMoveEnd</b> (<a class="el" href="class_c_graph_item_move_event.html">CGraphItemMoveEvent</a> *event)</td></tr>
+<tr class="separator:a284df611394a50222b0aeeda716d3b3a inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe9b8aedc5429d3399455cc3b569df41 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="afe9b8aedc5429d3399455cc3b569df41"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>doScalEnd</b> (<a class="el" href="class_c_graph_item_scal_event.html">CGraphItemScalEvent</a> *event)</td></tr>
+<tr class="separator:afe9b8aedc5429d3399455cc3b569df41 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9b0d3b8503fa5d3a6855ae80f4cc2a inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a7c9b0d3b8503fa5d3a6855ae80f4cc2a">doRotBegin</a> (<a class="el" href="class_c_graph_item_rot_event.html">CGraphItemRotEvent</a> *event)</td></tr>
+<tr class="memdesc:a7c9b0d3b8503fa5d3a6855ae80f4cc2a inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">旋转事件相关函数  <a href="class_c_graphics_item.html#a7c9b0d3b8503fa5d3a6855ae80f4cc2a">更多...</a><br /></td></tr>
+<tr class="separator:a7c9b0d3b8503fa5d3a6855ae80f4cc2a inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd684226554cb86f82b41ed1fb06c83 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="acbd684226554cb86f82b41ed1fb06c83"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>doRoting</b> (<a class="el" href="class_c_graph_item_rot_event.html">CGraphItemRotEvent</a> *event)</td></tr>
+<tr class="separator:acbd684226554cb86f82b41ed1fb06c83 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab736ddaeaab110c9de426e13bb1048dd inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ab736ddaeaab110c9de426e13bb1048dd"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>testRoting</b> (<a class="el" href="class_c_graph_item_rot_event.html">CGraphItemRotEvent</a> *event)</td></tr>
+<tr class="separator:ab736ddaeaab110c9de426e13bb1048dd inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39fdc8454aef44cbd8ed2145d45b6a8 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ad39fdc8454aef44cbd8ed2145d45b6a8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>doRotEnd</b> (<a class="el" href="class_c_graph_item_rot_event.html">CGraphItemRotEvent</a> *event)</td></tr>
+<tr class="separator:ad39fdc8454aef44cbd8ed2145d45b6a8 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57cf6ee78f20b2a80224b593554cee9c inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a57cf6ee78f20b2a80224b593554cee9c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a57cf6ee78f20b2a80224b593554cee9c">operatingType</a> ()</td></tr>
+<tr class="memdesc:a57cf6ee78f20b2a80224b593554cee9c inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">operatingType 操作类型 <br /></td></tr>
+<tr class="separator:a57cf6ee78f20b2a80224b593554cee9c inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e678332ef18de90562b5637c1178cb8 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a0e678332ef18de90562b5637c1178cb8">move</a> (QPointF beginPoint, QPointF movePoint)</td></tr>
+<tr class="memdesc:a0e678332ef18de90562b5637c1178cb8 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">move 移动图元  <a href="class_c_graphics_item.html#a0e678332ef18de90562b5637c1178cb8">更多...</a><br /></td></tr>
+<tr class="separator:a0e678332ef18de90562b5637c1178cb8 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3407546d9fa3efc6576797ad217663 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a9c3407546d9fa3efc6576797ad217663"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a9c3407546d9fa3efc6576797ad217663">updateShape</a> ()</td></tr>
+<tr class="memdesc:a9c3407546d9fa3efc6576797ad217663 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateShape 刷新图元的形状(属性变化时调用重新计算图元的形状和样式) <br /></td></tr>
+<tr class="separator:a9c3407546d9fa3efc6576797ad217663 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ec3508dab31ba739c11226a7e60afa inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ad0ec3508dab31ba739c11226a7e60afa">setSizeHandleRectFlag</a> (CSizeHandleRect::EDirection dir, bool flag)</td></tr>
+<tr class="memdesc:ad0ec3508dab31ba739c11226a7e60afa inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setSizeHandleRectFlag 设置边界各个方向上的矩形是否可见  <a href="class_c_graphics_item.html#ad0ec3508dab31ba739c11226a7e60afa">更多...</a><br /></td></tr>
+<tr class="separator:ad0ec3508dab31ba739c11226a7e60afa inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4414e942e3b5f14b48b1a10b229eb544 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a4414e942e3b5f14b48b1a10b229eb544">isSelected</a> () const</td></tr>
+<tr class="memdesc:a4414e942e3b5f14b48b1a10b229eb544 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isSelected 图元是否处于被选择状态中  <a href="class_c_graphics_item.html#a4414e942e3b5f14b48b1a10b229eb544">更多...</a><br /></td></tr>
+<tr class="separator:a4414e942e3b5f14b48b1a10b229eb544 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acece695e13d40543825550a7be49bff7 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#acece695e13d40543825550a7be49bff7">isMutiSelected</a> () const</td></tr>
+<tr class="memdesc:acece695e13d40543825550a7be49bff7 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isMutiSelected 图元是否处于被选择多选状态中  <a href="class_c_graphics_item.html#acece695e13d40543825550a7be49bff7">更多...</a><br /></td></tr>
+<tr class="separator:acece695e13d40543825550a7be49bff7 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c5c60660bc1de858b6a29c807100ae inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a33c5c60660bc1de858b6a29c807100ae"></a>
+virtual QVector&lt; <a class="el" href="class_c_size_handle_rect.html">CSizeHandleRect</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a33c5c60660bc1de858b6a29c807100ae">handleNodes</a> ()</td></tr>
+<tr class="memdesc:a33c5c60660bc1de858b6a29c807100ae inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">handleNodes 返回控制节点 <br /></td></tr>
+<tr class="separator:a33c5c60660bc1de858b6a29c807100ae inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45519dabe781436bb8ae6051f353ee74 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a45519dabe781436bb8ae6051f353ee74"></a>
+<a class="el" href="class_c_size_handle_rect.html">CSizeHandleRect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a45519dabe781436bb8ae6051f353ee74">handleNode</a> (CSizeHandleRect::EDirection direction=CSizeHandleRect::Rotation)</td></tr>
+<tr class="memdesc:a45519dabe781436bb8ae6051f353ee74 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">handleNode 返回控制节点 <br /></td></tr>
+<tr class="separator:a45519dabe781436bb8ae6051f353ee74 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ede480d5cd72978e0d77e1ee331cca inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a74ede480d5cd72978e0d77e1ee331cca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a74ede480d5cd72978e0d77e1ee331cca">resetCachePixmap</a> ()</td></tr>
+<tr class="memdesc:a74ede480d5cd72978e0d77e1ee331cca inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">resetCachePixmap 重置缓冲图 <br /></td></tr>
+<tr class="separator:a74ede480d5cd72978e0d77e1ee331cca inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a609a92388c26e89ea64679d6f94604 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a5a609a92388c26e89ea64679d6f94604"></a>
+QTransform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a5a609a92388c26e89ea64679d6f94604">getFilpTransform</a> ()</td></tr>
+<tr class="memdesc:a5a609a92388c26e89ea64679d6f94604 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">getFilpTransform 获取到翻转的转换矩阵 <br /></td></tr>
+<tr class="separator:a5a609a92388c26e89ea64679d6f94604 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3dc56ba05a049fe1e0340397071b890 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ad3dc56ba05a049fe1e0340397071b890"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ad3dc56ba05a049fe1e0340397071b890">isBlurEnable</a> () const</td></tr>
+<tr class="memdesc:ad3dc56ba05a049fe1e0340397071b890 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isBlurEnable 图元是否支持模糊 <br /></td></tr>
+<tr class="separator:ad3dc56ba05a049fe1e0340397071b890 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ba8fc26b5ba758ea190461d36449e8 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a95ba8fc26b5ba758ea190461d36449e8">blurBegin</a> (const QPointF &amp;pos)</td></tr>
+<tr class="memdesc:a95ba8fc26b5ba758ea190461d36449e8 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">blurBegin 模糊操作开始  <a href="class_c_graphics_item.html#a95ba8fc26b5ba758ea190461d36449e8">更多...</a><br /></td></tr>
+<tr class="separator:a95ba8fc26b5ba758ea190461d36449e8 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd2d56510602194e931a01848d1b41f inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a4dd2d56510602194e931a01848d1b41f">blurUpdate</a> (const QPointF &amp;pos, bool optm=false)</td></tr>
+<tr class="memdesc:a4dd2d56510602194e931a01848d1b41f inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">blurUpdate 模糊操作刷新  <a href="class_c_graphics_item.html#a4dd2d56510602194e931a01848d1b41f">更多...</a><br /></td></tr>
+<tr class="separator:a4dd2d56510602194e931a01848d1b41f inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf8108e4005ac5714af77a19b2a1f53 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="adaf8108e4005ac5714af77a19b2a1f53"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#adaf8108e4005ac5714af77a19b2a1f53">blurEnd</a> ()</td></tr>
+<tr class="memdesc:adaf8108e4005ac5714af77a19b2a1f53 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">blurEnd 模糊操作结束 <br /></td></tr>
+<tr class="separator:adaf8108e4005ac5714af77a19b2a1f53 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efb551d84b6e1d9e90812ddc5cb26c9 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a3efb551d84b6e1d9e90812ddc5cb26c9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a3efb551d84b6e1d9e90812ddc5cb26c9">isBlurActived</a> ()</td></tr>
+<tr class="memdesc:a3efb551d84b6e1d9e90812ddc5cb26c9 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">isBlurActived 模糊操作正在进行中 <br /></td></tr>
+<tr class="separator:a3efb551d84b6e1d9e90812ddc5cb26c9 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa14420b6d3f392c79658b8e39dedc3 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="affa14420b6d3f392c79658b8e39dedc3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#affa14420b6d3f392c79658b8e39dedc3">setDrawRotatin</a> (qreal angle)</td></tr>
+<tr class="memdesc:affa14420b6d3f392c79658b8e39dedc3 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setDrawRotatin 设置图元的旋转角度(仅仅是设置旋转值,不会引起图元的旋转) <br /></td></tr>
+<tr class="separator:affa14420b6d3f392c79658b8e39dedc3 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403476eb765fc853791d50c2d0d6c94f inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a403476eb765fc853791d50c2d0d6c94f"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a403476eb765fc853791d50c2d0d6c94f">drawRotation</a> () const</td></tr>
+<tr class="memdesc:a403476eb765fc853791d50c2d0d6c94f inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setDrawRotatin 图元的旋转角度 <br /></td></tr>
+<tr class="separator:a403476eb765fc853791d50c2d0d6c94f inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708b357156e75b079a672efc2721a142 inherit pub_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a708b357156e75b079a672efc2721a142"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a708b357156e75b079a672efc2721a142">updateShapeRecursion</a> ()</td></tr>
+<tr class="memdesc:a708b357156e75b079a672efc2721a142 inherit pub_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateShapeRecursion 嵌套循环刷新形状及所处组合形状 <br /></td></tr>
+<tr class="separator:a708b357156e75b079a672efc2721a142 inherit pub_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a358035fa3b053d037b0eb8714b6699cd"><td class="memItemLeft" align="right" valign="top"><a id="a358035fa3b053d037b0eb8714b6699cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a358035fa3b053d037b0eb8714b6699cd">changToEditState</a> (bool selectAll=true)</td></tr>
+<tr class="memdesc:a358035fa3b053d037b0eb8714b6699cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">changToEditState 切换到编辑状态 <br /></td></tr>
+<tr class="separator:a358035fa3b053d037b0eb8714b6699cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935b6a5fac74d97d1fd24199c85b0748"><td class="memItemLeft" align="right" valign="top"><a id="a935b6a5fac74d97d1fd24199c85b0748"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a935b6a5fac74d97d1fd24199c85b0748">changToReadOnlyState</a> (bool selectAll=true)</td></tr>
+<tr class="memdesc:a935b6a5fac74d97d1fd24199c85b0748"><td class="mdescLeft">&#160;</td><td class="mdescRight">changToReadOnlyState 切换到编辑状态 <br /></td></tr>
+<tr class="separator:a935b6a5fac74d97d1fd24199c85b0748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48a071402afee33b85e47c7f4a93617"><td class="memItemLeft" align="right" valign="top"><a id="aa48a071402afee33b85e47c7f4a93617"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#aa48a071402afee33b85e47c7f4a93617">mouseDoubleClickEvent</a> (QGraphicsSceneMouseEvent *event) override</td></tr>
+<tr class="memdesc:aa48a071402afee33b85e47c7f4a93617"><td class="mdescLeft">&#160;</td><td class="mdescRight">mouseDoubleClickEvent 图元被双击时需要进入编辑状态 <br /></td></tr>
+<tr class="separator:aa48a071402afee33b85e47c7f4a93617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66130b8b6d84a87019266c66e0a88e74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a66130b8b6d84a87019266c66e0a88e74">isPosPenetrable</a> (const QPointF &amp;posLocal) override</td></tr>
+<tr class="memdesc:a66130b8b6d84a87019266c66e0a88e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">isPosPenetrable 是否在某个位置是可穿透的  <a href="#a66130b8b6d84a87019266c66e0a88e74">更多...</a><br /></td></tr>
+<tr class="separator:a66130b8b6d84a87019266c66e0a88e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3810cca78eb8c5dae1572e92f19c421"><td class="memItemLeft" align="right" valign="top"><a id="ad3810cca78eb8c5dae1572e92f19c421"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#ad3810cca78eb8c5dae1572e92f19c421">doScalBegin</a> (<a class="el" href="class_c_graph_item_scal_event.html">CGraphItemScalEvent</a> *event) override</td></tr>
+<tr class="memdesc:ad3810cca78eb8c5dae1572e92f19c421"><td class="mdescLeft">&#160;</td><td class="mdescRight">operatingEnd 操作结束(scale后要设置标记为) <br /></td></tr>
+<tr class="separator:ad3810cca78eb8c5dae1572e92f19c421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8407aeb539b8c78533b249a074a3902e"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#a8407aeb539b8c78533b249a074a3902e">itemChange</a> (GraphicsItemChange doChange, const QVariant &amp;value) override</td></tr>
+<tr class="memdesc:a8407aeb539b8c78533b249a074a3902e"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemChange 图元变更  <a href="#a8407aeb539b8c78533b249a074a3902e">更多...</a><br /></td></tr>
+<tr class="separator:a8407aeb539b8c78533b249a074a3902e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b915831ba6f4f3e6fd64c86d7342b7"><td class="memItemLeft" align="right" valign="top"><a id="ab5b915831ba6f4f3e6fd64c86d7342b7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_text_item.html#ab5b915831ba6f4f3e6fd64c86d7342b7">paint</a> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget=nullptr) override</td></tr>
+<tr class="memdesc:ab5b915831ba6f4f3e6fd64c86d7342b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">paint 图元的绘制 <br /></td></tr>
+<tr class="separator:ab5b915831ba6f4f3e6fd64c86d7342b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_c_graphics_rect_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c_graphics_rect_item')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_c_graphics_rect_item.html">CGraphicsRectItem</a></td></tr>
+<tr class="memitem:a3ebf70c7308c115dd9c0c3fd73b622a0 inherit pro_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top"><a id="a3ebf70c7308c115dd9c0c3fd73b622a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadGraphicsRectUnit</b> (const <a class="el" href="struct_s_graphics_rect_unit_data.html">SGraphicsRectUnitData</a> &amp;rectData)</td></tr>
+<tr class="separator:a3ebf70c7308c115dd9c0c3fd73b622a0 inherit pro_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace98ee66f3f3b8b2795d2a457371ae33 inherit pro_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top"><a id="ace98ee66f3f3b8b2795d2a457371ae33"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_rect_item.html#ace98ee66f3f3b8b2795d2a457371ae33">getSelfOrgShape</a> () const override</td></tr>
+<tr class="memdesc:ace98ee66f3f3b8b2795d2a457371ae33 inherit pro_methods_class_c_graphics_rect_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">inSideShape 图元内部形状（rect类图元不包括边线） <br /></td></tr>
+<tr class="separator:ace98ee66f3f3b8b2795d2a457371ae33 inherit pro_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d5e9a46e4f81432ead4b8764335d3f inherit pro_methods_class_c_graphics_rect_item"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_rect_item.html#a86d5e9a46e4f81432ead4b8764335d3f">incLength</a> () const override</td></tr>
+<tr class="memdesc:a86d5e9a46e4f81432ead4b8764335d3f inherit pro_methods_class_c_graphics_rect_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">incLength 虚拟的额外线宽宽度（解决选中困难的问题 提升用户体验,但闭合形状很容易选中，所以返回0）  <a href="class_c_graphics_rect_item.html#a86d5e9a46e4f81432ead4b8764335d3f">更多...</a><br /></td></tr>
+<tr class="separator:a86d5e9a46e4f81432ead4b8764335d3f inherit pro_methods_class_c_graphics_rect_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_c_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c_graphics_item')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a></td></tr>
+<tr class="memitem:a89529f38b3cded044bbbfe9f640f5ac2 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a89529f38b3cded044bbbfe9f640f5ac2">loadHeadData</a> (const <a class="el" href="struct_s_graphics_unit_head.html">SGraphicsUnitHead</a> &amp;head)</td></tr>
+<tr class="memdesc:a89529f38b3cded044bbbfe9f640f5ac2 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawItem 获取到翻转的转换矩阵  <a href="class_c_graphics_item.html#a89529f38b3cded044bbbfe9f640f5ac2">更多...</a><br /></td></tr>
+<tr class="separator:a89529f38b3cded044bbbfe9f640f5ac2 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ca914351a8dd554887a23706c8e25b inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a36ca914351a8dd554887a23706c8e25b">beginCheckIns</a> (QPainter *painter)</td></tr>
+<tr class="memdesc:a36ca914351a8dd554887a23706c8e25b inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">beginCheckIns 检查图元是否和场景就交集（必须和endCheckIns成對出现）  <a href="class_c_graphics_item.html#a36ca914351a8dd554887a23706c8e25b">更多...</a><br /></td></tr>
+<tr class="separator:a36ca914351a8dd554887a23706c8e25b inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b80342d22a65c26803b0eec3f046ec1 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a7b80342d22a65c26803b0eec3f046ec1">endCheckIns</a> (QPainter *painter)</td></tr>
+<tr class="memdesc:a7b80342d22a65c26803b0eec3f046ec1 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">endCheckIns 结束检查图元是否和场景就交集（必须和beginCheckIns成對出现）  <a href="class_c_graphics_item.html#a7b80342d22a65c26803b0eec3f046ec1">更多...</a><br /></td></tr>
+<tr class="separator:a7b80342d22a65c26803b0eec3f046ec1 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1873c2cbf6d636b7b35269a88a190f22 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a1873c2cbf6d636b7b35269a88a190f22">paintMutBoundingLine</a> (QPainter *painter, const QStyleOptionGraphicsItem *option)</td></tr>
+<tr class="memdesc:a1873c2cbf6d636b7b35269a88a190f22 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">paintMutBoundingLine 显示菜单  <a href="class_c_graphics_item.html#a1873c2cbf6d636b7b35269a88a190f22">更多...</a><br /></td></tr>
+<tr class="separator:a1873c2cbf6d636b7b35269a88a190f22 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa594545bcb546fcc4b5c6fec7b906730 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aa594545bcb546fcc4b5c6fec7b906730"></a>
+virtual QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aa594545bcb546fcc4b5c6fec7b906730">getPenStrokerShape</a> () const</td></tr>
+<tr class="memdesc:aa594545bcb546fcc4b5c6fec7b906730 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">penStrokerShape 图元线条的形状（边线轮廓所组成的形状） <br /></td></tr>
+<tr class="separator:aa594545bcb546fcc4b5c6fec7b906730 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3345609a9abdb1358b2bb02c92722e inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="adb3345609a9abdb1358b2bb02c92722e"></a>
+virtual QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#adb3345609a9abdb1358b2bb02c92722e">getShape</a> () const</td></tr>
+<tr class="memdesc:adb3345609a9abdb1358b2bb02c92722e inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape 返回图元的外形状 <br /></td></tr>
+<tr class="separator:adb3345609a9abdb1358b2bb02c92722e inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9779e3a6bf2554df4c82a131c0c4f6 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aab9779e3a6bf2554df4c82a131c0c4f6"></a>
+virtual QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aab9779e3a6bf2554df4c82a131c0c4f6">getTrulyShape</a> () const</td></tr>
+<tr class="memdesc:aab9779e3a6bf2554df4c82a131c0c4f6 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape 返回真实显示的图元的外形状() <br /></td></tr>
+<tr class="separator:aab9779e3a6bf2554df4c82a131c0c4f6 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235622a8369140909ae7fbd1e03516c4 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a235622a8369140909ae7fbd1e03516c4">setState</a> (ESelectionHandleState st)</td></tr>
+<tr class="memdesc:a235622a8369140909ae7fbd1e03516c4 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">setState 设置图元外接矩形状态  <a href="class_c_graphics_item.html#a235622a8369140909ae7fbd1e03516c4">更多...</a><br /></td></tr>
+<tr class="separator:a235622a8369140909ae7fbd1e03516c4 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74edba29b22f79c3c996e24a3d8339d1 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a74edba29b22f79c3c996e24a3d8339d1">contextMenuEvent</a> (QGraphicsSceneContextMenuEvent *event) override</td></tr>
+<tr class="memdesc:a74edba29b22f79c3c996e24a3d8339d1 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">contextMenuEvent 显示菜单  <a href="class_c_graphics_item.html#a74edba29b22f79c3c996e24a3d8339d1">更多...</a><br /></td></tr>
+<tr class="separator:a74edba29b22f79c3c996e24a3d8339d1 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad567de966c3eae8378b56c78b2ff41b2 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ad567de966c3eae8378b56c78b2ff41b2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ad567de966c3eae8378b56c78b2ff41b2">initHandle</a> ()</td></tr>
+<tr class="memdesc:ad567de966c3eae8378b56c78b2ff41b2 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">initHandle 初始化控制节点item <br /></td></tr>
+<tr class="separator:ad567de966c3eae8378b56c78b2ff41b2 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ae7725691a67acafa2f61885b148d3 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a31ae7725691a67acafa2f61885b148d3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a31ae7725691a67acafa2f61885b148d3">updateHandlesGeometry</a> ()</td></tr>
+<tr class="memdesc:a31ae7725691a67acafa2f61885b148d3 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateHandlesGeometry 更新孩子节点们的位置 <br /></td></tr>
+<tr class="separator:a31ae7725691a67acafa2f61885b148d3 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdff0d8e0865acce8f29594c9409d6de inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="acdff0d8e0865acce8f29594c9409d6de"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#acdff0d8e0865acce8f29594c9409d6de">clearHandle</a> ()</td></tr>
+<tr class="memdesc:acdff0d8e0865acce8f29594c9409d6de inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">clearHandle 清理所有控制节点item <br /></td></tr>
+<tr class="separator:acdff0d8e0865acce8f29594c9409d6de inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b292b9ad50bdfbbdfa8c821b1568409 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a7b292b9ad50bdfbbdfa8c821b1568409"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a7b292b9ad50bdfbbdfa8c821b1568409">paint</a> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
+<tr class="memdesc:a7b292b9ad50bdfbbdfa8c821b1568409 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">paint 绘制图元 <br /></td></tr>
+<tr class="separator:a7b292b9ad50bdfbbdfa8c821b1568409 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2e0d34a9a4d246d3c5510f859107d4 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a6c2e0d34a9a4d246d3c5510f859107d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintItemSelf</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, <a class="el" href="class_c_graphics_item.html#a2eeba2177c24fc8d0494e4519e640cdc">EPaintReson</a> paintReson)</td></tr>
+<tr class="separator:a6c2e0d34a9a4d246d3c5510f859107d4 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af039e3c255243aba126594f8ad5d5609 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="af039e3c255243aba126594f8ad5d5609"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#af039e3c255243aba126594f8ad5d5609">paintSelf</a> (QPainter *painter, const QStyleOptionGraphicsItem *option)</td></tr>
+<tr class="memdesc:af039e3c255243aba126594f8ad5d5609 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">paintCache 绘制自身的样貌 <br /></td></tr>
+<tr class="separator:af039e3c255243aba126594f8ad5d5609 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a72ed1c775c8312d462050ce81e784d inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a0a72ed1c775c8312d462050ce81e784d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a0a72ed1c775c8312d462050ce81e784d">mousePressEvent</a> (QGraphicsSceneMouseEvent *event) override</td></tr>
+<tr class="memdesc:a0a72ed1c775c8312d462050ce81e784d inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标事件 <br /></td></tr>
+<tr class="separator:a0a72ed1c775c8312d462050ce81e784d inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8e7f35549c0689dd440a34b3b0a927 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aef8e7f35549c0689dd440a34b3b0a927"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QGraphicsSceneMouseEvent *event) override</td></tr>
+<tr class="separator:aef8e7f35549c0689dd440a34b3b0a927 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4436911af227a1f1ffe5979db981dfd4 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a4436911af227a1f1ffe5979db981dfd4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QGraphicsSceneMouseEvent *event) override</td></tr>
+<tr class="separator:a4436911af227a1f1ffe5979db981dfd4 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ebaf941d1c9bca860bb515cc4e2976 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a80ebaf941d1c9bca860bb515cc4e2976"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (QGraphicsSceneMouseEvent *event) override</td></tr>
+<tr class="separator:a80ebaf941d1c9bca860bb515cc4e2976 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7ebd8d6c9bd1eae38a6af9aebaa78a inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a1a7ebd8d6c9bd1eae38a6af9aebaa78a">getCachePixmap</a> (bool baseOrg=false)</td></tr>
+<tr class="memdesc:a1a7ebd8d6c9bd1eae38a6af9aebaa78a inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape 返回真实显示的图元的外形状()  <a href="class_c_graphics_item.html#a1a7ebd8d6c9bd1eae38a6af9aebaa78a">更多...</a><br /></td></tr>
+<tr class="separator:a1a7ebd8d6c9bd1eae38a6af9aebaa78a inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245d98484370c71370e44e7892847947 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a245d98484370c71370e44e7892847947"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeTransCenterTo</b> (const QPointF &amp;newCenter)</td></tr>
+<tr class="separator:a245d98484370c71370e44e7892847947 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6bdbc6b4eae1bda01304f54909616ba inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ac6bdbc6b4eae1bda01304f54909616ba">updateBlurPixmap</a> (bool baseOrg=false, EBlurEffect effetTp=UnknowEffect)</td></tr>
+<tr class="memdesc:ac6bdbc6b4eae1bda01304f54909616ba inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateBlurPixmap 获取到新的模糊图像  <a href="class_c_graphics_item.html#ac6bdbc6b4eae1bda01304f54909616ba">更多...</a><br /></td></tr>
+<tr class="separator:ac6bdbc6b4eae1bda01304f54909616ba inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82c3c9a12ba95044271831d4178cf09 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ab82c3c9a12ba95044271831d4178cf09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#ab82c3c9a12ba95044271831d4178cf09">updateBlurPixmapBySelfBlurInfo</a> ()</td></tr>
+<tr class="memdesc:ab82c3c9a12ba95044271831d4178cf09 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateBlurPixmapBySelfBlurInfo 根据当前模糊的需要获取到新的模糊图像 <br /></td></tr>
+<tr class="separator:ab82c3c9a12ba95044271831d4178cf09 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245dc52947c97029e2f175a049269a8f inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a245dc52947c97029e2f175a049269a8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a245dc52947c97029e2f175a049269a8f">addBlur</a> (const <a class="el" href="struct_s_blur_info.html">SBlurInfo</a> &amp;sblurInfo)</td></tr>
+<tr class="memdesc:a245dc52947c97029e2f175a049269a8f inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">addBlur 添加一个模糊路径 <br /></td></tr>
+<tr class="separator:a245dc52947c97029e2f175a049269a8f inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc4d83f7671d7269c51f62de6a56728 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a3fc4d83f7671d7269c51f62de6a56728">paintAllBlur</a> (QPainter *painter, const QPointF &amp;translate=QPointF(0, 0))</td></tr>
+<tr class="memdesc:a3fc4d83f7671d7269c51f62de6a56728 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">paintAllBlur 绘制所有的模糊  <a href="class_c_graphics_item.html#a3fc4d83f7671d7269c51f62de6a56728">更多...</a><br /></td></tr>
+<tr class="separator:a3fc4d83f7671d7269c51f62de6a56728 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7161427d4e2f02f7cadfbbac1b89f7c6 inherit pro_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a7161427d4e2f02f7cadfbbac1b89f7c6">paintBlur</a> (QPainter *painter, const <a class="el" href="struct_s_blur_info.html">SBlurInfo</a> &amp;info, const QPointF &amp;translate=QPointF(0, 0))</td></tr>
+<tr class="memdesc:a7161427d4e2f02f7cadfbbac1b89f7c6 inherit pro_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">paintBlur 绘制一个模糊  <a href="class_c_graphics_item.html#a7161427d4e2f02f7cadfbbac1b89f7c6">更多...</a><br /></td></tr>
+<tr class="separator:a7161427d4e2f02f7cadfbbac1b89f7c6 inherit pro_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_c_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_c_graphics_item')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a></td></tr>
+<tr class="memitem:aee22d9e28c2da276332dffdc579f5729 inherit pub_static_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">static QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#aee22d9e28c2da276332dffdc579f5729">getGraphicsItemShapePathByOrg</a> (const QPainterPath &amp;orgPath, const QPen &amp;pen, bool <a class="el" href="class_c_graphics_item.html#a47e5f3476e6c4b2b89b840ad2fba97d1">penStrokerShape</a>=false, const qreal incW=0, bool doSimplified=true)</td></tr>
+<tr class="memdesc:aee22d9e28c2da276332dffdc579f5729 inherit pub_static_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">getGraphicsItemShapePathByOrg 根据画笔属性，把图元形状转为路径 此函数为Qt源码中自带的  <a href="class_c_graphics_item.html#aee22d9e28c2da276332dffdc579f5729">更多...</a><br /></td></tr>
+<tr class="separator:aee22d9e28c2da276332dffdc579f5729 inherit pub_static_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9996fbf5c1e87e91f40fa00fccbd3099 inherit pub_static_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a9996fbf5c1e87e91f40fa00fccbd3099"></a>
+static <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>creatItemInstance</b> (int itemType, const <a class="el" href="struct_c_graphics_unit.html">CGraphicsUnit</a> &amp;data=<a class="el" href="struct_c_graphics_unit.html">CGraphicsUnit</a>())</td></tr>
+<tr class="separator:a9996fbf5c1e87e91f40fa00fccbd3099 inherit pub_static_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872ac3324cda59ea0c5eae117d3a37d2 inherit pub_static_methods_class_c_graphics_item"><td class="memTemplParams" colspan="2"><a id="a872ac3324cda59ea0c5eae117d3a37d2"></a>
+template&lt;typename T  = QGraphicsItem *, typename K  = CGraphicsItem *&gt; </td></tr>
+<tr class="memitem:a872ac3324cda59ea0c5eae117d3a37d2 inherit pub_static_methods_class_c_graphics_item"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_q_list.html">QList</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>returnList</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; K &gt; &amp;list)</td></tr>
+<tr class="separator:a872ac3324cda59ea0c5eae117d3a37d2 inherit pub_static_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7eb1dc34467ac8f6485140171cbbfe inherit pub_static_methods_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a3e7eb1dc34467ac8f6485140171cbbfe">zItem</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a> *&gt; &amp;pBzItems, int wantZitemTp=-1)</td></tr>
+<tr class="memdesc:a3e7eb1dc34467ac8f6485140171cbbfe inherit pub_static_methods_class_c_graphics_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">zItem 返回z值最小或最低或等于某一z值的item  <a href="class_c_graphics_item.html#a3e7eb1dc34467ac8f6485140171cbbfe">更多...</a><br /></td></tr>
+<tr class="separator:a3e7eb1dc34467ac8f6485140171cbbfe inherit pub_static_methods_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_class_c_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_c_graphics_item')"><img src="closed.png" alt="-"/>&#160;静态 Public 属性 继承自 <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a></td></tr>
+<tr class="memitem:aa15348cca639e6c71fda43793407593b inherit pub_static_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aa15348cca639e6c71fda43793407593b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>paintSelectedBorderLine</b> = true</td></tr>
+<tr class="separator:aa15348cca639e6c71fda43793407593b inherit pub_static_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_c_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_c_graphics_item')"><img src="closed.png" alt="-"/>&#160;Protected 类型 继承自 <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a></td></tr>
+<tr class="memitem:a2eeba2177c24fc8d0494e4519e640cdc inherit pro_types_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_graphics_item.html#a2eeba2177c24fc8d0494e4519e640cdc">EPaintReson</a> { <b>EPaintForDynamic</b>, 
+<b>EPaintForStatic</b>, 
+<b>EPaintForNoCache</b> = EPaintForDynamic, 
+<b>EPaintForCache</b> = EPaintForStatic
+ }<tr class="memdesc:a2eeba2177c24fc8d0494e4519e640cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">paintItemSelf paintSelf的马甲,同时在绘制前调用前做了一些图元的吃初始化操作  <a href="class_c_graphics_item.html#a2eeba2177c24fc8d0494e4519e640cdc">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a2eeba2177c24fc8d0494e4519e640cdc inherit pro_types_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35936a9f7fa5e0daef09d054c56c76ce inherit pro_types_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a35936a9f7fa5e0daef09d054c56c76ce"></a>
+typedef QVector&lt; <a class="el" href="class_c_size_handle_rect.html">CSizeHandleRect</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Handles</b></td></tr>
+<tr class="separator:a35936a9f7fa5e0daef09d054c56c76ce inherit pro_types_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_c_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_graphics_item')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_c_graphics_item.html">CGraphicsItem</a></td></tr>
+<tr class="memitem:af164ef29aab80cdad2bc2c24f444e8ae inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="af164ef29aab80cdad2bc2c24f444e8ae"></a>
+Handles&#160;</td><td class="memItemRight" valign="bottom"><b>m_handles</b></td></tr>
+<tr class="separator:af164ef29aab80cdad2bc2c24f444e8ae inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ce1bc32ad1d6490ddec3771309221b inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ac9ce1bc32ad1d6490ddec3771309221b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_operatingType</b> = -1</td></tr>
+<tr class="separator:ac9ce1bc32ad1d6490ddec3771309221b inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ad646f15fa6eea3ead0e9d7f01521e inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a92ad646f15fa6eea3ead0e9d7f01521e"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_penPreviewColor</b></td></tr>
+<tr class="separator:a92ad646f15fa6eea3ead0e9d7f01521e inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf6bbf961f96aa6fd5b08d4c7ae7d36 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aacf6bbf961f96aa6fd5b08d4c7ae7d36"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_penWidth</b> = 1</td></tr>
+<tr class="separator:aacf6bbf961f96aa6fd5b08d4c7ae7d36 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6783936af2a06d2df405943cd9909617 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a6783936af2a06d2df405943cd9909617"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_brPreviewColor</b></td></tr>
+<tr class="separator:a6783936af2a06d2df405943cd9909617 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0672783b83ea5817b446f8a770708e inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a0f0672783b83ea5817b446f8a770708e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isPreviewCom</b> [3] {0}</td></tr>
+<tr class="separator:a0f0672783b83ea5817b446f8a770708e inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60757de08dedde49ae94541d16485c99 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a60757de08dedde49ae94541d16485c99"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>m_selfOrgPathShape</b></td></tr>
+<tr class="separator:a60757de08dedde49ae94541d16485c99 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7763cb1a08eaa73b34ebffab1423fe inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="acf7763cb1a08eaa73b34ebffab1423fe"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>m_penStroerPathShape</b></td></tr>
+<tr class="separator:acf7763cb1a08eaa73b34ebffab1423fe inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace0e972ddbce523739a14b4e36c42ca inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aace0e972ddbce523739a14b4e36c42ca"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>m_boundingShape</b></td></tr>
+<tr class="separator:aace0e972ddbce523739a14b4e36c42ca inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe064c9476c0cd8535dab953caded0db inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="abe064c9476c0cd8535dab953caded0db"></a>
+QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>m_boundingRect</b></td></tr>
+<tr class="separator:abe064c9476c0cd8535dab953caded0db inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4543fd206f37facc482cf3adb22236a6 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a4543fd206f37facc482cf3adb22236a6"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>m_boundingShapeTrue</b></td></tr>
+<tr class="separator:a4543fd206f37facc482cf3adb22236a6 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3953d15fc95071703ab65c0b7b98c4 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aed3953d15fc95071703ab65c0b7b98c4"></a>
+QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>m_boundingRectTrue</b></td></tr>
+<tr class="separator:aed3953d15fc95071703ab65c0b7b98c4 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1f248e28a24cf82e8ada9b86f73902 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ace1f248e28a24cf82e8ada9b86f73902"></a>
+QPixmap *&#160;</td><td class="memItemRight" valign="bottom"><b>_cachePixmap</b> = nullptr</td></tr>
+<tr class="separator:ace1f248e28a24cf82e8ada9b86f73902 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed652e8a8f7beebc02e2532875ef0710 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="aed652e8a8f7beebc02e2532875ef0710"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_useCachePixmap</b> = false</td></tr>
+<tr class="separator:aed652e8a8f7beebc02e2532875ef0710 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07dbd1ddb9f14a7779a8c2d8e1a70b2 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ab07dbd1ddb9f14a7779a8c2d8e1a70b2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_autoCache</b> = true</td></tr>
+<tr class="separator:ab07dbd1ddb9f14a7779a8c2d8e1a70b2 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a673f1060999f4291ead90dbc1c5ed6 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a8a673f1060999f4291ead90dbc1c5ed6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_autoEplMs</b> = 8</td></tr>
+<tr class="separator:a8a673f1060999f4291ead90dbc1c5ed6 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd853987df587dec99584cd91ec1d2a inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="afcd853987df587dec99584cd91ec1d2a"></a>
+QStyleOptionGraphicsItem&#160;</td><td class="memItemRight" valign="bottom"><b>_curStyleOption</b></td></tr>
+<tr class="separator:afcd853987df587dec99584cd91ec1d2a inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de5f5f8aaf5cb9e81035186d1a0aba6 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a7de5f5f8aaf5cb9e81035186d1a0aba6"></a>
+<a class="el" href="class_c_graphics_item_group.html">CGraphicsItemGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_pGroup</b> = nullptr</td></tr>
+<tr class="separator:a7de5f5f8aaf5cb9e81035186d1a0aba6 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4fcc8c5eea6e2be26e349711093237 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a9c4fcc8c5eea6e2be26e349711093237"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_s_blur_info.html">SBlurInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_blurInfos</b></td></tr>
+<tr class="separator:a9c4fcc8c5eea6e2be26e349711093237 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4915cda0c7f7a742023320d567cd67eb inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a4915cda0c7f7a742023320d567cd67eb"></a>
+<a class="el" href="struct_s_blur_info.html">SBlurInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tempActiveBlurInfo</b></td></tr>
+<tr class="separator:a4915cda0c7f7a742023320d567cd67eb inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f91f7dbbec3f040c55a107e30f5896 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ac7f91f7dbbec3f040c55a107e30f5896"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>_tempActiveBlurPath</b></td></tr>
+<tr class="separator:ac7f91f7dbbec3f040c55a107e30f5896 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373a3f120dadd9f821cb06b91c778352 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a373a3f120dadd9f821cb06b91c778352"></a>
+QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>_blurPix</b> [UnknowEffect]</td></tr>
+<tr class="separator:a373a3f120dadd9f821cb06b91c778352 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59593f6e21056646f77383d96fadf624 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a59593f6e21056646f77383d96fadf624"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_flipHorizontal</b> = false</td></tr>
+<tr class="separator:a59593f6e21056646f77383d96fadf624 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d423893f55f5f6c1ced5e151865e99 inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="a16d423893f55f5f6c1ced5e151865e99"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_flipVertical</b> = false</td></tr>
+<tr class="separator:a16d423893f55f5f6c1ced5e151865e99 inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cf97079125801877de266d97da5fea inherit pro_attribs_class_c_graphics_item"><td class="memItemLeft" align="right" valign="top"><a id="ae1cf97079125801877de266d97da5fea"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>_roteAgnel</b> = 0</td></tr>
+<tr class="separator:ae1cf97079125801877de266d97da5fea inherit pro_attribs_class_c_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="cgraphicstextitem_8h_source.html">cgraphicstextitem.h</a> 第 <a class="el" href="cgraphicstextitem_8h_source.html#l00032">32</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a13940e7311a5d760b9d6cff46caf7a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13940e7311a5d760b9d6cff46caf7a5b">&#9670;&nbsp;</a></span>EState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_graphics_text_item.html#a13940e7311a5d760b9d6cff46caf7a5b">CGraphicsTextItem::EState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setTextState 设置当前文字的状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>EReadOnly表示只读的状态,EInEdit表示编辑中的状态 </td></tr>
+    <tr><td class="paramname">selectAllText</td><td>切换状态后是否选中编辑框内文字 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cgraphicstextitem_8h_source.html">cgraphicstextitem.h</a> 第 <a class="el" href="cgraphicstextitem_8h_source.html#l00145">145</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a8fd5a8aa96569dabda7b579c81e673da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd5a8aa96569dabda7b579c81e673da">&#9670;&nbsp;</a></span>endPreview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGraphicsTextItem::endPreview </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>revert</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>endPreview 结束预览 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">revert</td><td>是否加载回开始预览前的信息(还原) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="cgraphicstextitem_8cpp_source.html">cgraphicstextitem.cpp</a> 第 <a class="el" href="cgraphicstextitem_8cpp_source.html#l00206">206</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7352ad3216e4b13686cf391c33c89bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7352ad3216e4b13686cf391c33c89bd1">&#9670;&nbsp;</a></span>getHighLightPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPainterPath CGraphicsTextItem::getHighLightPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getHighLightPath 获取高亮path </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>重载 <a class="el" href="class_c_graphics_item.html#addaf0586cb74ebfc2d3f7bacd51274d9">CGraphicsItem</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="cgraphicstextitem_8cpp_source.html">cgraphicstextitem.cpp</a> 第 <a class="el" href="cgraphicstextitem_8cpp_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a66130b8b6d84a87019266c66e0a88e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66130b8b6d84a87019266c66e0a88e74">&#9670;&nbsp;</a></span>isPosPenetrable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CGraphicsTextItem::isPosPenetrable </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;&#160;</td>
+          <td class="paramname"><em>posLocal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>isPosPenetrable 是否在某个位置是可穿透的 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posLocal</td><td>位置点(在自身坐标系) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="class_c_graphics_item.html#a8bf74831626f61ef639b685728f51033">CGraphicsItem</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="cgraphicstextitem_8cpp_source.html">cgraphicstextitem.cpp</a> 第 <a class="el" href="cgraphicstextitem_8cpp_source.html#l00414">414</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8407aeb539b8c78533b249a074a3902e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8407aeb539b8c78533b249a074a3902e">&#9670;&nbsp;</a></span>itemChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant CGraphicsTextItem::itemChange </td>
+          <td>(</td>
+          <td class="paramtype">GraphicsItemChange&#160;</td>
+          <td class="paramname"><em>doChange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariant &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>itemChange 图元变更 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">change</td><td>变更属性 </td></tr>
+    <tr><td class="paramname">value</td><td>变更的值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>重载 <a class="el" href="class_c_graphics_item.html#a9086e72c6443363c489a8d55cb299dbd">CGraphicsItem</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="cgraphicstextitem_8cpp_source.html">cgraphicstextitem.cpp</a> 第 <a class="el" href="cgraphicstextitem_8cpp_source.html#l00433">433</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aabd61ed42d4a7fe592aa8c16c6920efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd61ed42d4a7fe592aa8c16c6920efb">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CGraphicsTextItem::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>proxyWidgetItem 代理编辑控件的场景图元(被设置为文字图元的子item) </p>
+<p>type 文字图元的类型 </p>
+
+<p>重载 <a class="el" href="class_c_graphics_rect_item.html#af4245f100318f2f5eba3800a8bbd81cc">CGraphicsRectItem</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="cgraphicstextitem_8cpp_source.html">cgraphicstextitem.cpp</a> 第 <a class="el" href="cgraphicstextitem_8cpp_source.html#l00249">249</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>deepin-draw/src/drawshape/drawItems/bzItems/<a class="el" href="cgraphicstextitem_8h_source.html">cgraphicstextitem.h</a></li>
+<li>deepin-draw/src/drawshape/drawItems/bzItems/<a class="el" href="cgraphicstextitem_8cpp_source.html">cgraphicstextitem.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_c_graphics_text_item.html">CGraphicsTextItem</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:15 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

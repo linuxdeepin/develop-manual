@@ -1,0 +1,31 @@
+digraph "DCC_NAMESPACE::network::AbstractSettings"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="DCC_NAMESPACE::network\l::AbstractSettings",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="QWidget",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DCC_NAMESPACE::network\l::DslPppoeSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_dsl_pppoe_settings.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DCC_NAMESPACE::network\l::HotspotSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_hotspot_settings.html"];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="DCC_NAMESPACE::network\l::VpnL2tpSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_vpn_l2tp_settings.html"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="DCC_NAMESPACE::network\l::VpnOpenConnectSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_vpn_open_connect_settings.html"];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="DCC_NAMESPACE::network\l::VpnOpenVPNSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_vpn_open_v_p_n_settings.html"];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="DCC_NAMESPACE::network\l::VpnPPTPSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_vpn_p_p_t_p_settings.html"];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="DCC_NAMESPACE::network\l::VpnSSTPSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_vpn_s_s_t_p_settings.html"];
+  Node0 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="DCC_NAMESPACE::network\l::VpnStrongSwanSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_vpn_strong_swan_settings.html"];
+  Node0 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="DCC_NAMESPACE::network\l::VpnVPNCSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_vpn_v_p_n_c_settings.html"];
+  Node0 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="DCC_NAMESPACE::network\l::WiredSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_wired_settings.html"];
+  Node0 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="DCC_NAMESPACE::network\l::WirelessSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_c_c___n_a_m_e_s_p_a_c_e_1_1network_1_1_wireless_settings.html"];
+}

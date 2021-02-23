@@ -1,0 +1,21 @@
+digraph "CSceneBoundingChangedCommand"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="CSceneBoundingChangedCommand",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CSceneUndoRedoCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_scene_undo_redo_command.html",tooltip="The CSceneUndoRedoCommand 场景相关的操作 "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CUndoRedoCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_undo_redo_command.html",tooltip="The CUndoRedoCommand class 撤销还原的基类 "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="QUndoCommand",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" s_forFindCoupleMap" ,fontname="Helvetica"];
+  Node8 [label="QMap\< CUndoRedoCommand\l::CKey, int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _vars" ,fontname="Helvetica"];
+  Node9 [label="QList\< QVariant \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_list.html"];
+  Node10 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" s_undoStacks" ,fontname="Helvetica"];
+  Node10 [label="QMap\< void *, QUndoStack *\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_map.html"];
+  Node11 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" s_recordedCmdInfoList" ,fontname="Helvetica"];
+  Node11 [label="QList\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_q_list.html"];
+}

@@ -1,0 +1,26 @@
+var classdoctotext_1_1_link =
+[
+    [ "Implementation", "struct_link_1_1_implementation.html", "struct_link_1_1_implementation" ],
+    [ "Link", "classdoctotext_1_1_link.html#a1918a8473cee40bbed17b8e926cb85d9", null ],
+    [ "Link", "classdoctotext_1_1_link.html#a7d0316e2afaf95e384f48b96e3f7f5e9", null ],
+    [ "Link", "classdoctotext_1_1_link.html#a2f61a94d4ca3723a0b36be90e207f02a", null ],
+    [ "~Link", "classdoctotext_1_1_link.html#a666e442abb3122fe5eb1705f1b2d650d", null ],
+    [ "Link", "classdoctotext_1_1_link.html#a6bb360d838e2e48b183b6551c4a8da71", null ],
+    [ "Link", "classdoctotext_1_1_link.html#ab10c129757b97da9446bed9ff51b1a0c", null ],
+    [ "Link", "classdoctotext_1_1_link.html#a44457e4455e170a1621806345effea6b", null ],
+    [ "~Link", "classdoctotext_1_1_link.html#a485b04fa680dfaa9277daef3b1f87504", null ],
+    [ "getLinkText", "classdoctotext_1_1_link.html#abfdc3951ac871cae856e196191a0df98", null ],
+    [ "getLinkText", "classdoctotext_1_1_link.html#ab79ccbfa42b8e8aac5c64916f751ae31", null ],
+    [ "getLinkTextPosition", "classdoctotext_1_1_link.html#ae56ccdc1c00e2a07195f36a744730e0b", null ],
+    [ "getLinkTextPosition", "classdoctotext_1_1_link.html#a7458ab0680bb30837efa325ea5337f9a", null ],
+    [ "getLinkUrl", "classdoctotext_1_1_link.html#a6e07cad224a62dc10913b24b455c9c5d", null ],
+    [ "getLinkUrl", "classdoctotext_1_1_link.html#ac628fe9c71a12f39168e2b09584c740e", null ],
+    [ "operator=", "classdoctotext_1_1_link.html#ad47acd791c0e6024df9dc7e03315fa70", null ],
+    [ "operator=", "classdoctotext_1_1_link.html#a4dff277aab3d52efcdb714441fa95763", null ],
+    [ "setLinkText", "classdoctotext_1_1_link.html#ab7c9a24430d2b9d5c719ad83d988088b", null ],
+    [ "setLinkText", "classdoctotext_1_1_link.html#a3046575aba8863a3a85d7afbc15f831a", null ],
+    [ "setLinkTextPosition", "classdoctotext_1_1_link.html#acec7318f9ee4d991586312792b29b1e6", null ],
+    [ "setLinkTextPosition", "classdoctotext_1_1_link.html#a72d235ffd16283f3578910feecfdfbc9", null ],
+    [ "setLinkUrl", "classdoctotext_1_1_link.html#add2b61480787734ab2a156fe563f6901", null ],
+    [ "setLinkUrl", "classdoctotext_1_1_link.html#a3dd08b67d680d39321fead62f579ace4", null ]
+];

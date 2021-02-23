@@ -1,0 +1,25 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3007 [label="DDialog",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3007 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="BluetoothTransDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bluetooth_trans_dialog.html"];
+  Node3007 -> Node3009 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3009 [label="dcc::accounts::RemoveUser\lDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdcc_1_1accounts_1_1_remove_user_dialog.html"];
+  Node3007 -> Node3010 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3010 [label="dcc::bluetooth::PinCodeDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdcc_1_1bluetooth_1_1_pin_code_dialog.html"];
+  Node3007 -> Node3011 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3011 [label="DDesktopRenameDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_desktop_rename_dialog.html"];
+  Node3007 -> Node3012 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3012 [label="Dialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dialog.html"];
+  Node3012 -> Node3013 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3013 [label="CCutDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_cut_dialog.html"];
+  Node3012 -> Node3014 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3014 [label="DrawDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_draw_dialog.html"];
+  Node3007 -> Node3015 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3015 [label="PropertyDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_property_dialog.html"];
+  Node3007 -> Node3016 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3016 [label="TrashPropertyDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_trash_property_dialog.html"];
+}

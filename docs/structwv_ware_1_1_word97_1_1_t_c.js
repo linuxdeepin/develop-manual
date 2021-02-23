@@ -1,0 +1,25 @@
+var structwv_ware_1_1_word97_1_1_t_c =
+[
+    [ "TC", "structwv_ware_1_1_word97_1_1_t_c.html#a788cba947a8537446023b8c6e12d34bb", null ],
+    [ "TC", "structwv_ware_1_1_word97_1_1_t_c.html#a668c7458fcfcdbaad2efaf33ee8e9c8d", null ],
+    [ "TC", "structwv_ware_1_1_word97_1_1_t_c.html#a7cb2603298a32e5d93c96c58ad73fd1d", null ],
+    [ "clear", "structwv_ware_1_1_word97_1_1_t_c.html#afb2f34fd44ff508cc32cf32eaad1f9e8", null ],
+    [ "dump", "structwv_ware_1_1_word97_1_1_t_c.html#a232cb1630d533535323df9040acba2ab", null ],
+    [ "read", "structwv_ware_1_1_word97_1_1_t_c.html#a66d070c5c5d5aca6fdaf5d1203cd4100", null ],
+    [ "readPtr", "structwv_ware_1_1_word97_1_1_t_c.html#a7078c72d5fe286129c90b89c73e4ec2e", null ],
+    [ "toString", "structwv_ware_1_1_word97_1_1_t_c.html#a2ef2721b4e26806fd6efa4afaebab79c", null ],
+    [ "brcBottom", "structwv_ware_1_1_word97_1_1_t_c.html#a9c9080199189a87eb23991a3dfff11bb", null ],
+    [ "brcLeft", "structwv_ware_1_1_word97_1_1_t_c.html#af20177495c22550325c2586b1b6b567a", null ],
+    [ "brcRight", "structwv_ware_1_1_word97_1_1_t_c.html#a1b52e72990a6291ab0b8667bac96f1b3", null ],
+    [ "brcTop", "structwv_ware_1_1_word97_1_1_t_c.html#a22c9bed9a9a8fa81868eb5f64d972b2a", null ],
+    [ "fBackward", "structwv_ware_1_1_word97_1_1_t_c.html#a8926ded7d8d2935bf82801738a0e8e99", null ],
+    [ "fFirstMerged", "structwv_ware_1_1_word97_1_1_t_c.html#a8718f3b4e76ee72aecd6815072743b18", null ],
+    [ "fMerged", "structwv_ware_1_1_word97_1_1_t_c.html#aa656d1e0a8f11fdf7ac47894a56defd2", null ],
+    [ "fRotateFont", "structwv_ware_1_1_word97_1_1_t_c.html#aeb3af08aeb4fea8125852dc5f0a83945", null ],
+    [ "fUnused", "structwv_ware_1_1_word97_1_1_t_c.html#ac6fb049a01b4085d91b0f025ae32ee31", null ],
+    [ "fVertical", "structwv_ware_1_1_word97_1_1_t_c.html#aa3ca50f1a1efb7000d15584fb12ac409", null ],
+    [ "fVertMerge", "structwv_ware_1_1_word97_1_1_t_c.html#a89b4cf052f65e3fd9aa487f908995fae", null ],
+    [ "fVertRestart", "structwv_ware_1_1_word97_1_1_t_c.html#a439ce37bdf625ee344efb2f64db7e205", null ],
+    [ "vertAlign", "structwv_ware_1_1_word97_1_1_t_c.html#afe8656e747b54cf10c4aa282b522d70c", null ],
+    [ "wUnused", "structwv_ware_1_1_word97_1_1_t_c.html#ad1538f0b57fd1976ce5890554d566476", null ]
+];

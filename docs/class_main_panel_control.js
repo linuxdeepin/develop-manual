@@ -1,0 +1,25 @@
+var class_main_panel_control =
+[
+    [ "MainPanelControl", "class_main_panel_control.html#a03f030b6e0fb35636f77ddca30fff8fa", null ],
+    [ "~MainPanelControl", "class_main_panel_control.html#ac8f399e7bb89931eac98a87c9e4cbda7", null ],
+    [ "delegate", "class_main_panel_control.html#a183868111f708deb0fc9e830dfb384cc", null ],
+    [ "dragEnterEvent", "class_main_panel_control.html#ab499ee860c4d88cbe170c085e8d807fb", null ],
+    [ "dragLeaveEvent", "class_main_panel_control.html#abcdd510fa19c1fb35afda9d81f08627e", null ],
+    [ "dragMoveEvent", "class_main_panel_control.html#a50fc61ac395a51aa8899207bbe625e3d", null ],
+    [ "dropEvent", "class_main_panel_control.html#aa1e7b398129f83bd1ea54ce37a14de53", null ],
+    [ "eventFilter", "class_main_panel_control.html#ab5bb81ccd1ac116d3060bee0e31f0d07", null ],
+    [ "getTrayVisableItemCount", "class_main_panel_control.html#ac638919c788f922984ad233e99a20c60", null ],
+    [ "insertItem", "class_main_panel_control.html#aa95de69e0715a392041cc69fcf0e5f35", null ],
+    [ "itemAdded", "class_main_panel_control.html#abb52500d7fb9df24ec74a85120df4056", null ],
+    [ "itemMoved", "class_main_panel_control.html#a6d5490cb559b1432ed44da5fe547d4e7", null ],
+    [ "itemUpdated", "class_main_panel_control.html#abf814797e48b190d2ada1e668464c5c1", null ],
+    [ "mousePressEvent", "class_main_panel_control.html#af68ad39862a69677099469d5dd8c0b5a", null ],
+    [ "onGSettingsChanged", "class_main_panel_control.html#a6bb82c41f3cc85b2ba192da6dd2289eb", null ],
+    [ "removeItem", "class_main_panel_control.html#a8559c68869de5fb2f463646d5aa7d790", null ],
+    [ "resizeEvent", "class_main_panel_control.html#a4bd14f847ce9ad3172fda2b0e1c91afa", null ],
+    [ "setDelegate", "class_main_panel_control.html#ad63e65b8ce44d92c023066744561edcb", null ],
+    [ "setDisplayMode", "class_main_panel_control.html#af7e6b361e0409d2143ac079e1b64e108", null ],
+    [ "setPositonValue", "class_main_panel_control.html#a4480a0a0601608f195432df3afe37eae", null ],
+    [ "showEvent", "class_main_panel_control.html#ad50b71784712a9f2c859cf3e21b702ec", null ],
+    [ "updatePluginsLayout", "class_main_panel_control.html#aa298b2596313e5a94fef26415f75807a", null ]
+];

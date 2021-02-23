@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['hmf',['hMF',['../structwv_ware_1_1_word95_1_1_m_e_t_a_f_i_l_e_p_i_c_t.html#a24f027115e9e169a8e35450ee8e95824',1,'wvWare::Word95::METAFILEPICT::hMF()'],['../structwv_ware_1_1_word97_1_1_m_e_t_a_f_i_l_e_p_i_c_t.html#a80d643435e9ab6230cd8920e3d96e819',1,'wvWare::Word97::METAFILEPICT::hMF()']]],
+  ['hps',['hps',['../structwv_ware_1_1_word95_1_1_a_n_l_d.html#ac538e095573c2dc733b3efca452d5d47',1,'wvWare::Word95::ANLD::hps()'],['../structwv_ware_1_1_word95_1_1_a_n_l_v.html#a8eddb2d3001c7103e4f271b7fb87959c',1,'wvWare::Word95::ANLV::hps()'],['../structwv_ware_1_1_word95_1_1_c_h_p.html#a4b1317fc4bb39e97c04ab2ba6dfaff63',1,'wvWare::Word95::CHP::hps()'],['../structwv_ware_1_1_word97_1_1_a_n_l_d.html#ae464c482d07b96e131c21faa7fb80adc',1,'wvWare::Word97::ANLD::hps()'],['../structwv_ware_1_1_word97_1_1_a_n_l_v.html#a92a3f1210648e2011d201a35324f68a0',1,'wvWare::Word97::ANLV::hps()'],['../structwv_ware_1_1_word97_1_1_c_h_p.html#a51f48c223a40de2f42367dbb341943f1',1,'wvWare::Word97::CHP::hps()']]],
+  ['hpscript',['hpScript',['../structwv_ware_1_1_word97_1_1_c_h_p.html#a09be672f3cc6d105d1601a00fae23635',1,'wvWare::Word97::CHP']]],
+  ['hpskern',['hpsKern',['../structwv_ware_1_1_word95_1_1_c_h_p.html#acda6d18afc40be509035c88e375abe9e',1,'wvWare::Word95::CHP::hpsKern()'],['../structwv_ware_1_1_word97_1_1_c_h_p.html#a2d0a36608ad0fcd72e024c7c16169cae',1,'wvWare::Word97::CHP::hpsKern()']]],
+  ['hpspos',['hpsPos',['../structwv_ware_1_1_word95_1_1_c_h_p.html#a5b966eb009738ea517e127d9fef41aba',1,'wvWare::Word95::CHP::hpsPos()'],['../structwv_ware_1_1_word97_1_1_c_h_p.html#a5af28047829a816b1fa89270971c70d7',1,'wvWare::Word97::CHP::hpsPos()']]],
+  ['hpszoonfontpag',['hpsZoonFontPag',['../structwv_ware_1_1_word97_1_1_d_o_p.html#a9f0cf426f3dbc24e7c2c09a550a763de',1,'wvWare::Word97::DOP']]],
+  ['hr',['hr',['../structwv_ware_1_1_word95_1_1_d_t_t_m.html#a3f3602cd2bd57be5695313d3e65d1d78',1,'wvWare::Word95::DTTM::hr()'],['../structwv_ware_1_1_word97_1_1_d_t_t_m.html#a87940c53776e9b943370caff807e6357',1,'wvWare::Word97::DTTM::hr()']]]
+];

@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: LlsDeepinLabelLibrary类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_lls_deepin_label_library.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_lls_deepin_label_library-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">LlsDeepinLabelLibrary类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a914cd3cdad1ba72d0ed17fa75d46b182"><td class="memItemLeft" align="right" valign="top"><a id="a914cd3cdad1ba72d0ed17fa75d46b182"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>func_lls_simplechecklabel</b>) (char *filename)</td></tr>
+<tr class="separator:a914cd3cdad1ba72d0ed17fa75d46b182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f8c8187d859f346a542b6d4ee25263"><td class="memItemLeft" align="right" valign="top"><a id="ad5f8c8187d859f346a542b6d4ee25263"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>func_lls_fullchecklabel</b>) (char *filename)</td></tr>
+<tr class="separator:ad5f8c8187d859f346a542b6d4ee25263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8a102107f24622890f75e24c747817"><td class="memItemLeft" align="right" valign="top"><a id="aff8a102107f24622890f75e24c747817"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>func_lls_checkprivilege</b>) (char *srcfilename, char *dstfilename, int iFilePrivilege56)</td></tr>
+<tr class="separator:aff8a102107f24622890f75e24c747817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5508f0a67f895361647dd7748c55d90"><td class="memItemLeft" align="right" valign="top"><a id="ab5508f0a67f895361647dd7748c55d90"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>func_lls_geterrordesc</b>) (int ierrorcode, string &amp;serrordesc, int &amp;ierrorlevel)</td></tr>
+<tr class="separator:ab5508f0a67f895361647dd7748c55d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afab397b78268b77c3cd854a1f880f11e"><td class="memItemLeft" align="right" valign="top"><a id="afab397b78268b77c3cd854a1f880f11e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadLibrary</b> (const QString &amp;fileName)</td></tr>
+<tr class="separator:afab397b78268b77c3cd854a1f880f11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3aa7da3df0cc11225ab934dd4ae580"><td class="memItemLeft" align="right" valign="top"><a id="a3f3aa7da3df0cc11225ab934dd4ae580"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCompletion</b> () const</td></tr>
+<tr class="separator:a3f3aa7da3df0cc11225ab934dd4ae580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea0e1276f04990f8660b4b64e9ffade"><td class="memItemLeft" align="right" valign="top"><a id="a1ea0e1276f04990f8660b4b64e9ffade"></a>
+func_lls_simplechecklabel&#160;</td><td class="memItemRight" valign="bottom"><b>lls_simplechecklabel</b> () const</td></tr>
+<tr class="separator:a1ea0e1276f04990f8660b4b64e9ffade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96deb7466c43a5623587b8c89014a6b0"><td class="memItemLeft" align="right" valign="top"><a id="a96deb7466c43a5623587b8c89014a6b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLls_simplechecklabel</b> (const func_lls_simplechecklabel &amp;lls_simplechecklabel)</td></tr>
+<tr class="separator:a96deb7466c43a5623587b8c89014a6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4998fb6700129da7860d1ccb0ac6ad5a"><td class="memItemLeft" align="right" valign="top"><a id="a4998fb6700129da7860d1ccb0ac6ad5a"></a>
+func_lls_fullchecklabel&#160;</td><td class="memItemRight" valign="bottom"><b>lls_fullchecklabel</b> () const</td></tr>
+<tr class="separator:a4998fb6700129da7860d1ccb0ac6ad5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd04a55a17bb143ee29f7c5351a2de8"><td class="memItemLeft" align="right" valign="top"><a id="a7dd04a55a17bb143ee29f7c5351a2de8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLls_fullchecklabel</b> (const func_lls_fullchecklabel &amp;lls_fullchecklabel)</td></tr>
+<tr class="separator:a7dd04a55a17bb143ee29f7c5351a2de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7791decb57fb3be4a799e420011627"><td class="memItemLeft" align="right" valign="top"><a id="a2c7791decb57fb3be4a799e420011627"></a>
+func_lls_checkprivilege&#160;</td><td class="memItemRight" valign="bottom"><b>lls_checkprivilege</b> () const</td></tr>
+<tr class="separator:a2c7791decb57fb3be4a799e420011627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b29b6aa2ab13534d14fd8d45f800cd"><td class="memItemLeft" align="right" valign="top"><a id="ad0b29b6aa2ab13534d14fd8d45f800cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLls_checkprivilege</b> (const func_lls_checkprivilege &amp;lls_checkprivilege)</td></tr>
+<tr class="separator:ad0b29b6aa2ab13534d14fd8d45f800cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef915d40beb7a1707be7c3ed24448606"><td class="memItemLeft" align="right" valign="top"><a id="aef915d40beb7a1707be7c3ed24448606"></a>
+func_lls_geterrordesc&#160;</td><td class="memItemRight" valign="bottom"><b>lls_geterrordesc</b> () const</td></tr>
+<tr class="separator:aef915d40beb7a1707be7c3ed24448606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa580eca9dc9fdbc29e574959c61f49c6"><td class="memItemLeft" align="right" valign="top"><a id="aa580eca9dc9fdbc29e574959c61f49c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLls_geterrordesc</b> (const func_lls_geterrordesc &amp;lls_geterrordesc)</td></tr>
+<tr class="separator:aa580eca9dc9fdbc29e574959c61f49c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ac0f8e9314baf9706cbb9e3a358ea533c"><td class="memItemLeft" align="right" valign="top"><a id="ac0f8e9314baf9706cbb9e3a358ea533c"></a>
+static <a class="el" href="class_lls_deepin_label_library.html">LlsDeepinLabelLibrary</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
+<tr class="separator:ac0f8e9314baf9706cbb9e3a358ea533c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd049ea5cfb27a4bb195e340ac75352"><td class="memItemLeft" align="right" valign="top"><a id="a4dd049ea5cfb27a4bb195e340ac75352"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>LibraryName</b> ()</td></tr>
+<tr class="separator:a4dd049ea5cfb27a4bb195e340ac75352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="llsdeepinlabellibrary_8h_source.html">llsdeepinlabellibrary.h</a> 第 <a class="el" href="llsdeepinlabellibrary_8h_source.html#l00056">56</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/sw_label/<a class="el" href="llsdeepinlabellibrary_8h_source.html">llsdeepinlabellibrary.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/sw_label/<a class="el" href="llsdeepinlabellibrary_8cpp_source.html">llsdeepinlabellibrary.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_lls_deepin_label_library.html">LlsDeepinLabelLibrary</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

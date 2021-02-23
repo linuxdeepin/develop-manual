@@ -1,0 +1,2576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: doctotext::PlainTextExtractor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdoctotext_1_1_plain_text_extractor.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classdoctotext_1_1_plain_text_extractor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">doctotext::PlainTextExtractor类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="3rd_party_2doctotext_2plain__text__extractor_8h_source.html">plain_text_extractor.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_plain_text_extractor_1_1_implementation.html">Implementation</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4c9ea1205adaeb0293833cb342434ba8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> { <br />
+&#160;&#160;<b>PARSER_AUTO</b>, 
+<b>PARSER_RTF</b>, 
+<b>PARSER_ODF_OOXML</b>, 
+<b>PARSER_XLS</b>, 
+<br />
+&#160;&#160;<b>PARSER_DOC</b>, 
+<b>PARSER_PPT</b>, 
+<b>PARSER_HTML</b>, 
+<b>PARSER_IWORK</b>, 
+<br />
+&#160;&#160;<b>PARSER_XLSB</b>, 
+<b>PARSER_PDF</b>, 
+<b>PARSER_TXT</b>, 
+<b>PARSER_EML</b>, 
+<br />
+&#160;&#160;<b>PARSER_ODFXML</b>, 
+<b>PARSER_AUTO</b>, 
+<b>PARSER_RTF</b>, 
+<b>PARSER_ODF_OOXML</b>, 
+<br />
+&#160;&#160;<b>PARSER_XLS</b>, 
+<b>PARSER_DOC</b>, 
+<b>PARSER_PPT</b>, 
+<b>PARSER_HTML</b>, 
+<br />
+&#160;&#160;<b>PARSER_IWORK</b>, 
+<b>PARSER_XLSB</b>, 
+<b>PARSER_PDF</b>, 
+<b>PARSER_TXT</b>, 
+<br />
+&#160;&#160;<b>PARSER_EML</b>, 
+<b>PARSER_ODFXML</b>
+<br />
+ }</td></tr>
+<tr class="separator:a4c9ea1205adaeb0293833cb342434ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9ea1205adaeb0293833cb342434ba8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> { <br />
+&#160;&#160;<b>PARSER_AUTO</b>, 
+<b>PARSER_RTF</b>, 
+<b>PARSER_ODF_OOXML</b>, 
+<b>PARSER_XLS</b>, 
+<br />
+&#160;&#160;<b>PARSER_DOC</b>, 
+<b>PARSER_PPT</b>, 
+<b>PARSER_HTML</b>, 
+<b>PARSER_IWORK</b>, 
+<br />
+&#160;&#160;<b>PARSER_XLSB</b>, 
+<b>PARSER_PDF</b>, 
+<b>PARSER_TXT</b>, 
+<b>PARSER_EML</b>, 
+<br />
+&#160;&#160;<b>PARSER_ODFXML</b>, 
+<b>PARSER_AUTO</b>, 
+<b>PARSER_RTF</b>, 
+<b>PARSER_ODF_OOXML</b>, 
+<br />
+&#160;&#160;<b>PARSER_XLS</b>, 
+<b>PARSER_DOC</b>, 
+<b>PARSER_PPT</b>, 
+<b>PARSER_HTML</b>, 
+<br />
+&#160;&#160;<b>PARSER_IWORK</b>, 
+<b>PARSER_XLSB</b>, 
+<b>PARSER_PDF</b>, 
+<b>PARSER_TXT</b>, 
+<br />
+&#160;&#160;<b>PARSER_EML</b>, 
+<b>PARSER_ODFXML</b>
+<br />
+ }</td></tr>
+<tr class="separator:a4c9ea1205adaeb0293833cb342434ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa7b6c978d5c5aa2d93c128a3351a5b0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#aa7b6c978d5c5aa2d93c128a3351a5b0c">PlainTextExtractor</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type=PARSER_AUTO)</td></tr>
+<tr class="separator:aa7b6c978d5c5aa2d93c128a3351a5b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269fb79c4ec79a8ec8cec880a3256f81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a269fb79c4ec79a8ec8cec880a3256f81">setVerboseLogging</a> (bool verbose)</td></tr>
+<tr class="separator:a269fb79c4ec79a8ec8cec880a3256f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02065b65806aa2bdcef2e81e9ba06213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a02065b65806aa2bdcef2e81e9ba06213">setLogStream</a> (std::ostream &amp;log_stream)</td></tr>
+<tr class="separator:a02065b65806aa2bdcef2e81e9ba06213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ec4c2d525abd22a26b20b3be13625f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ab3ec4c2d525abd22a26b20b3be13625f">setFormattingStyle</a> (const <a class="el" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a> &amp;style)</td></tr>
+<tr class="separator:ab3ec4c2d525abd22a26b20b3be13625f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed067188c2ed0842f86967ddae98fb61"><td class="memItemLeft" align="right" valign="top"><a id="aed067188c2ed0842f86967ddae98fb61"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setXmlParseMode</b> (XmlParseMode mode)</td></tr>
+<tr class="separator:aed067188c2ed0842f86967ddae98fb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6daf1c8349c35d26114b7f4610186ee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a6daf1c8349c35d26114b7f4610186ee4">setManageXmlParser</a> (bool manage)</td></tr>
+<tr class="separator:a6daf1c8349c35d26114b7f4610186ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa199bf3ed16afbb82dc66ddfb822690d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#aa199bf3ed16afbb82dc66ddfb822690d">parserTypeByFileExtension</a> (const std::string &amp;file_name)</td></tr>
+<tr class="separator:aa199bf3ed16afbb82dc66ddfb822690d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac1e85ad1b80f762f43447e2c7b7f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a8ac1e85ad1b80f762f43447e2c7b7f1c">parserTypeByFileExtension</a> (const char *file_name)</td></tr>
+<tr class="separator:a8ac1e85ad1b80f762f43447e2c7b7f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0cdb62250aea456b99478aa9ba15eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#afd0cdb62250aea456b99478aa9ba15eb">parserTypeByFileContent</a> (const std::string &amp;file_name, <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;parser_type)</td></tr>
+<tr class="separator:afd0cdb62250aea456b99478aa9ba15eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae904cb5474fc1468e04ccc0d997a7ab3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ae904cb5474fc1468e04ccc0d997a7ab3">parserTypeByFileContent</a> (const char *file_name, <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;parser_type)</td></tr>
+<tr class="separator:ae904cb5474fc1468e04ccc0d997a7ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3faaafae318e974e16ac44f02465c980"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a3faaafae318e974e16ac44f02465c980">parserTypeByFileContent</a> (const char *buffer, size_t size, <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;parser_type)</td></tr>
+<tr class="separator:a3faaafae318e974e16ac44f02465c980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea1fb26bca508f65b5cb09b6491fc5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a2ea1fb26bca508f65b5cb09b6491fc5f">processFile</a> (const std::string &amp;file_name, std::string &amp;text)</td></tr>
+<tr class="memdesc:a2ea1fb26bca508f65b5cb09b6491fc5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析文件获取内容  <a href="#a2ea1fb26bca508f65b5cb09b6491fc5f">更多...</a><br /></td></tr>
+<tr class="separator:a2ea1fb26bca508f65b5cb09b6491fc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23a7f78339808cd21dacb19d9d646e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ad23a7f78339808cd21dacb19d9d646e0">processFile</a> (const char *file_name, char *&amp;text)</td></tr>
+<tr class="separator:ad23a7f78339808cd21dacb19d9d646e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0993081ac15936306d01ad937b06cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#abd0993081ac15936306d01ad937b06cf">processFile</a> (const char *buffer, size_t size, char *&amp;text)</td></tr>
+<tr class="separator:abd0993081ac15936306d01ad937b06cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa646829dcd516251dc0bcf8ac55055e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#aa646829dcd516251dc0bcf8ac55055e9">processFile</a> (const char *buffer, size_t size, std::string &amp;text)</td></tr>
+<tr class="separator:aa646829dcd516251dc0bcf8ac55055e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fc5d7e66e18a142689aaa85f036ba4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a86fc5d7e66e18a142689aaa85f036ba4">processFile</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const std::string &amp;file_name, std::string &amp;text)</td></tr>
+<tr class="memdesc:a86fc5d7e66e18a142689aaa85f036ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据文件类型进行  <a href="#a86fc5d7e66e18a142689aaa85f036ba4">更多...</a><br /></td></tr>
+<tr class="separator:a86fc5d7e66e18a142689aaa85f036ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e40a7c682c2c0d1401d8930ed8e107c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a1e40a7c682c2c0d1401d8930ed8e107c">processFile</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *file_name, char *&amp;text)</td></tr>
+<tr class="separator:a1e40a7c682c2c0d1401d8930ed8e107c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e391540f4582df5e395818a959b3d9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a2e391540f4582df5e395818a959b3d9e">processFile</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *buffer, size_t size, char *&amp;text)</td></tr>
+<tr class="separator:a2e391540f4582df5e395818a959b3d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73831e90982124fd7a817c4e089529a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#aa73831e90982124fd7a817c4e089529a">processFile</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *buffer, size_t size, std::string &amp;text)</td></tr>
+<tr class="separator:aa73831e90982124fd7a817c4e089529a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6e311e5f69f77aa8ae270b2532b93d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#acd6e311e5f69f77aa8ae270b2532b93d">extractMetadata</a> (const std::string &amp;file_name, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:acd6e311e5f69f77aa8ae270b2532b93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d424767e4cd8987b5b64a0769a59fec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a0d424767e4cd8987b5b64a0769a59fec">extractMetadata</a> (const char *file_name, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:a0d424767e4cd8987b5b64a0769a59fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa7354bf4b25c779351b13c38fc5cec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#abfa7354bf4b25c779351b13c38fc5cec">extractMetadata</a> (const char *buffer, size_t size, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:abfa7354bf4b25c779351b13c38fc5cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33991f34deac076f12b2d2348d271c04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a33991f34deac076f12b2d2348d271c04">extractMetadata</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const std::string &amp;file_name, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:a33991f34deac076f12b2d2348d271c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3157a169ff10e0943d339043d5232462"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a3157a169ff10e0943d339043d5232462">extractMetadata</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *file_name, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:a3157a169ff10e0943d339043d5232462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccbd36de70c92ad931d8f87d44c4821"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a0ccbd36de70c92ad931d8f87d44c4821">extractMetadata</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *buffer, size_t size, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:a0ccbd36de70c92ad931d8f87d44c4821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3496ea589bd0596806a71f7b5ec46e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a0a3496ea589bd0596806a71f7b5ec46e">getNumberOfLinks</a> () const</td></tr>
+<tr class="separator:a0a3496ea589bd0596806a71f7b5ec46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fb1a041d6329b6c0dc31e831063d1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a92fb1a041d6329b6c0dc31e831063d1d">getParsedLinks</a> (std::vector&lt; <a class="el" href="classdoctotext_1_1_link.html">Link</a> &gt; &amp;links) const</td></tr>
+<tr class="separator:a92fb1a041d6329b6c0dc31e831063d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b181ac9fd4f086dcc3c0688cd52e7da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a2b181ac9fd4f086dcc3c0688cd52e7da">getParsedLinks</a> (const <a class="el" href="classdoctotext_1_1_link.html">Link</a> *&amp;links, size_t &amp;number_of_links) const</td></tr>
+<tr class="separator:a2b181ac9fd4f086dcc3c0688cd52e7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98c7e193531c44437c0426e26f6437a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdoctotext_1_1_link.html">Link</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ac98c7e193531c44437c0426e26f6437a">getParsedLinks</a> () const</td></tr>
+<tr class="separator:ac98c7e193531c44437c0426e26f6437a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efa6c13409f6007e799fb79c8378a04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a3efa6c13409f6007e799fb79c8378a04">getAttachments</a> (std::vector&lt; <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> &gt; &amp;attachments) const</td></tr>
+<tr class="separator:a3efa6c13409f6007e799fb79c8378a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1345c909f014eca050488b1cfdb8ba6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a1345c909f014eca050488b1cfdb8ba6c">getAttachments</a> (const <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> *&amp;attachments, size_t &amp;number_of_attachments) const</td></tr>
+<tr class="separator:a1345c909f014eca050488b1cfdb8ba6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503e78969019332ea85b00c644d42ac4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a503e78969019332ea85b00c644d42ac4">getAttachments</a> () const</td></tr>
+<tr class="separator:a503e78969019332ea85b00c644d42ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1412e66135af009a068336982c7403e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#af1412e66135af009a068336982c7403e">getNumberOfAttachments</a> () const</td></tr>
+<tr class="separator:af1412e66135af009a068336982c7403e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3860236c37c8d1af576f21d8d0aa352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#af3860236c37c8d1af576f21d8d0aa352">PlainTextExtractor</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type=PARSER_AUTO)</td></tr>
+<tr class="separator:af3860236c37c8d1af576f21d8d0aa352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c15ef99a89289ae637a5c746fe4ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#af8c15ef99a89289ae637a5c746fe4ee7">setVerboseLogging</a> (bool verbose)</td></tr>
+<tr class="separator:af8c15ef99a89289ae637a5c746fe4ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecef3bac8503995043a7c2e2b349fa6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#aecef3bac8503995043a7c2e2b349fa6f">setLogStream</a> (std::ostream &amp;log_stream)</td></tr>
+<tr class="separator:aecef3bac8503995043a7c2e2b349fa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac048d5ddf37fc33d92773bf72d2f19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a5ac048d5ddf37fc33d92773bf72d2f19">setFormattingStyle</a> (const <a class="el" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a> &amp;style)</td></tr>
+<tr class="separator:a5ac048d5ddf37fc33d92773bf72d2f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635489b3bf18dc29c9c5e6bfd4c50c12"><td class="memItemLeft" align="right" valign="top"><a id="a635489b3bf18dc29c9c5e6bfd4c50c12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setXmlParseMode</b> (XmlParseMode mode)</td></tr>
+<tr class="separator:a635489b3bf18dc29c9c5e6bfd4c50c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a88a00db3bcb3d1620e65ff681f7307"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a9a88a00db3bcb3d1620e65ff681f7307">setManageXmlParser</a> (bool manage)</td></tr>
+<tr class="separator:a9a88a00db3bcb3d1620e65ff681f7307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124e16439926713d9b0016634283b16f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a124e16439926713d9b0016634283b16f">parserTypeByFileExtension</a> (const std::string &amp;file_name)</td></tr>
+<tr class="separator:a124e16439926713d9b0016634283b16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b3503a99d53160ef84c5d160bca500"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#af6b3503a99d53160ef84c5d160bca500">parserTypeByFileExtension</a> (const char *file_name)</td></tr>
+<tr class="separator:af6b3503a99d53160ef84c5d160bca500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3445d0d4d4c9990d1f9fae82bae1eb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#aa3445d0d4d4c9990d1f9fae82bae1eb8">parserTypeByFileContent</a> (const std::string &amp;file_name, <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;parser_type)</td></tr>
+<tr class="separator:aa3445d0d4d4c9990d1f9fae82bae1eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57427932d2e93dad1ab5b246781aa1bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a57427932d2e93dad1ab5b246781aa1bd">parserTypeByFileContent</a> (const char *file_name, <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;parser_type)</td></tr>
+<tr class="separator:a57427932d2e93dad1ab5b246781aa1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1193ae5b861ea310783bee5d90e1f754"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a1193ae5b861ea310783bee5d90e1f754">parserTypeByFileContent</a> (const char *buffer, size_t size, <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;parser_type)</td></tr>
+<tr class="separator:a1193ae5b861ea310783bee5d90e1f754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ee898ddf7450ff51d4f7026fa32697"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a64ee898ddf7450ff51d4f7026fa32697">processFile</a> (const std::string &amp;file_name, std::string &amp;text)</td></tr>
+<tr class="separator:a64ee898ddf7450ff51d4f7026fa32697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81c90617ad0dd395226d8d90a4d8dd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ab81c90617ad0dd395226d8d90a4d8dd4">processFile</a> (const char *file_name, char *&amp;text)</td></tr>
+<tr class="separator:ab81c90617ad0dd395226d8d90a4d8dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e7f112c99391b732acd214280c851d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a54e7f112c99391b732acd214280c851d">processFile</a> (const char *buffer, size_t size, char *&amp;text)</td></tr>
+<tr class="separator:a54e7f112c99391b732acd214280c851d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd44dd545ccc7d97c650a3784413330"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a2bd44dd545ccc7d97c650a3784413330">processFile</a> (const char *buffer, size_t size, std::string &amp;text)</td></tr>
+<tr class="separator:a2bd44dd545ccc7d97c650a3784413330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b6e98441f24a23a8921c4b5d29c5ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ab5b6e98441f24a23a8921c4b5d29c5ac">processFile</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const std::string &amp;file_name, std::string &amp;text)</td></tr>
+<tr class="separator:ab5b6e98441f24a23a8921c4b5d29c5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f4d46d088df49a93fcab89c0173bc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#af5f4d46d088df49a93fcab89c0173bc9">processFile</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *file_name, char *&amp;text)</td></tr>
+<tr class="separator:af5f4d46d088df49a93fcab89c0173bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63186564bcb23955f9ab3350bd764712"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a63186564bcb23955f9ab3350bd764712">processFile</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *buffer, size_t size, char *&amp;text)</td></tr>
+<tr class="separator:a63186564bcb23955f9ab3350bd764712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd843fe1c2fdf906fa7fea60399374b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a3cd843fe1c2fdf906fa7fea60399374b">processFile</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *buffer, size_t size, std::string &amp;text)</td></tr>
+<tr class="separator:a3cd843fe1c2fdf906fa7fea60399374b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12fc8d7497365dd4e285d734b6f83440"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a12fc8d7497365dd4e285d734b6f83440">extractMetadata</a> (const std::string &amp;file_name, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:a12fc8d7497365dd4e285d734b6f83440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b5fbaaf484d42ec382c0af79532860"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#af7b5fbaaf484d42ec382c0af79532860">extractMetadata</a> (const char *file_name, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:af7b5fbaaf484d42ec382c0af79532860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94f418f0bd2760a575740f3c307fe51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ae94f418f0bd2760a575740f3c307fe51">extractMetadata</a> (const char *buffer, size_t size, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:ae94f418f0bd2760a575740f3c307fe51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c04475e93f95a1c11b47e2411b9c432"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a6c04475e93f95a1c11b47e2411b9c432">extractMetadata</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const std::string &amp;file_name, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:a6c04475e93f95a1c11b47e2411b9c432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355f39a2cfffd856e9c2cec5fe33d74d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a355f39a2cfffd856e9c2cec5fe33d74d">extractMetadata</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *file_name, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:a355f39a2cfffd856e9c2cec5fe33d74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8930b3752da194d6834d9c15bbf8e2ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a8930b3752da194d6834d9c15bbf8e2ff">extractMetadata</a> (<a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> parser_type, bool fallback, const char *buffer, size_t size, <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;metadata)</td></tr>
+<tr class="separator:a8930b3752da194d6834d9c15bbf8e2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af670a17023bed5c2e5b3167d6e75d8a8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#af670a17023bed5c2e5b3167d6e75d8a8">getNumberOfLinks</a> () const</td></tr>
+<tr class="separator:af670a17023bed5c2e5b3167d6e75d8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f248dc3a20ac6af9040965dfb54c00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a08f248dc3a20ac6af9040965dfb54c00">getParsedLinks</a> (std::vector&lt; <a class="el" href="classdoctotext_1_1_link.html">Link</a> &gt; &amp;links) const</td></tr>
+<tr class="separator:a08f248dc3a20ac6af9040965dfb54c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad542fe554c6bcd4dcfe99bc6d41a91d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ad542fe554c6bcd4dcfe99bc6d41a91d7">getParsedLinks</a> (const <a class="el" href="classdoctotext_1_1_link.html">Link</a> *&amp;links, size_t &amp;number_of_links) const</td></tr>
+<tr class="separator:ad542fe554c6bcd4dcfe99bc6d41a91d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561a8ddbae01fccbc000b3a810f6936d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdoctotext_1_1_link.html">Link</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a561a8ddbae01fccbc000b3a810f6936d">getParsedLinks</a> () const</td></tr>
+<tr class="separator:a561a8ddbae01fccbc000b3a810f6936d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacee6ffc8e9d60887cf339f26ac8ebe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#aacee6ffc8e9d60887cf339f26ac8ebe7">getAttachments</a> (std::vector&lt; <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> &gt; &amp;attachments) const</td></tr>
+<tr class="separator:aacee6ffc8e9d60887cf339f26ac8ebe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19f92b2f7df3cbe33393d4b14931b02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ab19f92b2f7df3cbe33393d4b14931b02">getAttachments</a> (const <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> *&amp;attachments, size_t &amp;number_of_attachments) const</td></tr>
+<tr class="separator:ab19f92b2f7df3cbe33393d4b14931b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc0bf89276a73008a517ec9fce85cf0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a6dc0bf89276a73008a517ec9fce85cf0">getAttachments</a> () const</td></tr>
+<tr class="separator:a6dc0bf89276a73008a517ec9fce85cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829e6b79c8747af4fb935de222d09384"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a829e6b79c8747af4fb935de222d09384">getNumberOfAttachments</a> () const</td></tr>
+<tr class="separator:a829e6b79c8747af4fb935de222d09384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Extracts plain text from documents. In addition it can be used to extract metadata and comments (annotations). Example of usage (extracting plain text): </p><div class="fragment"><div class="line"><a class="code" href="classdoctotext_1_1_plain_text_extractor.html#aa7b6c978d5c5aa2d93c128a3351a5b0c">PlainTextExtractor</a> extractor;</div><div class="line">std::string text;</div><div class="line"><span class="keywordflow">if</span> (extractor.processFile(<span class="stringliteral">&quot;example.doc&quot;</span>, text))</div><div class="line">    std::cout &lt;&lt; text &lt;&lt; std::endl;</div><div class="line"><span class="keywordflow">else</span></div><div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;Error.&quot;</span> &lt;&lt; std::endl;</div></div><!-- fragment --><p> Example of usage (extracting metadata): </p><div class="fragment"><div class="line"><a class="code" href="classdoctotext_1_1_plain_text_extractor.html#aa7b6c978d5c5aa2d93c128a3351a5b0c">PlainTextExtractor</a> extractor;</div><div class="line">Metadata meta;</div><div class="line"><span class="keywordflow">if</span> (extractor.extractMetadata(<span class="stringliteral">&quot;example.doc&quot;</span>, meta))</div><div class="line">    std::cout &lt;&lt; meta.author &lt;&lt; std::endl;</div><div class="line"><span class="keywordflow">else</span></div><div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;Error.&quot;</span> &lt;&lt; std::endl;</div></div><!-- fragment --><p> Note that each instance of <a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a> should be used in single thread only. One instance of this object cannot parse two or more files in parallel. </p>
+
+<p class="definition">在文件 <a class="el" href="3rd_party_2doctotext_2plain__text__extractor_8h_source.html">plain_text_extractor.h</a> 第 <a class="el" href="3rd_party_2doctotext_2plain__text__extractor_8h_source.html#l00038">38</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a4c9ea1205adaeb0293833cb342434ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9ea1205adaeb0293833cb342434ba8">&#9670;&nbsp;</a></span>ParserType <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">doctotext::PlainTextExtractor::ParserType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enumerates all supported document formats. <code>PARSER_AUTO</code> means unknown format that should be determined. </p>
+
+<p class="definition">在文件 <a class="el" href="3rd_party_2doctotext_2plain__text__extractor_8h_source.html">plain_text_extractor.h</a> 第 <a class="el" href="3rd_party_2doctotext_2plain__text__extractor_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c9ea1205adaeb0293833cb342434ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9ea1205adaeb0293833cb342434ba8">&#9670;&nbsp;</a></span>ParserType <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">doctotext::PlainTextExtractor::ParserType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enumerates all supported document formats. <code>PARSER_AUTO</code> means unknown format that should be determined. </p>
+
+<p class="definition">在文件 <a class="el" href="fulltextsearch_2plain__text__extractor_8h_source.html">plain_text_extractor.h</a> 第 <a class="el" href="fulltextsearch_2plain__text__extractor_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa7b6c978d5c5aa2d93c128a3351a5b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b6c978d5c5aa2d93c128a3351a5b0c">&#9670;&nbsp;</a></span>PlainTextExtractor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlainTextExtractor::PlainTextExtractor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em> = <code>PARSER_AUTO</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The constructor. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser_type</td><td>restricts parser to specified document format. If set to <code>PARSER_AUTO</code> the parser will work with all supported documents formats. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00618">618</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af3860236c37c8d1af576f21d8d0aa352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3860236c37c8d1af576f21d8d0aa352">&#9670;&nbsp;</a></span>PlainTextExtractor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">doctotext::PlainTextExtractor::PlainTextExtractor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em> = <code>PARSER_AUTO</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The constructor. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser_type</td><td>restricts parser to specified document format. If set to <code>PARSER_AUTO</code> the parser will work with all supported documents formats. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="acd6e311e5f69f77aa8ae270b2532b93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6e311e5f69f77aa8ae270b2532b93d">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[1/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts metadata (author, creation time, etc). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">metadata</td><td>reference to object of <code><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a></code> class that will contain extracted information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01236">1236</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a12fc8d7497365dd4e285d734b6f83440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12fc8d7497365dd4e285d734b6f83440">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[2/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts metadata (author, creation time, etc). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">metadata</td><td>reference to object of <code><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a></code> class that will contain extracted information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0d424767e4cd8987b5b64a0769a59fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d424767e4cd8987b5b64a0769a59fec">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[3/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01252">1252</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af7b5fbaaf484d42ec382c0af79532860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b5fbaaf484d42ec382c0af79532860">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[4/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+</div>
+</div>
+<a id="abfa7354bf4b25c779351b13c38fc5cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa7354bf4b25c779351b13c38fc5cec">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts metadata (author, creation time, etc). Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01257">1257</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae94f418f0bd2760a575740f3c307fe51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae94f418f0bd2760a575740f3c307fe51">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[6/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts metadata (author, creation time, etc). Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33991f34deac076f12b2d2348d271c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33991f34deac076f12b2d2348d271c04">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[7/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts metadata (author, creation time, etc). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser_type</td><td>restricts parser to specified document format. If set to <code>PARSER_AUTO</code> the parser will work with all supported documents formats. This argument override parser type set for the object. </td></tr>
+    <tr><td class="paramname">fallback</td><td>if <code>true</code> parser will try to detect document format if parsing of document format specified in <code>parser_type</code> argument fails. This parameter is ignored if <code>parser_type</code> is set to <code>PARSER_AUTO</code>. </td></tr>
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">metadata</td><td>reference to object of <code><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a></code> class that will contain extracted information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01271">1271</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c04475e93f95a1c11b47e2411b9c432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c04475e93f95a1c11b47e2411b9c432">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[8/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts metadata (author, creation time, etc). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser_type</td><td>restricts parser to specified document format. If set to <code>PARSER_AUTO</code> the parser will work with all supported documents formats. This argument override parser type set for the object. </td></tr>
+    <tr><td class="paramname">fallback</td><td>if <code>true</code> parser will try to detect document format if parsing of document format specified in <code>parser_type</code> argument fails. This parameter is ignored if <code>parser_type</code> is set to <code>PARSER_AUTO</code>. </td></tr>
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">metadata</td><td>reference to object of <code><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a></code> class that will contain extracted information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3157a169ff10e0943d339043d5232462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3157a169ff10e0943d339043d5232462">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01447">1447</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a355f39a2cfffd856e9c2cec5fe33d74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a355f39a2cfffd856e9c2cec5fe33d74d">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[10/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+</div>
+</div>
+<a id="a0ccbd36de70c92ad931d8f87d44c4821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ccbd36de70c92ad931d8f87d44c4821">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[11/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts metadata (author, creation time, etc). Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01452">1452</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8930b3752da194d6834d9c15bbf8e2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8930b3752da194d6834d9c15bbf8e2ff">&#9670;&nbsp;</a></span>extractMetadata() <span class="overload">[12/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::extractMetadata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_metadata.html">Metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts metadata (author, creation time, etc). Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3efa6c13409f6007e799fb79c8378a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3efa6c13409f6007e799fb79c8378a04">&#9670;&nbsp;</a></span>getAttachments() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlainTextExtractor::getAttachments </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>attachments</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets vector of the attachments in the last parsed file. Only EML parser is supported for now. Call this method after you have processed file. </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01645">1645</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aacee6ffc8e9d60887cf339f26ac8ebe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacee6ffc8e9d60887cf339f26ac8ebe7">&#9670;&nbsp;</a></span>getAttachments() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctotext::PlainTextExtractor::getAttachments </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>attachments</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets vector of the attachments in the last parsed file. Only EML parser is supported for now. Call this method after you have processed file. </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1345c909f014eca050488b1cfdb8ba6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1345c909f014eca050488b1cfdb8ba6c">&#9670;&nbsp;</a></span>getAttachments() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlainTextExtractor::getAttachments </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> *&amp;&#160;</td>
+          <td class="paramname"><em>attachments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>number_of_attachments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets table of the attachments in the last parsed file. Only EML parser is supported for now. Call this method after you have processed file. Note that table of attachments will be deleted, if <code><a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a></code> is deleted or another file is parsed. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attachments</td><td>pointer to the first element in table of <code><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a></code> objects. </td></tr>
+    <tr><td class="paramname">number_of_attachments</td><td>number of attachments in table. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01650">1650</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab19f92b2f7df3cbe33393d4b14931b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19f92b2f7df3cbe33393d4b14931b02">&#9670;&nbsp;</a></span>getAttachments() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctotext::PlainTextExtractor::getAttachments </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> *&amp;&#160;</td>
+          <td class="paramname"><em>attachments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>number_of_attachments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets table of the attachments in the last parsed file. Only EML parser is supported for now. Call this method after you have processed file. Note that table of attachments will be deleted, if <code><a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a></code> is deleted or another file is parsed. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attachments</td><td>pointer to the first element in table of <code><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a></code> objects. </td></tr>
+    <tr><td class="paramname">number_of_attachments</td><td>number of attachments in table. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6dc0bf89276a73008a517ec9fce85cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc0bf89276a73008a517ec9fce85cf0">&#9670;&nbsp;</a></span>getAttachments() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a>* doctotext::PlainTextExtractor::getAttachments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets table of the attachments in the last parsed file. Only EML parser is supported for now. Call this method after you have processed file. Note that table of attachments will be deleted, if <a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a> is deleted or another file is parsed. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="section return"><dt>返回</dt><dd>pointer to the first element in table of <code><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a></code> objects. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> </dd></dl>
+
+</div>
+</div>
+<a id="a503e78969019332ea85b00c644d42ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503e78969019332ea85b00c644d42ac4">&#9670;&nbsp;</a></span>getAttachments() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> * PlainTextExtractor::getAttachments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets table of the attachments in the last parsed file. Only EML parser is supported for now. Call this method after you have processed file. Note that table of attachments will be deleted, if <a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a> is deleted or another file is parsed. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="section return"><dt>返回</dt><dd>pointer to the first element in table of <code><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a></code> objects. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01664">1664</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af1412e66135af009a068336982c7403e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1412e66135af009a068336982c7403e">&#9670;&nbsp;</a></span>getNumberOfAttachments() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t PlainTextExtractor::getNumberOfAttachments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets number of attachments in the last parsed file. Only EML parser is supported for now. Call this method after you have processed file. </p><dl class="section return"><dt>返回</dt><dd>number of the attachments in parsed file. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01640">1640</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a829e6b79c8747af4fb935de222d09384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a829e6b79c8747af4fb935de222d09384">&#9670;&nbsp;</a></span>getNumberOfAttachments() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t doctotext::PlainTextExtractor::getNumberOfAttachments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets number of attachments in the last parsed file. Only EML parser is supported for now. Call this method after you have processed file. </p><dl class="section return"><dt>返回</dt><dd>number of the attachments in parsed file. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_attachment.html">Attachment</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0a3496ea589bd0596806a71f7b5ec46e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3496ea589bd0596806a71f7b5ec46e">&#9670;&nbsp;</a></span>getNumberOfLinks() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t PlainTextExtractor::getNumberOfLinks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets number of links in the last parsed file. Supported parsers: HTML/EML/ODF_OOXML/ODFXML. </p><dl class="section return"><dt>返回</dt><dd>number of the links in parsed file. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_link.html">Link</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01609">1609</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af670a17023bed5c2e5b3167d6e75d8a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af670a17023bed5c2e5b3167d6e75d8a8">&#9670;&nbsp;</a></span>getNumberOfLinks() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t doctotext::PlainTextExtractor::getNumberOfLinks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets number of links in the last parsed file. Supported parsers: HTML/EML/ODF_OOXML/ODFXML. </p><dl class="section return"><dt>返回</dt><dd>number of the links in parsed file. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_link.html">Link</a> </dd></dl>
+
+</div>
+</div>
+<a id="a92fb1a041d6329b6c0dc31e831063d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92fb1a041d6329b6c0dc31e831063d1d">&#9670;&nbsp;</a></span>getParsedLinks() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlainTextExtractor::getParsedLinks </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classdoctotext_1_1_link.html">Link</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>links</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets vector of the links in the last parsed file. Supported parsers: HTML/EML/ODF_OOXML/ODFXML. </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_link.html">Link</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01614">1614</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a08f248dc3a20ac6af9040965dfb54c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f248dc3a20ac6af9040965dfb54c00">&#9670;&nbsp;</a></span>getParsedLinks() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctotext::PlainTextExtractor::getParsedLinks </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classdoctotext_1_1_link.html">Link</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>links</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets vector of the links in the last parsed file. Supported parsers: HTML/EML/ODF_OOXML/ODFXML. </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_link.html">Link</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad542fe554c6bcd4dcfe99bc6d41a91d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad542fe554c6bcd4dcfe99bc6d41a91d7">&#9670;&nbsp;</a></span>getParsedLinks() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctotext::PlainTextExtractor::getParsedLinks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdoctotext_1_1_link.html">Link</a> *&amp;&#160;</td>
+          <td class="paramname"><em>links</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>number_of_links</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets table of the links in the last parsed file. Supported parsers: HTML/EML/ODF_OOXML/ODFXML. Note that table of links will be deleted, if <code><a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a></code> is deleted or another file is parsed. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">links</td><td>pointer to the first element in table of <code><a class="el" href="classdoctotext_1_1_link.html">Link</a></code> objects. </td></tr>
+    <tr><td class="paramname">number_of_links</td><td>number of links in table. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_link.html">Link</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2b181ac9fd4f086dcc3c0688cd52e7da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b181ac9fd4f086dcc3c0688cd52e7da">&#9670;&nbsp;</a></span>getParsedLinks() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlainTextExtractor::getParsedLinks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdoctotext_1_1_link.html">Link</a> *&amp;&#160;</td>
+          <td class="paramname"><em>links</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>number_of_links</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets table of the links in the last parsed file. Supported parsers: HTML/EML/ODF_OOXML/ODFXML. Note that table of links will be deleted, if <code><a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a></code> is deleted or another file is parsed. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">links</td><td>pointer to the first element in table of <code><a class="el" href="classdoctotext_1_1_link.html">Link</a></code> objects. </td></tr>
+    <tr><td class="paramname">number_of_links</td><td>number of links in table. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_link.html">Link</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01619">1619</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac98c7e193531c44437c0426e26f6437a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98c7e193531c44437c0426e26f6437a">&#9670;&nbsp;</a></span>getParsedLinks() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdoctotext_1_1_link.html">Link</a> * PlainTextExtractor::getParsedLinks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets table of the links in the last parsed file. Supported parsers: HTML/EML/ODF_OOXML/ODFXML. Note that table of links will be deleted, if <a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a> is deleted or another file is parsed. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="section return"><dt>返回</dt><dd>pointer to the first element in table of <code><a class="el" href="classdoctotext_1_1_link.html">Link</a></code> objects. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_link.html">Link</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01633">1633</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a561a8ddbae01fccbc000b3a810f6936d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a561a8ddbae01fccbc000b3a810f6936d">&#9670;&nbsp;</a></span>getParsedLinks() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdoctotext_1_1_link.html">Link</a>* doctotext::PlainTextExtractor::getParsedLinks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets table of the links in the last parsed file. Supported parsers: HTML/EML/ODF_OOXML/ODFXML. Note that table of links will be deleted, if <a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a> is deleted or another file is parsed. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="section return"><dt>返回</dt><dd>pointer to the first element in table of <code><a class="el" href="classdoctotext_1_1_link.html">Link</a></code> objects. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_link.html">Link</a> </dd></dl>
+
+</div>
+</div>
+<a id="afd0cdb62250aea456b99478aa9ba15eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0cdb62250aea456b99478aa9ba15eb">&#9670;&nbsp;</a></span>parserTypeByFileContent() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::parserTypeByFileContent </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;&#160;</td>
+          <td class="paramname"><em>parser_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tries to determine document format by file content. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">reference</td><td>to variable of <code>ParserType</code> type that will contain determined document format or PARSER_AUTO if document format cannot be determined. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#aa199bf3ed16afbb82dc66ddfb822690d">parserTypeByFileExtension</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00699">699</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa3445d0d4d4c9990d1f9fae82bae1eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3445d0d4d4c9990d1f9fae82bae1eb8">&#9670;&nbsp;</a></span>parserTypeByFileContent() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::parserTypeByFileContent </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;&#160;</td>
+          <td class="paramname"><em>parser_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tries to determine document format by file content. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">reference</td><td>to variable of <code>ParserType</code> type that will contain determined document format or PARSER_AUTO if document format cannot be determined. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#aa199bf3ed16afbb82dc66ddfb822690d">parserTypeByFileExtension</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae904cb5474fc1468e04ccc0d997a7ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae904cb5474fc1468e04ccc0d997a7ab3">&#9670;&nbsp;</a></span>parserTypeByFileContent() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::parserTypeByFileContent </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;&#160;</td>
+          <td class="paramname"><em>parser_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00851">851</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a57427932d2e93dad1ab5b246781aa1bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57427932d2e93dad1ab5b246781aa1bd">&#9670;&nbsp;</a></span>parserTypeByFileContent() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::parserTypeByFileContent </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;&#160;</td>
+          <td class="paramname"><em>parser_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+</div>
+</div>
+<a id="a3faaafae318e974e16ac44f02465c980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3faaafae318e974e16ac44f02465c980">&#9670;&nbsp;</a></span>parserTypeByFileContent() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::parserTypeByFileContent </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;&#160;</td>
+          <td class="paramname"><em>parser_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tries to determine document format by file content. Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00775">775</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1193ae5b861ea310783bee5d90e1f754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1193ae5b861ea310783bee5d90e1f754">&#9670;&nbsp;</a></span>parserTypeByFileContent() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::parserTypeByFileContent </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> &amp;&#160;</td>
+          <td class="paramname"><em>parser_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tries to determine document format by file content. Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa199bf3ed16afbb82dc66ddfb822690d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa199bf3ed16afbb82dc66ddfb822690d">&#9670;&nbsp;</a></span>parserTypeByFileExtension() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">PlainTextExtractor::ParserType</a> PlainTextExtractor::parserTypeByFileExtension </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tries to determine document format by file name extension. </p><dl class="section warning"><dt>警告</dt><dd>Some applications save CSV documents with "xls" extension, RTF documents with "doc" extension or HTML documents with "xls" or "doc" extension. In such a situation this simple test will fail. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>file name or full path to file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>value of <code>ParserType</code> type representing determined document format or PARSER_AUTO if document format cannot be determined. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#afd0cdb62250aea456b99478aa9ba15eb">parserTypeByFileContent</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00662">662</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a124e16439926713d9b0016634283b16f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a124e16439926713d9b0016634283b16f">&#9670;&nbsp;</a></span>parserTypeByFileExtension() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> doctotext::PlainTextExtractor::parserTypeByFileExtension </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tries to determine document format by file name extension. </p><dl class="section warning"><dt>警告</dt><dd>Some applications save CSV documents with "xls" extension, RTF documents with "doc" extension or HTML documents with "xls" or "doc" extension. In such a situation this simple test will fail. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>file name or full path to file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>value of <code>ParserType</code> type representing determined document format or PARSER_AUTO if document format cannot be determined. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#afd0cdb62250aea456b99478aa9ba15eb">parserTypeByFileContent</a> </dd></dl>
+
+</div>
+</div>
+<a id="af6b3503a99d53160ef84c5d160bca500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b3503a99d53160ef84c5d160bca500">&#9670;&nbsp;</a></span>parserTypeByFileExtension() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> doctotext::PlainTextExtractor::parserTypeByFileExtension </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+</div>
+</div>
+<a id="a8ac1e85ad1b80f762f43447e2c7b7f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ac1e85ad1b80f762f43447e2c7b7f1c">&#9670;&nbsp;</a></span>parserTypeByFileExtension() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">PlainTextExtractor::ParserType</a> PlainTextExtractor::parserTypeByFileExtension </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00694">694</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2ea1fb26bca508f65b5cb09b6491fc5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea1fb26bca508f65b5cb09b6491fc5f">&#9670;&nbsp;</a></span>processFile() <span class="overload">[1/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析文件获取内容 </p>
+<p>Parses specified document and extracts plain text. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">text</td><td>reference to object of <code>std::string</code> class that will contain produced plain text. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ab3ec4c2d525abd22a26b20b3be13625f">setFormattingStyle</a></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>文件名称 </td></tr>
+    <tr><td class="paramname">text</td><td>解析后的文件内容</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00864">864</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a64ee898ddf7450ff51d4f7026fa32697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ee898ddf7450ff51d4f7026fa32697">&#9670;&nbsp;</a></span>processFile() <span class="overload">[2/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts plain text. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">text</td><td>reference to object of <code>std::string</code> class that will contain produced plain text. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ab3ec4c2d525abd22a26b20b3be13625f">setFormattingStyle</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab81c90617ad0dd395226d8d90a4d8dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81c90617ad0dd395226d8d90a4d8dd4">&#9670;&nbsp;</a></span>processFile() <span class="overload">[3/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>reference to pointer that will point to produced plain text in form of null-terminated array of chars. The caller is responsible for deleting the buffer using <code>delete</code>[] operator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad23a7f78339808cd21dacb19d9d646e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23a7f78339808cd21dacb19d9d646e0">&#9670;&nbsp;</a></span>processFile() <span class="overload">[4/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>reference to pointer that will point to produced plain text in form of null-terminated array of chars. The caller is responsible for deleting the buffer using <code>delete</code>[] operator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00894">894</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a54e7f112c99391b732acd214280c851d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e7f112c99391b732acd214280c851d">&#9670;&nbsp;</a></span>processFile() <span class="overload">[5/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts plain text. Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd0993081ac15936306d01ad937b06cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0993081ac15936306d01ad937b06cf">&#9670;&nbsp;</a></span>processFile() <span class="overload">[6/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts plain text. Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00904">904</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2bd44dd545ccc7d97c650a3784413330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bd44dd545ccc7d97c650a3784413330">&#9670;&nbsp;</a></span>processFile() <span class="overload">[7/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+</div>
+</div>
+<a id="aa646829dcd516251dc0bcf8ac55055e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa646829dcd516251dc0bcf8ac55055e9">&#9670;&nbsp;</a></span>processFile() <span class="overload">[8/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00914">914</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a86fc5d7e66e18a142689aaa85f036ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86fc5d7e66e18a142689aaa85f036ba4">&#9670;&nbsp;</a></span>processFile() <span class="overload">[9/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据文件类型进行 </p>
+<p>Parses specified document and extracts plain text. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser_type</td><td>restricts parser to specified document format. If set to <code>PARSER_AUTO</code> the parser will work with all supported documents formats. This argument override parser type set for the object. </td></tr>
+    <tr><td class="paramname">fallback</td><td>if <code>true</code> parser will try to detect document format if parsing of document format specified in <code>parser_type</code> argument fails. This parameter is ignored if <code>parser_type</code> is set to <code>PARSER_AUTO</code>. </td></tr>
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">text</td><td>reference to object of <code>std::string</code> class that will contain produced plain text. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ab3ec4c2d525abd22a26b20b3be13625f">setFormattingStyle</a></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser_type</td><td>文件类型 </td></tr>
+    <tr><td class="paramname">fallback</td><td>二次解析标识 </td></tr>
+    <tr><td class="paramname">file_name</td><td>文件名称 </td></tr>
+    <tr><td class="paramname">text</td><td>文件内容</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00939">939</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab5b6e98441f24a23a8921c4b5d29c5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5b6e98441f24a23a8921c4b5d29c5ac">&#9670;&nbsp;</a></span>processFile() <span class="overload">[10/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts plain text. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser_type</td><td>restricts parser to specified document format. If set to <code>PARSER_AUTO</code> the parser will work with all supported documents formats. This argument override parser type set for the object. </td></tr>
+    <tr><td class="paramname">fallback</td><td>if <code>true</code> parser will try to detect document format if parsing of document format specified in <code>parser_type</code> argument fails. This parameter is ignored if <code>parser_type</code> is set to <code>PARSER_AUTO</code>. </td></tr>
+    <tr><td class="paramname">file_name</td><td>full path to file containing document. </td></tr>
+    <tr><td class="paramname">text</td><td>reference to object of <code>std::string</code> class that will contain produced plain text. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if document was processed successfully, <code>false</code> otherwise. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a> <a class="el" href="classdoctotext_1_1_plain_text_extractor.html#ab3ec4c2d525abd22a26b20b3be13625f">setFormattingStyle</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1e40a7c682c2c0d1401d8930ed8e107c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e40a7c682c2c0d1401d8930ed8e107c">&#9670;&nbsp;</a></span>processFile() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>reference to pointer that will point to produced plain text in form of null-terminated buffer. The caller is responsible for deleting the buffer using <code>delete</code>[] operator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01139">1139</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af5f4d46d088df49a93fcab89c0173bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f4d46d088df49a93fcab89c0173bc9">&#9670;&nbsp;</a></span>processFile() <span class="overload">[12/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>reference to pointer that will point to produced plain text in form of null-terminated buffer. The caller is responsible for deleting the buffer using <code>delete</code>[] operator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2e391540f4582df5e395818a959b3d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e391540f4582df5e395818a959b3d9e">&#9670;&nbsp;</a></span>processFile() <span class="overload">[13/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts plain text. Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01035">1035</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a63186564bcb23955f9ab3350bd764712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63186564bcb23955f9ab3350bd764712">&#9670;&nbsp;</a></span>processFile() <span class="overload">[14/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses specified document and extracts plain text. Uses memory buffer instead of file. 这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>pointer to the file content array </td></tr>
+    <tr><td class="paramname">size</td><td>size of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa73831e90982124fd7a817c4e089529a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73831e90982124fd7a817c4e089529a">&#9670;&nbsp;</a></span>processFile() <span class="overload">[15/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l01045">1045</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3cd843fe1c2fdf906fa7fea60399374b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cd843fe1c2fdf906fa7fea60399374b">&#9670;&nbsp;</a></span>processFile() <span class="overload">[16/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool doctotext::PlainTextExtractor::processFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a4c9ea1205adaeb0293833cb342434ba8">ParserType</a>&#160;</td>
+          <td class="paramname"><em>parser_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>这是为便于使用而提供的一个重载成员函数.与上面的函数相比，它接受不同类型的参数. </p>
+
+</div>
+</div>
+<a id="a5ac048d5ddf37fc33d92773bf72d2f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac048d5ddf37fc33d92773bf72d2f19">&#9670;&nbsp;</a></span>setFormattingStyle() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctotext::PlainTextExtractor::setFormattingStyle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a> &amp;&#160;</td>
+          <td class="paramname"><em>style</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets how tables, lists and urls should be formatted in plain text produced by them parser. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">style</td><td>instance of structure <code><a class="el" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a></code> that specifies formatting style. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab3ec4c2d525abd22a26b20b3be13625f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ec4c2d525abd22a26b20b3be13625f">&#9670;&nbsp;</a></span>setFormattingStyle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlainTextExtractor::setFormattingStyle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a> &amp;&#160;</td>
+          <td class="paramname"><em>style</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets how tables, lists and urls should be formatted in plain text produced by them parser. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">style</td><td>instance of structure <code><a class="el" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a></code> that specifies formatting style. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="structdoctotext_1_1_formatting_style.html">FormattingStyle</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00647">647</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aecef3bac8503995043a7c2e2b349fa6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecef3bac8503995043a7c2e2b349fa6f">&#9670;&nbsp;</a></span>setLogStream() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctotext::PlainTextExtractor::setLogStream </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>log_stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assign an output stream that will be used for logging messages and errors. It can be used to capture logs to a file, string or show them in dialog. <code>std::cerr</code> stream is used by default. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">log_stream</td><td>the stream that will be used for logging </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a269fb79c4ec79a8ec8cec880a3256f81">setVerboseLogging</a> </dd></dl>
+
+</div>
+</div>
+<a id="a02065b65806aa2bdcef2e81e9ba06213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02065b65806aa2bdcef2e81e9ba06213">&#9670;&nbsp;</a></span>setLogStream() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlainTextExtractor::setLogStream </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>log_stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assign an output stream that will be used for logging messages and errors. It can be used to capture logs to a file, string or show them in dialog. <code>std::cerr</code> stream is used by default. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">log_stream</td><td>the stream that will be used for logging </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a269fb79c4ec79a8ec8cec880a3256f81">setVerboseLogging</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00642">642</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6daf1c8349c35d26114b7f4610186ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6daf1c8349c35d26114b7f4610186ee4">&#9670;&nbsp;</a></span>setManageXmlParser() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlainTextExtractor::setManageXmlParser </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>manage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enables or disables managing libxml2 parser by the object. If it is enabled (default) <a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a> object calls xmlInitParser() and xmlCleanupParser() functions automatically. All <a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a> objects uses a common thread-safe counter for this purpose. This is good if you are not using libxml2 elsewhere in the application. It it is disabled it is your responsibility to call xmlInitParser() and xmlCleanupParser(). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">manage</td><td>if <code>true</code> managing will be enabled, if <code>false</code> managing will be disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00657">657</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9a88a00db3bcb3d1620e65ff681f7307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a88a00db3bcb3d1620e65ff681f7307">&#9670;&nbsp;</a></span>setManageXmlParser() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctotext::PlainTextExtractor::setManageXmlParser </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>manage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enables or disables managing libxml2 parser by the object. If it is enabled (default) <a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a> object calls xmlInitParser() and xmlCleanupParser() functions automatically. All <a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a> objects uses a common thread-safe counter for this purpose. This is good if you are not using libxml2 elsewhere in the application. It it is disabled it is your responsibility to call xmlInitParser() and xmlCleanupParser(). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">manage</td><td>if <code>true</code> managing will be enabled, if <code>false</code> managing will be disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8c15ef99a89289ae637a5c746fe4ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c15ef99a89289ae637a5c746fe4ee7">&#9670;&nbsp;</a></span>setVerboseLogging() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doctotext::PlainTextExtractor::setVerboseLogging </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enables or disables verbose logging. Verbose logging is disabled by default. If verbose logging is disabled only important messages and errors are logged. If verbose logging is enabled all messages and errors are logged. </p><dl class="section warning"><dt>警告</dt><dd>Verbose logging can produce a lot of text, especially if the library was compiled in debug mode. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">verbose</td><td>if <code>true</code> verbose logging will be enabled. If <code>false</code> verbose logging will be disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a02065b65806aa2bdcef2e81e9ba06213">setLogStream</a> </dd></dl>
+
+</div>
+</div>
+<a id="a269fb79c4ec79a8ec8cec880a3256f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a269fb79c4ec79a8ec8cec880a3256f81">&#9670;&nbsp;</a></span>setVerboseLogging() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlainTextExtractor::setVerboseLogging </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enables or disables verbose logging. Verbose logging is disabled by default. If verbose logging is disabled only important messages and errors are logged. If verbose logging is enabled all messages and errors are logged. </p><dl class="section warning"><dt>警告</dt><dd>Verbose logging can produce a lot of text, especially if the library was compiled in debug mode. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">verbose</td><td>if <code>true</code> verbose logging will be enabled. If <code>false</code> verbose logging will be disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classdoctotext_1_1_plain_text_extractor.html#a02065b65806aa2bdcef2e81e9ba06213">setLogStream</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a> 第 <a class="el" href="plain__text__extractor_8cpp_source.html#l00637">637</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/3rdParty/doctotext/<a class="el" href="3rd_party_2doctotext_2plain__text__extractor_8h_source.html">plain_text_extractor.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/3rdParty/doctotext/<a class="el" href="plain__text__extractor_8cpp_source.html">plain_text_extractor.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>doctotext</b></li><li class="navelem"><a class="el" href="classdoctotext_1_1_plain_text_extractor.html">PlainTextExtractor</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:17 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

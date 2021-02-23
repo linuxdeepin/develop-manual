@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: TagManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_tag_manager.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_tag_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">TagManager类 参考<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 TagManager 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_tag_manager__inherit__graph.png" border="0" usemap="#_tag_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_tag_manager_inherit__map" id="_tag_manager_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+TagManager 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_tag_manager__coll__graph.png" border="0" usemap="#_tag_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_tag_manager_coll__map" id="_tag_manager_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a2cabf3abd23a660a690ec52062239d6d"><td class="memItemLeft" align="right" valign="top"><a id="a2cabf3abd23a660a690ec52062239d6d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SqlType</b> : std::size_t { <br />
+&#160;&#160;<b>GetAllTags</b> = 1, 
+<b>MakeFilesTags</b>, 
+<b>GetTagsThroughFile</b>, 
+<b>GetFilesThroughTag</b>, 
+<br />
+&#160;&#160;<b>MakeFilesTagThroughColor</b>
+<br />
+ }</td></tr>
+<tr class="separator:a2cabf3abd23a660a690ec52062239d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a7f43648472603ca10ba37c55433abe0e"><td class="memItemLeft" align="right" valign="top"><a id="a7f43648472603ca10ba37c55433abe0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addNewTag</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; QString &gt; &amp;new_tags)</td></tr>
+<tr class="separator:a7f43648472603ca10ba37c55433abe0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d0d860ff70aabb626cd93581b94b8a"><td class="memItemLeft" align="right" valign="top"><a id="a96d0d860ff70aabb626cd93581b94b8a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeTagColor</b> (const <a class="el" href="class_q_map.html">QMap</a>&lt; QString, QString &gt; &amp;old_and_new_color)</td></tr>
+<tr class="separator:a96d0d860ff70aabb626cd93581b94b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d66684c5f68df65ffd2b1fe47988fab"><td class="memItemLeft" align="right" valign="top"><a id="a4d66684c5f68df65ffd2b1fe47988fab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeTagName</b> (const <a class="el" href="class_q_map.html">QMap</a>&lt; QString, QString &gt; &amp;old_and_new_name)</td></tr>
+<tr class="separator:a4d66684c5f68df65ffd2b1fe47988fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabbc42caffdd6775d0ef6d8134607bc"><td class="memItemLeft" align="right" valign="top"><a id="aeabbc42caffdd6775d0ef6d8134607bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteTag</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; QString &gt; &amp;be_deleted_tags)</td></tr>
+<tr class="separator:aeabbc42caffdd6775d0ef6d8134607bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1988dfcafaa28832e4ef9907cc87e7"><td class="memItemLeft" align="right" valign="top"><a id="a7f1988dfcafaa28832e4ef9907cc87e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>filesWereTagged</b> (const <a class="el" href="class_q_map.html">QMap</a>&lt; QString, <a class="el" href="class_q_list.html">QList</a>&lt; QString &gt;&gt; &amp;files_were_tagged)</td></tr>
+<tr class="separator:a7f1988dfcafaa28832e4ef9907cc87e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab5d2cac99ac113e6be62c61633d15b"><td class="memItemLeft" align="right" valign="top"><a id="a9ab5d2cac99ac113e6be62c61633d15b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>untagFiles</b> (const <a class="el" href="class_q_map.html">QMap</a>&lt; QString, <a class="el" href="class_q_list.html">QList</a>&lt; QString &gt;&gt; &amp;tag_be_removed_files)</td></tr>
+<tr class="separator:a9ab5d2cac99ac113e6be62c61633d15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af4e6bb1a5a4fc3898621163fa1821508"><td class="memItemLeft" align="right" valign="top"><a id="af4e6bb1a5a4fc3898621163fa1821508"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TagManager</b> (const <a class="el" href="class_tag_manager.html">TagManager</a> &amp;other)=delete</td></tr>
+<tr class="separator:af4e6bb1a5a4fc3898621163fa1821508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a873463c6f6a6802702870bd8e336f"><td class="memItemLeft" align="right" valign="top"><a id="ad0a873463c6f6a6802702870bd8e336f"></a>
+<a class="el" href="class_tag_manager.html">TagManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_tag_manager.html">TagManager</a> &amp;other)=delete</td></tr>
+<tr class="separator:ad0a873463c6f6a6802702870bd8e336f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafde8f1ac469c4f7c3ea081490f58ea"><td class="memItemLeft" align="right" valign="top"><a id="adafde8f1ac469c4f7c3ea081490f58ea"></a>
+<a class="el" href="class_q_map.html">QMap</a>&lt; QString, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag_manager.html#adafde8f1ac469c4f7c3ea081490f58ea">getAllTags</a> ()</td></tr>
+<tr class="memdesc:adafde8f1ac469c4f7c3ea081490f58ea"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h3>: query</h3>
+<br /></td></tr>
+<tr class="separator:adafde8f1ac469c4f7c3ea081490f58ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3523f519d07a93382f1d4bf7782a74"><td class="memItemLeft" align="right" valign="top"><a id="a7c3523f519d07a93382f1d4bf7782a74"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getTagsThroughFiles</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;files)</td></tr>
+<tr class="separator:a7c3523f519d07a93382f1d4bf7782a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eab9a61574c3cfb1951a7113e00e345"><td class="memItemLeft" align="right" valign="top"><a id="a5eab9a61574c3cfb1951a7113e00e345"></a>
+<a class="el" href="class_q_map.html">QMap</a>&lt; QString, QColor &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getTagColor</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; QString &gt; &amp;tags) const</td></tr>
+<tr class="separator:a5eab9a61574c3cfb1951a7113e00e345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa08959fe33c8feb6f9c7322e9a449b"><td class="memItemLeft" align="right" valign="top"><a id="a6fa08959fe33c8feb6f9c7322e9a449b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getTagColorName</b> (const QString &amp;tag) const</td></tr>
+<tr class="separator:a6fa08959fe33c8feb6f9c7322e9a449b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c0514475f5d30c5f44a288492cdab1"><td class="memItemLeft" align="right" valign="top"><a id="a68c0514475f5d30c5f44a288492cdab1"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getTagIconName</b> (const QString &amp;tag) const</td></tr>
+<tr class="separator:a68c0514475f5d30c5f44a288492cdab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a439c5271b66f265c0353a1755241e"><td class="memItemLeft" align="right" valign="top"><a id="ab3a439c5271b66f265c0353a1755241e"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getTagIconName</b> (const QColor &amp;color) const</td></tr>
+<tr class="separator:ab3a439c5271b66f265c0353a1755241e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e744200a7bb5a76d83a791a0cddeec9"><td class="memItemLeft" align="right" valign="top"><a id="a9e744200a7bb5a76d83a791a0cddeec9"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getFilesThroughTag</b> (const QString &amp;tagName)</td></tr>
+<tr class="separator:a9e744200a7bb5a76d83a791a0cddeec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe85c482e7a772ec18434d51f5da9d5"><td class="memItemLeft" align="right" valign="top"><a id="aefe85c482e7a772ec18434d51f5da9d5"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getTagNameThroughColor</b> (const QColor &amp;color) const</td></tr>
+<tr class="separator:aefe85c482e7a772ec18434d51f5da9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a853bbf1d9095c6368abb7aa76b6120b7"><td class="memItemLeft" align="right" valign="top"><a id="a853bbf1d9095c6368abb7aa76b6120b7"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>getColorByColorName</b> (const QString &amp;colorName) const</td></tr>
+<tr class="separator:a853bbf1d9095c6368abb7aa76b6120b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016ff8fa43ac9261ade28d775138941b"><td class="memItemLeft" align="right" valign="top"><a id="a016ff8fa43ac9261ade28d775138941b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getColorByDisplayName</b> (const QString &amp;colorDisplayName) const</td></tr>
+<tr class="separator:a016ff8fa43ac9261ade28d775138941b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1c28f39598e51085c7b3592b02799a"><td class="memItemLeft" align="right" valign="top"><a id="a6e1c28f39598e51085c7b3592b02799a"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getColorNameByColor</b> (const QColor &amp;color) const</td></tr>
+<tr class="separator:a6e1c28f39598e51085c7b3592b02799a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564ef2a3b314bdff9a2263f8396a0dac"><td class="memItemLeft" align="right" valign="top"><a id="a564ef2a3b314bdff9a2263f8396a0dac"></a>
+QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>allTagOfDefaultColors</b> () const</td></tr>
+<tr class="separator:a564ef2a3b314bdff9a2263f8396a0dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5354f94aa3f655a55e52c0dcf1b1e84c"><td class="memItemLeft" align="right" valign="top"><a id="a5354f94aa3f655a55e52c0dcf1b1e84c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag_manager.html#a5354f94aa3f655a55e52c0dcf1b1e84c">makeFilesTags</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; QString &gt; &amp;tags, const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;files)</td></tr>
+<tr class="memdesc:a5354f94aa3f655a55e52c0dcf1b1e84c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h3>:modify</h3>
+<br /></td></tr>
+<tr class="separator:a5354f94aa3f655a55e52c0dcf1b1e84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e2a3e04e2211a0c21a945c7118df3b"><td class="memItemLeft" align="right" valign="top"><a id="a64e2a3e04e2211a0c21a945c7118df3b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>changeTagColor</b> (const QString &amp;tagName, const QString &amp;new_tag_color)</td></tr>
+<tr class="separator:a64e2a3e04e2211a0c21a945c7118df3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b650d6531ed35b72789c303ad35e4b"><td class="memItemLeft" align="right" valign="top"><a id="a59b650d6531ed35b72789c303ad35e4b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeTagsOfFiles</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; QString &gt; &amp;tags, const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;files)</td></tr>
+<tr class="separator:a59b650d6531ed35b72789c303ad35e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79188660404420458d0e209d7952a70"><td class="memItemLeft" align="right" valign="top"><a id="aa79188660404420458d0e209d7952a70"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>changeTagName</b> (const QPair&lt; QString, QString &gt; &amp;oldAndNewName)</td></tr>
+<tr class="separator:aa79188660404420458d0e209d7952a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94489ec6d4615e4431ac5e07b06ec8b0"><td class="memItemLeft" align="right" valign="top"><a id="a94489ec6d4615e4431ac5e07b06ec8b0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>makeFilesTagThroughColor</b> (const QString &amp;color, const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;files)</td></tr>
+<tr class="separator:a94489ec6d4615e4431ac5e07b06ec8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ff9d6cc895152840790d33f7e78f8d"><td class="memItemLeft" align="right" valign="top"><a id="a56ff9d6cc895152840790d33f7e78f8d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tag_manager.html#a56ff9d6cc895152840790d33f7e78f8d">deleteTags</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; QString &gt; &amp;tags)</td></tr>
+<tr class="memdesc:a56ff9d6cc895152840790d33f7e78f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h3>:delete</h3>
+<br /></td></tr>
+<tr class="separator:a56ff9d6cc895152840790d33f7e78f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a9c736a50453df1b0d93468980de19269"><td class="memItemLeft" align="right" valign="top"><a id="a9c736a50453df1b0d93468980de19269"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>changeFilesName</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; QPair&lt; QByteArray, QByteArray &gt; &gt; &amp;oldAndNewFilesName)</td></tr>
+<tr class="separator:a9c736a50453df1b0d93468980de19269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988effa846ae8fb01b35fa038b45644a"><td class="memItemLeft" align="right" valign="top"><a id="a988effa846ae8fb01b35fa038b45644a"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteFiles</b> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_d_url.html">DUrl</a> &gt; &amp;urlList)</td></tr>
+<tr class="separator:a988effa846ae8fb01b35fa038b45644a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b4383d7cbd23abe44a7d950d755cb4"><td class="memItemLeft" align="right" valign="top"><a id="ad3b4383d7cbd23abe44a7d950d755cb4"></a>
+static <a class="el" href="class_tag_manager.html">TagManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
+<tr class="separator:ad3b4383d7cbd23abe44a7d950d755cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="tagmanager_8h_source.html">tagmanager.h</a> 第 <a class="el" href="tagmanager_8h_source.html#l00063">63</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-file-manager/dde-file-manager-lib/tag/<a class="el" href="tagmanager_8h_source.html">tagmanager.h</a></li>
+<li>dde-file-manager/dde-file-manager-lib/tag/<a class="el" href="tagmanager_8cpp_source.html">tagmanager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_tag_manager.html">TagManager</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

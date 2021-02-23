@@ -1,0 +1,7 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="impl::shared_mutex\l\< Lock, Func1, Func2 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structimpl_1_1shared__mutex.html"];
+}

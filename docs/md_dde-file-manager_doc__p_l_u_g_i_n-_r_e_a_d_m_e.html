@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: 深度文管上下文菜单 OEM 支持插件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('md_dde-file-manager_doc__p_l_u_g_i_n-_r_e_a_d_m_e.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">深度文管上下文菜单 OEM 支持插件 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>在启用此插件支持后，在深度文件管理器载入此插件时，会识别指定目录下的 <code>.desktop</code> 文件，并将其视为扩展菜单项，加入到文件管理器的上下文菜单中。</p>
+<h3>OEM 方式</h3>
+<p>每个定制菜单项为一个独立的 <a class="el" href="class_application.html">Application</a> 类型的 <code>.desktop</code> 文件（遵循 <a href="https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#extra-actions-identifier">desktop-entry-spec</a>）。对于每个文件，在其 <code>[<a class="el" href="class_desktop.html">Desktop</a> Entry]</code> 下至少需要包含 <code>Name</code> 和 <code>Exec</code> 字段，<code>Name</code> 的内容为添加到上下文菜单中时将会显示的名称，<code>Exec</code> 的内容为当单击此新增的菜单项时将会执行的行为（遵循 desktop 文件规范标准，可以使用 <code>u</code> 等参数）。</p>
+<p>定制菜单支持使用 <code>Actions</code> 字段增加指定的子菜单，子菜单需至少包含 <code>Name</code> 和 <code>Exec</code> 字段，可以通过 <code>Icon</code> 指定图标。若指定子菜单，则入口项（原本 <code>[<a class="el" href="class_desktop.html">Desktop</a> Entry]</code> 下）的 <code>Exec</code> 字段将不再有效。</p>
+<p>对于文件管理器菜单项定制，支持额外的字段可供定制，可以使用 <code>X-DFM-MenuTypes</code> 字段来指定菜单项在何种情况会显示，此字段可包含一个或多个类型，其中包括 <code>SingleFile</code>, <code>SingleDir</code>, <code>MultiFileDirs</code> 和 <code>EmptyArea</code> 四种。</p>
+<table class="doxtable">
+<tr>
+<th align="left">名称 </th><th align="left">含义  </th></tr>
+<tr>
+<td align="left"><code>SingleFile</code> </td><td align="left">在单独的文件上触发上下文菜单 </td></tr>
+<tr>
+<td align="left"><code>SingleDir</code> </td><td align="left">在单独的文件夹/目录上触发上下文菜单 </td></tr>
+<tr>
+<td align="left"><code>MultiFileDirs</code> </td><td align="left">在多个文件/文件夹上触发上下文菜单 </td></tr>
+<tr>
+<td align="left"><code>EmptyArea</code></td><td align="left">在空白区域触发上下文菜单 </td></tr>
+</table>
+<p>可以使用 <code>;</code> 作为分割填写多个值，但注意，包含 <code>X-DFM-MenuTypes</code> 字段但内容为空的情况和不包含 <code>X-DFM-MenuTypes</code> 字段的情况不同，包含但为空将不会在任何位置显示，不包含将会视为会在任何情况下显示。</p>
+<p><code>MimeType</code> 可以根据被选中的文件类型决定菜单项是否显示被添加的项，支持模糊匹配（如 <code>MimeType=image/*;</code> ）。 同 <code>X-DFM-MenuTypes</code> 一样， <code>MimeType</code> 只能用在 <code>[<a class="el" href="class_desktop.html">Desktop</a> Entry]</code> 项目中，使用 <code>;</code> 作为分割填写多个值， <code>MimeType</code> 字段但内容为空的情况和不包含 <code>MimeType</code> 字段的情况不同，包含但为空将不会在任何位置显示，不包含将会视为 <code>MimeType=*;</code>。</p>
+<p><code>X-DFM-ExcludeMimeTypes</code> 可以排除特定的文件类型，只能用在 <code>[<a class="el" href="class_desktop.html">Desktop</a> Entry]</code> 项目中，使用 <code>;</code> 作为分割填写多个值，支持模糊匹配。优先于 <code>MimeTypes</code>项过滤文件，即如果 <code>MimeTypes</code> 和 <code>X-DFM-ExcludeMimeTypes</code>同时包含某种文件类型时，该文件类型被选中将无法显示菜单。</p>
+<p>注意： MimeType 本身呈树形结构关系，配置 <code>MimeType</code> 所对应的值将匹配文件所对应的最佳匹配 MimeType 及其完整父级关系，即若文件的 MimeType 关系树中任意一项匹配了 <code>MimeType</code> 中所配置的值，则匹配成功。例如，若配置 <code>MimeType=text/plain;</code> 则除 <code>text/plain</code> 外还会匹配 <code>application/json</code> <code>application/xml</code> 等类型的文件，因为它们的父级 MimeType 关系中包含 <code>text/plain</code>。 而 <code>X-DFM-ExcludeMimeTypes</code> 则仅对完全匹配此配置中所包含的 MimeType 进行过滤，不过滤其父级关系。如 <code>*.xlxs</code> 文件的父级 MimeType 有 <code>application/zip</code>,但 <code>ExcludeMimeTypes=application/zip</code> 不会过滤掉 <code>*.xlxs</code> 文件。</p>
+<p><code>X-DFM-NotShowIn</code> 可以决定是否在桌面或者文件管理器显示菜单，此字段可包含一个或多个类型，其中包括 <code>FileManager</code>, <code><a class="el" href="class_desktop.html">Desktop</a></code> 两种，字段不存在或字段为空时在桌面和文件管理均可显示。</p>
+<table class="doxtable">
+<tr>
+<th align="left">名称 </th><th align="left">含义  </th></tr>
+<tr>
+<td align="left"><code>FileManager</code> </td><td align="left">在文件管理器中触发上下文菜单 </td></tr>
+<tr>
+<td align="left"><code><a class="el" href="class_desktop.html">Desktop</a></code> </td><td align="left">在桌面触发上下文菜单 </td></tr>
+</table>
+<p><code>X-DFM-SupportSchemes</code> 可以决定是否在指定的目录scheme下显示菜单，此字段可包含一个或多个类型，其中包括 <code>file</code>, <code>trash</code>, <code>recent</code>, <code>bookmark</code> 等多种，字段不包含时任何位置均可显示菜单，字段内容为空时将不显示菜单。 </p><table class="doxtable">
+<tr>
+<th align="left">名称 </th><th align="left">含义  </th></tr>
+<tr>
+<td align="left"><code>file</code> </td><td align="left">在本地文件上触发上下文菜单 </td></tr>
+<tr>
+<td align="left"><code>trash</code> </td><td align="left">在回收站中触发上下文菜单 </td></tr>
+<tr>
+<td align="left"><code>recent</code> </td><td align="left">在最近文件中触发上下文菜单 </td></tr>
+<tr>
+<td align="left"><code>bookmark</code> </td><td align="left">在书签文件触发上下文菜单 </td></tr>
+</table>
+<p><code>X-DFM-SupportSuffix</code> 可以决定是否根据(全)后缀名过滤显示菜单，如在 <code>test.7z.002</code> <code>test.7z.003</code> <code>test.7z.004</code> 等文件上显示压缩菜单，由于分卷文件 <code>MimeType</code> 是 <code>application/octet-stream</code> 无法通过文件类型显示，特增加通过后缀显示菜单，此情况可以用 <code>7z.*</code> 来支持。</p>
+<p>OEM 厂商需要将待添加的 <code>desktop</code> 文件放置到 <code>/usr/share/deepin/dde-file-manager/oem-menuextensions/</code> 位置，在下次启动文件管理器时[^1]，选中任意一个或多个文件并触发上下文菜单，将可以看到新增的项目位于其中。</p>
+<h3>示例 <code>.desktop</code> 文件</h3>
+<p>可以将下面的示例存储为 <code>test.desktop</code> 并放置到 <code>/usr/share/deepin/dde-file-manager/oem-menuextensions/</code> 中，关闭现有的所有文件管理器窗口并打开新的文件管理器窗口，定制的菜单将会出现在单独目录或多选文件的情况的上下文菜单中。</p>
+<h3>示例 1 - 单项菜单</h3>
+<div class="fragment"><div class="line">[Desktop Entry]</div><div class="line">Type=Application</div><div class="line">Exec=/home/wzc/Temp/test.sh %U</div><div class="line">Icon=utilities-terminal</div><div class="line">Name=示例菜单项名称</div><div class="line">X-DFM-MenuTypes=SingleDir;MultiFileDirs;</div></div><!-- fragment --><h3>示例 2 - 包含子菜单</h3>
+<p>注意这种情况时，由于包含子菜单，故在 <code>[<a class="el" href="class_desktop.html">Desktop</a> Entry]</code> 下添加 <code>Exec</code> 不会起任何作用。另外，<code>X-DFM-MenuTypes</code> 只能用在 <code>[<a class="el" href="class_desktop.html">Desktop</a> Entry]</code> 项目中，不能用在子菜单中。</p>
+<div class="fragment"><div class="line">[Desktop Entry]</div><div class="line">Type=Application</div><div class="line">Icon=utilities-terminal</div><div class="line">Name=示例菜单项名称</div><div class="line">Actions=TestAction;</div><div class="line">X-DFM-MenuTypes=SingleDir;MultiFileDirs;</div><div class="line"></div><div class="line">[Desktop Action TestAction]</div><div class="line">Name=示例子菜单</div><div class="line">Exec=/home/wzc/Temp/test.sh %U</div></div><!-- fragment --><h3>完整示例 - 复制文件路径</h3>
+<ol type="1">
+<li>切换到 <code>.desktop</code> 文件所在目录 <code>/usr/share/deepin/dde-file-manager/oem-menuextensions/</code> 。 <div class="fragment"><div class="line">sudo mkdir /usr/share/deepin/dde-file-manager</div><div class="line">sudo mkdir /usr/share/deepin/dde-file-manager/oem-menuextensions</div><div class="line">cd /usr/share/deepin/dde-file-manager/oem-menuextensions</div></div><!-- fragment --></li>
+<li>使用文本编辑器（如 <code>deepin-editor</code> 或 <code>vim</code> ）创建一个文本文件（需要root权限保存）, 名称可以自定义， 后缀名为&lt;tt&gt;.desktop。 <div class="fragment"><div class="line">sudo deepin-editor copyfilepath.desktop</div></div><!-- fragment --></li>
+<li>在文件中加入以下内容， <code>Icon</code> 图标可以去 <code>/usr/share/icons/</code> 中选择合适的图标。 <div class="fragment"><div class="line">[Desktop Entry]</div><div class="line">Type=Application</div><div class="line">Icon=edit-copy</div><div class="line">Name=复制文件路径</div><div class="line">X-DFM-MenuTypes=SingleFile;</div><div class="line">Exec=~/copyfilepath.sh %u</div><div class="line">MimeType=text/plain;</div><div class="line">X-DFM-NotShowIn=Desktop</div><div class="line">X-DFM-ExcludeMimeTypes=application/xml;</div></div><!-- fragment --></li>
+<li>在主目录下创建 <code>copyfilepath.sh</code> 脚本。 <div class="fragment"><div class="line">cd ~</div><div class="line">deepin-editor copyfilepath.sh</div></div><!-- fragment --> 在文本中加入以下内容 <div class="fragment"><div class="line">#!/bin/bash</div><div class="line">echo -n $1 | xclip -i -selection clipboard</div></div><!-- fragment --> 至此，重新启动文件管理器，文件列表中常规文本文件的右键菜单会多一个菜单项 <code>复制文件路径</code>，点击即可将文件路径复制到剪切板中。 </li>
+</ol>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:14 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

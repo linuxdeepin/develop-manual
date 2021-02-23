@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>develop-manual: dcc::keyboard::KeyboardWorker类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">develop-manual
+   &#160;<span id="projectnumber">2021.02</span>
+   </div>
+   <div id="projectbrief">develop manual about develop-manual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdcc_1_1keyboard_1_1_keyboard_worker.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classdcc_1_1keyboard_1_1_keyboard_worker-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">dcc::keyboard::KeyboardWorker类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 dcc::keyboard::KeyboardWorker 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1keyboard_1_1_keyboard_worker__inherit__graph.png" border="0" usemap="#dcc_1_1keyboard_1_1_keyboard_worker_inherit__map" alt="Inheritance graph"/></div>
+<map name="dcc_1_1keyboard_1_1_keyboard_worker_inherit__map" id="dcc_1_1keyboard_1_1_keyboard_worker_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+dcc::keyboard::KeyboardWorker 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdcc_1_1keyboard_1_1_keyboard_worker__coll__graph.png" border="0" usemap="#dcc_1_1keyboard_1_1_keyboard_worker_coll__map" alt="Collaboration graph"/></div>
+<map name="dcc_1_1keyboard_1_1_keyboard_worker_coll__map" id="dcc_1_1keyboard_1_1_keyboard_worker_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1ca9a4a50ae63274b14bfa77c942ad6f"><td class="memItemLeft" align="right" valign="top"><a id="a1ca9a4a50ae63274b14bfa77c942ad6f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Modifier</b> { <b>control</b> = 1, 
+<b>super</b> = 2, 
+<b>alt</b> = 4, 
+<b>shift</b> = 8
+ }</td></tr>
+<tr class="separator:a1ca9a4a50ae63274b14bfa77c942ad6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a004610ea3943b4b8daeff60360c2bcc0"><td class="memItemLeft" align="right" valign="top"><a id="a004610ea3943b4b8daeff60360c2bcc0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLang</b> (const QString &amp;value)</td></tr>
+<tr class="separator:a004610ea3943b4b8daeff60360c2bcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c0dcc571a5ff35eb087a41e7fb0e65"><td class="memItemLeft" align="right" valign="top"><a id="a11c0dcc571a5ff35eb087a41e7fb0e65"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addLang</b> (const QString &amp;value)</td></tr>
+<tr class="separator:a11c0dcc571a5ff35eb087a41e7fb0e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ec304a2dafd181a94da664529f02d4"><td class="memItemLeft" align="right" valign="top"><a id="a13ec304a2dafd181a94da664529f02d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteLang</b> (const QString &amp;value)</td></tr>
+<tr class="separator:a13ec304a2dafd181a94da664529f02d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393d00ba96655d9ea0f29312344d15fa"><td class="memItemLeft" align="right" valign="top"><a id="a393d00ba96655d9ea0f29312344d15fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLayout</b> (const QString &amp;value)</td></tr>
+<tr class="separator:a393d00ba96655d9ea0f29312344d15fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b541aea689ae7708a667dc242ac911"><td class="memItemLeft" align="right" valign="top"><a id="aa7b541aea689ae7708a667dc242ac911"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addUserLayout</b> (const QString &amp;value)</td></tr>
+<tr class="separator:aa7b541aea689ae7708a667dc242ac911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c2396eb90d835cdc336d08a82dbfd2"><td class="memItemLeft" align="right" valign="top"><a id="a52c2396eb90d835cdc336d08a82dbfd2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delUserLayout</b> (const QString &amp;value)</td></tr>
+<tr class="separator:a52c2396eb90d835cdc336d08a82dbfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9fb24c482c4e9a6535fae8448593bc"><td class="memItemLeft" align="right" valign="top"><a id="a5c9fb24c482c4e9a6535fae8448593bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onRequestShortcut</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:a5c9fb24c482c4e9a6535fae8448593bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5d86fb2a9cf5606e535ab7e7c3bee8"><td class="memItemLeft" align="right" valign="top"><a id="ace5d86fb2a9cf5606e535ab7e7c3bee8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onAdded</b> (const QString &amp;in0, int in1)</td></tr>
+<tr class="separator:ace5d86fb2a9cf5606e535ab7e7c3bee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5b5d7e1d2a4e87aa99d798a93fb447"><td class="memItemLeft" align="right" valign="top"><a id="a7c5b5d7e1d2a4e87aa99d798a93fb447"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onDisableShortcut</b> (<a class="el" href="structdcc_1_1keyboard_1_1_shortcut_info.html">ShortcutInfo</a> *info)</td></tr>
+<tr class="separator:a7c5b5d7e1d2a4e87aa99d798a93fb447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae771bc8ebf7fd69536ee6b05164ccd4"><td class="memItemLeft" align="right" valign="top"><a id="aae771bc8ebf7fd69536ee6b05164ccd4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onAddedFinished</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:aae771bc8ebf7fd69536ee6b05164ccd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c31992ee7c6f6316df32a580b62ff7"><td class="memItemLeft" align="right" valign="top"><a id="a26c31992ee7c6f6316df32a580b62ff7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onLocalListsFinished</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:a26c31992ee7c6f6316df32a580b62ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6653612c14f4870b6e635b47f8f59ad2"><td class="memItemLeft" align="right" valign="top"><a id="a6653612c14f4870b6e635b47f8f59ad2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onSetSwitchKBLayout</b> (int value)</td></tr>
+<tr class="separator:a6653612c14f4870b6e635b47f8f59ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cea62cce427163de85306e9bfcbf7fb"><td class="memItemLeft" align="right" valign="top"><a id="a5cea62cce427163de85306e9bfcbf7fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onGetWindowWM</b> (bool value)</td></tr>
+<tr class="separator:a5cea62cce427163de85306e9bfcbf7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993eca732004aeb4d12d1db688cbbe03"><td class="memItemLeft" align="right" valign="top"><a id="a993eca732004aeb4d12d1db688cbbe03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onLayoutListsFinished</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:a993eca732004aeb4d12d1db688cbbe03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca72424f0c466eb99bb7378b99731b5d"><td class="memItemLeft" align="right" valign="top"><a id="aca72424f0c466eb99bb7378b99731b5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onUserLayout</b> (const QStringList &amp;list)</td></tr>
+<tr class="separator:aca72424f0c466eb99bb7378b99731b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228551e3e741832b9a5194103b86c904"><td class="memItemLeft" align="right" valign="top"><a id="a228551e3e741832b9a5194103b86c904"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onUserLayoutFinished</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:a228551e3e741832b9a5194103b86c904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b80d599354d7d4ef84062b05c6b952"><td class="memItemLeft" align="right" valign="top"><a id="a39b80d599354d7d4ef84062b05c6b952"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onCurrentLayout</b> (const QString &amp;value)</td></tr>
+<tr class="separator:a39b80d599354d7d4ef84062b05c6b952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d17d02ec7afaebc02c6df0458ea398"><td class="memItemLeft" align="right" valign="top"><a id="ad3d17d02ec7afaebc02c6df0458ea398"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onCurrentLayoutFinished</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:ad3d17d02ec7afaebc02c6df0458ea398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b75a3c10f4acc9211a90800beb35f31"><td class="memItemLeft" align="right" valign="top"><a id="a9b75a3c10f4acc9211a90800beb35f31"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onPinyin</b> ()</td></tr>
+<tr class="separator:a9b75a3c10f4acc9211a90800beb35f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa36db08774381a11c01b7c4761f64d6f"><td class="memItemLeft" align="right" valign="top"><a id="aa36db08774381a11c01b7c4761f64d6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onSearchShortcuts</b> (const QString &amp;searchKey)</td></tr>
+<tr class="separator:aa36db08774381a11c01b7c4761f64d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a92813b263cc93c377f53ac59c7c28"><td class="memItemLeft" align="right" valign="top"><a id="a20a92813b263cc93c377f53ac59c7c28"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onSearchFinished</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:a20a92813b263cc93c377f53ac59c7c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfaeccc010e2725fc173471e0480a0c9"><td class="memItemLeft" align="right" valign="top"><a id="abfaeccc010e2725fc173471e0480a0c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>append</b> (const <a class="el" href="classdcc_1_1keyboard_1_1_meta_data.html">MetaData</a> &amp;md)</td></tr>
+<tr class="separator:abfaeccc010e2725fc173471e0480a0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae5d3a32b276b282d3319aea7c3e244"><td class="memItemLeft" align="right" valign="top"><a id="abae5d3a32b276b282d3319aea7c3e244"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onLangSelectorServiceFinished</b> ()</td></tr>
+<tr class="separator:abae5d3a32b276b282d3319aea7c3e244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8156e465b7dfbf6398fd3306e14bc0bc"><td class="memItemLeft" align="right" valign="top"><a id="a8156e465b7dfbf6398fd3306e14bc0bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onShortcutChanged</b> (const QString &amp;id, int type)</td></tr>
+<tr class="separator:a8156e465b7dfbf6398fd3306e14bc0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab514d67d8b9c393285b079071e66ce7c"><td class="memItemLeft" align="right" valign="top"><a id="ab514d67d8b9c393285b079071e66ce7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onGetShortcutFinished</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:ab514d67d8b9c393285b079071e66ce7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d13ee52178c44d07041e1248226222"><td class="memItemLeft" align="right" valign="top"><a id="aa4d13ee52178c44d07041e1248226222"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateKey</b> (<a class="el" href="structdcc_1_1keyboard_1_1_shortcut_info.html">ShortcutInfo</a> *info)</td></tr>
+<tr class="separator:aa4d13ee52178c44d07041e1248226222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff2d8547e790fb1231514d363f2dd7b"><td class="memItemLeft" align="right" valign="top"><a id="a5ff2d8547e790fb1231514d363f2dd7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanShortcutSlef</b> (const QString &amp;id, const int type, const QString &amp;shortcut)</td></tr>
+<tr class="separator:a5ff2d8547e790fb1231514d363f2dd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c81d4074c3d584715cbcaf7279dd90d"><td class="memItemLeft" align="right" valign="top"><a id="a3c81d4074c3d584715cbcaf7279dd90d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNewCustomShortcut</b> (const QString &amp;id, const QString &amp;name, const QString &amp;command, const QString &amp;accles)</td></tr>
+<tr class="separator:a3c81d4074c3d584715cbcaf7279dd90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8174371a81d891e0c98fd90d5c32e191"><td class="memItemLeft" align="right" valign="top"><a id="a8174371a81d891e0c98fd90d5c32e191"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onConflictShortcutCleanFinished</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:a8174371a81d891e0c98fd90d5c32e191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f8c934066aebb9faa5c10673d1a018"><td class="memItemLeft" align="right" valign="top"><a id="a93f8c934066aebb9faa5c10673d1a018"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onShortcutCleanFinished</b> (QDBusPendingCallWatcher *watch)</td></tr>
+<tr class="separator:a93f8c934066aebb9faa5c10673d1a018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a604ae3f7f75c637198d9e5ef6f321a6f"><td class="memItemLeft" align="right" valign="top"><a id="a604ae3f7f75c637198d9e5ef6f321a6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onCustomConflictCleanFinished</b> (QDBusPendingCallWatcher *w)</td></tr>
+<tr class="separator:a604ae3f7f75c637198d9e5ef6f321a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ac75556ec149306e40dc45eb4f6dbb035"><td class="memItemLeft" align="right" valign="top"><a id="ac75556ec149306e40dc45eb4f6dbb035"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>KeyEvent</b> (bool in0, const QString &amp;in1)</td></tr>
+<tr class="separator:ac75556ec149306e40dc45eb4f6dbb035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d421138557b66a7d96c1920728ac83"><td class="memItemLeft" align="right" valign="top"><a id="a66d421138557b66a7d96c1920728ac83"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>searchChangd</b> (<a class="el" href="structdcc_1_1keyboard_1_1_shortcut_info.html">ShortcutInfo</a> *info, const QString &amp;key)</td></tr>
+<tr class="separator:a66d421138557b66a7d96c1920728ac83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a04cba761a828adf26dd0c1e67186e"><td class="memItemLeft" align="right" valign="top"><a id="a90a04cba761a828adf26dd0c1e67186e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removed</b> (const QString &amp;id, int type)</td></tr>
+<tr class="separator:a90a04cba761a828adf26dd0c1e67186e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43631c733171323f4a006c8639a1a3d9"><td class="memItemLeft" align="right" valign="top"><a id="a43631c733171323f4a006c8639a1a3d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestSetAutoHide</b> (const bool visible)</td></tr>
+<tr class="separator:a43631c733171323f4a006c8639a1a3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5737f988d59ec5a7e7553495a5be3d96"><td class="memItemLeft" align="right" valign="top"><a id="a5737f988d59ec5a7e7553495a5be3d96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onDatasChanged</b> (<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="classdcc_1_1keyboard_1_1_meta_data.html">MetaData</a> &gt; datas)</td></tr>
+<tr class="separator:a5737f988d59ec5a7e7553495a5be3d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54af54a103ae3664f4a1f539a802cdf8"><td class="memItemLeft" align="right" valign="top"><a id="a54af54a103ae3664f4a1f539a802cdf8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onLettersChanged</b> (<a class="el" href="class_q_list.html">QList</a>&lt; QString &gt; letters)</td></tr>
+<tr class="separator:a54af54a103ae3664f4a1f539a802cdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79e97ae1f84e6bcc52130aef74996f7"><td class="memItemLeft" align="right" valign="top"><a id="aa79e97ae1f84e6bcc52130aef74996f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onResetFinished</b> ()</td></tr>
+<tr class="separator:aa79e97ae1f84e6bcc52130aef74996f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a68700d572554731376fbfc0138b512ca"><td class="memItemLeft" align="right" valign="top"><a id="a68700d572554731376fbfc0138b512ca"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KeyboardWorker</b> (<a class="el" href="classdcc_1_1keyboard_1_1_keyboard_model.html">KeyboardModel</a> *model, QObject *parent=0)</td></tr>
+<tr class="separator:a68700d572554731376fbfc0138b512ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af824f088ec12bd95761dd61bc586dfe7"><td class="memItemLeft" align="right" valign="top"><a id="af824f088ec12bd95761dd61bc586dfe7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAll</b> ()</td></tr>
+<tr class="separator:af824f088ec12bd95761dd61bc586dfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932099233c2dc75b12c1878036d6380f"><td class="memItemLeft" align="right" valign="top"><a id="a932099233c2dc75b12c1878036d6380f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setShortcutModel</b> (<a class="el" href="classdcc_1_1keyboard_1_1_shortcut_model.html">ShortcutModel</a> *model)</td></tr>
+<tr class="separator:a932099233c2dc75b12c1878036d6380f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10102f3d98ee544eca7ed6112aa2904"><td class="memItemLeft" align="right" valign="top"><a id="ae10102f3d98ee544eca7ed6112aa2904"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshShortcut</b> ()</td></tr>
+<tr class="separator:ae10102f3d98ee544eca7ed6112aa2904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7742842684fe17f0b3de6b4d0d6fddd"><td class="memItemLeft" align="right" valign="top"><a id="af7742842684fe17f0b3de6b4d0d6fddd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshLang</b> ()</td></tr>
+<tr class="separator:af7742842684fe17f0b3de6b4d0d6fddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84570164b0aac264925713582b1244d3"><td class="memItemLeft" align="right" valign="top"><a id="a84570164b0aac264925713582b1244d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>windowSwitch</b> ()</td></tr>
+<tr class="separator:a84570164b0aac264925713582b1244d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb62c7d9add85e686e53e972a327ef8"><td class="memItemLeft" align="right" valign="top"><a id="afcb62c7d9add85e686e53e972a327ef8"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="classdcc_1_1keyboard_1_1_meta_data.html">MetaData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getDatas</b> ()</td></tr>
+<tr class="separator:afcb62c7d9add85e686e53e972a327ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad531058295fd3611ac4b2e46e22bbe2e"><td class="memItemLeft" align="right" valign="top"><a id="ad531058295fd3611ac4b2e46e22bbe2e"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getLetters</b> ()</td></tr>
+<tr class="separator:ad531058295fd3611ac4b2e46e22bbe2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201bfc07966a22e07d46b797ca3cba0d"><td class="memItemLeft" align="right" valign="top"><a id="a201bfc07966a22e07d46b797ca3cba0d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>modifyShortcutEditAux</b> (<a class="el" href="structdcc_1_1keyboard_1_1_shortcut_info.html">ShortcutInfo</a> *info, bool isKPDelete=false)</td></tr>
+<tr class="separator:a201bfc07966a22e07d46b797ca3cba0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8e8572cf932682137ed68e1621deac"><td class="memItemLeft" align="right" valign="top"><a id="afc8e8572cf932682137ed68e1621deac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>modifyShortcutEdit</b> (<a class="el" href="structdcc_1_1keyboard_1_1_shortcut_info.html">ShortcutInfo</a> *info)</td></tr>
+<tr class="separator:afc8e8572cf932682137ed68e1621deac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49af65c476ffbe237e91e9a004eac33"><td class="memItemLeft" align="right" valign="top"><a id="af49af65c476ffbe237e91e9a004eac33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addCustomShortcut</b> (const QString &amp;name, const QString &amp;command, const QString &amp;accels)</td></tr>
+<tr class="separator:af49af65c476ffbe237e91e9a004eac33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe40a9fb530e4acf05fa37258e1ecb3"><td class="memItemLeft" align="right" valign="top"><a id="a2fe40a9fb530e4acf05fa37258e1ecb3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>modifyCustomShortcut</b> (<a class="el" href="structdcc_1_1keyboard_1_1_shortcut_info.html">ShortcutInfo</a> *info)</td></tr>
+<tr class="separator:a2fe40a9fb530e4acf05fa37258e1ecb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39ddd7db7ab0ab72856e4e288c4fa0b"><td class="memItemLeft" align="right" valign="top"><a id="aa39ddd7db7ab0ab72856e4e288c4fa0b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>grabScreen</b> ()</td></tr>
+<tr class="separator:aa39ddd7db7ab0ab72856e4e288c4fa0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e83cab963e26beb3ab963d9b6895db"><td class="memItemLeft" align="right" valign="top"><a id="af8e83cab963e26beb3ab963d9b6895db"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvaliable</b> (const QString &amp;key)</td></tr>
+<tr class="separator:af8e83cab963e26beb3ab963d9b6895db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746bd09e58d6b6948d89654e6c5c1876"><td class="memItemLeft" align="right" valign="top"><a id="a746bd09e58d6b6948d89654e6c5c1876"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delShortcut</b> (<a class="el" href="structdcc_1_1keyboard_1_1_shortcut_info.html">ShortcutInfo</a> *info)</td></tr>
+<tr class="separator:a746bd09e58d6b6948d89654e6c5c1876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ccc296cd275baf0e91566b18b9dbd4e"><td class="memItemLeft" align="right" valign="top"><a id="a2ccc296cd275baf0e91566b18b9dbd4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRepeatDelay</b> (uint value)</td></tr>
+<tr class="separator:a2ccc296cd275baf0e91566b18b9dbd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af357c4e58105afecf7f024875a613086"><td class="memItemLeft" align="right" valign="top"><a id="af357c4e58105afecf7f024875a613086"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRepeatInterval</b> (int value)</td></tr>
+<tr class="separator:af357c4e58105afecf7f024875a613086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1539042e2cd81b833e6f7f113d5610"><td class="memItemLeft" align="right" valign="top"><a id="acd1539042e2cd81b833e6f7f113d5610"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLayoutScope</b> (const int value)</td></tr>
+<tr class="separator:acd1539042e2cd81b833e6f7f113d5610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15739261f31e2b50f0976574dbe90105"><td class="memItemLeft" align="right" valign="top"><a id="a15739261f31e2b50f0976574dbe90105"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setModelRepeatDelay</b> (uint value)</td></tr>
+<tr class="separator:a15739261f31e2b50f0976574dbe90105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ed5475d94bcbc7058ca70085096488"><td class="memItemLeft" align="right" valign="top"><a id="a94ed5475d94bcbc7058ca70085096488"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setModelRepeatInterval</b> (uint value)</td></tr>
+<tr class="separator:a94ed5475d94bcbc7058ca70085096488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb27b5e7d7257743ec019fce778aa530"><td class="memItemLeft" align="right" valign="top"><a id="aeb27b5e7d7257743ec019fce778aa530"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setModelLayoutScope</b> (const int value)</td></tr>
+<tr class="separator:aeb27b5e7d7257743ec019fce778aa530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9abc73d6585545599c43acd2a161b3"><td class="memItemLeft" align="right" valign="top"><a id="aef9abc73d6585545599c43acd2a161b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNumLock</b> (bool value)</td></tr>
+<tr class="separator:aef9abc73d6585545599c43acd2a161b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da6f8e8db7f1bb59b7e9b8c1a288ec0"><td class="memItemLeft" align="right" valign="top"><a id="a0da6f8e8db7f1bb59b7e9b8c1a288ec0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCapsLock</b> (bool value)</td></tr>
+<tr class="separator:a0da6f8e8db7f1bb59b7e9b8c1a288ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65695cc193ff016c2f05edf09a34e5b3"><td class="memItemLeft" align="right" valign="top"><a id="a65695cc193ff016c2f05edf09a34e5b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>active</b> ()</td></tr>
+<tr class="separator:a65695cc193ff016c2f05edf09a34e5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade35f0fc29256566216fa51d15f0a9e0"><td class="memItemLeft" align="right" valign="top"><a id="ade35f0fc29256566216fa51d15f0a9e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deactive</b> ()</td></tr>
+<tr class="separator:ade35f0fc29256566216fa51d15f0a9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be0365f88913fef59b8b00bbc4ad364"><td class="memItemLeft" align="right" valign="top"><a id="a1be0365f88913fef59b8b00bbc4ad364"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyOccupy</b> (const QStringList &amp;list)</td></tr>
+<tr class="separator:a1be0365f88913fef59b8b00bbc4ad364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b134272f83e821469ebcfa4e65dde6"><td class="memItemLeft" align="right" valign="top"><a id="a59b134272f83e821469ebcfa4e65dde6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onRefreshKBLayout</b> ()</td></tr>
+<tr class="separator:a59b134272f83e821469ebcfa4e65dde6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="keyboardwork_8h_source.html">keyboardwork.h</a> 第 <a class="el" href="keyboardwork_8h_source.html#l00046">46</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dde-control-center/src/frame/modules/keyboard/<a class="el" href="keyboardwork_8h_source.html">keyboardwork.h</a></li>
+<li>dde-control-center/src/frame/modules/keyboard/<a class="el" href="keyboardwork_8cpp_source.html">keyboardwork.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>dcc</b></li><li class="navelem"><b>keyboard</b></li><li class="navelem"><a class="el" href="classdcc_1_1keyboard_1_1_keyboard_worker.html">KeyboardWorker</a></li>
+    <li class="footer">生成于 2021年 二月 23日 星期二 16:39:16 , 为 develop-manual使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

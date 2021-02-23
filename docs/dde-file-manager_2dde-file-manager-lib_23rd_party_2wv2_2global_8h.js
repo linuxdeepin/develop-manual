@@ -1,0 +1,38 @@
+var dde_file_manager_2dde_file_manager_lib_23rd_party_2wv2_2global_8h =
+[
+    [ "WV2_CHECKING", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a55e0204b34faea0b93e36c4174b8d192", null ],
+    [ "WV2_DUMP_PIECE_TABLE", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a324238cecd238967bc21d0d459066c98", null ],
+    [ "FC", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a4f64cd2c53958bc27330bdcdcd62a60e", null ],
+    [ "S16", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a7173ff14de6a65e1e668d35d89a39f6a", null ],
+    [ "S32", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a7d2f2ea0546bab5d964242efc27d143b", null ],
+    [ "S8", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a8ded56504bfd880248edb0a0f08d0d33", null ],
+    [ "U16", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#af213c9d153acb47cb3dd2a87e5f01e3b", null ],
+    [ "U32", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a2414183f3548caa68ceee53f18697515", null ],
+    [ "U8", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a780ca13c9f74488f64fdc63e15477cd3", null ],
+    [ "XCHAR", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a1500239cc3be172fb2eb322388b17a3b", null ],
+    [ "WordVersion", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#ae4dfea8241a26306eced9b7441b00a5b", [
+      [ "Word67", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#ae4dfea8241a26306eced9b7441b00a5bae77533ed2666a1b053980dde02c43b9b", null ],
+      [ "Word8", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#ae4dfea8241a26306eced9b7441b00a5ba9d2324b5b318077573bde6d89322b77e", null ]
+    ] ],
+    [ "readS16", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#af7effaecbc2937028607e50d87662e3c", null ],
+    [ "readS32", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a2fc941652f61f136be31d03ce6a78abc", null ],
+    [ "readS8", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a3d798b25daef44a1696fd4041b8baeee", null ],
+    [ "readU16", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a4f8dd7d5fa319871b6aa4a905f606462", null ],
+    [ "readU32", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a69de955ce5d9b6fff14f553b25993c88", null ],
+    [ "readU8", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a9875d4e8c281e013f5a024d88d3e1f8c", null ],
+    [ "swapEndianness", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#aea516225bd134027f6ba953cf47ab9da", null ],
+    [ "swapEndianness", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a70e972348bafcbca2277cb30c5e29a83", null ],
+    [ "swapEndianness", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a5482491d8e5ec6780426e7dd536a651d", null ],
+    [ "swapEndianness", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a6111144d3049543a4b638fe0f2092314", null ],
+    [ "toBigEndian", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#aaaec6a109f0d6d9fe03a2a08760c334b", null ],
+    [ "toBigEndian", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#aa6f0b70077edb9fd53af754d557403dc", null ],
+    [ "toBigEndian", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a2d1186519202c1f6b74fc3f8a6ac11ea", null ],
+    [ "toBigEndian", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#abb3ccbd212e2ebcb6663bac33020c454", null ],
+    [ "toLittleEndian", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a35b33db6f56f788ae3ebe342c06062d0", null ],
+    [ "toLittleEndian", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#ac1602d746a97f9106c95027cab302fd7", null ],
+    [ "toLittleEndian", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#ad59f1f8d863ee8c7568756f7f872e5e1", null ],
+    [ "toLittleEndian", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#ac079d967fae5bd38c9650e3f554a053e", null ],
+    [ "write", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#adb8504ac9c494c64bc8f3be351b6a11c", null ],
+    [ "libwv2_version", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#afd03a78307316bb9e3a592c48fb7d726", null ],
+    [ "Word8nFib", "dde-file-manager_2dde-file-manager-lib_23rd_party_2wv2_2global_8h.html#a77375b93709ec70b62bca7c3d0cb9e80", null ]
+];
